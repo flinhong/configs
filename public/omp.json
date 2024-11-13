@@ -1,0 +1,122 @@
+{
+    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+    "blocks": [
+        {
+            "alignment": "left",
+            "segments": [
+                {
+                    "foreground": "#15C2CB",
+                    "properties": {
+                        "style": "folder"
+                    },
+                    "style": "plain",
+                    "template": "{{ .Path }} ",
+                    "type": "path"
+                },
+                {
+                    "foreground": "#d6deeb",
+                    "properties": {
+                        "style": "roundrock",
+                        "threshold": 0
+                    },
+                    "style": "plain",
+                    "template": "\udb85\udc51 {{ .FormattedMs }} ",
+
+                    "type": "executiontime"
+                },
+                {
+                    "foreground": "#F141A8",
+                    "properties": {
+                        "branch_icon": "\ue0a0 "
+                    },
+                    "style": "plain",
+                    "template": "<#F3EFF5>on</> {{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }} ",
+                    "type": "git"
+                },
+                {
+                    "foreground": "#5EADF2",
+                    "style": "plain",
+                    "template": "{{if .Version}}<#F3EFF5>is</> \uf487 {{.Version}} {{end}}",
+                    "type": "project"
+                },
+                {
+                    "foreground": "#44FFD2",
+                    "properties": {
+                        "fetch_version": true
+                    },
+                    "style": "plain",
+                    "template": "<#F3EFF5>via</> \ue718 {{ .Full }} ",
+                    "type": "node"
+                },
+                {
+                    "foreground": "#FE4A49",
+                    "style": "plain",
+                    "template": "<#F3EFF5>and</> \ue71e {{.Full}} ",
+                    "type": "npm"
+                }
+            ],
+            "type": "prompt"
+        },
+        {
+            "alignment": "right",
+            "segments": [
+                {
+                    "foreground": "#007acc",
+                    "style": "plain",
+                    "template": "{{ .Name }} ",
+                    "type": "shell"
+                },
+                {
+                    "foreground": "#ff8080",
+                    "style": "plain",
+                    "template": " <#757575,>as</> root",
+                    "type": "root"
+                },
+                {
+                    "foreground": "#e9eb84",
+                    "style": "plain",
+                    "properties": {
+                        "fetch_virtual_env": true,
+                        "display_mode": "environment",
+                        "home_enabled": true
+                    },
+                    "template": "\ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
+                    "type": "python"
+                }
+            ],
+            "type": "prompt"
+        },
+        {
+            "alignment": "left",
+            "newline": true,
+            "segments": [
+                {
+                    "foreground": "#f09dec",
+                    "properties": {
+                        "folder_icon": "\uf07b",
+                        "home_icon": "home",
+                        "style": "agnoster_full"
+                    },
+                    "style": "diamond",
+                    "template": "\ueaf7 {{ .Path }} ",
+                    "type": "path"
+                }
+            ],
+            "type": "prompt"
+        },
+        {
+            "alignment": "left",
+            "newline": true,
+            "segments": [
+                {
+                    "foreground": "#FFE45E",
+                    "style": "plain",
+                    "template": "\udb81\ude27 ",
+                    "type": "text"
+                }
+            ],
+            "type": "prompt"
+        }
+    ],
+    "version": 2
+}

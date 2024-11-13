@@ -1,15 +1,15 @@
 {
-    "name": "tampermonkey",
-    "version": "0.1.9",
-    "description": "custom scripts for tampermonkey",
+    "name": "configs.frankindev.com",
+    "version": "0.1.10",
+    "description": "custom scripts for tampermonkey and more ...",
     "main": "index.js",
-    "repository": "git@github.com:flinhong/tampermonkey.git",
+    "repository": "git@github.com:flinhong/configs.git",
     "author": "Frank Lin <honglin@duck.com>",
     "license": "MIT",
     "private": false,
     "scripts": {
-        "build:scss": "sass ./src/sites/:./public/styles/ --no-source-map --style=compressed",
-        "build": "yarn run build:scss && node build.js",
+        "build:scss": "sass ./src/sites/:./public/styles/ --no-source-map",
+        "build": "yarn run build:scss && node build.tampermonkey.js",
         "public": "npx auto-version && yarn run build"
     },
     "dependencies": {

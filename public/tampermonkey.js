@@ -1,25 +1,25 @@
 // ==UserScript==
 // @name         URI identity & styling
 // @namespace    scripts.frankindev.com
-// @version      0.1.9
+// @version      0.1.10
 // @description  try to take over the world with styles...
 // @author       Frank Lin
 // @match        *://*.baidu.com/*
-// @resource     css_baidu	https://cdn.honglin.ac.cn/statically/gh/flinhong/tampermonkey/main/public/styles/baidu.css
+// @resource     css_baidu	https://cdn.honglin.ac.cn/statically/gh/flinhong/configs/main/public/styles/baidu.css
 // @match        *://www.google.co.uk/*
-// @resource     css_google	https://cdn.honglin.ac.cn/statically/gh/flinhong/tampermonkey/main/public/styles/google.css
+// @resource     css_google	https://cdn.honglin.ac.cn/statically/gh/flinhong/configs/main/public/styles/google.css
 // @match        *://www.google.com/*
-// @resource     css_google	https://cdn.honglin.ac.cn/statically/gh/flinhong/tampermonkey/main/public/styles/google.css
+// @resource     css_google	https://cdn.honglin.ac.cn/statically/gh/flinhong/configs/main/public/styles/google.css
 // @match        *://www.zhihu.com/*
-// @resource     css_zhihu	https://cdn.honglin.ac.cn/statically/gh/flinhong/tampermonkey/main/public/styles/zhihu.css
+// @resource     css_zhihu	https://cdn.honglin.ac.cn/statically/gh/flinhong/configs/main/public/styles/zhihu.css
 // @match        *://*.smzdm.com/*
-// @resource     css_smzdm	https://cdn.honglin.ac.cn/statically/gh/flinhong/tampermonkey/main/public/styles/smzdm.css
+// @resource     css_smzdm	https://cdn.honglin.ac.cn/statically/gh/flinhong/configs/main/public/styles/smzdm.css
 // @match        *://www.bilibili.com/*
-// @resource     css_bilibili	https://cdn.honglin.ac.cn/statically/gh/flinhong/tampermonkey/main/public/styles/bilibili.css
+// @resource     css_bilibili	https://cdn.honglin.ac.cn/statically/gh/flinhong/configs/main/public/styles/bilibili.css
 // @match        *://doubao.com/*
-// @resource     css_doubao	https://cdn.honglin.ac.cn/statically/gh/flinhong/tampermonkey/main/public/styles/doubao.css
+// @resource     css_doubao	https://cdn.honglin.ac.cn/statically/gh/flinhong/configs/main/public/styles/doubao.css
 // @match        *://www.doubao.com/*
-// @resource     css_doubao	https://cdn.honglin.ac.cn/statically/gh/flinhong/tampermonkey/main/public/styles/doubao.css
+// @resource     css_doubao	https://cdn.honglin.ac.cn/statically/gh/flinhong/configs/main/public/styles/doubao.css
 // @icon         https://cdn.honglin.ac.cn/favicon.ico
 // @resource     font_Google https://cdn.honglin.ac.cn/fonts/g/css?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Lato:ital@0;1&family=Noto+Serif+SC:wght@300;400;500&family=Oswald:wght@300&family=IBM+Plex+Mono:ital@0;1&display=swap
 // @grant        GM_getResourceText
