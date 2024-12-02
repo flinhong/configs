@@ -70,6 +70,17 @@
           "type": "executiontime",
           "style": "diamond",
           "foreground_templates": ["{{ if gt .Code 0 }}#E06C75{{ end }}"]
+        },
+        {
+          "foreground": "#e9eb84",
+          "style": "plain",
+          "properties": {
+            "fetch_virtual_env": true,
+            "display_mode": "environment",
+            "home_enabled": true
+          },
+          "template": "\ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
+          "type": "python"
         }
       ]
     },
