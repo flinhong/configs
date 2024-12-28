@@ -1,16 +1,15 @@
 {
     "name": "configs",
-    "version": "0.1.11",
+    "version": "0.1.12",
     "description": "custom scripts for tampermonkey and more ...",
     "main": "index.js",
     "repository": "git@github.com:flinhong/configs.git",
     "author": "Frank Lin <honglin@duck.com>",
     "license": "MIT",
-    "packageManager": "yarn@4.5.3",
     "scripts": {
         "build:scss": "sass ./src/sites/:./public/styles/ --no-source-map",
-        "build": "yarn run build:scss && node build.tampermonkey.js",
-        "public": "npx auto-version && yarn run build"
+        "build": "npm run build:scss && node build.tampermonkey.js",
+        "public": "npx auto-version && npm run build"
     },
     "dependencies": {
         "auto-version-js": "^0.3.10",
