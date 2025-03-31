@@ -9,6 +9,7 @@ const formattedUserscript = (version) =>
     beautify(userscriptString(version), {
         indent_size: 2,
         jslint_happy: true,
+        preserve_newlines: false,
         end_with_newline: true,
     })
 
@@ -16,6 +17,7 @@ const formattedTampermonkey = (version) =>
     beautify(tampermonkeyString(version), {
         indent_size: 2,
         jslint_happy: true,
+        preserve_newlines: false,
         end_with_newline: true,
     })
 

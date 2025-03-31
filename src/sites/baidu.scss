@@ -2,9 +2,10 @@
 
 // baidu.com
 body[data-domain="www.baidu.com"] {
+  font-family: fonts.$sans-fonts !important;
+
   #wrapper,
   .c-wrapper,
-  body,
   button,
   input,
   select,
@@ -36,11 +37,20 @@ body[data-domain="www.baidu.com"] {
   .s-ctner-menus .s-menu-item {
     font: 14px/24px fonts.$sans-fonts;
   }
+
+  .new_search_guide_bub_container_center {
+    font-family: fonts.$code-fonts !important;
+  }
+
+  #s-top-left .c-font-normal {
+    font-family: fonts.$sans-fonts !important;
+  }
 }
 
 // news.baidu.com
 body[data-domain="news.baidu.com"] {
-  body,
+  font-family: fonts.$sans-fonts !important;
+
   #usrbar,
   #header-link-wrapper li a,
   #header-link-wrapper li span,
@@ -68,7 +78,8 @@ body[data-domain="news.baidu.com"] {
 // 百家号
 body[data-domain="mbd.baidu.com"],
 body[data-domain="baijiahao.baidu.com"] {
-  body,
+  font-family: fonts.$sans-fonts !important;
+
   button,
   input,
   select,

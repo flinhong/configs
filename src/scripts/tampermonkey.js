@@ -4,22 +4,22 @@
 // @grant        GM_addStyle
 // ==/UserScript==
 
-(function () {
-    "use strict";
-  
+;(function () {
+    "use strict"
+
     // Your code here...
     // add 'data-domain' attribute for css selector
-    document.body.setAttribute("data-domain", window.location.hostname);
-  
+    document.body.setAttribute("data-domain", window.location.hostname)
+
     // Google fonts
-    const googleFont = GM_getResourceText("font_Google");
-    GM_addStyle(googleFont);
-  
+    const googleFont = GM_getResourceText("font_Google")
+    GM_addStyle(googleFont)
+
     // Custom styles
     const domain = window.location.hostname
         .replace(".com", "")
         .replace(".co.uk", "")
-        .replace("www.", "");
-    const styleFont = GM_getResourceText("css_" + domain);
-    GM_addStyle(styleFont); 
-  })();
+        .replace("www.", "")
+    const styleFont = GM_getResourceText("css_" + domain)
+    GM_addStyle(styleFont)
+})()

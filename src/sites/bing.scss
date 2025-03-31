@@ -1,0 +1,28 @@
+@use "fonts";
+:root {
+  --body-font:
+    "Crimson Pro", "Noto Serif SC", "Source Han Serif SC", Inter, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", "SF Pro SC", "SF Pro Display",
+    "SF Pro Icons", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+    "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+// bing.com
+body[data-domain="www.bing.com"] {
+  font-family: fonts.$sans-fonts !important;
+
+  .scope,
+  #est_switch .est_common,
+  .tob_list_current .tob_title {
+    font-family: fonts.$serif-fonts !important;
+  }
+
+  #tobPrompt.new .tob_head > span,
+  #tobPrompt.new .tob_head .tob_head_title {
+    font-family: fonts.$sans-fonts !important;
+  }
+
+  .tob_list_current .tob_index,
+  .tob_list_current .tob_index_red {
+    font-family: fonts.$narrow-fonts !important;
+  }
+}
