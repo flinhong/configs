@@ -20,6 +20,7 @@
         .replace(".com", "")
         .replace(".co.uk", "")
         .replace("www.", "")
+        .replace("cn.", "")
     const styleFont = GM_getResourceText("css_" + domain)
     GM_addStyle(styleFont)
 })()

@@ -7,17 +7,21 @@
     "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 // bing.com
-body[data-domain="www.bing.com"] {
+body[data-domain="www.bing.com"],
+body[data-domain="cn.bing.com"] {
   font-family: fonts.$sans-fonts !important;
 
-  .scope,
   #est_switch .est_common,
-  .tob_list_current .tob_title {
+  .tob_list_current .tob_title,
+  .text .heading {
     font-family: fonts.$serif-fonts !important;
   }
 
+  .header .scope,
   #tobPrompt.new .tob_head > span,
-  #tobPrompt.new .tob_head .tob_head_title {
+  #tobPrompt.new .tob_head .tob_head_title,
+  .hp_text,
+  .text .attribution-text {
     font-family: fonts.$sans-fonts !important;
   }
 
