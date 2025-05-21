@@ -24,7 +24,7 @@ def write_log(content, level="INFO"):
         f.write(update_log)
 
 def get_subscribe_main():
-    dirs = './subscribe'
+    dirs = './public/subscribe'
     if not os.path.exists(dirs):
         os.makedirs(dirs)
     log_dir = "./log"
