@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         URI identity & styling
 // @namespace    scripts.frankindev.com
-// @version      0.1.17
+// @version      0.1.18
 // @description  try to take over the world with styles...
 // @author       Frank Lin
 // @match        *://*.baidu.com/*
@@ -15,6 +15,7 @@
 // @match        *://www.bing.com/*
 // @match        *://cn.bing.com/*
 // @match        *://www.msn.cn/*
+// @match        *://www.reddit.com/*
 // @icon         https://cdn.honglin.ac.cn/favicon.ico
 // @updateURL    https://cdn.honglin.ac.cn/statically/gh/flinhong/configs/main/public/userscript.js
 // @grant        GM_addStyle
