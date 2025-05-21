@@ -27,7 +27,7 @@ def get_subscribe_main():
     dirs = './public/subscribe'
     if not os.path.exists(dirs):
         os.makedirs(dirs)
-    log_dir = "./log"
+    log_dir = "./public/subscribe/log"
     if not os.path.exists(log_dir):
         os.makedirs(log_dir)
 
