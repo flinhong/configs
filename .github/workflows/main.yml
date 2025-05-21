@@ -22,17 +22,17 @@ jobs:
         uses: actions/cache@v3
         with:
           path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/run_in_Actions/src/get_subscribe/requirements.txt') }}
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/run_in_Actions/src/get_clash_subscribe/requirements.txt') }}
           restore-keys: |
             ${{ runner.os }}-pip-
       - name: 设置时区
         run: sudo timedatectl set-timezone 'Asia/Shanghai'
       - name: 安装依赖
         run: |
-          pip install -r ./src/get_subscribe/requirements.txt
+          pip install -r ./src/get_clash_subscribe/requirements.txt
       - name: 执行任务
         run: |
-          python ./src/get_subscribe/main.py
+          python ./src/get_clash_subscribe/main.py
 
       - name: 提交更改
         run: |
