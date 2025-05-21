@@ -20,7 +20,7 @@ def write_log(content, level="INFO"):
     date_str = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
     update_log = f"[{date_str}] [{level}] {content}\n"
     print(update_log)
-    with open(f'./log/{time.strftime("%Y-%m", time.localtime(time.time()))}-update.log', 'a', encoding="utf-8") as f:
+    with open(f'./public/subscribe/log/{time.strftime("%Y-%m", time.localtime(time.time()))}-update.log', 'a', encoding="utf-8") as f:
         f.write(update_log)
 
 def get_subscribe_main():
