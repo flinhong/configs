@@ -1,0 +1,559 @@
+allow-lan: false
+dns:
+  default-nameserver:
+  - 223.5.5.5
+  - 114.114.114.114
+  enable: true
+  enhanced-mode: fake-ip
+  fake-ip-filter:
+  - '*.lan'
+  - '*.localdomain'
+  - '*.example'
+  - '*.invalid'
+  - '*.localhost'
+  - '*.test'
+  - '*.local'
+  - '*.home.arpa'
+  - router.asus.com
+  - localhost.sec.qq.com
+  - localhost.ptlogin2.qq.com
+  - +.msftconnecttest.com
+  fake-ip-range: 198.18.0.1/16
+  ipv6: false
+  listen: 0.0.0.0:53
+  nameserver:
+  - 223.5.5.5
+  - 114.114.114.114
+  - 119.29.29.29
+  - 180.76.76.76
+external-controller: 127.0.0.1:9999
+log-level: info
+mixed-port: 7890
+mode: rule
+proxies:
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  network: ws
+  port: 30828
+  server: 111.26.109.79
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: ocbc.com
+    path: /oooo
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪_DE_德国
+  password: cvII85TrW6n0OGyfpHVS1u
+  port: 8080
+  server: 45.87.175.166
+  type: ss
+- name: 🇺🇸_US_美国_1
+  network: ws
+  password: ac5b2e52-435b-4461-a99c-1317ab0e2889
+  port: 443
+  server: 104.21.46.90
+  sni: DddVfGty.frEeVpnAtM.dpdNS.oRG
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /HmfeUdLKf899DmZDo0oju2st1
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  network: ws
+  port: 30808
+  server: v8.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v8.heduian.link
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 🇮🇷_IR_伊朗->🇨🇳_CN_中国
+  network: tcp
+  port: 44264
+  server: 194.5.178.70
+  type: vmess
+  uuid: ee7156f5-c594-4d7f-9e25-5de014059c85
+- cipher: aes-256-cfb
+  name: 🇷🇺_RU_俄罗斯
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.112
+  type: ss
+- name: 🇺🇸_US_美国_4
+  network: ws
+  password: 072f4db4-d89d-420d-9d9e-045ed8d5c9cc
+  port: 443
+  server: 104.21.57.88
+  sni: 10tyu.iran.pp.ua
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /VEP415T5mby2DulPWRIwOavJd
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  network: ws
+  port: 30825
+  server: v25.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: baidu.com
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  network: ws
+  port: 30805
+  server: v5.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: ocbc.com
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_4
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: ocbc.com
+    path: /oooo
+- name: 🇺🇸_US_美国_8
+  network: ws
+  password: c8eac4b7-95ba-4ce0-920d-c3279eb3b391
+  port: 443
+  server: 172.67.181.193
+  sni: EEeEee4.hUAngSHANG2030.dPdNS.org
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /ptGwaGzcA4KNAXX
+- ip-version: dual
+  name: NF_🇨🇳_CN_中国->🇺🇸_US_美国_1
+  password: RlzoEILU
+  port: 7815
+  server: 36.151.251.59
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- cipher: rc4-md5
+  ip-version: dual
+  name: NF_🇩🇪_DE_德国->🇨🇳_CN_中国
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
+  udp: true
+- ip-version: dual
+  name: NF_🇨🇳_CN_中国->🇺🇸_US_美国_2
+  password: d30d2718-91d5-11ef-b635-f23c9164ca5d
+  port: 15229
+  server: 0ce06474-swin40-tba9vx-1qlps.cu.plebai.net
+  skip-cert-verify: false
+  sni: 0ce06474-swin40-tba9vx-1qlps.cu.plebai.net
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: NF_🇺🇸_US_美国_1
+  password: awsps0501
+  port: 443
+  server: 35.91.97.85
+  type: ss
+  udp: true
+- ip-version: dual
+  name: NF_🇺🇸_US_美国->🇸🇪_SE_瑞典
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 13.61.140.186
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: NF_🇸🇰_SK_斯洛伐克->🇺🇸_US_美国
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 156.146.40.194
+  type: ss
+  udp: true
+- ip-version: dual
+  name: NF_🇨🇳_CN_中国->🇺🇸_US_美国_3
+  network: tcp
+  password: def14a51-e0d9-11ec-8429-f23c91cfbbc9
+  port: 15229
+  server: 4560c642-swin40-tjuq6l-wf62.cu.plebai.net
+  sni: 4560c642-swin40-tjuq6l-wf62.cu.plebai.net
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: NF_🇷🇺_RU_俄罗斯
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.112
+  type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  ip-version: dual
+  name: NF_🇨🇳_CN_中国->🇺🇸_US_美国_4
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: ocbc.com
+    path: /oooo
+- ip-version: dual
+  name: NF_🇨🇳_CN_中国->🇺🇸_US_美国_5
+  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+  port: 15229
+  server: 13c2c931-swin40-swy6li-tni2.cu.plebai.net
+  sni: 13c2c931-swin40-swy6li-tni2.cu.plebai.net
+  type: trojan
+  udp: true
+- alterId: 2
+  cipher: auto
+  ip-version: dual
+  name: NF_🇨🇳_CN_中国->🇺🇸_US_美国_6
+  network: ws
+  port: 30805
+  server: v5.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: ocbc.com
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  ip-version: dual
+  name: NF_🇨🇳_CN_中国->🇺🇸_US_美国_7
+  network: ws
+  port: 30808
+  server: v8.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v8.heduian.link
+    path: /oooo
+- ip-version: dual
+  name: NF_🇺🇸_US_美国_2
+  network: ws
+  password: c8eac4b7-95ba-4ce0-920d-c3279eb3b391
+  port: 443
+  server: 172.67.181.193
+  sni: EEeEee4.hUAngSHANG2030.dPdNS.org
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /ptGwaGzcA4KNAXX
+- cipher: chacha20-ietf-poly1305
+  ip-version: dual
+  name: NF_🇳🇱_NL_荷兰
+  password: d3TphPPfMkIxFmPJpA0j7RkPJHjeHqaJk2D7Co7VsFuUU2v1
+  port: 31348
+  server: 45.128.151.67
+  type: ss
+  udp: true
+- ip-version: dual
+  name: NF_🇨🇳_CN_中国->🇺🇸_US_美国_8
+  password: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  port: 15229
+  server: f1e4e0ee-swin40-t12cnj-1ol97.cu.plebai.net
+  skip-cert-verify: false
+  sni: f1e4e0ee-swin40-t12cnj-1ol97.cu.plebai.net
+  type: trojan
+  udp: true
+proxy-groups:
+- name: 🚀 节点选择
+  proxies:
+  - ♻️ 自动选择
+  - DIRECT
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇩🇪_DE_德国
+  - 🇺🇸_US_美国_1
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇮🇷_IR_伊朗->🇨🇳_CN_中国
+  - 🇷🇺_RU_俄罗斯
+  - 🇺🇸_US_美国_4
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_4
+  - 🇺🇸_US_美国_8
+  type: select
+- interval: 300
+  name: ♻️ 自动选择
+  proxies:
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇩🇪_DE_德国
+  - 🇺🇸_US_美国_1
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇮🇷_IR_伊朗->🇨🇳_CN_中国
+  - 🇷🇺_RU_俄罗斯
+  - 🇺🇸_US_美国_4
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_4
+  - 🇺🇸_US_美国_8
+  - NF_🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - NF_🇩🇪_DE_德国->🇨🇳_CN_中国
+  - NF_🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - NF_🇺🇸_US_美国_1
+  - NF_🇺🇸_US_美国->🇸🇪_SE_瑞典
+  - NF_🇸🇰_SK_斯洛伐克->🇺🇸_US_美国
+  - NF_🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - NF_🇷🇺_RU_俄罗斯
+  - NF_🇨🇳_CN_中国->🇺🇸_US_美国_4
+  - NF_🇨🇳_CN_中国->🇺🇸_US_美国_5
+  - NF_🇨🇳_CN_中国->🇺🇸_US_美国_6
+  - NF_🇨🇳_CN_中国->🇺🇸_US_美国_7
+  - NF_🇺🇸_US_美国_2
+  - NF_🇳🇱_NL_荷兰
+  - NF_🇨🇳_CN_中国->🇺🇸_US_美国_8
+  tolerance: 50
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+- name: 🌍 国外媒体
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🎯 全球直连
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇩🇪_DE_德国
+  - 🇺🇸_US_美国_1
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇮🇷_IR_伊朗->🇨🇳_CN_中国
+  - 🇷🇺_RU_俄罗斯
+  - 🇺🇸_US_美国_4
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_4
+  - 🇺🇸_US_美国_8
+  type: select
+- name: 📲 电报信息
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇩🇪_DE_德国
+  - 🇺🇸_US_美国_1
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇮🇷_IR_伊朗->🇨🇳_CN_中国
+  - 🇷🇺_RU_俄罗斯
+  - 🇺🇸_US_美国_4
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_4
+  - 🇺🇸_US_美国_8
+  type: select
+- name: Ⓜ️ 微软服务
+  proxies:
+  - 🎯 全球直连
+  - 🚀 节点选择
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇩🇪_DE_德国
+  - 🇺🇸_US_美国_1
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇮🇷_IR_伊朗->🇨🇳_CN_中国
+  - 🇷🇺_RU_俄罗斯
+  - 🇺🇸_US_美国_4
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_4
+  - 🇺🇸_US_美国_8
+  type: select
+- name: 🍎 苹果服务
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇩🇪_DE_德国
+  - 🇺🇸_US_美国_1
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇮🇷_IR_伊朗->🇨🇳_CN_中国
+  - 🇷🇺_RU_俄罗斯
+  - 🇺🇸_US_美国_4
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_4
+  - 🇺🇸_US_美国_8
+  type: select
+- name: 🎯 全球直连
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  type: select
+- name: 🛑 全球拦截
+  proxies:
+  - REJECT
+  - DIRECT
+  type: select
+- name: 🍃 应用净化
+  proxies:
+  - REJECT
+  - DIRECT
+  type: select
+- name: 🐟 漏网之鱼
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - ♻️ 自动选择
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇩🇪_DE_德国
+  - 🇺🇸_US_美国_1
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇮🇷_IR_伊朗->🇨🇳_CN_中国
+  - 🇷🇺_RU_俄罗斯
+  - 🇺🇸_US_美国_4
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_4
+  - 🇺🇸_US_美国_8
+  type: select
+rule-providers:
+  Apple:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/Apple.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/Apple.list
+  BanAD:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/BanAD.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
+  BanProgramAD:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/BanProgramAD.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+  ChinaCompanyIp:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/ChinaCompanyIp.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+  ChinaDomain:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/ChinaDomain.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+  GoogleCN:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/GoogleCN.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
+  LocalAreaNetwork:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/LocalAreaNetwork.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+  Microsoft:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/Microsoft.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
+  ProxyLite:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/ProxyLite.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list
+  ProxyMedia:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/ProxyMedia.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
+  SteamCN:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/SteamCN.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
+  Telegram:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/Telegram.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
+rules:
+- RULE-SET,LocalAreaNetwork,🎯 全球直连
+- RULE-SET,BanAD,🛑 全球拦截
+- RULE-SET,BanProgramAD,🍃 应用净化
+- RULE-SET,GoogleCN,🎯 全球直连
+- RULE-SET,SteamCN,🎯 全球直连
+- RULE-SET,Microsoft,Ⓜ️ 微软服务
+- RULE-SET,Apple,🍎 苹果服务
+- RULE-SET,ProxyMedia,🌍 国外媒体
+- RULE-SET,Telegram,📲 电报信息
+- RULE-SET,ProxyLite,🚀 节点选择
+- RULE-SET,ChinaDomain,🎯 全球直连
+- RULE-SET,ChinaCompanyIp,🎯 全球直连
+- GEOIP,CN,🎯 全球直连
+- MATCH,🐟 漏网之鱼
+tun:
+  auto-detect-interface: true
+  auto-route: true
+  dns-hijack:
+  - 114.114.114.114
+  - 180.76.76.76
+  - 119.29.29.29
+  - 223.5.5.5
+  - 8.8.8.8
+  - 8.8.4.4
+  - 1.1.1.1
+  - 1.0.0.1
+  enable: true
