@@ -3,6 +3,7 @@ import re
 import smtplib
 import sys
 import time
+from datetime import datetime, timedelta
 from email.mime.text import MIMEText
 from email.utils import formataddr
 
@@ -31,7 +32,8 @@ def get_subscribe_main():
     if not os.path.exists(log_dir):
         os.makedirs(log_dir)
 
-    clash_req = requests.get("https://cdn.honglin.ac.cn/statically/gh/ermaozi/get_subscribe/main/subscribe/clash.yml")
+    clash_req = requests.get("https://git.io/emzclash")
+
     # 检查下载是否成功
     if not clash_req.status_code in ok_code:
         write_log("更新失败！无法拉取原订阅内容", "WARN")
@@ -74,9 +76,48 @@ def get_subscribe_main():
         write_log(f"订阅解析错误", "WARN")
         return
 
+def check_file_exists(url):
+    try:
+        response = requests.head(url)
+        return response.status_code == 200
+    except requests.RequestException as e:
+        print(f"Request failed: {e}")
+        return False
+
+def get_previous_files(base_url, current_date):
+    previous_dates = []
+    delta = timedelta(days=1)
+    
+    while len(previous_dates) < 7:  # Check up to 7 days back
+        date_str = (current_date - delta).strftime('%Y/%m/%d')
+        new_url = f"{base_url}{date_str}.yaml"
+        if check_file_exists(new_url):
+            previous_dates.append(date_str)
+        else:
+            break
+        delta -= timedelta(days=1)
+    
+    return previous_dates
+
+def validate_yaml(data):
+    try:
+        yaml.safe_load(data)
+        return True
+    except yaml.YAMLError as exc:
+        print(exc)
+        return False
+
+def get_node_free_clash():
+    base_url = "https://nodefree.githubrowcontent.com/"
+    current_date = datetime.now()
+    current_date_str = current_date.strftime('%Y/%m/%d')
+    file_url = f"{base_url}{current_date_str}.yaml"
+
+    if check_file_exists(file_url):
+        print(f"The file {file_url} exists.")
 
 def get_node_free():
-    url = "https://cdn.honglin.ac.cn/statically/gh/Barabama/FreeNodes/main/nodes/nodefree.yaml"
+    url = "https://nodefree.githubrowcontent.com/2025/05/20250521.yaml"
 
     # Send a GET request to the specified URL
     response = requests.get(url)
