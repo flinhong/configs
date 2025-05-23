@@ -47,6 +47,11 @@ def get_subscribe_main():
         if node_free_proxies is not None:
             clash_yaml = yaml.safe_load(clash_content_replaced)
             clash_content_replaced = append_proxies(clash_yaml, node_free_proxies)
+        
+        v2ray_share_proxies = get_v2ray_share_proxies()
+        if v2ray_share_proxies is not None:
+            clash_yaml = yaml.safe_load(clash_content_replaced)
+            clash_content_replaced = append_proxies(clash_yaml, v2ray_share_proxies)
             
         # 将更新后的内容写入文件
         with open(dirs + '/clash.yml', 'w', encoding="utf-8") as f:
@@ -126,6 +131,31 @@ def get_node_free_proxies():
             return proxies
         else:
             print(f"获取 nodefree 订阅失败")
+            return None
+
+def get_v2ray_share_proxies():
+    # 仅下载 v2rayshare 的 clash 订阅
+    # https://v2rayshare.githubrowcontent.com/2025/05/20250523.yaml
+    base_url = "https://v2rayshare.githubrowcontent.com/"
+    current_date = datetime.now()
+    current_date_str = current_date.strftime('%Y/%m/%Y%m%d')
+    file_url = f"{base_url}{current_date_str}.yaml"
+
+    # 如果当天的订阅获取失败，则获取前一天的订阅
+    data_today = check_and_validate_file(file_url)
+    if data_today is not None:
+        proxies = get_extra_proxies(data_today, "VS")
+        return proxies
+    else:
+        delta = timedelta(days=1)
+        date_str = (current_date - delta).strftime('%Y/%m/%Y%m%d')
+        new_url = f"{base_url}{date_str}.yaml"
+        data_previous = check_and_validate_file(new_url)
+        if data_previous is not None:
+            proxies = get_extra_proxies(data_previous, "VS")
+            return proxies
+        else:
+            print(f"获取 v2rayshare 订阅失败")
             return None
 
 def get_extra_proxies(data, prefix):
