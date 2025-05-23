@@ -36,68 +36,48 @@ def get_subscribe_main():
 
     # 检查下载是否成功
     if not clash_req.status_code in ok_code:
-        write_log("更新失败！无法拉取原订阅内容", "WARN")
-        return
+        write_log("更新失败！无法拉取 emzclash 订阅内容", "WARN")
+        return None
     
     try:
         clash_content = clash_req.content.decode("utf-8")
         clash_content_replaced = re.sub(r"https://raw.githubusercontent.com", "https://cdn.honglin.ac.cn/statically/gh", clash_content, flags=re.IGNORECASE)
 
-        node_free_proxies = get_node_free()
-        if node_free_proxies:
+        node_free_proxies = get_node_free_proxies()
+        if node_free_proxies is not None:
             clash_yaml = yaml.safe_load(clash_content_replaced)
-            # 获取原订阅的节点列表
-            original_proxies = clash_yaml.get('proxies', [])
-            # 将原订阅的节点列表与node_free_proxies合并
-            original_proxies.extend(node_free_proxies)
-            # 更新原订阅的节点列表
-            clash_yaml['proxies'] = original_proxies
-
-            # 更新[♻️ 自动选择]列表
-            original_groups = clash_yaml.get('proxy-groups', [])
-            for group in original_groups:
-                if group.get('name') == '♻️ 自动选择':
-                    # 获取原订阅的节点列表
-                    original_auto_proxies = group.get('proxies', [])
-                    # 将原订阅的节点列表与node_free_proxies合并
-                    node_free_proxy_names = [item['name'] for item in node_free_proxies]
-                    original_auto_proxies.extend(node_free_proxy_names)
-                    # 更新原订阅的节点列表
-                    group['proxies'] = original_auto_proxies
-
-            # 将更新后的内容写回到YAML文件
-            clash_content_replaced = yaml.dump(clash_yaml, default_flow_style=False, allow_unicode=True)
+            clash_content_replaced = append_proxies(clash_yaml, node_free_proxies)
             
         # 将更新后的内容写入文件
         with open(dirs + '/clash.yml', 'w', encoding="utf-8") as f:
             f.write(clash_content_replaced)
-            write_log(f"获取原订阅成功", "INFO")
+            write_log(f"更新订阅成功", "INFO")
     except Exception as e:
         write_log(f"订阅解析错误", "WARN")
-        return
-
-def check_file_exists(url):
-    try:
-        response = requests.head(url)
-        return response.status_code == 200
-    except requests.RequestException as e:
-        print(f"Request failed: {e}")
-        return False
-
-def get_previous_files(base_url, current_date):
-    previous_dates = []
-    delta = timedelta(days=1)
+        return None
     
-    while len(previous_dates) < 7:  # Check up to 7 days back
-        date_str = (current_date - delta).strftime('%Y/%m/%d')
-        new_url = f"{base_url}{date_str}.yaml"
-        if check_file_exists(new_url):
-            previous_dates.append(date_str)
-        else:
-            break
-        delta -= timedelta(days=1)
-    
-    return previous_dates
+def append_proxies(clash_yaml, proxies):
+    # 将新的节点列表追加到原订阅的节点列表
+    original_proxies = clash_yaml.get('proxies', [])
+    # 将原订阅的节点列表与 node_free_proxies 合并
+    original_proxies.extend(proxies)
+    # 更新原订阅的节点列表
+    clash_yaml['proxies'] = original_proxies
+
+    # 更新[♻️ 自动选择]列表
+    original_groups = clash_yaml.get('proxy-groups', [])
+    for group in original_groups:
+        if group.get('name') == '♻️ 自动选择':
+            # 获取原订阅的节点列表
+            original_auto_proxies = group.get('proxies', [])
+            # 将原订阅的节点列表与node_free_proxies合并
+            node_free_proxy_names = [item['name'] for item in proxies]
+            original_auto_proxies.extend(node_free_proxy_names)
+            # 更新原订阅的节点列表
+            group['proxies'] = original_auto_proxies
+    # 将更新后的内容写回到YAML文件
+    clash_yaml_replaced = yaml.dump(clash_yaml, default_flow_style=False, allow_unicode=True)
+    return clash_yaml_replaced
 
 def validate_yaml(data):
     try:
@@ -107,47 +87,60 @@ def validate_yaml(data):
         print(exc)
         return False
 
-def get_node_free_clash():
+def check_and_validate_file(url):
+    response = requests.get(url)
+    print(f"获取 {url} 状态码: {response.status_code}")
+    if not response.status_code in ok_code:
+        return None
+    
+    try:
+        data = response.content.decode('utf-8')
+        if validate_yaml(data):
+            return data
+        else:
+            return None
+    except Exception as e:
+        print(e)
+        return None
+
+def get_node_free_proxies():
+    # 仅下载 nodefree 的 clash 订阅
+    # https://nodefree.githubrowcontent.com/2025/05/20250521.yaml
     base_url = "https://nodefree.githubrowcontent.com/"
     current_date = datetime.now()
-    current_date_str = current_date.strftime('%Y/%m/%d')
+    current_date_str = current_date.strftime('%Y/%m/%Y%m%d')
     file_url = f"{base_url}{current_date_str}.yaml"
 
-    if check_file_exists(file_url):
-        print(f"The file {file_url} exists.")
-
-def get_node_free():
-    url = "https://nodefree.githubrowcontent.com/2025/05/20250521.yaml"
-
-    # Send a GET request to the specified URL
-    response = requests.get(url)
-    # Check if the request was successful
-    if response.status_code == 200:
-        # Parse the YAML content
-        try:
-            data = yaml.safe_load(response.content.decode('utf-8'))
-            proxies = data.get('proxies', [])
-            
-            for item in proxies:
-                # Check if the 'name' key exists and is not empty
-                if 'name' in item and item['name']:
-                    new_name = 'NF_' + item['name']
-                    item['name'] = new_name
-                else:
-                    print("No name found in the item")
-
-            return proxies
-        except yaml.YAMLError as e:
-            print(f"Error parsing YAML: {e}")
-            return
-
+    # 如果当天的订阅获取失败，则获取前一天的订阅
+    data_today = check_and_validate_file(file_url)
+    if data_today is not None:
+        proxies = get_extra_proxies(data_today, "NF")
+        return proxies
     else:
-        print(f'Failed to retrieve the file: {response.status_code}')
-        return
+        delta = timedelta(days=1)
+        date_str = (current_date - delta).strftime('%Y/%m/%Y%m%d')
+        new_url = f"{base_url}{date_str}.yaml"
+        data_previous = check_and_validate_file(new_url)
+        if data_previous is not None:
+            proxies = get_extra_proxies(data_previous, "NF")
+            return proxies
+        else:
+            print(f"获取 nodefree 订阅失败")
+            return None
+
+def get_extra_proxies(data, prefix):
+    yaml_data = yaml.safe_load(data)
+    proxies = yaml_data.get('proxies', [])
+    for proxy in proxies:
+        if 'name' in proxy and proxy['name']:
+            proxy['name'] = f"{prefix}_{proxy['name']}"
+        else:
+            print("No name found in the proxy")
+            return None
+    return proxies
 
 def main():
     get_subscribe_main()
-    # get_node_free()
 
 
 # 主函数入口
