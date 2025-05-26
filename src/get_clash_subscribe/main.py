@@ -48,16 +48,7 @@ def get_subscribe_main():
             f.write(clash_content_replaced)
             write_log(f"同步订阅成功", "INFO")
 
-        # node_free_proxies = get_node_free_proxies()
-        # if node_free_proxies is not None:
-        #     clash_yaml = yaml.safe_load(clash_content_replaced)
-        #     clash_content_replaced = append_proxies(clash_yaml, node_free_proxies)
-        
-        # v2ray_share_proxies = get_v2ray_share_proxies()
-        # if v2ray_share_proxies is not None:
-        #     clash_yaml = yaml.safe_load(clash_content_replaced)
-        #     clash_content_replaced = append_proxies(clash_yaml, v2ray_share_proxies)
-        extra_proxies = download_extra_subscribe()
+        extra_proxies = download_extra_proxies()
         if extra_proxies is not None:
             clash_yaml = yaml.safe_load(clash_content_replaced)
             clash_content_replaced = append_proxies(clash_yaml, extra_proxies)
@@ -118,7 +109,7 @@ def check_and_validate_file(url):
         print(e)
         return None
 
-def download_extra_subscribe():
+def download_extra_proxies():
     current_date = datetime.now()
     delta = timedelta(days=1)
     previous_date_str = (current_date - delta).strftime('%Y/%m/%Y%m%d')
