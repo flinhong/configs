@@ -40,23 +40,33 @@ def get_subscribe_main():
         return None
     
     try:
-        clash_content = clash_req.content.decode("utf-8")
+        clash_content = check_and_validate_file("https://git.io/emzclash")
         clash_content_replaced = re.sub(r"https://raw.githubusercontent.com", "https://cdn.honglin.ac.cn/statically/gh", clash_content, flags=re.IGNORECASE)
 
-        node_free_proxies = get_node_free_proxies()
-        if node_free_proxies is not None:
-            clash_yaml = yaml.safe_load(clash_content_replaced)
-            clash_content_replaced = append_proxies(clash_yaml, node_free_proxies)
-        
-        v2ray_share_proxies = get_v2ray_share_proxies()
-        if v2ray_share_proxies is not None:
-            clash_yaml = yaml.safe_load(clash_content_replaced)
-            clash_content_replaced = append_proxies(clash_yaml, v2ray_share_proxies)
-            
-        # 将更新后的内容写入文件
+         # 将更新后的内容写入文件
         with open(dirs + '/clash.yml', 'w', encoding="utf-8") as f:
             f.write(clash_content_replaced)
-            write_log(f"更新订阅成功", "INFO")
+            write_log(f"同步订阅成功", "INFO")
+
+        # node_free_proxies = get_node_free_proxies()
+        # if node_free_proxies is not None:
+        #     clash_yaml = yaml.safe_load(clash_content_replaced)
+        #     clash_content_replaced = append_proxies(clash_yaml, node_free_proxies)
+        
+        # v2ray_share_proxies = get_v2ray_share_proxies()
+        # if v2ray_share_proxies is not None:
+        #     clash_yaml = yaml.safe_load(clash_content_replaced)
+        #     clash_content_replaced = append_proxies(clash_yaml, v2ray_share_proxies)
+        extra_proxies = download_extra_subscribe()
+        if extra_proxies is not None:
+            clash_yaml = yaml.safe_load(clash_content_replaced)
+            clash_content_replaced = append_proxies(clash_yaml, extra_proxies)
+            # 将更新后的内容写入文件
+            with open(dirs + '/clash.yml', 'w', encoding="utf-8") as f:
+                f.write(clash_content_replaced)
+                write_log(f"更新订阅成功", "INFO")
+        else:
+            return
     except Exception as e:
         write_log(f"订阅解析错误", "WARN")
         return None
@@ -75,9 +85,9 @@ def append_proxies(clash_yaml, proxies):
         if group.get('name') == '♻️ 自动选择':
             # 获取原订阅的节点列表
             original_auto_proxies = group.get('proxies', [])
-            # 将原订阅的节点列表与node_free_proxies合并
-            node_free_proxy_names = [item['name'] for item in proxies]
-            original_auto_proxies.extend(node_free_proxy_names)
+            # 将原订阅的节点列表与额外节点合并
+            extra_proxy_names = [item['name'] for item in proxies]
+            original_auto_proxies.extend(extra_proxy_names)
             # 更新原订阅的节点列表
             group['proxies'] = original_auto_proxies
     # 将更新后的内容写回到YAML文件
@@ -89,7 +99,7 @@ def validate_yaml(data):
         yaml.safe_load(data)
         return True
     except yaml.YAMLError as exc:
-        print(exc)
+        print(f"Error validating YAML: {e}")
         return False
 
 def check_and_validate_file(url):
@@ -108,55 +118,41 @@ def check_and_validate_file(url):
         print(e)
         return None
 
-def get_node_free_proxies():
-    # 仅下载 nodefree 的 clash 订阅
-    # https://nodefree.githubrowcontent.com/2025/05/20250521.yaml
-    base_url = "https://nodefree.githubrowcontent.com/"
+def download_extra_subscribe():
     current_date = datetime.now()
-    current_date_str = current_date.strftime('%Y/%m/%Y%m%d')
-    file_url = f"{base_url}{current_date_str}.yaml"
+    delta = timedelta(days=1)
+    previous_date_str = (current_date - delta).strftime('%Y/%m/%Y%m%d')
 
-    # 如果当天的订阅获取失败，则获取前一天的订阅
-    data_today = check_and_validate_file(file_url)
-    if data_today is not None:
-        proxies = get_extra_proxies(data_today, "NF")
-        return proxies
-    else:
-        delta = timedelta(days=1)
-        date_str = (current_date - delta).strftime('%Y/%m/%Y%m%d')
-        new_url = f"{base_url}{date_str}.yaml"
-        data_previous = check_and_validate_file(new_url)
-        if data_previous is not None:
-            proxies = get_extra_proxies(data_previous, "NF")
-            return proxies
-        else:
-            print(f"获取 nodefree 订阅失败")
-            return None
+    urls = [
+        f"https://v2rayshare.githubrowcontent.com/{previous_date_str}.yaml",
+        f"https://nodefree.githubrowcontent.com/{previous_date_str}.yaml",
+        "https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml",
+        "https://raw.githubusercontent.com/ts-sf/fly/main/clash"
+    ]
+    all_proxies = []
 
-def get_v2ray_share_proxies():
-    # 仅下载 v2rayshare 的 clash 订阅
-    # https://v2rayshare.githubrowcontent.com/2025/05/20250523.yaml
-    base_url = "https://v2rayshare.githubrowcontent.com/"
-    current_date = datetime.now()
-    current_date_str = current_date.strftime('%Y/%m/%Y%m%d')
-    file_url = f"{base_url}{current_date_str}.yaml"
+    for file_url in urls:
+        try:
+            data = check_and_validate_file(file_url)
+            if data is not None:
+                proxies = get_extra_proxies(data, "EX")
+                all_proxies.extend(proxies)
+            
+        except Exception as e:
+            print(f"Error downloading or processing {file_url}: {e}")
 
-    # 如果当天的订阅获取失败，则获取前一天的订阅
-    data_today = check_and_validate_file(file_url)
-    if data_today is not None:
-        proxies = get_extra_proxies(data_today, "VS")
-        return proxies
-    else:
-        delta = timedelta(days=1)
-        date_str = (current_date - delta).strftime('%Y/%m/%Y%m%d')
-        new_url = f"{base_url}{date_str}.yaml"
-        data_previous = check_and_validate_file(new_url)
-        if data_previous is not None:
-            proxies = get_extra_proxies(data_previous, "VS")
-            return proxies
-        else:
-            print(f"获取 v2rayshare 订阅失败")
-            return None
+    unique_proxies = remove_duplicate_proxies(all_proxies)
+    return unique_proxies
+
+def remove_duplicate_proxies(proxies):
+    seen_servers = set()
+    unique_proxies = []
+    for proxy in proxies:
+        server = proxy.get('server')
+        if server and server not in seen_servers:
+            unique_proxies.append(proxy)
+            seen_servers.add(server)
+    return unique_proxies
 
 def get_extra_proxies(data, prefix):
     yaml_data = yaml.safe_load(data)
