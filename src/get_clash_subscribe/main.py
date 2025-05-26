@@ -61,10 +61,10 @@ def get_subscribe_main():
         if extra_proxies is not None:
             clash_yaml = yaml.safe_load(clash_content_replaced)
             clash_content_replaced = append_proxies(clash_yaml, extra_proxies)
-            # 将更新后的内容写入文件
+            # 将合并后的内容写入文件
             with open(dirs + '/clash.yml', 'w', encoding="utf-8") as f:
                 f.write(clash_content_replaced)
-                write_log(f"更新订阅成功", "INFO")
+                write_log(f"合并订阅成功", "INFO")
         else:
             return
     except Exception as e:
