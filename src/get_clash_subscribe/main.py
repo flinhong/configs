@@ -1,11 +1,7 @@
 import os
 import re
-import smtplib
-import sys
 import time
 from datetime import datetime, timedelta
-from email.mime.text import MIMEText
-from email.utils import formataddr
 
 import requests
 import yaml
@@ -119,7 +115,7 @@ def download_extra_proxies():
         f"https://free.datiya.com/uploads/{previous_date_str_short}-clash.yaml",
         f"https://v2rayshare.githubrowcontent.com/{previous_date_str}.yaml",
         f"https://nodefree.githubrowcontent.com/{previous_date_str}.yaml",
-        # "https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml",
+        "https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml",
         "https://raw.githubusercontent.com/ts-sf/fly/main/clash",
     ]
     all_proxies = []
@@ -150,7 +146,7 @@ def remove_duplicate_proxies(proxies):
 def get_extra_proxies(data, prefix):
     yaml_data = yaml.safe_load(data)
     proxies = yaml_data.get('proxies', [])
-    filter_string = ['未知', 'tg', 'TG', 'CN', 'TW']
+    filter_string = ['未知', 'tg', 'TG', 'CN_speed', 'KB/s']
     filtered_proxies = [proxy for proxy in proxies if not any(str in proxy['name'] for str in filter_string)]
     for proxy in filtered_proxies:
         if 'name' in proxy and proxy['name']:
