@@ -290,22 +290,6 @@ proxies:
     headers:
       host: ustoucjjnid18sj6us.lovebaipiao.com
     path: /
-- alterId: 2
-  cipher: auto
-  ip-version: dual
-  name: EX_🇨🇳_CN_中国->🇺🇸_US_美国_1
-  network: ws
-  port: 30805
-  server: v5.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v5.heduian.link
-    path: /oooo
 - cipher: aes-256-cfb
   ip-version: dual
   name: EX_🇺🇸_US_美国_1
@@ -335,30 +319,6 @@ proxies:
     headers:
       host: EEeEee4.hUAngSHANG2030.dPdNS.org
     path: /ptGwaGzcA4KNAXX
-- ip-version: dual
-  name: EX_🇨🇳_CN_中国->🇺🇸_US_美国_2
-  password: b55123f4-0ba2-11f0-a2ef-f23c91cfbbc9
-  port: 15229
-  server: d700ff89-swvls0-t5w83q-1slpx.cu.plebai.net
-  sni: d700ff89-swvls0-t5w83q-1slpx.cu.plebai.net
-  type: trojan
-  udp: true
-- alterId: 2
-  cipher: auto
-  ip-version: dual
-  name: EX_🇨🇳_CN_中国->🇺🇸_US_美国_3
-  network: ws
-  port: 30829
-  server: v29.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
 - ip-version: dual
   name: EX_🇺🇸_US_美国_3
   password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
@@ -1938,20 +1898,6 @@ proxies:
   type: vless
   udp: true
   uuid: 2558c819-1363-4859-8fb9-f8cb104d49d2
-- cipher: chacha20-ietf-poly1305
-  name: EX_TW_speednode_0119
-  password: 937f6b6168b6
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: wt8v1.kvote.cn
-    mode: websocket
-    mux: true
-    path: /oqhygtklyhwi
-    tls: true
-  port: 443
-  server: 103.137.62.194
-  type: ss
-  udp: true
 - name: EX_US_speednode_0120
   network: ws
   port: 8880
@@ -2019,15 +1965,6 @@ proxies:
   password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
   port: 21114
   server: 154.83.90.11
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: EX_🇹🇼TW台湾
-  password: 288b3541-3a23-49a8-b1eb-5b91362c7a24
-  port: 31243
-  server: freem.vidalith.com
   skip-cert-verify: true
   tls: true
   type: ss
@@ -2101,16 +2038,6 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: EX_🇨🇳CN中国
-  password: Aimer
-  port: 2053
-  server: 154.197.64.166
-  skip-cert-verify: true
-  sni: epmw.ambercc.filegear-sg.me
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
   name: EX_US8
   network: ws
   password: 29e0206a-2cef-4c8d-aa4b-dd7a43748167
@@ -2179,6 +2106,15 @@ proxies:
   password: XKFKl2rULjIp74
   port: 8008
   server: 38.121.43.6
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: EX_🇭🇰HK香港
+  password: 288b3541-3a23-49a8-b1eb-5b91362c7a24
+  port: 31143
+  server: freem.vidalith.com
   skip-cert-verify: true
   tls: true
   type: ss
@@ -2346,15 +2282,6 @@ proxies:
   tls: true
   type: ss
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: EX_TW
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 60.249.35.37
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   name: EX_US32
   password: Aimer
   port: 2096
@@ -2400,12 +2327,9 @@ proxy-groups:
   - EX_🇻🇳 越南
   - EX_🇰🇷_KR_韩国
   - EX_🇩🇰_DK_丹麦->🇺🇸_US_美国
-  - EX_🇨🇳_CN_中国->🇺🇸_US_美国_1
   - EX_🇺🇸_US_美国_1
   - EX_🇷🇺_RU_俄罗斯
   - EX_🇺🇸_US_美国_2
-  - EX_🇨🇳_CN_中国->🇺🇸_US_美国_2
-  - EX_🇨🇳_CN_中国->🇺🇸_US_美国_3
   - EX_🇺🇸_US_美国_3
   - EX_AE_speednode_0001
   - EX_AE_speednode_0002
@@ -2519,14 +2443,12 @@ proxy-groups:
   - EX_RU_speednode_0116
   - EX_SI_speednode_0117
   - EX_TR_speednode_0118
-  - EX_TW_speednode_0119
   - EX_US_speednode_0120
   - EX_US_speednode_0121
   - EX_US_speednode_0122
   - EX_🇺🇸US美国
   - EX_US 209.4MB/s
   - EX_US2
-  - EX_🇹🇼TW台湾
   - EX_🇳🇱NL荷兰
   - EX_US3
   - EX_HK
@@ -2534,7 +2456,6 @@ proxy-groups:
   - EX_US5
   - EX_🇵🇱PL波兰
   - EX_US6
-  - EX_🇨🇳CN中国
   - EX_US8
   - EX_US9
   - EX_🇯🇵JP日本
@@ -2542,6 +2463,7 @@ proxy-groups:
   - EX_US11
   - EX_US12
   - EX_US13 1.9MB/s
+  - EX_🇭🇰HK香港
   - EX_US15
   - EX_US16
   - EX_US17 1.9MB/s
@@ -2559,7 +2481,6 @@ proxy-groups:
   - EX_US28
   - EX_US29
   - EX_US31 29.7MB/s
-  - EX_TW
   - EX_US32
   tolerance: 50
   type: url-test

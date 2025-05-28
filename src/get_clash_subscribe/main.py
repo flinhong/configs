@@ -150,7 +150,7 @@ def remove_duplicate_proxies(proxies):
 def get_extra_proxies(data, prefix):
     yaml_data = yaml.safe_load(data)
     proxies = yaml_data.get('proxies', [])
-    filter_string = ['未知', 'tg', 'TG']
+    filter_string = ['未知', 'tg', 'TG', 'CN', 'TW']
     filtered_proxies = [proxy for proxy in proxies if not any(str in proxy['name'] for str in filter_string)]
     for proxy in filtered_proxies:
         if 'name' in proxy and proxy['name']:
