@@ -109,11 +109,11 @@ def check_and_validate_file(url):
 def download_extra_proxies():
     current_date = datetime.now()
     current_date_str = (current_date).strftime('%Y/%m/%Y%m%d')
-    current_date_str_short = (current_date).strftime('%Y%m%d')
+    # current_date_str_short = (current_date).strftime('%Y%m%d')
 
     urls = [
-        "https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml",
-        "https://raw.githubusercontent.com/NiREvil/vless/main/sub/clash-meta-wg.yml",
+        # "https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml",
+        # "https://raw.githubusercontent.com/NiREvil/vless/main/sub/clash-meta-wg.yml",
         # "https://raw.githubusercontent.com/ts-sf/fly/main/clash",
         # "https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/clash-meta/actives_under_1000ms.yaml",
         # "https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/sub_merge_yaml.yml",
