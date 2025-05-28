@@ -114,9 +114,9 @@ def download_extra_proxies():
         # "https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml",
         "https://raw.githubusercontent.com/NiREvil/vless/main/sub/clash-meta-wg.yml",
         # "https://raw.githubusercontent.com/ts-sf/fly/main/clash",
-        "https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/clash-meta/actives_under_1000ms.yaml",
+        # "https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/clash-meta/actives_under_1000ms.yaml",
         # "https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/sub_merge_yaml.yml",
-        # f"https://free.datiya.com/uploads/{current_date_str_short}-clash.yaml",
+        f"https://free.datiya.com/uploads/{current_date_str_short}-clash.yaml",
         f"https://v2rayshare.githubrowcontent.com/{current_date_str}.yaml",
         f"https://nodefree.githubrowcontent.com/{current_date_str}.yaml"
     ]
