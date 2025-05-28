@@ -119,7 +119,7 @@ def download_extra_proxies():
         f"https://free.datiya.com/uploads/{previous_date_str_short}-clash.yaml",
         f"https://v2rayshare.githubrowcontent.com/{previous_date_str}.yaml",
         f"https://nodefree.githubrowcontent.com/{previous_date_str}.yaml",
-        # "https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml",
+        "https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml",
         "https://raw.githubusercontent.com/ts-sf/fly/main/clash",
     ]
     all_proxies = []
@@ -150,13 +150,15 @@ def remove_duplicate_proxies(proxies):
 def get_extra_proxies(data, prefix):
     yaml_data = yaml.safe_load(data)
     proxies = yaml_data.get('proxies', [])
-    for proxy in proxies:
+    filter_string = ['未知', 'tg', 'TG']
+    filtered_proxies = [proxy for proxy in proxies if not any(str in proxy['name'] for str in filter_string)]
+    for proxy in filtered_proxies:
         if 'name' in proxy and proxy['name']:
             proxy['name'] = f"{prefix}_{proxy['name']}"
         else:
             print("No name found in the proxy")
             return None
-    return proxies
+    return filtered_proxies
 
 def main():
     get_subscribe_main()
