@@ -111,7 +111,7 @@ def check_and_validate_file(url):
 
 def download_extra_proxies():
     current_date = datetime.now()
-    delta = timedelta(days=1)
+    delta = timedelta(days=0)
     previous_date_str = (current_date - delta).strftime('%Y/%m/%Y%m%d')
     previous_date_str_short = (current_date - delta).strftime('%Y%m%d')
 
@@ -119,7 +119,7 @@ def download_extra_proxies():
         f"https://free.datiya.com/uploads/{previous_date_str_short}-clash.yaml",
         f"https://v2rayshare.githubrowcontent.com/{previous_date_str}.yaml",
         f"https://nodefree.githubrowcontent.com/{previous_date_str}.yaml",
-        "https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml",
+        # "https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml",
         "https://raw.githubusercontent.com/ts-sf/fly/main/clash",
     ]
     all_proxies = []
