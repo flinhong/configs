@@ -38,6 +38,7 @@ def get_subscribe_main():
     try:
         clash_content = check_and_validate_file("https://git.io/emzclash")
         clash_content_replaced = re.sub(r"https://raw.githubusercontent.com", "https://cdn.honglin.ac.cn/statically/gh", clash_content, flags=re.IGNORECASE)
+        clash_content_replaced = re.sub(r"http://www.gstatic.com/generate_204", "https://www.gstatic.com/generate_204", clash_content_replaced, flags=re.IGNORECASE)
 
          # 将更新后的内容写入文件
         with open(dirs + '/clash.yml', 'w', encoding="utf-8") as f:
@@ -111,12 +112,12 @@ def download_extra_proxies():
     current_date_str_short = (current_date).strftime('%Y%m%d')
 
     urls = [
-        # "https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml",
+        "https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml",
         "https://raw.githubusercontent.com/NiREvil/vless/main/sub/clash-meta-wg.yml",
         # "https://raw.githubusercontent.com/ts-sf/fly/main/clash",
         # "https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/clash-meta/actives_under_1000ms.yaml",
         # "https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/sub_merge_yaml.yml",
-        f"https://free.datiya.com/uploads/{current_date_str_short}-clash.yaml",
+        # f"https://free.datiya.com/uploads/{current_date_str_short}-clash.yaml",
         f"https://v2rayshare.githubrowcontent.com/{current_date_str}.yaml",
         f"https://nodefree.githubrowcontent.com/{current_date_str}.yaml"
     ]
@@ -150,7 +151,7 @@ def get_extra_proxies(data, prefix):
     proxies = yaml_data.get('proxies', [])
     filter_string = ['未知', 'tg', 'TG', 'CN_speed', 'HK_speed', 'KB/s']
     filtered_proxies = [proxy for proxy in proxies if not any(str in proxy['name'] for str in filter_string)]
-    filtered_proxies = [proxy for proxy in filtered_proxies if not proxy['type']=='ss' ]
+    # filtered_proxies = [proxy for proxy in filtered_proxies if not proxy['type']=='ss' ]
     for proxy in filtered_proxies:
         if 'name' in proxy and proxy['name']:
             proxy['name'] = f"{prefix}_{proxy['name']}"
