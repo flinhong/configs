@@ -57,30 +57,6 @@ proxies:
   port: 13355
   server: 195.154.54.171
   type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: EX_🇭🇰 香港
-  password: ENYGONDU94UW1G6X
-  port: 15010
-  server: 8tv68qhq.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: EX_🇭🇰 香港2
-  password: 91a41f4e02dc
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: hkkh11v1.xpmc.cc
-    mode: websocket
-    mux: true
-    path: /utvbnrzejpmt
-    skip-cert-verify: false
-    tls: true
-  port: 24043
-  server: hkkh11v1.xpmc.cc
-  tfo: false
-  type: ss
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -157,50 +133,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: EX_🇯🇵 日本
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202505251086349-pXOu6bcj2Z.download.microsoft.com
-    mode: http
-  port: 8766
-  server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: EX_🇯🇵 日本2
-  password: b87e23b41338
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp1v9.8vote.cn
-    mode: websocket
-    mux: true
-    path: /cbexboxzv
-    skip-cert-verify: false
-    tls: true
-  port: 443
-  server: 103.140.136.76
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: EX_🇯🇵 日本3
-  password: 0fbed6c9-0fb4-4ec3-8582-f569f8d773d5
-  port: 23335
-  server: 120.233.147.197
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: EX_🇯🇵 日本4
-  password: HO86LQ8KH31JNMBQ
-  port: 18010
-  server: ti3hyra4.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
@@ -260,22 +192,6 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: EX_🇻🇳 越南
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.20
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: EX_🇰🇷_KR_韩国
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.16.212
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   ip-version: dual
@@ -306,22 +222,6 @@ proxies:
     headers:
       host: v5.heduian.link
     path: /oooo
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: EX_🇺🇸_US_美国_1
-  password: awsps0501
-  port: 443
-  server: 34.215.48.231
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: EX_🇷🇺_RU_俄罗斯
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.231.233.112
-  type: ss
-  udp: true
 - ip-version: dual
   name: EX_🇺🇸_US_美国_2
   network: ws
@@ -2490,20 +2390,6 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: EX_TW_speednode_0183
-  password: 937f6b6168b6
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: wt8v1.kvote.cn
-    mode: websocket
-    mux: true
-    path: /oqhygtklyhwi
-    tls: true
-  port: 443
-  server: 103.137.62.194
-  type: ss
-  udp: true
 - name: EX_US_speednode_0184
   network: ws
   port: 80
@@ -2642,15 +2528,6 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: EX_🇻🇳VN越南
-  password: 97e2012b-27ed-4196-87ea-ddff30ccbdaa
-  port: 36641
-  server: freea.glyphara.com
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   name: EX_US2
   password: Aimer
   port: 80
@@ -2661,42 +2538,6 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  cipher: aes-256-gcm
-  name: EX_US3 2.0MB/s
-  password: TEzjfAYq2IjtuoS
-  port: 6697
-  server: 38.121.43.71
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: EX_HK
-  password: MHZUEOX3KBXAV09K
-  port: 15007
-  server: 156.245.190.16
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: EX_US4
-  password: 78be06ea-06fb-479b-a6f1-929b7c01d1ea
-  port: 51105
-  server: 154.83.90.11
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: EX_TW
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 60.249.35.94
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   cipher: auto
   name: EX_US5
   network: tcp
@@ -2706,15 +2547,6 @@ proxies:
   tls: true
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: EX_TW2
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 59.125.75.115
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 0
   name: EX_US6
   password: Aimer
@@ -2736,15 +2568,6 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: EX_🇹🇼TW台湾
-  password: d0a9fabc-5bcd-4b02-8f9a-ce596d17f594
-  port: 31245
-  server: freem.vidalith.com
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   name: EX_US9
   password: Aimer
   port: 2096
@@ -2754,15 +2577,6 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: EX_US10 7.0MB/s
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 64.74.163.218
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 0
   name: EX_US12
   network: tcp
@@ -2774,15 +2588,6 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: EX_US14 2.0MB/s
-  password: RexnBgU7EV5ADxG
-  port: 7001
-  server: 38.75.136.28
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 0
   name: EX_US15
   network: tcp
@@ -2806,15 +2611,6 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: EX_TW3
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  port: 2377
-  server: 61.216.165.233
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   name: EX_US17
   network: ws
   password: Aimer
@@ -2836,15 +2632,6 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: EX_US19 1.8MB/s
-  password: lGqs95QkFHo2NV
-  port: 5498
-  server: 69.50.93.80
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 0
   name: EX_US20
   password: Aimer
@@ -2888,15 +2675,6 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  cipher: aes-128-gcm
-  name: EX_US24 44.7MB/s
-  password: shadowsocks
-  port: 443
-  server: 212.102.47.131
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
   name: EX_US25
   password: Aimer
   port: 443
@@ -2916,15 +2694,6 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: EX_US27
-  password: Y6R9pAtvxxzmGC
-  port: 3306
-  server: 38.107.226.49
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 0
   name: EX_US28
   password: Aimer
@@ -2963,28 +2732,18 @@ proxy-groups:
   - 🇨🇳_CN_中国->🇺🇸_US_美国
   - 🇷🇺_RU_俄罗斯
   - 🇫🇷_FR_法国->🇺🇸_US_美国
-  - EX_🇭🇰 香港
-  - EX_🇭🇰 香港2
   - EX_🇭🇰 香港3
   - EX_🇭🇰 香港4
   - EX_🇭🇰 香港5
   - EX_🇭🇰 香港6
   - EX_🇭🇰 香港8
   - EX_🇭🇰 香港9
-  - EX_🇯🇵 日本
-  - EX_🇯🇵 日本2
-  - EX_🇯🇵 日本3
-  - EX_🇯🇵 日本4
   - EX_🇸🇬 新加坡
   - EX_🇺🇸 美国
   - EX_🇺🇸 美国4
   - EX_🇺🇸 美国5
-  - EX_🇻🇳 越南
-  - EX_🇰🇷_KR_韩国
   - EX_🇩🇰_DK_丹麦->🇺🇸_US_美国
   - EX_🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - EX_🇺🇸_US_美国_1
-  - EX_🇷🇺_RU_俄罗斯
   - EX_🇺🇸_US_美国_2
   - EX_🇨🇳_CN_中国->🇺🇸_US_美国_2
   - EX_🇨🇳_CN_中国->🇺🇸_US_美国_3
@@ -3140,7 +2899,6 @@ proxy-groups:
   - EX_SG_speednode_0180
   - EX_SG_speednode_0181
   - EX_SI_speednode_0182
-  - EX_TW_speednode_0183
   - EX_US_speednode_0184
   - EX_US_speednode_0186
   - EX_US_speednode_0187
@@ -3151,35 +2909,22 @@ proxy-groups:
   - EX_US_speednode_0192
   - EX_ZA_speednode_0193
   - EX_US
-  - EX_🇻🇳VN越南
   - EX_US2
-  - EX_US3 2.0MB/s
-  - EX_HK
-  - EX_US4
-  - EX_TW
   - EX_US5
-  - EX_TW2
   - EX_US6
   - EX_US8
-  - EX_🇹🇼TW台湾
   - EX_US9
-  - EX_US10 7.0MB/s
   - EX_US12
-  - EX_US14 2.0MB/s
   - EX_US15
   - EX_US16
-  - EX_TW3
   - EX_US17
   - EX_US18
-  - EX_US19 1.8MB/s
   - EX_US20
   - EX_US21
   - EX_US22
   - EX_US23
-  - EX_US24 44.7MB/s
   - EX_US25
   - EX_US26
-  - EX_US27
   - EX_US28
   - EX_US29
   tolerance: 50

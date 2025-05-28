@@ -47,10 +47,10 @@ def get_subscribe_main():
         extra_proxies = download_extra_proxies()
         if extra_proxies is not None:
             clash_yaml = yaml.safe_load(clash_content_replaced)
-            clash_content_replaced = append_proxies(clash_yaml, extra_proxies)
+            clash_content_updated = append_proxies(clash_yaml, extra_proxies)
             # 将合并后的内容写入文件
             with open(dirs + '/clash.yml', 'w', encoding="utf-8") as f:
-                f.write(clash_content_replaced)
+                f.write(clash_content_updated)
                 write_log(f"合并订阅成功", "INFO")
         else:
             return
@@ -148,6 +148,7 @@ def get_extra_proxies(data, prefix):
     proxies = yaml_data.get('proxies', [])
     filter_string = ['未知', 'tg', 'TG', 'CN_speed', 'KB/s']
     filtered_proxies = [proxy for proxy in proxies if not any(str in proxy['name'] for str in filter_string)]
+    filtered_proxies = [proxy for proxy in filtered_proxies if not proxy['type']=='ss' ]
     for proxy in filtered_proxies:
         if 'name' in proxy and proxy['name']:
             proxy['name'] = f"{prefix}_{proxy['name']}"
