@@ -119,7 +119,7 @@ def download_extra_proxies():
         f"https://free.datiya.com/uploads/{previous_date_str_short}-clash.yaml",
         f"https://v2rayshare.githubrowcontent.com/{previous_date_str}.yaml",
         f"https://nodefree.githubrowcontent.com/{previous_date_str}.yaml",
-        "https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml",
+        # "https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml",
         "https://raw.githubusercontent.com/ts-sf/fly/main/clash",
     ]
     all_proxies = []
