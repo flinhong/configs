@@ -112,7 +112,7 @@ def download_extra_proxies():
     # current_date_str_short = (current_date).strftime('%Y%m%d')
 
     urls = [
-        # "https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml",
+        "https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml",
         # "https://raw.githubusercontent.com/NiREvil/vless/main/sub/clash-meta-wg.yml",
         # "https://raw.githubusercontent.com/ts-sf/fly/main/clash",
         # "https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/clash-meta/actives_under_1000ms.yaml",
