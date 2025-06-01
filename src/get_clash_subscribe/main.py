@@ -39,8 +39,7 @@ def get_subscribe_main():
         clash_content = check_and_validate_file("https://git.io/emzclash")
         clash_content_replaced = re.sub(r"https://raw.githubusercontent.com", "https://cdn.honglin.ac.cn/statically/gh", clash_content, flags=re.IGNORECASE)
         clash_content_replaced = re.sub(r"http://www.gstatic.com/generate_204", "https://www.gstatic.com/generate_204", clash_content_replaced, flags=re.IGNORECASE)
-        clash_content_replaced = re.sub(r"url-test", "load-balance", clash_content_replaced, flags=re.IGNORECASE)
-        clash_content_replaced = re.sub(r"tolerance: 50", "# tolerance: 10", clash_content_replaced, flags=re.IGNORECASE)
+        clash_content_replaced = re.sub(r"tolerance: 50", "tolerance: 10", clash_content_replaced, flags=re.IGNORECASE)
 
          # 将更新后的内容写入文件
         with open(dirs + '/clash.yml', 'w', encoding="utf-8") as f:
@@ -69,19 +68,43 @@ def append_proxies(clash_yaml, proxies):
     # 更新原订阅的节点列表
     clash_yaml['proxies'] = original_proxies
 
-    # 更新[♻️ 自动选择]列表
+    # # 更新[♻️ 自动选择]列表
+    # original_groups = clash_yaml.get('proxy-groups', [])
+    # for group in original_groups:
+    #     if group.get('name') == '♻️ 自动选择':
+    #         # 获取原订阅的节点列表
+    #         original_auto_proxies = group.get('proxies', [])
+    #         # 将原订阅的节点列表与额外节点合并
+    #         extra_proxy_names = [item['name'] for item in proxies]
+    #         original_auto_proxies.extend(extra_proxy_names)
+    #         # 更新原订阅的节点列表
+    #         group['proxies'] = original_auto_proxies
+    # # 将更新后的内容写回到YAML文件
+    # clash_yaml_replaced = yaml.dump(clash_yaml, default_flow_style=False, allow_unicode=True)
+    # return clash_yaml_replaced
+
+    # 追加[🍃 负载均衡]列表
     original_groups = clash_yaml.get('proxy-groups', [])
+    original_groups.append({
+        'name': "🍃 负载均衡",
+        'type': "load-balance",
+        'url': "https://www.gstatic.com/generate_204",
+        'interval': 300,
+        'strategy': "round-robin",
+        'proxies': [item['name'] for item in proxies]
+    })
+    
     for group in original_groups:
         if group.get('name') == '♻️ 自动选择':
             # 获取原订阅的节点列表
             original_auto_proxies = group.get('proxies', [])
-            # 将原订阅的节点列表与额外节点合并
-            extra_proxy_names = [item['name'] for item in proxies]
-            original_auto_proxies.extend(extra_proxy_names)
+            # 将负载均衡添加到自动选择
+            # original_auto_proxies.append("🍃 负载均衡")
+            original_auto_proxies.insert(0, "🍃 负载均衡")
             # 更新原订阅的节点列表
             group['proxies'] = original_auto_proxies
-    # 将更新后的内容写回到YAML文件
-    clash_yaml_replaced = yaml.dump(clash_yaml, default_flow_style=False, allow_unicode=True)
+
+    clash_yaml_replaced = yaml.dump(clash_yaml, default_flow_style=False, allow_unicode=True, sort_keys=False)
     return clash_yaml_replaced
 
 def validate_yaml(data):
