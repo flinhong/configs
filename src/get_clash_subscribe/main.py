@@ -88,8 +88,8 @@ def append_proxies(clash_yaml, proxies):
     original_groups.append({
         'name': "🪐 负载均衡",
         'type': "load-balance",
-        'url': "https://www.gstatic.com/generate_204",
-        'interval': 300,
+        'url': "https://client3.google.com/generate_204",
+        'interval': 240,
         'strategy': "round-robin",
         'proxies': [item['name'] for item in proxies]
     })
@@ -103,8 +103,8 @@ def append_proxies(clash_yaml, proxies):
             original_auto_proxies.insert(0, "🪐 负载均衡")
             # 更新原订阅的节点列表
             group['proxies'] = original_auto_proxies
-            group['url'] = "https://www.gstatic.com/generate_204"
-            group['interval'] = 60
+            group['url'] = "https://www.facebook.com/common/referer_frame.php"
+            group['interval'] = 120
             group['tolerance'] = 10
 
     clash_yaml_replaced = yaml.dump(clash_yaml, default_flow_style=False, allow_unicode=True, sort_keys=False)
