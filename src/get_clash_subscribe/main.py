@@ -39,7 +39,8 @@ def get_subscribe_main():
         clash_content = check_and_validate_file("https://git.io/emzclash")
         clash_content_replaced = re.sub(r"https://raw.githubusercontent.com", "https://cdn.honglin.ac.cn/statically/gh", clash_content, flags=re.IGNORECASE)
         clash_content_replaced = re.sub(r"http://www.gstatic.com/generate_204", "https://www.gstatic.com/generate_204", clash_content_replaced, flags=re.IGNORECASE)
-        clash_content_replaced = re.sub(r"tolerance: 50", "tolerance: 10", clash_content_replaced, flags=re.IGNORECASE)
+        clash_content_replaced = re.sub(r"url-test", "load-balance", clash_content_replaced, flags=re.IGNORECASE)
+        clash_content_replaced = re.sub(r"tolerance: 50", "# tolerance: 10", clash_content_replaced, flags=re.IGNORECASE)
 
          # 将更新后的内容写入文件
         with open(dirs + '/clash.yml', 'w', encoding="utf-8") as f:
