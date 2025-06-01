@@ -2660,6 +2660,270 @@ proxies:
     headers:
       Host: nl1n.yfjc.sbs
   udp: true
+- name: EX_GER-DIALER-01
+  type: wireguard
+  ip: 172.16.0.2/32
+  ipv6: 2606:4700:110:8079:6392:9d73:67b9:50e3/128
+  private-key: YCaGMCjkp5eKqvb315oE6WjNVuEuqhmdCxExbOsb4EU=
+  server: 162.159.192.138
+  port: 7281
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  allowed-ips:
+  - 0.0.0.0/0
+  - ::/0
+  reserved: 8X9K
+  udp: true
+  mtu: 1280
+  dialer-proxy: IRN-ENTRY-01
+- name: EX_IRN-ENTRY-01
+  type: wireguard
+  ip: 172.16.0.2/32
+  ipv6: 2606:4700:110:844d:65a8:d69d:d583:4820/128
+  private-key: WNUNc+5SWVVzsVQ1Qo9FWNKpWnDB6Z4S7NnChN0b818=
+  server: 188.114.97.208
+  port: 864
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  allowed-ips:
+  - 0.0.0.0/0
+  - ::/0
+  reserved: zMh9
+  udp: true
+  mtu: 1280
+  amnezia-wg-option:
+    jc: '4'
+    jmin: '40'
+    jmax: '70'
+- name: EX_GER-DIALER-02
+  type: wireguard
+  ip: 172.16.0.2/32
+  ipv6: 2606:4700:110:8079:6392:9d73:67b9:50e3/128
+  private-key: YCaGMCjkp5eKqvb315oE6WjNVuEuqhmdCxExbOsb4EU=
+  server: 162.159.193.2
+  port: 500
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  allowed-ips:
+  - 0.0.0.0/0
+  - ::/0
+  reserved: 8X9K
+  udp: true
+  mtu: 1280
+  dialer-proxy: IRN-ENTRY-02
+- name: EX_IRN-ENTRY-02
+  type: wireguard
+  ip: 172.16.0.2/32
+  ipv6: 2606:4700:110:844d:65a8:d69d:d583:4820/128
+  private-key: WNUNc+5SWVVzsVQ1Qo9FWNKpWnDB6Z4S7NnChN0b818=
+  server: 162.159.192.80
+  port: 5956
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  allowed-ips:
+  - 0.0.0.0/0
+  - ::/0
+  reserved: zMh9
+  udp: true
+  mtu: 1280
+  amnezia-wg-option:
+    jc: '4'
+    jmin: '40'
+    jmax: '70'
+- name: EX_GER-DIALER-03
+  type: wireguard
+  ip: 172.16.0.2/32
+  ipv6: 2606:4700:110:8079:6392:9d73:67b9:50e3/128
+  private-key: YCaGMCjkp5eKqvb315oE6WjNVuEuqhmdCxExbOsb4EU=
+  server: 188.114.98.163
+  port: 903
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  allowed-ips:
+  - 0.0.0.0/0
+  - ::/0
+  reserved: 8X9K
+  udp: true
+  mtu: 1280
+  dialer-proxy: IRN-ENTRY-03
+- name: EX_IRN-ENTRY-03
+  type: wireguard
+  ip: 172.16.0.2/32
+  ipv6: 2606:4700:110:844d:65a8:d69d:d583:4820/128
+  private-key: WNUNc+5SWVVzsVQ1Qo9FWNKpWnDB6Z4S7NnChN0b818=
+  server: 188.114.97.29
+  port: 1387
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  allowed-ips:
+  - 0.0.0.0/0
+  - ::/0
+  reserved: zMh9
+  udp: true
+  mtu: 1280
+  amnezia-wg-option:
+    jc: '4'
+    jmin: '40'
+    jmax: '70'
+- name: EX_GER-DIALER-04
+  type: wireguard
+  ip: 172.16.0.2/32
+  ipv6: 2606:4700:110:8079:6392:9d73:67b9:50e3/128
+  private-key: YCaGMCjkp5eKqvb315oE6WjNVuEuqhmdCxExbOsb4EU=
+  server: 162.159.195.27
+  port: 1018
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  allowed-ips:
+  - 0.0.0.0/0
+  - ::/0
+  reserved: 8X9K
+  udp: true
+  mtu: 1280
+  dialer-proxy: IRN-ENTRY-04
+- name: EX_IRN-ENTRY-04
+  type: wireguard
+  ip: 172.16.0.2/32
+  ipv6: 2606:4700:110:844d:65a8:d69d:d583:4820/128
+  private-key: WNUNc+5SWVVzsVQ1Qo9FWNKpWnDB6Z4S7NnChN0b818=
+  server: 188.114.98.9
+  port: 2506
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  allowed-ips:
+  - 0.0.0.0/0
+  - ::/0
+  reserved: zMh9
+  udp: true
+  mtu: 1280
+  amnezia-wg-option:
+    jc: '4'
+    jmin: '40'
+    jmax: '70'
+- name: EX_GER-DIALER-05
+  type: wireguard
+  ip: 172.16.0.2/32
+  ipv6: 2606:4700:110:8079:6392:9d73:67b9:50e3/128
+  private-key: YCaGMCjkp5eKqvb315oE6WjNVuEuqhmdCxExbOsb4EU=
+  server: 188.114.98.221
+  port: 8319
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  allowed-ips:
+  - 0.0.0.0/0
+  - ::/0
+  reserved: 8X9K
+  udp: true
+  mtu: 1280
+  dialer-proxy: IRN-ENTRY-05
+- name: EX_IRN-ENTRY-05
+  type: wireguard
+  ip: 172.16.0.2/32
+  ipv6: 2606:4700:110:844d:65a8:d69d:d583:4820/128
+  private-key: WNUNc+5SWVVzsVQ1Qo9FWNKpWnDB6Z4S7NnChN0b818=
+  server: 188.114.96.98
+  port: 880
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  allowed-ips:
+  - 0.0.0.0/0
+  - ::/0
+  reserved: zMh9
+  udp: true
+  mtu: 1280
+  amnezia-wg-option:
+    jc: '4'
+    jmin: '40'
+    jmax: '70'
+- name: EX_GER-DIALER-06
+  type: wireguard
+  ip: 172.16.0.2/32
+  ipv6: 2606:4700:110:8079:6392:9d73:67b9:50e3/128
+  private-key: YCaGMCjkp5eKqvb315oE6WjNVuEuqhmdCxExbOsb4EU=
+  server: 188.114.99.80
+  port: 987
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  allowed-ips:
+  - 0.0.0.0/0
+  - ::/0
+  reserved: 8X9K
+  udp: true
+  mtu: 1280
+  dialer-proxy: IRN-ENTRY-06
+- name: EX_IRN-ENTRY-06
+  type: wireguard
+  ip: 172.16.0.2/32
+  ipv6: 2606:4700:110:844d:65a8:d69d:d583:4820/128
+  private-key: WNUNc+5SWVVzsVQ1Qo9FWNKpWnDB6Z4S7NnChN0b818=
+  server: 162.159.192.149
+  port: 878
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  allowed-ips:
+  - 0.0.0.0/0
+  - ::/0
+  reserved: zMh9
+  udp: true
+  mtu: 1280
+  amnezia-wg-option:
+    jc: '4'
+    jmin: '40'
+    jmax: '70'
+- name: EX_GER-DIALER-07
+  type: wireguard
+  ip: 172.16.0.2/32
+  ipv6: 2606:4700:110:8079:6392:9d73:67b9:50e3/128
+  private-key: YCaGMCjkp5eKqvb315oE6WjNVuEuqhmdCxExbOsb4EU=
+  server: 2606:4700:d1::605d:a626:777b:d38c
+  port: 8886
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  allowed-ips:
+  - 0.0.0.0/0
+  - ::/0
+  reserved: 8X9K
+  udp: true
+  mtu: 1280
+  dialer-proxy: IRN-ENTRY-07
+- name: EX_IRN-ENTRY-07
+  type: wireguard
+  ip: 172.16.0.2/32
+  ipv6: 2606:4700:110:844d:65a8:d69d:d583:4820/128
+  private-key: WNUNc+5SWVVzsVQ1Qo9FWNKpWnDB6Z4S7NnChN0b818=
+  server: 2606:4700:d0::9807:dadf:f91f:b09b
+  port: 4500
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  allowed-ips:
+  - 0.0.0.0/0
+  - ::/0
+  reserved: zMh9
+  udp: true
+  mtu: 1280
+  amnezia-wg-option:
+    jc: '4'
+    jmin: '40'
+    jmax: '70'
+- name: EX_GER-DIALER-08
+  type: wireguard
+  ip: 172.16.0.2/32
+  ipv6: 2606:4700:110:8079:6392:9d73:67b9:50e3/128
+  private-key: YCaGMCjkp5eKqvb315oE6WjNVuEuqhmdCxExbOsb4EU=
+  server: 2606:4700:d1::ad9b:bf9a:cc0f:d7fe
+  port: 878
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  allowed-ips:
+  - 0.0.0.0/0
+  - ::/0
+  reserved: 8X9K
+  udp: true
+  mtu: 1280
+  dialer-proxy: IRN-ENTRY-08
+- name: EX_IRN-ENTRY-08
+  type: wireguard
+  ip: 172.16.0.2/32
+  ipv6: 2606:4700:110:844d:65a8:d69d:d583:4820/128
+  private-key: WNUNc+5SWVVzsVQ1Qo9FWNKpWnDB6Z4S7NnChN0b818=
+  server: 2606:4700:d0::ff64:277e:ad1d:ad19
+  port: 908
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  allowed-ips:
+  - 0.0.0.0/0
+  - ::/0
+  reserved: zMh9
+  udp: true
+  mtu: 1280
+  amnezia-wg-option:
+    jc: '4'
+    jmin: '40'
+    jmax: '70'
 - name: EX_🇨🇳_CN_中国->🇩🇪_DE_德国
   type: trojan
   server: 120.233.44.201
@@ -2801,10 +3065,10 @@ proxy-groups:
 - name: ♻️ 自动选择
   type: url-test
   url: https://www.gstatic.com/generate_204
-  interval: 300
+  interval: 60
   tolerance: 10
   proxies:
-  - 🍃 负载均衡
+  - 🪐 负载均衡
   - 🇺🇸_US_美国->🇫🇷_FR_法国
   - 🇨🇳_CN_中国->🇺🇸_US_美国
   - 🇨🇳_CN_中国->🇺🇸_US_美国_1
@@ -2932,7 +3196,7 @@ proxy-groups:
   - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
   - 🇨🇳_CN_中国->🇺🇸_US_美国_6
   - 🇨🇳_CN_中国->🇺🇸_US_美国_7
-- name: 🍃 负载均衡
+- name: 🪐 负载均衡
   type: load-balance
   url: https://www.gstatic.com/generate_204
   interval: 300
@@ -3135,6 +3399,22 @@ proxy-groups:
   - EX_US_speednode_0221
   - EX_US_speednode_0224
   - EX_US_speednode_0225
+  - EX_GER-DIALER-01
+  - EX_IRN-ENTRY-01
+  - EX_GER-DIALER-02
+  - EX_IRN-ENTRY-02
+  - EX_GER-DIALER-03
+  - EX_IRN-ENTRY-03
+  - EX_GER-DIALER-04
+  - EX_IRN-ENTRY-04
+  - EX_GER-DIALER-05
+  - EX_IRN-ENTRY-05
+  - EX_GER-DIALER-06
+  - EX_IRN-ENTRY-06
+  - EX_GER-DIALER-07
+  - EX_IRN-ENTRY-07
+  - EX_GER-DIALER-08
+  - EX_IRN-ENTRY-08
   - EX_🇨🇳_CN_中国->🇩🇪_DE_德国
   - EX_🇳🇱_NL_荷兰->🇺🇸_US_美国
   - EX_🇺🇸_US_美国->🇩🇪_DE_德国_1

@@ -38,8 +38,8 @@ def get_subscribe_main():
     try:
         clash_content = check_and_validate_file("https://git.io/emzclash")
         clash_content_replaced = re.sub(r"https://raw.githubusercontent.com", "https://cdn.honglin.ac.cn/statically/gh", clash_content, flags=re.IGNORECASE)
-        clash_content_replaced = re.sub(r"http://www.gstatic.com/generate_204", "https://www.gstatic.com/generate_204", clash_content_replaced, flags=re.IGNORECASE)
-        clash_content_replaced = re.sub(r"tolerance: 50", "tolerance: 10", clash_content_replaced, flags=re.IGNORECASE)
+        # clash_content_replaced = re.sub(r"http://www.gstatic.com/generate_204", "https://www.gstatic.com/generate_204", clash_content_replaced, flags=re.IGNORECASE)
+        # clash_content_replaced = re.sub(r"tolerance: 50", "tolerance: 10", clash_content_replaced, flags=re.IGNORECASE)
 
          # 将更新后的内容写入文件
         with open(dirs + '/clash.yml', 'w', encoding="utf-8") as f:
@@ -83,10 +83,10 @@ def append_proxies(clash_yaml, proxies):
     # clash_yaml_replaced = yaml.dump(clash_yaml, default_flow_style=False, allow_unicode=True)
     # return clash_yaml_replaced
 
-    # 追加[🍃 负载均衡]列表
+    # 追加[🪐 负载均衡]列表
     original_groups = clash_yaml.get('proxy-groups', [])
     original_groups.append({
-        'name': "🍃 负载均衡",
+        'name': "🪐 负载均衡",
         'type': "load-balance",
         'url': "https://www.gstatic.com/generate_204",
         'interval': 300,
@@ -94,15 +94,18 @@ def append_proxies(clash_yaml, proxies):
         'proxies': [item['name'] for item in proxies]
     })
     
+    # 修改原[♻️ 自动选择]列表
     for group in original_groups:
         if group.get('name') == '♻️ 自动选择':
             # 获取原订阅的节点列表
             original_auto_proxies = group.get('proxies', [])
             # 将负载均衡添加到自动选择
-            # original_auto_proxies.append("🍃 负载均衡")
-            original_auto_proxies.insert(0, "🍃 负载均衡")
+            original_auto_proxies.insert(0, "🪐 负载均衡")
             # 更新原订阅的节点列表
             group['proxies'] = original_auto_proxies
+            group['url'] = "https://www.gstatic.com/generate_204"
+            group['interval'] = 60
+            group['tolerance'] = 10
 
     clash_yaml_replaced = yaml.dump(clash_yaml, default_flow_style=False, allow_unicode=True, sort_keys=False)
     return clash_yaml_replaced
@@ -138,7 +141,7 @@ def download_extra_proxies():
 
     urls = [
         "https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml",
-        # "https://raw.githubusercontent.com/NiREvil/vless/main/sub/clash-meta-wg.yml",
+        "https://raw.githubusercontent.com/NiREvil/vless/main/sub/clash-meta-wg.yml",
         # "https://raw.githubusercontent.com/ts-sf/fly/main/clash",
         # "https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/clash-meta/actives_under_1000ms.yaml",
         # "https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/sub_merge_yaml.yml",
