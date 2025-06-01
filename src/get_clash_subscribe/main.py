@@ -149,7 +149,7 @@ def remove_duplicate_proxies(proxies):
 def get_extra_proxies(data, prefix):
     yaml_data = yaml.safe_load(data)
     proxies = yaml_data.get('proxies', [])
-    filter_string = ['未知', 'tg', 'TG', 'CN_speed', 'HK_speed', 'KB/s']
+    filter_string = ['未知', 'tg', 'TG', 'CN_speed', 'HK_speed', 'TW_speed', 'KB/s']
     filtered_proxies = [proxy for proxy in proxies if not any(str in proxy['name'] for str in filter_string)]
     # filtered_proxies = [proxy for proxy in filtered_proxies if not proxy['type']=='ss' ]
     for proxy in filtered_proxies:
