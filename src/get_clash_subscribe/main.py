@@ -155,7 +155,7 @@ def download_extra_proxies():
         try:
             data = check_and_validate_file(file_url)
             if data is not None:
-                proxies = get_extra_proxies(data, "EX")
+                proxies = get_extra_proxies(data)
                 all_proxies.extend(proxies)
             
         except Exception as e:
@@ -174,18 +174,13 @@ def remove_duplicate_proxies(proxies):
             seen_servers.add(server)
     return unique_proxies
 
-def get_extra_proxies(data, prefix):
+def get_extra_proxies(data):
     yaml_data = yaml.safe_load(data)
     proxies = yaml_data.get('proxies', [])
     filter_string = ['未知', 'tg', 'TG', 'KB/s']
     filtered_proxies = [proxy for proxy in proxies if not any(str in proxy['name'] for str in filter_string)]
     # filtered_proxies = [proxy for proxy in filtered_proxies if not proxy['type']=='ss' ]
-    for proxy in filtered_proxies:
-        if 'name' in proxy and proxy['name']:
-            proxy['name'] = f"{prefix}_{proxy['name']}"
-        else:
-            print("No name found in the proxy")
-            return None
+
     return filtered_proxies
 
 def main():

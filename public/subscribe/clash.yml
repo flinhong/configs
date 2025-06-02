@@ -44,75 +44,77 @@ tun:
   - 1.1.1.1
   - 1.0.0.1
 proxies:
-- name: 🇺🇸_US_美国->🇫🇷_FR_法国
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  type: ss
+  server: cm55-zz.moonwang.xyz
+  port: 54322
+  cipher: chacha20-ietf-poly1305
+  password: 26270a5c-cc66-4bb5-b058-c75d09d615e5
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  type: vmess
+  server: v29.heduian.link
+  port: 30829
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /oooo
+    headers:
+      host: ocbc.com
+  alterId: 2
+- name: 🇨🇳_CN_中国
+  type: ss
+  server: okanc.node-is.green
+  port: 21115
+  cipher: aes-256-gcm
+  password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
+- name: 🇨🇳_CN_中国->🇮🇷_IR_伊朗
+  type: ss
+  server: okanc.node-is.green
+  port: 21114
+  cipher: aes-256-gcm
+  password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
   type: trojan
-  server: 104.21.25.95
-  port: 443
-  udp: true
-  sni: DDd.890604.FIlEGear-sG.Me
-  password: f0f6e76e-e5fe-4e2c-9faf-34832e021eae
+  server: 36.151.251.61
+  port: 33097
+  sni: 36.151.251.61
+  password: RlzoEILU
+  skip-cert-verify: true
+- name: 🇨🇳_CN_中国->🇨🇦_CA_加拿大
+  type: vmess
+  server: v8.heduian.link
+  port: 30808
+  sni: ''
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  cipher: auto
   network: ws
   skip-cert-verify: true
   ws-opts:
-    path: /mZr1mA5hub7QHHkQBzYO
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+    path: /oooo
+    headers:
+      host: v8.heduian.link
+  alterId: 2
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_3
   type: trojan
   server: 36.151.251.62
   port: 13542
   sni: cdn.egvra.cn
   password: RlzoEILU
   skip-cert-verify: true
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  type: trojan
-  server: 5f9d335d-swexs0-t5juhn-4tue.cu.plebai.net
-  port: 15229
-  sni: 5f9d335d-swexs0-t5juhn-4tue.cu.plebai.net
-  password: fe506496-24eb-11ef-abd3-f23c91cfbbc9
-  skip-cert-verify: true
-- name: 🇺🇸_US_美国_2
-  type: trojan
-  server: kz.mjt000.com
-  port: 443
-  sni: kz.mjt000.com
-  password: ea17601d-8ebf-4431-b815-4d644821ca7e
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  type: trojan
-  server: f5ada702-swb8g0-t5fh9u-1uni.cu.plebai.net
-  port: 15229
-  password: adbd0a82-3336-11ed-bd7c-f23c913c8d2b
-  skip-cert-verify: true
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_3
-  type: trojan
-  server: 36.151.251.62
-  port: 3330
-  sni: cdn.egvra.cn
-  password: RlzoEILU
-  skip-cert-verify: true
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_4
-  type: trojan
-  server: 7d09e919-swq1s0-tcvn0z-1tlyg.cu.plebai.net
-  port: 15229
-  sni: 7d09e919-swq1s0-tcvn0z-1tlyg.cu.plebai.net
-  password: be8ba532-0dcf-11f0-9a65-f23c9164ca5d
-  skip-cert-verify: false
 - name: 🇷🇺_RU_俄罗斯
   type: ss
   server: 185.231.233.112
   port: 989
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
-- name: 🇺🇸_US_美国_3
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_4
   type: trojan
-  server: 172.67.133.248
-  port: 443
-  udp: true
-  sni: DDd.890604.FIlEGear-sG.Me
-  password: f0f6e76e-e5fe-4e2c-9faf-34832e021eae
-  network: ws
-  ws-opts:
-    path: /mZr1mA5hub7QHHkQBzYO
-    headers:
-      host: ddd.890604.filegear-sg.me
+  server: 36.151.251.62
+  port: 3330
+  sni: cdn.egvra.cn
+  password: RlzoEILU
+  skip-cert-verify: true
 - name: 🇨🇳_CN_中国->🇩🇪_DE_德国
   type: trojan
   server: 120.233.44.201
@@ -120,39 +122,25 @@ proxies:
   sni: 120.233.44.201
   password: 2b1ed981-6547-4094-998b-06a3323d6f6c
   skip-cert-verify: true
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_5
+- name: 🇬🇧_GB_英国->🇺🇸_US_美国
   type: trojan
-  server: bd8e9b7d-swzb40-t5vrf3-716s.cu.plebai.net
-  port: 15229
-  sni: bd8e9b7d-swzb40-t5vrf3-716s.cu.plebai.net
-  password: 088a0bbe-4f9f-11ea-a15d-f23c913c8d2b
+  server: 51.38.65.155
+  port: 443
+  sni: uk1.test3.net
+  password: 255a0a50-3f10-11f0-b0d6-1239d0255272
+  network: tcp
   skip-cert-verify: true
-- name: 🇨🇳_CN_中国->🇨🇦_CA_加拿大
+- name: 🇳🇱_NL_荷兰->🇺🇸_US_美国
   type: vmess
-  server: v8.heduian.link
-  port: 30808
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  server: 45.147.201.231
+  port: 23091
+  uuid: 595a346d-078c-4bb3-b426-f9a8b350eab8
   cipher: auto
   network: ws
   ws-opts:
-    path: /oooo
-    headers:
-      host: v8.heduian.link
-  alterId: 2
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_6
-  type: trojan
-  server: 36.151.251.61
-  port: 33097
-  sni: 36.151.251.61
-  password: RlzoEILU
-  skip-cert-verify: true
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_7
-  type: ss
-  server: ti3hyra4.slashdevslashnetslashtun.net
-  port: 17004
-  cipher: aes-256-gcm
-  password: ZC3MD9RI5P36IHID
-- name: EX_AM_speednode_0001
+    path: /
+  alterId: 0
+- name: AM_speednode_0001
   server: 185.162.230.6
   port: 80
   type: vless
@@ -166,7 +154,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_AM_speednode_0002
+- name: AM_speednode_0002
   server: 188.164.159.241
   port: 2096
   type: trojan
@@ -179,7 +167,7 @@ proxies:
     headers:
       Host: epme.ambercc.filegear-sg.me
   udp: true
-- name: EX_AT_speednode_0003
+- name: AT_speednode_0003
   server: 212.183.88.20
   port: 8880
   type: vless
@@ -193,7 +181,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_AU_speednode_0004
+- name: AU_speednode_0004
   server: 103.169.142.20
   port: 8880
   type: vless
@@ -207,7 +195,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_BG_speednode_0005
+- name: BG_speednode_0005
   server: 147.78.140.20
   port: 8880
   type: vless
@@ -221,7 +209,7 @@ proxies:
     headers:
       Host: us.laoyoutiao.link
   udp: true
-- name: EX_BG_speednode_0006
+- name: BG_speednode_0006
   server: 78.159.131.160
   port: 443
   type: vless
@@ -234,7 +222,7 @@ proxies:
     public-key: gWjVFJOoNc92yFN9zAKErrtFuA1UmS4PI6sLSYBI7VM
     short-id: e1f576c5
   udp: true
-- name: EX_BR_speednode_0007
+- name: BR_speednode_0007
   server: 185.133.35.183
   port: 443
   type: vless
@@ -248,7 +236,7 @@ proxies:
     headers:
       Host: xa.bgm2024.dpdns.org
   udp: true
-- name: EX_CN_speednode_0008
+- name: CN_speednode_0008
   server: 02c32b60-sudhc0-sva30v-au6.d.volczijie.com
   port: 3684
   type: vmess
@@ -258,7 +246,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: EX_CN_speednode_0009
+- name: CN_speednode_0009
   server: 120.232.153.40
   port: 50152
   type: vmess
@@ -268,7 +256,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: EX_CN_speednode_0010
+- name: CN_speednode_0010
   server: 8faa5046-svc1s0-sw0nbj-1anhm.cm5.p5pv.com
   port: 17233
   type: vmess
@@ -278,7 +266,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: EX_CN_speednode_0011
+- name: CN_speednode_0011
   server: 72c12481-svc1s0-te0v28-1mh67.cm5.p5pv.com
   port: 17233
   type: vmess
@@ -288,7 +276,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: EX_CN_speednode_0012
+- name: CN_speednode_0012
   server: 8582ab4a-svc1s0-szegoe-12hj8.cm5.p5pv.com
   port: 17233
   type: vmess
@@ -298,7 +286,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: EX_CN_speednode_0013
+- name: CN_speednode_0013
   server: f547c7cf-sunz40-t49lki-1ejce.cm5.p5pv.com
   port: 17233
   type: vmess
@@ -308,7 +296,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: EX_CN_speednode_0014
+- name: CN_speednode_0014
   server: d7481a66-sunz40-taklwz-12bd.cm5.p5pv.com
   port: 17233
   type: vmess
@@ -318,7 +306,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: EX_CN_speednode_0015
+- name: CN_speednode_0015
   server: a842afb9-sutj40-suyhjm-1hhyy.cm5.p5pv.com
   port: 17233
   type: vmess
@@ -328,7 +316,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: EX_CN_speednode_0016
+- name: CN_speednode_0016
   server: 50ec05bc-sutj40-tdcdb7-1k27l.cm5.p5pv.com
   port: 17233
   type: vmess
@@ -338,7 +326,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: EX_CN_speednode_0017
+- name: CN_speednode_0017
   server: c8668876-sutj40-sydwhg-1s2ks.cm5.p5pv.com
   port: 17233
   type: vmess
@@ -348,7 +336,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: EX_CN_speednode_0018
+- name: CN_speednode_0018
   server: 76c85625-sutj40-t1k53r-1jm8i.cm5.p5pv.com
   port: 17233
   type: vmess
@@ -358,7 +346,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: EX_CN_speednode_0019
+- name: CN_speednode_0019
   server: 34ac196c-svlb40-tdnzz0-1qtp7.cm5.p5pv.com
   port: 17233
   type: vmess
@@ -368,7 +356,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: EX_CN_speednode_0020
+- name: CN_speednode_0020
   server: 3ef20940-svlb40-swdyrj-1tbzx.cm5.p5pv.com
   port: 17233
   type: vmess
@@ -378,7 +366,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: EX_CN_speednode_0022
+- name: CN_speednode_0022
   server: 2bbb71ac-svdwg0-sw0nbj-1anhm.cm5.p5pv.com
   port: 17233
   type: vmess
@@ -388,7 +376,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: EX_CN_speednode_0023
+- name: CN_speednode_0023
   server: 39d0166b-svc1s0-sxv7gp-8rja.cm5.p5pv.com
   port: 17233
   type: vmess
@@ -399,7 +387,7 @@ proxies:
   skip-cert-verify: true
   servername: 39d0166b-svc1s0-sxv7gp-8rja.cm5.p5pv.com
   udp: true
-- name: EX_CN_speednode_0024
+- name: CN_speednode_0024
   server: f67f4b28-suvds0-t1k53r-1jm8i.cm5.p5pv.com
   port: 17233
   type: vmess
@@ -409,7 +397,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: EX_CN_speednode_0025
+- name: CN_speednode_0025
   server: fe15251f-sunz40-tbpkla-1otc2.cm5.p5pv.com
   port: 17233
   type: vmess
@@ -419,7 +407,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: EX_CN_speednode_0026
+- name: CN_speednode_0026
   server: 81f6bf37-sutj40-svgpxu-y2gs.cm5.p5pv.com
   port: 17233
   type: vmess
@@ -429,7 +417,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: EX_CN_speednode_0027
+- name: CN_speednode_0027
   server: 0e8845d1-suk9s0-sve5if-z93q.cm5.p5pv.com
   port: 17233
   type: vmess
@@ -439,7 +427,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: EX_CN_speednode_0028
+- name: CN_speednode_0028
   server: 132fa85e-svfr40-sxv7gp-8rja.cm5.p5pv.com
   port: 17233
   type: vmess
@@ -450,7 +438,7 @@ proxies:
   skip-cert-verify: true
   servername: 132fa85e-svfr40-sxv7gp-8rja.cm5.p5pv.com
   udp: true
-- name: EX_CN_speednode_0029
+- name: CN_speednode_0029
   server: f1e4e0ee-swin40-t12cnj-1ol97.cu.plebai.net
   port: 15229
   type: trojan
@@ -458,7 +446,7 @@ proxies:
   sni: f1e4e0ee-swin40-t12cnj-1ol97.cu.plebai.net
   skip-cert-verify: false
   udp: true
-- name: EX_CN_speednode_0030
+- name: CN_speednode_0030
   server: 6f772034-sx6ps0-taklwz-12bd.cu.plebai.net
   port: 15229
   type: trojan
@@ -466,7 +454,7 @@ proxies:
   sni: 6f772034-sx6ps0-taklwz-12bd.cu.plebai.net
   skip-cert-verify: false
   udp: true
-- name: EX_CN_speednode_0031
+- name: CN_speednode_0031
   server: 8e9c3ff5-sx4v40-t6oecc-1slpn.cu.plebai.net
   port: 15229
   type: trojan
@@ -474,7 +462,7 @@ proxies:
   sni: 8e9c3ff5-sx4v40-t6oecc-1slpn.cu.plebai.net
   skip-cert-verify: false
   udp: true
-- name: EX_CN_speednode_0032
+- name: CN_speednode_0032
   server: 415a547f-sx8kg0-t1msbw-1nn0k.cu.plebai.net
   port: 15229
   type: trojan
@@ -482,7 +470,7 @@ proxies:
   sni: 415a547f-sx8kg0-t1msbw-1nn0k.cu.plebai.net
   skip-cert-verify: false
   udp: true
-- name: EX_CN_speednode_0033
+- name: CN_speednode_0033
   server: 2252b964-sx4v40-tee612-2r82.cu.plebai.net
   port: 15229
   type: trojan
@@ -490,7 +478,7 @@ proxies:
   sni: 2252b964-sx4v40-tee612-2r82.cu.plebai.net
   skip-cert-verify: false
   udp: true
-- name: EX_CN_speednode_0034
+- name: CN_speednode_0034
   server: 67636d50-sx6ps0-sxpbuh-1ndin.cu.plebai.net
   port: 15229
   type: trojan
@@ -498,7 +486,7 @@ proxies:
   sni: 67636d50-sx6ps0-sxpbuh-1ndin.cu.plebai.net
   skip-cert-verify: false
   udp: true
-- name: EX_CN_speednode_0035
+- name: CN_speednode_0035
   server: 69c584f2-suif40-tee612-2r82.cm5.p5pv.com
   port: 17233
   type: vmess
@@ -508,7 +496,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: EX_CN_speednode_0036
+- name: CN_speednode_0036
   server: a4b963da-sx6ps0-t0j7ql-1t7gn.cu.plebai.net
   port: 15229
   type: trojan
@@ -516,7 +504,7 @@ proxies:
   sni: a4b963da-sx6ps0-t0j7ql-1t7gn.cu.plebai.net
   skip-cert-verify: false
   udp: true
-- name: EX_CN_speednode_0037
+- name: CN_speednode_0037
   server: 3c80a135-swb8g0-t6ouc9-13xtu.cu.plebai.net
   port: 15229
   type: trojan
@@ -524,7 +512,7 @@ proxies:
   sni: 3c80a135-swb8g0-t6ouc9-13xtu.cu.plebai.net
   skip-cert-verify: false
   udp: true
-- name: EX_CN_speednode_0039
+- name: CN_speednode_0039
   server: 2e051986-sx4v40-t2ghw9-1pf7n.cu.plebai.net
   port: 15229
   type: trojan
@@ -532,7 +520,7 @@ proxies:
   sni: 2e051986-sx4v40-t2ghw9-1pf7n.cu.plebai.net
   skip-cert-verify: false
   udp: true
-- name: EX_CN_speednode_0040
+- name: CN_speednode_0040
   server: c5d812aa-sx4v40-sx7hbg-1mmbp.cu.plebai.net
   port: 15229
   type: trojan
@@ -540,7 +528,7 @@ proxies:
   sni: c5d812aa-sx4v40-sx7hbg-1mmbp.cu.plebai.net
   skip-cert-verify: false
   udp: true
-- name: EX_CN_speednode_0041
+- name: CN_speednode_0041
   server: f8263ad9-sx8kg0-t7qex7-1supq.cu.plebai.net
   port: 15229
   type: trojan
@@ -548,7 +536,7 @@ proxies:
   sni: f8263ad9-sx8kg0-t7qex7-1supq.cu.plebai.net
   skip-cert-verify: false
   udp: true
-- name: EX_CN_speednode_0042
+- name: CN_speednode_0042
   server: 493d7185-sx4v40-t30eih-jm0w.cu.plebai.net
   port: 15229
   type: trojan
@@ -556,7 +544,7 @@ proxies:
   sni: 493d7185-sx4v40-t30eih-jm0w.cu.plebai.net
   skip-cert-verify: false
   udp: true
-- name: EX_CN_speednode_0043
+- name: CN_speednode_0043
   server: eb4fe914-sx6ps0-t234dm-eso8.cu.plebai.net
   port: 15229
   type: trojan
@@ -564,7 +552,7 @@ proxies:
   sni: eb4fe914-sx6ps0-t234dm-eso8.cu.plebai.net
   skip-cert-verify: false
   udp: true
-- name: EX_CN_speednode_0044
+- name: CN_speednode_0044
   server: e3ca594f-sx8kg0-t9azkv-17xn0.cu.plebai.net
   port: 15229
   type: trojan
@@ -572,7 +560,7 @@ proxies:
   sni: e3ca594f-sx8kg0-t9azkv-17xn0.cu.plebai.net
   skip-cert-verify: false
   udp: true
-- name: EX_CN_speednode_0045
+- name: CN_speednode_0045
   server: 0a107103-sx8kg0-syxs94-1jbj0.cu.plebai.net
   port: 15229
   type: trojan
@@ -580,7 +568,7 @@ proxies:
   sni: 0a107103-sx8kg0-syxs94-1jbj0.cu.plebai.net
   skip-cert-verify: false
   udp: true
-- name: EX_CN_speednode_0046
+- name: CN_speednode_0046
   server: d6cafd53-sx4v40-tbcla6-194tt.cu.plebai.net
   port: 15229
   type: trojan
@@ -588,7 +576,7 @@ proxies:
   sni: d6cafd53-sx4v40-tbcla6-194tt.cu.plebai.net
   skip-cert-verify: false
   udp: true
-- name: EX_CR_speednode_0047
+- name: CR_speednode_0047
   server: 190.93.245.20
   port: 8880
   type: vless
@@ -602,7 +590,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_CR_speednode_0048
+- name: CR_speednode_0048
   server: 190.93.246.20
   port: 8880
   type: vless
@@ -616,7 +604,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_CY_speednode_0049
+- name: CY_speednode_0049
   server: 213.109.205.20
   port: 8880
   type: vless
@@ -630,7 +618,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_CY_speednode_0050
+- name: CY_speednode_0050
   server: 195.85.59.95
   port: 2082
   type: vless
@@ -644,7 +632,7 @@ proxies:
     headers:
       Host: 0210.uous1wog.workers.dev
   udp: true
-- name: EX_CZ_speednode_0051
+- name: CZ_speednode_0051
   server: 195.85.23.254
   port: 8880
   type: vless
@@ -658,7 +646,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_DE_speednode_0052
+- name: DE_speednode_0052
   server: 45.89.233.23
   port: 55561
   type: vmess
@@ -668,7 +656,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: EX_DE_speednode_0053
+- name: DE_speednode_0053
   server: farsidutch.nl
   port: 19000
   type: vless
@@ -676,7 +664,7 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
-- name: EX_DE_speednode_0054
+- name: DE_speednode_0054
   server: 45.80.111.20
   port: 8880
   type: vless
@@ -690,7 +678,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_DE_speednode_0056
+- name: DE_speednode_0056
   server: 5.10.214.157
   port: 8880
   type: vless
@@ -704,7 +692,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_DE_speednode_0057
+- name: DE_speednode_0057
   server: 5.10.214.59
   port: 8880
   type: vless
@@ -718,7 +706,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_DE_speednode_0058
+- name: DE_speednode_0058
   server: 5.10.214.166
   port: 8880
   type: vless
@@ -732,7 +720,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_DE_speednode_0059
+- name: DE_speednode_0059
   server: 5.10.214.11
   port: 8880
   type: vless
@@ -746,7 +734,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_DE_speednode_0060
+- name: DE_speednode_0060
   server: 89.116.46.20
   port: 8880
   type: vless
@@ -760,7 +748,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_DE_speednode_0061
+- name: DE_speednode_0061
   server: 45.80.111.166
   port: 80
   type: vless
@@ -774,7 +762,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_DE_speednode_0062
+- name: DE_speednode_0062
   server: 45.80.111.124
   port: 8880
   type: vless
@@ -788,7 +776,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_DE_speednode_0063
+- name: DE_speednode_0063
   server: 5.10.215.143
   port: 8880
   type: vless
@@ -802,7 +790,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_EE_speednode_0064
+- name: EE_speednode_0064
   server: 45.80.110.20
   port: 8880
   type: vless
@@ -816,7 +804,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_ES_speednode_0065
+- name: ES_speednode_0065
   server: 185.238.228.39
   port: 8880
   type: vless
@@ -830,7 +818,7 @@ proxies:
     headers:
       Host: ip.langmanshanxi.top
   udp: true
-- name: EX_ES_speednode_0067
+- name: ES_speednode_0067
   server: 141.253.124.138
   port: 443
   type: vless
@@ -841,7 +829,7 @@ proxies:
   client-fingerprint: chrome
   servername: b2-9fr2329-6bh.xn--4gq62f52gppi29k.com
   udp: true
-- name: EX_FR_speednode_0069
+- name: FR_speednode_0069
   server: 144.24.206.147
   port: 443
   type: vless
@@ -852,7 +840,7 @@ proxies:
   client-fingerprint: chrome
   servername: b2-9fr5232-96bh.xn--4gq62f52gppi29k.com
   udp: true
-- name: EX_GB_speednode_0070
+- name: GB_speednode_0070
   server: 91.193.58.229
   port: 8880
   type: vless
@@ -866,7 +854,7 @@ proxies:
     headers:
       Host: cs.laoyoutiao.link
   udp: true
-- name: EX_GB_speednode_0071
+- name: GB_speednode_0071
   server: 91.193.58.222
   port: 8880
   type: vless
@@ -880,7 +868,7 @@ proxies:
     headers:
       Host: cs.laoyoutiao.link
   udp: true
-- name: EX_GB_speednode_0072
+- name: GB_speednode_0072
   server: 91.193.58.172
   port: 8880
   type: vless
@@ -894,7 +882,7 @@ proxies:
     headers:
       Host: us.laoyoutiao.link
   udp: true
-- name: EX_GB_speednode_0073
+- name: GB_speednode_0073
   server: 91.193.58.245
   port: 8880
   type: vless
@@ -908,7 +896,7 @@ proxies:
     headers:
       Host: us.laoyoutiao.link
   udp: true
-- name: EX_GB_speednode_0074
+- name: GB_speednode_0074
   server: 91.193.58.64
   port: 8880
   type: vless
@@ -922,7 +910,7 @@ proxies:
     headers:
       Host: us.laoyoutiao.link
   udp: true
-- name: EX_GB_speednode_0075
+- name: GB_speednode_0075
   server: 91.193.58.184
   port: 8880
   type: vless
@@ -936,7 +924,7 @@ proxies:
     headers:
       Host: us.laoyoutiao.link
   udp: true
-- name: EX_GB_speednode_0076
+- name: GB_speednode_0076
   server: 91.193.58.79
   port: 8880
   type: vless
@@ -950,7 +938,7 @@ proxies:
     headers:
       Host: us.laoyoutiao.link
   udp: true
-- name: EX_GB_speednode_0077
+- name: GB_speednode_0077
   server: 91.193.58.63
   port: 8880
   type: vless
@@ -964,7 +952,7 @@ proxies:
     headers:
       Host: us.laoyoutiao.link
   udp: true
-- name: EX_GB_speednode_0078
+- name: GB_speednode_0078
   server: 91.193.58.4
   port: 8880
   type: vless
@@ -978,7 +966,7 @@ proxies:
     headers:
       Host: us.laoyoutiao.link
   udp: true
-- name: EX_GB_speednode_0079
+- name: GB_speednode_0079
   server: 91.193.58.65
   port: 8880
   type: vless
@@ -992,7 +980,7 @@ proxies:
     headers:
       Host: us.laoyoutiao.link
   udp: true
-- name: EX_GB_speednode_0080
+- name: GB_speednode_0080
   server: 91.193.58.102
   port: 8880
   type: vless
@@ -1006,7 +994,7 @@ proxies:
     headers:
       Host: sk.laoyoutiao.link
   udp: true
-- name: EX_GB_speednode_0081
+- name: GB_speednode_0081
   server: 193.123.187.39
   port: 443
   type: vless
@@ -1017,7 +1005,7 @@ proxies:
   client-fingerprint: ios
   servername: 767w1-38dc0-9kcf2.xn--4gq62f52gppi29k.com
   udp: true
-- name: EX_GB_speednode_0082
+- name: GB_speednode_0082
   server: 140.238.101.15
   port: 443
   type: vless
@@ -1028,7 +1016,7 @@ proxies:
   client-fingerprint: safari
   servername: 767w1-38dc0-9icf2.xn--4gq62f52gppi29k.com
   udp: true
-- name: EX_GB_speednode_0083
+- name: GB_speednode_0083
   server: 91.193.58.134
   port: 8880
   type: vless
@@ -1042,7 +1030,7 @@ proxies:
     headers:
       Host: us.laoyoutiao.link
   udp: true
-- name: EX_GG_speednode_0084
+- name: GG_speednode_0084
   server: 213.163.206.196
   port: 443
   type: vless
@@ -1052,7 +1040,7 @@ proxies:
   client-fingerprint: chrome
   servername: take.anujaya.dev
   udp: true
-- name: EX_HK_speednode_0085
+- name: HK_speednode_0085
   server: 23.226.8.80
   port: 443
   type: vless
@@ -1066,7 +1054,7 @@ proxies:
     headers:
       Host: steep.skyfigure.top
   udp: true
-- name: EX_IN_speednode_0086
+- name: IN_speednode_0086
   server: 129.159.227.221
   port: 443
   type: vless
@@ -1077,7 +1065,7 @@ proxies:
   client-fingerprint: safari
   servername: 767w1-7kjd0-9kcf2.xn--4gq62f52gppi29k.com
   udp: true
-- name: EX_JP_speednode_0087
+- name: JP_speednode_0087
   server: 3bd9.55dca.e048.f3-fef1f.yfjcs.com
   port: 443
   type: vless
@@ -1088,7 +1076,7 @@ proxies:
   client-fingerprint: safari
   servername: yfjp.xn--4gq62f52gppi29k.com
   udp: true
-- name: EX_JP_speednode_0088
+- name: JP_speednode_0088
   server: 3bd9.55dca.e048.f4-fef1f.yfjcs.com
   port: 443
   type: vless
@@ -1099,7 +1087,7 @@ proxies:
   client-fingerprint: ios
   servername: yfjp.xn--4gq62f52gppi29k.com
   udp: true
-- name: EX_JP_speednode_0089
+- name: JP_speednode_0089
   server: 3bd9.55dca.e048.f1-fef1f.yfjcs.com
   port: 443
   type: vless
@@ -1110,7 +1098,7 @@ proxies:
   client-fingerprint: chrome
   servername: yfjp.xn--4gq62f52gppi29k.com
   udp: true
-- name: EX_JP_speednode_0090
+- name: JP_speednode_0090
   server: 3bd9.55dca.e048.f5-fef1f.yfjcs.com
   port: 443
   type: vless
@@ -1121,7 +1109,7 @@ proxies:
   client-fingerprint: chrome
   servername: yfjp.xn--4gq62f52gppi29k.com
   udp: true
-- name: EX_JP_speednode_0091
+- name: JP_speednode_0091
   server: 3bd9.55dca.e048.f2-fef1f.yfjcs.com
   port: 443
   type: vless
@@ -1132,7 +1120,7 @@ proxies:
   client-fingerprint: chrome
   servername: yfjp.xn--4gq62f52gppi29k.com
   udp: true
-- name: EX_JP_speednode_0092
+- name: JP_speednode_0092
   server: 3bd9.55dca.e048.f6-fef1f.yfjcs.com
   port: 443
   type: vless
@@ -1143,7 +1131,7 @@ proxies:
   client-fingerprint: ios
   servername: yfjp.xn--4gq62f52gppi29k.com
   udp: true
-- name: EX_JP_speednode_0093
+- name: JP_speednode_0093
   server: 35.75.160.251
   port: 443
   type: vless
@@ -1157,7 +1145,7 @@ proxies:
     headers:
       Host: jd.chenchuanjin.sbs
   udp: true
-- name: EX_JP_speednode_0094
+- name: JP_speednode_0094
   server: 103.232.213.117
   port: 8080
   type: vless
@@ -1171,7 +1159,7 @@ proxies:
     headers:
       Host: steep.skyfigure.top
   udp: true
-- name: EX_JP_speednode_0095
+- name: JP_speednode_0095
   server: 85.208.110.203
   port: 443
   type: vless
@@ -1184,7 +1172,7 @@ proxies:
     public-key: SUP3nblQDtku381iK83Nl0YXGXJw15sZYH-ilRRssAM
     short-id: c166594b
   udp: true
-- name: EX_JP_speednode_0096
+- name: JP_speednode_0096
   server: 103.116.7.103
   port: 2083
   type: trojan
@@ -1197,7 +1185,7 @@ proxies:
     headers:
       Host: epme.ambercc.filegear-sg.me
   udp: true
-- name: EX_KR_speednode_0097
+- name: KR_speednode_0097
   server: 175.214.121.119
   port: 30022
   type: vless
@@ -1211,7 +1199,7 @@ proxies:
     headers:
       Host: steep.skyfigure.top
   udp: true
-- name: EX_KR_speednode_0098
+- name: KR_speednode_0098
   server: 182.213.59.227
   port: 33083
   type: vless
@@ -1226,7 +1214,7 @@ proxies:
     headers:
       Host: steep.skyfigure.top
   udp: true
-- name: EX_KR_speednode_0099
+- name: KR_speednode_0099
   server: 121.163.244.186
   port: 19222
   type: vless
@@ -1240,7 +1228,7 @@ proxies:
     headers:
       Host: xa.bgm2024.dpdns.org
   udp: true
-- name: EX_KR_speednode_0100
+- name: KR_speednode_0100
   server: 221.158.163.251
   port: 10081
   type: vless
@@ -1254,7 +1242,7 @@ proxies:
     headers:
       Host: edmq.aimercc.filegear-sg.me
   udp: true
-- name: EX_KR_speednode_0101
+- name: KR_speednode_0101
   server: 119.195.173.74
   port: 30109
   type: vless
@@ -1268,7 +1256,7 @@ proxies:
     headers:
       Host: steep.skyfigure.top
   udp: true
-- name: EX_KR_speednode_0102
+- name: KR_speednode_0102
   server: 121.151.132.168
   port: 18058
   type: vless
@@ -1282,7 +1270,7 @@ proxies:
     headers:
       Host: edmq.aimercc.filegear-sg.me
   udp: true
-- name: EX_KR_speednode_0103
+- name: KR_speednode_0103
   server: 112.184.209.63
   port: 12088
   type: trojan
@@ -1295,14 +1283,14 @@ proxies:
     headers:
       Host: epme.ambercc.filegear-sg.me
   udp: true
-- name: EX_KR_speednode_0104
+- name: KR_speednode_0104
   server: 154.90.62.168
   port: 989
   type: ss
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
   udp: true
-- name: EX_KR_speednode_0105
+- name: KR_speednode_0105
   server: 193.122.106.234
   port: 443
   type: vless
@@ -1313,7 +1301,7 @@ proxies:
   client-fingerprint: chrome
   servername: ako.pagate.top
   udp: true
-- name: EX_KR_speednode_0106
+- name: KR_speednode_0106
   server: ako.pagate.top
   port: 443
   type: vless
@@ -1324,7 +1312,7 @@ proxies:
   client-fingerprint: chrome
   servername: ako.pagate.top
   udp: true
-- name: EX_KZ_speednode_0107
+- name: KZ_speednode_0107
   server: 185.176.26.20
   port: 8880
   type: vless
@@ -1338,7 +1326,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_KZ_speednode_0108
+- name: KZ_speednode_0108
   server: 194.76.18.20
   port: 8880
   type: vless
@@ -1352,7 +1340,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_KZ_speednode_0109
+- name: KZ_speednode_0109
   server: 31.43.179.52
   port: 8880
   type: vless
@@ -1366,7 +1354,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_LT_speednode_0110
+- name: LT_speednode_0110
   server: 89.116.180.20
   port: 8880
   type: vless
@@ -1380,7 +1368,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_LT_speednode_0111
+- name: LT_speednode_0111
   server: 89.116.250.20
   port: 8880
   type: vless
@@ -1394,7 +1382,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_LU_speednode_0112
+- name: LU_speednode_0112
   server: 188.42.89.20
   port: 8880
   type: vless
@@ -1408,7 +1396,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_NL_speednode_0113
+- name: NL_speednode_0113
   server: 45.131.211.203
   port: 8880
   type: vless
@@ -1422,7 +1410,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_NL_speednode_0114
+- name: NL_speednode_0114
   server: 45.131.211.70
   port: 8880
   type: vless
@@ -1436,7 +1424,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_NL_speednode_0115
+- name: NL_speednode_0115
   server: 45.131.209.230
   port: 8880
   type: vless
@@ -1450,7 +1438,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_NL_speednode_0116
+- name: NL_speednode_0116
   server: 45.131.208.114
   port: 80
   type: vless
@@ -1464,7 +1452,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_NL_speednode_0117
+- name: NL_speednode_0117
   server: 45.131.208.20
   port: 8880
   type: vless
@@ -1478,14 +1466,14 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_NL_speednode_0119
+- name: NL_speednode_0119
   server: 77.246.98.67
   port: 4343
   type: ss
   cipher: chacha20-ietf-poly1305
   password: C7ZFEudD0GOs8jVZXxCMQQ
   udp: true
-- name: EX_NN_speednode_0120
+- name: NN_speednode_0120
   server: ::ffff:8e5d:fd31
   port: 2095
   type: vmess
@@ -1503,7 +1491,7 @@ proxies:
       Host:
       - d1.awsstatic.com
   udp: true
-- name: EX_NO_speednode_0121
+- name: NO_speednode_0121
   server: 95.164.38.151
   port: 443
   type: trojan
@@ -1511,7 +1499,7 @@ proxies:
   sni: copy-wifi-twins.stark-industries.solutions
   skip-cert-verify: false
   udp: true
-- name: EX_RO_speednode_0122
+- name: RO_speednode_0122
   server: 45.12.30.86
   port: 8880
   type: vless
@@ -1525,7 +1513,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_RO_speednode_0123
+- name: RO_speednode_0123
   server: 45.12.30.206
   port: 8880
   type: vless
@@ -1539,7 +1527,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_RO_speednode_0124
+- name: RO_speednode_0124
   server: 45.85.119.75
   port: 8880
   type: vless
@@ -1553,7 +1541,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_RO_speednode_0125
+- name: RO_speednode_0125
   server: 45.12.31.162
   port: 8880
   type: vless
@@ -1567,7 +1555,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_RO_speednode_0126
+- name: RO_speednode_0126
   server: 45.12.31.212
   port: 8880
   type: vless
@@ -1581,7 +1569,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_RU_speednode_0128
+- name: RU_speednode_0128
   server: 45.142.120.147
   port: 8880
   type: vless
@@ -1595,7 +1583,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_RU_speednode_0129
+- name: RU_speednode_0129
   server: 45.142.120.116
   port: 8880
   type: vless
@@ -1609,7 +1597,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_RU_speednode_0130
+- name: RU_speednode_0130
   server: 45.142.120.214
   port: 8880
   type: vless
@@ -1623,7 +1611,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_RU_speednode_0131
+- name: RU_speednode_0131
   server: 45.142.120.56
   port: 8880
   type: vless
@@ -1637,7 +1625,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_RU_speednode_0132
+- name: RU_speednode_0132
   server: 45.8.211.88
   port: 8880
   type: vless
@@ -1651,7 +1639,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_RU_speednode_0133
+- name: RU_speednode_0133
   server: 5.182.84.20
   port: 8880
   type: vless
@@ -1665,7 +1653,7 @@ proxies:
     headers:
       Host: us.laoyoutiao.link
   udp: true
-- name: EX_RU_speednode_0134
+- name: RU_speednode_0134
   server: 45.142.120.93
   port: 8880
   type: vless
@@ -1679,7 +1667,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_RU_speednode_0135
+- name: RU_speednode_0135
   server: 193.233.115.226
   port: 8443
   type: vless
@@ -1694,7 +1682,7 @@ proxies:
     headers:
       Host: 0926.qiang2000.link
   udp: true
-- name: EX_RU_speednode_0137
+- name: RU_speednode_0137
   server: 5.182.84.244
   port: 443
   type: trojan
@@ -1707,7 +1695,7 @@ proxies:
     headers:
       Host: epme.ambercc.filegear-sg.me
   udp: true
-- name: EX_SG_speednode_0138
+- name: SG_speednode_0138
   server: 3bd9.55dca.e048.f9-fef1f.yfjcs.com
   port: 443
   type: vless
@@ -1718,7 +1706,7 @@ proxies:
   client-fingerprint: chrome
   servername: yfsg-1.xn--4gq62f52gppi29k.com
   udp: true
-- name: EX_SG_speednode_0139
+- name: SG_speednode_0139
   server: 3bd9.55dca.e048.f10-fef1f.yfjcs.com
   port: 443
   type: vless
@@ -1729,7 +1717,7 @@ proxies:
   client-fingerprint: ios
   servername: yfsg-1.xn--4gq62f52gppi29k.com
   udp: true
-- name: EX_SG_speednode_0140
+- name: SG_speednode_0140
   server: 3bd9.55dca.e048.f7-fef1f.yfjcs.com
   port: 443
   type: vless
@@ -1740,7 +1728,7 @@ proxies:
   client-fingerprint: safari
   servername: b295-23ap29-6bh.xn--4gq62f52gppi29k.com
   udp: true
-- name: EX_SG_speednode_0141
+- name: SG_speednode_0141
   server: 3bd9.55dca.e048.f8-fef1f.yfjcs.com
   port: 443
   type: vless
@@ -1751,7 +1739,7 @@ proxies:
   client-fingerprint: firefox
   servername: yfsg-1.xn--4gq62f52gppi29k.com
   udp: true
-- name: EX_SG_speednode_0142
+- name: SG_speednode_0142
   server: 3.0.39.179
   port: 443
   type: vless
@@ -1765,7 +1753,7 @@ proxies:
     headers:
       Host: jd.chenchuanjin.sbs
   udp: true
-- name: EX_SG_speednode_0143
+- name: SG_speednode_0143
   server: 27.50.48.154
   port: 8443
   type: vless
@@ -1779,7 +1767,7 @@ proxies:
     headers:
       Host: edmq.aimercc.filegear-sg.me
   udp: true
-- name: EX_SG_speednode_0144
+- name: SG_speednode_0144
   server: 92.243.75.49
   port: 2087
   type: vless
@@ -1793,7 +1781,7 @@ proxies:
     headers:
       Host: edmq.aimercc.filegear-sg.me
   udp: true
-- name: EX_SG_speednode_0145
+- name: SG_speednode_0145
   server: 27.50.48.189
   port: 2083
   type: vless
@@ -1807,7 +1795,7 @@ proxies:
     headers:
       Host: edmq.aimercc.filegear-sg.me
   udp: true
-- name: EX_SG_speednode_0146
+- name: SG_speednode_0146
   server: 160.22.79.155
   port: 443
   type: vless
@@ -1821,7 +1809,7 @@ proxies:
     headers:
       Host: steep.skyfigure.top
   udp: true
-- name: EX_SG_speednode_0147
+- name: SG_speednode_0147
   server: 15.235.202.96
   port: 443
   type: vless
@@ -1830,7 +1818,7 @@ proxies:
   skip-cert-verify: true
   servername: fonts.googleapis.com
   udp: true
-- name: EX_SI_speednode_0148
+- name: SI_speednode_0148
   server: 92.53.188.20
   port: 8880
   type: vless
@@ -1844,7 +1832,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_SI_speednode_0149
+- name: SI_speednode_0149
   server: 92.53.190.161
   port: 2087
   type: trojan
@@ -1857,7 +1845,7 @@ proxies:
     headers:
       Host: epme.ambercc.filegear-sg.me
   udp: true
-- name: EX_TW_speednode_0150
+- name: TW_speednode_0150
   server: 103.137.62.194
   port: 443
   type: ss
@@ -1871,7 +1859,7 @@ proxies:
     tls: true
     mux: true
   udp: true
-- name: EX_TW_speednode_0151
+- name: TW_speednode_0151
   server: 141.11.86.94
   port: 18333
   type: vless
@@ -1885,7 +1873,7 @@ proxies:
     headers:
       Host: edmq.aimercc.filegear-sg.me
   udp: true
-- name: EX_US_speednode_0152
+- name: US_speednode_0152
   server: 156.238.18.252
   port: 8880
   type: vless
@@ -1899,7 +1887,7 @@ proxies:
     headers:
       Host: jp.laoyoutiao.link
   udp: true
-- name: EX_US_speednode_0153
+- name: US_speednode_0153
   server: 141.193.213.207
   port: 80
   type: vless
@@ -1913,7 +1901,7 @@ proxies:
     headers:
       Host: cs.laoyoutiao.link
   udp: true
-- name: EX_US_speednode_0154
+- name: US_speednode_0154
   server: 141.193.213.178
   port: 80
   type: vless
@@ -1927,7 +1915,7 @@ proxies:
     headers:
       Host: cs.laoyoutiao.link
   udp: true
-- name: EX_US_speednode_0155
+- name: US_speednode_0155
   server: 141.193.213.230
   port: 80
   type: vless
@@ -1941,7 +1929,7 @@ proxies:
     headers:
       Host: cs.laoyoutiao.link
   udp: true
-- name: EX_US_speednode_0156
+- name: US_speednode_0156
   server: 141.193.213.153
   port: 80
   type: vless
@@ -1955,7 +1943,7 @@ proxies:
     headers:
       Host: cs.laoyoutiao.link
   udp: true
-- name: EX_US_speednode_0157
+- name: US_speednode_0157
   server: 141.193.213.241
   port: 80
   type: vless
@@ -1969,7 +1957,7 @@ proxies:
     headers:
       Host: cs.laoyoutiao.link
   udp: true
-- name: EX_US_speednode_0158
+- name: US_speednode_0158
   server: 141.193.213.214
   port: 80
   type: vless
@@ -1983,7 +1971,7 @@ proxies:
     headers:
       Host: cs.laoyoutiao.link
   udp: true
-- name: EX_US_speednode_0159
+- name: US_speednode_0159
   server: 141.193.213.142
   port: 80
   type: vless
@@ -1997,7 +1985,7 @@ proxies:
     headers:
       Host: cs.laoyoutiao.link
   udp: true
-- name: EX_US_speednode_0160
+- name: US_speednode_0160
   server: 141.193.213.145
   port: 80
   type: vless
@@ -2011,7 +1999,7 @@ proxies:
     headers:
       Host: cs.laoyoutiao.link
   udp: true
-- name: EX_US_speednode_0161
+- name: US_speednode_0161
   server: 104.17.223.37
   port: 443
   type: vless
@@ -2025,7 +2013,7 @@ proxies:
     headers:
       Host: edmq.aimercc.filegear-sg.me
   udp: true
-- name: EX_US_speednode_0162
+- name: US_speednode_0162
   server: 104.16.38.60
   port: 80
   type: vless
@@ -2039,7 +2027,7 @@ proxies:
     headers:
       Host: hidden-river-df80-ppal03.bewome9099.workers.dev
   udp: true
-- name: EX_US_speednode_0163
+- name: US_speednode_0163
   server: 104.16.178.238
   port: 80
   type: vless
@@ -2053,7 +2041,7 @@ proxies:
     headers:
       Host: little-bird-a235-ppal03.fosawaw121.workers.dev
   udp: true
-- name: EX_US_speednode_0164
+- name: US_speednode_0164
   server: 167.68.42.20
   port: 8880
   type: vless
@@ -2067,7 +2055,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_US_speednode_0165
+- name: US_speednode_0165
   server: 14.102.229.20
   port: 8880
   type: vless
@@ -2081,7 +2069,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_US_speednode_0166
+- name: US_speednode_0166
   server: kip.ns.cloudflare.com
   port: 443
   type: vless
@@ -2095,7 +2083,7 @@ proxies:
     headers:
       Host: edmq.aimercc.filegear-sg.me
   udp: true
-- name: EX_US_speednode_0167
+- name: US_speednode_0167
   server: 156.238.18.80
   port: 8880
   type: vless
@@ -2109,7 +2097,7 @@ proxies:
     headers:
       Host: yd.laoyoutiao.link
   udp: true
-- name: EX_US_speednode_0168
+- name: US_speednode_0168
   server: 151.101.2.133
   port: 80
   type: vless
@@ -2123,7 +2111,7 @@ proxies:
     headers:
       Host: xasshsga---RUBIKA.ir.speedtest.net.ARCHYU.IR
   udp: true
-- name: EX_US_speednode_0169
+- name: US_speednode_0169
   server: lynn.ns.cloudflare.com
   port: 443
   type: vless
@@ -2137,7 +2125,7 @@ proxies:
     headers:
       Host: edmq.aimercc.filegear-sg.me
   udp: true
-- name: EX_US_speednode_0170
+- name: US_speednode_0170
   server: 209.46.30.20
   port: 8880
   type: vless
@@ -2151,7 +2139,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_US_speednode_0171
+- name: US_speednode_0171
   server: 47.79.43.222
   port: 443
   type: vless
@@ -2165,7 +2153,7 @@ proxies:
     headers:
       Host: steep.skyfigure.top
   udp: true
-- name: EX_US_speednode_0172
+- name: US_speednode_0172
   server: 104.129.164.20
   port: 8880
   type: vless
@@ -2179,7 +2167,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_US_speednode_0174
+- name: US_speednode_0174
   server: 155.46.213.20
   port: 8880
   type: vless
@@ -2193,7 +2181,7 @@ proxies:
     headers:
       Host: us.laoyoutiao.link
   udp: true
-- name: EX_US_speednode_0175
+- name: US_speednode_0175
   server: 108.165.216.20
   port: 8880
   type: vless
@@ -2207,7 +2195,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_US_speednode_0176
+- name: US_speednode_0176
   server: 104.254.140.20
   port: 8880
   type: vless
@@ -2221,7 +2209,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_US_speednode_0177
+- name: US_speednode_0177
   server: 156.238.18.170
   port: 8880
   type: vless
@@ -2235,7 +2223,7 @@ proxies:
     headers:
       Host: yd.laoyoutiao.link
   udp: true
-- name: EX_US_speednode_0178
+- name: US_speednode_0178
   server: 63.141.128.88
   port: 443
   type: vless
@@ -2249,7 +2237,7 @@ proxies:
     headers:
       Host: xa.bgm2024.dpdns.org
   udp: true
-- name: EX_US_speednode_0179
+- name: US_speednode_0179
   server: damien.ns.cloudflare.com
   port: 443
   type: vless
@@ -2263,7 +2251,7 @@ proxies:
     headers:
       Host: edmq.aimercc.filegear-sg.me
   udp: true
-- name: EX_US_speednode_0180
+- name: US_speednode_0180
   server: 45.159.216.20
   port: 8880
   type: vless
@@ -2277,7 +2265,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_US_speednode_0181
+- name: US_speednode_0181
   server: 64.181.255.250
   port: 443
   type: vless
@@ -2288,7 +2276,7 @@ proxies:
   client-fingerprint: safari
   servername: b295-23ae29-6bh.xn--4gq62f52gppi29k.com
   udp: true
-- name: EX_US_speednode_0182
+- name: US_speednode_0182
   server: 192.9.247.127
   port: 443
   type: vless
@@ -2299,7 +2287,7 @@ proxies:
   client-fingerprint: chrome
   servername: b295-23ae29-6bh.xn--4gq62f52gppi29k.com
   udp: true
-- name: EX_US_speednode_0184
+- name: US_speednode_0184
   server: 188.114.97.3
   port: 443
   type: vless
@@ -2316,7 +2304,7 @@ proxies:
     headers:
       Host: pas-kale-agha.pages.dev
   udp: true
-- name: EX_US_speednode_0185
+- name: US_speednode_0185
   server: hajlab.ucdavis.edu
   port: 80
   type: vless
@@ -2330,7 +2318,7 @@ proxies:
     headers:
       Host: wWw.SpEeDtEsT.NeT.ZuLa.Ir.IkCoSaLeS.iR.D662599.v20.pronetwork20.com
   udp: true
-- name: EX_US_speednode_0186
+- name: US_speednode_0186
   server: 160.79.105.45
   port: 443
   type: vless
@@ -2344,7 +2332,7 @@ proxies:
     headers:
       Host: xa.bgm2024.dpdns.org
   udp: true
-- name: EX_US_speednode_0187
+- name: US_speednode_0187
   server: 192.9.142.185
   port: 443
   type: vless
@@ -2355,7 +2343,7 @@ proxies:
   client-fingerprint: chrome
   servername: b295-23ae29-6bh.xn--4gq62f52gppi29k.com
   udp: true
-- name: EX_US_speednode_0188
+- name: US_speednode_0188
   server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
   port: 443
   type: vless
@@ -2369,7 +2357,7 @@ proxies:
     headers:
       Host: xa.bgm2024.dpdns.org
   udp: true
-- name: EX_US_speednode_0191
+- name: US_speednode_0191
   server: 66.59.197.110
   port: 33001
   type: vless
@@ -2381,7 +2369,7 @@ proxies:
   reality-opts:
     public-key: 4rJ3CmHXBvnX5N44I7aI1UZgi2d1cVOmSjf7_X2WzEA
   udp: true
-- name: EX_US_speednode_0193
+- name: US_speednode_0193
   server: 66.81.247.81
   port: 8880
   type: vless
@@ -2395,7 +2383,7 @@ proxies:
     headers:
       Host: reedfree8mahsang2.redorg.ir
   udp: true
-- name: EX_US_speednode_0195
+- name: US_speednode_0195
   server: 165.1.68.155
   port: 443
   type: vless
@@ -2406,7 +2394,7 @@ proxies:
   client-fingerprint: chrome
   servername: 767w1-38dc0-9ocf2.xn--4gq62f52gppi29k.com
   udp: true
-- name: EX_US_speednode_0197
+- name: US_speednode_0197
   server: 69.84.182.89
   port: 443
   type: vless
@@ -2420,7 +2408,7 @@ proxies:
     headers:
       Host: xa.bgm2024.dpdns.org
   udp: true
-- name: EX_US_speednode_0199
+- name: US_speednode_0199
   server: 104.19.54.50
   port: 443
   type: vless
@@ -2437,7 +2425,7 @@ proxies:
     headers:
       Host: HarmonY-427.pages.DEV
   udp: true
-- name: EX_US_speednode_0200
+- name: US_speednode_0200
   server: 172.66.44.68
   port: 443
   type: vless
@@ -2455,7 +2443,7 @@ proxies:
     headers:
       Host: 37c60f8d.albangurakuqi.pages.dev
   udp: true
-- name: EX_US_speednode_0203
+- name: US_speednode_0203
   server: fastaly.dollardoon.com
   port: 80
   type: vless
@@ -2469,7 +2457,7 @@ proxies:
     headers:
       Host: vipfast_7.com
   udp: true
-- name: EX_US_speednode_0204
+- name: US_speednode_0204
   server: 104.17.252.50
   port: 80
   type: vless
@@ -2483,7 +2471,7 @@ proxies:
     headers:
       Host: us.xyxy.dpdns.org
   udp: true
-- name: EX_US_speednode_0205
+- name: US_speednode_0205
   server: 151.101.130.228
   port: 80
   type: vless
@@ -2497,7 +2485,7 @@ proxies:
     headers:
       Host: joinshhproxybedeedeeeeee.ir
   udp: true
-- name: EX_US_speednode_0206
+- name: US_speednode_0206
   server: 216.24.57.59
   port: 443
   type: vless
@@ -2511,7 +2499,7 @@ proxies:
     headers:
       Host: xa.bgm2024.dpdns.org
   udp: true
-- name: EX_US_speednode_0207
+- name: US_speednode_0207
   server: 172.66.47.31
   port: 2096
   type: vless
@@ -2529,7 +2517,7 @@ proxies:
     headers:
       Host: newmtproxi.pages.dev
   udp: true
-- name: EX_US_speednode_0208
+- name: US_speednode_0208
   server: newmtproxi.pages.dev
   port: 2087
   type: vless
@@ -2547,7 +2535,7 @@ proxies:
     headers:
       Host: newmtproxi.pages.dev
   udp: true
-- name: EX_US_speednode_0210
+- name: US_speednode_0210
   server: 172.66.47.138
   port: 443
   type: vless
@@ -2565,7 +2553,7 @@ proxies:
     headers:
       Host: BEsTiIIiiIiIIIVpN.PAges.dEv
   udp: true
-- name: EX_US_speednode_0211
+- name: US_speednode_0211
   server: 172.66.47.100
   port: 443
   type: vless
@@ -2583,7 +2571,7 @@ proxies:
     headers:
       Host: besTiIvPn-6t8.PAGes.DEV
   udp: true
-- name: EX_US_speednode_0216
+- name: US_speednode_0216
   server: 172.66.44.156
   port: 443
   type: vless
@@ -2601,7 +2589,7 @@ proxies:
     headers:
       Host: besTiIvPn-6t8.PAGes.DEV
   udp: true
-- name: EX_US_speednode_0218
+- name: US_speednode_0218
   server: 172.66.44.126
   port: 443
   type: vless
@@ -2615,7 +2603,7 @@ proxies:
     headers:
       Host: bESTIivpn.paGEs.dEV
   udp: true
-- name: EX_US_speednode_0221
+- name: US_speednode_0221
   server: 104.19.77.118
   port: 443
   type: vless
@@ -2630,7 +2618,7 @@ proxies:
     headers:
       Host: cr777.rayan.dpdns.org
   udp: true
-- name: EX_US_speednode_0224
+- name: US_speednode_0224
   server: 45.150.65.53
   port: 443
   type: vless
@@ -2645,7 +2633,7 @@ proxies:
     headers:
       Host: usa01.abvpn.ru
   udp: true
-- name: EX_US_speednode_0225
+- name: US_speednode_0225
   server: 104.18.22.235
   port: 443
   type: vless
@@ -2660,271 +2648,271 @@ proxies:
     headers:
       Host: nl1n.yfjc.sbs
   udp: true
-- name: EX_GER-DIALER-01
+- name: GER-DIALER-01
   type: wireguard
   ip: 172.16.0.2/32
-  ipv6: 2606:4700:110:8079:6392:9d73:67b9:50e3/128
-  private-key: YCaGMCjkp5eKqvb315oE6WjNVuEuqhmdCxExbOsb4EU=
-  server: 162.159.192.138
-  port: 7281
+  ipv6: 2606:4700:110:8994:746d:d005:24e4:342a/128
+  private-key: WD2YBI+5yHSD5Nl47qM3khPMSj2sQ/5zpBk9jBdHuUk=
+  server: 162.159.195.211
+  port: 3476
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   allowed-ips:
   - 0.0.0.0/0
   - ::/0
-  reserved: 8X9K
+  reserved: CLfw
   udp: true
   mtu: 1280
   dialer-proxy: IRN-ENTRY-01
-- name: EX_IRN-ENTRY-01
+- name: IRN-ENTRY-01
   type: wireguard
   ip: 172.16.0.2/32
-  ipv6: 2606:4700:110:844d:65a8:d69d:d583:4820/128
-  private-key: WNUNc+5SWVVzsVQ1Qo9FWNKpWnDB6Z4S7NnChN0b818=
-  server: 188.114.97.208
+  ipv6: 2606:4700:110:81f0:143:4410:851a:c895/128
+  private-key: gNwQdNzRSXnnZbie0pMkI3clt+tUH298l2bw067jNFU=
+  server: 188.114.99.182
+  port: 988
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  allowed-ips:
+  - 0.0.0.0/0
+  - ::/0
+  reserved: eWWo
+  udp: true
+  mtu: 1280
+  amnezia-wg-option:
+    jc: '4'
+    jmin: '40'
+    jmax: '70'
+- name: GER-DIALER-02
+  type: wireguard
+  ip: 172.16.0.2/32
+  ipv6: 2606:4700:110:8994:746d:d005:24e4:342a/128
+  private-key: WD2YBI+5yHSD5Nl47qM3khPMSj2sQ/5zpBk9jBdHuUk=
+  server: 188.114.97.178
   port: 864
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   allowed-ips:
   - 0.0.0.0/0
   - ::/0
-  reserved: zMh9
-  udp: true
-  mtu: 1280
-  amnezia-wg-option:
-    jc: '4'
-    jmin: '40'
-    jmax: '70'
-- name: EX_GER-DIALER-02
-  type: wireguard
-  ip: 172.16.0.2/32
-  ipv6: 2606:4700:110:8079:6392:9d73:67b9:50e3/128
-  private-key: YCaGMCjkp5eKqvb315oE6WjNVuEuqhmdCxExbOsb4EU=
-  server: 162.159.193.2
-  port: 500
-  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
-  allowed-ips:
-  - 0.0.0.0/0
-  - ::/0
-  reserved: 8X9K
+  reserved: CLfw
   udp: true
   mtu: 1280
   dialer-proxy: IRN-ENTRY-02
-- name: EX_IRN-ENTRY-02
+- name: IRN-ENTRY-02
   type: wireguard
   ip: 172.16.0.2/32
-  ipv6: 2606:4700:110:844d:65a8:d69d:d583:4820/128
-  private-key: WNUNc+5SWVVzsVQ1Qo9FWNKpWnDB6Z4S7NnChN0b818=
-  server: 162.159.192.80
-  port: 5956
+  ipv6: 2606:4700:110:81f0:143:4410:851a:c895/128
+  private-key: gNwQdNzRSXnnZbie0pMkI3clt+tUH298l2bw067jNFU=
+  server: 162.159.192.153
+  port: 3581
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   allowed-ips:
   - 0.0.0.0/0
   - ::/0
-  reserved: zMh9
+  reserved: eWWo
   udp: true
   mtu: 1280
   amnezia-wg-option:
     jc: '4'
     jmin: '40'
     jmax: '70'
-- name: EX_GER-DIALER-03
+- name: GER-DIALER-03
   type: wireguard
   ip: 172.16.0.2/32
-  ipv6: 2606:4700:110:8079:6392:9d73:67b9:50e3/128
-  private-key: YCaGMCjkp5eKqvb315oE6WjNVuEuqhmdCxExbOsb4EU=
-  server: 188.114.98.163
-  port: 903
+  ipv6: 2606:4700:110:8994:746d:d005:24e4:342a/128
+  private-key: WD2YBI+5yHSD5Nl47qM3khPMSj2sQ/5zpBk9jBdHuUk=
+  server: 188.114.98.85
+  port: 946
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   allowed-ips:
   - 0.0.0.0/0
   - ::/0
-  reserved: 8X9K
+  reserved: CLfw
   udp: true
   mtu: 1280
   dialer-proxy: IRN-ENTRY-03
-- name: EX_IRN-ENTRY-03
+- name: IRN-ENTRY-03
   type: wireguard
   ip: 172.16.0.2/32
-  ipv6: 2606:4700:110:844d:65a8:d69d:d583:4820/128
-  private-key: WNUNc+5SWVVzsVQ1Qo9FWNKpWnDB6Z4S7NnChN0b818=
-  server: 188.114.97.29
-  port: 1387
+  ipv6: 2606:4700:110:81f0:143:4410:851a:c895/128
+  private-key: gNwQdNzRSXnnZbie0pMkI3clt+tUH298l2bw067jNFU=
+  server: 188.114.98.40
+  port: 3581
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   allowed-ips:
   - 0.0.0.0/0
   - ::/0
-  reserved: zMh9
+  reserved: eWWo
   udp: true
   mtu: 1280
   amnezia-wg-option:
     jc: '4'
     jmin: '40'
     jmax: '70'
-- name: EX_GER-DIALER-04
+- name: GER-DIALER-04
   type: wireguard
   ip: 172.16.0.2/32
-  ipv6: 2606:4700:110:8079:6392:9d73:67b9:50e3/128
-  private-key: YCaGMCjkp5eKqvb315oE6WjNVuEuqhmdCxExbOsb4EU=
-  server: 162.159.195.27
-  port: 1018
+  ipv6: 2606:4700:110:8994:746d:d005:24e4:342a/128
+  private-key: WD2YBI+5yHSD5Nl47qM3khPMSj2sQ/5zpBk9jBdHuUk=
+  server: 188.114.97.7
+  port: 955
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   allowed-ips:
   - 0.0.0.0/0
   - ::/0
-  reserved: 8X9K
+  reserved: CLfw
   udp: true
   mtu: 1280
   dialer-proxy: IRN-ENTRY-04
-- name: EX_IRN-ENTRY-04
+- name: IRN-ENTRY-04
   type: wireguard
   ip: 172.16.0.2/32
-  ipv6: 2606:4700:110:844d:65a8:d69d:d583:4820/128
-  private-key: WNUNc+5SWVVzsVQ1Qo9FWNKpWnDB6Z4S7NnChN0b818=
-  server: 188.114.98.9
-  port: 2506
+  ipv6: 2606:4700:110:81f0:143:4410:851a:c895/128
+  private-key: gNwQdNzRSXnnZbie0pMkI3clt+tUH298l2bw067jNFU=
+  server: 162.159.195.69
+  port: 968
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   allowed-ips:
   - 0.0.0.0/0
   - ::/0
-  reserved: zMh9
+  reserved: eWWo
   udp: true
   mtu: 1280
   amnezia-wg-option:
     jc: '4'
     jmin: '40'
     jmax: '70'
-- name: EX_GER-DIALER-05
+- name: GER-DIALER-05
   type: wireguard
   ip: 172.16.0.2/32
-  ipv6: 2606:4700:110:8079:6392:9d73:67b9:50e3/128
-  private-key: YCaGMCjkp5eKqvb315oE6WjNVuEuqhmdCxExbOsb4EU=
-  server: 188.114.98.221
-  port: 8319
+  ipv6: 2606:4700:110:8994:746d:d005:24e4:342a/128
+  private-key: WD2YBI+5yHSD5Nl47qM3khPMSj2sQ/5zpBk9jBdHuUk=
+  server: 188.114.98.246
+  port: 3138
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   allowed-ips:
   - 0.0.0.0/0
   - ::/0
-  reserved: 8X9K
+  reserved: CLfw
   udp: true
   mtu: 1280
   dialer-proxy: IRN-ENTRY-05
-- name: EX_IRN-ENTRY-05
+- name: IRN-ENTRY-05
   type: wireguard
   ip: 172.16.0.2/32
-  ipv6: 2606:4700:110:844d:65a8:d69d:d583:4820/128
-  private-key: WNUNc+5SWVVzsVQ1Qo9FWNKpWnDB6Z4S7NnChN0b818=
-  server: 188.114.96.98
-  port: 880
+  ipv6: 2606:4700:110:81f0:143:4410:851a:c895/128
+  private-key: gNwQdNzRSXnnZbie0pMkI3clt+tUH298l2bw067jNFU=
+  server: 188.114.97.102
+  port: 1014
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   allowed-ips:
   - 0.0.0.0/0
   - ::/0
-  reserved: zMh9
+  reserved: eWWo
   udp: true
   mtu: 1280
   amnezia-wg-option:
     jc: '4'
     jmin: '40'
     jmax: '70'
-- name: EX_GER-DIALER-06
+- name: GER-DIALER-06
   type: wireguard
   ip: 172.16.0.2/32
-  ipv6: 2606:4700:110:8079:6392:9d73:67b9:50e3/128
-  private-key: YCaGMCjkp5eKqvb315oE6WjNVuEuqhmdCxExbOsb4EU=
-  server: 188.114.99.80
-  port: 987
+  ipv6: 2606:4700:110:8994:746d:d005:24e4:342a/128
+  private-key: WD2YBI+5yHSD5Nl47qM3khPMSj2sQ/5zpBk9jBdHuUk=
+  server: 162.159.192.203
+  port: 7281
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   allowed-ips:
   - 0.0.0.0/0
   - ::/0
-  reserved: 8X9K
+  reserved: CLfw
   udp: true
   mtu: 1280
   dialer-proxy: IRN-ENTRY-06
-- name: EX_IRN-ENTRY-06
+- name: IRN-ENTRY-06
   type: wireguard
   ip: 172.16.0.2/32
-  ipv6: 2606:4700:110:844d:65a8:d69d:d583:4820/128
-  private-key: WNUNc+5SWVVzsVQ1Qo9FWNKpWnDB6Z4S7NnChN0b818=
-  server: 162.159.192.149
-  port: 878
+  ipv6: 2606:4700:110:81f0:143:4410:851a:c895/128
+  private-key: gNwQdNzRSXnnZbie0pMkI3clt+tUH298l2bw067jNFU=
+  server: 188.114.97.114
+  port: 942
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   allowed-ips:
   - 0.0.0.0/0
   - ::/0
-  reserved: zMh9
+  reserved: eWWo
   udp: true
   mtu: 1280
   amnezia-wg-option:
     jc: '4'
     jmin: '40'
     jmax: '70'
-- name: EX_GER-DIALER-07
+- name: GER-DIALER-07
   type: wireguard
   ip: 172.16.0.2/32
-  ipv6: 2606:4700:110:8079:6392:9d73:67b9:50e3/128
-  private-key: YCaGMCjkp5eKqvb315oE6WjNVuEuqhmdCxExbOsb4EU=
-  server: 2606:4700:d1::605d:a626:777b:d38c
-  port: 8886
+  ipv6: 2606:4700:110:8994:746d:d005:24e4:342a/128
+  private-key: WD2YBI+5yHSD5Nl47qM3khPMSj2sQ/5zpBk9jBdHuUk=
+  server: 2606:4700:d1::fe20:7153:8345:4258
+  port: 928
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   allowed-ips:
   - 0.0.0.0/0
   - ::/0
-  reserved: 8X9K
+  reserved: CLfw
   udp: true
   mtu: 1280
   dialer-proxy: IRN-ENTRY-07
-- name: EX_IRN-ENTRY-07
+- name: IRN-ENTRY-07
   type: wireguard
   ip: 172.16.0.2/32
-  ipv6: 2606:4700:110:844d:65a8:d69d:d583:4820/128
-  private-key: WNUNc+5SWVVzsVQ1Qo9FWNKpWnDB6Z4S7NnChN0b818=
-  server: 2606:4700:d0::9807:dadf:f91f:b09b
-  port: 4500
+  ipv6: 2606:4700:110:81f0:143:4410:851a:c895/128
+  private-key: gNwQdNzRSXnnZbie0pMkI3clt+tUH298l2bw067jNFU=
+  server: 2606:4700:d0::f5f7:3258:1400:bedd
+  port: 894
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   allowed-ips:
   - 0.0.0.0/0
   - ::/0
-  reserved: zMh9
+  reserved: eWWo
   udp: true
   mtu: 1280
   amnezia-wg-option:
     jc: '4'
     jmin: '40'
     jmax: '70'
-- name: EX_GER-DIALER-08
+- name: GER-DIALER-08
   type: wireguard
   ip: 172.16.0.2/32
-  ipv6: 2606:4700:110:8079:6392:9d73:67b9:50e3/128
-  private-key: YCaGMCjkp5eKqvb315oE6WjNVuEuqhmdCxExbOsb4EU=
-  server: 2606:4700:d1::ad9b:bf9a:cc0f:d7fe
-  port: 878
+  ipv6: 2606:4700:110:8994:746d:d005:24e4:342a/128
+  private-key: WD2YBI+5yHSD5Nl47qM3khPMSj2sQ/5zpBk9jBdHuUk=
+  server: 2606:4700:d1::6242:d218:bb2d:8562
+  port: 8854
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   allowed-ips:
   - 0.0.0.0/0
   - ::/0
-  reserved: 8X9K
+  reserved: CLfw
   udp: true
   mtu: 1280
   dialer-proxy: IRN-ENTRY-08
-- name: EX_IRN-ENTRY-08
+- name: IRN-ENTRY-08
   type: wireguard
   ip: 172.16.0.2/32
-  ipv6: 2606:4700:110:844d:65a8:d69d:d583:4820/128
-  private-key: WNUNc+5SWVVzsVQ1Qo9FWNKpWnDB6Z4S7NnChN0b818=
-  server: 2606:4700:d0::ff64:277e:ad1d:ad19
-  port: 908
+  ipv6: 2606:4700:110:81f0:143:4410:851a:c895/128
+  private-key: gNwQdNzRSXnnZbie0pMkI3clt+tUH298l2bw067jNFU=
+  server: 2606:4700:d0::23d7:e3c6:d270:525e
+  port: 7103
   public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
   allowed-ips:
   - 0.0.0.0/0
   - ::/0
-  reserved: zMh9
+  reserved: eWWo
   udp: true
   mtu: 1280
   amnezia-wg-option:
     jc: '4'
     jmin: '40'
     jmax: '70'
-- name: EX_🇨🇳_CN_中国->🇩🇪_DE_德国
+- name: 🇨🇳_CN_中国->🇩🇪_DE_德国
   type: trojan
   server: 120.233.44.201
   port: 21102
@@ -2933,27 +2921,33 @@ proxies:
   skip-cert-verify: true
   ip-version: dual
   udp: true
-- name: EX_🇳🇱_NL_荷兰->🇺🇸_US_美国
-  type: vmess
-  server: 45.147.201.231
-  port: 23091
-  uuid: 718b428b-142b-475d-9b11-5f8e972ca4c5
-  network: ws
-  ws-opts:
-    path: /
-  ip-version: dual
-  udp: true
-  alterId: 0
-  cipher: auto
-- name: EX_🇺🇸_US_美国->🇩🇪_DE_德国_1
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
   type: trojan
-  server: 3.73.241.125
-  port: 22222
-  password: telegram-id-privatevpns
-  sni: trojan.burgerip.co.uk
+  server: 36.151.251.61
+  port: 33097
+  password: RlzoEILU
+  sni: 36.151.251.61
+  skip-cert-verify: true
   ip-version: dual
   udp: true
-- name: EX_🇺🇸_US_美国->🇫🇷_FR_法国
+- name: 🇨🇳_CN_中国
+  type: ss
+  server: okanc.node-is.green
+  port: 21115
+  password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
+  ip-version: dual
+  udp: true
+  cipher: aes-256-gcm
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  type: trojan
+  server: 36.151.251.62
+  port: 3330
+  password: RlzoEILU
+  sni: cdn.egvra.cn
+  skip-cert-verify: true
+  ip-version: dual
+  udp: true
+- name: 🇺🇸_US_美国->🇫🇷_FR_法国
   type: trojan
   server: 104.21.25.95
   port: 443
@@ -2965,12 +2959,30 @@ proxies:
     path: /mZr1mA5hub7QHHkQBzYO
   ip-version: dual
   udp: true
-- name: EX_🇨🇳_CN_中国->🇨🇦_CA_加拿大
+- name: 🇰🇷_KR_韩国
+  type: ss
+  server: 154.223.16.212
+  port: 989
+  password: f8f7aCzcPKbsF8p3
+  ip-version: dual
+  udp: true
+  cipher: aes-256-cfb
+- name: 🇺🇸_US_美国
+  type: trojan
+  server: 94.131.20.3
+  port: 443
+  password: 3482c71a-d01c-4ae5-b454-fa8cb3785f66
+  sni: chop-wrist-bud.stark-industries.solutions
+  ip-version: dual
+  udp: true
+- name: 🇨🇳_CN_中国->🇨🇦_CA_加拿大
   type: vmess
   server: v8.heduian.link
   port: 30808
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   network: ws
+  sni: ''
+  skip-cert-verify: true
   ws-opts:
     path: /oooo
     headers:
@@ -2979,187 +2991,112 @@ proxies:
   udp: true
   alterId: 2
   cipher: auto
-- name: EX_🇨🇳_CN_中国->🇺🇸_US_美国_1
-  type: trojan
-  server: 36.151.251.62
-  port: 13542
-  password: RlzoEILU
-  sni: cdn.egvra.cn
-  skip-cert-verify: true
-  ip-version: dual
-  udp: true
-- name: EX_🇨🇳_CN_中国->🇺🇸_US_美国_2
-  type: trojan
-  server: 36.151.251.61
-  port: 33097
-  password: RlzoEILU
-  sni: 36.151.251.61
-  skip-cert-verify: true
-  ip-version: dual
-  udp: true
-- name: EX_🇨🇳_CN_中国->🇺🇸_US_美国_3
-  type: ss
-  server: cm55-zz.moonwang.xyz
-  port: 54322
-  password: 26270a5c-cc66-4bb5-b058-c75d09d615e5
-  ip-version: dual
-  udp: true
-  cipher: chacha20-ietf-poly1305
-- name: EX_🇺🇸_US_美国->🇩🇪_DE_德国_2
-  type: trojan
-  server: 63.178.168.205
-  port: 22222
-  password: telegram-id-privatevpns
-  sni: trojan.burgerip.co.uk
-  ip-version: dual
-  udp: true
-- name: EX_🇫🇷_FR_法国
-  type: trojan
-  server: 52.47.169.236
-  port: 22222
-  password: telegram-id-privatevpns
-  sni: trojan.burgerip.co.uk
-  ip-version: dual
-  udp: true
-- name: EX_🇨🇳_CN_中国->🇺🇸_US_美国_5
-  type: trojan
-  server: 76b15373-swd340-tcudgo-1sa5k.cu.plebai.net
-  port: 15229
-  network: tcp
-  password: 3e6ae2e4-a8a5-11ef-8578-f23c913c8d2b
-  sni: 76b15373-swd340-tcudgo-1sa5k.cu.plebai.net
-  skip-cert-verify: true
-  ip-version: dual
-  udp: true
-- name: EX_🇺🇸_US_美国
-  type: trojan
-  server: 172.67.149.202
-  port: 443
-  network: ws
-  password: 19a78eeb-d83a-4364-b095-b7dd93436320
-  sni: CVFgTrE4.222560.XyZ
-  ws-opts:
-    path: /Hq0I4JMuzO0WLijID
-  ip-version: dual
-  udp: true
 proxy-groups:
 - name: 🚀 节点选择
   type: select
   proxies:
   - ♻️ 自动选择
   - DIRECT
-  - 🇺🇸_US_美国->🇫🇷_FR_法国
   - 🇨🇳_CN_中国->🇺🇸_US_美国
   - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇺🇸_US_美国_2
+  - 🇨🇳_CN_中国
+  - 🇨🇳_CN_中国->🇮🇷_IR_伊朗
   - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_4
-  - 🇷🇺_RU_俄罗斯
-  - 🇺🇸_US_美国_3
-  - 🇨🇳_CN_中国->🇩🇪_DE_德国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_5
   - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_6
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_7
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - 🇷🇺_RU_俄罗斯
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_4
+  - 🇨🇳_CN_中国->🇩🇪_DE_德国
+  - 🇬🇧_GB_英国->🇺🇸_US_美国
+  - 🇳🇱_NL_荷兰->🇺🇸_US_美国
 - name: ♻️ 自动选择
   type: url-test
-  url: https://www.gstatic.com/generate_204
-  interval: 60
+  url: https://www.facebook.com/common/referer_frame.php
+  interval: 120
   tolerance: 10
   proxies:
   - 🪐 负载均衡
-  - 🇺🇸_US_美国->🇫🇷_FR_法国
   - 🇨🇳_CN_中国->🇺🇸_US_美国
   - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇺🇸_US_美国_2
+  - 🇨🇳_CN_中国
+  - 🇨🇳_CN_中国->🇮🇷_IR_伊朗
   - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_4
-  - 🇷🇺_RU_俄罗斯
-  - 🇺🇸_US_美国_3
-  - 🇨🇳_CN_中国->🇩🇪_DE_德国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_5
   - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_6
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_7
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - 🇷🇺_RU_俄罗斯
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_4
+  - 🇨🇳_CN_中国->🇩🇪_DE_德国
+  - 🇬🇧_GB_英国->🇺🇸_US_美国
+  - 🇳🇱_NL_荷兰->🇺🇸_US_美国
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🚀 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇺🇸_US_美国->🇫🇷_FR_法国
   - 🇨🇳_CN_中国->🇺🇸_US_美国
   - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇺🇸_US_美国_2
+  - 🇨🇳_CN_中国
+  - 🇨🇳_CN_中国->🇮🇷_IR_伊朗
   - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_4
-  - 🇷🇺_RU_俄罗斯
-  - 🇺🇸_US_美国_3
-  - 🇨🇳_CN_中国->🇩🇪_DE_德国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_5
   - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_6
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_7
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - 🇷🇺_RU_俄罗斯
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_4
+  - 🇨🇳_CN_中国->🇩🇪_DE_德国
+  - 🇬🇧_GB_英国->🇺🇸_US_美国
+  - 🇳🇱_NL_荷兰->🇺🇸_US_美国
 - name: 📲 电报信息
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇺🇸_US_美国->🇫🇷_FR_法国
   - 🇨🇳_CN_中国->🇺🇸_US_美国
   - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇺🇸_US_美国_2
+  - 🇨🇳_CN_中国
+  - 🇨🇳_CN_中国->🇮🇷_IR_伊朗
   - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_4
-  - 🇷🇺_RU_俄罗斯
-  - 🇺🇸_US_美国_3
-  - 🇨🇳_CN_中国->🇩🇪_DE_德国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_5
   - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_6
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_7
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - 🇷🇺_RU_俄罗斯
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_4
+  - 🇨🇳_CN_中国->🇩🇪_DE_德国
+  - 🇬🇧_GB_英国->🇺🇸_US_美国
+  - 🇳🇱_NL_荷兰->🇺🇸_US_美国
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇺🇸_US_美国->🇫🇷_FR_法国
   - 🇨🇳_CN_中国->🇺🇸_US_美国
   - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇺🇸_US_美国_2
+  - 🇨🇳_CN_中国
+  - 🇨🇳_CN_中国->🇮🇷_IR_伊朗
   - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_4
-  - 🇷🇺_RU_俄罗斯
-  - 🇺🇸_US_美国_3
-  - 🇨🇳_CN_中国->🇩🇪_DE_德国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_5
   - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_6
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_7
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - 🇷🇺_RU_俄罗斯
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_4
+  - 🇨🇳_CN_中国->🇩🇪_DE_德国
+  - 🇬🇧_GB_英国->🇺🇸_US_美国
+  - 🇳🇱_NL_荷兰->🇺🇸_US_美国
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇺🇸_US_美国->🇫🇷_FR_法国
   - 🇨🇳_CN_中国->🇺🇸_US_美国
   - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇺🇸_US_美国_2
+  - 🇨🇳_CN_中国
+  - 🇨🇳_CN_中国->🇮🇷_IR_伊朗
   - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_4
-  - 🇷🇺_RU_俄罗斯
-  - 🇺🇸_US_美国_3
-  - 🇨🇳_CN_中国->🇩🇪_DE_德国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_5
   - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_6
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_7
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - 🇷🇺_RU_俄罗斯
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_4
+  - 🇨🇳_CN_中国->🇩🇪_DE_德国
+  - 🇬🇧_GB_英国->🇺🇸_US_美国
+  - 🇳🇱_NL_荷兰->🇺🇸_US_美国
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -3182,251 +3119,245 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇺🇸_US_美国->🇫🇷_FR_法国
   - 🇨🇳_CN_中国->🇺🇸_US_美国
   - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇺🇸_US_美国_2
+  - 🇨🇳_CN_中国
+  - 🇨🇳_CN_中国->🇮🇷_IR_伊朗
   - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_4
-  - 🇷🇺_RU_俄罗斯
-  - 🇺🇸_US_美国_3
-  - 🇨🇳_CN_中国->🇩🇪_DE_德国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_5
   - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_6
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_7
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - 🇷🇺_RU_俄罗斯
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_4
+  - 🇨🇳_CN_中国->🇩🇪_DE_德国
+  - 🇬🇧_GB_英国->🇺🇸_US_美国
+  - 🇳🇱_NL_荷兰->🇺🇸_US_美国
 - name: 🪐 负载均衡
   type: load-balance
-  url: https://www.gstatic.com/generate_204
-  interval: 300
+  url: https://client3.google.com/generate_204
+  interval: 240
   strategy: round-robin
   proxies:
-  - EX_AM_speednode_0001
-  - EX_AM_speednode_0002
-  - EX_AT_speednode_0003
-  - EX_AU_speednode_0004
-  - EX_BG_speednode_0005
-  - EX_BG_speednode_0006
-  - EX_BR_speednode_0007
-  - EX_CN_speednode_0008
-  - EX_CN_speednode_0009
-  - EX_CN_speednode_0010
-  - EX_CN_speednode_0011
-  - EX_CN_speednode_0012
-  - EX_CN_speednode_0013
-  - EX_CN_speednode_0014
-  - EX_CN_speednode_0015
-  - EX_CN_speednode_0016
-  - EX_CN_speednode_0017
-  - EX_CN_speednode_0018
-  - EX_CN_speednode_0019
-  - EX_CN_speednode_0020
-  - EX_CN_speednode_0022
-  - EX_CN_speednode_0023
-  - EX_CN_speednode_0024
-  - EX_CN_speednode_0025
-  - EX_CN_speednode_0026
-  - EX_CN_speednode_0027
-  - EX_CN_speednode_0028
-  - EX_CN_speednode_0029
-  - EX_CN_speednode_0030
-  - EX_CN_speednode_0031
-  - EX_CN_speednode_0032
-  - EX_CN_speednode_0033
-  - EX_CN_speednode_0034
-  - EX_CN_speednode_0035
-  - EX_CN_speednode_0036
-  - EX_CN_speednode_0037
-  - EX_CN_speednode_0039
-  - EX_CN_speednode_0040
-  - EX_CN_speednode_0041
-  - EX_CN_speednode_0042
-  - EX_CN_speednode_0043
-  - EX_CN_speednode_0044
-  - EX_CN_speednode_0045
-  - EX_CN_speednode_0046
-  - EX_CR_speednode_0047
-  - EX_CR_speednode_0048
-  - EX_CY_speednode_0049
-  - EX_CY_speednode_0050
-  - EX_CZ_speednode_0051
-  - EX_DE_speednode_0052
-  - EX_DE_speednode_0053
-  - EX_DE_speednode_0054
-  - EX_DE_speednode_0056
-  - EX_DE_speednode_0057
-  - EX_DE_speednode_0058
-  - EX_DE_speednode_0059
-  - EX_DE_speednode_0060
-  - EX_DE_speednode_0061
-  - EX_DE_speednode_0062
-  - EX_DE_speednode_0063
-  - EX_EE_speednode_0064
-  - EX_ES_speednode_0065
-  - EX_ES_speednode_0067
-  - EX_FR_speednode_0069
-  - EX_GB_speednode_0070
-  - EX_GB_speednode_0071
-  - EX_GB_speednode_0072
-  - EX_GB_speednode_0073
-  - EX_GB_speednode_0074
-  - EX_GB_speednode_0075
-  - EX_GB_speednode_0076
-  - EX_GB_speednode_0077
-  - EX_GB_speednode_0078
-  - EX_GB_speednode_0079
-  - EX_GB_speednode_0080
-  - EX_GB_speednode_0081
-  - EX_GB_speednode_0082
-  - EX_GB_speednode_0083
-  - EX_GG_speednode_0084
-  - EX_HK_speednode_0085
-  - EX_IN_speednode_0086
-  - EX_JP_speednode_0087
-  - EX_JP_speednode_0088
-  - EX_JP_speednode_0089
-  - EX_JP_speednode_0090
-  - EX_JP_speednode_0091
-  - EX_JP_speednode_0092
-  - EX_JP_speednode_0093
-  - EX_JP_speednode_0094
-  - EX_JP_speednode_0095
-  - EX_JP_speednode_0096
-  - EX_KR_speednode_0097
-  - EX_KR_speednode_0098
-  - EX_KR_speednode_0099
-  - EX_KR_speednode_0100
-  - EX_KR_speednode_0101
-  - EX_KR_speednode_0102
-  - EX_KR_speednode_0103
-  - EX_KR_speednode_0104
-  - EX_KR_speednode_0105
-  - EX_KR_speednode_0106
-  - EX_KZ_speednode_0107
-  - EX_KZ_speednode_0108
-  - EX_KZ_speednode_0109
-  - EX_LT_speednode_0110
-  - EX_LT_speednode_0111
-  - EX_LU_speednode_0112
-  - EX_NL_speednode_0113
-  - EX_NL_speednode_0114
-  - EX_NL_speednode_0115
-  - EX_NL_speednode_0116
-  - EX_NL_speednode_0117
-  - EX_NL_speednode_0119
-  - EX_NN_speednode_0120
-  - EX_NO_speednode_0121
-  - EX_RO_speednode_0122
-  - EX_RO_speednode_0123
-  - EX_RO_speednode_0124
-  - EX_RO_speednode_0125
-  - EX_RO_speednode_0126
-  - EX_RU_speednode_0128
-  - EX_RU_speednode_0129
-  - EX_RU_speednode_0130
-  - EX_RU_speednode_0131
-  - EX_RU_speednode_0132
-  - EX_RU_speednode_0133
-  - EX_RU_speednode_0134
-  - EX_RU_speednode_0135
-  - EX_RU_speednode_0137
-  - EX_SG_speednode_0138
-  - EX_SG_speednode_0139
-  - EX_SG_speednode_0140
-  - EX_SG_speednode_0141
-  - EX_SG_speednode_0142
-  - EX_SG_speednode_0143
-  - EX_SG_speednode_0144
-  - EX_SG_speednode_0145
-  - EX_SG_speednode_0146
-  - EX_SG_speednode_0147
-  - EX_SI_speednode_0148
-  - EX_SI_speednode_0149
-  - EX_TW_speednode_0150
-  - EX_TW_speednode_0151
-  - EX_US_speednode_0152
-  - EX_US_speednode_0153
-  - EX_US_speednode_0154
-  - EX_US_speednode_0155
-  - EX_US_speednode_0156
-  - EX_US_speednode_0157
-  - EX_US_speednode_0158
-  - EX_US_speednode_0159
-  - EX_US_speednode_0160
-  - EX_US_speednode_0161
-  - EX_US_speednode_0162
-  - EX_US_speednode_0163
-  - EX_US_speednode_0164
-  - EX_US_speednode_0165
-  - EX_US_speednode_0166
-  - EX_US_speednode_0167
-  - EX_US_speednode_0168
-  - EX_US_speednode_0169
-  - EX_US_speednode_0170
-  - EX_US_speednode_0171
-  - EX_US_speednode_0172
-  - EX_US_speednode_0174
-  - EX_US_speednode_0175
-  - EX_US_speednode_0176
-  - EX_US_speednode_0177
-  - EX_US_speednode_0178
-  - EX_US_speednode_0179
-  - EX_US_speednode_0180
-  - EX_US_speednode_0181
-  - EX_US_speednode_0182
-  - EX_US_speednode_0184
-  - EX_US_speednode_0185
-  - EX_US_speednode_0186
-  - EX_US_speednode_0187
-  - EX_US_speednode_0188
-  - EX_US_speednode_0191
-  - EX_US_speednode_0193
-  - EX_US_speednode_0195
-  - EX_US_speednode_0197
-  - EX_US_speednode_0199
-  - EX_US_speednode_0200
-  - EX_US_speednode_0203
-  - EX_US_speednode_0204
-  - EX_US_speednode_0205
-  - EX_US_speednode_0206
-  - EX_US_speednode_0207
-  - EX_US_speednode_0208
-  - EX_US_speednode_0210
-  - EX_US_speednode_0211
-  - EX_US_speednode_0216
-  - EX_US_speednode_0218
-  - EX_US_speednode_0221
-  - EX_US_speednode_0224
-  - EX_US_speednode_0225
-  - EX_GER-DIALER-01
-  - EX_IRN-ENTRY-01
-  - EX_GER-DIALER-02
-  - EX_IRN-ENTRY-02
-  - EX_GER-DIALER-03
-  - EX_IRN-ENTRY-03
-  - EX_GER-DIALER-04
-  - EX_IRN-ENTRY-04
-  - EX_GER-DIALER-05
-  - EX_IRN-ENTRY-05
-  - EX_GER-DIALER-06
-  - EX_IRN-ENTRY-06
-  - EX_GER-DIALER-07
-  - EX_IRN-ENTRY-07
-  - EX_GER-DIALER-08
-  - EX_IRN-ENTRY-08
-  - EX_🇨🇳_CN_中国->🇩🇪_DE_德国
-  - EX_🇳🇱_NL_荷兰->🇺🇸_US_美国
-  - EX_🇺🇸_US_美国->🇩🇪_DE_德国_1
-  - EX_🇺🇸_US_美国->🇫🇷_FR_法国
-  - EX_🇨🇳_CN_中国->🇨🇦_CA_加拿大
-  - EX_🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - EX_🇨🇳_CN_中国->🇺🇸_US_美国_2
-  - EX_🇨🇳_CN_中国->🇺🇸_US_美国_3
-  - EX_🇺🇸_US_美国->🇩🇪_DE_德国_2
-  - EX_🇫🇷_FR_法国
-  - EX_🇨🇳_CN_中国->🇺🇸_US_美国_5
-  - EX_🇺🇸_US_美国
+  - AM_speednode_0001
+  - AM_speednode_0002
+  - AT_speednode_0003
+  - AU_speednode_0004
+  - BG_speednode_0005
+  - BG_speednode_0006
+  - BR_speednode_0007
+  - CN_speednode_0008
+  - CN_speednode_0009
+  - CN_speednode_0010
+  - CN_speednode_0011
+  - CN_speednode_0012
+  - CN_speednode_0013
+  - CN_speednode_0014
+  - CN_speednode_0015
+  - CN_speednode_0016
+  - CN_speednode_0017
+  - CN_speednode_0018
+  - CN_speednode_0019
+  - CN_speednode_0020
+  - CN_speednode_0022
+  - CN_speednode_0023
+  - CN_speednode_0024
+  - CN_speednode_0025
+  - CN_speednode_0026
+  - CN_speednode_0027
+  - CN_speednode_0028
+  - CN_speednode_0029
+  - CN_speednode_0030
+  - CN_speednode_0031
+  - CN_speednode_0032
+  - CN_speednode_0033
+  - CN_speednode_0034
+  - CN_speednode_0035
+  - CN_speednode_0036
+  - CN_speednode_0037
+  - CN_speednode_0039
+  - CN_speednode_0040
+  - CN_speednode_0041
+  - CN_speednode_0042
+  - CN_speednode_0043
+  - CN_speednode_0044
+  - CN_speednode_0045
+  - CN_speednode_0046
+  - CR_speednode_0047
+  - CR_speednode_0048
+  - CY_speednode_0049
+  - CY_speednode_0050
+  - CZ_speednode_0051
+  - DE_speednode_0052
+  - DE_speednode_0053
+  - DE_speednode_0054
+  - DE_speednode_0056
+  - DE_speednode_0057
+  - DE_speednode_0058
+  - DE_speednode_0059
+  - DE_speednode_0060
+  - DE_speednode_0061
+  - DE_speednode_0062
+  - DE_speednode_0063
+  - EE_speednode_0064
+  - ES_speednode_0065
+  - ES_speednode_0067
+  - FR_speednode_0069
+  - GB_speednode_0070
+  - GB_speednode_0071
+  - GB_speednode_0072
+  - GB_speednode_0073
+  - GB_speednode_0074
+  - GB_speednode_0075
+  - GB_speednode_0076
+  - GB_speednode_0077
+  - GB_speednode_0078
+  - GB_speednode_0079
+  - GB_speednode_0080
+  - GB_speednode_0081
+  - GB_speednode_0082
+  - GB_speednode_0083
+  - GG_speednode_0084
+  - HK_speednode_0085
+  - IN_speednode_0086
+  - JP_speednode_0087
+  - JP_speednode_0088
+  - JP_speednode_0089
+  - JP_speednode_0090
+  - JP_speednode_0091
+  - JP_speednode_0092
+  - JP_speednode_0093
+  - JP_speednode_0094
+  - JP_speednode_0095
+  - JP_speednode_0096
+  - KR_speednode_0097
+  - KR_speednode_0098
+  - KR_speednode_0099
+  - KR_speednode_0100
+  - KR_speednode_0101
+  - KR_speednode_0102
+  - KR_speednode_0103
+  - KR_speednode_0104
+  - KR_speednode_0105
+  - KR_speednode_0106
+  - KZ_speednode_0107
+  - KZ_speednode_0108
+  - KZ_speednode_0109
+  - LT_speednode_0110
+  - LT_speednode_0111
+  - LU_speednode_0112
+  - NL_speednode_0113
+  - NL_speednode_0114
+  - NL_speednode_0115
+  - NL_speednode_0116
+  - NL_speednode_0117
+  - NL_speednode_0119
+  - NN_speednode_0120
+  - NO_speednode_0121
+  - RO_speednode_0122
+  - RO_speednode_0123
+  - RO_speednode_0124
+  - RO_speednode_0125
+  - RO_speednode_0126
+  - RU_speednode_0128
+  - RU_speednode_0129
+  - RU_speednode_0130
+  - RU_speednode_0131
+  - RU_speednode_0132
+  - RU_speednode_0133
+  - RU_speednode_0134
+  - RU_speednode_0135
+  - RU_speednode_0137
+  - SG_speednode_0138
+  - SG_speednode_0139
+  - SG_speednode_0140
+  - SG_speednode_0141
+  - SG_speednode_0142
+  - SG_speednode_0143
+  - SG_speednode_0144
+  - SG_speednode_0145
+  - SG_speednode_0146
+  - SG_speednode_0147
+  - SI_speednode_0148
+  - SI_speednode_0149
+  - TW_speednode_0150
+  - TW_speednode_0151
+  - US_speednode_0152
+  - US_speednode_0153
+  - US_speednode_0154
+  - US_speednode_0155
+  - US_speednode_0156
+  - US_speednode_0157
+  - US_speednode_0158
+  - US_speednode_0159
+  - US_speednode_0160
+  - US_speednode_0161
+  - US_speednode_0162
+  - US_speednode_0163
+  - US_speednode_0164
+  - US_speednode_0165
+  - US_speednode_0166
+  - US_speednode_0167
+  - US_speednode_0168
+  - US_speednode_0169
+  - US_speednode_0170
+  - US_speednode_0171
+  - US_speednode_0172
+  - US_speednode_0174
+  - US_speednode_0175
+  - US_speednode_0176
+  - US_speednode_0177
+  - US_speednode_0178
+  - US_speednode_0179
+  - US_speednode_0180
+  - US_speednode_0181
+  - US_speednode_0182
+  - US_speednode_0184
+  - US_speednode_0185
+  - US_speednode_0186
+  - US_speednode_0187
+  - US_speednode_0188
+  - US_speednode_0191
+  - US_speednode_0193
+  - US_speednode_0195
+  - US_speednode_0197
+  - US_speednode_0199
+  - US_speednode_0200
+  - US_speednode_0203
+  - US_speednode_0204
+  - US_speednode_0205
+  - US_speednode_0206
+  - US_speednode_0207
+  - US_speednode_0208
+  - US_speednode_0210
+  - US_speednode_0211
+  - US_speednode_0216
+  - US_speednode_0218
+  - US_speednode_0221
+  - US_speednode_0224
+  - US_speednode_0225
+  - GER-DIALER-01
+  - IRN-ENTRY-01
+  - GER-DIALER-02
+  - IRN-ENTRY-02
+  - GER-DIALER-03
+  - IRN-ENTRY-03
+  - GER-DIALER-04
+  - IRN-ENTRY-04
+  - GER-DIALER-05
+  - IRN-ENTRY-05
+  - GER-DIALER-06
+  - IRN-ENTRY-06
+  - GER-DIALER-07
+  - IRN-ENTRY-07
+  - GER-DIALER-08
+  - IRN-ENTRY-08
+  - 🇨🇳_CN_中国->🇩🇪_DE_德国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇨🇳_CN_中国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇺🇸_US_美国->🇫🇷_FR_法国
+  - 🇰🇷_KR_韩国
+  - 🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
 rule-providers:
   Apple:
     type: http
