@@ -181,6 +181,14 @@ def get_extra_proxies(data):
     filtered_proxies = [proxy for proxy in proxies if not any(str in proxy['name'] for str in filter_string)]
     # filtered_proxies = [proxy for proxy in filtered_proxies if not proxy['type']=='ss' ]
 
+    # 防止名称和 ermz 重复
+    for proxy in filtered_proxies:
+        if 'name' in proxy and proxy['name']:
+            proxy['name'] = f"X_{proxy['name']}"
+        else:
+            print("No name found in the proxy")
+            return None
+
     return filtered_proxies
 
 def main():
