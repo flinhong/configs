@@ -89,8 +89,8 @@ def append_proxies(clash_yaml, proxies):
         'name': "🪐 负载均衡",
         'type': "load-balance",
         'url': "https://client3.google.com/generate_204",
-        'interval': 240,
-        'strategy': "round-robin",
+        'interval': 120,
+        'strategy': "consistent-hashing",
         'proxies': [item['name'] for item in proxies]
     })
     
@@ -104,7 +104,7 @@ def append_proxies(clash_yaml, proxies):
             # 更新原订阅的节点列表
             group['proxies'] = original_auto_proxies
             group['url'] = "https://www.facebook.com/common/referer_frame.php"
-            group['interval'] = 120
+            group['interval'] = 60
             group['tolerance'] = 10
 
     clash_yaml_replaced = yaml.dump(clash_yaml, default_flow_style=False, allow_unicode=True, sort_keys=False)
@@ -137,15 +137,15 @@ def check_and_validate_file(url):
 def download_extra_proxies():
     current_date = datetime.now()
     current_date_str = (current_date).strftime('%Y/%m/%Y%m%d')
-    # current_date_str_short = (current_date).strftime('%Y%m%d')
+    current_date_str_short = (current_date).strftime('%Y%m%d')
 
     urls = [
         "https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml",
         "https://raw.githubusercontent.com/NiREvil/vless/main/sub/clash-meta-wg.yml",
         # "https://raw.githubusercontent.com/ts-sf/fly/main/clash",
-        # "https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/clash-meta/actives_under_1000ms.yaml",
+        "https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/clash-meta/actives_under_1000ms.yaml",
         # "https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/sub_merge_yaml.yml",
-        # f"https://free.datiya.com/uploads/{current_date_str_short}-clash.yaml",
+        f"https://free.datiya.com/uploads/{current_date_str_short}-clash.yaml",
         f"https://v2rayshare.githubrowcontent.com/{current_date_str}.yaml",
         f"https://nodefree.githubrowcontent.com/{current_date_str}.yaml"
     ]
