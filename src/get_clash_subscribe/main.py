@@ -144,7 +144,7 @@ def append_proxies(clash_yaml, proxies):
             group['proxies'] = original_auto_proxies
             group['url'] = "https://www.facebook.com/common/referer_frame.php"
             group['interval'] = 60
-            group['tolerance'] = 10
+            group['tolerance'] = 1
 
     clash_yaml_replaced = yaml.dump(clash_yaml, default_flow_style=False, allow_unicode=True, sort_keys=False)
     return clash_yaml_replaced
