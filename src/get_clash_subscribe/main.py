@@ -41,7 +41,7 @@ def get_subscribe_main():
         # clash_content_replaced = re.sub(r"http://www.gstatic.com/generate_204", "https://www.gstatic.com/generate_204", clash_content_replaced, flags=re.IGNORECASE)
         # clash_content_replaced = re.sub(r"tolerance: 50", "tolerance: 10", clash_content_replaced, flags=re.IGNORECASE)
 
-         # 将更新后的内容写入文件
+        # 将更新后的内容写入文件
         with open(dirs + '/clash.yml', 'w', encoding="utf-8") as f:
             f.write(clash_content_replaced)
             write_log(f"同步订阅成功", "INFO")
@@ -59,6 +59,45 @@ def get_subscribe_main():
     except Exception as e:
         write_log(f"订阅解析错误", "WARN")
         return None
+    
+def expand_auto_proxies():
+    dirs = './public/subscribe'
+    if not os.path.exists(dirs):
+        os.makedirs(dirs)
+
+    clash_path = dirs + '/clash.yml'
+    tmp_path = './src/get_clash_subscribe/tmp.yaml'
+
+    try:
+        with open(clash_path, 'r', encoding='utf8') as file:
+            clash_data = yaml.safe_load(file)
+        with open(tmp_path, 'r', encoding='utf8') as file:
+            extend_data = yaml.safe_load(file)
+
+        clash_data_proxies = clash_data.get('proxies', [])
+        extend_data_proxies = extend_data.get('proxies', [])
+        
+
+        clash_data_proxies.extend(extend_data_proxies)
+
+        # 更新 proxy 列表
+        clash_data['proxies'] = clash_data_proxies
+
+        # 在[♻️ 自动选择]列表中增加节点名字
+        clash_data_groups = clash_data.get('proxy-groups', [])
+        for group in clash_data_groups:
+            if group.get('name') == '♻️ 自动选择':
+                  original_auto_proxies = group.get('proxies', [])
+                  original_auto_proxies.extend([item['name'] for item in extend_data_proxies])
+                  group['proxies'] = original_auto_proxies
+
+        # 再写入文件
+        with open(clash_path, 'w', encoding="utf-8") as f:
+            f.write(yaml.dump(clash_data, default_flow_style=False, allow_unicode=True, sort_keys=False))
+            write_log(f"自定义节点写入成功", "INFO") 
+        
+    except Exception as e:
+        print(f"修改文件发生错误: {e}")
     
 def append_proxies(clash_yaml, proxies):
     # 将新的节点列表追加到原订阅的节点列表
@@ -141,9 +180,9 @@ def download_extra_proxies():
 
     urls = [
         "https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml",
-        "https://raw.githubusercontent.com/NiREvil/vless/main/sub/clash-meta-wg.yml",
+        # "https://raw.githubusercontent.com/NiREvil/vless/main/sub/clash-meta-wg.yml",
         # "https://raw.githubusercontent.com/ts-sf/fly/main/clash",
-        "https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/clash-meta/actives_under_1000ms.yaml",
+        # "https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/clash-meta/actives_under_1000ms.yaml",
         # "https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/sub_merge_yaml.yml",
         f"https://free.datiya.com/uploads/{current_date_str_short}-clash.yaml",
         f"https://v2rayshare.githubrowcontent.com/{current_date_str}.yaml",
@@ -193,6 +232,7 @@ def get_extra_proxies(data):
 
 def main():
     get_subscribe_main()
+    expand_auto_proxies()
 
 
 # 主函数入口

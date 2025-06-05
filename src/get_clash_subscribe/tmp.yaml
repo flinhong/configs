@@ -1,0 +1,114 @@
+port: 7890
+socks-port: 7891
+allow-lan: false
+mode: Rule
+log-level: info
+external-controller: 127.0.0.1:9090
+dns:
+  enable: true
+  ipv6: false
+  default-nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+  - https://doh.pub/dns-query
+  - https://dns.alidns.com/dns-query
+proxies:
+- name: cf_tunnel_visa_tw_443
+  type: vless
+  server: www.visa.com.tw
+  port: 443
+  uuid: dcf11935-7b1f-4ae6-b11c-77dbb8d6e649
+  network: ws
+  tls: true
+  flow: ''
+  reality-opts: null
+- name: cf_tunnel_visa_hk_2053
+  type: vless
+  server: www.visa.com.hk
+  port: 2053
+  uuid: dcf11935-7b1f-4ae6-b11c-77dbb8d6e649
+  network: ws
+  tls: true
+  flow: ''
+  reality-opts: null
+- name: cf_tunnel_visa_br_8443
+  type: vless
+  server: www.visa.com.br
+  port: 8443
+  uuid: dcf11935-7b1f-4ae6-b11c-77dbb8d6e649
+  network: ws
+  tls: true
+  flow: ''
+  reality-opts: null
+- name: cf_tunnel_visa_ch_443
+  type: vless
+  server: www.visaeurope.ch
+  port: 443
+  uuid: dcf11935-7b1f-4ae6-b11c-77dbb8d6e649
+  network: ws
+  tls: true
+  flow: ''
+  reality-opts: null
+- name: cf_tunnel_visa_us_2053
+  type: vless
+  server: usa.visa.com
+  port: 2053
+  uuid: dcf11935-7b1f-4ae6-b11c-77dbb8d6e649
+  network: ws
+  tls: true
+  flow: ''
+  reality-opts: null
+- name: cf_tunnel_icook_hk_8443
+  type: vless
+  server: icook.hk
+  port: 8443
+  uuid: dcf11935-7b1f-4ae6-b11c-77dbb8d6e649
+  network: ws
+  tls: true
+  flow: ''
+  reality-opts: null
+- name: cf_tunnel_icook_tw_443
+  type: vless
+  server: icook.tw
+  port: 443
+  uuid: dcf11935-7b1f-4ae6-b11c-77dbb8d6e649
+  network: ws
+  tls: true
+  flow: ''
+  reality-opts: null
+proxy-groups:
+- name: 🚀 节点选择
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - DIRECT
+  - cf_tunnel_visa_tw_443
+  - cf_tunnel_visa_hk_2053
+  - cf_tunnel_visa_br_8443
+  - cf_tunnel_visa_ch_443
+  - cf_tunnel_visa_us_2053
+  - cf_tunnel_icook_hk_8443
+  - cf_tunnel_icook_tw_443
+- name: ♻️ 自动选择
+  type: url-test
+  proxies:
+  - cf_tunnel_visa_tw_443
+  - cf_tunnel_visa_hk_2053
+  - cf_tunnel_visa_br_8443
+  - cf_tunnel_visa_ch_443
+  - cf_tunnel_visa_us_2053
+  - cf_tunnel_icook_hk_8443
+  - cf_tunnel_icook_tw_443
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+rules:
+- DOMAIN-SUFFIX,local,DIRECT
+- IP-CIDR,127.0.0.0/8,DIRECT
+- IP-CIDR,172.16.0.0/12,DIRECT
+- IP-CIDR,192.168.0.0/16,DIRECT
+- IP-CIDR,10.0.0.0/8,DIRECT
+- GEOIP,CN,DIRECT
+- MATCH,🚀 节点选择
