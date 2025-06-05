@@ -83,10 +83,10 @@ def expand_auto_proxies():
         # 更新 proxy 列表
         clash_data['proxies'] = clash_data_proxies
 
-        # 在[♻️ 自动选择]列表中增加节点名字
+        # 在[🪐 负载均衡]列表中增加节点名字
         clash_data_groups = clash_data.get('proxy-groups', [])
         for group in clash_data_groups:
-            if group.get('name') == '♻️ 自动选择':
+            if group.get('name') == '🪐 负载均衡':
                   original_auto_proxies = group.get('proxies', [])
                   original_auto_proxies.extend([item['name'] for item in extend_data_proxies])
                   group['proxies'] = original_auto_proxies
