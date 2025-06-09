@@ -1,0 +1,28 @@
+@use "fonts";
+
+// smzdm.com
+// 什么值得买
+body[data-domain="www.smzdm.com"],
+body[data-domain="post.smzdm.com"] {
+  body,
+  #global-nav,
+  .ranking-list *,
+  #feed-main-list *,
+  .info *,
+  .content *,
+  .m-contant *,
+  #articleId *,
+  .category-box ul li {
+    font-family: fonts.$serif-fonts !important;
+  }
+
+  button {
+    font-family: fonts.$sans-fonts !important;
+  }
+
+  pre,
+  code,
+  .prompt {
+    font-family: fonts.$code-fonts !important;
+  }
+}

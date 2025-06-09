@@ -1,0 +1,12 @@
+@use "fonts";
+
+:root {
+  --font-sans:
+    "Outfit", "Noto Serif SC", "Microsoft YaHei UI", sans-serif !important;
+  --font-mono: "IBM Plex Mono", "Noto Serif SC", monospace !important;
+}
+
+// reddit
+body[data-domain="www.reddit.com"] {
+  font-family: fonts.$sans-fonts !important;
+}

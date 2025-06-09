@@ -1,0 +1,107 @@
+@use "fonts";
+
+// baidu.com
+body[data-domain="www.baidu.com"] {
+  font-family: fonts.$sans-fonts !important;
+
+  #wrapper,
+  .c-wrapper,
+  button,
+  input,
+  select,
+  textarea,
+  .c-font-normal,
+  .c-font-medium,
+  .c-font-middle,
+  .c-font-big,
+  .new-pmd .c-title,
+  #container.sam_newgrid,
+  span[class^="_paragraph"],
+  span[class^="hint"],
+  div[class^="c_font"],
+  div[class^="op_dict"],
+  div[class^="card_layout"],
+  #page,
+  #container.sam_newgrid td,
+  #container.sam_newgrid th,
+  #container.sam_newgrid .c-showurl,
+  .new-pmd .cr-title,
+  .wrapper_new #u .s-top-username {
+    font-family: fonts.$serif-fonts !important;
+  }
+
+  .c-index-single {
+    font-family: fonts.$narrow-fonts !important;
+  }
+
+  .s-ctner-menus .s-menu-item {
+    font: 14px/24px fonts.$sans-fonts;
+  }
+
+  .new_search_guide_bub_container_center {
+    font-family: fonts.$code-fonts !important;
+  }
+
+  #s-top-left .c-font-normal {
+    font-family: fonts.$sans-fonts !important;
+  }
+}
+
+// news.baidu.com
+body[data-domain="news.baidu.com"] {
+  font-family: fonts.$sans-fonts !important;
+
+  #usrbar,
+  #header-link-wrapper li a,
+  #header-link-wrapper li span,
+  .hotnews li:first-child strong a:link,
+  .hotnews li:first-child strong a:active,
+  .hotnews li:first-child strong a:visited,
+  .hotnews li strong a:link,
+  .hotnews li strong a:active,
+  .hotnews li strong a:visited,
+  .ulist .bold-item a,
+  .mod-tab-content .mod-tab-pane,
+  .mod-baijia .baijia-focus-list .bdlist,
+  .col-mod .focuslistnews .bold-item,
+  .l-right-col .ulist li,
+  .focuslistnews li {
+    font-family: fonts.$serif-fonts !important;
+  }
+
+  .mod-headline-tab {
+    font-family: fonts.$sans-fonts !important;
+  }
+}
+
+// mbd.baidu.com
+// 百家号
+body[data-domain="mbd.baidu.com"],
+body[data-domain="baijiahao.baidu.com"] {
+  font-family: fonts.$sans-fonts !important;
+
+  button,
+  input,
+  select,
+  textarea,
+  #ssr-content *,
+  div#header div,
+  span[data-testid="author-name"],
+  span[data-testid="updatetime"],
+  div[data-testid="article"],
+  div[data-testid="search-rec"] *,
+  .xcp-publish-title,
+  .user-bar-uname,
+  .x-interact-rich-text,
+  .interact-bar,
+  div[data-testid="recent"] *,
+  div[data-testid="relate"] *,
+  ul[data-testid="top-list"] * {
+    font-family: fonts.$serif-fonts !important;
+  }
+
+  .xcp-list-loader,
+  .interact-desc * {
+    font-family: fonts.$sans-fonts !important;
+  }
+}

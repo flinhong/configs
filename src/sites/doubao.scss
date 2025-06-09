@@ -1,0 +1,22 @@
+@use "fonts";
+
+:root {
+  --s-font-family:
+    "Crimson Text", "Noto Serif SC", Inter, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "SF Pro SC", "SF Pro Display", "SF Pro Icons", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial,
+    sans-serif !important;
+}
+
+// doubao.com & www.doubao.com
+body[data-domain="doubao.com"],
+body[data-domain="www.doubao.com"] {
+  body {
+    font-family: fonts.$serif-fonts !important;
+  }
+
+  pre,
+  code {
+    font-family: fonts.$code-fonts !important;
+  }
+}

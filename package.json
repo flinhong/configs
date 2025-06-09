@@ -1,0 +1,22 @@
+{
+    "name": "configs",
+    "version": "0.1.20",
+    "description": "custom scripts for tampermonkey and userscript with font styles...",
+    "main": "index.js",
+    "repository": "git@github.com:flinhong/configs.git",
+    "author": "Frank Lin <honglin@duck.com>",
+    "license": "MIT",
+    "scripts": {
+        "build:scss": "sass ./src/sites/:./public/styles/ --no-source-map",
+        "build:userscript": "node build.userscript.js",
+        "build:firefox": "npm run build:scss && node dev.firefox.js",
+        "build": "npm run build:scss && npm run build:userscript",
+        "publish": "npx auto-version && npm run build"
+    },
+    "dependencies": {
+        "auto-version-js": "^0.3.10",
+        "js-beautify": "^1.15.1",
+        "prettier": "^3.4.2",
+        "sass": "^1.83.0"
+    }
+}
