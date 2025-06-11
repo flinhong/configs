@@ -44,25 +44,45 @@ tun:
   - 1.1.1.1
   - 1.0.0.1
 proxies:
-- name: 🇨🇳_CN_中国
-  type: vmess
-  server: v37.heduian.link
-  port: 30837
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /oooo
-    headers:
-      host: v37.heduian.link
-  alterId: 2
-- name: 🇬🇧_GB_英国
+- name: 🇰🇷_KR_韩国
   type: ss
-  server: 77.239.116.76
-  port: 8315
+  server: 125.141.31.72
+  port: 15098
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  type: trojan
+  server: 120.233.44.201
+  port: 21179
+  sni: k30.tudou211.com
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  network: tcp
+- name: 🇰🇷_KR_韩国_1
+  type: ss
+  server: p231.panda004.net
+  port: 11389
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇰🇷_KR_韩国_2
+  type: ss
+  server: 221.150.109.89
+  port: 11389
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇺🇸_US_美国_6
+  type: ss
+  server: exchange.gameaurela.click
+  port: 52952
   cipher: chacha20-ietf-poly1305
-  password: oHOP1bWFMkQVx3PdbhRlOk
-- name: 🇨🇳_CN_中国->🇬🇧_GB_英国
+  password: LMSNh21TrXjR2ok25Q2nE8ENT2zoBmPvka3RCCUAHZELCnWoekVjvaf89qwcRkdbxEfep2bc2aUtmnxqvF1ayQRez1JHjULj
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  type: trojan
+  server: 99dfcb82-sxhts0-t5qufl-8n27.cu.plebai.net
+  port: 15229
+  sni: 99dfcb82-sxhts0-t5qufl-8n27.cu.plebai.net
+  password: 5dc6fa05-a601-aba6-7761-ecde22d2b0fc
+  network: tcp
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
   type: vmess
   server: v25.heduian.link
   port: 30825
@@ -74,28 +94,32 @@ proxies:
     headers:
       host: v25.heduian.link
   alterId: 2
+- name: 🇰🇷_KR_韩国_3
+  type: ss
+  server: 154.223.16.212
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇺🇸_US_美国_7
+  type: trojan
+  server: 172.67.204.120
+  port: 443
+  udp: true
+  sni: VV.890603.xyZ
+  password: 0bf83a1d-f785-487a-a479-3c3de2566ba6
+  network: ws
+  skip-cert-verify: false
+  ws-opts:
+    path: /xJXdWGMbbZovkcaL2SsGTGxE
+    headers:
+      host: VV.890603.xyZ
 - name: 🇨🇳_CN_中国->🇩🇪_DE_德国
   type: trojan
   server: 120.233.44.201
   port: 21102
   sni: k28.tudou211.com
   password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  skip-cert-verify: false
-- name: 🇨🇳_CN_中国->🇬🇧_GB_英国_1
-  type: vmess
-  server: 120.232.153.40
-  port: 40550
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  cipher: auto
   network: tcp
-  alterId: 0
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  type: trojan
-  server: 120.233.44.201
-  port: 21179
-  sni: k30.tudou211.com
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  skip-cert-verify: false
 - name: 🇨🇳_CN_中国->🇨🇦_CA_加拿大
   type: vmess
   server: v8.heduian.link
@@ -1033,12 +1057,16 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - DIRECT
-  - 🇨🇳_CN_中国
-  - 🇬🇧_GB_英国
-  - 🇨🇳_CN_中国->🇬🇧_GB_英国
-  - 🇨🇳_CN_中国->🇩🇪_DE_德国
-  - 🇨🇳_CN_中国->🇬🇧_GB_英国_1
+  - 🇰🇷_KR_韩国
   - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇰🇷_KR_韩国_1
+  - 🇰🇷_KR_韩国_2
+  - 🇺🇸_US_美国_6
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇰🇷_KR_韩国_3
+  - 🇺🇸_US_美国_7
+  - 🇨🇳_CN_中国->🇩🇪_DE_德国
   - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
 - name: ♻️ 自动选择
   type: url-test
@@ -1047,12 +1075,16 @@ proxy-groups:
   tolerance: 1
   proxies:
   - 🪐 负载均衡
-  - 🇨🇳_CN_中国
-  - 🇬🇧_GB_英国
-  - 🇨🇳_CN_中国->🇬🇧_GB_英国
-  - 🇨🇳_CN_中国->🇩🇪_DE_德国
-  - 🇨🇳_CN_中国->🇬🇧_GB_英国_1
+  - 🇰🇷_KR_韩国
   - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇰🇷_KR_韩国_1
+  - 🇰🇷_KR_韩国_2
+  - 🇺🇸_US_美国_6
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇰🇷_KR_韩国_3
+  - 🇺🇸_US_美国_7
+  - 🇨🇳_CN_中国->🇩🇪_DE_德国
   - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
   - cf_tunnel_visa_tw_443
   - cf_tunnel_visa_hk_2053
@@ -1067,48 +1099,64 @@ proxy-groups:
   - 🚀 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇨🇳_CN_中国
-  - 🇬🇧_GB_英国
-  - 🇨🇳_CN_中国->🇬🇧_GB_英国
-  - 🇨🇳_CN_中国->🇩🇪_DE_德国
-  - 🇨🇳_CN_中国->🇬🇧_GB_英国_1
+  - 🇰🇷_KR_韩国
   - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇰🇷_KR_韩国_1
+  - 🇰🇷_KR_韩国_2
+  - 🇺🇸_US_美国_6
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇰🇷_KR_韩国_3
+  - 🇺🇸_US_美国_7
+  - 🇨🇳_CN_中国->🇩🇪_DE_德国
   - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
 - name: 📲 电报信息
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇨🇳_CN_中国
-  - 🇬🇧_GB_英国
-  - 🇨🇳_CN_中国->🇬🇧_GB_英国
-  - 🇨🇳_CN_中国->🇩🇪_DE_德国
-  - 🇨🇳_CN_中国->🇬🇧_GB_英国_1
+  - 🇰🇷_KR_韩国
   - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇰🇷_KR_韩国_1
+  - 🇰🇷_KR_韩国_2
+  - 🇺🇸_US_美国_6
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇰🇷_KR_韩国_3
+  - 🇺🇸_US_美国_7
+  - 🇨🇳_CN_中国->🇩🇪_DE_德国
   - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇨🇳_CN_中国
-  - 🇬🇧_GB_英国
-  - 🇨🇳_CN_中国->🇬🇧_GB_英国
-  - 🇨🇳_CN_中国->🇩🇪_DE_德国
-  - 🇨🇳_CN_中国->🇬🇧_GB_英国_1
+  - 🇰🇷_KR_韩国
   - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇰🇷_KR_韩国_1
+  - 🇰🇷_KR_韩国_2
+  - 🇺🇸_US_美国_6
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇰🇷_KR_韩国_3
+  - 🇺🇸_US_美国_7
+  - 🇨🇳_CN_中国->🇩🇪_DE_德国
   - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇨🇳_CN_中国
-  - 🇬🇧_GB_英国
-  - 🇨🇳_CN_中国->🇬🇧_GB_英国
-  - 🇨🇳_CN_中国->🇩🇪_DE_德国
-  - 🇨🇳_CN_中国->🇬🇧_GB_英国_1
+  - 🇰🇷_KR_韩国
   - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇰🇷_KR_韩国_1
+  - 🇰🇷_KR_韩国_2
+  - 🇺🇸_US_美国_6
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇰🇷_KR_韩国_3
+  - 🇺🇸_US_美国_7
+  - 🇨🇳_CN_中国->🇩🇪_DE_德国
   - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
 - name: 🎯 全球直连
   type: select
@@ -1132,12 +1180,16 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇨🇳_CN_中国
-  - 🇬🇧_GB_英国
-  - 🇨🇳_CN_中国->🇬🇧_GB_英国
-  - 🇨🇳_CN_中国->🇩🇪_DE_德国
-  - 🇨🇳_CN_中国->🇬🇧_GB_英国_1
+  - 🇰🇷_KR_韩国
   - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇰🇷_KR_韩国_1
+  - 🇰🇷_KR_韩国_2
+  - 🇺🇸_US_美国_6
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇰🇷_KR_韩国_3
+  - 🇺🇸_US_美国_7
+  - 🇨🇳_CN_中国->🇩🇪_DE_德国
   - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
 - name: 🪐 负载均衡
   type: load-balance
