@@ -1076,6 +1076,176 @@ proxies:
     public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
     short-id: e8ab71d0
   udp: true
+- name: X_🇭🇰 香港2
+  server: 121.127.231.217
+  port: 13231
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 1450cecfb93f
+  tfo: false
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    host: kh36v1.pmxiaonan.xyz
+    path: /simieepvt
+    tls: true
+    mux: true
+    skip-cert-verify: false
+- name: X_🇭🇰 香港3
+  server: 125.94.40.221
+  port: 39001
+  client-fingerprint: chrome
+  type: trojan
+  password: 85f133142f04dbf6547da33895cfabb3
+  sni: www.yrtok.com
+  skip-cert-verify: true
+- name: X_🇭🇰 香港4
+  server: 113.99.140.184
+  port: 39001
+  client-fingerprint: chrome
+  type: trojan
+  password: 85f133142f04dbf6547da33895cfabb3
+  sni: www.yrtok.com
+  skip-cert-verify: true
+- name: X_🇭🇰 香港6
+  server: v9.heduian.link
+  port: 30809
+  client-fingerprint: chrome
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /oooo
+    headers:
+      Host: baidu.com
+- name: X_🇭🇰 香港7
+  server: 103.224.80.89
+  port: 38993
+  client-fingerprint: chrome
+  type: vmess
+  uuid: 6f8c6f30-c726-4916-8f72-04f020c5c12d
+  alterId: 0
+  cipher: auto
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+- name: X_🇭🇰 香港8
+  server: 183.236.51.38
+  port: 33519
+  client-fingerprint: chrome
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+- name: X_🇯🇵 日本
+  server: cn01.efan8867801.xyz
+  port: 8766
+  client-fingerprint: chrome
+  type: ss
+  cipher: rc4-md5
+  password: efanccyun
+  tfo: false
+  plugin: obfs
+  plugin-opts:
+    mode: http
+    host: 202506070920094-hBKKcUGalt.download.microsoft.com
+- name: X_🇯🇵 日本2
+  server: 43.226.17.11
+  port: 35947
+  client-fingerprint: chrome
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 60a930c17ff0
+  tfo: false
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    host: kr6v1.xpmc.cc
+    path: /matwnpkhug
+    tls: true
+    mux: true
+    skip-cert-verify: false
+- name: X_🇯🇵 日本3
+  server: v6.heduian.link
+  port: 30806
+  client-fingerprint: chrome
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /oooo
+    headers:
+      Host: ocbc.com
+- name: X_🇸🇬 新加坡
+  server: v12.heduian.link
+  port: 30812
+  client-fingerprint: chrome
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /oooo
+    headers:
+      Host: ocbc.com
+- name: X_🇰🇷 韩国
+  server: 203.156.253.12
+  port: 39001
+  client-fingerprint: chrome
+  type: trojan
+  password: 85f133142f04dbf6547da33895cfabb3
+  sni: www.yrtok.com
+  skip-cert-verify: true
+- name: X_🇺🇸 美国
+  server: v32.heduian.link
+  port: 30832
+  client-fingerprint: chrome
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /oooo
+    headers:
+      Host: baidu.com
+- name: X_🇺🇸 美国3
+  server: v24.heduian.link
+  port: 30824
+  client-fingerprint: chrome
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  tfo: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /oooo
+    headers:
+      Host: v24.heduian.link
 - name: X_🇨🇳_CN_中国_1
   type: vmess
   server: 62.60.229.38
@@ -1467,6 +1637,19 @@ proxy-groups:
   - X_VN_speednode_0159
   - X_VN_speednode_0160
   - X_VN_speednode_0161
+  - X_🇭🇰 香港2
+  - X_🇭🇰 香港3
+  - X_🇭🇰 香港4
+  - X_🇭🇰 香港6
+  - X_🇭🇰 香港7
+  - X_🇭🇰 香港8
+  - X_🇯🇵 日本
+  - X_🇯🇵 日本2
+  - X_🇯🇵 日本3
+  - X_🇸🇬 新加坡
+  - X_🇰🇷 韩国
+  - X_🇺🇸 美国
+  - X_🇺🇸 美国3
   - X_🇨🇳_CN_中国_1
   - X_🇨🇳_CN_中国->🇬🇧_GB_英国_2
   - X_🇨🇳_CN_中国_2
