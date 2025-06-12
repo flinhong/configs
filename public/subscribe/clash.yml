@@ -1,22 +1,10 @@
-mixed-port: 7890
 allow-lan: false
-mode: rule
-log-level: info
-external-controller: 127.0.0.1:9999
 dns:
-  enable: true
-  listen: 0.0.0.0:53
-  ipv6: false
   default-nameserver:
   - 223.5.5.5
   - 114.114.114.114
-  nameserver:
-  - 223.5.5.5
-  - 114.114.114.114
-  - 119.29.29.29
-  - 180.76.76.76
+  enable: true
   enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
   - '*.lan'
   - '*.localdomain'
@@ -30,1418 +18,1409 @@ dns:
   - localhost.sec.qq.com
   - localhost.ptlogin2.qq.com
   - +.msftconnecttest.com
-tun:
-  enable: true
-  auto-route: true
-  auto-detect-interface: true
-  dns-hijack:
-  - 114.114.114.114
-  - 180.76.76.76
-  - 119.29.29.29
+  fake-ip-range: 198.18.0.1/16
+  ipv6: false
+  listen: 0.0.0.0:53
+  nameserver:
   - 223.5.5.5
-  - 8.8.8.8
-  - 8.8.4.4
-  - 1.1.1.1
-  - 1.0.0.1
+  - 114.114.114.114
+  - 119.29.29.29
+  - 180.76.76.76
+external-controller: 127.0.0.1:9999
+log-level: info
+mixed-port: 7890
+mode: rule
 proxies:
-- name: 🇰🇷_KR_韩国->🇺🇸_US_美国
-  type: ss
-  server: 125.141.31.72
-  port: 15098
-  cipher: aes-256-cfb
+- cipher: aes-256-cfb
+  name: 🇰🇷_KR_韩国->🇺🇸_US_美国
   password: qwerREWQ@@
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  type: vmess
-  server: v8.heduian.link
-  port: 30808
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  port: 15098
+  server: 125.141.31.72
+  type: ss
+- alterId: 2
   cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国
   network: ws
+  port: 30808
+  server: v8.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
-    path: /oooo
     headers:
       host: v8.heduian.link
-  alterId: 2
-- name: 🇨🇳_CN_中国->🇨🇦_CA_加拿大
-  type: trojan
-  server: 120.233.128.68
-  port: 39001
-  sni: 120.233.128.68
-  password: 85f133142f04dbf6547da33895cfabb3
-  skip-cert-verify: true
-- name: 🇨🇳_CN_中国->🇩🇪_DE_德国
-  type: trojan
-  server: 120.233.44.201
-  port: 21102
-  sni: k28.tudou211.com
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  network: tcp
-- name: 🇬🇧_GB_英国
-  type: trojan
-  server: 51.38.65.155
-  port: 443
-  sni: uk1.test3.net
-  password: dd6dcb10-4683-11f0-ae79-1239d0255272
-  network: tcp
-  skip-cert-verify: true
-- name: 🇰🇷_KR_韩国->🇺🇸_US_美国_1
-  type: ss
-  server: p231.panda004.net
-  port: 11389
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  type: vmess
-  server: v29.heduian.link
-  port: 30829
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  cipher: auto
-  network: ws
-  ws-opts:
     path: /oooo
+- name: 🇨🇳_CN_中国->🇨🇦_CA_加拿大
+  password: 85f133142f04dbf6547da33895cfabb3
+  port: 39001
+  server: 120.233.128.68
+  skip-cert-verify: true
+  sni: 120.233.128.68
+  type: trojan
+- name: 🇨🇳_CN_中国->🇩🇪_DE_德国
+  network: tcp
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21102
+  server: 120.233.44.201
+  sni: k28.tudou211.com
+  type: trojan
+- name: 🇬🇧_GB_英国
+  network: tcp
+  password: dd6dcb10-4683-11f0-ae79-1239d0255272
+  port: 443
+  server: 51.38.65.155
+  skip-cert-verify: true
+  sni: uk1.test3.net
+  type: trojan
+- cipher: aes-256-cfb
+  name: 🇰🇷_KR_韩国->🇺🇸_US_美国_1
+  password: qwerREWQ@@
+  port: 11389
+  server: p231.panda004.net
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
     headers:
       host: ocbc.com
-  alterId: 2
-- name: 🇷🇺_RU_俄罗斯->🇰🇷_KR_韩国
-  type: trojan
-  server: 88.210.36.106
-  port: 443
-  udp: true
-  sni: n2.gladns.com
-  password: 3c4e10af98c30972
-  network: grpc
-  alpn:
-  - h2
-  grpc-opts:
-    grpc-service-name: db
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  type: trojan
-  server: 42.240.152.238
-  port: 8842
-  sni: brwx.spvpv.com
-  password: 1b4c16925f934c57b954a9f0f23dea33
-  skip-cert-verify: true
-- name: 🇺🇸_US_美国
-  type: trojan
-  server: 23.247.137.64
-  port: 443
-  udp: true
-  sni: n2.gladns.com
-  password: 3c4e10af98c30972
-  network: grpc
-  alpn:
-  - h2
-  grpc-opts:
-    grpc-service-name: db
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_3
-  type: trojan
-  server: 120.233.44.201
-  port: 21179
-  sni: k30.tudou211.com
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  network: tcp
-- name: 🇨🇳_CN_中国->🇰🇷_KR_韩国
-  type: vmess
-  server: v25.heduian.link
-  port: 30825
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  cipher: auto
-  network: ws
-  ws-opts:
     path: /oooo
+- alpn:
+  - h2
+  grpc-opts:
+    grpc-service-name: db
+  name: 🇷🇺_RU_俄罗斯->🇰🇷_KR_韩国
+  network: grpc
+  password: 3c4e10af98c30972
+  port: 443
+  server: 88.210.36.106
+  sni: n2.gladns.com
+  type: trojan
+  udp: true
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  password: 1b4c16925f934c57b954a9f0f23dea33
+  port: 8842
+  server: 42.240.152.238
+  skip-cert-verify: true
+  sni: brwx.spvpv.com
+  type: trojan
+- alpn:
+  - h2
+  grpc-opts:
+    grpc-service-name: db
+  name: 🇺🇸_US_美国
+  network: grpc
+  password: 3c4e10af98c30972
+  port: 443
+  server: 23.247.137.64
+  sni: n2.gladns.com
+  type: trojan
+  udp: true
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  network: tcp
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21179
+  server: 120.233.44.201
+  sni: k30.tudou211.com
+  type: trojan
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇰🇷_KR_韩国
+  network: ws
+  port: 30825
+  server: v25.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
     headers:
       host: v25.heduian.link
-  alterId: 2
-- name: 🇰🇷_KR_韩国->🇺🇸_US_美国_2
-  type: ss
-  server: 221.150.109.89
-  port: 11389
-  cipher: aes-256-cfb
+    path: /oooo
+- cipher: aes-256-cfb
+  name: 🇰🇷_KR_韩国->🇺🇸_US_美国_2
   password: qwerREWQ@@
+  port: 11389
+  server: 221.150.109.89
+  type: ss
 - name: X_AT_speednode_0001
+  network: ws
+  port: 443
   server: 212.183.88.94
-  port: 443
-  type: vless
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  tls: true
-  skip-cert-verify: true
   servername: as.bgm2024.dpdns.org
-  network: ws
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
-    path: /?ed=2560
     headers:
       Host: as.bgm2024.dpdns.org
-  udp: true
+    path: /?ed=2560
 - name: X_AT_speednode_0002
+  network: ws
+  port: 443
   server: 212.183.88.136
-  port: 443
-  type: vless
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  tls: true
-  skip-cert-verify: true
   servername: as.bgm2024.dpdns.org
-  network: ws
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
-    path: /?ed=2560
     headers:
       Host: as.bgm2024.dpdns.org
-  udp: true
+    path: /?ed=2560
 - name: X_AT_speednode_0003
+  network: ws
+  port: 443
   server: 212.183.88.70
-  port: 443
-  type: vless
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  tls: true
-  skip-cert-verify: true
   servername: as.bgm2024.dpdns.org
-  network: ws
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
-    path: /?ed=2560
     headers:
       Host: as.bgm2024.dpdns.org
-  udp: true
+    path: /?ed=2560
 - name: X_AT_speednode_0004
+  network: ws
+  port: 443
   server: 212.183.88.193
-  port: 443
-  type: vless
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  tls: true
-  skip-cert-verify: true
   servername: as.bgm2024.dpdns.org
-  network: ws
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
+    headers:
+      Host: as.bgm2024.dpdns.org
     path: /ss.vs2024.us.kg
-    headers:
-      Host: as.bgm2024.dpdns.org
-  udp: true
 - name: X_BR_speednode_0005
-  server: 185.133.35.45
-  port: 443
-  type: vless
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  tls: true
-  skip-cert-verify: true
-  servername: as.bgm2024.dpdns.org
   network: ws
+  port: 443
+  server: 185.133.35.45
+  servername: as.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
-    path: /?ed=2560
     headers:
       Host: as.bgm2024.dpdns.org
-  udp: true
-- name: X_CA_speednode_0006
-  server: 3.99.213.97
-  port: 443
-  type: vless
-  uuid: 7f93e196-1b2f-4a42-8051-5815554c05db
+    path: /?ed=2560
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: zula.ir
+  name: X_CA_speednode_0006
+  port: 443
   reality-opts:
     public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg
     short-id: 7a2b
-  udp: true
-- name: X_CH_speednode_0007
-  server: 91.90.193.159
-  port: 443
-  type: vless
-  uuid: 1a79d43f-b41c-496b-a241-dcbeefa81f0e
-  tls: true
+  server: 3.99.213.97
+  servername: zula.ir
   skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: 0926.qiang2000.link
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7f93e196-1b2f-4a42-8051-5815554c05db
+- client-fingerprint: chrome
+  name: X_CH_speednode_0007
   network: ws
+  port: 443
+  server: 91.90.193.159
+  servername: 0926.qiang2000.link
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1a79d43f-b41c-496b-a241-dcbeefa81f0e
   ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3@WangCai2/?ed=2560
     headers:
       Host: 0926.qiang2000.link
-  udp: true
+    path: /TelegramU0001F1E8U0001F1F3@WangCai2/?ed=2560
 - name: X_CN_speednode_0008
-  server: nbae7a7.kaiqsz.com
-  port: 42765
-  type: trojan
   password: a41a4b6a-2a76-4f6e-8894-75a0aaf2bb4e
-  sni: mmbiz1.redapricotcloud.com
+  port: 42765
+  server: nbae7a7.kaiqsz.com
   skip-cert-verify: true
+  sni: mmbiz1.redapricotcloud.com
+  type: trojan
   udp: true
 - name: X_CN_speednode_0010
-  server: 2e4370ea-sxsxs0-syjkmp-1tddk.cm5.cnkuaishou.com
-  port: 27231
-  type: trojan
   password: bb471960-ecf5-11ef-9934-f23c9164ca5d
-  sni: 2e4370ea-sxsxs0-syjkmp-1tddk.cm5.cnkuaishou.com
+  port: 27231
+  server: 2e4370ea-sxsxs0-syjkmp-1tddk.cm5.cnkuaishou.com
   skip-cert-verify: false
+  sni: 2e4370ea-sxsxs0-syjkmp-1tddk.cm5.cnkuaishou.com
+  type: trojan
   udp: true
 - name: X_CN_speednode_0013
-  server: lm.kaiqsz.com
-  port: 59009
-  type: trojan
   password: a41a4b6a-2a76-4f6e-8894-75a0aaf2bb4e
-  sni: mmbiz14.redapricotcloud.com
+  port: 59009
+  server: lm.kaiqsz.com
   skip-cert-verify: true
+  sni: mmbiz14.redapricotcloud.com
+  type: trojan
   udp: true
 - name: X_CN_speednode_0015
-  server: 9d4cf20a-sxsxs0-tieegp-lm3w.cm5.cnkuaishou.com
-  port: 27231
-  type: trojan
   password: 38054a3e-ca17-11ed-92ac-f23c913c8d2b
-  sni: 9d4cf20a-sxsxs0-tieegp-lm3w.cm5.cnkuaishou.com
+  port: 27231
+  server: 9d4cf20a-sxsxs0-tieegp-lm3w.cm5.cnkuaishou.com
   skip-cert-verify: false
+  sni: 9d4cf20a-sxsxs0-tieegp-lm3w.cm5.cnkuaishou.com
+  type: trojan
   udp: true
 - name: X_CN_speednode_0017
-  server: ddabd7ed-sxsxs0-sxt6kg-1ro8s.cm5.cnkuaishou.com
-  port: 27231
-  type: trojan
   password: a18ef18e-293a-11ef-b76e-f23c91cfbbc9
-  sni: ddabd7ed-sxsxs0-sxt6kg-1ro8s.cm5.cnkuaishou.com
+  port: 27231
+  server: ddabd7ed-sxsxs0-sxt6kg-1ro8s.cm5.cnkuaishou.com
   skip-cert-verify: false
+  sni: ddabd7ed-sxsxs0-sxt6kg-1ro8s.cm5.cnkuaishou.com
+  type: trojan
   udp: true
 - name: X_CN_speednode_0018
-  server: 4919171b-sxsxs0-sz9djp-zn8y.cm5.cnkuaishou.com
-  port: 27231
-  type: trojan
   password: 44e76f8c-7362-11ec-bb74-f23c9164ca5d
-  sni: 4919171b-sxsxs0-sz9djp-zn8y.cm5.cnkuaishou.com
+  port: 27231
+  server: 4919171b-sxsxs0-sz9djp-zn8y.cm5.cnkuaishou.com
   skip-cert-verify: false
+  sni: 4919171b-sxsxs0-sz9djp-zn8y.cm5.cnkuaishou.com
+  type: trojan
   udp: true
 - name: X_CN_speednode_0019
-  server: 8cbcd01f-sxsxs0-sy94f1-1nc6m.cm5.cnkuaishou.com
-  port: 27233
-  type: trojan
   password: 85d450b2-1c2b-11f0-8a7b-f23c913c8d2b
-  sni: 8cbcd01f-sxsxs0-sy94f1-1nc6m.cm5.cnkuaishou.com
+  port: 27233
+  server: 8cbcd01f-sxsxs0-sy94f1-1nc6m.cm5.cnkuaishou.com
   skip-cert-verify: false
+  sni: 8cbcd01f-sxsxs0-sy94f1-1nc6m.cm5.cnkuaishou.com
+  type: trojan
   udp: true
 - name: X_CN_speednode_0020
-  server: 9b39b3c9-sxsxs0-szapkm-1hpo0.cm5.cnkuaishou.com
-  port: 21233
-  type: trojan
   password: c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9
-  sni: 9b39b3c9-sxsxs0-szapkm-1hpo0.cm5.cnkuaishou.com
+  port: 21233
+  server: 9b39b3c9-sxsxs0-szapkm-1hpo0.cm5.cnkuaishou.com
   skip-cert-verify: false
+  sni: 9b39b3c9-sxsxs0-szapkm-1hpo0.cm5.cnkuaishou.com
+  type: trojan
   udp: true
 - name: X_CN_speednode_0022
-  server: 6a4d70fb-sxsxs0-sy7yrp-1j3kc.cm5.cnkuaishou.com
-  port: 27233
-  type: trojan
   password: 3a45a384-4ea7-11ed-a8bf-f23c91cfbbc9
-  sni: 6a4d70fb-sxsxs0-sy7yrp-1j3kc.cm5.cnkuaishou.com
+  port: 27233
+  server: 6a4d70fb-sxsxs0-sy7yrp-1j3kc.cm5.cnkuaishou.com
   skip-cert-verify: false
+  sni: 6a4d70fb-sxsxs0-sy7yrp-1j3kc.cm5.cnkuaishou.com
+  type: trojan
   udp: true
 - name: X_CN_speednode_0024
-  server: 5f75006d-sxsxs0-syw9jc-1qgd1.cm5.cnkuaishou.com
-  port: 21233
-  type: trojan
   password: 730223f0-ef31-11ef-b5d9-f23c9164ca5d
-  sni: 5f75006d-sxsxs0-syw9jc-1qgd1.cm5.cnkuaishou.com
+  port: 21233
+  server: 5f75006d-sxsxs0-syw9jc-1qgd1.cm5.cnkuaishou.com
   skip-cert-verify: false
+  sni: 5f75006d-sxsxs0-syw9jc-1qgd1.cm5.cnkuaishou.com
+  type: trojan
   udp: true
 - name: X_CN_speednode_0026
-  server: 72df6fa3-swq1s0-syfwbx-1k0yf.cu.plebai.net
-  port: 15229
-  type: trojan
   password: 9cc3c03e-21fd-11ee-a642-f23c91369f2d
-  sni: 72df6fa3-swq1s0-syfwbx-1k0yf.cu.plebai.net
+  port: 15229
+  server: 72df6fa3-swq1s0-syfwbx-1k0yf.cu.plebai.net
   skip-cert-verify: false
+  sni: 72df6fa3-swq1s0-syfwbx-1k0yf.cu.plebai.net
+  type: trojan
   udp: true
 - name: X_CN_speednode_0027
-  server: 120.233.128.68
-  port: 39001
-  type: trojan
   password: 85f133142f04dbf6547da33895cfabb3
-  sni: 120.233.128.68
+  port: 39001
+  server: 120.233.128.68
   skip-cert-verify: true
+  sni: 120.233.128.68
+  type: trojan
   udp: true
 - name: X_CN_speednode_0028
-  server: c82845c8-sxsxs0-t22tug-1q91p.cm5.cnkuaishou.com
-  port: 21233
-  type: trojan
   password: c11ff50c-f582-11ee-94df-f23c9164ca5d
-  sni: c82845c8-sxsxs0-t22tug-1q91p.cm5.cnkuaishou.com
+  port: 21233
+  server: c82845c8-sxsxs0-t22tug-1q91p.cm5.cnkuaishou.com
   skip-cert-verify: false
+  sni: c82845c8-sxsxs0-t22tug-1q91p.cm5.cnkuaishou.com
+  type: trojan
   udp: true
 - name: X_CN_speednode_0029
-  server: e1a43e10-sxsxs0-t1qkm7-lwn9.cm5.cnkuaishou.com
-  port: 21233
-  type: trojan
   password: 4d631e24-97f7-11ea-8fc9-f23c913c8d2b
-  sni: e1a43e10-sxsxs0-t1qkm7-lwn9.cm5.cnkuaishou.com
+  port: 21233
+  server: e1a43e10-sxsxs0-t1qkm7-lwn9.cm5.cnkuaishou.com
   skip-cert-verify: false
+  sni: e1a43e10-sxsxs0-t1qkm7-lwn9.cm5.cnkuaishou.com
+  type: trojan
   udp: true
 - name: X_CN_speednode_0030
-  server: 116.31.75.150
-  port: 39001
-  type: trojan
   password: 85f133142f04dbf6547da33895cfabb3
+  port: 39001
+  server: 116.31.75.150
+  skip-cert-verify: true
   sni: www.yrtok.com
-  skip-cert-verify: true
-  udp: true
-- name: X_CN_speednode_0035
-  server: 120.232.153.40
-  port: 43292
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: X_CN_speednode_0040
-  server: 42.240.152.238
-  port: 8842
   type: trojan
-  password: 1b4c16925f934c57b954a9f0f23dea33
-  sni: brwx.spvpv.com
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: X_CN_speednode_0035
+  port: 43292
+  server: 120.232.153.40
   skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: X_CN_speednode_0040
+  password: 1b4c16925f934c57b954a9f0f23dea33
+  port: 8842
+  server: 42.240.152.238
+  skip-cert-verify: true
+  sni: brwx.spvpv.com
+  type: trojan
   udp: true
 - name: X_CN_speednode_0041
-  server: 120.233.44.201
-  port: 21179
-  type: trojan
   password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  sni: k30.tudou211.com
+  port: 21179
+  server: 120.233.44.201
   skip-cert-verify: false
+  sni: k30.tudou211.com
+  type: trojan
   udp: true
 - name: X_DE_speednode_0042
+  network: ws
+  port: 443
   server: 185.224.248.120
-  port: 443
-  type: vless
-  uuid: 1a79d43f-b41c-496b-a241-dcbeefa81f0e
-  tls: true
-  skip-cert-verify: false
   servername: 0926.qiang2000.link
-  network: ws
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1a79d43f-b41c-496b-a241-dcbeefa81f0e
   ws-opts:
-    path: /Telegram@WangCai2/?ed=2560
     headers:
       Host: 0926.qiang2000.link
-  udp: true
-- name: X_FI_speednode_0043
+    path: /Telegram@WangCai2/?ed=2560
+- client-fingerprint: chrome
+  name: X_FI_speednode_0043
+  network: ws
+  port: 443
   server: 77.221.159.70
-  port: 443
-  type: vless
-  uuid: 1a79d43f-b41c-496b-a241-dcbeefa81f0e
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
   servername: 0926.qiang2000.link
-  network: ws
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1a79d43f-b41c-496b-a241-dcbeefa81f0e
   ws-opts:
+    headers:
+      Host: 0926.qiang2000.link
     path: /Telegram@ShadowProxy66/?ed=2560
-    headers:
-      Host: 0926.qiang2000.link
-  udp: true
 - name: X_FI_speednode_0044
-  server: 77.221.158.250
-  port: 443
-  type: vless
-  uuid: 1a79d43f-b41c-496b-a241-dcbeefa81f0e
-  tls: true
-  skip-cert-verify: false
-  servername: 0926.qiang2000.link
   network: ws
+  port: 443
+  server: 77.221.158.250
+  servername: 0926.qiang2000.link
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1a79d43f-b41c-496b-a241-dcbeefa81f0e
   ws-opts:
-    path: /Telegram@WangCai2/?ed=2560
     headers:
       Host: 0926.qiang2000.link
-  udp: true
-- name: X_GB_speednode_0049
-  server: 217.179.91.142
+    path: /Telegram@WangCai2/?ed=2560
+- client-fingerprint: firefox
+  name: X_GB_speednode_0049
   port: 34045
-  type: vless
-  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
   reality-opts:
     public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
     short-id: e8ab71d0
+  server: 217.179.91.142
+  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
   udp: true
+  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
 - name: X_HK_speednode_0050
+  network: ws
+  port: 443
   server: 47.76.218.163
-  port: 443
-  type: vless
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  tls: true
-  skip-cert-verify: true
   servername: steep.skyfigure.top
-  network: ws
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
   ws-opts:
+    headers:
+      Host: steep.skyfigure.top
     path: /Telegram @pgkj666 /?ed=2560
-    headers:
-      Host: steep.skyfigure.top
-  udp: true
 - name: X_HK_speednode_0051
-  server: 46.149.203.202
+  network: ws
   port: 7656
-  type: vless
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  tls: true
-  skip-cert-verify: true
+  server: 46.149.203.202
   servername: steep.skyfigure.top
-  network: ws
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
   ws-opts:
-    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
     headers:
       Host: steep.skyfigure.top
-  udp: true
+    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
 - name: X_HK_speednode_0052
-  server: 85e272b6-sxe4g0-t1bnjq-1krtb.hkt.cdnhuawei.com
-  port: 8443
-  type: http
-  username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
   password: <password>
+  port: 8443
+  server: 85e272b6-sxe4g0-t1bnjq-1krtb.hkt.cdnhuawei.com
   tls: true
+  type: http
   udp: true
-- name: X_JP_speednode_0054
+  username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: X_JP_speednode_0054
+  port: 443
+  reality-opts:
+    public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg
+    short-id: 7a2b
   server: 18.181.83.90
-  port: 443
-  type: vless
-  uuid: 7f93e196-1b2f-4a42-8051-5815554c05db
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
   servername: zula.ir
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7f93e196-1b2f-4a42-8051-5815554c05db
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: X_JP_speednode_0055
+  port: 443
   reality-opts:
     public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg
     short-id: 7a2b
-  udp: true
-- name: X_JP_speednode_0055
   server: 13.114.224.148
-  port: 443
-  type: vless
-  uuid: 7f93e196-1b2f-4a42-8051-5815554c05db
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
   servername: zula.ir
-  reality-opts:
-    public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg
-    short-id: 7a2b
+  skip-cert-verify: false
+  tls: true
+  type: vless
   udp: true
+  uuid: 7f93e196-1b2f-4a42-8051-5815554c05db
 - name: X_JP_speednode_0056
-  server: 168.138.46.67
-  port: 443
-  type: vless
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  tls: true
-  skip-cert-verify: true
-  servername: as.bgm2024.dpdns.org
   network: ws
+  port: 443
+  server: 168.138.46.67
+  servername: as.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
-    path: /?ed=2560
     headers:
       Host: as.bgm2024.dpdns.org
-  udp: true
+    path: /?ed=2560
 - name: X_JP_speednode_0057
+  network: ws
+  port: 443
   server: 160.16.76.226
-  port: 443
-  type: vless
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  tls: true
-  skip-cert-verify: true
   servername: steep.skyfigure.top
-  network: ws
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
   ws-opts:
-    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
     headers:
       Host: steep.skyfigure.top
-  udp: true
+    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
 - name: X_JP_speednode_0058
-  server: 121.85.55.59
+  network: ws
   port: 19842
-  type: vless
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  tls: true
-  skip-cert-verify: true
+  server: 121.85.55.59
   servername: steep.skyfigure.top
-  network: ws
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
   ws-opts:
-    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
     headers:
       Host: steep.skyfigure.top
-  udp: true
+    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
 - name: X_JP_speednode_0059
-  server: 150.66.0.85
-  port: 443
-  type: vless
-  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
-  tls: true
-  skip-cert-verify: true
-  servername: steep.skyfigure.top
   network: ws
+  port: 443
+  server: 150.66.0.85
+  servername: steep.skyfigure.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 63601f9f-7c67-4952-919a-1ef802b5a7ec
   ws-opts:
-    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
     headers:
       Host: steep.skyfigure.top
-  udp: true
-- name: X_KR_speednode_0060
-  server: 210.217.18.70
-  port: 11171
-  type: ss
-  cipher: aes-256-cfb
+    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
+- cipher: aes-256-cfb
+  name: X_KR_speednode_0060
   password: qwerREWQ@@
+  port: 11171
+  server: 210.217.18.70
+  type: ss
   udp: true
-- name: X_KR_speednode_0061
-  server: 43.203.171.71
-  port: 443
-  type: vless
-  uuid: 7f93e196-1b2f-4a42-8051-5815554c05db
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: zula.ir
+  name: X_KR_speednode_0061
+  port: 443
   reality-opts:
     public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg
     short-id: 7a2b
-  udp: true
-- name: X_KR_speednode_0062
-  server: 144.24.73.232
-  port: 443
-  type: vless
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  server: 43.203.171.71
+  servername: zula.ir
+  skip-cert-verify: false
   tls: true
-  skip-cert-verify: true
-  servername: as.bgm2024.dpdns.org
+  type: vless
+  udp: true
+  uuid: 7f93e196-1b2f-4a42-8051-5815554c05db
+- name: X_KR_speednode_0062
   network: ws
+  port: 443
+  server: 144.24.73.232
+  servername: as.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
-    path: /?ed=2560
     headers:
       Host: as.bgm2024.dpdns.org
-  udp: true
-- name: X_KR_speednode_0063
-  server: 154.90.62.168
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
+    path: /?ed=2560
+- cipher: aes-256-cfb
+  name: X_KR_speednode_0063
   password: f8f7aCzcPKbsF8p3
-  udp: true
-- name: X_LT_speednode_0064
-  server: 185.237.185.77
-  port: 20036
+  port: 989
+  server: 154.90.62.168
   type: ss
-  cipher: aes-256-gcm
+  udp: true
+- cipher: aes-256-gcm
+  name: X_LT_speednode_0064
   password: 9XHO7KBQEW75JW8H
+  port: 20036
+  server: 185.237.185.77
+  type: ss
   udp: true
 - name: X_LT_speednode_0065
-  server: notice.2513142.xyz
-  port: 443
-  type: trojan
   password: d84d4cbcd4d29f981ca8b2eff741ec86
-  sni: www.cloudflare.com
+  port: 443
+  server: notice.2513142.xyz
   skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
   udp: true
 - name: X_NL_speednode_0066
-  server: 91.201.113.193
-  port: 443
-  type: vless
-  uuid: 1a79d43f-b41c-496b-a241-dcbeefa81f0e
-  tls: true
-  skip-cert-verify: true
-  servername: 0926.qiang2000.link
   network: ws
+  port: 443
+  server: 91.201.113.193
+  servername: 0926.qiang2000.link
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1a79d43f-b41c-496b-a241-dcbeefa81f0e
   ws-opts:
-    path: /
     headers:
       Host: 0926.qiang2000.link
-  udp: true
+    path: /
 - name: X_RU_speednode_0068
-  server: 45.67.215.209
-  port: 443
-  type: vless
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  tls: true
-  skip-cert-verify: true
-  servername: as.bgm2024.dpdns.org
   network: ws
+  port: 443
+  server: 45.67.215.209
+  servername: as.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
-    path: /?ed=2560
     headers:
       Host: as.bgm2024.dpdns.org
-  udp: true
-- name: X_SC_speednode_0069
-  server: 154.223.21.221
-  port: 989
-  type: ss
-  cipher: aes-256-cfb
+    path: /?ed=2560
+- cipher: aes-256-cfb
+  name: X_SC_speednode_0069
   password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.21.221
+  type: ss
   udp: true
-- name: X_SE_speednode_0070
+- client-fingerprint: chrome
+  name: X_SE_speednode_0070
+  network: ws
+  port: 443
   server: 77.221.142.75
-  port: 443
-  type: vless
-  uuid: 1a79d43f-b41c-496b-a241-dcbeefa81f0e
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
   servername: 0926.qiang2000.link
-  network: ws
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1a79d43f-b41c-496b-a241-dcbeefa81f0e
   ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3@WangCai2/?ed=2560
     headers:
       Host: 0926.qiang2000.link
-  udp: true
-- name: X_SE_speednode_0071
+    path: /TelegramU0001F1E8U0001F1F3@WangCai2/?ed=2560
+- client-fingerprint: chrome
+  name: X_SE_speednode_0071
+  network: ws
+  port: 443
   server: 89.22.227.239
-  port: 443
-  type: vless
-  uuid: 1a79d43f-b41c-496b-a241-dcbeefa81f0e
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
   servername: 0926.qiang2000.link
-  network: ws
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1a79d43f-b41c-496b-a241-dcbeefa81f0e
   ws-opts:
-    path: /telegramU0001F1E8U0001F1F3@wangcai2/?ed=2560
     headers:
       Host: 0926.qiang2000.link
-  udp: true
-- name: X_SE_speednode_0072
+    path: /telegramU0001F1E8U0001F1F3@wangcai2/?ed=2560
+- client-fingerprint: chrome
+  name: X_SE_speednode_0072
+  network: ws
+  port: 443
   server: 77.221.142.34
-  port: 443
-  type: vless
-  uuid: 1a79d43f-b41c-496b-a241-dcbeefa81f0e
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
   servername: 0926.qiang2000.link
-  network: ws
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1a79d43f-b41c-496b-a241-dcbeefa81f0e
   ws-opts:
+    headers:
+      Host: 0926.qiang2000.link
     path: /telegramU0001F1E8U0001F1F3@wangcai2/?ed=2560
-    headers:
-      Host: 0926.qiang2000.link
-  udp: true
-- name: X_SE_speednode_0073
-  server: 77.221.137.52
+- client-fingerprint: chrome
+  name: X_SE_speednode_0073
+  network: ws
   port: 443
-  type: vless
-  uuid: 1a79d43f-b41c-496b-a241-dcbeefa81f0e
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  server: 77.221.137.52
   servername: 0926.qiang2000.link
-  network: ws
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1a79d43f-b41c-496b-a241-dcbeefa81f0e
   ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3@WangCai2/?ed=2560
     headers:
       Host: 0926.qiang2000.link
-  udp: true
+    path: /TelegramU0001F1E8U0001F1F3@WangCai2/?ed=2560
 - name: X_SG_speednode_0074
-  server: 199.232.13.32
-  port: 80
-  type: vless
-  uuid: 03517ec0-976e-4cac-b84b-146fc4c7b023
-  tls: false
-  skip-cert-verify: false
-  servername: Apple-SIB.ir
   network: ws
+  port: 80
+  server: 199.232.13.32
+  servername: Apple-SIB.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 03517ec0-976e-4cac-b84b-146fc4c7b023
   ws-opts:
-    path: /Telegram-ipV2Ry-Telegram-ipV2Ry-Telegram-ipV2Ry?ed=2048
     headers:
       Host: Apple-SIB.ir
-  udp: true
+    path: /Telegram-ipV2Ry-Telegram-ipV2Ry-Telegram-ipV2Ry?ed=2048
 - name: X_SG_speednode_0075
-  server: 138.2.107.107
-  port: 443
-  type: vless
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  tls: true
-  skip-cert-verify: true
-  servername: as.bgm2024.dpdns.org
   network: ws
+  port: 443
+  server: 138.2.107.107
+  servername: as.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
-    path: /?ed=2560
     headers:
       Host: as.bgm2024.dpdns.org
-  udp: true
-- name: X_SG_speednode_0076
-  server: 168.138.181.208
-  port: 443
-  type: vless
-  uuid: 0783b1b9-5d8b-4d03-adc3-b050acc71a29
-  tls: true
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  servername: sgp.rtot.me
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: X_SG_speednode_0076
   network: ws
+  port: 443
+  server: 168.138.181.208
+  servername: sgp.rtot.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0783b1b9-5d8b-4d03-adc3-b050acc71a29
   ws-opts:
-    path: /bing
     headers:
       Host: sgp.rtot.me
-  udp: true
-- name: X_SG_speednode_0077
-  server: sg3.interld123456789.com
-  port: 56702
-  type: vless
-  uuid: 7d2f6c70-68f8-4e81-9e51-7aef5af376d6
+    path: /bing
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  servername: addons.mozilla.org
+  name: X_SG_speednode_0077
+  port: 56702
   reality-opts:
     public-key: sW8BfHeovVzmbFuAnr9nH8oJaKYze6shKoKMdek5ai8
     short-id: 792147b8
-  udp: true
-- name: X_SG_speednode_0078
-  server: 164.52.2.99
-  port: 443
-  type: vless
-  uuid: 1a79d43f-b41c-496b-a241-dcbeefa81f0e
-  tls: true
+  server: sg3.interld123456789.com
+  servername: addons.mozilla.org
   skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: 0926.qiang2000.link
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7d2f6c70-68f8-4e81-9e51-7aef5af376d6
+- client-fingerprint: chrome
+  name: X_SG_speednode_0078
   network: ws
+  port: 443
+  server: 164.52.2.99
+  servername: 0926.qiang2000.link
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1a79d43f-b41c-496b-a241-dcbeefa81f0e
   ws-opts:
-    path: /Telegram@WangCai2/?ed=2560
     headers:
       Host: 0926.qiang2000.link
-  udp: true
-- name: X_TW_speednode_0080
-  server: 103.137.62.194
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
+    path: /Telegram@WangCai2/?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: X_TW_speednode_0080
   password: 937f6b6168b6
   plugin: v2ray-plugin
   plugin-opts:
-    mode: websocket
     host: wt8v1.kvote.cn
+    mode: websocket
+    mux: true
     path: /oqhygtklyhwi
     tls: true
-    mux: true
+  port: 443
+  server: 103.137.62.194
+  type: ss
   udp: true
 - name: X_US_speednode_0081
-  server: 108.162.195.20
-  port: 8880
-  type: vless
-  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
-  tls: false
-  skip-cert-verify: false
-  servername: ip.langmanshanxi.top
   network: ws
+  port: 8880
+  server: 108.162.195.20
+  servername: ip.langmanshanxi.top
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 583ceab3-4022-4553-9158-9bedc625ad4e
   ws-opts:
-    path: /Telegram@WangCai2/?ed=2560
     headers:
       Host: ip.langmanshanxi.top
-  udp: true
+    path: /Telegram@WangCai2/?ed=2560
 - name: X_US_speednode_0111
+  network: ws
+  port: 443
   server: 104.16.120.49
-  port: 443
-  type: vless
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  tls: true
-  skip-cert-verify: true
   servername: as.bgm2024.dpdns.org
-  network: ws
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
-    path: /?ed=2560
     headers:
       Host: as.bgm2024.dpdns.org
-  udp: true
+    path: /?ed=2560
 - name: X_US_speednode_0119
-  server: 104.18.94.238
-  port: 443
-  type: vless
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  tls: true
-  skip-cert-verify: true
-  servername: as.bgm2024.dpdns.org
   network: ws
+  port: 443
+  server: 104.18.94.238
+  servername: as.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
-    path: /?ed=2560
     headers:
       Host: as.bgm2024.dpdns.org
-  udp: true
-- name: X_US_speednode_0123
-  server: 140.248.129.58
-  port: 443
-  type: vless
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  tls: true
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  servername: Channel----MOSIV2--MOSIV2.IR
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: X_US_speednode_0123
   network: ws
+  port: 443
+  server: 140.248.129.58
+  servername: Channel----MOSIV2--MOSIV2.IR
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
-    path: /Channel-MOSIV2--MOSIV2--Channel-MOSIV2--MOSIV2?ed=2560
     headers:
       Host: Channel----MOSIV2-MOSIV2.IR
-  udp: true
+    path: /Channel-MOSIV2--MOSIV2--Channel-MOSIV2--MOSIV2?ed=2560
 - name: X_US_speednode_0126
+  network: ws
+  port: 443
   server: 160.79.105.89
-  port: 443
-  type: vless
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  tls: true
-  skip-cert-verify: true
   servername: as.bgm2024.dpdns.org
-  network: ws
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
-    path: /?ed=2560
     headers:
       Host: as.bgm2024.dpdns.org
-  udp: true
+    path: /?ed=2560
 - name: X_US_speednode_0129
+  network: ws
+  port: 80
   server: 151.101.2.133
-  port: 80
-  type: vless
-  uuid: 75ecef77-2050-4250-99f7-936d0188edf2
-  tls: false
-  skip-cert-verify: false
   servername: xasshsga---RUBIKA.ir.speedtest.net.ARCHYU.IR
-  network: ws
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 75ecef77-2050-4250-99f7-936d0188edf2
   ws-opts:
-    path: /ws/?ed=2048
     headers:
       Host: xasshsga---RUBIKA.ir.speedtest.net.ARCHYU.IR
-  udp: true
+    path: /ws/?ed=2048
 - name: X_US_speednode_0134
-  server: 151.101.130.133
-  port: 80
-  type: vless
-  uuid: 75ecef77-2050-4250-99f7-936d0188edf2
-  tls: false
-  skip-cert-verify: false
-  servername: xasshsga---RUBIKA.ir.speedtest.net.ARCHYU.IR
   network: ws
+  port: 80
+  server: 151.101.130.133
+  servername: xasshsga---RUBIKA.ir.speedtest.net.ARCHYU.IR
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 75ecef77-2050-4250-99f7-936d0188edf2
   ws-opts:
-    path: /ws/?ed=2048
     headers:
       Host: xasshsga---RUBIKA.ir.speedtest.net.ARCHYU.IR
-  udp: true
+    path: /ws/?ed=2048
 - name: X_US_speednode_0136
+  network: ws
+  port: 443
   server: 160.79.104.11
-  port: 443
-  type: vless
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  tls: true
-  skip-cert-verify: true
   servername: as.bgm2024.dpdns.org
-  network: ws
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
-    path: /?ed=2560
     headers:
       Host: as.bgm2024.dpdns.org
-  udp: true
+    path: /?ed=2560
 - name: X_US_speednode_0137
+  network: ws
+  port: 443
   server: 160.79.105.76
-  port: 443
-  type: vless
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  tls: true
-  skip-cert-verify: true
   servername: as.bgm2024.dpdns.org
-  network: ws
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
-    path: /?ed=2560
     headers:
       Host: as.bgm2024.dpdns.org
-  udp: true
+    path: /?ed=2560
 - name: X_US_speednode_0138
-  server: 63.141.128.140
-  port: 443
-  type: vless
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  tls: true
-  skip-cert-verify: true
-  servername: as.bgm2024.dpdns.org
   network: ws
+  port: 443
+  server: 63.141.128.140
+  servername: as.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
-    path: /?ed=2560
     headers:
       Host: as.bgm2024.dpdns.org
-  udp: true
+    path: /?ed=2560
 - name: X_US_speednode_0143
-  server: 151.101.64.155
-  port: 80
-  type: vless
-  uuid: 956ca0da-ef6c-4b0d-9977-68879e6855ca
-  tls: false
-  skip-cert-verify: false
-  servername: Bpalanenok.org
   network: ws
+  port: 80
+  server: 151.101.64.155
+  servername: Bpalanenok.org
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 956ca0da-ef6c-4b0d-9977-68879e6855ca
   ws-opts:
-    path: /@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam?ed=2048
     headers:
       Host: Bpalanenok.org
-  udp: true
+    path: /@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam/@XpnTeam?ed=2048
 - name: X_US_speednode_0144
+  network: ws
+  port: 443
   server: 63.141.128.88
-  port: 443
-  type: vless
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  tls: true
-  skip-cert-verify: true
   servername: as.bgm2024.dpdns.org
-  network: ws
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
-    path: /?ed=2560
     headers:
       Host: as.bgm2024.dpdns.org
-  udp: true
+    path: /?ed=2560
 - name: X_US_speednode_0146
+  network: ws
+  port: 443
   server: 63.141.128.209
-  port: 443
-  type: vless
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  tls: true
-  skip-cert-verify: true
   servername: as.bgm2024.dpdns.org
-  network: ws
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
-    path: /ss.vs2024.us.kg
     headers:
       Host: as.bgm2024.dpdns.org
-  udp: true
+    path: /ss.vs2024.us.kg
 - name: X_US_speednode_0150
+  network: ws
+  port: 443
   server: 63.141.128.163
-  port: 443
-  type: vless
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  tls: true
-  skip-cert-verify: true
   servername: as.bgm2024.dpdns.org
-  network: ws
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
+    headers:
+      Host: as.bgm2024.dpdns.org
     path: /ss.vs2024.us.kg
-    headers:
-      Host: as.bgm2024.dpdns.org
-  udp: true
 - name: X_US_speednode_0155
-  server: 47.251.95.178
   port: 443
-  type: vless
-  uuid: ea286109-d20f-415e-849e-4af20ab04b65
-  tls: true
-  skip-cert-verify: false
+  server: 47.251.95.178
   servername: 147135001195.sec22org.com
-  udp: true
-- name: X_US_speednode_0156
-  server: 108.174.61.161
-  port: 38712
-  type: vless
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
+  skip-cert-verify: false
   tls: true
-  skip-cert-verify: true
-  servername: as.bgm2024.dpdns.org
+  type: vless
+  udp: true
+  uuid: ea286109-d20f-415e-849e-4af20ab04b65
+- name: X_US_speednode_0156
   network: ws
+  port: 38712
+  server: 108.174.61.161
+  servername: as.bgm2024.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55520747-311e-4015-83ce-be46e2060ce3
   ws-opts:
-    path: /?ed=2560
     headers:
       Host: as.bgm2024.dpdns.org
-  udp: true
-- name: X_VN_speednode_0157
+    path: /?ed=2560
+- client-fingerprint: firefox
+  name: X_VN_speednode_0157
+  port: 34045
+  reality-opts:
+    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+    short-id: e8ab71d0
   server: 103.81.86.9
-  port: 34045
-  type: vless
-  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: firefox
   servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+- client-fingerprint: firefox
+  name: X_VN_speednode_0158
+  port: 34045
   reality-opts:
     public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
     short-id: e8ab71d0
-  udp: true
-- name: X_VN_speednode_0158
   server: 59.153.217.57
-  port: 34045
-  type: vless
-  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: firefox
   servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+- client-fingerprint: firefox
+  name: X_VN_speednode_0159
+  port: 34045
   reality-opts:
     public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
     short-id: e8ab71d0
-  udp: true
-- name: X_VN_speednode_0159
   server: 103.81.85.15
-  port: 34045
-  type: vless
-  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: firefox
   servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+- client-fingerprint: firefox
+  name: X_VN_speednode_0160
+  port: 34045
   reality-opts:
     public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
     short-id: e8ab71d0
-  udp: true
-- name: X_VN_speednode_0160
   server: 103.12.77.78
-  port: 34045
-  type: vless
-  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-  tls: true
+  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
   skip-cert-verify: false
-  client-fingerprint: firefox
-  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
-  reality-opts:
-    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-    short-id: e8ab71d0
-  udp: true
-- name: X_VN_speednode_0161
-  server: 103.81.86.133
-  port: 34045
-  type: vless
-  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
   tls: true
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+  type: vless
+  udp: true
+  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+- client-fingerprint: firefox
+  name: X_VN_speednode_0161
+  port: 34045
   reality-opts:
     public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
     short-id: e8ab71d0
+  server: 103.81.86.133
+  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
   udp: true
-- name: X_🇭🇰 香港2
-  server: 121.127.231.217
-  port: 13231
+  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  type: ss
-  cipher: chacha20-ietf-poly1305
+  name: X_🇭🇰 香港2
   password: 1450cecfb93f
-  tfo: false
   plugin: v2ray-plugin
   plugin-opts:
-    mode: websocket
     host: kh36v1.pmxiaonan.xyz
-    path: /simieepvt
-    tls: true
+    mode: websocket
     mux: true
+    path: /simieepvt
     skip-cert-verify: false
-- name: X_🇭🇰 香港3
+    tls: true
+  port: 13231
+  server: 121.127.231.217
+  tfo: false
+  type: ss
+- client-fingerprint: chrome
+  name: X_🇭🇰 香港3
+  password: 85f133142f04dbf6547da33895cfabb3
+  port: 39001
   server: 125.94.40.221
-  port: 39001
-  client-fingerprint: chrome
-  type: trojan
-  password: 85f133142f04dbf6547da33895cfabb3
-  sni: www.yrtok.com
   skip-cert-verify: true
-- name: X_🇭🇰 香港4
+  sni: www.yrtok.com
+  type: trojan
+- client-fingerprint: chrome
+  name: X_🇭🇰 香港4
+  password: 85f133142f04dbf6547da33895cfabb3
+  port: 39001
   server: 113.99.140.184
-  port: 39001
-  client-fingerprint: chrome
-  type: trojan
-  password: 85f133142f04dbf6547da33895cfabb3
-  sni: www.yrtok.com
   skip-cert-verify: true
-- name: X_🇭🇰 香港6
-  server: v9.heduian.link
-  port: 30809
+  sni: www.yrtok.com
+  type: trojan
+- alterId: 2
+  cipher: auto
   client-fingerprint: chrome
+  name: X_🇭🇰 香港6
+  network: ws
+  port: 30809
+  server: v9.heduian.link
+  skip-cert-verify: false
+  tfo: false
+  tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
   ws-opts:
-    path: /oooo
     headers:
       Host: baidu.com
-- name: X_🇭🇰 香港7
-  server: 103.224.80.89
-  port: 38993
+    path: /oooo
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
+  name: X_🇭🇰 香港7
+  port: 38993
+  server: 103.224.80.89
+  skip-cert-verify: false
+  tfo: false
+  tls: false
   type: vmess
   uuid: 6f8c6f30-c726-4916-8f72-04f020c5c12d
-  alterId: 0
+- alterId: 64
   cipher: auto
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-- name: X_🇭🇰 香港8
-  server: 183.236.51.38
-  port: 33519
   client-fingerprint: chrome
+  name: X_🇭🇰 香港8
+  port: 33519
+  server: 183.236.51.38
+  skip-cert-verify: false
+  tfo: false
+  tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-- name: X_🇯🇵 日本
-  server: cn01.efan8867801.xyz
-  port: 8766
+- cipher: rc4-md5
   client-fingerprint: chrome
-  type: ss
-  cipher: rc4-md5
+  name: X_🇯🇵 日本
   password: efanccyun
-  tfo: false
   plugin: obfs
   plugin-opts:
-    mode: http
     host: 202506070920094-hBKKcUGalt.download.microsoft.com
-- name: X_🇯🇵 日本2
-  server: 43.226.17.11
-  port: 35947
-  client-fingerprint: chrome
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 60a930c17ff0
+    mode: http
+  port: 8766
+  server: cn01.efan8867801.xyz
   tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: X_🇯🇵 日本2
+  password: 60a930c17ff0
   plugin: v2ray-plugin
   plugin-opts:
-    mode: websocket
     host: kr6v1.xpmc.cc
-    path: /matwnpkhug
-    tls: true
+    mode: websocket
     mux: true
+    path: /matwnpkhug
     skip-cert-verify: false
-- name: X_🇯🇵 日本3
-  server: v6.heduian.link
+    tls: true
+  port: 35947
+  server: 43.226.17.11
+  tfo: false
+  type: ss
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: X_🇯🇵 日本3
+  network: ws
   port: 30806
-  client-fingerprint: chrome
+  server: v6.heduian.link
+  skip-cert-verify: false
+  tfo: false
+  tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
   ws-opts:
-    path: /oooo
     headers:
       Host: ocbc.com
-- name: X_🇸🇬 新加坡
-  server: v12.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: X_🇸🇬 新加坡
+  network: ws
   port: 30812
-  client-fingerprint: chrome
+  server: v12.heduian.link
+  skip-cert-verify: false
+  tfo: false
+  tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
   ws-opts:
-    path: /oooo
     headers:
       Host: ocbc.com
-- name: X_🇰🇷 韩国
-  server: 203.156.253.12
-  port: 39001
-  client-fingerprint: chrome
-  type: trojan
+    path: /oooo
+- client-fingerprint: chrome
+  name: X_🇰🇷 韩国
   password: 85f133142f04dbf6547da33895cfabb3
-  sni: www.yrtok.com
+  port: 39001
+  server: 203.156.253.12
   skip-cert-verify: true
-- name: X_🇺🇸 美国
-  server: v32.heduian.link
-  port: 30832
+  sni: www.yrtok.com
+  type: trojan
+- alterId: 2
+  cipher: auto
   client-fingerprint: chrome
+  name: X_🇺🇸 美国
+  network: ws
+  port: 30832
+  server: v32.heduian.link
+  skip-cert-verify: false
+  tfo: false
+  tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
   ws-opts:
-    path: /oooo
     headers:
       Host: baidu.com
-- name: X_🇺🇸 美国3
-  server: v24.heduian.link
-  port: 30824
+    path: /oooo
+- alterId: 2
+  cipher: auto
   client-fingerprint: chrome
+  name: X_🇺🇸 美国3
+  network: ws
+  port: 30824
+  server: v24.heduian.link
+  skip-cert-verify: false
+  tfo: false
+  tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  tfo: false
-  skip-cert-verify: false
-  network: ws
   ws-opts:
-    path: /oooo
     headers:
       Host: v24.heduian.link
-- name: X_🇨🇳_CN_中国_1
-  type: vmess
-  server: 62.60.229.38
-  port: 17799
-  uuid: ed2d7357-4951-43e7-92d3-f880d2481ffe
-  network: tcp
-  sni: ''
+    path: /oooo
+- alterId: 0
+  cipher: auto
   fingerprint: ''
   ip-version: dual
-  udp: true
-  alterId: 0
-  cipher: auto
-- name: X_🇨🇳_CN_中国->🇬🇧_GB_英国_2
+  name: X_🇨🇳_CN_中国_1
+  network: tcp
+  port: 17799
+  server: 62.60.229.38
+  sni: ''
   type: vmess
-  server: v25.heduian.link
-  port: 30825
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  udp: true
+  uuid: ed2d7357-4951-43e7-92d3-f880d2481ffe
+- alterId: 2
+  cipher: auto
+  ip-version: dual
+  name: X_🇨🇳_CN_中国->🇬🇧_GB_英国_2
   network: ws
+  port: 30825
+  server: v25.heduian.link
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
-    path: /oooo
     headers:
       host: v25.heduian.link
-  ip-version: dual
-  udp: true
-  alterId: 2
-  cipher: auto
-- name: X_🇨🇳_CN_中国_2
-  type: vmess
-  server: v37.heduian.link
-  port: 30837
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  network: ws
-  ws-opts:
     path: /oooo
+- alterId: 2
+  cipher: auto
+  ip-version: dual
+  name: X_🇨🇳_CN_中国_2
+  network: ws
+  port: 30837
+  server: v37.heduian.link
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
     headers:
       host: v37.heduian.link
-  ip-version: dual
-  udp: true
-  alterId: 2
-  cipher: auto
-- name: X_🇬🇧_GB_英国
-  type: ss
-  server: 77.239.116.76
-  port: 8315
-  password: oHOP1bWFMkQVx3PdbhRlOk
-  ip-version: dual
-  udp: true
-  cipher: chacha20-ietf-poly1305
-- name: X_🇨🇳_CN_中国->🇨🇦_CA_加拿大
-  type: vmess
-  server: v8.heduian.link
-  port: 30808
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  network: ws
-  ws-opts:
     path: /oooo
+- cipher: chacha20-ietf-poly1305
+  ip-version: dual
+  name: X_🇬🇧_GB_英国
+  password: oHOP1bWFMkQVx3PdbhRlOk
+  port: 8315
+  server: 77.239.116.76
+  type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  ip-version: dual
+  name: X_🇨🇳_CN_中国->🇨🇦_CA_加拿大
+  network: ws
+  port: 30808
+  server: v8.heduian.link
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
     headers:
       host: v8.heduian.link
-  ip-version: dual
-  udp: true
-  alterId: 2
-  cipher: auto
-- name: cf_tunnel_visa_tw_443
-  type: vless
+    path: /oooo
+- type: vless
+  name: cf_tunnel_visa_tw_443
   server: www.visa.com.tw
   port: 443
-  uuid: dcf11935-7b1f-4ae6-b11c-77dbb8d6e649
-  network: ws
-  tls: true
-  servername: investigations-painted-sing-dist.trycloudflare.com
+  uuid: eafe1fe8-a2ce-4815-9fce-975ecf107dec
   skip-cert-verify: true
-  client-fingerprint: chrome
+  udp: true
+  tls: true
+  network: ws
+  servername: silly-awareness-hey-nigeria.trycloudflare.com
   ws-opts:
-    path: /dcf11935-7b1f-4ae6-b11c-77dbb8d6e649
+    path: /eafe1fe8-a2ce-4815-9fce-975ecf107dec?ed=2048
     headers:
-      host: investigations-painted-sing-dist.trycloudflare.com
-  ip-version: dual
-- name: cf_tunnel_visa_hk_2053
-  type: vless
+      host: silly-awareness-hey-nigeria.trycloudflare.com
+- type: vless
+  name: cf_tunnel_visa_hk_2053
   server: www.visa.com.hk
   port: 2053
-  uuid: dcf11935-7b1f-4ae6-b11c-77dbb8d6e649
-  network: ws
-  tls: true
-  servername: investigations-painted-sing-dist.trycloudflare.com
+  uuid: eafe1fe8-a2ce-4815-9fce-975ecf107dec
   skip-cert-verify: true
-  client-fingerprint: chrome
+  udp: true
+  tls: true
+  network: ws
+  servername: silly-awareness-hey-nigeria.trycloudflare.com
   ws-opts:
-    path: /dcf11935-7b1f-4ae6-b11c-77dbb8d6e649
+    path: /eafe1fe8-a2ce-4815-9fce-975ecf107dec?ed=2048
     headers:
-      host: investigations-painted-sing-dist.trycloudflare.com
-  ip-version: dual
-- name: cf_tunnel_visa_br_8443
-  type: vless
+      host: silly-awareness-hey-nigeria.trycloudflare.com
+- type: vless
+  name: cf_tunnel_visa_br_8443
   server: www.visa.com.br
   port: 8443
-  uuid: dcf11935-7b1f-4ae6-b11c-77dbb8d6e649
-  network: ws
-  tls: true
-  servername: investigations-painted-sing-dist.trycloudflare.com
+  uuid: eafe1fe8-a2ce-4815-9fce-975ecf107dec
   skip-cert-verify: true
-  client-fingerprint: chrome
+  udp: true
+  tls: true
+  network: ws
+  servername: silly-awareness-hey-nigeria.trycloudflare.com
   ws-opts:
-    path: /dcf11935-7b1f-4ae6-b11c-77dbb8d6e649
+    path: /eafe1fe8-a2ce-4815-9fce-975ecf107dec?ed=2048
     headers:
-      host: investigations-painted-sing-dist.trycloudflare.com
-  ip-version: dual
-- name: cf_tunnel_visa_ch_443
-  type: vless
+      host: silly-awareness-hey-nigeria.trycloudflare.com
+- type: vless
+  name: cf_tunnel_visa_ch_443
   server: www.visaeurope.ch
   port: 443
-  uuid: dcf11935-7b1f-4ae6-b11c-77dbb8d6e649
-  network: ws
-  tls: true
-  servername: investigations-painted-sing-dist.trycloudflare.com
+  uuid: eafe1fe8-a2ce-4815-9fce-975ecf107dec
   skip-cert-verify: true
-  client-fingerprint: chrome
+  udp: true
+  tls: true
+  network: ws
+  servername: silly-awareness-hey-nigeria.trycloudflare.com
   ws-opts:
-    path: /dcf11935-7b1f-4ae6-b11c-77dbb8d6e649
+    path: /eafe1fe8-a2ce-4815-9fce-975ecf107dec?ed=2048
     headers:
-      host: investigations-painted-sing-dist.trycloudflare.com
-  ip-version: dual
-- name: cf_tunnel_visa_us_2053
-  type: vless
+      host: silly-awareness-hey-nigeria.trycloudflare.com
+- type: vless
+  name: cf_tunnel_visa_us_2053
   server: usa.visa.com
   port: 2053
-  uuid: dcf11935-7b1f-4ae6-b11c-77dbb8d6e649
-  network: ws
-  tls: true
-  servername: investigations-painted-sing-dist.trycloudflare.com
+  uuid: eafe1fe8-a2ce-4815-9fce-975ecf107dec
   skip-cert-verify: true
-  client-fingerprint: chrome
+  udp: true
+  tls: true
+  network: ws
+  servername: silly-awareness-hey-nigeria.trycloudflare.com
   ws-opts:
-    path: /dcf11935-7b1f-4ae6-b11c-77dbb8d6e649
+    path: /eafe1fe8-a2ce-4815-9fce-975ecf107dec?ed=2048
     headers:
-      host: investigations-painted-sing-dist.trycloudflare.com
-  ip-version: dual
-- name: cf_tunnel_icook_hk_8443
-  type: vless
+      host: silly-awareness-hey-nigeria.trycloudflare.com
+- type: vless
+  name: cf_tunnel_icook_hk_8443
   server: icook.hk
   port: 8443
-  uuid: dcf11935-7b1f-4ae6-b11c-77dbb8d6e649
-  network: ws
-  tls: true
-  servername: investigations-painted-sing-dist.trycloudflare.com
+  uuid: eafe1fe8-a2ce-4815-9fce-975ecf107dec
   skip-cert-verify: true
-  client-fingerprint: chrome
+  udp: true
+  tls: true
+  network: ws
+  servername: silly-awareness-hey-nigeria.trycloudflare.com
   ws-opts:
-    path: /dcf11935-7b1f-4ae6-b11c-77dbb8d6e649
+    path: /eafe1fe8-a2ce-4815-9fce-975ecf107dec?ed=2048
     headers:
-      host: investigations-painted-sing-dist.trycloudflare.com
-  ip-version: dual
-- name: cf_tunnel_icook_tw_443
-  type: vless
+      host: silly-awareness-hey-nigeria.trycloudflare.com
+- type: vless
+  name: cf_tunnel_icook_tw_443
   server: icook.tw
   port: 443
-  uuid: dcf11935-7b1f-4ae6-b11c-77dbb8d6e649
-  network: ws
-  tls: true
-  servername: investigations-painted-sing-dist.trycloudflare.com
+  uuid: eafe1fe8-a2ce-4815-9fce-975ecf107dec
   skip-cert-verify: true
-  client-fingerprint: chrome
+  udp: true
+  tls: true
+  network: ws
+  servername: silly-awareness-hey-nigeria.trycloudflare.com
   ws-opts:
-    path: /dcf11935-7b1f-4ae6-b11c-77dbb8d6e649
+    path: /eafe1fe8-a2ce-4815-9fce-975ecf107dec?ed=2048
     headers:
-      host: investigations-painted-sing-dist.trycloudflare.com
-  ip-version: dual
+      host: silly-awareness-hey-nigeria.trycloudflare.com
 proxy-groups:
 - name: 🚀 节点选择
-  type: select
   proxies:
   - ♻️ 自动选择
   - DIRECT
@@ -1458,13 +1437,10 @@ proxy-groups:
   - 🇨🇳_CN_中国->🇺🇸_US_美国_3
   - 🇨🇳_CN_中国->🇰🇷_KR_韩国
   - 🇰🇷_KR_韩国->🇺🇸_US_美国_2
-- name: ♻️ 自动选择
-  type: url-test
-  url: https://www.facebook.com/common/referer_frame.php
-  interval: 60
-  tolerance: 1
+  type: select
+- interval: 60
+  name: ♻️ 自动选择
   proxies:
-  - 🪐 负载均衡
   - 🇰🇷_KR_韩国->🇺🇸_US_美国
   - 🇨🇳_CN_中国->🇺🇸_US_美国
   - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
@@ -1478,127 +1454,6 @@ proxy-groups:
   - 🇨🇳_CN_中国->🇺🇸_US_美国_3
   - 🇨🇳_CN_中国->🇰🇷_KR_韩国
   - 🇰🇷_KR_韩国->🇺🇸_US_美国_2
-  - cf_tunnel_visa_tw_443
-  - cf_tunnel_visa_hk_2053
-  - cf_tunnel_visa_br_8443
-  - cf_tunnel_visa_ch_443
-  - cf_tunnel_visa_us_2053
-  - cf_tunnel_icook_hk_8443
-  - cf_tunnel_icook_tw_443
-- name: 🌍 国外媒体
-  type: select
-  proxies:
-  - 🚀 节点选择
-  - ♻️ 自动选择
-  - 🎯 全球直连
-  - 🇰🇷_KR_韩国->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
-  - 🇨🇳_CN_中国->🇩🇪_DE_德国
-  - 🇬🇧_GB_英国
-  - 🇰🇷_KR_韩国->🇺🇸_US_美国_1
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇷🇺_RU_俄罗斯->🇰🇷_KR_韩国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  - 🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-  - 🇨🇳_CN_中国->🇰🇷_KR_韩国
-  - 🇰🇷_KR_韩国->🇺🇸_US_美国_2
-- name: 📲 电报信息
-  type: select
-  proxies:
-  - 🚀 节点选择
-  - 🎯 全球直连
-  - 🇰🇷_KR_韩国->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
-  - 🇨🇳_CN_中国->🇩🇪_DE_德国
-  - 🇬🇧_GB_英国
-  - 🇰🇷_KR_韩国->🇺🇸_US_美国_1
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇷🇺_RU_俄罗斯->🇰🇷_KR_韩国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  - 🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-  - 🇨🇳_CN_中国->🇰🇷_KR_韩国
-  - 🇰🇷_KR_韩国->🇺🇸_US_美国_2
-- name: Ⓜ️ 微软服务
-  type: select
-  proxies:
-  - 🎯 全球直连
-  - 🚀 节点选择
-  - 🇰🇷_KR_韩国->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
-  - 🇨🇳_CN_中国->🇩🇪_DE_德国
-  - 🇬🇧_GB_英国
-  - 🇰🇷_KR_韩国->🇺🇸_US_美国_1
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇷🇺_RU_俄罗斯->🇰🇷_KR_韩国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  - 🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-  - 🇨🇳_CN_中国->🇰🇷_KR_韩国
-  - 🇰🇷_KR_韩国->🇺🇸_US_美国_2
-- name: 🍎 苹果服务
-  type: select
-  proxies:
-  - 🚀 节点选择
-  - 🎯 全球直连
-  - 🇰🇷_KR_韩国->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
-  - 🇨🇳_CN_中国->🇩🇪_DE_德国
-  - 🇬🇧_GB_英国
-  - 🇰🇷_KR_韩国->🇺🇸_US_美国_1
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇷🇺_RU_俄罗斯->🇰🇷_KR_韩国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  - 🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-  - 🇨🇳_CN_中国->🇰🇷_KR_韩国
-  - 🇰🇷_KR_韩国->🇺🇸_US_美国_2
-- name: 🎯 全球直连
-  type: select
-  proxies:
-  - DIRECT
-  - 🚀 节点选择
-  - ♻️ 自动选择
-- name: 🛑 全球拦截
-  type: select
-  proxies:
-  - REJECT
-  - DIRECT
-- name: 🍃 应用净化
-  type: select
-  proxies:
-  - REJECT
-  - DIRECT
-- name: 🐟 漏网之鱼
-  type: select
-  proxies:
-  - 🚀 节点选择
-  - 🎯 全球直连
-  - ♻️ 自动选择
-  - 🇰🇷_KR_韩国->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
-  - 🇨🇳_CN_中国->🇩🇪_DE_德国
-  - 🇬🇧_GB_英国
-  - 🇰🇷_KR_韩国->🇺🇸_US_美国_1
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇷🇺_RU_俄罗斯->🇰🇷_KR_韩国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  - 🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-  - 🇨🇳_CN_中国->🇰🇷_KR_韩国
-  - 🇰🇷_KR_韩国->🇺🇸_US_美国_2
-- name: 🪐 负载均衡
-  type: load-balance
-  url: https://client3.google.com/generate_204
-  interval: 120
-  strategy: consistent-hashing
-  proxies:
   - X_AT_speednode_0001
   - X_AT_speednode_0002
   - X_AT_speednode_0003
@@ -1695,91 +1550,209 @@ proxy-groups:
   - X_🇨🇳_CN_中国_2
   - X_🇬🇧_GB_英国
   - X_🇨🇳_CN_中国->🇨🇦_CA_加拿大
+  - cf_tunnel_visa_tw_443
+  - cf_tunnel_visa_hk_2053
+  - cf_tunnel_visa_br_8443
+  - cf_tunnel_visa_ch_443
+  - cf_tunnel_visa_us_2053
+  - cf_tunnel_icook_hk_8443
+  - cf_tunnel_icook_tw_443
+  tolerance: 5
+  type: url-test
+  url: https://www.facebook.com/common/referer_frame.php
+- name: 🌍 国外媒体
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🎯 全球直连
+  - 🇰🇷_KR_韩国->🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
+  - 🇨🇳_CN_中国->🇩🇪_DE_德国
+  - 🇬🇧_GB_英国
+  - 🇰🇷_KR_韩国->🇺🇸_US_美国_1
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇷🇺_RU_俄罗斯->🇰🇷_KR_韩国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+  - 🇰🇷_KR_韩国->🇺🇸_US_美国_2
+  type: select
+- name: 📲 电报信息
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - 🇰🇷_KR_韩国->🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
+  - 🇨🇳_CN_中国->🇩🇪_DE_德国
+  - 🇬🇧_GB_英国
+  - 🇰🇷_KR_韩国->🇺🇸_US_美国_1
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇷🇺_RU_俄罗斯->🇰🇷_KR_韩国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+  - 🇰🇷_KR_韩国->🇺🇸_US_美国_2
+  type: select
+- name: Ⓜ️ 微软服务
+  proxies:
+  - 🎯 全球直连
+  - 🚀 节点选择
+  - 🇰🇷_KR_韩国->🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
+  - 🇨🇳_CN_中国->🇩🇪_DE_德国
+  - 🇬🇧_GB_英国
+  - 🇰🇷_KR_韩国->🇺🇸_US_美国_1
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇷🇺_RU_俄罗斯->🇰🇷_KR_韩国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+  - 🇰🇷_KR_韩国->🇺🇸_US_美国_2
+  type: select
+- name: 🍎 苹果服务
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - 🇰🇷_KR_韩国->🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
+  - 🇨🇳_CN_中国->🇩🇪_DE_德国
+  - 🇬🇧_GB_英国
+  - 🇰🇷_KR_韩国->🇺🇸_US_美国_1
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇷🇺_RU_俄罗斯->🇰🇷_KR_韩国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+  - 🇰🇷_KR_韩国->🇺🇸_US_美国_2
+  type: select
+- name: 🎯 全球直连
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  type: select
+- name: 🛑 全球拦截
+  proxies:
+  - REJECT
+  - DIRECT
+  type: select
+- name: 🍃 应用净化
+  proxies:
+  - REJECT
+  - DIRECT
+  type: select
+- name: 🐟 漏网之鱼
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - ♻️ 自动选择
+  - 🇰🇷_KR_韩国->🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
+  - 🇨🇳_CN_中国->🇩🇪_DE_德国
+  - 🇬🇧_GB_英国
+  - 🇰🇷_KR_韩国->🇺🇸_US_美国_1
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇷🇺_RU_俄罗斯->🇰🇷_KR_韩国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - 🇨🇳_CN_中国->🇰🇷_KR_韩国
+  - 🇰🇷_KR_韩国->🇺🇸_US_美国_2
+  type: select
 rule-providers:
   Apple:
-    type: http
     behavior: classical
-    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/Apple.list
     format: text
     interval: 3600
     path: ./Clash/Apple.list
-  Telegram:
     type: http
-    behavior: classical
-    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
-    format: text
-    interval: 3600
-    path: ./Clash/Telegram.list
-  ProxyLite:
-    type: http
-    behavior: classical
-    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list
-    format: text
-    interval: 3600
-    path: ./Clash/ProxyLite.list
-  ChinaDomain:
-    type: http
-    behavior: classical
-    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
-    format: text
-    interval: 3600
-    path: ./Clash/ChinaDomain.list
-  ChinaCompanyIp:
-    type: http
-    behavior: classical
-    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
-    format: text
-    interval: 3600
-    path: ./Clash/ChinaCompanyIp.list
-  ProxyMedia:
-    type: http
-    behavior: classical
-    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
-    format: text
-    interval: 3600
-    path: ./Clash/ProxyMedia.list
-  LocalAreaNetwork:
-    type: http
-    behavior: classical
-    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
-    format: text
-    interval: 3600
-    path: ./Clash/LocalAreaNetwork.list
-  Microsoft:
-    type: http
-    behavior: classical
-    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
-    format: text
-    interval: 3600
-    path: ./Clash/Microsoft.list
-  GoogleCN:
-    type: http
-    behavior: classical
-    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
-    format: text
-    interval: 3600
-    path: ./Clash/GoogleCN.list
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/Apple.list
   BanAD:
-    type: http
     behavior: classical
-    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
     format: text
     interval: 3600
     path: ./Clash/BanAD.list
-  BanProgramAD:
     type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
+  BanProgramAD:
     behavior: classical
-    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
     format: text
     interval: 3600
     path: ./Clash/BanProgramAD.list
-  SteamCN:
     type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+  ChinaCompanyIp:
     behavior: classical
-    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
+    format: text
+    interval: 3600
+    path: ./Clash/ChinaCompanyIp.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+  ChinaDomain:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/ChinaDomain.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+  GoogleCN:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/GoogleCN.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
+  LocalAreaNetwork:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/LocalAreaNetwork.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+  Microsoft:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/Microsoft.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
+  ProxyLite:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/ProxyLite.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list
+  ProxyMedia:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/ProxyMedia.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
+  SteamCN:
+    behavior: classical
     format: text
     interval: 3600
     path: ./Clash/SteamCN.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
+  Telegram:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/Telegram.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
 rules:
 - RULE-SET,LocalAreaNetwork,🎯 全球直连
 - RULE-SET,BanAD,🛑 全球拦截
@@ -1795,3 +1768,16 @@ rules:
 - RULE-SET,ChinaCompanyIp,🎯 全球直连
 - GEOIP,CN,🎯 全球直连
 - MATCH,🐟 漏网之鱼
+tun:
+  auto-detect-interface: true
+  auto-route: true
+  dns-hijack:
+  - 114.114.114.114
+  - 180.76.76.76
+  - 119.29.29.29
+  - 223.5.5.5
+  - 8.8.8.8
+  - 8.8.4.4
+  - 1.1.1.1
+  - 1.0.0.1
+  enable: true
