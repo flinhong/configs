@@ -380,6 +380,208 @@ proxies:
   type: vless
   udp: true
   uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+- client-fingerprint: chrome
+  name: X_🇭🇰 香港
+  password: 85f133142f04dbf6547da33895cfabb3
+  port: 39001
+  server: 120.233.128.68
+  skip-cert-verify: true
+  sni: 120.233.128.68
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: X_🇭🇰 香港2
+  password: 08293b204707
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: hk6v1.pmxiaonan.xyz
+    mode: websocket
+    mux: true
+    path: /sclbvcgkp
+    skip-cert-verify: false
+    tls: true
+  port: 41174
+  server: 156.251.179.79
+  tfo: false
+  type: ss
+- client-fingerprint: chrome
+  name: X_🇭🇰 香港3
+  password: 85f133142f04dbf6547da33895cfabb3
+  port: 39001
+  server: 125.94.40.221
+  skip-cert-verify: true
+  sni: www.yrtok.com
+  type: trojan
+- client-fingerprint: chrome
+  name: X_🇭🇰 香港4
+  password: 85f133142f04dbf6547da33895cfabb3
+  port: 39001
+  server: 113.99.140.184
+  skip-cert-verify: true
+  sni: www.yrtok.com
+  type: trojan
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: X_🇭🇰 香港6
+  network: ws
+  port: 30809
+  server: v9.heduian.link
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: X_🇭🇰 香港7
+  port: 20332
+  server: 43.247.135.2
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 8037ce00-c860-4213-b888-be5c7ed6ea48
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: X_🇭🇰 香港8
+  port: 33519
+  server: 183.236.51.38
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: X_🇭🇰 香港9
+  password: rGDbiF7gtx5TWt4r4VjneQ==
+  port: 552
+  server: 156.225.22.213
+  tfo: false
+  type: ss
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: X_🇯🇵 日本
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202506070920094-qDwEcSPT9B.download.microsoft.com
+    mode: http
+  port: 8766
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: X_🇯🇵 日本2
+  password: 60a930c17ff0
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: kr6v1.xpmc.cc
+    mode: websocket
+    mux: true
+    path: /matwnpkhug
+    skip-cert-verify: false
+    tls: true
+  port: 33604
+  server: 43.226.17.11
+  tfo: false
+  type: ss
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: X_🇯🇵 日本3
+  network: ws
+  port: 30806
+  server: v6.heduian.link
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
+- client-fingerprint: chrome
+  name: X_🇯🇵 日本4
+  password: c11ff50c-f582-11ee-94df-f23c9164ca5d
+  port: 27233
+  server: c82845c8-sxsxs0-t22tug-1q91p.cm5.cnkuaishou.com
+  skip-cert-verify: false
+  sni: c82845c8-sxsxs0-t22tug-1q91p.cm5.cnkuaishou.com
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: X_🇯🇵 日本5
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: 9898
+  server: 43.207.233.41
+  tfo: false
+  type: ss
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: X_🇸🇬 新加坡
+  network: ws
+  port: 30812
+  server: v12.heduian.link
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
+- client-fingerprint: chrome
+  name: X_🇰🇷 韩国
+  password: 85f133142f04dbf6547da33895cfabb3
+  port: 39001
+  server: 203.156.253.12
+  skip-cert-verify: true
+  sni: www.yrtok.com
+  type: trojan
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: X_🇺🇸 美国
+  network: ws
+  port: 30832
+  server: v32.heduian.link
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: X_🇺🇸 美国3
+  network: ws
+  port: 30824
+  server: v24.heduian.link
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v24.heduian.link
+    path: /oooo
 - grpc-opts:
     grpc-service-name: trojan
   name: X_🇺🇸_US_美国->🇩🇪_DE_德国_1
@@ -714,6 +916,23 @@ proxy-groups:
   - X_VN_speednode_0071
   - X_VN_speednode_0072
   - X_VN_speednode_0073
+  - X_🇭🇰 香港
+  - X_🇭🇰 香港2
+  - X_🇭🇰 香港3
+  - X_🇭🇰 香港4
+  - X_🇭🇰 香港6
+  - X_🇭🇰 香港7
+  - X_🇭🇰 香港8
+  - X_🇭🇰 香港9
+  - X_🇯🇵 日本
+  - X_🇯🇵 日本2
+  - X_🇯🇵 日本3
+  - X_🇯🇵 日本4
+  - X_🇯🇵 日本5
+  - X_🇸🇬 新加坡
+  - X_🇰🇷 韩国
+  - X_🇺🇸 美国
+  - X_🇺🇸 美国3
   - X_🇺🇸_US_美国->🇩🇪_DE_德国_1
   - X_🇺🇸_US_美国_1
   - X_🇸🇪_SE_瑞典->🇩🇪_DE_德国
