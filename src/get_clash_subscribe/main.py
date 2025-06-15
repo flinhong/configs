@@ -149,7 +149,8 @@ def download_extra_proxies():
         # "https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/sub_merge_yaml.yml",
         "https://suo.yt/d5UCwQr", # https://github.com/Pawdroid/Free-servers
         f"https://v2rayshare.githubrowcontent.com/{current_date_str}.yaml",
-        f"https://nodefree.githubrowcontent.com/{current_date_str}.yaml"
+        f"https://nodefree.githubrowcontent.com/{current_date_str}.yaml",
+        "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml"
     ]
     all_proxies = []
 
