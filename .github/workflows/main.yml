@@ -1,0 +1,55 @@
+name: 自动采集
+
+# 触发条件
+on:
+  workflow_dispatch:
+  # 定时触发
+  schedule:
+    # 每8小时获取一次
+    - cron: "0 */3 * * *"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      # Configure a constant location for the uv cache
+      UV_CACHE_DIR: /tmp/.uv-cache
+    steps:
+      - name: 迁出代码
+        uses: actions/checkout@v4
+      - name: 安装 uv
+        uses: astral-sh/setup-uv@v5
+        with:
+          version: "0.7.8"
+          enable-cache: true
+          cache-dependency-glob: "uv.lock"
+      - name: 安装 python
+        uses: actions/setup-python@v5
+        with:
+          python-version-file: "pyproject.toml"
+      - name: 设置时区
+        run: sudo timedatectl set-timezone 'Asia/Shanghai'
+      - name: 恢复 uv cache
+        uses: actions/cache@v4
+        with:
+          path: /tmp/.uv-cache
+          key: uv-${{ runner.os }}-${{ hashFiles('uv.lock') }}
+          restore-keys: |
+            uv-${{ runner.os }}-${{ hashFiles('uv.lock') }}
+            uv-${{ runner.os }}
+      - name: 安装依赖
+        run: uv sync --locked --all-extras --dev
+      - name: 执行任务
+        run: uv run python ./src/get_clash_subscribe/main.py
+
+      - name: 提交更改
+        run: |
+          git config core.ignorecase false
+          git config --local user.email "honglin@duck.com"
+          git config --local user.name "Frank Lin"
+          git add .
+          git commit -m "$(date '+%Y-%m-%d %H:%M:%S') 更新订阅链接"
+          git push
+
+      - name: Minimize uv cache
+        run: uv cache prune --ci

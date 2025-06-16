@@ -1,0 +1,15 @@
+:root {
+  --font-sans: "Outfit", "Gill Sans MT", "Noto Serif SC", sans-serif !important;
+  --font-mono:
+    "BlexMono Nerd Font", "Consolas", "Noto Serif SC", monospace !important;
+  --font-serif: "Crimson Text", "Cambria", "Noto Serif SC", serif !important;
+}
+
+body[data-domain="chatgpt.com"] body,
+body[data-domain="chatgpt.com"] html {
+  font-family: var(--font-sans);
+}
+body[data-domain="chatgpt.com"] code,
+body[data-domain="chatgpt.com"] pre {
+  font-family: var(--font-mono);
+}

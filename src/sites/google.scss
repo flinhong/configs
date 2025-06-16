@@ -1,0 +1,27 @@
+@use "fonts";
+
+// google.co.uk & google.com
+body[data-domain="www.google.co.uk"],
+body[data-domain="www.google.com"] {
+  body,
+  input,
+  button,
+  div,
+  .gb_yd,
+  .gb_Ed,
+  input[value="Google Search"],
+  input[type="submit"],
+  textarea[title="Search"],
+  textarea[aria-label="Search"],
+  a.fl,
+  .vmod span {
+    font-family: fonts.$serif-fonts !important;
+  }
+
+  #search h3,
+  div[role="presentation"] span,
+  div[role="complementary"] h3,
+  #footcnt span {
+    font-family: fonts.$sans-fonts !important;
+  }
+}

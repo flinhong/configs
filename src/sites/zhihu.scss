@@ -1,0 +1,23 @@
+@use "fonts";
+
+// zhihu.com
+// 知乎
+body[data-domain="www.zhihu.com"] {
+  body,
+  .ContentItem-title,
+  .AuthorInfo-content,
+  .RichContent,
+  .CommentContent {
+    font-family: fonts.$serif-fonts !important;
+  }
+
+  button {
+    font-family: fonts.$sans-fonts !important;
+  }
+
+  pre,
+  code,
+  .prompt {
+    font-family: fonts.$code-fonts !important;
+  }
+}
