@@ -9,11 +9,13 @@
 body[data-domain="www.reddit.com"] {
   font-family: var(--font-sans);
 
-  .text-neutral-content-strong {
-    font-family: var(--font-serif);
+  pre,
+  code {
+    font-family: var(--font-mono);
   }
 
-  .text-neutral-content p {
+  .text-neutral-content-strong {
     font-family: var(--font-serif);
+    font-weight: bold;
   }
 }

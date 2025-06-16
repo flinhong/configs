@@ -305,9 +305,11 @@ body[data-domain="www.zhihu.com"] .prompt {
 body[data-domain="www.reddit.com"] {
   font-family: var(--font-sans);
 }
+body[data-domain="www.reddit.com"] pre,
+body[data-domain="www.reddit.com"] code {
+  font-family: var(--font-mono);
+}
 body[data-domain="www.reddit.com"] .text-neutral-content-strong {
   font-family: var(--font-serif);
-}
-body[data-domain="www.reddit.com"] .text-neutral-content p {
-  font-family: var(--font-serif);
+  font-weight: bold;
 }
