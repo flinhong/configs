@@ -4123,19 +4123,32 @@ proxies:
     headers:
       Host: jp.laoyoutiao.link
   udp: true
-- name: X_🇨🇳 广东省广州市 移动
-  server: 120.232.153.40
-  port: 31209
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  tls: false
+- name: X_🇺🇸 美国 惠普公司
+  server: 15.236.243.30
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
+  skip-cert-verify: true
+  tfo: false
+- name: X_🇨🇳 广东省湛江市 移动
+  server: zf1.10101251.xyz
+  port: 20251
+  type: ss
+  cipher: aes-256-gcm
+  password: 3ee90aa9-8831-4ea3-9425-c361090a938d
+  tfo: false
+- name: X_🇨🇳 广东省广州市 腾讯云
+  server: 113.99.140.184
+  port: 39001
+  type: trojan
+  password: 85f133142f04dbf6547da33895cfabb3
+  sni: www.yrtok.com
   skip-cert-verify: true
   tfo: false
 - name: X_🇨🇳 吉林省 移动(全省通用)
-  server: v24.heduian.link
-  port: 30824
+  server: v35.heduian.link
+  port: 30835
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
@@ -4146,50 +4159,22 @@ proxies:
   ws-opts:
     path: /oooo
     headers:
-      Host: v24.heduian.link
-  tfo: false
-- name: X_🇺🇸 北美地区 V2CROSS.COM
-  server: 198.62.62.4
-  port: 443
-  type: trojan
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  sni: vle.amclubsvip.dpdns.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560&PROT_TYPE=trojan
-    headers:
-      Host: vle.amclubsvip.dpdns.org
+      Host: v35.heduian.link
   tfo: false
 - name: X_🇺🇸 美国 CloudFlare节点
-  server: s2.db-link02.top
-  port: 2095
+  server: s1.cn-db.top
+  port: 8880
   type: vmess
-  uuid: c7820065-fa05-36d6-ab77-56e4b03c5881
+  uuid: 05881d43-e9da-3d65-8cbe-fb0459b78557
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /dabai.in104.21.14.155
+    path: /dabai.in172.64.34.180
     headers:
-      Host: 100-151-200-15.s2.db-link02.top
-  tfo: false
-- name: X_🇨🇳 吉林省 移动(全省通用) 2
-  server: v9.heduian.link
-  port: 30809
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /oooo
-    headers:
-      Host: baidu.com
+      Host: 100-253-82-166.s1.cn-db.top
   tfo: false
 - name: X_🇷🇺 俄罗斯 V2CROSS.COM
   server: 194.53.53.249
@@ -4204,17 +4189,9 @@ proxies:
     headers:
       Host: vle.amclubsvip.dpdns.org
   tfo: false
-- name: X_🇨🇳 上海市 上海电信科技发展有限公司(中山南路111号)
-  server: 203.156.253.11
-  port: 39001
-  type: trojan
-  password: 85f133142f04dbf6547da33895cfabb3
-  sni: www.yrtok.com
-  skip-cert-verify: true
-  tfo: false
-- name: X_🇨🇳 广东省湛江市 移动
-  server: 120.198.71.216
-  port: 46159
+- name: X_🇨🇳 广东省湛江市 移动 2
+  server: 120.198.71.219
+  port: 49355
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   alterId: 0
@@ -4222,15 +4199,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   tfo: false
-- name: X_🇺🇸 美国 惠普公司
-  server: 15.236.243.30
-  port: 22223
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trojan.burgerip.co.uk
-  skip-cert-verify: true
-  tfo: false
-- name: X_🇨🇳 吉林省 移动(全省通用) 3
+- name: X_🇨🇳 吉林省 移动(全省通用) 2
   server: v29.heduian.link
   port: 30829
   type: vmess
@@ -4245,12 +4214,12 @@ proxies:
     headers:
       Host: ocbc.com
   tfo: false
-- name: X_🇨🇳 广东省广州市 电信
-  server: 116.31.75.150
+- name: X_🇨🇳 广东省 移动
+  server: 120.233.128.68
   port: 39001
   type: trojan
   password: 85f133142f04dbf6547da33895cfabb3
-  sni: www.yrtok.com
+  sni: 120.233.128.68
   skip-cert-verify: true
   tfo: false
 - name: X_🇨🇳_CN_中国->🇺🇸_US_美国_1
@@ -4350,7 +4319,7 @@ proxies:
   cipher: chacha20-ietf-poly1305
 - alterId: 64
   cipher: auto
-  name: X_2|🇯🇵1 |  1.8MB/s|54%|Youtube|Ope...
+  name: X_3|🇯🇵1 |  1.8MB/s|54%|Youtube|Ope...
   network: ws
   port: 1443
   server: sslvpn.51job.com
@@ -4365,7 +4334,7 @@ proxies:
       Host: centos7
     path: /634c5c4f9782
 - cipher: aes-256-cfb
-  name: X_2|🌀3-SK |  5.0MB/s|0%|Youtube|Op...
+  name: X_3|🌀3-SK |  5.0MB/s|0%|Youtube|Op...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 156.146.40.194
@@ -4373,7 +4342,7 @@ proxies:
   udp: true
 - alterId: 64
   cipher: auto
-  name: X_2|🇸🇬1 |  1.0MB/s|0%|Netflix|Disn...
+  name: X_3|🇸🇬1 |  1.0MB/s|0%|Netflix|Disn...
   port: 49291
   server: 183.236.51.38
   skip-cert-verify: false
@@ -4381,7 +4350,7 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: X_2|🇺🇸45 |  2.5MB/s|46%|Openai|Gem...
+- name: X_3|🇺🇸45 |  2.5MB/s|46%|Openai|Gem...
   password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
   port: 15229
   server: 391907cc-swgsg0-t1bnjq-1krtb.cu.plebai.net
@@ -4390,7 +4359,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: X_2|🌀4-TH |  2.6MB/s|55%|Netflix|O...
+  name: X_3|🌀4-TH |  2.6MB/s|55%|Netflix|O...
   network: ws
   port: 443
   server: 38.47.96.30
@@ -4407,7 +4376,7 @@ proxies:
   cipher: auto
   grpc-opts:
     grpc-service-name: vmess-grpc
-  name: X_2|🇩🇪5 |  1.4MB/s|0%|Youtube|Open...
+  name: X_3|🇩🇪5 |  1.4MB/s|0%|Youtube|Open...
   network: grpc
   port: 443
   server: de.vmess.comnpmjs.com
@@ -4418,7 +4387,7 @@ proxies:
   uuid: ceaaf653-9874-58c6-b100-092c01a1f73d
 - alterId: 0
   cipher: auto
-  name: X_2|🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
+  name: X_3|🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
   network: ws
   port: 8080
   server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
@@ -4430,14 +4399,14 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- name: X_2|🇺🇸63 |  2.1MB/s|46%|Openai|Gem...
+- name: X_3|🇺🇸63 |  2.1MB/s|46%|Openai|Gem...
   password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
   port: 15229
   server: 13c2c931-swin40-swy6li-tni2.cu.plebai.net
   skip-cert-verify: false
   sni: 13c2c931-swin40-swy6li-tni2.cu.plebai.net
   type: trojan
-- name: X_2|🇺🇸64 |  1.3MB/s|46%|Openai|Gem...
+- name: X_3|🇺🇸64 |  1.3MB/s|46%|Openai|Gem...
   password: def14a51-e0d9-11ec-8429-f23c91cfbbc9
   port: 15229
   server: 4560c642-swin40-tjuq6l-wf62.cu.plebai.net
@@ -4460,22 +4429,16 @@ proxies:
   server: 156.251.179.238
   tfo: false
   type: ss
-- name: X_13,14|香港3|@ripaojiedian
-  network: tcp
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: 39001
-  server: 120.233.128.68
-  skip-cert-verify: true
-  sni: 120.233.128.68
-  type: trojan
-- name: X_13,14|香港4|@ripaojiedian
-  network: tcp
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: 39001
-  server: 113.99.140.184
-  skip-cert-verify: true
-  sni: www.yrtok.com
-  type: trojan
+- alterId: 64
+  cipher: auto
+  name: X_13|🇸🇬 新加坡3|@ripaojiedian
+  port: 31209
+  server: 120.232.153.40
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: X_13|🇭🇰 香港6|@ripaojiedian
@@ -4486,6 +4449,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 52aba3eb-0a6f-4c2f-29c6-d4b18a1d7c3e
+- alterId: 0
+  cipher: auto
+  name: X_13|🇭🇰 香港7|@ripaojiedian
+  port: 46159
+  server: 120.198.71.216
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: rc4-md5
   name: X_13|🇯🇵 日本|@ripaojiedian
   password: efanccyun
@@ -4512,6 +4485,14 @@ proxies:
   server: 121.0.97.29
   tfo: false
   type: ss
+- name: X_13,14|日本3|@ripaojiedian
+  network: tcp
+  password: 85f133142f04dbf6547da33895cfabb3
+  port: 39001
+  server: 203.156.253.11
+  skip-cert-verify: true
+  sni: www.yrtok.com
+  type: trojan
 - alterId: 0
   cipher: auto
   name: X_13|🇰🇷 韩国|@ripaojiedian
@@ -5053,17 +5034,15 @@ proxy-groups:
   - X_VN_speednode_0279
   - X_ZA_speednode_0280
   - X_ZA_speednode_0281
-  - X_🇨🇳 广东省广州市 移动
-  - X_🇨🇳 吉林省 移动(全省通用)
-  - X_🇺🇸 北美地区 V2CROSS.COM
-  - X_🇺🇸 美国 CloudFlare节点
-  - X_🇨🇳 吉林省 移动(全省通用) 2
-  - X_🇷🇺 俄罗斯 V2CROSS.COM
-  - X_🇨🇳 上海市 上海电信科技发展有限公司(中山南路111号)
-  - X_🇨🇳 广东省湛江市 移动
   - X_🇺🇸 美国 惠普公司
-  - X_🇨🇳 吉林省 移动(全省通用) 3
-  - X_🇨🇳 广东省广州市 电信
+  - X_🇨🇳 广东省湛江市 移动
+  - X_🇨🇳 广东省广州市 腾讯云
+  - X_🇨🇳 吉林省 移动(全省通用)
+  - X_🇺🇸 美国 CloudFlare节点
+  - X_🇷🇺 俄罗斯 V2CROSS.COM
+  - X_🇨🇳 广东省湛江市 移动 2
+  - X_🇨🇳 吉林省 移动(全省通用) 2
+  - X_🇨🇳 广东省 移动
   - X_🇨🇳_CN_中国->🇺🇸_US_美国_1
   - X_🇺🇸_US_美国->🇫🇷_FR_法国
   - X_🇨🇳_CN_中国->🇺🇸_US_美国_2
@@ -5075,21 +5054,22 @@ proxy-groups:
   - X_🇨🇳_CN_中国->🇵🇱_PL_波兰
   - X_🇮🇸_IS_冰岛
   - X_🇬🇧_GB_英国->🇺🇸_US_美国
-  - X_2|🇯🇵1 |  1.8MB/s|54%|Youtube|Ope...
-  - X_2|🌀3-SK |  5.0MB/s|0%|Youtube|Op...
-  - X_2|🇸🇬1 |  1.0MB/s|0%|Netflix|Disn...
-  - X_2|🇺🇸45 |  2.5MB/s|46%|Openai|Gem...
-  - X_2|🌀4-TH |  2.6MB/s|55%|Netflix|O...
-  - X_2|🇩🇪5 |  1.4MB/s|0%|Youtube|Open...
-  - X_2|🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
-  - X_2|🇺🇸63 |  2.1MB/s|46%|Openai|Gem...
-  - X_2|🇺🇸64 |  1.3MB/s|46%|Openai|Gem...
+  - X_3|🇯🇵1 |  1.8MB/s|54%|Youtube|Ope...
+  - X_3|🌀3-SK |  5.0MB/s|0%|Youtube|Op...
+  - X_3|🇸🇬1 |  1.0MB/s|0%|Netflix|Disn...
+  - X_3|🇺🇸45 |  2.5MB/s|46%|Openai|Gem...
+  - X_3|🌀4-TH |  2.6MB/s|55%|Netflix|O...
+  - X_3|🇩🇪5 |  1.4MB/s|0%|Youtube|Open...
+  - X_3|🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
+  - X_3|🇺🇸63 |  2.1MB/s|46%|Openai|Gem...
+  - X_3|🇺🇸64 |  1.3MB/s|46%|Openai|Gem...
   - X_13|🇭🇰 香港2|@ripaojiedian
-  - X_13,14|香港3|@ripaojiedian
-  - X_13,14|香港4|@ripaojiedian
+  - X_13|🇸🇬 新加坡3|@ripaojiedian
   - X_13|🇭🇰 香港6|@ripaojiedian
+  - X_13|🇭🇰 香港7|@ripaojiedian
   - X_13|🇯🇵 日本|@ripaojiedian
   - X_13|🇯🇵 日本2|@ripaojiedian
+  - X_13,14|日本3|@ripaojiedian
   - X_13|🇰🇷 韩国|@ripaojiedian
   - X_13,14|美国|@ripaojiedian
   - X_13|🇺🇸 美国3|@ripaojiedian
