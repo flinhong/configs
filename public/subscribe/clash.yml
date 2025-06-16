@@ -4123,24 +4123,9 @@ proxies:
     headers:
       Host: jp.laoyoutiao.link
   udp: true
-- name: X_🇺🇸 美国 CloudFlare节点
-  server: www.vpslook.com
-  port: 443
-  type: vmess
-  uuid: 4993f14e-5f9b-4249-dc43-99f4fdea84be
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /4993f14e
-    headers:
-      Host: wapkp01.5201314.cfd
-  tfo: false
 - name: X_🇨🇳 广东省中山市 移动
   server: 183.238.90.8
-  port: 41766
+  port: 39076
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   alterId: 0
@@ -4148,80 +4133,35 @@ proxies:
   tls: false
   skip-cert-verify: true
   tfo: false
-- name: X_🇨🇳 广东省湛江市 移动
-  server: 120.198.71.216
-  port: 59082
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  tfo: false
-- name: X_🇨🇦 加拿大 Bell
-  server: us.dalazhi.eu.org
-  port: 24096
-  type: vmess
-  uuid: 3ea45dfd-2158-46f9-960c-8a7a24f38083
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /nyzt
-    headers:
-      Host: us.dalazhi.eu.org
-  tfo: false
-- name: X_🇷🇺 俄罗斯 莫斯科JustHost
-  server: 45.147.201.231
-  port: 22067
-  type: vmess
-  uuid: 28f6d888-cbc5-4210-8cd2-b40cf566d9a8
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-  tfo: false
-- name: X_🇺🇸 美国 CloudFlare节点 2
-  server: 104.21.112.1
-  port: 2087
-  type: vmess
-  uuid: 1c36906e-1a21-4330-b04f-85baf1a6ff26
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rak1d3.777269.xyz
-  tfo: false
-- name: X_🇺🇸 美国 CloudFlare节点 3
-  server: dcvfgt6.999161.xyz
-  port: 80
-  type: vmess
-  uuid: 90f357dd-79ac-47c6-b0b8-958e2d19de07
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /10W6SJaK0F0oVXeNU6S2RVRP
-    headers:
-      Host: dcvfgt6.999161.xyz
-  tfo: false
-- name: X_🇨🇳 江苏省 移动
-  server: zf1.10101251.xyz
-  port: 20251
+- name: X_🇺🇸 美国 V2CROSS.COM
+  server: 146.235.43.201
+  port: 7702
   type: ss
   cipher: aes-256-gcm
-  password: 3ee90aa9-8831-4ea3-9425-c361090a938d
+  password: b24cdc0e-7c5d-4b9a-a27b-c578a0f7deb6
+  tfo: false
+- name: X_🇺🇸 美国 惠普公司
+  server: 15.237.225.58
+  port: 22223
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trojan.burgerip.co.uk
+  skip-cert-verify: true
+  tfo: false
+- name: X_🇺🇸 美国 CloudFlare节点
+  server: s2.db-link02.top
+  port: 2095
+  type: vmess
+  uuid: c7820065-fa05-36d6-ab77-56e4b03c5881
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /dabai.in104.21.14.155
+    headers:
+      Host: 100-151-200-15.s2.db-link02.top
   tfo: false
 - name: X_🇭🇰 香港 电讯盈科有限公司
   server: 12936b43-sy0cg0-t7fz1r-8rja.hgc1.tcpbbr.net
@@ -4238,45 +4178,98 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
   tfo: false
-- name: X_🇺🇸 美国 CloudFlare节点 4
-  server: xcdvfrr54.999820.xyz
-  port: 80
+- name: X_🇺🇸 美国 Amazon数据中心
+  server: 18.199.36.179
+  port: 22223
+  type: trojan
+  password: telegram-id-directvpn
+  sni: trojan.burgerip.co.uk
+  skip-cert-verify: true
+  tfo: false
+- name: X_🇺🇸 美国 V2CROSS.COM 2
+  server: v18.nmcf.me
+  port: 8000
   type: vmess
-  uuid: 90f357dd-79ac-47c6-b0b8-958e2d19de07
+  uuid: d26fc1a3-0d97-416b-abcd-b335b4bf7881
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /10W6SJaK0F0oVXeNU6S2RVRP
+    path: /nmkj
     headers:
-      Host: xcdvfrr54.999820.xyz
+      Host: www.bing.com
   tfo: false
-- name: X_🇺🇸 美国 CloudFlare节点 5
-  server: 104.21.96.1
-  port: 2087
+- name: X_🇺🇸 美国 CloudFlare节点 2
+  server: 104.17.25.173
+  port: 8880
   type: vmess
-  uuid: 1c36906e-1a21-4330-b04f-85baf1a6ff26
+  uuid: e7e26f7b-c4d8-3856-9c9a-dbb98f97fd6b
   alterId: 0
   cipher: auto
-  tls: true
+  tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /dabai.in104.25.200.4
     headers:
-      Host: rak1d3.777269.xyz
+      Host: 100-235-132-47.s5.db-link02.top
   tfo: false
-- name: X_🇨🇳_CN_中国->🇺🇸_US_美国_1
-  type: trojan
+- name: X_🇨🇳 广东省广州市 UCloud
   server: 42.240.152.238
   port: 8842
+  type: trojan
   password: 1b4c16925f934c57b954a9f0f23dea33
   sni: brwx.spvpv.com
   skip-cert-verify: true
-  ip-version: dual
-  udp: true
+  tfo: false
+- name: X_🇨🇳 吉林省 移动(全省通用)
+  server: v29.heduian.link
+  port: 30829
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /oooo
+    headers:
+      Host: ocbc.com
+  tfo: false
+- name: X_🇨🇳 广东省 移动
+  server: 120.233.44.201
+  port: 21102
+  type: trojan
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  sni: k28.tudou211.com
+  skip-cert-verify: true
+  tfo: false
+- name: X_🇺🇸 美国 Amazon EC2服务器
+  server: 3.66.99.0
+  port: 22222
+  type: trojan
+  password: telegram-id-privatevpns
+  sni: trojan.burgerip.co.uk
+  skip-cert-verify: true
+  tfo: false
+- name: X_🇺🇸 美国 CloudFlare节点 3
+  server: www.xinjuc.com
+  port: 80
+  type: vmess
+  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /rongseven?ed=2048
+    headers:
+      Host: hk.freeyyds.dpdns.org
+  tfo: false
 - name: X_🇺🇸_US_美国->🇫🇷_FR_法国
   type: trojan
   server: 172.67.204.120
@@ -4288,15 +4281,6 @@ proxies:
     path: /COp52Dbu3dvwvDWUxOqxq
     headers:
       host: ddcde.890603.xyz
-  ip-version: dual
-  udp: true
-- name: X_🇨🇳_CN_中国->🇺🇸_US_美国_2
-  type: trojan
-  server: 120.233.44.201
-  port: 21179
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  sni: k30.tudou211.com
-  skip-cert-verify: false
   ip-version: dual
   udp: true
 - name: X_🇮🇹_IT_意大利
@@ -4363,13 +4347,6 @@ proxies:
   ip-version: dual
   udp: true
   cipher: chacha20-ietf-poly1305
-- cipher: chacha20-ietf-poly1305
-  name: X_0|🇭🇰 香港 101 | 1x HK
-  password: 504afb1c-dfdb-482f-91d5-e4d0208564f9
-  port: 36141
-  server: freea.glyphara.com
-  type: ss
-  udp: true
 - alterId: 64
   cipher: auto
   name: X_2|🇯🇵1 |  1.8MB/s|54%|Youtube|Ope...
@@ -4425,20 +4402,6 @@ proxies:
     headers:
       Host: th.lzj520hxw.dpdns.org
     path: /lzjjj
-- alterId: 2
-  cipher: auto
-  name: X_2|🇺🇸62 |  3.3MB/s|Openai|Gemini
-  network: ws
-  port: 30829
-  server: v29.heduian.link
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -4480,13 +4443,6 @@ proxies:
   skip-cert-verify: true
   sni: 4560c642-swin40-tjuq6l-wf62.cu.plebai.net
   type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: X_3|🇭🇰香港 101 | 1x HK
-  password: c1e4c6ed-7823-446b-bb02-fd8fcff539fd
-  port: 31141
-  server: freem.vidalith.com
-  type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: X_13|🇭🇰 香港2|@ripaojiedian
@@ -4539,6 +4495,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 52aba3eb-0a6f-4c2f-29c6-d4b18a1d7c3e
+- alterId: 0
+  cipher: auto
+  name: X_13|🇭🇰 香港7|@ripaojiedian
+  port: 46159
+  server: 120.198.71.216
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: rc4-md5
   name: X_13|🇯🇵 日本|@ripaojiedian
   password: efanccyun
@@ -5114,20 +5080,20 @@ proxy-groups:
   - X_VN_speednode_0279
   - X_ZA_speednode_0280
   - X_ZA_speednode_0281
-  - X_🇺🇸 美国 CloudFlare节点
   - X_🇨🇳 广东省中山市 移动
-  - X_🇨🇳 广东省湛江市 移动
-  - X_🇨🇦 加拿大 Bell
-  - X_🇷🇺 俄罗斯 莫斯科JustHost
-  - X_🇺🇸 美国 CloudFlare节点 2
-  - X_🇺🇸 美国 CloudFlare节点 3
-  - X_🇨🇳 江苏省 移动
+  - X_🇺🇸 美国 V2CROSS.COM
+  - X_🇺🇸 美国 惠普公司
+  - X_🇺🇸 美国 CloudFlare节点
   - X_🇭🇰 香港 电讯盈科有限公司
-  - X_🇺🇸 美国 CloudFlare节点 4
-  - X_🇺🇸 美国 CloudFlare节点 5
-  - X_🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - X_🇺🇸 美国 Amazon数据中心
+  - X_🇺🇸 美国 V2CROSS.COM 2
+  - X_🇺🇸 美国 CloudFlare节点 2
+  - X_🇨🇳 广东省广州市 UCloud
+  - X_🇨🇳 吉林省 移动(全省通用)
+  - X_🇨🇳 广东省 移动
+  - X_🇺🇸 美国 Amazon EC2服务器
+  - X_🇺🇸 美国 CloudFlare节点 3
   - X_🇺🇸_US_美国->🇫🇷_FR_法国
-  - X_🇨🇳_CN_中国->🇺🇸_US_美国_2
   - X_🇮🇹_IT_意大利
   - X_🇰🇷_KR_韩国->🇩🇪_DE_德国
   - X_🇬🇧_GB_英国
@@ -5136,23 +5102,21 @@ proxy-groups:
   - X_🇨🇳_CN_中国->🇵🇱_PL_波兰
   - X_🇮🇸_IS_冰岛
   - X_🇬🇧_GB_英国->🇺🇸_US_美国
-  - X_0|🇭🇰 香港 101 | 1x HK
   - X_2|🇯🇵1 |  1.8MB/s|54%|Youtube|Ope...
   - X_2|🌀3-SK |  5.0MB/s|0%|Youtube|Op...
   - X_2|🇸🇬1 |  1.0MB/s|0%|Netflix|Disn...
   - X_2|🇺🇸45 |  2.5MB/s|46%|Openai|Gem...
   - X_2|🌀4-TH |  2.6MB/s|55%|Netflix|O...
-  - X_2|🇺🇸62 |  3.3MB/s|Openai|Gemini
   - X_2|🇩🇪5 |  1.4MB/s|0%|Youtube|Open...
   - X_2|🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
   - X_2|🇺🇸63 |  2.1MB/s|46%|Openai|Gem...
   - X_2|🇺🇸64 |  1.3MB/s|46%|Openai|Gem...
-  - X_3|🇭🇰香港 101 | 1x HK
   - X_13|🇭🇰 香港2|@ripaojiedian
   - X_13,14|香港3|@ripaojiedian
   - X_13,14|香港4|@ripaojiedian
   - X_13|🇸🇬 新加坡3|@ripaojiedian
   - X_13|🇭🇰 香港6|@ripaojiedian
+  - X_13|🇭🇰 香港7|@ripaojiedian
   - X_13|🇯🇵 日本|@ripaojiedian
   - X_13|🇯🇵 日本2|@ripaojiedian
   - X_13,14|日本3|@ripaojiedian
