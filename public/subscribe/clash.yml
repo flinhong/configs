@@ -4123,30 +4123,43 @@ proxies:
     headers:
       Host: jp.laoyoutiao.link
   udp: true
-- name: X_🇨🇳 广东省中山市 移动
-  server: 183.238.90.8
-  port: 39076
+- name: X_🇨🇳 广东省广州市 移动
+  server: 120.232.153.40
+  port: 31209
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 0
+  alterId: 64
   cipher: auto
   tls: false
   skip-cert-verify: true
   tfo: false
-- name: X_🇺🇸 美国 V2CROSS.COM
-  server: 146.235.43.201
-  port: 7702
-  type: ss
-  cipher: aes-256-gcm
-  password: b24cdc0e-7c5d-4b9a-a27b-c578a0f7deb6
-  tfo: false
-- name: X_🇺🇸 美国 惠普公司
-  server: 15.237.225.58
-  port: 22223
-  type: trojan
-  password: telegram-id-directvpn
-  sni: trojan.burgerip.co.uk
+- name: X_🇨🇳 吉林省 移动(全省通用)
+  server: v24.heduian.link
+  port: 30824
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
   skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /oooo
+    headers:
+      Host: v24.heduian.link
+  tfo: false
+- name: X_🇺🇸 北美地区 V2CROSS.COM
+  server: 198.62.62.4
+  port: 443
+  type: trojan
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  sni: vle.amclubsvip.dpdns.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      Host: vle.amclubsvip.dpdns.org
   tfo: false
 - name: X_🇺🇸 美国 CloudFlare节点
   server: s2.db-link02.top
@@ -4163,68 +4176,61 @@ proxies:
     headers:
       Host: 100-151-200-15.s2.db-link02.top
   tfo: false
-- name: X_🇭🇰 香港 电讯盈科有限公司
-  server: 12936b43-sy0cg0-t7fz1r-8rja.hgc1.tcpbbr.net
-  port: 8080
+- name: X_🇨🇳 吉林省 移动(全省通用) 2
+  server: v9.heduian.link
+  port: 30809
   type: vmess
-  uuid: d18bcaf4-1323-11ec-a0fc-f23c913c8d2b
-  alterId: 0
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
   cipher: auto
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /oooo
     headers:
-      Host: broadcastlv.chat.bilibili.com
+      Host: baidu.com
   tfo: false
-- name: X_🇺🇸 美国 Amazon数据中心
-  server: 18.199.36.179
+- name: X_🇷🇺 俄罗斯 V2CROSS.COM
+  server: 194.53.53.249
+  port: 2083
+  type: trojan
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  sni: vle.amclubsvip.dpdns.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      Host: vle.amclubsvip.dpdns.org
+  tfo: false
+- name: X_🇨🇳 上海市 上海电信科技发展有限公司(中山南路111号)
+  server: 203.156.253.11
+  port: 39001
+  type: trojan
+  password: 85f133142f04dbf6547da33895cfabb3
+  sni: www.yrtok.com
+  skip-cert-verify: true
+  tfo: false
+- name: X_🇨🇳 广东省湛江市 移动
+  server: 120.198.71.216
+  port: 46159
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  tfo: false
+- name: X_🇺🇸 美国 惠普公司
+  server: 15.236.243.30
   port: 22223
   type: trojan
   password: telegram-id-directvpn
   sni: trojan.burgerip.co.uk
   skip-cert-verify: true
   tfo: false
-- name: X_🇺🇸 美国 V2CROSS.COM 2
-  server: v18.nmcf.me
-  port: 8000
-  type: vmess
-  uuid: d26fc1a3-0d97-416b-abcd-b335b4bf7881
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /nmkj
-    headers:
-      Host: www.bing.com
-  tfo: false
-- name: X_🇺🇸 美国 CloudFlare节点 2
-  server: 104.17.25.173
-  port: 8880
-  type: vmess
-  uuid: e7e26f7b-c4d8-3856-9c9a-dbb98f97fd6b
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /dabai.in104.25.200.4
-    headers:
-      Host: 100-235-132-47.s5.db-link02.top
-  tfo: false
-- name: X_🇨🇳 广东省广州市 UCloud
-  server: 42.240.152.238
-  port: 8842
-  type: trojan
-  password: 1b4c16925f934c57b954a9f0f23dea33
-  sni: brwx.spvpv.com
-  skip-cert-verify: true
-  tfo: false
-- name: X_🇨🇳 吉林省 移动(全省通用)
+- name: X_🇨🇳 吉林省 移动(全省通用) 3
   server: v29.heduian.link
   port: 30829
   type: vmess
@@ -4239,37 +4245,23 @@ proxies:
     headers:
       Host: ocbc.com
   tfo: false
-- name: X_🇨🇳 广东省 移动
-  server: 120.233.44.201
-  port: 21102
+- name: X_🇨🇳 广东省广州市 电信
+  server: 116.31.75.150
+  port: 39001
   type: trojan
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  sni: k28.tudou211.com
+  password: 85f133142f04dbf6547da33895cfabb3
+  sni: www.yrtok.com
   skip-cert-verify: true
   tfo: false
-- name: X_🇺🇸 美国 Amazon EC2服务器
-  server: 3.66.99.0
-  port: 22222
+- name: X_🇨🇳_CN_中国->🇺🇸_US_美国_1
   type: trojan
-  password: telegram-id-privatevpns
-  sni: trojan.burgerip.co.uk
+  server: 42.240.152.238
+  port: 8842
+  password: 1b4c16925f934c57b954a9f0f23dea33
+  sni: brwx.spvpv.com
   skip-cert-verify: true
-  tfo: false
-- name: X_🇺🇸 美国 CloudFlare节点 3
-  server: www.xinjuc.com
-  port: 80
-  type: vmess
-  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /rongseven?ed=2048
-    headers:
-      Host: hk.freeyyds.dpdns.org
-  tfo: false
+  ip-version: dual
+  udp: true
 - name: X_🇺🇸_US_美国->🇫🇷_FR_法国
   type: trojan
   server: 172.67.204.120
@@ -4281,6 +4273,15 @@ proxies:
     path: /COp52Dbu3dvwvDWUxOqxq
     headers:
       host: ddcde.890603.xyz
+  ip-version: dual
+  udp: true
+- name: X_🇨🇳_CN_中国->🇺🇸_US_美国_2
+  type: trojan
+  server: 120.233.44.201
+  port: 21179
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  sni: k30.tudou211.com
+  skip-cert-verify: false
   ip-version: dual
   udp: true
 - name: X_🇮🇹_IT_意大利
@@ -4475,16 +4476,6 @@ proxies:
   skip-cert-verify: true
   sni: www.yrtok.com
   type: trojan
-- alterId: 64
-  cipher: auto
-  name: X_13|🇸🇬 新加坡3|@ripaojiedian
-  port: 31209
-  server: 120.232.153.40
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: X_13|🇭🇰 香港6|@ripaojiedian
@@ -4495,16 +4486,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 52aba3eb-0a6f-4c2f-29c6-d4b18a1d7c3e
-- alterId: 0
-  cipher: auto
-  name: X_13|🇭🇰 香港7|@ripaojiedian
-  port: 46159
-  server: 120.198.71.216
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: rc4-md5
   name: X_13|🇯🇵 日本|@ripaojiedian
   password: efanccyun
@@ -4531,14 +4512,6 @@ proxies:
   server: 121.0.97.29
   tfo: false
   type: ss
-- name: X_13,14|日本3|@ripaojiedian
-  network: tcp
-  password: 85f133142f04dbf6547da33895cfabb3
-  port: 39001
-  server: 203.156.253.11
-  skip-cert-verify: true
-  sni: www.yrtok.com
-  type: trojan
 - alterId: 0
   cipher: auto
   name: X_13|🇰🇷 韩国|@ripaojiedian
@@ -5080,20 +5053,20 @@ proxy-groups:
   - X_VN_speednode_0279
   - X_ZA_speednode_0280
   - X_ZA_speednode_0281
-  - X_🇨🇳 广东省中山市 移动
-  - X_🇺🇸 美国 V2CROSS.COM
-  - X_🇺🇸 美国 惠普公司
-  - X_🇺🇸 美国 CloudFlare节点
-  - X_🇭🇰 香港 电讯盈科有限公司
-  - X_🇺🇸 美国 Amazon数据中心
-  - X_🇺🇸 美国 V2CROSS.COM 2
-  - X_🇺🇸 美国 CloudFlare节点 2
-  - X_🇨🇳 广东省广州市 UCloud
+  - X_🇨🇳 广东省广州市 移动
   - X_🇨🇳 吉林省 移动(全省通用)
-  - X_🇨🇳 广东省 移动
-  - X_🇺🇸 美国 Amazon EC2服务器
-  - X_🇺🇸 美国 CloudFlare节点 3
+  - X_🇺🇸 北美地区 V2CROSS.COM
+  - X_🇺🇸 美国 CloudFlare节点
+  - X_🇨🇳 吉林省 移动(全省通用) 2
+  - X_🇷🇺 俄罗斯 V2CROSS.COM
+  - X_🇨🇳 上海市 上海电信科技发展有限公司(中山南路111号)
+  - X_🇨🇳 广东省湛江市 移动
+  - X_🇺🇸 美国 惠普公司
+  - X_🇨🇳 吉林省 移动(全省通用) 3
+  - X_🇨🇳 广东省广州市 电信
+  - X_🇨🇳_CN_中国->🇺🇸_US_美国_1
   - X_🇺🇸_US_美国->🇫🇷_FR_法国
+  - X_🇨🇳_CN_中国->🇺🇸_US_美国_2
   - X_🇮🇹_IT_意大利
   - X_🇰🇷_KR_韩国->🇩🇪_DE_德国
   - X_🇬🇧_GB_英国
@@ -5114,12 +5087,9 @@ proxy-groups:
   - X_13|🇭🇰 香港2|@ripaojiedian
   - X_13,14|香港3|@ripaojiedian
   - X_13,14|香港4|@ripaojiedian
-  - X_13|🇸🇬 新加坡3|@ripaojiedian
   - X_13|🇭🇰 香港6|@ripaojiedian
-  - X_13|🇭🇰 香港7|@ripaojiedian
   - X_13|🇯🇵 日本|@ripaojiedian
   - X_13|🇯🇵 日本2|@ripaojiedian
-  - X_13,14|日本3|@ripaojiedian
   - X_13|🇰🇷 韩国|@ripaojiedian
   - X_13,14|美国|@ripaojiedian
   - X_13|🇺🇸 美国3|@ripaojiedian
