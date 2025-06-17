@@ -28,7 +28,7 @@ def get_subscribe_main():
     if not os.path.exists(log_dir):
         os.makedirs(log_dir)
 
-    clash_req = requests.get("https://git.io/emzclash")
+    clash_req = requests.get("https://github.com/ermaozi/get_subscribe/raw/main/subscribe/clash.yml")
 
     # 检查下载是否成功
     if not clash_req.status_code in ok_code:
@@ -36,7 +36,7 @@ def get_subscribe_main():
         return None
     
     try:
-        clash_content = check_and_validate_file("https://git.io/emzclash")
+        clash_content = check_and_validate_file("https://github.com/ermaozi/get_subscribe/raw/main/subscribe/clash.yml")
         clash_content_replaced = re.sub(r"https://raw.githubusercontent.com", "https://cdn.honglin.ac.cn/statically/gh", clash_content, flags=re.IGNORECASE)
         # clash_content_replaced = re.sub(r"http://www.gstatic.com/generate_204", "https://www.gstatic.com/generate_204", clash_content_replaced, flags=re.IGNORECASE)
         # clash_content_replaced = re.sub(r"tolerance: 50", "tolerance: 10", clash_content_replaced, flags=re.IGNORECASE)
@@ -151,7 +151,7 @@ def download_extra_proxies():
         f"https://v2rayshare.githubrowcontent.com/{current_date_str}.yaml",
         f"https://nodefree.githubrowcontent.com/{current_date_str}.yaml",
         "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml",
-        "https://bin.mudfish.net/r/249-7825-3630"
+        "https://cdn.frankindev.com/statically/gh/flinhong/configs/main/public/subscribe/tmp.yaml"
     ]
     all_proxies = []
 
