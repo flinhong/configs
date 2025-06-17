@@ -150,7 +150,8 @@ def download_extra_proxies():
         "https://suo.yt/d5UCwQr", # https://github.com/Pawdroid/Free-servers
         f"https://v2rayshare.githubrowcontent.com/{current_date_str}.yaml",
         f"https://nodefree.githubrowcontent.com/{current_date_str}.yaml",
-        "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml"
+        "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml",
+        "https://bin.mudfish.net/r/249-7825-3630"
     ]
     all_proxies = []
 
