@@ -8032,10 +8032,25 @@ proxies:
       Host: jp.laoyoutiao.link
   udp: true
 - name: X_🇺🇸 美国 CloudFlare节点
-  server: us01.sh-cloudflare.sbs
+  server: de01.sh-cloudflare.sbs
+  port: 2096
+  type: vmess
+  uuid: 337edede-50e3-4a26-97e7-7a1013e2f1d5
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: de01.sh-cloudflare.sbs
+  tfo: false
+- name: X_🇺🇸 美国 CloudFlare节点 2
+  server: 104.21.96.1
   port: 8443
   type: vmess
-  uuid: 5d1cde6c-b4c2-47da-b496-ece406eba703
+  uuid: f10598e2-c606-4945-bfde-e5730756a2dd
   alterId: 0
   cipher: auto
   tls: true
@@ -8046,11 +8061,52 @@ proxies:
     headers:
       Host: us01.sh-cloudflare.sbs
   tfo: false
-- name: X_🇺🇸 美国 CloudFlare节点 2
-  server: v2.emoyes.top
-  port: 2053
+- name: X_🇨🇳 江苏省 移动
+  server: 36.151.251.62
+  port: 38632
+  type: trojan
+  password: FpQhGpIr
+  sni: 36.151.251.62
+  skip-cert-verify: true
+  tfo: false
+- name: X_🇨🇳 广东省湛江市 移动
+  server: 120.198.71.216
+  port: 46159
   type: vmess
-  uuid: a78fc14e-4e8b-4fc0-8cab-86fd81c583ca
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  tfo: false
+- name: X_🇺🇸 美国 CloudFlare节点 3
+  server: npmjs.com
+  port: 8080
+  type: vmess
+  uuid: 6cbc9c78-1cb1-57d4-a999-e2f4e34c1e03
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /nasnet/cdn
+    headers:
+      Host: ke7hz36ewz-4515017473.mashallahbet.com
+  tfo: false
+- name: X_🇨🇳 广东省 移动 2
+  server: 120.233.44.201
+  port: 21031
+  type: trojan
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  sni: k54.tudou211.com
+  skip-cert-verify: true
+  tfo: false
+- name: X_🇺🇸 美国 CloudFlare节点 4
+  server: us01.sh-cloudflare.sbs
+  port: 8443
+  type: vmess
+  uuid: 02862da5-e857-48b3-adc7-5f74c1918dee
   alterId: 0
   cipher: auto
   tls: true
@@ -8059,9 +8115,39 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: v2.emoyes.top
+      Host: us01.sh-cloudflare.sbs
   tfo: false
 - name: X_🇨🇳 吉林省 移动(全省通用)
+  server: v24.heduian.link
+  port: 30824
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /oooo
+    headers:
+      Host: v24.heduian.link
+  tfo: false
+- name: X_🇺🇸 美国 CloudFlare节点 5
+  server: 104.18.149.76
+  port: 443
+  type: vmess
+  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /aa
+    headers:
+      Host: us.kkp.me.eu.org
+  tfo: false
+- name: X_🇨🇳 吉林省 移动(全省通用) 2
   server: v7.heduian.link
   port: 30807
   type: vmess
@@ -8076,9 +8162,9 @@ proxies:
     headers:
       Host: ocbc.com
   tfo: false
-- name: X_🇨🇳 吉林省 移动(全省通用) 2
-  server: v32.heduian.link
-  port: 30832
+- name: X_🇨🇳 吉林省 移动(全省通用) 3
+  server: v39.heduian.link
+  port: 30839
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
@@ -8090,65 +8176,6 @@ proxies:
     path: /oooo
     headers:
       Host: baidu.com
-  tfo: false
-- name: X_🇺🇸 美国 CloudFlare节点 4
-  server: de01.sh-cloudflare.sbs
-  port: 2096
-  type: vmess
-  uuid: 2eb19b98-500f-4d92-ab72-c767e7916502
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: de01.sh-cloudflare.sbs
-  tfo: false
-- name: X_🇺🇸 美国 CloudFlare节点 5
-  server: cf.fovi.tk
-  port: 443
-  type: vmess
-  uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /eisasqa
-    headers:
-      Host: foxpol.fovi.tk
-  tfo: false
-- name: X_🇨🇳 上海市 上海电信科技发展有限公司(中山南路111号)
-  server: 203.156.253.12
-  port: 39001
-  type: trojan
-  password: 85f133142f04dbf6547da33895cfabb3
-  sni: www.yrtok.com
-  skip-cert-verify: true
-  tfo: false
-- name: X_🇷🇺 俄罗斯 V2CROSS.COM
-  server: 194.53.53.249
-  port: 2083
-  type: trojan
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  sni: vle.amclubsvip.dpdns.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /?ed=2560&PROT_TYPE=trojan
-    headers:
-      Host: vle.amclubsvip.dpdns.org
-  tfo: false
-- name: X_🇨🇳 广东省 移动 2
-  server: 120.233.44.201
-  port: 21102
-  type: trojan
-  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
-  sni: k28.tudou211.com
-  skip-cert-verify: true
   tfo: false
 - name: X_🇺🇸_US_美国->🇳🇱_NL_荷兰
   type: vmess
@@ -8225,7 +8252,7 @@ proxies:
   cipher: chacha20-ietf-poly1305
 - alterId: 64
   cipher: auto
-  name: X_2|🇯🇵1 |  1.8MB/s|54%|Youtube|Ope...
+  name: X_3|🇯🇵1 |  1.8MB/s|54%|Youtube|Ope...
   network: ws
   port: 1443
   server: sslvpn.51job.com
@@ -8240,7 +8267,7 @@ proxies:
       Host: centos7
     path: /634c5c4f9782
 - cipher: aes-256-cfb
-  name: X_2|🌀3-SK |  5.0MB/s|0%|Youtube|Op...
+  name: X_3|🌀3-SK |  5.0MB/s|0%|Youtube|Op...
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 156.146.40.194
@@ -8248,7 +8275,7 @@ proxies:
   udp: true
 - alterId: 64
   cipher: auto
-  name: X_2|🇸🇬1 |  1.0MB/s|0%|Netflix|Disn...
+  name: X_3|🇸🇬1 |  1.0MB/s|0%|Netflix|Disn...
   port: 49291
   server: 183.236.51.38
   skip-cert-verify: false
@@ -8256,7 +8283,7 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: X_2|🇺🇸45 |  2.5MB/s|46%|Openai|Gem...
+- name: X_3|🇺🇸45 |  2.5MB/s|46%|Openai|Gem...
   password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
   port: 15229
   server: 391907cc-swgsg0-t1bnjq-1krtb.cu.plebai.net
@@ -8265,7 +8292,7 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: X_2|🌀4-TH |  2.6MB/s|55%|Netflix|O...
+  name: X_3|🌀4-TH |  2.6MB/s|55%|Netflix|O...
   network: ws
   port: 443
   server: 38.47.96.30
@@ -8279,7 +8306,7 @@ proxies:
       Host: th.lzj520hxw.dpdns.org
     path: /lzjjj
 - cipher: aes-256-cfb
-  name: X_2|🇰🇷2 |  1.5MB/s|44%|Openai
+  name: X_3|🇰🇷2 |  1.5MB/s|44%|Openai
   password: qwerREWQ@@
   port: 15098
   server: 125.141.31.72
@@ -8288,7 +8315,7 @@ proxies:
   cipher: auto
   grpc-opts:
     grpc-service-name: vmess-grpc
-  name: X_2|🇩🇪5 |  1.4MB/s|0%|Youtube|Open...
+  name: X_3|🇩🇪5 |  1.4MB/s|0%|Youtube|Open...
   network: grpc
   port: 443
   server: de.vmess.comnpmjs.com
@@ -8299,7 +8326,7 @@ proxies:
   uuid: ceaaf653-9874-58c6-b100-092c01a1f73d
 - alterId: 0
   cipher: auto
-  name: X_2|🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
+  name: X_3|🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
   network: ws
   port: 8080
   server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
@@ -8311,14 +8338,14 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- name: X_2|🇺🇸63 |  2.1MB/s|46%|Openai|Gem...
+- name: X_3|🇺🇸63 |  2.1MB/s|46%|Openai|Gem...
   password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
   port: 15229
   server: 13c2c931-swin40-swy6li-tni2.cu.plebai.net
   skip-cert-verify: false
   sni: 13c2c931-swin40-swy6li-tni2.cu.plebai.net
   type: trojan
-- name: X_2|🇺🇸64 |  1.3MB/s|46%|Openai|Gem...
+- name: X_3|🇺🇸64 |  1.3MB/s|46%|Openai|Gem...
   password: def14a51-e0d9-11ec-8429-f23c91cfbbc9
   port: 15229
   server: 4560c642-swin40-tjuq6l-wf62.cu.plebai.net
@@ -8327,7 +8354,7 @@ proxies:
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: X_12|🇭🇰 香港2|@ripaojiedian
+  name: X_13|🇭🇰 香港2|@ripaojiedian
   password: 1450cecfb93f
   plugin: v2ray-plugin
   plugin-opts:
@@ -8341,7 +8368,7 @@ proxies:
   server: kh36v1.pmxiaonan.xyz
   tfo: false
   type: ss
-- name: X_12,13|香港4|@ripaojiedian
+- name: X_13,14|香港4|@ripaojiedian
   network: tcp
   password: 85f133142f04dbf6547da33895cfabb3
   port: 39001
@@ -8351,7 +8378,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: X_12,13|香港5|@ripaojiedian
+  name: X_13,14|香港5|@ripaojiedian
   network: ws
   port: '8443'
   server: 104.18.42.62
@@ -8367,7 +8394,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: X_12,13|香港7|@ripaojiedian
+  name: X_13,14|香港7|@ripaojiedian
   network: ws
   port: '30809'
   server: v9.heduian.link
@@ -8382,7 +8409,7 @@ proxies:
       Host: baidu.com
     path: /oooo
 - cipher: rc4-md5
-  name: X_12|🇯🇵 日本|@ripaojiedian
+  name: X_13|🇯🇵 日本|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -8392,7 +8419,7 @@ proxies:
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- name: X_12,13|日本3|@ripaojiedian
+- name: X_13,14|日本3|@ripaojiedian
   network: tcp
   password: 85f133142f04dbf6547da33895cfabb3
   port: 39001
@@ -8401,7 +8428,7 @@ proxies:
   sni: www.yrtok.com
   type: trojan
 - cipher: aes-256-gcm
-  name: X_12|🇯🇵 日本2|@ripaojiedian
+  name: X_13|🇯🇵 日本2|@ripaojiedian
   password: 8360adcea0b1
   plugin: v2ray-plugin
   plugin-opts:
@@ -8415,8 +8442,16 @@ proxies:
   server: kr6v1.dashengjs.net
   tfo: false
   type: ss
+- name: X_13,14|韩国2|@ripaojiedian
+  network: tcp
+  password: 85f133142f04dbf6547da33895cfabb3
+  port: 39001
+  server: 203.156.253.12
+  skip-cert-verify: true
+  sni: www.yrtok.com
+  type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: X_12|🇰🇷 韩国3|@ripaojiedian
+  name: X_13|🇰🇷 韩国3|@ripaojiedian
   password: 1a17b19d-4896-4531-af79-6e91d8ef8228
   port: 9898
   server: 3.36.114.140
@@ -8424,7 +8459,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: X_12,13|新加坡2|@ripaojiedian
+  name: X_13,14|新加坡2|@ripaojiedian
   network: ws
   port: '8443'
   server: 172.64.157.100
@@ -8440,7 +8475,7 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: X_12,13|美国|@ripaojiedian
+  name: X_13,14|美国|@ripaojiedian
   network: ws
   port: '30828'
   server: v28.heduian.link
@@ -8454,7 +8489,7 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- name: X_12|🇺🇸 美国3|@ripaojiedian
+- name: X_13|🇺🇸 美国3|@ripaojiedian
   password: d18bcaf4-1323-11ec-a0fc-f23c913c8d2b
   port: 15229
   server: 35eb0e91-sy0cg0-t7fz1r-8rja.cu.plebai.net
@@ -8463,7 +8498,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: X_13|香港v2|@ripaojiedian
+  name: X_14|香港v2|@ripaojiedian
   network: kcp
   port: '10655'
   server: 43.99.247.11
@@ -8473,7 +8508,7 @@ proxies:
   uuid: cd9d6687-d1c0-49d9-89fa-2ac90940b17a
 - alterId: 0
   cipher: auto
-  name: X_13|台湾v2|@ripaojiedian
+  name: X_14|台湾v2|@ripaojiedian
   network: kcp
   port: '5663'
   server: 118.194.253.15
@@ -8483,7 +8518,7 @@ proxies:
   uuid: 986b3bc8-d0fb-4b60-b01f-28164e44cd48
 - alterId: 0
   cipher: auto
-  name: X_13|日本v2|@ripaojiedian
+  name: X_14|日本v2|@ripaojiedian
   network: kcp
   port: '36668'
   server: 8.211.175.53
@@ -8493,7 +8528,7 @@ proxies:
   uuid: b798372a-54c8-4597-969e-8b00d2f76c09
 - alterId: 0
   cipher: auto
-  name: X_13|新加坡|@ripaojiedian
+  name: X_14|新加坡|@ripaojiedian
   network: kcp
   port: '51713'
   server: 8.219.72.131
@@ -9205,13 +9240,15 @@ proxy-groups:
   - X_ZA_speednode_0567
   - X_🇺🇸 美国 CloudFlare节点
   - X_🇺🇸 美国 CloudFlare节点 2
-  - X_🇨🇳 吉林省 移动(全省通用)
-  - X_🇨🇳 吉林省 移动(全省通用) 2
-  - X_🇺🇸 美国 CloudFlare节点 4
-  - X_🇺🇸 美国 CloudFlare节点 5
-  - X_🇨🇳 上海市 上海电信科技发展有限公司(中山南路111号)
-  - X_🇷🇺 俄罗斯 V2CROSS.COM
+  - X_🇨🇳 江苏省 移动
+  - X_🇨🇳 广东省湛江市 移动
+  - X_🇺🇸 美国 CloudFlare节点 3
   - X_🇨🇳 广东省 移动 2
+  - X_🇺🇸 美国 CloudFlare节点 4
+  - X_🇨🇳 吉林省 移动(全省通用)
+  - X_🇺🇸 美国 CloudFlare节点 5
+  - X_🇨🇳 吉林省 移动(全省通用) 2
+  - X_🇨🇳 吉林省 移动(全省通用) 3
   - X_🇺🇸_US_美国->🇳🇱_NL_荷兰
   - X_🇨🇳_CN_中国->🇷🇺_RU_俄罗斯
   - X_🇲🇩_MD_摩尔多瓦->🇳🇱_NL_荷兰
@@ -9219,31 +9256,32 @@ proxy-groups:
   - X_🇨🇳_CN_中国->🇺🇸_US_美国_3
   - X_🇰🇷_KR_韩国->🇸🇬_SG_新加坡
   - X_🇳🇱_NL_荷兰
-  - X_2|🇯🇵1 |  1.8MB/s|54%|Youtube|Ope...
-  - X_2|🌀3-SK |  5.0MB/s|0%|Youtube|Op...
-  - X_2|🇸🇬1 |  1.0MB/s|0%|Netflix|Disn...
-  - X_2|🇺🇸45 |  2.5MB/s|46%|Openai|Gem...
-  - X_2|🌀4-TH |  2.6MB/s|55%|Netflix|O...
-  - X_2|🇰🇷2 |  1.5MB/s|44%|Openai
-  - X_2|🇩🇪5 |  1.4MB/s|0%|Youtube|Open...
-  - X_2|🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
-  - X_2|🇺🇸63 |  2.1MB/s|46%|Openai|Gem...
-  - X_2|🇺🇸64 |  1.3MB/s|46%|Openai|Gem...
-  - X_12|🇭🇰 香港2|@ripaojiedian
-  - X_12,13|香港4|@ripaojiedian
-  - X_12,13|香港5|@ripaojiedian
-  - X_12,13|香港7|@ripaojiedian
-  - X_12|🇯🇵 日本|@ripaojiedian
-  - X_12,13|日本3|@ripaojiedian
-  - X_12|🇯🇵 日本2|@ripaojiedian
-  - X_12|🇰🇷 韩国3|@ripaojiedian
-  - X_12,13|新加坡2|@ripaojiedian
-  - X_12,13|美国|@ripaojiedian
-  - X_12|🇺🇸 美国3|@ripaojiedian
-  - X_13|香港v2|@ripaojiedian
-  - X_13|台湾v2|@ripaojiedian
-  - X_13|日本v2|@ripaojiedian
-  - X_13|新加坡|@ripaojiedian
+  - X_3|🇯🇵1 |  1.8MB/s|54%|Youtube|Ope...
+  - X_3|🌀3-SK |  5.0MB/s|0%|Youtube|Op...
+  - X_3|🇸🇬1 |  1.0MB/s|0%|Netflix|Disn...
+  - X_3|🇺🇸45 |  2.5MB/s|46%|Openai|Gem...
+  - X_3|🌀4-TH |  2.6MB/s|55%|Netflix|O...
+  - X_3|🇰🇷2 |  1.5MB/s|44%|Openai
+  - X_3|🇩🇪5 |  1.4MB/s|0%|Youtube|Open...
+  - X_3|🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
+  - X_3|🇺🇸63 |  2.1MB/s|46%|Openai|Gem...
+  - X_3|🇺🇸64 |  1.3MB/s|46%|Openai|Gem...
+  - X_13|🇭🇰 香港2|@ripaojiedian
+  - X_13,14|香港4|@ripaojiedian
+  - X_13,14|香港5|@ripaojiedian
+  - X_13,14|香港7|@ripaojiedian
+  - X_13|🇯🇵 日本|@ripaojiedian
+  - X_13,14|日本3|@ripaojiedian
+  - X_13|🇯🇵 日本2|@ripaojiedian
+  - X_13,14|韩国2|@ripaojiedian
+  - X_13|🇰🇷 韩国3|@ripaojiedian
+  - X_13,14|新加坡2|@ripaojiedian
+  - X_13,14|美国|@ripaojiedian
+  - X_13|🇺🇸 美国3|@ripaojiedian
+  - X_14|香港v2|@ripaojiedian
+  - X_14|台湾v2|@ripaojiedian
+  - X_14|日本v2|@ripaojiedian
+  - X_14|新加坡|@ripaojiedian
 rule-providers:
   Apple:
     type: http
