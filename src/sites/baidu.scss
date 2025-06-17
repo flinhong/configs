@@ -2,7 +2,7 @@
 
 // baidu.com
 body[data-domain="www.baidu.com"] {
-  font-family: fonts.$sans-fonts !important;
+  font-family: fonts.$font-sans;
 
   #wrapper,
   .c-wrapper,
@@ -27,29 +27,32 @@ body[data-domain="www.baidu.com"] {
   #container.sam_newgrid .c-showurl,
   .new-pmd .cr-title,
   .wrapper_new #u .s-top-username {
-    font-family: fonts.$serif-fonts !important;
+    font-family: fonts.$font-serif;
   }
 
   .c-index-single {
-    font-family: fonts.$narrow-fonts !important;
+    font-family: fonts.$font-condense;
   }
 
   .s-ctner-menus .s-menu-item {
-    font: 14px/24px fonts.$sans-fonts;
+    font: 14px/24px fonts.$font-sans;
   }
 
   .new_search_guide_bub_container_center {
-    font-family: fonts.$code-fonts !important;
+    font-family: fonts.$font-mono;
   }
 
-  #s-top-left .c-font-normal {
-    font-family: fonts.$sans-fonts !important;
+  #s-top-left .c-font-normal,
+  .sc-paragraph em,
+  .cosc-source-text,
+  .cos-font-medium {
+    font-family: fonts.$font-sans;
   }
 }
 
 // news.baidu.com
 body[data-domain="news.baidu.com"] {
-  font-family: fonts.$sans-fonts !important;
+  font-family: fonts.$font-sans;
 
   #usrbar,
   #header-link-wrapper li a,
@@ -66,11 +69,11 @@ body[data-domain="news.baidu.com"] {
   .col-mod .focuslistnews .bold-item,
   .l-right-col .ulist li,
   .focuslistnews li {
-    font-family: fonts.$serif-fonts !important;
+    font-family: fonts.$font-serif;
   }
 
   .mod-headline-tab {
-    font-family: fonts.$sans-fonts !important;
+    font-family: fonts.$font-sans;
   }
 }
 
@@ -78,7 +81,7 @@ body[data-domain="news.baidu.com"] {
 // 百家号
 body[data-domain="mbd.baidu.com"],
 body[data-domain="baijiahao.baidu.com"] {
-  font-family: fonts.$sans-fonts !important;
+  font-family: fonts.$font-sans;
 
   button,
   input,
@@ -97,11 +100,11 @@ body[data-domain="baijiahao.baidu.com"] {
   div[data-testid="recent"] *,
   div[data-testid="relate"] *,
   ul[data-testid="top-list"] * {
-    font-family: fonts.$serif-fonts !important;
+    font-family: fonts.$font-serif;
   }
 
   .xcp-list-loader,
   .interact-desc * {
-    font-family: fonts.$sans-fonts !important;
+    font-family: fonts.$font-sans;
   }
 }

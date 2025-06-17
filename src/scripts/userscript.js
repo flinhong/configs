@@ -17,13 +17,17 @@
         .replace("cn.", "")
 
     const styles = [
-        "https://cdn.honglin.ac.cn/fonts/g/css?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Serif+SC:wght@200..900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&display=swap",
+        "https://cdn.honglin.ac.cn/fonts/g/css?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Serif+SC:wght@200..900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Shippori+Mincho&display=swap",
         "https://cdn.honglin.ac.cn/statically/gh/flinhong/configs/main/public/styles/" +
             domain +
             ".css",
     ]
 
     styles.forEach((href) => {
+        // Google fonts
+        const dList = ["chatgpt", "reddit"]
+        if (dList.includes(domain) && href.includes("fonts")) return
+
         const link = document.createElement("link")
         link.rel = "stylesheet"
         link.type = "text/css"
