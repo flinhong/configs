@@ -1141,31 +1141,79 @@ proxies:
       Host:
       - speedtest.net
   udp: true
-- name: X_🇨🇳 广东省湛江市 移动
-  server: lm.kaiqsz.com
-  port: 16783
+- name: X_🇭🇰 香港 V2CROSS.COM
+  server: 194.104.147.74
+  port: 1066
   type: trojan
-  password: 55f2afab-bc41-4231-b725-76bef15c3cf7
-  sni: mmbiz15.redapricotcloud.com
+  password: dda4f3bf-85fb-41bd-9d8e-77a8a02dbd59
+  sni: 194.104.147.74
   skip-cert-verify: true
   tfo: false
-- name: X_🇭🇰 香港 电讯盈科有限公司
-  server: e0784ed0-swq1s0-sxzls8-1gxvd.hgc1.tcpbbr.net
-  port: 8080
+- name: X_🇨🇳 广东省江门市 移动
+  server: jsyd.piaomiaoxu.net
+  port: 44721
+  type: ss
+  cipher: aes-256-gcm
+  password: 781bb54c-f089-48df-8102-01288a81eb10
+  tfo: false
+- name: X_🇺🇸 美国 CloudFlare节点
+  server: 104.17.128.1
+  port: 2096
+  type: trojan
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  sni: vle.amclubdns.dpdns.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      Host: vle.amclubdns.dpdns.org
+  tfo: false
+- name: X_🇨🇳 广东省梅州市 广东移动梅州市分公司
+  server: v9.heduian.link
+  port: 30809
   type: vmess
-  uuid: 398e0d38-8649-11ef-959c-f23c9164ca5d
-  alterId: 0
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
   cipher: auto
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /
+    path: /oooo
     headers:
-      Host: broadcastlv.chat.bilibili.com
+      Host: baidu.com
   tfo: false
-- name: X_🇺🇸 美国 CloudFlare节点
-  server: npmjs.com
+- name: X_🇺🇸 美国 Cloudinnovation数据中心
+  server: 154.83.2.200
+  port: 443
+  type: trojan
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  sni: vle.amclubdns.dpdns.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      Host: vle.amclubdns.dpdns.org
+  tfo: false
+- name: X_🇳🇱 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
+  server: 45.58.186.23
+  port: 31001
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /path/1751546044274
+    headers:
+      Host: www.24420256.xyz
+  tfo: false
+- name: X_🇺🇸 美国 CloudFlare节点 2
+  server: 104.17.176.171
   port: 8080
   type: vmess
   uuid: 6cbc9c78-1cb1-57d4-a999-e2f4e34c1e03
@@ -1179,164 +1227,141 @@ proxies:
     headers:
       Host: ke7hz36ewz-4515017473.mashallahbet.com
   tfo: false
-- name: X_🇺🇸 美国 CloudFlare节点 2
-  server: ssXxZaSw.999824.xyZ
-  port: 443
+- name: X_🇭🇰 香港 电讯盈科有限公司
+  server: a9316cd5-sx4v40-t1ppk8-1i3g8.hgc1.tcpbbr.net
+  port: 8080
   type: vmess
-  uuid: 512d9674-db12-44ca-a1b5-654244549b65
+  uuid: 437cef58-f10b-11ef-8eaf-f23c9164ca5d
   alterId: 0
   cipher: auto
-  tls: true
+  tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /uiAxvH6OkVk0VCfa7dX3JIrYk7zm
+    path: /
     headers:
-      Host: ssxxzasw.999824.xyz
+      Host: broadcastlv.chat.bilibili.com
   tfo: false
-- name: X_🇨🇳 广东省汕头市 移动
-  server: 57100505-sytz40-t389l0-1rsuw.cm5.cnkuaishou.com
-  port: 27233
-  type: trojan
-  password: 0de37cdc-abff-11ef-b7c6-f23c913c8d2b
-  sni: 57100505-sytz40-t389l0-1rsuw.cm5.cnkuaishou.com
-  skip-cert-verify: true
-  tfo: false
-- name: X_🇷🇺 俄罗斯 莫斯科JustHost
-  server: 185.22.152.92
-  port: 1019
-  type: ss
-  cipher: aes-256-gcm
-  password: d989ff3d46a63f63
-  tfo: false
-- name: X_🇨🇳 广东省深圳市 移动
-  server: ysl.fxlcn.com
-  port: 45419
+- name: X_🇺🇸 美国 CloudFlare节点 3
+  server: wSxcdFR5.999824.xyz
+  port: 80
   type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  uuid: cdec9d57-661d-456a-bbf2-b4c38e9c6711
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /9dZlJLjHHrL0VwSolbqFpg
+    headers:
+      Host: wsxcdfr5.999824.xyz
+  tfo: false
+- name: X_🇺🇸 美国 CloudFlare节点 4
+  server: awetdfgn_cdn.hfhfb.homes
+  port: 2086
+  type: vmess
+  uuid: 16f000d7-7805-459d-9130-200d00180b7c
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /market?ed=1024
+    headers:
+      Host: mgcdn8.hfhfb.homes
+  tfo: false
+- name: X_🇨🇳 广东省广州市 移动
+  server: 120.232.153.40
+  port: 32209
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
   tfo: false
+- name: X_🇺🇸 美国 华盛顿Cogent通信公司
+  server: 38.11.49.40
+  port: 38003
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /path/1751545632122
+    headers:
+      Host: www.45700497.xyz
+  tfo: false
+- name: X_🇨🇳 江苏省 移动
+  server: v12.heduian.link
+  port: 30812
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /oooo
+    headers:
+      Host: ocbc.com
+  tfo: false
+- name: X_🇨🇳 广东省汕头市 移动
+  server: 1a95a158-sxr340-tbnk1n-ueq.cm5.cnkuaishou.com
+  port: 27231
+  type: trojan
+  password: 91df5a86-fcdd-11ef-94aa-f23c913c8d2b
+  sni: 1a95a158-sxr340-tbnk1n-ueq.cm5.cnkuaishou.com
+  skip-cert-verify: true
+  tfo: false
+- name: X_🇨🇳 广东省汕头市 移动 2
+  server: 0c280045-sxp8g0-t0hae4-1curq.cm5.cnkuaishou.com
+  port: 27233
+  type: trojan
+  password: 5cfee98c-0e3b-11ed-bd7c-f23c913c8d2b
+  sni: 0c280045-sxp8g0-t0hae4-1curq.cm5.cnkuaishou.com
+  skip-cert-verify: true
+  tfo: false
+- name: X_🇰🇷_KR_韩国
+  type: ss
+  server: 125.141.31.72
+  port: 15098
+  password: qwerREWQ@@
+  ip-version: dual
+  udp: true
+  cipher: aes-256-cfb
+- name: X_🇨🇳_CN_中国->🇺🇸_US_美国_1
+  type: trojan
+  server: lm.kaiqsz.com
+  port: 55799
+  password: 55f2afab-bc41-4231-b725-76bef15c3cf7
+  sni: mmbiz10.redapricotcloud.com
+  ip-version: dual
+  udp: true
 - name: X_🇨🇳_CN_中国->🇫🇷_FR_法国_1
   type: trojan
-  server: f4bbb283-sytz40-t01cuj-1itli.cm5.cnkuaishou.com
+  server: 916030df-sytz40-t16ejh-1rdqg.cm5.cnkuaishou.com
   port: 27235
-  password: 4088a148-dbec-11ec-bd7c-f23c913c8d2b
-  skip-cert-verify: false
+  network: tcp
+  password: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b
   ip-version: dual
   udp: true
 - name: X_🇨🇳_CN_中国->🇫🇷_FR_法国_2
   type: trojan
-  server: c5ce6f77-sytz40-ta64ri-1qzi1.cm5.cnkuaishou.com
+  server: ef9fae4e-sytz40-tgzvop-hns7.cm5.cnkuaishou.com
   port: 27235
-  password: 8f99107c-f091-11ee-9935-f23c9164ca5d
+  password: 6857f1bc-f27b-11ea-87ad-f23c913c8d2b
+  sni: ef9fae4e-sytz40-tgzvop-hns7.cm5.cnkuaishou.com
   skip-cert-verify: false
   ip-version: dual
   udp: true
-- name: X_🇺🇸_US_美国
-  type: trojan
-  server: 104.21.6.179
-  port: 443
-  network: ws
-  password: 6757b7d6-fa32-4708-b5d1-30e3cf928b51
-  sni: ZZzzzZZ.890601.XYZ
-  ws-opts:
-    path: /l96MZ8se5Kl2p8BiMhP42l
-    headers:
-      host: ZZzzzZZ.890601.XYZ
-  ip-version: dual
-  udp: true
-- name: X_🇨🇳_CN_中国->🇫🇷_FR_法国_3
-  type: trojan
-  server: 83edf522-sytz40-t4qa9y-g43g.cm5.cnkuaishou.com
-  port: 27235
-  password: 6ddb6a68-d5f5-ca30-3943-cf0c9876d50c
-  skip-cert-verify: false
-  ip-version: dual
-  udp: true
-- name: X_🇨🇳_CN_中国->🇫🇷_FR_法国_4
-  type: trojan
-  server: 04000a76-sytz40-tb74a6-1q9g2.cm5.cnkuaishou.com
-  port: 27235
-  password: 9d80dd14-ac44-11ee-a116-f23c9164ca5d
-  skip-cert-verify: false
-  ip-version: dual
-  udp: true
-- name: X_🇨🇳_CN_中国->🇫🇷_FR_法国_5
-  type: trojan
-  server: 0a7a80dc-sytz40-szxh9w-46gc.cm5.cnkuaishou.com
-  port: 27235
-  password: 225d1cca-d744-11ef-b790-f23c91cfbbc9
-  skip-cert-verify: false
-  ip-version: dual
-  udp: true
-- name: X_🇨🇳_CN_中国->🇫🇷_FR_法国_6
-  type: trojan
-  server: 916030df-sytz40-t16ejh-1rdqg.cm5.cnkuaishou.com
-  port: 27235
-  password: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b
-  skip-cert-verify: false
-  ip-version: dual
-  udp: true
-- name: X_🇨🇳_CN_中国->🇫🇷_FR_法国_7
-  type: trojan
-  server: c3fe9cc6-sytz40-thv9l4-1jbj0.cm5.cnkuaishou.com
-  port: 27235
-  password: b2c6384c-f63d-11ec-b1b3-f23c91cfbbc9
-  skip-cert-verify: false
-  ip-version: dual
-  udp: true
-- name: X_🇨🇳_CN_中国->🇫🇷_FR_法国_8
-  type: trojan
-  server: 274ba953-sytz40-t09za6-1m0fq.cm5.cnkuaishou.com
-  port: 27235
-  password: a698c4a6-c3c9-11ee-9693-f23c91cfbbc9
-  skip-cert-verify: false
-  ip-version: dual
-  udp: true
-- name: X_🇨🇳_CN_中国->🇫🇷_FR_法国_9
-  type: trojan
-  server: 4720bf9e-sytz40-t0r7l4-1ruih.cm5.cnkuaishou.com
-  port: 27235
-  password: 3549abda-3854-11ef-b71e-f23c9164ca5d
-  skip-cert-verify: false
-  ip-version: dual
-  udp: true
-- name: X_🇨🇳_CN_中国->🇫🇷_FR_法国_10
-  type: trojan
-  server: 1dde7ddd-sytz40-tbpu76-1thmd.cm5.cnkuaishou.com
-  port: 27235
-  password: 2d8c38cc-fc12-11ef-94aa-f23c913c8d2b
-  skip-cert-verify: false
-  ip-version: dual
-  udp: true
-- name: X_🇨🇳_CN_中国->🇫🇷_FR_法国_11
-  type: trojan
-  server: d0dfa01d-sytz40-t1jamc-1fvdh.cu2.plebai.net
-  port: 15229
-  password: 9e1ddc04-073b-11ed-bd7c-f23c913c8d2b
-  skip-cert-verify: false
-  ip-version: dual
-  udp: true
-- name: X_🇨🇳_CN_中国->🇫🇷_FR_法国_12
-  type: trojan
-  server: 0bdf3a95-sytz40-t09t13-z7a1.cm5.cnkuaishou.com
-  port: 27235
-  password: 3bd247a8-993e-11ec-a8bf-f23c91cfbbc9
-  skip-cert-verify: false
-  ip-version: dual
-  udp: true
-- name: X_🇷🇺_RU_俄罗斯
-  type: ss
-  server: 185.231.233.112
-  port: 989
-  password: f8f7aCzcPKbsF8p3
-  ip-version: dual
-  udp: true
-  cipher: aes-256-cfb
-- name: X_🇨🇳_CN_中国->🇺🇸_US_美国
+- name: X_🇨🇳_CN_中国->🇺🇸_US_美国_2
   type: vmess
   server: 111.26.109.79
   port: 30829
@@ -1350,36 +1375,55 @@ proxies:
   udp: true
   alterId: 2
   cipher: auto
-- name: X_🇨🇳_CN_中国->🇫🇷_FR_法国_13
-  type: trojan
-  server: a784fd6f-sytz40-t2c3sq-1spnr.cu2.plebai.net
-  port: 15229
-  password: 127e3f92-f714-11ef-bbb0-f23c91cfbbc9
-  skip-cert-verify: false
-  ip-version: dual
-  udp: true
-- name: X_🇨🇳_CN_中国->🇫🇷_FR_法国_14
-  type: trojan
-  server: 864a90fc-sytz40-tee612-2r82.cm5.cnkuaishou.com
-  port: 27235
-  password: 03573f46-e944-11eb-a8bf-f23c91cfbbc9
-  skip-cert-verify: false
-  ip-version: dual
-  udp: true
-- name: X_🇨🇳_CN_中国->🇫🇷_FR_法国_15
-  type: trojan
-  server: 7a89c69d-sytz40-tbvl5i-1mebs.cm5.cnkuaishou.com
-  port: 27235
-  password: 80f73b42-8264-11ef-8dc4-f23c91cfbbc9
-  skip-cert-verify: false
-  ip-version: dual
-  udp: true
-- name: X_🇨🇳_CN_中国->🇫🇷_FR_法国_16
+- name: X_🇨🇳_CN_中国->🇫🇷_FR_法国_3
   type: trojan
   server: 4edfad82-sytz40-tcmken-19les.cm5.cnkuaishou.com
   port: 27235
   password: d095ecc6-7b69-11eb-b77b-f23c913c8d2b
-  skip-cert-verify: false
+  ip-version: dual
+  udp: true
+- name: X_🇨🇳_CN_中国->🇫🇷_FR_法国_4
+  type: trojan
+  server: 274ba953-sytz40-t09za6-1m0fq.cm5.cnkuaishou.com
+  port: 27235
+  network: tcp
+  password: a698c4a6-c3c9-11ee-9693-f23c91cfbbc9
+  ip-version: dual
+  udp: true
+- name: X_🇮🇷_IR_伊朗
+  type: vmess
+  server: 37.152.173.192
+  port: 5008
+  uuid: 81647712-fcd8-4da9-8f80-bc7a149354f8
+  network: tcp
+  sni: ''
+  skip-cert-verify: true
+  fingerprint: ''
+  ip-version: dual
+  udp: true
+  alterId: 0
+  cipher: auto
+- name: X_🇲🇩_MD_摩尔多瓦->🇯🇵_JP_日本
+  type: ss
+  server: 185.153.197.5
+  port: 989
+  password: f8f7aCzcPKbsF8p3
+  ip-version: dual
+  udp: true
+  cipher: aes-256-cfb
+- name: X_🇨🇳_CN_中国->🇫🇷_FR_法国_5
+  type: trojan
+  server: 1dde7ddd-sytz40-tbpu76-1thmd.cm5.cnkuaishou.com
+  port: 27235
+  network: tcp
+  password: 2d8c38cc-fc12-11ef-94aa-f23c913c8d2b
+  ip-version: dual
+  udp: true
+- name: X_🇨🇳_CN_中国->🇫🇷_FR_法国_6
+  type: trojan
+  server: c3fe9cc6-sytz40-thv9l4-1jbj0.cm5.cnkuaishou.com
+  port: 27235
+  password: b2c6384c-f63d-11ec-b1b3-f23c91cfbbc9
   ip-version: dual
   udp: true
 - alterId: 64
@@ -1437,12 +1481,6 @@ proxies:
     headers:
       Host: th.lzj520hxw.dpdns.org
     path: /lzjjj
-- cipher: aes-256-cfb
-  name: X_🇰🇷2 |  1.5MB/s|44%|Openai
-  password: qwerREWQ@@
-  port: 15098
-  server: 125.141.31.72
-  type: ss
 - alterId: 2
   cipher: auto
   name: X_🇺🇸62 |  3.3MB/s|Openai|Gemini
@@ -1499,22 +1537,6 @@ proxies:
   sni: 4560c642-swin40-tjuq6l-wf62.cu.plebai.net
   type: trojan
   udp: true
-- alterId: 2
-  cipher: auto
-  name: X_香港|@ripaojiedian
-  network: ws
-  port: '30809'
-  server: v9.heduian.link
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
 - cipher: aes-256-gcm
   name: X_🇭🇰 香港2|@ripaojiedian
   password: 0b191076d18f
@@ -1581,13 +1603,6 @@ proxies:
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  name: X_🇯🇵 日本3|@ripaojiedian
-  password: 781bb54c-f089-48df-8102-01288a81eb10
-  port: 44721
-  server: jsyd.piaomiaoxu.net
   tfo: false
   type: ss
 - cipher: aes-256-gcm
@@ -1944,51 +1959,48 @@ proxy-groups:
   - X_SG_speednode_0065
   - X_SG_speednode_0066
   - X_US_speednode_0067
-  - X_🇨🇳 广东省湛江市 移动
-  - X_🇭🇰 香港 电讯盈科有限公司
+  - X_🇭🇰 香港 V2CROSS.COM
+  - X_🇨🇳 广东省江门市 移动
   - X_🇺🇸 美国 CloudFlare节点
+  - X_🇨🇳 广东省梅州市 广东移动梅州市分公司
+  - X_🇺🇸 美国 Cloudinnovation数据中心
+  - X_🇳🇱 荷兰 北荷兰省阿姆斯特丹Sharktech数据中心
   - X_🇺🇸 美国 CloudFlare节点 2
+  - X_🇭🇰 香港 电讯盈科有限公司
+  - X_🇺🇸 美国 CloudFlare节点 3
+  - X_🇺🇸 美国 CloudFlare节点 4
+  - X_🇨🇳 广东省广州市 移动
+  - X_🇺🇸 美国 华盛顿Cogent通信公司
+  - X_🇨🇳 江苏省 移动
   - X_🇨🇳 广东省汕头市 移动
-  - X_🇷🇺 俄罗斯 莫斯科JustHost
-  - X_🇨🇳 广东省深圳市 移动
+  - X_🇨🇳 广东省汕头市 移动 2
+  - X_🇰🇷_KR_韩国
+  - X_🇨🇳_CN_中国->🇺🇸_US_美国_1
   - X_🇨🇳_CN_中国->🇫🇷_FR_法国_1
   - X_🇨🇳_CN_中国->🇫🇷_FR_法国_2
-  - X_🇺🇸_US_美国
+  - X_🇨🇳_CN_中国->🇺🇸_US_美国_2
   - X_🇨🇳_CN_中国->🇫🇷_FR_法国_3
   - X_🇨🇳_CN_中国->🇫🇷_FR_法国_4
+  - X_🇮🇷_IR_伊朗
+  - X_🇲🇩_MD_摩尔多瓦->🇯🇵_JP_日本
   - X_🇨🇳_CN_中国->🇫🇷_FR_法国_5
   - X_🇨🇳_CN_中国->🇫🇷_FR_法国_6
-  - X_🇨🇳_CN_中国->🇫🇷_FR_法国_7
-  - X_🇨🇳_CN_中国->🇫🇷_FR_法国_8
-  - X_🇨🇳_CN_中国->🇫🇷_FR_法国_9
-  - X_🇨🇳_CN_中国->🇫🇷_FR_法国_10
-  - X_🇨🇳_CN_中国->🇫🇷_FR_法国_11
-  - X_🇨🇳_CN_中国->🇫🇷_FR_法国_12
-  - X_🇷🇺_RU_俄罗斯
-  - X_🇨🇳_CN_中国->🇺🇸_US_美国
-  - X_🇨🇳_CN_中国->🇫🇷_FR_法国_13
-  - X_🇨🇳_CN_中国->🇫🇷_FR_法国_14
-  - X_🇨🇳_CN_中国->🇫🇷_FR_法国_15
-  - X_🇨🇳_CN_中国->🇫🇷_FR_法国_16
   - X_🇯🇵1 |  1.8MB/s|54%|Youtube|Ope...
   - X_🌀3-SK |  5.0MB/s|0%|Youtube|Op...
   - X_🇸🇬1 |  1.0MB/s|0%|Netflix|Disn...
   - X_🇺🇸45 |  2.5MB/s|46%|Openai|Gem...
   - X_🌀4-TH |  2.6MB/s|55%|Netflix|O...
-  - X_🇰🇷2 |  1.5MB/s|44%|Openai
   - X_🇺🇸62 |  3.3MB/s|Openai|Gemini
   - X_🇩🇪5 |  1.4MB/s|0%|Youtube|Open...
   - X_🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
   - X_🇺🇸63 |  2.1MB/s|46%|Openai|Gem...
   - X_🇺🇸64 |  1.3MB/s|46%|Openai|Gem...
-  - X_香港|@ripaojiedian
   - X_🇭🇰 香港2|@ripaojiedian
   - X_🇭🇰 香港3|@ripaojiedian
   - X_香港4|@ripaojiedian
   - X_香港5|@ripaojiedian
   - X_香港6|@ripaojiedian
   - X_🇯🇵 日本|@ripaojiedian
-  - X_🇯🇵 日本3|@ripaojiedian
   - X_🇯🇵 日本2|@ripaojiedian
   - X_韩国|@ripaojiedian
   - X_🇯🇵 日本5|@ripaojiedian
