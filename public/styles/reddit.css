@@ -1,0 +1,20 @@
+:root {
+  --font-sans:
+    "Outfit", "Noto Serif SC", "Microsoft YaHei UI", sans-serif !important;
+  --font-mono:
+    "IBM Plex Mono", "Noto Serif SC", "Microsoft YaHei UI", monospace !important;
+  --font-serif:
+    "Crimson Text", "Noto Serif SC", "Microsoft YaHei UI", serif !important;
+}
+
+body[data-domain="www.reddit.com"] {
+  font-family: var(--font-sans);
+}
+body[data-domain="www.reddit.com"] pre,
+body[data-domain="www.reddit.com"] code {
+  font-family: var(--font-mono);
+}
+body[data-domain="www.reddit.com"] .text-neutral-content-strong {
+  font-family: "Lato", var(--font-sans);
+  font-weight: bold;
+}
