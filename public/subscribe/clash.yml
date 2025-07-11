@@ -44,31 +44,19 @@ tun:
   - 1.1.1.1
   - 1.0.0.1
 proxies:
-- name: 🇸🇰_SK_斯洛伐克->🏳️_unKnow_未知
-  type: ss
-  server: 156.146.40.194
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🇨🇳_CN_中国->🇨🇦_CA_加拿大
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
   type: vmess
-  server: 111.26.109.79
-  port: 30835
-  sni: ''
+  server: v29.heduian.link
+  port: 30829
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   cipher: auto
   network: ws
-  skip-cert-verify: true
   ws-opts:
     path: /oooo
+    headers:
+      host: ocbc.com
   alterId: 2
-- name: 🇲🇩_MD_摩尔多瓦
-  type: ss
-  server: 91.132.94.200
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🇺🇸_US_美国_2
+- name: 🇺🇸_US_美国
   type: trojan
   server: 104.21.6.179
   port: 443
@@ -78,6 +66,54 @@ proxies:
   network: ws
   ws-opts:
     path: /l96MZ8se5Kl2p8BiMhP42l
+- name: 🇰🇷_KR_韩国->🇧🇪_BE_比利时
+  type: ss
+  server: p222.panda001.net
+  port: 15098
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇺🇸_US_美国_1
+  type: vmess
+  server: aAZXsdE.003330333.xYZ
+  port: 80
+  uuid: 10b1e371-d734-4306-b67f-0fc1f95c2485
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /SXjq8YlnGNBlbnEsM
+    headers:
+      host: aazxsde.003330333.xyz
+  alterId: 0
+- name: 🇳🇱_NL_荷兰
+  type: ss
+  server: 45.153.124.90
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇺🇸_US_美国_2
+  type: ss
+  server: 104.192.226.106
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇬🇧_GB_英国->🇰🇷_KR_韩国
+  type: ss
+  server: 85.210.120.237
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: Bog0ELmMM9DSxDdQ
+- name: 🇲🇩_MD_摩尔多瓦
+  type: ss
+  server: 91.132.94.200
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇯🇴_JO_约旦
+  type: ss
+  server: 109.107.159.246
+  port: 17228
+  cipher: aes-256-gcm
+  password: psamSbJq
 - name: X_BG_speednode_0001
   server: 147.78.140.77
   port: 8880
@@ -1148,154 +1184,129 @@ proxies:
     short-id: e8ab71d0
   udp: true
 - name: X_🇺🇸 美国 CloudFlare节点
-  server: eERRRty6.999824.xyz
-  port: 443
+  server: 172.67.193.50
+  port: 8443
   type: vmess
-  uuid: 512d9674-db12-44ca-a1b5-654244549b65
+  uuid: 57e595e6-ef54-4e0d-b8df-e96db9612b99
   alterId: 0
   cipher: auto
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /uiAxvH6OkVk0VCfa7dX3JIrYk7zm
+    path: /horsen
     headers:
-      Host: eerrrty6.999824.xyz
+      Host: orvps2.horsenma.net
   tfo: false
 - name: X_🇺🇸 美国 CloudFlare节点 2
-  server: eEEeeeeEeEEDFFghy.444752.xYZ
-  port: 80
+  server: us01.sh-cloudflare.sbs
+  port: 8443
   type: vmess
-  uuid: 7701ddf5-6a48-401b-a3ec-8af52b6deb48
+  uuid: 7888a5e1-bc78-45f2-ba4c-985f19cb6b5f
   alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: us01.sh-cloudflare.sbs
+  tfo: false
+- name: X_🇺🇸 美国 CloudFlare节点 3
+  server: 141.101.120.253
+  port: 2096
+  type: vmess
+  uuid: 381cb6d1-6ad4-4909-8494-b8d786cf78ce
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 1746882891.speed.adl.cccp.freefly.pp.ua
+  tfo: false
+- name: X_🇭🇰 香港 Amazon数据中心
+  server: ss.020.node-for-bigairport.win
+  port: 24102
+  type: ss
+  cipher: aes-256-gcm
+  password: c69374da-2208-4cbd-b81e-cdf88b5e7f53
+  tfo: false
+- name: X_🇨🇳 吉林省 移动(全省通用)
+  server: v29.heduian.link
+  port: 30829
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
   cipher: auto
   tls: false
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /mlyR5tmcKx3hweBopuhWEbIX
+    path: /oooo
     headers:
-      Host: eEEeeeeEeEEDFFghy.444752.xYZ
-  tfo: false
-- name: X_🇺🇸 美国 CloudFlare节点 3
-  server: rrrrrrrrrt.11890604.xyz
-  port: 443
-  type: vmess
-  uuid: f898ffcb-6417-4373-9640-0b66091e8206
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /GnJ3bBxV91uFkYtuzXyJ5XNeH1R1
-    headers:
-      Host: rrrrrrrrrt.11890604.xyz
+      Host: ocbc.com
   tfo: false
 - name: X_🇺🇸 美国 CloudFlare节点 4
-  server: EeR4567.999824.xYz
+  server: JJJjjjjjmMMmM.4444926.XYZ
   port: 443
   type: vmess
-  uuid: cdec9d57-661d-456a-bbf2-b4c38e9c6711
+  uuid: dc50eb1d-244d-4711-b168-a101a5e6fb1b
   alterId: 0
   cipher: auto
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /9dZlJLjHHrL0VwSolbqFpg
+    path: /awmqq79B17rfnpXiNaWb
     headers:
-      Host: eer4567.999824.xyz
+      Host: jjjjjjjjmmmmm.4444926.xyz
+  tfo: false
+- name: X_🇷🇺 俄罗斯 V2CROSS.COM
+  server: 194.53.53.249
+  port: 2083
+  type: trojan
+  password: d6b8011a-c725-435a-9fec-bf6d3530392c
+  sni: vle.amclubdns.dpdns.org
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560&PROT_TYPE=trojan
+    headers:
+      Host: vle.amclubdns.dpdns.org
   tfo: false
 - name: X_🇺🇸 美国 CloudFlare节点 5
-  server: 3EEEeE.999824.xyZ
+  server: SSsXXXCvBnmjKi.931.Pp.uA
   port: 443
   type: vmess
-  uuid: cdec9d57-661d-456a-bbf2-b4c38e9c6711
+  uuid: da128246-33b0-4c88-a44e-d91e9e0a1e05
   alterId: 0
   cipher: auto
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /9dZlJLjHHrL0VwSolbqFpg
+    path: /0FhUkqQUdxOhMB9JsgTazwz9
     headers:
-      Host: 3eeeee.999824.xyz
+      Host: SSsXXXCvBnmjKi.931.Pp.uA
   tfo: false
 - name: X_🇺🇸 美国 CloudFlare节点 6
-  server: 104.21.16.1
-  port: 8443
-  type: vmess
-  uuid: f10598e2-c606-4945-bfde-e5730756a2dd
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: us01.sh-cloudflare.sbs
-  tfo: false
-- name: X_🇺🇸 美国 CloudFlare节点 7
-  server: XSssDcVFgt.444652.XyZ
+  server: FffvvVbnhJui8.222560.XYz
   port: 443
   type: vmess
-  uuid: 512d9674-db12-44ca-a1b5-654244549b65
+  uuid: 7701ddf5-6a48-401b-a3ec-8af52b6deb48
   alterId: 0
   cipher: auto
   tls: true
   skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /uiAxvH6OkVk0VCfa7dX3JIrYk7zm
+    path: /mlyR5tmcKx3hweBopuhWEbIX
     headers:
-      Host: xsssdcvfgt.444652.xyz
-  tfo: false
-- name: X_🇺🇸 美国 CloudFlare节点 8
-  server: 104.21.112.1
-  port: 8443
-  type: vmess
-  uuid: f10598e2-c606-4945-bfde-e5730756a2dd
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: us01.sh-cloudflare.sbs
-  tfo: false
-- name: X_🇺🇸 美国 CloudFlare节点 9
-  server: 104.18.149.76
-  port: 443
-  type: vmess
-  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /aa
-    headers:
-      Host: us.kkp.me.eu.org
-  tfo: false
-- name: X_🇺🇸 美国 CloudFlare节点 10
-  server: 33DeFrty6.444652.xYz
-  port: 443
-  type: vmess
-  uuid: cdec9d57-661d-456a-bbf2-b4c38e9c6711
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /9dZlJLjHHrL0VwSolbqFpg
-    headers:
-      Host: 33defrty6.444652.xyz
+      Host: FffvvVbnhJui8.222560.XYz
   tfo: false
 - name: X_🇬🇧_GB_英国->🇺🇸_US_美国
   type: ss
@@ -1443,20 +1454,6 @@ proxies:
   port: 15098
   server: 125.141.31.72
   type: ss
-- alterId: 2
-  cipher: auto
-  name: X_🇺🇸62 |  3.3MB/s|Openai|Gemini
-  network: ws
-  port: 30829
-  server: v29.heduian.link
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
 - alterId: 0
   cipher: auto
   grpc-opts:
@@ -1499,13 +1496,16 @@ proxies:
   sni: 4560c642-swin40-tjuq6l-wf62.cu.plebai.net
   type: trojan
   udp: true
-- cipher: aes-256-gcm
+- alterId: 0
+  cipher: auto
   name: X_🇭🇰 香港|@ripaojiedian
-  password: ELNP3E9X426OSUVK
-  port: 15006
-  server: ti3hyra4.slashdevslashnetslashtun.net
+  port: 58236
+  server: 103.224.80.92
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: 829218e3-9f74-4303-88da-a9d84f0c7852
 - cipher: aes-256-gcm
   name: X_🇭🇰 香港2|@ripaojiedian
   password: 9bfdde71b4c0
@@ -1521,16 +1521,14 @@ proxies:
   server: 103.103.245.158
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: X_🇭🇰 香港3|@ripaojiedian
-  port: 33291
-  server: 103.224.80.103
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: e6925cbe-51b9-40e9-b57e-85b6f026499b
+- name: X_香港4|@ripaojiedian
+  network: tcp
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 9141
+  server: 36.151.192.59
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
 - name: X_香港6|@ripaojiedian
   network: tcp
   password: 7367d04e-4c59-4dff-a50e-12e730a09891
@@ -1538,19 +1536,12 @@ proxies:
   server: 155.117.228.70
   skip-cert-verify: true
   type: trojan
-- cipher: aes-256-gcm
-  name: X_🇭🇰 香港7|@ripaojiedian
-  password: ZX9F8KK21O60YK9T
-  port: 15015
-  server: qh62onjn.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
 - cipher: rc4-md5
   name: X_🇯🇵 日本|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507031938065-KILVHWQpc0.download.microsoft.com
+    host: 202507031938065-e8zxTxmqk7.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
@@ -1574,23 +1565,26 @@ proxies:
 - name: X_日本3|@ripaojiedian
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 21829
-  server: 36.151.251.58
+  port: 41225
+  server: 36.151.192.26
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- name: X_🇺🇸 美国5|@ripaojiedian
-  network: ws
-  password: d6b8011a-c725-435a-9fec-bf6d3530392c
-  port: 2083
-  server: 194.53.53.249
-  skip-cert-verify: false
-  sni: vle.amclubdns.dpdns.org
+- cipher: aes-256-cfb
+  name: X_🇰🇷 韩国|@ripaojiedian
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
+  tfo: false
+  type: ss
+- name: X_韩国2|@ripaojiedian
+  network: tcp
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: 6668
+  server: 3.34.143.101
+  skip-cert-verify: true
+  sni: baidu.com
   type: trojan
-  ws-opts:
-    headers:
-      Host: vle.amclubdns.dpdns.org
-    path: /?ed=2560&PROT_TYPE=trojan
 - alterId: 0
   cipher: none
   name: X_香港v2|@ripaojiedian
@@ -1617,10 +1611,15 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - DIRECT
-  - 🇸🇰_SK_斯洛伐克->🏳️_unKnow_未知
-  - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
-  - 🇲🇩_MD_摩尔多瓦
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇺🇸_US_美国
+  - 🇰🇷_KR_韩国->🇧🇪_BE_比利时
+  - 🇺🇸_US_美国_1
+  - 🇳🇱_NL_荷兰
   - 🇺🇸_US_美国_2
+  - 🇬🇧_GB_英国->🇰🇷_KR_韩国
+  - 🇲🇩_MD_摩尔多瓦
+  - 🇯🇴_JO_约旦
 - name: ♻️ 自动选择
   type: url-test
   url: https://client3.google.com/generate_204
@@ -1628,47 +1627,72 @@ proxy-groups:
   tolerance: 1
   proxies:
   - 🪐 负载均衡
-  - 🇸🇰_SK_斯洛伐克->🏳️_unKnow_未知
-  - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
-  - 🇲🇩_MD_摩尔多瓦
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇺🇸_US_美国
+  - 🇰🇷_KR_韩国->🇧🇪_BE_比利时
+  - 🇺🇸_US_美国_1
+  - 🇳🇱_NL_荷兰
   - 🇺🇸_US_美国_2
+  - 🇬🇧_GB_英国->🇰🇷_KR_韩国
+  - 🇲🇩_MD_摩尔多瓦
+  - 🇯🇴_JO_约旦
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🚀 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇸🇰_SK_斯洛伐克->🏳️_unKnow_未知
-  - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
-  - 🇲🇩_MD_摩尔多瓦
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇺🇸_US_美国
+  - 🇰🇷_KR_韩国->🇧🇪_BE_比利时
+  - 🇺🇸_US_美国_1
+  - 🇳🇱_NL_荷兰
   - 🇺🇸_US_美国_2
+  - 🇬🇧_GB_英国->🇰🇷_KR_韩国
+  - 🇲🇩_MD_摩尔多瓦
+  - 🇯🇴_JO_约旦
 - name: 📲 电报信息
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇸🇰_SK_斯洛伐克->🏳️_unKnow_未知
-  - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
-  - 🇲🇩_MD_摩尔多瓦
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇺🇸_US_美国
+  - 🇰🇷_KR_韩国->🇧🇪_BE_比利时
+  - 🇺🇸_US_美国_1
+  - 🇳🇱_NL_荷兰
   - 🇺🇸_US_美国_2
+  - 🇬🇧_GB_英国->🇰🇷_KR_韩国
+  - 🇲🇩_MD_摩尔多瓦
+  - 🇯🇴_JO_约旦
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇸🇰_SK_斯洛伐克->🏳️_unKnow_未知
-  - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
-  - 🇲🇩_MD_摩尔多瓦
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇺🇸_US_美国
+  - 🇰🇷_KR_韩国->🇧🇪_BE_比利时
+  - 🇺🇸_US_美国_1
+  - 🇳🇱_NL_荷兰
   - 🇺🇸_US_美国_2
+  - 🇬🇧_GB_英国->🇰🇷_KR_韩国
+  - 🇲🇩_MD_摩尔多瓦
+  - 🇯🇴_JO_约旦
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇸🇰_SK_斯洛伐克->🏳️_unKnow_未知
-  - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
-  - 🇲🇩_MD_摩尔多瓦
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇺🇸_US_美国
+  - 🇰🇷_KR_韩国->🇧🇪_BE_比利时
+  - 🇺🇸_US_美国_1
+  - 🇳🇱_NL_荷兰
   - 🇺🇸_US_美国_2
+  - 🇬🇧_GB_英国->🇰🇷_KR_韩国
+  - 🇲🇩_MD_摩尔多瓦
+  - 🇯🇴_JO_约旦
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -1691,10 +1715,15 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇸🇰_SK_斯洛伐克->🏳️_unKnow_未知
-  - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
-  - 🇲🇩_MD_摩尔多瓦
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇺🇸_US_美国
+  - 🇰🇷_KR_韩国->🇧🇪_BE_比利时
+  - 🇺🇸_US_美国_1
+  - 🇳🇱_NL_荷兰
   - 🇺🇸_US_美国_2
+  - 🇬🇧_GB_英国->🇰🇷_KR_韩国
+  - 🇲🇩_MD_摩尔多瓦
+  - 🇯🇴_JO_约旦
 - name: 🪐 负载均衡
   type: load-balance
   url: https://client3.google.com/generate_204
@@ -1779,13 +1808,12 @@ proxy-groups:
   - X_🇺🇸 美国 CloudFlare节点
   - X_🇺🇸 美国 CloudFlare节点 2
   - X_🇺🇸 美国 CloudFlare节点 3
+  - X_🇭🇰 香港 Amazon数据中心
+  - X_🇨🇳 吉林省 移动(全省通用)
   - X_🇺🇸 美国 CloudFlare节点 4
+  - X_🇷🇺 俄罗斯 V2CROSS.COM
   - X_🇺🇸 美国 CloudFlare节点 5
   - X_🇺🇸 美国 CloudFlare节点 6
-  - X_🇺🇸 美国 CloudFlare节点 7
-  - X_🇺🇸 美国 CloudFlare节点 8
-  - X_🇺🇸 美国 CloudFlare节点 9
-  - X_🇺🇸 美国 CloudFlare节点 10
   - X_🇬🇧_GB_英国->🇺🇸_US_美国
   - X_🇺🇸_US_美国_1
   - X_🇨🇳_CN_中国->🇺🇸_US_美国_1
@@ -1800,20 +1828,19 @@ proxy-groups:
   - X_🇺🇸45 |  2.5MB/s|46%|Openai|Gem...
   - X_🌀4-TH |  2.6MB/s|55%|Netflix|O...
   - X_🇰🇷2 |  1.5MB/s|44%|Openai
-  - X_🇺🇸62 |  3.3MB/s|Openai|Gemini
   - X_🇩🇪5 |  1.4MB/s|0%|Youtube|Open...
   - X_🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
   - X_🇺🇸63 |  2.1MB/s|46%|Openai|Gem...
   - X_🇺🇸64 |  1.3MB/s|46%|Openai|Gem...
   - X_🇭🇰 香港|@ripaojiedian
   - X_🇭🇰 香港2|@ripaojiedian
-  - X_🇭🇰 香港3|@ripaojiedian
+  - X_香港4|@ripaojiedian
   - X_香港6|@ripaojiedian
-  - X_🇭🇰 香港7|@ripaojiedian
   - X_🇯🇵 日本|@ripaojiedian
   - X_🇯🇵 日本2|@ripaojiedian
   - X_日本3|@ripaojiedian
-  - X_🇺🇸 美国5|@ripaojiedian
+  - X_🇰🇷 韩国|@ripaojiedian
+  - X_韩国2|@ripaojiedian
   - X_香港v2|@ripaojiedian
   - X_日本v2|@ripaojiedian
 rule-providers:
