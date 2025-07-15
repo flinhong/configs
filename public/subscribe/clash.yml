@@ -44,27 +44,43 @@ tun:
   - 1.1.1.1
   - 1.0.0.1
 proxies:
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+- name: 🇺🇸_US_美国->🇨🇳_CN_中国
   type: vmess
-  server: 120.26.55.225
-  port: 50002
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  server: 162.159.137.178
+  port: 80
+  sni: ''
+  uuid: 88a25bf3-18af-486f-b194-d87e976c230b
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /s15.html
+    headers:
+      host: 165067316419432025062817003642514.s15.chibaba.filegear-sg.me
+  alterId: 0
+- name: 🇨🇳_CN_中国->🇨🇦_CA_加拿大
+  type: vmess
+  server: v8.heduian.link
+  port: 30808
+  sni: baidu.com
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  ws-opts:
+    path: /oooo
+    headers:
+      host: v8.heduian.link
+  alterId: 2
+- name: 🇳🇱_NL_荷兰
+  type: vmess
+  server: 83.149.84.145
+  port: 15709
+  uuid: 4ac39e8a-6d5c-48bb-b0d0-f633c829113e
   cipher: auto
   network: tcp
   alterId: 0
-- name: 🇧🇪_BE_比利时
-  type: trojan
-  server: 155.117.228.70
-  port: 26193
-  password: 7367d04e-4c59-4dff-a50e-12e730a09891
-  skip-cert-verify: true
-- name: 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
-  type: ss
-  server: 154.3.8.151
-  port: 30067
-  cipher: aes-256-gcm
-  password: iUB0923RBA
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
+- name: 🇨🇳_CN_中国->🏳️_unKnow_未知
   type: vmess
   server: v29.heduian.link
   port: 30829
@@ -76,76 +92,40 @@ proxies:
     headers:
       host: ocbc.com
   alterId: 2
-- name: 🇺🇦_UA_乌克兰
-  type: ss
-  server: switcher-nick-croquet.freesocks.work
-  port: 443
-  cipher: chacha20-ietf-poly1305
-  password: 9tqhMdIrTkgQ46PvhyAtMH
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  type: ss
-  server: pr.fastsoonlink.com
-  port: 40030
-  cipher: chacha20-ietf-poly1305
-  password: 7905a32b-012c-4711-89e2-73b6713eca75
-- name: 🇷🇺_RU_俄罗斯
-  type: ss
-  server: 185.22.153.235
-  port: 30191
-  cipher: aes-256-gcm
-  password: 058798d9a3087e43
-- name: 🇬🇧_GB_英国->🇺🇸_US_美国
-  type: trojan
-  server: it.mjt000.com
-  port: 443
-  sni: it.mjt000.com
-  password: 84587c21-9938-42fc-a4b0-4f72dd72b7aa
-- name: 🇰🇷_KR_韩国
-  type: ss
-  server: p222.panda001.net
-  port: 15098
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇷🇺_RU_俄罗斯_1
-  type: ss
-  server: 185.22.152.92
-  port: 30190
-  cipher: aes-256-gcm
-  password: d989ff3d46a63f63
-- name: 🇷🇺_RU_俄罗斯_2
-  type: ss
-  server: 176.32.35.68
-  port: 30101
-  cipher: aes-256-gcm
-  password: 4194ce5b1f36f660
-- name: 🇷🇺_RU_俄罗斯_3
-  type: ss
-  server: 176.32.35.51
-  port: 10601
-  cipher: aes-256-gcm
-  password: 40bdc52dcffa6942
-- name: 🇺🇸_US_美国->🇨🇳_CN_中国
-  type: trojan
-  server: gerxyz.bm04.xyz
-  port: 2053
-  udp: true
-  sni: gerxyz.bm04.xyz
-  password: 94cf288d-f764-4ce9-a547-a7228144f056
-  network: grpc
-  grpc-opts:
-    grpc-service-name: qwrqwtuotoiadsfhgjkzxnbcmakgkajhged=2048
 - name: 🇲🇩_MD_摩尔多瓦
   type: ss
   server: 185.153.197.5
   port: 989
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
-- name: 🇷🇺_RU_俄罗斯_4
-  type: ss
-  server: 46.17.40.169
-  port: 30198
-  cipher: aes-256-gcm
-  password: f34579d0148b2581
+- name: 🇨🇳_CN_中国->🇩🇪_DE_德国
+  type: vmess
+  server: v33.heduian.link
+  port: 30833
+  sni: v33.heduian.link
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  ws-opts:
+    path: /oooo
+    headers:
+      host: v33.heduian.link
+  alterId: 2
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  type: vmess
+  server: v37.heduian.link
+  port: 30837
+  sni: ocbc.com
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  cipher: auto
+  network: ws
+  skip-cert-verify: false
+  ws-opts:
+    path: /oooo
+    headers:
+      host: v37.heduian.link
+  alterId: 2
 - name: X_AE_speednode_0001
   server: 103.245.228.186
   port: 8880
@@ -3113,16 +3093,16 @@ proxies:
   server: 103.103.245.158
   tfo: false
   type: ss
-- alterId: 0
+- alterId: 64
   cipher: auto
   name: X_🇭🇰 香港3|@ripaojiedian
-  port: 31019
-  server: ghikkdg2.mi0001.xyz
+  port: 44404
+  server: 183.236.97.101
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 2e0d1409-81fc-42bd-b37f-bd1910869e13
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: X_香港4|@ripaojiedian
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
@@ -3146,7 +3126,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507121073737-BbgY2abS77.download.microsoft.com
+    host: 202507121073737-vn1ZEZYzN4.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
@@ -3175,24 +3155,16 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- name: X_韩国2|@ripaojiedian
-  network: tcp
-  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  port: 6668
-  server: 3.34.189.118
-  skip-cert-verify: true
-  sni: baidu.com
-  type: trojan
 - cipher: aes-256-cfb
   name: X_🇻🇳 越南|@ripaojiedian
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.154.35
+  server: 103.186.154.37
   tfo: false
   type: ss
 - alterId: 0
   cipher: auto
-  name: X_香港v2|@ripaojiedian
+  name: 'X_香港v2|@ripaojiedian #1'
   network: kcp
   port: '63101'
   server: 47.76.160.154
@@ -3204,33 +3176,25 @@ proxies:
   cipher: auto
   name: X_日本v2|@ripaojiedian
   network: kcp
-  port: '2389'
-  server: 8.211.145.146
+  port: '56428'
+  server: 8.211.136.249
   servername: ''
   tls: false
   type: vmess
-  uuid: 9f9f395b-e9b2-4cfd-85b3-0425f0e11ad7
+  uuid: 2a37eb45-4cdd-4c2e-914e-ed2f972e4003
 proxy-groups:
 - name: 🚀 节点选择
   type: select
   proxies:
   - ♻️ 自动选择
   - DIRECT
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇧🇪_BE_比利时
-  - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇺🇦_UA_乌克兰
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  - 🇷🇺_RU_俄罗斯
-  - 🇬🇧_GB_英国->🇺🇸_US_美国
-  - 🇰🇷_KR_韩国
-  - 🇷🇺_RU_俄罗斯_1
-  - 🇷🇺_RU_俄罗斯_2
-  - 🇷🇺_RU_俄罗斯_3
   - 🇺🇸_US_美国->🇨🇳_CN_中国
+  - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
+  - 🇳🇱_NL_荷兰
+  - 🇨🇳_CN_中国->🏳️_unKnow_未知
   - 🇲🇩_MD_摩尔多瓦
-  - 🇷🇺_RU_俄罗斯_4
+  - 🇨🇳_CN_中国->🇩🇪_DE_德国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
 - name: ♻️ 自动选择
   type: url-test
   url: https://client3.google.com/generate_204
@@ -3238,102 +3202,62 @@ proxy-groups:
   tolerance: 1
   proxies:
   - 🪐 负载均衡
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇧🇪_BE_比利时
-  - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇺🇦_UA_乌克兰
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  - 🇷🇺_RU_俄罗斯
-  - 🇬🇧_GB_英国->🇺🇸_US_美国
-  - 🇰🇷_KR_韩国
-  - 🇷🇺_RU_俄罗斯_1
-  - 🇷🇺_RU_俄罗斯_2
-  - 🇷🇺_RU_俄罗斯_3
   - 🇺🇸_US_美国->🇨🇳_CN_中国
+  - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
+  - 🇳🇱_NL_荷兰
+  - 🇨🇳_CN_中国->🏳️_unKnow_未知
   - 🇲🇩_MD_摩尔多瓦
-  - 🇷🇺_RU_俄罗斯_4
+  - 🇨🇳_CN_中国->🇩🇪_DE_德国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🚀 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇧🇪_BE_比利时
-  - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇺🇦_UA_乌克兰
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  - 🇷🇺_RU_俄罗斯
-  - 🇬🇧_GB_英国->🇺🇸_US_美国
-  - 🇰🇷_KR_韩国
-  - 🇷🇺_RU_俄罗斯_1
-  - 🇷🇺_RU_俄罗斯_2
-  - 🇷🇺_RU_俄罗斯_3
   - 🇺🇸_US_美国->🇨🇳_CN_中国
+  - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
+  - 🇳🇱_NL_荷兰
+  - 🇨🇳_CN_中国->🏳️_unKnow_未知
   - 🇲🇩_MD_摩尔多瓦
-  - 🇷🇺_RU_俄罗斯_4
+  - 🇨🇳_CN_中国->🇩🇪_DE_德国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
 - name: 📲 电报信息
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇧🇪_BE_比利时
-  - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇺🇦_UA_乌克兰
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  - 🇷🇺_RU_俄罗斯
-  - 🇬🇧_GB_英国->🇺🇸_US_美国
-  - 🇰🇷_KR_韩国
-  - 🇷🇺_RU_俄罗斯_1
-  - 🇷🇺_RU_俄罗斯_2
-  - 🇷🇺_RU_俄罗斯_3
   - 🇺🇸_US_美国->🇨🇳_CN_中国
+  - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
+  - 🇳🇱_NL_荷兰
+  - 🇨🇳_CN_中国->🏳️_unKnow_未知
   - 🇲🇩_MD_摩尔多瓦
-  - 🇷🇺_RU_俄罗斯_4
+  - 🇨🇳_CN_中国->🇩🇪_DE_德国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇧🇪_BE_比利时
-  - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇺🇦_UA_乌克兰
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  - 🇷🇺_RU_俄罗斯
-  - 🇬🇧_GB_英国->🇺🇸_US_美国
-  - 🇰🇷_KR_韩国
-  - 🇷🇺_RU_俄罗斯_1
-  - 🇷🇺_RU_俄罗斯_2
-  - 🇷🇺_RU_俄罗斯_3
   - 🇺🇸_US_美国->🇨🇳_CN_中国
+  - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
+  - 🇳🇱_NL_荷兰
+  - 🇨🇳_CN_中国->🏳️_unKnow_未知
   - 🇲🇩_MD_摩尔多瓦
-  - 🇷🇺_RU_俄罗斯_4
+  - 🇨🇳_CN_中国->🇩🇪_DE_德国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇧🇪_BE_比利时
-  - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇺🇦_UA_乌克兰
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  - 🇷🇺_RU_俄罗斯
-  - 🇬🇧_GB_英国->🇺🇸_US_美国
-  - 🇰🇷_KR_韩国
-  - 🇷🇺_RU_俄罗斯_1
-  - 🇷🇺_RU_俄罗斯_2
-  - 🇷🇺_RU_俄罗斯_3
   - 🇺🇸_US_美国->🇨🇳_CN_中国
+  - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
+  - 🇳🇱_NL_荷兰
+  - 🇨🇳_CN_中国->🏳️_unKnow_未知
   - 🇲🇩_MD_摩尔多瓦
-  - 🇷🇺_RU_俄罗斯_4
+  - 🇨🇳_CN_中国->🇩🇪_DE_德国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -3356,21 +3280,13 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇧🇪_BE_比利时
-  - 🇺🇸_US_美国->🇷🇺_RU_俄罗斯
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇺🇦_UA_乌克兰
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  - 🇷🇺_RU_俄罗斯
-  - 🇬🇧_GB_英国->🇺🇸_US_美国
-  - 🇰🇷_KR_韩国
-  - 🇷🇺_RU_俄罗斯_1
-  - 🇷🇺_RU_俄罗斯_2
-  - 🇷🇺_RU_俄罗斯_3
   - 🇺🇸_US_美国->🇨🇳_CN_中国
+  - 🇨🇳_CN_中国->🇨🇦_CA_加拿大
+  - 🇳🇱_NL_荷兰
+  - 🇨🇳_CN_中国->🏳️_unKnow_未知
   - 🇲🇩_MD_摩尔多瓦
-  - 🇷🇺_RU_俄罗斯_4
+  - 🇨🇳_CN_中国->🇩🇪_DE_德国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
 - name: 🪐 负载均衡
   type: load-balance
   url: https://client3.google.com/generate_204
@@ -3601,9 +3517,8 @@ proxy-groups:
   - X_🇯🇵 日本|@ripaojiedian
   - X_🇯🇵 日本2|@ripaojiedian
   - X_日本3|@ripaojiedian
-  - X_韩国2|@ripaojiedian
   - X_🇻🇳 越南|@ripaojiedian
-  - X_香港v2|@ripaojiedian
+  - 'X_香港v2|@ripaojiedian #1'
   - X_日本v2|@ripaojiedian
 rule-providers:
   Apple:
