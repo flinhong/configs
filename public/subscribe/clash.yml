@@ -1606,74 +1606,110 @@ proxies:
     headers:
       Host: jp.laoyoutiao.link
   udp: true
+- name: X_🇺🇸_US_美国->🇩🇪_DE_德国
+  type: trojan
+  server: 63.179.32.181
+  port: 22222
+  sni: trojan.burgerip.co.uk
+  password: telegram-id-privatevpns
+  network: tcp
+  alpn:
+  - http/1.1
 - name: X_🇬🇧_GB_英国->🇺🇸_US_美国
   type: ss
   server: 51.15.17.169
   port: 989
-  password: f8f7aCzcPKbsF8p3
-  ip-version: dual
-  udp: true
   cipher: aes-256-cfb
-- name: X_🇨🇳_CN_中国->🇩🇪_DE_德国
-  type: vmess
-  server: v33.heduian.link
-  port: 30833
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  network: ws
-  sni: v33.heduian.link
-  skip-cert-verify: false
-  ws-opts:
-    path: /oooo
-    headers:
-      host: v33.heduian.link
-  ip-version: dual
-  udp: true
-  alterId: 2
-  cipher: auto
+  password: f8f7aCzcPKbsF8p3
 - name: X_🇨🇳_CN_中国->🇺🇸_US_美国
   type: vmess
-  server: v5.heduian.link
-  port: 30805
+  server: v37.heduian.link
+  port: 30837
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  cipher: auto
   network: ws
   ws-opts:
     path: /oooo
     headers:
-      host: v5.heduian.link
-  ip-version: dual
-  udp: true
+      host: v37.heduian.link
   alterId: 2
+- name: X_🇮🇷_IR_伊朗->🇩🇪_DE_德国
+  type: vmess
+  server: specxtech.ticketdatabase.info
+  port: 37610
+  sni: ''
+  uuid: 9c28e484-55ed-4756-a6dc-64a9ec7141da
   cipher: auto
-- name: X_🇲🇩_MD_摩尔多瓦
+  network: ws
+  fingerprint: ''
+  ws-opts:
+    path: /9c28e484-55ed-4756-a6dc-64a9ec7141da-vm?ed=2048
+    headers:
+      host: www.bing.com
+  alterId: 0
+- name: X_🇳🇱_NL_荷兰->🇨🇳_CN_中国
   type: ss
-  server: 185.153.197.5
-  port: 989
-  password: f8f7aCzcPKbsF8p3
-  ip-version: dual
-  udp: true
-  cipher: aes-256-cfb
-- name: X_🇬🇧_GB_英国->🇳🇱_NL_荷兰
+  server: 45.158.171.70
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: X_🇩🇪_DE_德国
   type: ss
-  server: 51.15.23.63
-  port: 989
-  password: f8f7aCzcPKbsF8p3
-  ip-version: dual
-  udp: true
-  cipher: aes-256-cfb
-- name: X_🇨🇳_CN_中国
+  server: 45.87.175.166
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: QCXDxuDlTTMD7jtgHUjIoj
+- name: X_🇨🇳_CN_中国->🇨🇦_CA_加拿大
   type: vmess
   server: v8.heduian.link
   port: 30808
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  cipher: auto
   network: ws
   ws-opts:
     path: /oooo
     headers:
       host: v8.heduian.link
-  ip-version: dual
-  udp: true
   alterId: 2
-  cipher: auto
+- name: X_🇲🇩_MD_摩尔多瓦
+  type: ss
+  server: 185.153.197.5
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: X_🇫🇷_FR_法国
+  type: trojan
+  server: 35.181.158.77
+  port: 22222
+  sni: trojan.burgerip.co.uk
+  password: telegram-id-privatevpns
+  network: tcp
+  alpn:
+  - http/1.1
+- name: X_🇬🇧_GB_英国
+  type: trojan
+  server: stirring-parakeet.shiner427.skin
+  port: 443
+  password: '74260628090146500'
+  network: tcp
+- name: X_🇯🇴_JO_约旦
+  type: trojan
+  server: huge-turkey.shiner427.skin
+  port: 443
+  password: '74260628090146500'
+  network: tcp
+- name: X_🇩🇪_DE_德国
+  type: ss
+  server: 45.87.175.69
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: X_🇮🇷_IR_伊朗
+  type: ss
+  server: 151.242.251.131
+  port: 8080
+  cipher: chacha20-ietf-poly1305
+  password: QCXDxuDlTTMD7jtgHUjIoj
 - alterId: 64
   cipher: auto
   name: X_🇯🇵1 |  1.8MB/s|54%|Youtube|Ope...
@@ -2134,12 +2170,19 @@ proxy-groups:
   - X_US_speednode_0128
   - X_ZA_speednode_0131
   - X_ZA_speednode_0132
+  - X_🇺🇸_US_美国->🇩🇪_DE_德国
   - X_🇬🇧_GB_英国->🇺🇸_US_美国
-  - X_🇨🇳_CN_中国->🇩🇪_DE_德国
   - X_🇨🇳_CN_中国->🇺🇸_US_美国
+  - X_🇮🇷_IR_伊朗->🇩🇪_DE_德国
+  - X_🇳🇱_NL_荷兰->🇨🇳_CN_中国
+  - X_🇩🇪_DE_德国
+  - X_🇨🇳_CN_中国->🇨🇦_CA_加拿大
   - X_🇲🇩_MD_摩尔多瓦
-  - X_🇬🇧_GB_英国->🇳🇱_NL_荷兰
-  - X_🇨🇳_CN_中国
+  - X_🇫🇷_FR_法国
+  - X_🇬🇧_GB_英国
+  - X_🇯🇴_JO_约旦
+  - X_🇩🇪_DE_德国
+  - X_🇮🇷_IR_伊朗
   - X_🇯🇵1 |  1.8MB/s|54%|Youtube|Ope...
   - X_🌀3-SK |  5.0MB/s|0%|Youtube|Op...
   - X_🇸🇬1 |  1.0MB/s|0%|Netflix|Disn...
