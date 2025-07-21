@@ -5387,15 +5387,22 @@ proxies:
   name: X_🇭🇰 香港3|@ripaojiedian
   port: 59056
   server: 38.147.188.53
-  skip-cert-verify: false
+  skip-cert-verify: true
   tfo: false
   tls: false
   type: vmess
   uuid: d028918e-b508-456f-8139-d5022f91a36c
-- name: X_香港4|@ripaojiedian
-  network: tcp
+- name: X_🇭🇰 香港4|@ripaojiedian
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 14495
+  server: 36.151.251.7
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- name: X_香港5|@ripaojiedian
+  network: tcp
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 2078
   server: 36.151.192.62
   skip-cert-verify: true
   sni: www.baidu.com
@@ -5434,14 +5441,6 @@ proxies:
   server: 137.220.191.40
   tfo: false
   type: ss
-- name: X_日本3|@ripaojiedian
-  network: tcp
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 41225
-  server: 36.151.192.239
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
 - alterId: 0
   cipher: auto
   name: X_香港v2|@ripaojiedian
@@ -5452,6 +5451,14 @@ proxies:
   tls: false
   type: vmess
   uuid: ba47c516-0c18-49d5-9548-6370c835e163
+- name: X_日本3|@ripaojiedian
+  network: tcp
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 41225
+  server: 36.151.192.239
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
 - alterId: 0
   cipher: auto
   name: X_日本v2|@ripaojiedian
@@ -5938,12 +5945,13 @@ proxy-groups:
   - X_香港|@ripaojiedian
   - X_🇭🇰 香港2|@ripaojiedian
   - X_🇭🇰 香港3|@ripaojiedian
-  - X_香港4|@ripaojiedian
+  - X_🇭🇰 香港4|@ripaojiedian
+  - X_香港5|@ripaojiedian
   - X_台湾|@ripaojiedian
   - X_🇯🇵 日本|@ripaojiedian
   - X_🇯🇵 日本2|@ripaojiedian
-  - X_日本3|@ripaojiedian
   - X_香港v2|@ripaojiedian
+  - X_日本3|@ripaojiedian
   - X_日本v2|@ripaojiedian
 rule-providers:
   Apple:
