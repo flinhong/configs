@@ -5433,19 +5433,10 @@ proxies:
   server: 137.220.191.40
   tfo: false
   type: ss
-- name: X_日本3|@ripaojiedian
-  network: tcp
+- name: X_🇯🇵 日本3|@ripaojiedian
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 443
-  server: 172.238.14.135
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-- name: X_日本4|@ripaojiedian
-  network: tcp
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 443
-  server: 172.237.27.220
+  server: 172.104.114.51
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
@@ -5515,6 +5506,22 @@ proxies:
   tls: false
   type: vmess
   uuid: 97a3cf03-66d6-4d65-aa3e-33eb6c709be7
+- name: X_日本3|@ripaojiedian
+  network: tcp
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 443
+  server: 172.238.14.135
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- name: X_日本4|@ripaojiedian
+  network: tcp
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 443
+  server: 172.237.27.220
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
 - alterId: 0
   cipher: auto
   name: X_日本v2|@ripaojiedian
@@ -6004,8 +6011,7 @@ proxy-groups:
   - X_香港4|@ripaojiedian
   - X_🇯🇵 日本|@ripaojiedian
   - X_🇯🇵 日本2|@ripaojiedian
-  - X_日本3|@ripaojiedian
-  - X_日本4|@ripaojiedian
+  - X_🇯🇵 日本3|@ripaojiedian
   - X_🇯🇵 日本5|@ripaojiedian
   - X_韩国|@ripaojiedian
   - X_新加坡2|@ripaojiedian
@@ -6013,6 +6019,8 @@ proxy-groups:
   - X_🇺🇸 美国|@ripaojiedian
   - X_美国4|@ripaojiedian
   - X_香港v2|@ripaojiedian
+  - X_日本3|@ripaojiedian
+  - X_日本4|@ripaojiedian
   - X_日本v2|@ripaojiedian
 rule-providers:
   Apple:
