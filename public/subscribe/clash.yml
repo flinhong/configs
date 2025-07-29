@@ -44,63 +44,19 @@ tun:
   - 1.1.1.1
   - 1.0.0.1
 proxies:
-- name: 🇰🇷_KR_韩国
-  type: ss
-  server: p222.panda001.net
-  port: 15098
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇩🇰_DK_丹麦->🇺🇸_US_美国
+- name: 🇺🇸_US_美国
   type: vmess
-  server: fastcup.net
-  port: 80
-  uuid: 9c67ebbe-d620-4b6d-ad82-1ebc675e22c6
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /profile/telegram@ssrsub
-    headers:
-      host: cdn-node-oss-99.paofu.de
-  alterId: 0
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  type: vmess
-  server: v8.heduian.link
-  port: 30808
+  server: 108.165.216.241
+  port: 8880
   sni: ''
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
   cipher: auto
   network: ws
   skip-cert-verify: true
   ws-opts:
-    path: /oooo
+    path: /dabai.in
     headers:
-      host: v8.heduian.link
-  alterId: 2
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  type: ss
-  server: pr.fastsoonlink.com
-  port: 40030
-  cipher: chacha20-ietf-poly1305
-  password: ae6e933b-8874-4bf4-a384-0de216ef2bf4
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  type: vmess
-  server: v29.heduian.link
-  port: 30829
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /oooo
-    headers:
-      host: ocbc.com
-  alterId: 2
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_3
-  type: vmess
-  server: 0916af88-t064g0-t1l1nh-d6ar.77.iwskwai.com
-  port: 3686
-  uuid: a16d62f6-048d-11f0-af5a-f23c93136cb3
-  cipher: auto
-  network: tcp
+      host: TG.WangCai2.s2.db-link02.top
   alterId: 0
 - name: 🇲🇩_MD_摩尔多瓦
   type: ss
@@ -108,6 +64,32 @@ proxies:
   port: 989
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
+- name: 🇲🇩_MD_摩尔多瓦_1
+  type: ss
+  server: 91.132.94.200
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: 🇯🇵_JP_日本->🇺🇸_US_美国
+  type: vmess
+  server: 103.116.7.241
+  port: 8880
+  sni: ''
+  uuid: 248be52b-35d9-34cb-9b73-e12b78bc1301
+  cipher: auto
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /dabai.in
+    headers:
+      host: TG.WangCai2.s2.db-link02.top
+  alterId: 0
+- name: 🇺🇦_UA_乌克兰
+  type: ss
+  server: switcher-nick-croquet.freesocks.work
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: 9tqhMdIrTkgQ46PvhyAtMH
 - name: X_AE_speednode_0001
   server: 94.140.0.156
   port: 8880
@@ -5410,37 +5392,27 @@ proxies:
 - alterId: 0
   cipher: auto
   name: X_🇭🇰 香港3|@ripaojiedian
-  port: 42203
-  server: 103.224.80.29
+  port: 11745
+  server: 38.147.188.250
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 89e3bb59-bf63-4346-9864-cbc79cee58a5
+  uuid: aee65b36-ac1a-428b-8da3-dae88195e47f
 - name: X_香港4|@ripaojiedian
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 2078
-  server: 36.151.192.238
+  port: 3221
+  server: 36.151.192.243
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: X_🇭🇰 香港6|@ripaojiedian
-  port: 49597
-  server: 103.181.165.26
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: rc4-md5
   name: X_🇯🇵 日本|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507022251291-d01YttPsbj.download.microsoft.com
+    host: 202507282137611-JtmNFkb3wi.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
@@ -5464,27 +5436,47 @@ proxies:
 - name: X_日本3|@ripaojiedian
   network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 40937
-  server: 36.151.251.7
+  port: 443
+  server: 172.238.14.135
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: X_日本5|@ripaojiedian
+- name: X_日本4|@ripaojiedian
+  network: tcp
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 443
+  server: 172.237.27.220
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- name: X_🇯🇵 日本5|@ripaojiedian
   network: ws
-  port: '8080'
-  server: 47.79.94.25
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: b36d992c-786b-4136-96d6-c37641207d47
+  password: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
+  port: 20230
+  server: jp006.421421.xyz
+  skip-cert-verify: true
+  sni: www.alibaba.com
+  type: trojan
   ws-opts:
     headers:
-      Host: ''
+      Host: www.alibaba.com
     path: /
+- name: X_韩国|@ripaojiedian
+  network: tcp
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 16003
+  server: 36.151.195.111
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
+- name: X_新加坡2|@ripaojiedian
+  network: tcp
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 443
+  server: 178.128.106.216
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
 - name: X_新加坡3|@ripaojiedian
   network: tcp
   password: 92435aa8-f3b6-466a-ad58-c55cbb6d2acf
@@ -5493,13 +5485,26 @@ proxies:
   skip-cert-verify: false
   sni: sg.mjt000.com
   type: trojan
-- cipher: aes-256-gcm
-  name: X_🇺🇸 美国|@ripaojiedian
-  password: vGCBLG1SUe7YdXI1fPhdsA==
-  port: 36529
-  server: jpiplc.deuen.com
-  tfo: false
-  type: ss
+- name: X_🇺🇸 美国|@ripaojiedian
+  network: ws
+  password: 7248e825-887c-48b9-83bc-c26bc6392bf8
+  port: 443
+  server: 172.67.214.21
+  skip-cert-verify: false
+  sni: xXcdvFgt.191268.XYz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: xXcdvFgt.191268.XYz
+    path: /ctdmgeIg3NII3ibrzzKXJGy3S1
+- name: X_美国4|@ripaojiedian
+  network: tcp
+  password: d0d08cddacc3190ea81b1b792e1b5fde
+  port: 443
+  server: 174.138.85.53
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
 - alterId: 0
   cipher: auto
   name: X_香港v2|@ripaojiedian
@@ -5526,13 +5531,11 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - DIRECT
-  - 🇰🇷_KR_韩国
-  - 🇩🇰_DK_丹麦->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - 🇺🇸_US_美国
   - 🇲🇩_MD_摩尔多瓦
+  - 🇲🇩_MD_摩尔多瓦_1
+  - 🇯🇵_JP_日本->🇺🇸_US_美国
+  - 🇺🇦_UA_乌克兰
 - name: ♻️ 自动选择
   type: url-test
   url: https://client3.google.com/generate_204
@@ -5540,62 +5543,52 @@ proxy-groups:
   tolerance: 1
   proxies:
   - 🪐 负载均衡
-  - 🇰🇷_KR_韩国
-  - 🇩🇰_DK_丹麦->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - 🇺🇸_US_美国
   - 🇲🇩_MD_摩尔多瓦
+  - 🇲🇩_MD_摩尔多瓦_1
+  - 🇯🇵_JP_日本->🇺🇸_US_美国
+  - 🇺🇦_UA_乌克兰
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🚀 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇰🇷_KR_韩国
-  - 🇩🇰_DK_丹麦->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - 🇺🇸_US_美国
   - 🇲🇩_MD_摩尔多瓦
+  - 🇲🇩_MD_摩尔多瓦_1
+  - 🇯🇵_JP_日本->🇺🇸_US_美国
+  - 🇺🇦_UA_乌克兰
 - name: 📲 电报信息
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇰🇷_KR_韩国
-  - 🇩🇰_DK_丹麦->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - 🇺🇸_US_美国
   - 🇲🇩_MD_摩尔多瓦
+  - 🇲🇩_MD_摩尔多瓦_1
+  - 🇯🇵_JP_日本->🇺🇸_US_美国
+  - 🇺🇦_UA_乌克兰
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇰🇷_KR_韩国
-  - 🇩🇰_DK_丹麦->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - 🇺🇸_US_美国
   - 🇲🇩_MD_摩尔多瓦
+  - 🇲🇩_MD_摩尔多瓦_1
+  - 🇯🇵_JP_日本->🇺🇸_US_美国
+  - 🇺🇦_UA_乌克兰
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇰🇷_KR_韩国
-  - 🇩🇰_DK_丹麦->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - 🇺🇸_US_美国
   - 🇲🇩_MD_摩尔多瓦
+  - 🇲🇩_MD_摩尔多瓦_1
+  - 🇯🇵_JP_日本->🇺🇸_US_美国
+  - 🇺🇦_UA_乌克兰
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -5618,13 +5611,11 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇰🇷_KR_韩国
-  - 🇩🇰_DK_丹麦->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
+  - 🇺🇸_US_美国
   - 🇲🇩_MD_摩尔多瓦
+  - 🇲🇩_MD_摩尔多瓦_1
+  - 🇯🇵_JP_日本->🇺🇸_US_美国
+  - 🇺🇦_UA_乌克兰
 - name: 🪐 负载均衡
   type: load-balance
   url: https://client3.google.com/generate_204
@@ -6011,13 +6002,16 @@ proxy-groups:
   - X_🇭🇰 香港2|@ripaojiedian
   - X_🇭🇰 香港3|@ripaojiedian
   - X_香港4|@ripaojiedian
-  - X_🇭🇰 香港6|@ripaojiedian
   - X_🇯🇵 日本|@ripaojiedian
   - X_🇯🇵 日本2|@ripaojiedian
   - X_日本3|@ripaojiedian
-  - X_日本5|@ripaojiedian
+  - X_日本4|@ripaojiedian
+  - X_🇯🇵 日本5|@ripaojiedian
+  - X_韩国|@ripaojiedian
+  - X_新加坡2|@ripaojiedian
   - X_新加坡3|@ripaojiedian
   - X_🇺🇸 美国|@ripaojiedian
+  - X_美国4|@ripaojiedian
   - X_香港v2|@ripaojiedian
   - X_日本v2|@ripaojiedian
 rule-providers:
