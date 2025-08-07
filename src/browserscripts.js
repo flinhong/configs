@@ -29,7 +29,7 @@ ${versionInformation(version)}
 
 ${sites
     .map((site) => {
-        return `// @match        *://${site.domain}/*\r\n// @resource     css_${site.domain.replace("*.", "").replace(".com", "").replace(".co.uk", "").replace("www.", "")}\thttps://pub.cdn.honglin.ac.cn/statically/gh/flinhong/configs/main/public/styles/${site.css}`
+        return `// @match        *://${site.domain}/*\r\n// @resource     css_${site.domain.replace("*.", "").replace(".com", "").replace(".co.uk", "").replace("www.", "")}\thttps://cdn.honglin.ac.cn/statically/gh/flinhong/configs/main/public/styles/${site.css}`
     })
     .join("\r\n")}
 
