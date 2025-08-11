@@ -1,0 +1,21 @@
+:root {
+  --font-sans:
+    "Outfit", "Noto Serif SC", "Microsoft YaHei UI", sans-serif !important;
+  --font-mono:
+    "IBM Plex Mono", "Noto Serif SC", "Microsoft YaHei UI", monospace !important;
+  --font-serif:
+    "Crimson Text", "Noto Serif SC", "Microsoft YaHei UI", serif !important;
+}
+
+// chatgpt.com
+body[data-domain="chatgpt.com"] {
+  body,
+  html {
+    font-family: var(--font-sans);
+  }
+
+  code,
+  pre {
+    font-family: var(--font-mono);
+  }
+}
