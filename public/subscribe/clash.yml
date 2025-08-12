@@ -2531,32 +2531,17 @@ proxies:
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 31676725-b0fd-fed2-c857-2da8ce5a6e4f
+  uuid: 5dc6fa05-a601-aba6-7761-ecde22d2b0fc
   ws-opts:
     headers:
-      Host: hkt.gotochinatown.net
+      Host: broadcastlv.chat.bilibili.com
     path: /
-- name: X_香港5|@ripaojiedian
-  network: tcp
-  password: c7a5a064-ac05-44ea-a449-0c0c7cae19f7
-  port: 36026
-  server: 106.53.211.194
-  skip-cert-verify: true
-  type: trojan
-- name: X_香港8|@ripaojiedian
-  network: tcp
-  password: f60cd513-7b83-4b64-936c-f7e88e95dacd
-  port: 9231
-  server: 120.240.118.142
-  skip-cert-verify: true
-  sni: origin-a.akamaihd.net
-  type: trojan
 - cipher: rc4-md5
   name: X_🇯🇵 日本|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507282137611-tUM6KYmbwV.download.microsoft.com
+    host: 202507282137611-8jPSOxErXG.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
@@ -2585,11 +2570,10 @@ proxies:
   type: trojan
 - alterId: 2
   cipher: auto
-  name: X_日本6|@ripaojiedian
+  name: X_🇯🇵 日本5|@ripaojiedian
   network: ws
-  port: '30806'
+  port: 30806
   server: v6.heduian.link
-  servername: ''
   skip-cert-verify: false
   tls: false
   type: vmess
@@ -2599,19 +2583,23 @@ proxies:
       Host: ocbc.com
     path: /oooo
 - cipher: chacha20-ietf-poly1305
+  name: X_🇯🇵 日本6|@ripaojiedian
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: 9898
+  server: 52.199.211.144
+  type: ss
+- cipher: chacha20-ietf-poly1305
   name: X_🇰🇷 韩国|@ripaojiedian
   password: feafc2ef-d5fd-4f6d-803b-fad4a5cc1f0e
   port: 19852
   server: mm.huawei-api.top
   type: ss
-- name: X_新加坡3|@ripaojiedian
-  network: tcp
-  password: f60cd513-7b83-4b64-936c-f7e88e95dacd
-  port: 8233
-  server: 120.240.118.187
-  skip-cert-verify: true
-  sni: steamcdn-a.akamaihd.net
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: X_🇰🇷 韩国2|@ripaojiedian
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: 9898
+  server: 43.201.7.128
+  type: ss
 - name: X_🇺🇸 美国|@ripaojiedian
   network: ws
   password: 7248e825-887c-48b9-83bc-c26bc6392bf8
@@ -2634,15 +2622,6 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: X_🇲🇾 马来西亚|@ripaojiedian
-  port: 10004
-  server: manager.gghbjnjbff.shop
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: d54e3755-daf5-4aa0-b423-c62bde1a67ae
-- alterId: 0
-  cipher: auto
   name: X_香港v2|@ripaojiedian
   network: kcp
   port: '5225'
@@ -2653,7 +2632,7 @@ proxies:
   uuid: e64f666d-4b75-473b-9cc2-aaf6f0bf0e33
 - alterId: 0
   cipher: auto
-  name: X_日本v2|@ripaojiedian
+  name: 'X_日本v2|@ripaojiedian #1'
   network: kcp
   port: '37257'
   server: 47.74.57.10
@@ -2940,19 +2919,17 @@ proxy-groups:
   - X_香港|@ripaojiedian
   - X_🇭🇰 香港2|@ripaojiedian
   - X_香港3|@ripaojiedian
-  - X_香港5|@ripaojiedian
-  - X_香港8|@ripaojiedian
   - X_🇯🇵 日本|@ripaojiedian
   - X_🇯🇵 日本2|@ripaojiedian
   - X_日本3|@ripaojiedian
-  - X_日本6|@ripaojiedian
+  - X_🇯🇵 日本5|@ripaojiedian
+  - X_🇯🇵 日本6|@ripaojiedian
   - X_🇰🇷 韩国|@ripaojiedian
-  - X_新加坡3|@ripaojiedian
+  - X_🇰🇷 韩国2|@ripaojiedian
   - X_🇺🇸 美国|@ripaojiedian
   - X_美国4|@ripaojiedian
-  - X_🇲🇾 马来西亚|@ripaojiedian
   - X_香港v2|@ripaojiedian
-  - X_日本v2|@ripaojiedian
+  - 'X_日本v2|@ripaojiedian #1'
 rule-providers:
   Apple:
     type: http
