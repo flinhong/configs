@@ -44,18 +44,12 @@ tun:
   - 1.1.1.1
   - 1.0.0.1
 proxies:
-- name: 🇷🇺_RU_俄罗斯
-  type: ss
-  server: 185.231.233.112
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🇪🇸_ES_西班牙->🇺🇸_US_美国
+- name: 🇮🇷_IR_伊朗->🇺🇸_US_美国
   type: vmess
-  server: s3.ipyar.org
-  port: 32020
+  server: 91.99.2.86
+  port: 8880
   sni: ''
-  uuid: 78b4fb57-39d7-4e9d-dd38-c9a38322bcb2
+  uuid: 4c467080-3301-470e-b99b-2a7202039f7e
   cipher: auto
   network: tcp
   fingerprint: ''
@@ -72,27 +66,14 @@ proxies:
   ws-opts:
     path: /oooo
     headers:
-      host: v29.heduian.link
+      host: ocbc.com
   alterId: 2
-- name: 🇸🇪_SE_瑞典
+- name: 🇷🇺_RU_俄罗斯
   type: ss
-  server: 192.71.166.100
-  port: 989
-  cipher: aes-256-cfb
-  password: f8f7aCzcPKbsF8p3
-- name: 🇺🇸_US_美国_1
-  type: vmess
-  server: www.speedtest.net
-  port: 80
-  sni: ''
-  uuid: 3d76ac40-80c4-11f0-b432-205c6d5f5d78
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /b87r3d9e
-    headers:
-      host: zula.ir.eu-2.hihu.net
-  alterId: 0
+  server: 81.177.214.214
+  port: 443
+  cipher: chacha20-ietf-poly1305
+  password: aObvLFQBhTQ1
 - name: X_AE_speednode_0001
   server: 103.245.229.63
   port: 8880
@@ -1386,37 +1367,49 @@ proxies:
   server: 103.103.245.158
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: X_🇭🇰 香港3|@ripaojiedian
-  port: 14951
-  server: 103.224.80.79
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 8f5f6bb6-115f-4736-b36c-479da6636106
+- name: X_香港3|@ripaojiedian
+  network: tcp
+  password: 0042a837-cf5e-4d00-b31a-460677e68b6f
+  port: 12221
+  server: hxkad246454.nkrpjj.cn
+  skip-cert-verify: true
+  sni: nkrpjj.cn
+  type: trojan
 - name: X_香港4|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 28865
-  server: 36.156.102.116
+  port: 6928
+  server: 223.111.144.13
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
 - name: X_香港6|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 51281
-  server: 36.151.251.45
+  port: 443
+  server: 3.112.225.166
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
+  name: X_🇹🇼 台湾|@ripaojiedian
+  password: 9c148944-7bca-4ed3-96a4-514d874226e8
+  port: 10149
+  server: 36.232.83.98
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
   name: X_🇹🇼 台湾2|@ripaojiedian
-  password: ae223226-ead3-450c-b4dc-803072b2decb
-  port: 10145
-  server: 125.228.162.233
+  password: b12d7bef-dbe6-4eca-bc40-9a2333dcf918
+  port: 10105
+  server: 125.228.34.244
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: X_🇹🇼 台湾3|@ripaojiedian
+  password: ad14ac91-6101-4888-9d17-ca11150d823e
+  port: 10034
+  server: 1.165.98.202
   tfo: false
   type: ss
 - cipher: rc4-md5
@@ -1424,7 +1417,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202508150964186-s7f2G9IKUT.download.microsoft.com
+    host: 202508150964186-fU2HxC1HnE.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
@@ -1445,22 +1438,14 @@ proxies:
   server: 137.220.191.40
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: X_美国|@ripaojiedian
-  network: ws
-  port: '443'
-  server: ssssssssssssfffffffgh.2032.pp.ua
-  servername: ssssssssssssfffffffgh.2032.pp.ua
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  uuid: 4174b95d-115e-4d39-add6-1f8db95bb860
-  ws-opts:
-    headers:
-      Host: ssssssssssssfffffffgh.2032.pp.ua
-    path: /6We3U9Df1WGxgFnoFPw1
+- name: X_日本3|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 40950
+  server: 43.199.63.145
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
 - alterId: 0
   cipher: auto
   name: X_香港v2|@ripaojiedian
@@ -1481,17 +1466,29 @@ proxies:
   tls: false
   type: vmess
   uuid: cb774883-1c2f-4b8a-8637-828f356e0c76
+- alterId: 0
+  cipher: auto
+  name: X_美国|@ripaojiedian
+  network: ws
+  port: '443'
+  server: ssssssssssssfffffffgh.2032.pp.ua
+  servername: ssssssssssssfffffffgh.2032.pp.ua
+  tls: true
+  type: vmess
+  uuid: 4174b95d-115e-4d39-add6-1f8db95bb860
+  ws-opts:
+    headers:
+      Host: ssssssssssssfffffffgh.2032.pp.ua
+    path: /6We3U9Df1WGxgFnoFPw1
 proxy-groups:
 - name: 🚀 节点选择
   type: select
   proxies:
   - ♻️ 自动选择
   - DIRECT
-  - 🇷🇺_RU_俄罗斯
-  - 🇪🇸_ES_西班牙->🇺🇸_US_美国
+  - 🇮🇷_IR_伊朗->🇺🇸_US_美国
   - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇸🇪_SE_瑞典
-  - 🇺🇸_US_美国_1
+  - 🇷🇺_RU_俄罗斯
 - name: ♻️ 自动选择
   type: url-test
   url: https://client3.google.com/generate_204
@@ -1499,52 +1496,42 @@ proxy-groups:
   tolerance: 1
   proxies:
   - 🪐 负载均衡
-  - 🇷🇺_RU_俄罗斯
-  - 🇪🇸_ES_西班牙->🇺🇸_US_美国
+  - 🇮🇷_IR_伊朗->🇺🇸_US_美国
   - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇸🇪_SE_瑞典
-  - 🇺🇸_US_美国_1
+  - 🇷🇺_RU_俄罗斯
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🚀 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇷🇺_RU_俄罗斯
-  - 🇪🇸_ES_西班牙->🇺🇸_US_美国
+  - 🇮🇷_IR_伊朗->🇺🇸_US_美国
   - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇸🇪_SE_瑞典
-  - 🇺🇸_US_美国_1
+  - 🇷🇺_RU_俄罗斯
 - name: 📲 电报信息
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇷🇺_RU_俄罗斯
-  - 🇪🇸_ES_西班牙->🇺🇸_US_美国
+  - 🇮🇷_IR_伊朗->🇺🇸_US_美国
   - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇸🇪_SE_瑞典
-  - 🇺🇸_US_美国_1
+  - 🇷🇺_RU_俄罗斯
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇷🇺_RU_俄罗斯
-  - 🇪🇸_ES_西班牙->🇺🇸_US_美国
+  - 🇮🇷_IR_伊朗->🇺🇸_US_美国
   - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇸🇪_SE_瑞典
-  - 🇺🇸_US_美国_1
+  - 🇷🇺_RU_俄罗斯
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇷🇺_RU_俄罗斯
-  - 🇪🇸_ES_西班牙->🇺🇸_US_美国
+  - 🇮🇷_IR_伊朗->🇺🇸_US_美国
   - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇸🇪_SE_瑞典
-  - 🇺🇸_US_美国_1
+  - 🇷🇺_RU_俄罗斯
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -1567,11 +1554,9 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇷🇺_RU_俄罗斯
-  - 🇪🇸_ES_西班牙->🇺🇸_US_美国
+  - 🇮🇷_IR_伊朗->🇺🇸_US_美国
   - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇸🇪_SE_瑞典
-  - 🇺🇸_US_美国_1
+  - 🇷🇺_RU_俄罗斯
 - name: 🪐 负载均衡
   type: load-balance
   url: https://client3.google.com/generate_204
@@ -1673,15 +1658,18 @@ proxy-groups:
   - X_防范境外势力渗透
   - X_香港|@ripaojiedian
   - X_🇭🇰 香港2|@ripaojiedian
-  - X_🇭🇰 香港3|@ripaojiedian
+  - X_香港3|@ripaojiedian
   - X_香港4|@ripaojiedian
   - X_香港6|@ripaojiedian
+  - X_🇹🇼 台湾|@ripaojiedian
   - X_🇹🇼 台湾2|@ripaojiedian
+  - X_🇹🇼 台湾3|@ripaojiedian
   - X_🇯🇵 日本|@ripaojiedian
   - X_🇯🇵 日本2|@ripaojiedian
-  - X_美国|@ripaojiedian
+  - X_日本3|@ripaojiedian
   - X_香港v2|@ripaojiedian
   - X_日本v2|@ripaojiedian
+  - X_美国|@ripaojiedian
 rule-providers:
   Apple:
     type: http
