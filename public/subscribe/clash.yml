@@ -63,38 +63,134 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: 1112935345BtgV5PDHVww
 - name: X_CN_speednode_0001
-  server: gzyd.cg.xxality.cn
-  port: 35000
+  server: v6.heduian.link
+  port: 30806
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /oooo
+    headers:
+      Host: ocbc.com
+  udp: true
+- name: X_CN_speednode_0002
+  server: awes35lesl.blhao0o.dpdns.org
+  port: 12006
+  type: ss
+  cipher: aes-128-gcm
+  password: 01721e43-5389-4f97-b21c-900abb2bda9e
+  udp: true
+- name: X_CN_speednode_0003
+  server: v24.heduian.link
+  port: 30824
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /oooo
+    headers:
+      Host: v24.heduian.link
+  udp: true
+- name: X_CN_speednode_0004
+  server: v8.heduian.link
+  port: 30808
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /oooo
+    headers:
+      Host: baidu.com
+  udp: true
+- name: X_CN_speednode_0005
+  server: v30.heduian.link
+  port: 30830
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /oooo
+    headers:
+      Host: ocbc.com
+  udp: true
+- name: X_CY_speednode_0007
+  server: vpnhub.shop
+  port: 8443
   type: vless
-  uuid: 5c1bf6a3-d378-45c8-b1fa-f94a256380cf
+  uuid: 714d0dcd-17f8-4495-ba35-5f04d2d92c0f
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: www.apple.com
+  reality-opts:
+    public-key: EJKcPSl0dv7mtU26gg6tUmKPw_aDvO2AHraRgNn6B14
+    short-id: 425ba80cd1a821a8
+  udp: true
+- name: X_DE_speednode_0008
+  server: deu246.bypassall.org
+  port: 443
+  type: vless
+  uuid: b4b8aa1f-77d2-4851-a5a4-f78886f3e997
   flow: xtls-rprx-vision
   tls: true
   skip-cert-verify: false
   client-fingerprint: chrome
-  servername: cggb.hysality.com
-  udp: true
-- name: X_GB_speednode_0002
-  server: 158.41.110.94
-  port: 34045
-  type: vless
-  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+  servername: www.bing.com
   reality-opts:
-    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-    short-id: e8ab71d0
+    public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
   udp: true
-- name: X_HK_speednode_0003
-  server: 0a5eba5f-sx15s0-t1bnjq-1krtb.hkt.cdnhuawei.com
-  port: 8443
-  type: http
-  username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  password: <password>
-  tls: true
+- name: X_HK_speednode_0009
+  server: 203.184.246.7
+  port: 24229
+  type: vmess
+  uuid: 50b9297e-c728-46c0-de4b-36ddf8948007
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
   udp: true
-- name: X_IR_speednode_0006
+- name: X_HK_speednode_0010
+  server: 203.184.246.211
+  port: 51043
+  type: vmess
+  uuid: c05b241c-0de2-4959-b3a0-ec3df5bfda99
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_HK_speednode_0011
+  server: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
+  port: 80
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: c004e6fe-t1i9s0-tm53cm-1ol97.hkt.tcpbbr.net
+  udp: true
+- name: X_IR_speednode_0012
   server: fina.iranbuildings.com
   port: 8444
   type: vless
@@ -111,196 +207,172 @@ proxies:
       Host:
       - speedtest.net
   udp: true
-- name: X_IR_speednode_0007
-  server: hybrid.arvancloud.online
-  port: 44443
+- name: X_IR_speednode_0013
+  server: cdn28.saloonak.ir
+  port: 8443
   type: vless
-  uuid: 53fff6cc-b4ec-43e8-ade5-e0c42972fc33
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: www.speedtest.net
-  reality-opts:
-    public-key: XHjKkrNBYXOaamOx8IUCrwX0zp5dAQRVErHiQ5bwAEQ
-  udp: true
-- name: X_KR_speednode_0010
-  server: 1.177.49.132
-  port: 50000
-  type: vless
-  uuid: 689e5c9c-3c97-4eaf-9716-287dffa6afe0
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: random
-  servername: test1.testspeed.sbs
-  network: ws
-  ws-opts:
-    path: /proxyip=1.177.49.132:50000
-    headers:
-      Host: test1.testspeed.sbs
-  udp: true
-- name: X_NL_speednode_0011
-  server: 45.149.12.26
-  port: 2095
-  type: vless
-  uuid: 85b82e66-e9cb-49c7-be5b-81b3ae1bda90
+  uuid: 789d4f30-c31b-4762-8116-ed42574d5e85
   tls: false
   skip-cert-verify: false
-  servername: mehdiama.vpntestvpn794.workers.dev
-  network: ws
-  ws-opts:
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-    headers:
-      Host: mehdiama.vpntestvpn794.workers.dev
   udp: true
-- name: X_NL_speednode_0012
-  server: Holn.xmonys.com
-  port: 625
-  type: vless
-  uuid: 6c8f15df-cd15-4002-abfd-3902ceffb5b9
+- name: X_JP_speednode_0014
+  server: 103.13.19.254
+  port: 50414
+  type: vmess
+  uuid: aacec49a-c6eb-43a0-b14a-e3b4302e5f1a
+  alterId: 0
+  cipher: auto
   tls: false
   skip-cert-verify: false
-  servername: zhaket.com
-  network: http
-  http-opts:
-    method: GET
-    path:
-    - /
-    headers:
-      Host:
-      - zhaket.com
   udp: true
-- name: X_NL_speednode_0013
-  server: 45.149.12.166
-  port: 8880
-  type: vless
-  uuid: 85b82e66-e9cb-49c7-be5b-81b3ae1bda90
+- name: X_SG_speednode_0015
+  server: 159.65.8.30
+  port: 45029
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: YSYPIIGxFOHX0FeSKAr637
+  udp: true
+- name: X_SG_speednode_0016
+  server: 165.22.248.174
+  port: 26714
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: rawFyLwFfDQDAaWOAwhYek
+  udp: true
+- name: X_TW_speednode_0017
+  server: 165.154.195.38
+  port: 35034
+  type: vmess
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
   tls: false
   skip-cert-verify: false
-  servername: mehdiama.vpntestvpn794.workers.dev
-  network: ws
-  ws-opts:
-    path: /@AZARBAYJAB1@AZARBAYJAB1@AZARBAYJAB1?ed=2560
-    headers:
-      Host: mehdiama.vpntestvpn794.workers.dev
   udp: true
-- name: X_SE_speednode_0014
-  server: 185.36.145.227
-  port: 8888
-  type: vless
-  uuid: 48b81d34-df01-4c94-9e34-0ccb4c40c547
+- name: X_US_speednode_0018
+  server: 64.81.33.196
+  port: 15988
+  type: vmess
+  uuid: 8ec3bede-e979-4063-bdab-034fbd16f7f7
+  alterId: 0
+  cipher: auto
   tls: false
   skip-cert-verify: false
-  servername: speedtest.net
-  network: http
-  http-opts:
-    method: GET
-    path:
-    - /
-    headers:
-      Host:
-      - speedtest.net
+  udp: true
+- name: X_US_speednode_0019
+  server: 64.81.34.113
+  port: 31971
+  type: vmess
+  uuid: 983abe73-28fd-4ce5-cee8-dcce8e56d71a
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
   udp: true
 - name: X_US_speednode_0020
-  server: uk.hotspoto.news
-  port: 625
-  type: vless
-  uuid: 6c8f15df-cd15-4002-abfd-3902ceffb5b9
+  server: 64.81.33.109
+  port: 46611
+  type: vmess
+  uuid: 363d7952-cd0f-41df-be8a-386a64e15f8b
+  alterId: 0
+  cipher: auto
   tls: false
   skip-cert-verify: false
-  servername: zhaket.com
+  udp: true
+- name: X_US_speednode_0021
+  server: 192.3.216.180
+  port: 25740
+  type: vmess
+  uuid: 43cf14a5-5b85-47e2-a4c2-b514beab7054
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
   network: http
   http-opts:
     method: GET
     path:
     - /
-    headers:
-      Host:
-      - zhaket.com
-  udp: true
-- name: X_US_speednode_0021
-  server: 85.239.53.46
-  port: 443
-  type: vless
-  uuid: 18ce358e-b507-4cde-8c83-94806aedf467
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: stackoverflow.com
-  reality-opts:
-    public-key: nyid7jiXERXF6qkkRVsub0wfX9xGKKAsVzQERxhqZHc
-    short-id: c8e8e4b7
   udp: true
 - name: X_US_speednode_0022
-  server: 45.159.218.17
-  port: 80
-  type: vless
-  uuid: 64d39d67-62dc-470c-a592-1d5a6ee87cb5
+  server: 206.119.191.9
+  port: 7998
+  type: vmess
+  uuid: 984429ed-3959-4022-e248-cbcb19c96f9a
+  alterId: 0
+  cipher: auto
   tls: false
   skip-cert-verify: false
-  servername: worker-flat-disk-100d.b9563f65aef681.workers.dev
-  network: ws
-  ws-opts:
-    path: /🔒
-    headers:
-      Host: worker-flat-disk-100d.b9563f65aef681.workers.dev
   udp: true
 - name: X_US_speednode_0023
-  server: 63.141.128.2
-  port: 8080
-  type: vless
-  uuid: 78927eda-79c3-40d1-bb55-f0671939089b
+  server: 206.119.191.20
+  port: 7998
+  type: vmess
+  uuid: 984429ed-3959-4022-e248-cbcb19c96f9a
+  alterId: 0
+  cipher: auto
   tls: false
   skip-cert-verify: false
-  servername: b.jOin.zEdMoDeOn.oNl.
-  network: ws
-  ws-opts:
-    path: /Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-    headers:
-      Host: b.jOin.zEdMoDeOn.oNl.
   udp: true
 - name: X_US_speednode_0024
-  server: 63.141.128.16
-  port: 80
-  type: vless
-  uuid: 15f2b73d-9790-4092-bb4b-e38a4feb1b56
+  server: 66.253.5.58
+  port: 40083
+  type: vmess
+  uuid: 19003217-0407-43d5-bf22-9aa642469a83
+  alterId: 0
+  cipher: auto
   tls: false
   skip-cert-verify: false
-  servername: e.jOin.zEdMoDeOn.oNl.
-  network: ws
-  ws-opts:
-    path: /Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-    headers:
-      Host: e.jOin.zEdMoDeOn.oNl.
   udp: true
 - name: X_US_speednode_0025
-  server: 63.141.128.22
+  server: 156.238.225.160
+  port: 59081
+  type: vmess
+  uuid: ce42a56d-06fb-4cf0-bddd-18cdc3114622
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: http
+  http-opts:
+    method: GET
+    path:
+    - /
+  udp: true
+- name: X_US_speednode_0026
+  server: 159.203.173.101
+  port: 10721
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: YA4zGmd4OPLkKZGyLfR6PN
+  udp: true
+- name: X_US_speednode_0027
+  server: 63.141.128.26
   port: 80
   type: vless
-  uuid: ff0d9e6c-6b4c-40c2-9254-f602b21aa836
+  uuid: c032bdcd-bcd6-4d85-99ee-e12a9458ba62
   tls: false
   skip-cert-verify: false
   servername: f.jOin.zEdMoDeOn.oNl.
   network: ws
   ws-opts:
-    path: /Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+    path: /Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
     headers:
       Host: f.jOin.zEdMoDeOn.oNl.
   udp: true
-- name: X_US_speednode_0026
-  server: 63.141.128.14
+- name: X_US_speednode_0028
+  server: 63.141.128.13
   port: 8080
   type: vless
-  uuid: e68bc33e-7222-4125-b064-8209d71f29d9
+  uuid: c8919b30-1117-405d-9e0f-9577c7e0f0ff
   tls: false
   skip-cert-verify: false
-  servername: a.joIn.zEdMoDeOn.oNl.
+  servername: c.jOin.zEdMoDeOn.oNl.
   network: ws
   ws-opts:
-    path: /Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
+    path: /Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
     headers:
-      Host: a.joIn.zEdMoDeOn.oNl.
+      Host: c.jOin.zEdMoDeOn.oNl.
   udp: true
 - alterId: 0
   cipher: auto
@@ -442,13 +514,6 @@ proxies:
     headers:
       Host: baidu.com
     path: /oooo
-- cipher: aes-128-gcm
-  name: X_🇸🇬 新加坡4|@ripaojiedian
-  password: 01721e43-5389-4f97-b21c-900abb2bda9e
-  port: 12020
-  server: awes35lesl.blhao0o.dpdns.org
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   name: X_香港v2|@ripaojiedian
@@ -546,15 +611,23 @@ proxy-groups:
   strategy: consistent-hashing
   proxies:
   - X_CN_speednode_0001
-  - X_GB_speednode_0002
-  - X_HK_speednode_0003
-  - X_IR_speednode_0006
-  - X_IR_speednode_0007
-  - X_KR_speednode_0010
-  - X_NL_speednode_0011
-  - X_NL_speednode_0012
-  - X_NL_speednode_0013
-  - X_SE_speednode_0014
+  - X_CN_speednode_0002
+  - X_CN_speednode_0003
+  - X_CN_speednode_0004
+  - X_CN_speednode_0005
+  - X_CY_speednode_0007
+  - X_DE_speednode_0008
+  - X_HK_speednode_0009
+  - X_HK_speednode_0010
+  - X_HK_speednode_0011
+  - X_IR_speednode_0012
+  - X_IR_speednode_0013
+  - X_JP_speednode_0014
+  - X_SG_speednode_0015
+  - X_SG_speednode_0016
+  - X_TW_speednode_0017
+  - X_US_speednode_0018
+  - X_US_speednode_0019
   - X_US_speednode_0020
   - X_US_speednode_0021
   - X_US_speednode_0022
@@ -562,6 +635,8 @@ proxy-groups:
   - X_US_speednode_0024
   - X_US_speednode_0025
   - X_US_speednode_0026
+  - X_US_speednode_0027
+  - X_US_speednode_0028
   - X_防范境外势力渗透
   - X_香港|@ripaojiedian
   - X_🇭🇰 香港2|@ripaojiedian
@@ -575,7 +650,6 @@ proxy-groups:
   - X_日本3|@ripaojiedian
   - X_🇯🇵 日本2|@ripaojiedian
   - X_新加坡3|@ripaojiedian
-  - X_🇸🇬 新加坡4|@ripaojiedian
   - X_香港v2|@ripaojiedian
   - X_日本v2|@ripaojiedian
 rule-providers:
