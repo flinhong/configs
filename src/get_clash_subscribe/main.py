@@ -171,10 +171,15 @@ def remove_duplicate_proxies(proxies):
     seen_servers = set()
     unique_proxies = []
     for proxy in proxies:
-        server = proxy.get('server')
-        if server and server not in seen_servers:
+        name = proxy.get("name")
+        server = proxy.get("server")
+        key = (name, server)
+        print(key)
+
+        if key not in seen_servers:
             unique_proxies.append(proxy)
-            seen_servers.add(server)
+            seen_servers.add(key)
+
     return unique_proxies
 
 def get_extra_proxies(data):
