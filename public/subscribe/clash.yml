@@ -839,11 +839,10 @@ proxies:
     headers:
       Host: hkt.gotochinatown.net
     path: /
-- name: X_香港4|@ripaojiedian
-  network: tcp
+- name: X_🇭🇰 香港4|@ripaojiedian
   password: 253bc477d4e43c209f2d427272968280
-  port: 441
-  server: 18.162.156.99
+  port: 443
+  server: 219.77.97.194
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
@@ -857,11 +856,10 @@ proxies:
   tls: false
   type: vmess
   uuid: f9575b63-7410-4c76-88db-91c24a429ea8
-- name: X_香港6|@ripaojiedian
-  network: tcp
+- name: X_🇭🇰 香港6|@ripaojiedian
   password: 253bc477d4e43c209f2d427272968280
   port: 443
-  server: 18.162.147.157
+  server: 219.73.55.195
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
@@ -998,6 +996,14 @@ proxies:
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
+- name: X_香港4|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 441
+  server: 18.162.156.99
+  skip-cert-verify: true
+  sni: 23.45.86.28
+  type: trojan
 - alterId: 0
   cipher: auto
   name: X_香港5|@ripaojiedian
@@ -1008,6 +1014,14 @@ proxies:
   tls: false
   type: vmess
   uuid: f9575b63-7410-4c76-88db-91c24a429ea8
+- name: X_香港6|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 443
+  server: 18.162.147.157
+  skip-cert-verify: true
+  sni: 23.45.86.28
+  type: trojan
 - alterId: 0
   cipher: auto
   name: X_香港v2|@ripaojiedian
@@ -1173,9 +1187,9 @@ proxy-groups:
   - X_香港|@ripaojiedian
   - X_🇭🇰 香港2|@ripaojiedian
   - X_香港3|@ripaojiedian
-  - X_香港4|@ripaojiedian
+  - X_🇭🇰 香港4|@ripaojiedian
   - X_🇭🇰 香港5|@ripaojiedian
-  - X_香港6|@ripaojiedian
+  - X_🇭🇰 香港6|@ripaojiedian
   - X_🇹🇼 台湾|@ripaojiedian
   - X_🇹🇼 台湾2|@ripaojiedian
   - X_🇹🇼 台湾3|@ripaojiedian
@@ -1190,7 +1204,9 @@ proxy-groups:
   - X_🇺🇸 美国2|@ripaojiedian
   - X_美国3|@ripaojiedian
   - X_美国4|@ripaojiedian
+  - X_香港4|@ripaojiedian
   - X_香港5|@ripaojiedian
+  - X_香港6|@ripaojiedian
   - X_香港v2|@ripaojiedian
   - X_日本v2|@ripaojiedian
 rule-providers:
