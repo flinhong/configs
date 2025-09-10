@@ -44,6 +44,12 @@ tun:
   - 1.1.1.1
   - 1.0.0.1
 proxies:
+- name: 🇨🇳_CN_中国
+  type: ss
+  server: 103.149.182.191
+  port: 8388
+  cipher: chacha20-ietf
+  password: asd123456
 - name: 🇨🇳_CN_中国->🇺🇸_US_美国
   type: vmess
   server: v35.heduian.link
@@ -57,6 +63,18 @@ proxies:
     path: /oooo
     headers:
       host: v35.heduian.link
+  alterId: 2
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  type: vmess
+  server: v29.heduian.link
+  port: 30829
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /oooo
+    headers:
+      host: ocbc.com
   alterId: 2
 - name: X_AM_speednode_0001
   server: 188.164.158.195
@@ -1137,6 +1155,7 @@ proxies:
   server: v9.heduian.link
   servername: ''
   skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
@@ -1157,6 +1176,7 @@ proxies:
     tls: true
   port: 443
   server: 156.251.179.135
+  tfo: false
   type: ss
 - alterId: 2
   cipher: auto
@@ -1166,6 +1186,7 @@ proxies:
   server: hkt.gotochinatown.net
   servername: ''
   skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
   uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
@@ -1185,7 +1206,8 @@ proxies:
   name: X_🇭🇰 香港5|@ripaojiedian
   password: amazongreatvpn
   port: 16888
-  server: 18.163.165.61
+  server: 43.199.230.110
+  tfo: false
   type: ss
 - name: X_香港6|@ripaojiedian
   network: tcp
@@ -1196,32 +1218,36 @@ proxies:
   sni: fe2.update.microsoft.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: X_🇨🇳 台湾|@ripaojiedian
-  password: e6187cf8-7003-47e2-967b-7b900b132ddb
+  name: X_🇭🇰 香港7|@ripaojiedian
+  password: 68trvOEgMDYiNg2n543Bbk
+  port: 28484
+  server: 8.210.134.227
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: X_🇹🇼 台湾|@ripaojiedian
+  password: a6c9f4e3-372d-414c-b945-d63544d599ec
   port: 10129
   server: 114.35.114.182
+  tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: X_🇨🇳 台湾2|@ripaojiedian
-  password: 8fc95eb8-83b4-47af-ae17-d7639dd0fd2c
-  port: 10147
-  server: 111.253.205.251
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: X_🇨🇳 台湾3|@ripaojiedian
-  password: f200fa8b-dd29-4fac-a67f-67bc05717bad
-  port: 10147
-  server: 111.253.205.251
+  name: X_🇹🇼 台湾2|@ripaojiedian
+  password: 0867a369-602f-42f1-9fb4-c4aa9475d3a9
+  port: 10045
+  server: 114.46.72.1
+  tfo: false
   type: ss
 - cipher: rc4-md5
   name: X_🇯🇵 日本|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202509031722041-NTzL1f4K0s.download.microsoft.com
+    host: 202509031722041-UO2JxEthna.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
+  tfo: false
   type: ss
 - cipher: aes-256-gcm
   name: X_🇯🇵 日本2|@ripaojiedian
@@ -1236,6 +1262,7 @@ proxies:
     tls: true
   port: 443
   server: 137.220.142.150
+  tfo: false
   type: ss
 - name: X_日本3|@ripaojiedian
   network: tcp
@@ -1257,21 +1284,21 @@ proxies:
   name: X_🇯🇵 日本5|@ripaojiedian
   password: amazongreatvpn
   port: 16888
-  server: 3.115.20.29
+  server: 35.73.224.122
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: X_🇯🇵 日本6|@ripaojiedian
+  password: LcmwtQRzICXGQLioSolzi7
+  port: 2055
+  server: 106.15.224.42
+  tfo: false
   type: ss
 - name: X_新加坡|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 3957
   server: xingxing.jiasu123.org
-  skip-cert-verify: true
-  sni: 23.45.86.28
-  type: trojan
-- name: X_新加坡2|@ripaojiedian
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 9160
-  server: 36.156.102.77
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
@@ -1283,6 +1310,7 @@ proxies:
   server: v39.heduian.link
   servername: ''
   skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
@@ -1295,16 +1323,25 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202509031722041-NTzL1f4K0s.download.microsoft.com
+    host: 202509031722041-UO2JxEthna.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
+  tfo: false
   type: ss
 - name: X_美国3|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 2966
   server: xingxing.jiasu123.org
+  skip-cert-verify: true
+  sni: 23.45.86.28
+  type: trojan
+- name: X_新加坡2|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 9160
+  server: 36.156.102.77
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
@@ -1342,7 +1379,9 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - DIRECT
+  - 🇨🇳_CN_中国
   - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
 - name: ♻️ 自动选择
   type: url-test
   url: https://client3.google.com/generate_204
@@ -1350,32 +1389,42 @@ proxy-groups:
   tolerance: 1
   proxies:
   - 🪐 负载均衡
+  - 🇨🇳_CN_中国
   - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
 - name: 🌍 国外媒体
   type: select
   proxies:
   - 🚀 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
+  - 🇨🇳_CN_中国
   - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
 - name: 📲 电报信息
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
+  - 🇨🇳_CN_中国
   - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
 - name: Ⓜ️ 微软服务
   type: select
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
+  - 🇨🇳_CN_中国
   - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
 - name: 🍎 苹果服务
   type: select
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
+  - 🇨🇳_CN_中国
   - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
 - name: 🎯 全球直连
   type: select
   proxies:
@@ -1398,7 +1447,9 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
+  - 🇨🇳_CN_中国
   - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
 - name: 🪐 负载均衡
   type: load-balance
   url: https://client3.google.com/generate_204
@@ -1496,19 +1547,20 @@ proxy-groups:
   - X_香港4|@ripaojiedian
   - X_🇭🇰 香港5|@ripaojiedian
   - X_香港6|@ripaojiedian
-  - X_🇨🇳 台湾|@ripaojiedian
-  - X_🇨🇳 台湾2|@ripaojiedian
-  - X_🇨🇳 台湾3|@ripaojiedian
+  - X_🇭🇰 香港7|@ripaojiedian
+  - X_🇹🇼 台湾|@ripaojiedian
+  - X_🇹🇼 台湾2|@ripaojiedian
   - X_🇯🇵 日本|@ripaojiedian
   - X_🇯🇵 日本2|@ripaojiedian
   - X_日本3|@ripaojiedian
   - X_日本4|@ripaojiedian
   - X_🇯🇵 日本5|@ripaojiedian
+  - X_🇯🇵 日本6|@ripaojiedian
   - X_新加坡|@ripaojiedian
-  - X_新加坡2|@ripaojiedian
   - X_新加坡3|@ripaojiedian
   - X_🇺🇸 美国2|@ripaojiedian
   - X_美国3|@ripaojiedian
+  - X_新加坡2|@ripaojiedian
   - X_美国4|@ripaojiedian
   - X_香港v2|@ripaojiedian
   - X_日本v2|@ripaojiedian
