@@ -1941,10 +1941,11 @@ proxies:
     path: /oooo
 - alterId: 2
   cipher: auto
-  name: X_🇺🇸 美国|@ripaojiedian
+  name: X_美国|@ripaojiedian
   network: ws
-  port: 30829
+  port: '30829'
   server: v29.heduian.link
+  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -1983,10 +1984,11 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: X_🇲🇾 马来西亚|@ripaojiedian
+  name: X_马来西亚|@ripaojiedian
   network: ws
-  port: 16622
+  port: '16622'
   server: t.cnmjcn.cyou
+  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -1996,20 +1998,16 @@ proxies:
     headers:
       Host: f604066249a784d694db65d3ebf5d60c.mobgslb.tbcache.com
     path: /
-- alterId: 2
+- alterId: 0
   cipher: auto
   name: X_香港3|@ripaojiedian
-  network: ws
-  port: '80'
-  server: hkt.gotochinatown.net
+  network: tcp
+  port: '40177'
+  server: 45.89.233.162
   servername: ''
   tls: false
   type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: hkt.gotochinatown.net
-    path: /
+  uuid: eb6f0b67-a6b5-461f-81f7-f2e50e4104bc
 - alterId: 0
   cipher: auto
   name: X_香港v2|@ripaojiedian
@@ -2244,11 +2242,11 @@ proxy-groups:
   - X_新加坡|@ripaojiedian
   - X_新加坡2|@ripaojiedian
   - X_新加坡3|@ripaojiedian
-  - X_🇺🇸 美国|@ripaojiedian
+  - X_美国|@ripaojiedian
   - X_🇺🇸 美国2|@ripaojiedian
   - X_美国3|@ripaojiedian
   - X_美国4|@ripaojiedian
-  - X_🇲🇾 马来西亚|@ripaojiedian
+  - X_马来西亚|@ripaojiedian
   - X_香港3|@ripaojiedian
   - X_香港v2|@ripaojiedian
   - X_日本v2|@ripaojiedian
