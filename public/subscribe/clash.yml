@@ -1,0 +1,1559 @@
+allow-lan: false
+dns:
+  default-nameserver:
+  - 223.5.5.5
+  - 114.114.114.114
+  enable: true
+  enhanced-mode: fake-ip
+  fake-ip-filter:
+  - '*.lan'
+  - '*.localdomain'
+  - '*.example'
+  - '*.invalid'
+  - '*.localhost'
+  - '*.test'
+  - '*.local'
+  - '*.home.arpa'
+  - router.asus.com
+  - localhost.sec.qq.com
+  - localhost.ptlogin2.qq.com
+  - +.msftconnecttest.com
+  fake-ip-range: 198.18.0.1/16
+  ipv6: false
+  listen: 0.0.0.0:53
+  nameserver:
+  - 223.5.5.5
+  - 114.114.114.114
+  - 119.29.29.29
+  - 180.76.76.76
+external-controller: 127.0.0.1:9999
+log-level: info
+mixed-port: 7890
+mode: rule
+proxies:
+- cipher: aes-256-cfb
+  name: 🇬🇧_GB_英国->🇸🇪_SE_瑞典
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.23.63
+  type: ss
+- name: 🇺🇸_US_美国
+  network: tcp
+  password: B3AO9XlcTxaIATp08S29pS6luwZ8C4qDFzaCFYEDDSA5YDeKZAy3e2ZXRe73zIpxwByN7
+  port: 18333
+  server: kasheet.appagent.net
+  type: trojan
+- cipher: aes-256-cfb
+  name: 🇬🇧_GB_英国
+  obfs: plain
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  protocol: origin
+  server: 62.100.205.48
+  type: ssr
+- cipher: aes-256-cfb
+  name: 🇸🇰_SK_斯洛伐克->🇷🇺_RU_俄罗斯
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 156.146.40.194
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇳🇱_NL_荷兰->🇺🇸_US_美国
+  network: ws
+  port: 25161
+  server: 45.144.174.60
+  type: vmess
+  uuid: 9661e432-c1c7-472e-89fe-2233e3f1fdf5
+  ws-opts:
+    path: /
+- cipher: aes-256-cfb
+  name: 🇮🇸_IS_冰岛
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 37.235.49.168
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇬🇧_GB_英国_1
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 62.100.205.48
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇬🇧_GB_英国_2
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.17.169
+  type: ss
+- name: 🇺🇸_US_美国_1
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 15.204.248.103
+  sni: rs3.freeguard.org
+  type: trojan
+- cipher: aes-256-cfb
+  name: 🇮🇹_IT_意大利->🇬🇧_GB_英国
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.213.23.226
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇩🇪_DE_德国
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 46.183.184.60
+  type: ss
+- name: 🇺🇸_US_美国_2
+  network: tcp
+  password: RzFSy3laClaxnYCcO3jBEpYgDyZx2CO78IC3X46ATFD73RSSZZTx8yCOKYDOqeD8pSeRa
+  port: 28334
+  server: sirens.isquirrel.net
+  type: trojan
+- name: 🇺🇸_US_美国_3
+  network: tcp
+  password: F9OKESxKjSDExSeaOw7XyINxDzaOZqeKxCeIczYYED8ewZ2Yl9AppAySO3XwFNy3lCaXDDCFnlACSB0
+  port: 28334
+  server: pricey.appagent.net
+  type: trojan
+- name: 🇺🇸_US_美国_4
+  network: tcp
+  password: 0C3YaEDx46ODTFTcaF8lXlZ3zeqSlF33wZagexzRjIyODa8RDwp8XSCO93ygCSYcSYABA
+  port: 18332
+  server: blength.appagent.net
+  type: trojan
+- cipher: aes-256-cfb
+  name: 🇺🇸_US_美国_5
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 38.165.233.93
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇸🇪_SE_瑞典
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 192.71.166.100
+  type: ss
+- name: 🇺🇸_US_美国_6
+  network: tcp
+  password: OaFFcTDe9pSlez6x3SY8AARXwClzCRRDwSN8F3OqZAEYC0SE6F8gp3wCTCSTDYllcNceagCDD2C59S3
+  port: 28332
+  server: bolster.appagent.net
+  type: trojan
+- name: 🇺🇸_US_美国_7
+  network: tcp
+  password: eYaw9xlNDu4695IF3CyY2leZOTnY8ZSOD3Xa3DClz0xqZy7Z3eaBFaTKOSwCSAOyEap4D
+  port: 28333
+  server: connect.appagent.net
+  type: trojan
+- cipher: aes-256-cfb
+  name: 🇺🇸_US_美国_8
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 104.192.226.106
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇮🇸_IS_冰岛_1
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 37.235.49.152
+  type: ss
+- name: 🇺🇸_US_美国_9
+  network: tcp
+  password: Npgx9nO3OBaZF5yxARYl93lFX08TlR3waDla733az8SqXe3YS3zjESECSZpAw428a6SID
+  port: 443
+  server: metallic.isquirrel.net
+  type: trojan
+- client-fingerprint: ios
+  name: X_BR_speednode_0001
+  network: ws
+  port: 443
+  server: 185.133.35.106
+  servername: d-de1.djwstlsweb.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e22d2366-ac58-47e0-8362-89df9aa6349f
+  ws-opts:
+    headers:
+      Host: d-de1.djwstlsweb.top
+    path: /djjc/de1
+- client-fingerprint: chrome
+  name: X_CH_speednode_0002
+  port: 443
+  reality-opts:
+    public-key: b_hJSqrd_USUBlX5A9-iJTBd0qndoAH9DW3Ct-HpGxc
+    short-id: 4d01fba3
+  server: 37.156.44.111
+  servername: chess.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b2b00c2-be56-4be6-abda-5e329afb7bce
+- cipher: chacha20-ietf-poly1305
+  name: X_CN_speednode_0003
+  password: 9177de1a-aeff-43f1-93a6-7dd08a2fdc41
+  port: 40011
+  server: frk.fastsoonlink.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: X_CN_speednode_0004
+  password: 9177de1a-aeff-43f1-93a6-7dd08a2fdc41
+  port: 40005
+  server: sgp.fastsoonlink.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: X_CN_speednode_0005
+  password: 9177de1a-aeff-43f1-93a6-7dd08a2fdc41
+  port: 40030
+  server: pr.fastsoonlink.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: X_CN_speednode_0006
+  password: 9177de1a-aeff-43f1-93a6-7dd08a2fdc41
+  port: 40031
+  server: ru.fastsoonlink.com
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: X_DE_speednode_0007
+  port: 6666
+  reality-opts:
+    public-key: S_2bepGaT7EHeH5DdyEgio421RTgrAvvOOQiaq8zV0g
+    short-id: b525ecd2fc
+  server: 188.68.53.100
+  servername: Tgju.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0abf9050-c7be-464d-80af-24094c2b97de
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: X_GB_speednode_0008
+  port: 443
+  reality-opts:
+    public-key: aFjX3HZJZr6IjvKuTp1s3ZrwkNRj3w-7U1adUROktGM
+    short-id: 657e6f4ccdb8a092
+  server: am.unibot.monster
+  servername: deepl.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9ff70fc1-e675-4edb-8328-db52a267458d
+- client-fingerprint: chrome
+  name: X_IT_speednode_0009
+  port: 443
+  reality-opts:
+    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
+  server: 147.45.51.160
+  servername: api.company-target.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
+- name: X_NL_speednode_0010
+  network: ws
+  password: 02XtoczO7V
+  port: 17590
+  server: 5.255.102.41
+  skip-cert-verify: false
+  sni: mooshali.arshiacomplus.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mooshali.arshiacomplus.dpdns.org
+    path: /hishhhh123
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: X_PL_speednode_0011
+  port: 443
+  reality-opts:
+    public-key: oNYCpjXjcYAV9qSWBt95N9dDUPhc_QnauJZ3kSJVeSQ
+    short-id: 2a22
+  server: poland20.clearorbitllc.com
+  servername: poland20.clearorbitllc.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e3847ec6-b2fc-4eb2-b919-174d986f882c
+- name: X_SE_speednode_0012
+  password: 2ee85121-31de-4581-a492-eb00f606e392
+  port: 443
+  server: 45.91.171.116
+  skip-cert-verify: true
+  sni: sto.freeguard.org
+  type: trojan
+  udp: true
+- name: X_US_speednode_0013
+  password: 3ZFDxASRw0XIcKYFlp4RSCeSwA8ap7lEAzZB7uNnO38yDYOzDe3p23CxF0OlTx6YSK3j3
+  port: 443
+  server: toaster.isquirrel.net
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- name: X_US_speednode_0014
+  password: 0C3YaEDx46ODTFTcaF8lXlZ3zeqSlF33wZagexzRjIyODa8RDwp8XSCO93ygCSYcSYABA
+  port: 18332
+  server: blength.appagent.net
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- name: X_US_speednode_0015
+  password: B3AO9XlcTxaIATp08S29pS6luwZ8C4qDFzaCFYEDDSA5YDeKZAy3e2ZXRe73zIpxwByN7
+  port: 18333
+  server: kasheet.appagent.net
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- name: X_US_speednode_0016
+  password: RzFSy3laClaxnYCcO3jBEpYgDyZx2CO78IC3X46ATFD73RSSZZTx8yCOKYDOqeD8pSeRa
+  port: 28334
+  server: sirens.isquirrel.net
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- name: X_US_speednode_0017
+  password: nzSaSa3SFaCNFDCjOCg8A39e53p8l2xaTFCOu7qZx2Z8px4CK3DXeZYAwRRS3zY66laOE
+  port: 28331
+  server: seginus.appagent.net
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- name: X_US_speednode_0018
+  password: D0AASSpCKFjOBSwlwqylnOep8BDlgN3e3RY9S3Op2RaZZ58gID8yY3ej56CSuYacZz3EA
+  port: 443
+  server: delight.appagent.net
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- name: X_US_speednode_0019
+  password: eYaw9xlNDu4695IF3CyY2leZOTnY8ZSOD3Xa3DClz0xqZy7Z3eaBFaTKOSwCSAOyEap4D
+  port: 28333
+  server: connect.appagent.net
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- name: X_US_speednode_0020
+  password: 4xS33pu88RaTF37ZxRjzAZc9zxe8OaYBX9CSO3p5SSxquFOFEySnDlCleCFA2DN3gaeDl
+  port: 443
+  server: mintaka.appagent.net
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- name: X_US_speednode_0021
+  password: Z3aK0aZqwyNcz7S3l3ncNCODYxNFnA8SCOOSOZ3y3AX8xA4a0RZ3gxn39aqYAaBOyzR43acKOCzSX3S
+  port: 28331
+  server: hanger.appagent.net
+  skip-cert-verify: false
+  type: trojan
+  udp: true
+- http-opts:
+    headers:
+      Host:
+      - varzesh3.ir
+    method: GET
+    path:
+    - /
+  name: X_US_speednode_0022
+  network: http
+  port: 33801
+  server: m44a.vip784.com
+  servername: varzesh3.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 39c8e0d3-c932-4ff7-b3e3-83002647907b
+- client-fingerprint: firefox
+  name: X_US_speednode_0023
+  port: 10001
+  reality-opts:
+    public-key: 1ltSdo2K6D9EEwebaDQPCb5ypbURcXyO9HsX4RUbbUo
+    short-id: 1a24af87
+  server: 172.233.153.209
+  servername: yahoo.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e4412006-94f2-4f3c-b568-22a3e31dc264
+- client-fingerprint: chrome
+  name: X_VN_speednode_0024
+  port: 46922
+  reality-opts:
+    public-key: Mxg3aGXzUTgR2rA-DtugBRm-4RBVLlSNWNMRKALZBDo
+    short-id: 9ed1d241f0
+  server: 103.9.77.61
+  servername: vinahost.vn
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: ac2474ac-6716-458a-a301-bce29698186a
+- alterId: 0
+  cipher: auto
+  name: X_防范境外势力渗透
+  network: tcp
+  port: '80'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: 'X_防范境外势力渗透 #1'
+  network: tcp
+  port: '81'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: 'X_防范境外势力渗透 #2'
+  network: tcp
+  port: '82'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: 'X_防范境外势力渗透 #3'
+  network: tcp
+  port: '83'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: 'X_防范境外势力渗透 #4'
+  network: tcp
+  port: '84'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: 'X_防范境外势力渗透 #5'
+  network: tcp
+  port: '85'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: 'X_防范境外势力渗透 #6'
+  network: tcp
+  port: '86'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: 'X_防范境外势力渗透 #7'
+  network: tcp
+  port: '87'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: 'X_防范境外势力渗透 #8'
+  network: tcp
+  port: '88'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: 'X_防范境外势力渗透 #9'
+  network: tcp
+  port: '89'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 2
+  cipher: auto
+  name: X_香港|@ripaojiedian
+  network: ws
+  port: '30809'
+  server: v9.heduian.link
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
+- cipher: aes-256-gcm
+  name: X_🇭🇰 香港2|@ripaojiedian
+  password: 2b5fad3874e5
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: hk6v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /aqwshiog
+    skip-cert-verify: false
+    tls: true
+  port: 443
+  server: 156.251.179.135
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: X_🇭🇰 香港3|@ripaojiedian
+  port: 44601
+  server: 43.247.135.86
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 3bff49e6-b2e2-44ce-801f-06eab407e8bd
+- name: X_香港4|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 443
+  server: 202.181.103.246
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: X_🇭🇰 香港5|@ripaojiedian
+  password: 9177de1a-aeff-43f1-93a6-7dd08a2fdc41
+  port: 40000
+  server: hk.fastsoonlink.com
+  tfo: false
+  type: ss
+- name: X_香港6|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 443
+  server: 160.16.236.32
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: X_🇭🇰 香港7|@ripaojiedian
+  password: e4469310-00fc-4527-8afa-71788b3bcef7
+  port: 35602
+  server: gw.liangyuandianwan.com
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: X_🇹🇼 台湾|@ripaojiedian
+  port: 49795
+  server: 103.236.227.7
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: a9024f1d-77a1-4c56-87c7-eeee5398667e
+- cipher: rc4-md5
+  name: X_🇯🇵 日本|@ripaojiedian
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202509121565513-Aja8hFXVWh.download.microsoft.com
+    mode: http
+  port: 8766
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  name: X_🇯🇵 日本2|@ripaojiedian
+  password: 8808e9f11454
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: jp5v1.lingjfjkm002.com
+    mode: websocket
+    mux: false
+    path: /nvcnjrmkggoy
+    skip-cert-verify: false
+    tls: true
+  port: 443
+  server: 137.220.142.139
+  tfo: false
+  type: ss
+- name: X_日本3|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 1802
+  server: 160.16.196.59
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: X_日本4|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 1924
+  server: 160.16.72.33
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: X_新加坡|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 2045
+  server: 160.16.130.66
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: X_新加坡2|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 4397
+  server: 160.16.117.182
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- alterId: 2
+  cipher: auto
+  name: X_新加坡3|@ripaojiedian
+  network: ws
+  port: '30839'
+  server: v39.heduian.link
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
+- cipher: rc4-md5
+  name: X_🇺🇸 美国2|@ripaojiedian
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202509121565513-Aja8hFXVWh.download.microsoft.com
+    mode: http
+  port: 8774
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+- name: X_美国3|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 1700
+  server: 153.121.45.139
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: X_美国4|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 3294
+  server: 160.16.72.33
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- cipher: aes-256-cfb
+  name: X_🇻🇳 越南|@ripaojiedian
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.28
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: X_香港3|@ripaojiedian
+  network: tcp
+  port: '44601'
+  server: 43.247.135.86
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3bff49e6-b2e2-44ce-801f-06eab407e8bd
+- alterId: 0
+  cipher: auto
+  name: X_香港v2|@ripaojiedian
+  network: kcp
+  port: '28590'
+  server: 47.239.183.87
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d75481c7-b5c8-40a9-811a-02b709e74816
+- alterId: 0
+  cipher: auto
+  name: X_台湾|@ripaojiedian
+  network: tcp
+  port: '49795'
+  server: 103.236.227.7
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a9024f1d-77a1-4c56-87c7-eeee5398667e
+- alterId: 0
+  cipher: auto
+  name: X_日本v2|@ripaojiedian
+  network: kcp
+  port: '40916'
+  server: 8.209.200.91
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: af07bf42-c942-4085-a7cb-80f9bed88776
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸_US_美国->🇨🇦_CA_加拿大_1
+  network: ws
+  port: 2086
+  server: 162.159.140.77
+  skipCertVerify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
+    headers:
+      host: ip1.1789034.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸_US_美国_1
+  network: ws
+  port: 2086
+  server: 104.26.5.103
+  skipCertVerify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
+    headers:
+      host: ip1.1789034.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸_US_美国->🇨🇦_CA_加拿大_2
+  network: ws
+  port: 2086
+  server: 104.19.45.42
+  skipCertVerify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
+    headers:
+      host: ip14.freegradely.xyz
+    path: github.com/Alvin9999
+- cipher: chacha20-ietf-poly1305
+  name: X_🇺🇸_US_美国_3
+  password: lWaGPVFjmnag
+  port: 443
+  server: 205.134.180.139
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸_US_美国->🇨🇦_CA_加拿大_3
+  network: ws
+  port: 2086
+  server: 172.64.166.22
+  skipCertVerify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
+    headers:
+      host: ip2.1457230.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸_US_美国->🇩🇪_DE_德国_1
+  network: ws
+  port: 2082
+  server: 104.16.60.8
+  type: vmess
+  udp: true
+  uuid: 441da342-ce90-441e-bff9-d2ceb55e68ca
+  wsOpts:
+    headers:
+      host: 82uple-bird-b087.pemed58443.workers.dev
+    path: /ivideos.sbs/linkws
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸_US_美国_5
+  network: ws
+  port: 2086
+  server: 104.19.57.4
+  skipCertVerify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
+    headers:
+      host: ip11.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸_US_美国->🇨🇦_CA_加拿大_4
+  network: ws
+  port: 2086
+  server: 104.19.47.27
+  skipCertVerify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
+    headers:
+      host: ip1.1457230.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸_US_美国->🇨🇦_CA_加拿大_5
+  network: ws
+  port: 2086
+  server: singapore.com
+  skipCertVerify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
+    headers:
+      host: ip1.1789034.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸_US_美国->🇨🇦_CA_加拿大_6
+  network: ws
+  port: 2086
+  server: 104.19.45.31
+  skipCertVerify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
+    headers:
+      host: ip13.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸_US_美国->🇨🇦_CA_加拿大_7
+  network: ws
+  port: 2086
+  server: 104.19.32.216
+  skipCertVerify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
+    headers:
+      host: ip14.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸_US_美国->🇨🇦_CA_加拿大_8
+  network: ws
+  port: 2086
+  server: 104.19.46.39
+  skipCertVerify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
+    headers:
+      host: ip13.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸_US_美国->🇨🇦_CA_加拿大_9
+  network: ws
+  port: 2086
+  server: 104.19.47.122
+  skipCertVerify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
+    headers:
+      host: ip14.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸_US_美国->🇨🇦_CA_加拿大_10
+  network: ws
+  port: 2086
+  server: 23.227.38.3
+  skipCertVerify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
+    headers:
+      host: ip1.1457230.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸_US_美国->🇨🇦_CA_加拿大_11
+  network: ws
+  port: 2086
+  server: 172.64.167.29
+  skipCertVerify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
+    headers:
+      host: ip2.1457230.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸_US_美国->🇨🇦_CA_加拿大_12
+  network: ws
+  port: 2086
+  server: 172.64.166.20
+  skipCertVerify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
+    headers:
+      host: ip2.1457230.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸_US_美国->🇨🇦_CA_加拿大_13
+  network: ws
+  port: 2086
+  server: 23.227.38.5
+  skipCertVerify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+  wsOpts:
+    headers:
+      host: ip005.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸_US_美国->🇨🇦_CA_加拿大_14
+  network: ws
+  port: 2086
+  server: 172.64.167.25
+  skipCertVerify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
+    headers:
+      host: ip2.1457230.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸_US_美国_10
+  network: ws
+  port: 2086
+  server: 172.64.175.213
+  skipCertVerify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
+    headers:
+      host: ip11.freegradely.xyz
+    path: github.com/Alvin9999
+- cipher: aes-128-gcm
+  name: X_🇬🇧_GB_英国
+  password: shadowsocks
+  port: 443
+  server: 212.102.53.193
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸_US_美国_11
+  network: ws
+  port: 2086
+  server: 104.26.12.31
+  skipCertVerify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
+    headers:
+      host: ip1.1789034.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸_US_美国->🇨🇦_CA_加拿大_15
+  network: ws
+  port: 2086
+  server: 104.19.59.89
+  skipCertVerify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
+    headers:
+      host: ip14.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸_US_美国->🇩🇪_DE_德国_4
+  network: ws
+  port: 2095
+  server: 172.66.44.170
+  type: vmess
+  udp: true
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  wsOpts:
+    headers:
+      host: sany0116.donovan-a79.workers.dev
+    path: /max.mankadmu.com/linkvws
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸_US_美国_13
+  network: ws
+  port: 2086
+  server: 104.26.5.145
+  skipCertVerify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
+    headers:
+      host: ip1.1789034.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸_US_美国->🇨🇦_CA_加拿大_16
+  network: ws
+  port: 2086
+  server: 104.16.148.244
+  skipCertVerify: false
+  sni: ip006.freegradely.xyz
+  type: vmess
+  udp: true
+  uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
+  wsOpts:
+    headers:
+      host: ip006.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸_US_美国->🇨🇦_CA_加拿大_17
+  network: ws
+  port: 2086
+  server: 104.19.47.80
+  skipCertVerify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
+    headers:
+      host: ip14.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸_US_美国->🇨🇦_CA_加拿大_18
+  network: ws
+  port: 2086
+  server: 104.19.46.103
+  skipCertVerify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
+    headers:
+      host: ip14.freegradely.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸_US_美国_19
+  network: ws
+  port: 2086
+  server: 104.26.13.31
+  skipCertVerify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
+    headers:
+      host: ip1.1789034.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸_US_美国->🇨🇦_CA_加拿大_19
+  network: ws
+  port: 2086
+  server: 172.64.166.16
+  skipCertVerify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
+    headers:
+      host: ip2.1457230.xyz
+    path: github.com/Alvin9999
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸_US_美国->🇨🇦_CA_加拿大_20
+  network: ws
+  port: 2086
+  server: 104.19.46.17
+  skipCertVerify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  wsOpts:
+    headers:
+      host: ip13.freegradely.xyz
+    path: github.com/Alvin9999
+proxy-groups:
+- name: 🚀 节点选择
+  proxies:
+  - ♻️ 自动选择
+  - DIRECT
+  - 🇬🇧_GB_英国->🇸🇪_SE_瑞典
+  - 🇺🇸_US_美国
+  - 🇬🇧_GB_英国
+  - 🇸🇰_SK_斯洛伐克->🇷🇺_RU_俄罗斯
+  - 🇳🇱_NL_荷兰->🇺🇸_US_美国
+  - 🇮🇸_IS_冰岛
+  - 🇬🇧_GB_英国_1
+  - 🇬🇧_GB_英国_2
+  - 🇺🇸_US_美国_1
+  - 🇮🇹_IT_意大利->🇬🇧_GB_英国
+  - 🇩🇪_DE_德国
+  - 🇺🇸_US_美国_2
+  - 🇺🇸_US_美国_3
+  - 🇺🇸_US_美国_4
+  - 🇺🇸_US_美国_5
+  - 🇸🇪_SE_瑞典
+  - 🇺🇸_US_美国_6
+  - 🇺🇸_US_美国_7
+  - 🇺🇸_US_美国_8
+  - 🇮🇸_IS_冰岛_1
+  - 🇺🇸_US_美国_9
+  type: select
+- interval: 60
+  name: ♻️ 自动选择
+  proxies:
+  - 🪐 负载均衡
+  - 🇬🇧_GB_英国->🇸🇪_SE_瑞典
+  - 🇺🇸_US_美国
+  - 🇬🇧_GB_英国
+  - 🇸🇰_SK_斯洛伐克->🇷🇺_RU_俄罗斯
+  - 🇳🇱_NL_荷兰->🇺🇸_US_美国
+  - 🇮🇸_IS_冰岛
+  - 🇬🇧_GB_英国_1
+  - 🇬🇧_GB_英国_2
+  - 🇺🇸_US_美国_1
+  - 🇮🇹_IT_意大利->🇬🇧_GB_英国
+  - 🇩🇪_DE_德国
+  - 🇺🇸_US_美国_2
+  - 🇺🇸_US_美国_3
+  - 🇺🇸_US_美国_4
+  - 🇺🇸_US_美国_5
+  - 🇸🇪_SE_瑞典
+  - 🇺🇸_US_美国_6
+  - 🇺🇸_US_美国_7
+  - 🇺🇸_US_美国_8
+  - 🇮🇸_IS_冰岛_1
+  - 🇺🇸_US_美国_9
+  - X_🇺🇸_US_美国->🇨🇦_CA_加拿大_1
+  - X_🇺🇸_US_美国_1
+  - X_🇺🇸_US_美国->🇨🇦_CA_加拿大_2
+  - X_🇺🇸_US_美国_3
+  - X_🇺🇸_US_美国->🇨🇦_CA_加拿大_3
+  - X_🇺🇸_US_美国->🇩🇪_DE_德国_1
+  - X_🇺🇸_US_美国_5
+  - X_🇺🇸_US_美国->🇨🇦_CA_加拿大_4
+  - X_🇺🇸_US_美国->🇨🇦_CA_加拿大_5
+  - X_🇺🇸_US_美国->🇨🇦_CA_加拿大_6
+  - X_🇺🇸_US_美国->🇨🇦_CA_加拿大_7
+  - X_🇺🇸_US_美国->🇨🇦_CA_加拿大_8
+  - X_🇺🇸_US_美国->🇨🇦_CA_加拿大_9
+  - X_🇺🇸_US_美国->🇨🇦_CA_加拿大_10
+  - X_🇺🇸_US_美国->🇨🇦_CA_加拿大_11
+  - X_🇺🇸_US_美国->🇨🇦_CA_加拿大_12
+  - X_🇺🇸_US_美国->🇨🇦_CA_加拿大_13
+  - X_🇺🇸_US_美国->🇨🇦_CA_加拿大_14
+  - X_🇺🇸_US_美国_10
+  - X_🇬🇧_GB_英国
+  - X_🇺🇸_US_美国_11
+  - X_🇺🇸_US_美国->🇨🇦_CA_加拿大_15
+  - X_🇺🇸_US_美国->🇩🇪_DE_德国_4
+  - X_🇺🇸_US_美国_13
+  - X_🇺🇸_US_美国->🇨🇦_CA_加拿大_16
+  - X_🇺🇸_US_美国->🇨🇦_CA_加拿大_17
+  - X_🇺🇸_US_美国->🇨🇦_CA_加拿大_18
+  - X_🇺🇸_US_美国_19
+  - X_🇺🇸_US_美国->🇨🇦_CA_加拿大_19
+  - X_🇺🇸_US_美国->🇨🇦_CA_加拿大_20
+  tolerance: 5
+  type: url-test
+  url: https://www.facebook.com/common/referer_frame.php
+- name: 🌍 国外媒体
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🎯 全球直连
+  - 🇬🇧_GB_英国->🇸🇪_SE_瑞典
+  - 🇺🇸_US_美国
+  - 🇬🇧_GB_英国
+  - 🇸🇰_SK_斯洛伐克->🇷🇺_RU_俄罗斯
+  - 🇳🇱_NL_荷兰->🇺🇸_US_美国
+  - 🇮🇸_IS_冰岛
+  - 🇬🇧_GB_英国_1
+  - 🇬🇧_GB_英国_2
+  - 🇺🇸_US_美国_1
+  - 🇮🇹_IT_意大利->🇬🇧_GB_英国
+  - 🇩🇪_DE_德国
+  - 🇺🇸_US_美国_2
+  - 🇺🇸_US_美国_3
+  - 🇺🇸_US_美国_4
+  - 🇺🇸_US_美国_5
+  - 🇸🇪_SE_瑞典
+  - 🇺🇸_US_美国_6
+  - 🇺🇸_US_美国_7
+  - 🇺🇸_US_美国_8
+  - 🇮🇸_IS_冰岛_1
+  - 🇺🇸_US_美国_9
+  type: select
+- name: 📲 电报信息
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - 🇬🇧_GB_英国->🇸🇪_SE_瑞典
+  - 🇺🇸_US_美国
+  - 🇬🇧_GB_英国
+  - 🇸🇰_SK_斯洛伐克->🇷🇺_RU_俄罗斯
+  - 🇳🇱_NL_荷兰->🇺🇸_US_美国
+  - 🇮🇸_IS_冰岛
+  - 🇬🇧_GB_英国_1
+  - 🇬🇧_GB_英国_2
+  - 🇺🇸_US_美国_1
+  - 🇮🇹_IT_意大利->🇬🇧_GB_英国
+  - 🇩🇪_DE_德国
+  - 🇺🇸_US_美国_2
+  - 🇺🇸_US_美国_3
+  - 🇺🇸_US_美国_4
+  - 🇺🇸_US_美国_5
+  - 🇸🇪_SE_瑞典
+  - 🇺🇸_US_美国_6
+  - 🇺🇸_US_美国_7
+  - 🇺🇸_US_美国_8
+  - 🇮🇸_IS_冰岛_1
+  - 🇺🇸_US_美国_9
+  type: select
+- name: Ⓜ️ 微软服务
+  proxies:
+  - 🎯 全球直连
+  - 🚀 节点选择
+  - 🇬🇧_GB_英国->🇸🇪_SE_瑞典
+  - 🇺🇸_US_美国
+  - 🇬🇧_GB_英国
+  - 🇸🇰_SK_斯洛伐克->🇷🇺_RU_俄罗斯
+  - 🇳🇱_NL_荷兰->🇺🇸_US_美国
+  - 🇮🇸_IS_冰岛
+  - 🇬🇧_GB_英国_1
+  - 🇬🇧_GB_英国_2
+  - 🇺🇸_US_美国_1
+  - 🇮🇹_IT_意大利->🇬🇧_GB_英国
+  - 🇩🇪_DE_德国
+  - 🇺🇸_US_美国_2
+  - 🇺🇸_US_美国_3
+  - 🇺🇸_US_美国_4
+  - 🇺🇸_US_美国_5
+  - 🇸🇪_SE_瑞典
+  - 🇺🇸_US_美国_6
+  - 🇺🇸_US_美国_7
+  - 🇺🇸_US_美国_8
+  - 🇮🇸_IS_冰岛_1
+  - 🇺🇸_US_美国_9
+  type: select
+- name: 🍎 苹果服务
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - 🇬🇧_GB_英国->🇸🇪_SE_瑞典
+  - 🇺🇸_US_美国
+  - 🇬🇧_GB_英国
+  - 🇸🇰_SK_斯洛伐克->🇷🇺_RU_俄罗斯
+  - 🇳🇱_NL_荷兰->🇺🇸_US_美国
+  - 🇮🇸_IS_冰岛
+  - 🇬🇧_GB_英国_1
+  - 🇬🇧_GB_英国_2
+  - 🇺🇸_US_美国_1
+  - 🇮🇹_IT_意大利->🇬🇧_GB_英国
+  - 🇩🇪_DE_德国
+  - 🇺🇸_US_美国_2
+  - 🇺🇸_US_美国_3
+  - 🇺🇸_US_美国_4
+  - 🇺🇸_US_美国_5
+  - 🇸🇪_SE_瑞典
+  - 🇺🇸_US_美国_6
+  - 🇺🇸_US_美国_7
+  - 🇺🇸_US_美国_8
+  - 🇮🇸_IS_冰岛_1
+  - 🇺🇸_US_美国_9
+  type: select
+- name: 🎯 全球直连
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  type: select
+- name: 🛑 全球拦截
+  proxies:
+  - REJECT
+  - DIRECT
+  type: select
+- name: 🍃 应用净化
+  proxies:
+  - REJECT
+  - DIRECT
+  type: select
+- name: 🐟 漏网之鱼
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - ♻️ 自动选择
+  - 🇬🇧_GB_英国->🇸🇪_SE_瑞典
+  - 🇺🇸_US_美国
+  - 🇬🇧_GB_英国
+  - 🇸🇰_SK_斯洛伐克->🇷🇺_RU_俄罗斯
+  - 🇳🇱_NL_荷兰->🇺🇸_US_美国
+  - 🇮🇸_IS_冰岛
+  - 🇬🇧_GB_英国_1
+  - 🇬🇧_GB_英国_2
+  - 🇺🇸_US_美国_1
+  - 🇮🇹_IT_意大利->🇬🇧_GB_英国
+  - 🇩🇪_DE_德国
+  - 🇺🇸_US_美国_2
+  - 🇺🇸_US_美国_3
+  - 🇺🇸_US_美国_4
+  - 🇺🇸_US_美国_5
+  - 🇸🇪_SE_瑞典
+  - 🇺🇸_US_美国_6
+  - 🇺🇸_US_美国_7
+  - 🇺🇸_US_美国_8
+  - 🇮🇸_IS_冰岛_1
+  - 🇺🇸_US_美国_9
+  type: select
+- interval: 120
+  name: 🪐 负载均衡
+  proxies:
+  - X_BR_speednode_0001
+  - X_CH_speednode_0002
+  - X_CN_speednode_0003
+  - X_CN_speednode_0004
+  - X_CN_speednode_0005
+  - X_CN_speednode_0006
+  - X_DE_speednode_0007
+  - X_GB_speednode_0008
+  - X_IT_speednode_0009
+  - X_NL_speednode_0010
+  - X_PL_speednode_0011
+  - X_SE_speednode_0012
+  - X_US_speednode_0013
+  - X_US_speednode_0014
+  - X_US_speednode_0015
+  - X_US_speednode_0016
+  - X_US_speednode_0017
+  - X_US_speednode_0018
+  - X_US_speednode_0019
+  - X_US_speednode_0020
+  - X_US_speednode_0021
+  - X_US_speednode_0022
+  - X_US_speednode_0023
+  - X_VN_speednode_0024
+  - X_防范境外势力渗透
+  - 'X_防范境外势力渗透 #1'
+  - 'X_防范境外势力渗透 #2'
+  - 'X_防范境外势力渗透 #3'
+  - 'X_防范境外势力渗透 #4'
+  - 'X_防范境外势力渗透 #5'
+  - 'X_防范境外势力渗透 #6'
+  - 'X_防范境外势力渗透 #7'
+  - 'X_防范境外势力渗透 #8'
+  - 'X_防范境外势力渗透 #9'
+  - X_香港|@ripaojiedian
+  - X_🇭🇰 香港2|@ripaojiedian
+  - X_🇭🇰 香港3|@ripaojiedian
+  - X_香港4|@ripaojiedian
+  - X_🇭🇰 香港5|@ripaojiedian
+  - X_香港6|@ripaojiedian
+  - X_🇭🇰 香港7|@ripaojiedian
+  - X_🇹🇼 台湾|@ripaojiedian
+  - X_🇯🇵 日本|@ripaojiedian
+  - X_🇯🇵 日本2|@ripaojiedian
+  - X_日本3|@ripaojiedian
+  - X_日本4|@ripaojiedian
+  - X_新加坡|@ripaojiedian
+  - X_新加坡2|@ripaojiedian
+  - X_新加坡3|@ripaojiedian
+  - X_🇺🇸 美国2|@ripaojiedian
+  - X_美国3|@ripaojiedian
+  - X_美国4|@ripaojiedian
+  - X_🇻🇳 越南|@ripaojiedian
+  - X_香港3|@ripaojiedian
+  - X_香港v2|@ripaojiedian
+  - X_台湾|@ripaojiedian
+  - X_日本v2|@ripaojiedian
+  strategy: consistent-hashing
+  type: load-balance
+  url: https://client3.google.com/generate_204
+rule-providers:
+  Apple:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/Apple.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/Apple.list
+  BanAD:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/BanAD.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
+  BanProgramAD:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/BanProgramAD.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+  ChinaCompanyIp:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/ChinaCompanyIp.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+  ChinaDomain:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/ChinaDomain.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+  GoogleCN:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/GoogleCN.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
+  LocalAreaNetwork:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/LocalAreaNetwork.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+  Microsoft:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/Microsoft.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
+  ProxyLite:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/ProxyLite.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list
+  ProxyMedia:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/ProxyMedia.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
+  SteamCN:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/SteamCN.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
+  Telegram:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/Telegram.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
+rules:
+- RULE-SET,LocalAreaNetwork,🎯 全球直连
+- RULE-SET,BanAD,🛑 全球拦截
+- RULE-SET,BanProgramAD,🍃 应用净化
+- RULE-SET,GoogleCN,🎯 全球直连
+- RULE-SET,SteamCN,🎯 全球直连
+- RULE-SET,Microsoft,Ⓜ️ 微软服务
+- RULE-SET,Apple,🍎 苹果服务
+- RULE-SET,ProxyMedia,🌍 国外媒体
+- RULE-SET,Telegram,📲 电报信息
+- RULE-SET,ProxyLite,🚀 节点选择
+- RULE-SET,ChinaDomain,🎯 全球直连
+- RULE-SET,ChinaCompanyIp,🎯 全球直连
+- GEOIP,CN,🎯 全球直连
+- MATCH,🐟 漏网之鱼
+tun:
+  auto-detect-interface: true
+  auto-route: true
+  dns-hijack:
+  - 114.114.114.114
+  - 180.76.76.76
+  - 119.29.29.29
+  - 223.5.5.5
+  - 8.8.8.8
+  - 8.8.4.4
+  - 1.1.1.1
+  - 1.0.0.1
+  enable: true

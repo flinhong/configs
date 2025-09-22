@@ -1,0 +1,14 @@
+@use "fonts";
+
+// ebooks.frankindev.com
+body[data-domain="ebooks.frankindev.com"] {
+  font-family: fonts.$font-sans;
+  .book-content {
+    font-family: fonts.$font-serif;
+  }
+}
+
+:root .default {
+  --body-font-family:
+    "Outfit", "Noto Serif SC", "Microsoft YaHei UI", sans-serif !important;
+}
