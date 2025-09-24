@@ -35,22 +35,20 @@ proxies:
   name: 🇬🇧_GB_英国
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 62.100.205.48
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇮🇹_IT_意大利->🇬🇧_GB_英国
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.213.23.226
+  server: 51.15.17.169
   type: ss
 - cipher: aes-256-cfb
   name: 🇬🇧_GB_英国_1
-  obfs: plain
   password: f8f7aCzcPKbsF8p3
   port: 989
-  protocol: origin
   server: 62.100.205.48
-  type: ssr
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇩🇪_DE_德国
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 46.183.184.60
+  type: ss
 - cipher: aes-256-cfb
   name: 🇺🇸_US_美国
   password: f8f7aCzcPKbsF8p3
@@ -59,10 +57,12 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   name: 🇬🇧_GB_英国_2
+  obfs: plain
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 51.15.17.169
-  type: ss
+  protocol: origin
+  server: 62.100.205.48
+  type: ssr
 - name: X_AT_speednode_0001
   network: ws
   port: 2053
@@ -677,14 +677,20 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: X_🇭🇰 香港3|@ripaojiedian
-  port: 57405
-  server: 103.224.80.73
+  name: X_香港3|@ripaojiedian
+  network: ws
+  port: '41311'
+  server: xiaoniu.v.jsqcdn.bid
+  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 282bc2b9-8aaf-400a-86eb-1cf981a8a1da
+  uuid: bd64d2a3-76a1-407f-af7f-bdcdcb78d21e
+  ws-opts:
+    headers:
+      Host: img14.360buyimg.com
+    path: /obj
 - name: X_香港4|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -693,6 +699,16 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: X_🇭🇰 香港5|@ripaojiedian
+  port: 57586
+  server: 45.89.233.236
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 862d48d2-115b-432d-8115-f5aaa1a4b186
 - name: X_香港6|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -701,12 +717,20 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+- name: X_台湾|@ripaojiedian
+  network: tcp
+  password: 90f45c05-917f-3b1b-a582-899cfe4cf7b3
+  port: 16327
+  server: auto.wgnmdgfw.com
+  skip-cert-verify: false
+  sni: eplcgame.com
+  type: trojan
 - cipher: rc4-md5
   name: X_🇯🇵 日本|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202509121565513-d3qOpZwqIw.download.microsoft.com
+    host: 202509121565513-HpWeCj5Hza.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
@@ -743,22 +767,13 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: X_日本5|@ripaojiedian
-  network: ws
-  port: '41315'
-  server: a.lyazzz.online
-  servername: ''
-  skip-cert-verify: false
+- cipher: aes-256-cfb
+  name: X_🇰🇷 韩国|@ripaojiedian
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
   tfo: false
-  tls: false
-  type: vmess
-  uuid: c76b20d5-7f82-4990-9687-4bde24397493
-  ws-opts:
-    headers:
-      Host: img14.360buyimg.com
-    path: /obj
+  type: ss
 - name: X_新加坡|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -791,28 +806,12 @@ proxies:
     headers:
       Host: baidu.com
     path: /oooo
-- alterId: 0
-  cipher: auto
-  name: X_美国|@ripaojiedian
-  network: ws
-  port: '41317'
-  server: a.lyazzz.online
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: c76b20d5-7f82-4990-9687-4bde24397493
-  ws-opts:
-    headers:
-      Host: img14.360buyimg.com
-    path: /obj
 - cipher: rc4-md5
   name: X_🇺🇸 美国2|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202509121565513-d3qOpZwqIw.download.microsoft.com
+    host: 202509121565513-HpWeCj5Hza.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
@@ -843,34 +842,44 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: X_香港3|@ripaojiedian
+  name: X_香港5|@ripaojiedian
   network: tcp
-  port: '57405'
-  server: 103.224.80.73
+  port: '57586'
+  server: 45.89.233.236
   servername: ''
   tls: false
   type: vmess
-  uuid: 282bc2b9-8aaf-400a-86eb-1cf981a8a1da
+  uuid: 862d48d2-115b-432d-8115-f5aaa1a4b186
 - alterId: 0
   cipher: auto
   name: X_香港v2|@ripaojiedian
   network: kcp
-  port: '21523'
-  server: 47.242.215.154
+  port: '5043'
+  server: 47.242.186.1
   servername: ''
   tls: false
   type: vmess
-  uuid: f6c894a3-f326-4807-9270-f236da4120c1
+  uuid: 93c35277-ee3f-4ab2-9d9e-462b97a8795f
+- alterId: 0
+  cipher: auto
+  name: X_香港HK|@ripaojiedian
+  network: tcp
+  port: '24939'
+  server: 38.147.188.112
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 928408df-3114-4b57-b852-f8d120ce056c
 - alterId: 0
   cipher: auto
   name: X_日本v2|@ripaojiedian
   network: kcp
-  port: '40916'
-  server: 8.209.200.91
+  port: '5106'
+  server: 47.74.14.30
   servername: ''
   tls: false
   type: vmess
-  uuid: af07bf42-c942-4085-a7cb-80f9bed88776
+  uuid: 1cc84891-1657-4f71-97d0-287df565820e
 - name: X_美国_1
   network: tcp
   password: 0C3YaEDx46ODTFTcaF8lXlZ3zeqSlF33wZagexzRjIyODa8RDwp8XSCO93ygCSYcSYABA
@@ -1034,8 +1043,8 @@ proxy-groups:
   - ♻️ 自动选择
   - DIRECT
   - 🇬🇧_GB_英国
-  - 🇮🇹_IT_意大利->🇬🇧_GB_英国
   - 🇬🇧_GB_英国_1
+  - 🇩🇪_DE_德国
   - 🇺🇸_US_美国
   - 🇬🇧_GB_英国_2
   type: select
@@ -1044,8 +1053,8 @@ proxy-groups:
   proxies:
   - 🪐 负载均衡
   - 🇬🇧_GB_英国
-  - 🇮🇹_IT_意大利->🇬🇧_GB_英国
   - 🇬🇧_GB_英国_1
+  - 🇩🇪_DE_德国
   - 🇺🇸_US_美国
   - 🇬🇧_GB_英国_2
   - X_美国_1
@@ -1074,8 +1083,8 @@ proxy-groups:
   - ♻️ 自动选择
   - 🎯 全球直连
   - 🇬🇧_GB_英国
-  - 🇮🇹_IT_意大利->🇬🇧_GB_英国
   - 🇬🇧_GB_英国_1
+  - 🇩🇪_DE_德国
   - 🇺🇸_US_美国
   - 🇬🇧_GB_英国_2
   type: select
@@ -1084,8 +1093,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇬🇧_GB_英国
-  - 🇮🇹_IT_意大利->🇬🇧_GB_英国
   - 🇬🇧_GB_英国_1
+  - 🇩🇪_DE_德国
   - 🇺🇸_US_美国
   - 🇬🇧_GB_英国_2
   type: select
@@ -1094,8 +1103,8 @@ proxy-groups:
   - 🎯 全球直连
   - 🚀 节点选择
   - 🇬🇧_GB_英国
-  - 🇮🇹_IT_意大利->🇬🇧_GB_英国
   - 🇬🇧_GB_英国_1
+  - 🇩🇪_DE_德国
   - 🇺🇸_US_美国
   - 🇬🇧_GB_英国_2
   type: select
@@ -1104,8 +1113,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - 🇬🇧_GB_英国
-  - 🇮🇹_IT_意大利->🇬🇧_GB_英国
   - 🇬🇧_GB_英国_1
+  - 🇩🇪_DE_德国
   - 🇺🇸_US_美国
   - 🇬🇧_GB_英国_2
   type: select
@@ -1131,8 +1140,8 @@ proxy-groups:
   - 🎯 全球直连
   - ♻️ 自动选择
   - 🇬🇧_GB_英国
-  - 🇮🇹_IT_意大利->🇬🇧_GB_英国
   - 🇬🇧_GB_英国_1
+  - 🇩🇪_DE_德国
   - 🇺🇸_US_美国
   - 🇬🇧_GB_英国_2
   type: select
@@ -1187,24 +1196,26 @@ proxy-groups:
   - 'X_防范境外势力渗透 #9'
   - X_香港|@ripaojiedian
   - X_🇭🇰 香港2|@ripaojiedian
-  - X_🇭🇰 香港3|@ripaojiedian
+  - X_香港3|@ripaojiedian
   - X_香港4|@ripaojiedian
+  - X_🇭🇰 香港5|@ripaojiedian
   - X_香港6|@ripaojiedian
+  - X_台湾|@ripaojiedian
   - X_🇯🇵 日本|@ripaojiedian
   - X_🇯🇵 日本2|@ripaojiedian
   - X_日本3|@ripaojiedian
   - X_日本4|@ripaojiedian
-  - X_日本5|@ripaojiedian
+  - X_🇰🇷 韩国|@ripaojiedian
   - X_新加坡|@ripaojiedian
   - X_新加坡2|@ripaojiedian
   - X_新加坡3|@ripaojiedian
-  - X_美国|@ripaojiedian
   - X_🇺🇸 美国2|@ripaojiedian
   - X_美国3|@ripaojiedian
   - X_美国4|@ripaojiedian
   - X_🇻🇳 越南|@ripaojiedian
-  - X_香港3|@ripaojiedian
+  - X_香港5|@ripaojiedian
   - X_香港v2|@ripaojiedian
+  - X_香港HK|@ripaojiedian
   - X_日本v2|@ripaojiedian
   strategy: consistent-hashing
   type: load-balance
