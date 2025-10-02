@@ -32,40 +32,16 @@ mixed-port: 7890
 mode: rule
 proxies:
 - cipher: aes-256-cfb
-  name: 🇺🇸_US_美国
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 38.54.57.90
+  name: 未知
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.229
   type: ss
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: 🇺🇸_US_美国_1
-  network: tcp
-  port: 444
-  server: 94.131.111.195
-  sni: ''
-  type: vmess
-  uuid: 8bbd9d8c-481b-49b6-8029-e4648f2ea31d
-- alterId: 2
-  cipher: auto
-  name: 🇨🇳_CN_中国->🏳️_unKnow_未知
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v8.heduian.link
-    path: /oooo
 - cipher: aes-256-cfb
-  name: 🇺🇸_US_美国_2
+  name: 🇷🇺_RU_俄罗斯
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 104.192.226.106
+  server: 185.231.233.112
   type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
@@ -383,34 +359,243 @@ proxies:
   uuid: 9a54bad8-538d-4744-b7bc-640629840490
 - alterId: 0
   cipher: auto
-  name: X_敏感时期，更新暂停
+  name: X_防范境外势力渗透
   network: tcp
-  port: '1'
-  server: 0.0.0.0
-  servername: web.51.la
+  port: '80'
+  server: 127.0.0.53
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
   cipher: auto
-  name: X_如有需要，自行搭建
+  name: 'X_防范境外势力渗透 #1'
   network: tcp
-  port: '2'
-  server: 0.0.0.0
-  servername: web.51.la
+  port: '81'
+  server: 127.0.0.53
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 0
   cipher: auto
-  name: X_庆祝中华人民共和国成立76周年！
+  name: 'X_防范境外势力渗透 #2'
   network: tcp
-  port: '3'
-  server: 0.0.0.0
-  servername: web.51.la
+  port: '82'
+  server: 127.0.0.53
   tls: false
   type: vmess
   uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: 'X_防范境外势力渗透 #3'
+  network: tcp
+  port: '83'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: 'X_防范境外势力渗透 #4'
+  network: tcp
+  port: '84'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: 'X_防范境外势力渗透 #5'
+  network: tcp
+  port: '85'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: 'X_防范境外势力渗透 #6'
+  network: tcp
+  port: '86'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: 'X_防范境外势力渗透 #7'
+  network: tcp
+  port: '87'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: 'X_防范境外势力渗透 #8'
+  network: tcp
+  port: '88'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: 'X_防范境外势力渗透 #9'
+  network: tcp
+  port: '89'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 2
+  cipher: auto
+  name: X_香港|@ripaojiedian
+  network: ws
+  port: '30809'
+  server: v9.heduian.link
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
+- cipher: aes-256-gcm
+  name: X_🇭🇰 香港2|@ripaojiedian
+  password: ccf426f1fe78
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: newroot2v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /zksuapgx
+    skip-cert-verify: false
+    tls: true
+  port: 443
+  server: 103.103.245.158
+  tfo: false
+  type: ss
+- name: X_香港4|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 443
+  server: 126.116.225.149
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: X_香港6|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 443
+  server: 221.128.195.217
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: X_日本2|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 1331
+  server: 160.16.138.24
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: X_日本3|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 409
+  server: 153.121.51.29
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- cipher: aes-256-cfb
+  name: X_🇰🇷 韩国|@ripaojiedian
+  password: qwerREWQ@@
+  port: 2520
+  server: 121.170.203.147
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: X_🇰🇷 韩国2|@ripaojiedian
+  port: 55879
+  server: 210.109.205.158
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 7cc8bff2-1e5c-45d1-a3e7-b35e8f25cbbe
+- name: X_新加坡|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 1331
+  server: 153.121.51.29
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: X_新加坡2|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 449
+  server: 160.16.236.32
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: X_美国|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 3296
+  server: 160.16.130.66
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: X_美国2|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 4729
+  server: 160.16.130.66
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- cipher: aes-256-cfb
+  name: X_🇻🇳 越南|@ripaojiedian
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.42
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: X_香港v2|@ripaojiedian
+  network: kcp
+  port: '54483'
+  server: 13.231.211.146
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: dc2fd6a5-36fe-4b06-8b31-a5c5d26add98
+- alterId: 0
+  cipher: auto
+  name: X_日本v2|@ripaojiedian
+  network: kcp
+  port: '20932'
+  server: 43.207.83.60
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: bc4e0275-2a83-43be-a5b7-332a61615f1d
+- alterId: 0
+  cipher: auto
+  name: X_韩国2|@ripaojiedian
+  network: tcp
+  port: '55879'
+  server: 210.109.205.158
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7cc8bff2-1e5c-45d1-a3e7-b35e8f25cbbe
 - cipher: aes-256-gcm
   name: X_美国_1
   password: 14837141-5001-4d21-9a25-52feb9967302
@@ -700,19 +885,15 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - DIRECT
-  - 🇺🇸_US_美国
-  - 🇺🇸_US_美国_1
-  - 🇨🇳_CN_中国->🏳️_unKnow_未知
-  - 🇺🇸_US_美国_2
+  - 未知
+  - 🇷🇺_RU_俄罗斯
   type: select
 - interval: 60
   name: ♻️ 自动选择
   proxies:
   - 🪐 负载均衡
-  - 🇺🇸_US_美国
-  - 🇺🇸_US_美国_1
-  - 🇨🇳_CN_中国->🏳️_unKnow_未知
-  - 🇺🇸_US_美国_2
+  - 未知
+  - 🇷🇺_RU_俄罗斯
   - X_美国_1
   - X_美国_2
   - X_美国_3
@@ -745,37 +926,29 @@ proxy-groups:
   - 🚀 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇺🇸_US_美国
-  - 🇺🇸_US_美国_1
-  - 🇨🇳_CN_中国->🏳️_unKnow_未知
-  - 🇺🇸_US_美国_2
+  - 未知
+  - 🇷🇺_RU_俄罗斯
   type: select
 - name: 📲 电报信息
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇺🇸_US_美国
-  - 🇺🇸_US_美国_1
-  - 🇨🇳_CN_中国->🏳️_unKnow_未知
-  - 🇺🇸_US_美国_2
+  - 未知
+  - 🇷🇺_RU_俄罗斯
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇺🇸_US_美国
-  - 🇺🇸_US_美国_1
-  - 🇨🇳_CN_中国->🏳️_unKnow_未知
-  - 🇺🇸_US_美国_2
+  - 未知
+  - 🇷🇺_RU_俄罗斯
   type: select
 - name: 🍎 苹果服务
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇺🇸_US_美国
-  - 🇺🇸_US_美国_1
-  - 🇨🇳_CN_中国->🏳️_unKnow_未知
-  - 🇺🇸_US_美国_2
+  - 未知
+  - 🇷🇺_RU_俄罗斯
   type: select
 - name: 🎯 全球直连
   proxies:
@@ -798,10 +971,8 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇺🇸_US_美国
-  - 🇺🇸_US_美国_1
-  - 🇨🇳_CN_中国->🏳️_unKnow_未知
-  - 🇺🇸_US_美国_2
+  - 未知
+  - 🇷🇺_RU_俄罗斯
   type: select
 - interval: 120
   name: 🪐 负载均衡
@@ -839,9 +1010,32 @@ proxy-groups:
   - X_SG_speednode_0031
   - X_SG_speednode_0032
   - X_US_speednode_0033
-  - X_敏感时期，更新暂停
-  - X_如有需要，自行搭建
-  - X_庆祝中华人民共和国成立76周年！
+  - X_防范境外势力渗透
+  - 'X_防范境外势力渗透 #1'
+  - 'X_防范境外势力渗透 #2'
+  - 'X_防范境外势力渗透 #3'
+  - 'X_防范境外势力渗透 #4'
+  - 'X_防范境外势力渗透 #5'
+  - 'X_防范境外势力渗透 #6'
+  - 'X_防范境外势力渗透 #7'
+  - 'X_防范境外势力渗透 #8'
+  - 'X_防范境外势力渗透 #9'
+  - X_香港|@ripaojiedian
+  - X_🇭🇰 香港2|@ripaojiedian
+  - X_香港4|@ripaojiedian
+  - X_香港6|@ripaojiedian
+  - X_日本2|@ripaojiedian
+  - X_日本3|@ripaojiedian
+  - X_🇰🇷 韩国|@ripaojiedian
+  - X_🇰🇷 韩国2|@ripaojiedian
+  - X_新加坡|@ripaojiedian
+  - X_新加坡2|@ripaojiedian
+  - X_美国|@ripaojiedian
+  - X_美国2|@ripaojiedian
+  - X_🇻🇳 越南|@ripaojiedian
+  - X_香港v2|@ripaojiedian
+  - X_日本v2|@ripaojiedian
+  - X_韩国2|@ripaojiedian
   strategy: consistent-hashing
   type: load-balance
   url: https://client3.google.com/generate_204
