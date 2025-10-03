@@ -31,18 +31,44 @@ log-level: info
 mixed-port: 7890
 mode: rule
 proxies:
+- alterId: 0
+  cipher: auto
+  fingerprint: ''
+  name: 🇺🇸_US_美国_1
+  network: tcp
+  port: 21639
+  server: 65.109.218.238
+  sni: ''
+  type: vmess
+  uuid: f21c11fc-0762-4b56-ab98-79d0b8460e7b
+- cipher: aes-256-cfb
+  name: 🇬🇧_GB_英国->🏳️_unKnow_未知
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.17.169
+  type: ss
 - cipher: aes-256-cfb
   name: 未知
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.154.229
+  server: 103.186.154.154
   type: ss
 - cipher: aes-256-cfb
-  name: 🇷🇺_RU_俄罗斯
+  name: 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 185.231.233.112
+  server: 185.153.197.5
   type: ss
+- alterId: 0
+  cipher: auto
+  fingerprint: ''
+  name: 🇩🇪_DE_德国_1
+  network: tcp
+  port: 8443
+  server: panel-de2.turkcloud.ir
+  sni: ''
+  type: vmess
+  uuid: 6b3a7034-39ec-f057-377d-cf6af57b4db4
 - client-fingerprint: chrome
   name: X_AE_speednode_0001
   port: 8080
@@ -1027,15 +1053,21 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - DIRECT
+  - 🇺🇸_US_美国_1
+  - 🇬🇧_GB_英国->🏳️_unKnow_未知
   - 未知
-  - 🇷🇺_RU_俄罗斯
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  - 🇩🇪_DE_德国_1
   type: select
 - interval: 60
   name: ♻️ 自动选择
   proxies:
   - 🪐 负载均衡
+  - 🇺🇸_US_美国_1
+  - 🇬🇧_GB_英国->🏳️_unKnow_未知
   - 未知
-  - 🇷🇺_RU_俄罗斯
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  - 🇩🇪_DE_德国_1
   - X_美国_1
   - X_美国_2
   - X_美国_3
@@ -1068,29 +1100,41 @@ proxy-groups:
   - 🚀 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
+  - 🇺🇸_US_美国_1
+  - 🇬🇧_GB_英国->🏳️_unKnow_未知
   - 未知
-  - 🇷🇺_RU_俄罗斯
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  - 🇩🇪_DE_德国_1
   type: select
 - name: 📲 电报信息
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
+  - 🇺🇸_US_美国_1
+  - 🇬🇧_GB_英国->🏳️_unKnow_未知
   - 未知
-  - 🇷🇺_RU_俄罗斯
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  - 🇩🇪_DE_德国_1
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
+  - 🇺🇸_US_美国_1
+  - 🇬🇧_GB_英国->🏳️_unKnow_未知
   - 未知
-  - 🇷🇺_RU_俄罗斯
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  - 🇩🇪_DE_德国_1
   type: select
 - name: 🍎 苹果服务
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
+  - 🇺🇸_US_美国_1
+  - 🇬🇧_GB_英国->🏳️_unKnow_未知
   - 未知
-  - 🇷🇺_RU_俄罗斯
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  - 🇩🇪_DE_德国_1
   type: select
 - name: 🎯 全球直连
   proxies:
@@ -1113,8 +1157,11 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
+  - 🇺🇸_US_美国_1
+  - 🇬🇧_GB_英国->🏳️_unKnow_未知
   - 未知
-  - 🇷🇺_RU_俄罗斯
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  - 🇩🇪_DE_德国_1
   type: select
 - interval: 120
   name: 🪐 负载均衡
