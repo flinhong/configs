@@ -9,29 +9,27 @@
 }
 
 // bing.com
-body[data-domain="www.bing.com"],
-body[data-domain="cn.bing.com"],
-body[data-domain="www.msn.cn"] {
+body {
   font-family: fonts.$font-sans;
+}
 
-  #est_switch .est_common,
-  .tob_list_current .tob_title,
-  .text .heading,
-  .viewsInfo {
-    font-family: fonts.$font-serif;
-  }
+#est_switch .est_common,
+.tob_list_current .tob_title,
+.text .heading,
+.viewsInfo {
+  font-family: fonts.$font-serif;
+}
 
-  .header .scope,
-  #tobPrompt.new .tob_head > span,
-  #tobPrompt.new .tob_head .tob_head_title,
-  .hp_text,
-  .text .attribution-text,
-  #heading.heading {
-    font-family: fonts.$font-sans;
-  }
+.header .scope,
+#tobPrompt.new .tob_head > span,
+#tobPrompt.new .tob_head .tob_head_title,
+.hp_text,
+.text .attribution-text,
+#heading.heading {
+  font-family: fonts.$font-sans;
+}
 
-  .tob_list_current .tob_index,
-  .tob_list_current .tob_index_red {
-    font-family: fonts.$font-condense;
-  }
+.tob_list_current .tob_index,
+.tob_list_current .tob_index_red {
+  font-family: fonts.$font-condense;
 }
