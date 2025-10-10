@@ -8,7 +8,7 @@ const versionInformation = (version) => `
 // @name         URI identity & styling
 // @namespace    scripts.frankindev.com
 // @version      ${version}
-// @description  try to take over the world with styles...
+// @description  try to take over the web with styles...
 // @author       Frank Lin
 `
 

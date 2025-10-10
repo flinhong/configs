@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         URI identity & styling
 // @namespace    scripts.frankindev.com
-// @version      0.1.34
-// @description  try to take over the world with styles...
+// @version      0.1.35
+// @description  try to take over the web with styles...
 // @author       Frank Lin
 // @match        *://*.baidu.com/*
 // @resource     css_baidu	https://cdn.honglin.ac.cn/statically/gh/flinhong/configs/main/public/styles/baidu.css
@@ -20,10 +20,8 @@
 // @resource     css_doubao	https://cdn.honglin.ac.cn/statically/gh/flinhong/configs/main/public/styles/doubao.css
 // @match        *://www.doubao.com/*
 // @resource     css_doubao	https://cdn.honglin.ac.cn/statically/gh/flinhong/configs/main/public/styles/doubao.css
-// @match        *://www.bing.com/*
+// @match        *://*.bing.com/*
 // @resource     css_bing	https://cdn.honglin.ac.cn/statically/gh/flinhong/configs/main/public/styles/bing.css
-// @match        *://cn.bing.com/*
-// @resource     css_cn.bing	https://cdn.honglin.ac.cn/statically/gh/flinhong/configs/main/public/styles/bing.css
 // @match        *://www.msn.cn/*
 // @resource     css_msn.cn	https://cdn.honglin.ac.cn/statically/gh/flinhong/configs/main/public/styles/bing.css
 // @match        *://www.reddit.com/*
@@ -45,8 +43,8 @@
   document.body.setAttribute("data-domain", window.location.hostname)
   const domain = window.location.hostname.replace(".com", "").replace(".co.uk", "").replace("www.", "").replace("cn.", "")
   // Google fonts
-  const dList = []
-  if (!dList.includes(domain)) {
+  const byPassList = ["chatgpt.com", "reddit.com"]
+  if (!byPassList.includes(domain)) {
     const googleFont = GM_getResourceText("font_Google")
     GM_addStyle(googleFont)
   }

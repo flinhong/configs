@@ -25,8 +25,8 @@
 
     styles.forEach((href) => {
         // Google fonts
-        const dList = []
-        if (dList.includes(domain) && href.includes("fonts")) return
+        const byPassList = ["chatgpt.com", "reddit.com"]
+        if (byPassList.includes(domain) && href.includes("fonts")) return
 
         const link = document.createElement("link")
         link.rel = "stylesheet"

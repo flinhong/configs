@@ -18,8 +18,8 @@
         .replace("cn.", "")
 
     // Google fonts
-    const dList = []
-    if (!dList.includes(domain)) {
+    const byPassList = ["chatgpt.com", "reddit.com"]
+    if (!byPassList.includes(domain)) {
         const googleFont = GM_getResourceText("font_Google")
         GM_addStyle(googleFont)
     }
