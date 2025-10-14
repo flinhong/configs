@@ -31,53 +31,107 @@ log-level: info
 mixed-port: 7890
 mode: rule
 proxies:
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  password: 253bc477d4e43c209f2d427272968280
-  port: 6752
-  server: 36.156.102.84
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇱🇹_LT_立陶宛
+  network: tcp
+  port: 26177
+  server: 176.223.131.167
+  type: vmess
+  uuid: f0a035e8-9793-4e74-e947-03c32325ba41
 - cipher: aes-256-cfb
-  name: 🇲🇩_MD_摩尔多瓦
+  name: 🇸🇪_SE_瑞典
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 91.132.94.200
+  server: 192.71.166.100
   type: ss
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  password: 253bc477d4e43c209f2d427272968280
-  port: 24673
-  server: 36.156.102.84
-  skip-cert-verify: true
-  sni: fe2.update.microsoft.com
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇨🇳_CN_中国
+  network: tcp
+  port: 31625
+  server: 154.83.95.26
+  type: vmess
+  uuid: 8ad52ea0-e2b2-4c72-c6a7-e823b4d75dd9
+- alterId: 0
+  cipher: auto
+  name: 🇱🇹_LT_立陶宛_1
+  network: tcp
+  port: 54812
+  server: 176.223.131.167
+  type: vmess
+  uuid: afd29a15-a791-43d0-c0fb-8441f7af1ea3
 - cipher: aes-256-cfb
-  name: 🇷🇺_RU_俄罗斯
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.231.233.112
+  name: 未知
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.64
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇱_NL_荷兰
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 45.159.250.190
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇸🇰_SK_斯洛伐克->🏳️_unKnow_未知
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 156.146.40.194
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇱🇹_LT_立陶宛_2
+  network: tcp
+  port: 15580
+  server: 176.223.131.167
+  type: vmess
+  uuid: 11b1af02-9fcd-4681-b94e-eb330b1a2d5e
+- alterId: 0
+  cipher: auto
+  name: 🇱🇹_LT_立陶宛_3
+  network: tcp
+  port: 22014
+  server: 176.223.131.167
+  type: vmess
+  uuid: b76a7b55-953a-442f-92cb-5d0be5eb9612
+- alterId: 0
+  cipher: auto
+  name: 🇱🇹_LT_立陶宛_4
+  network: tcp
+  port: 56660
+  server: 176.223.131.167
+  type: vmess
+  uuid: f86aeda1-2635-4c6c-ada0-79541ae3b937
 - cipher: aes-256-cfb
   name: 🇩🇪_DE_德国
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 46.183.184.60
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇱🇹_LT_立陶宛_5
+  network: tcp
+  port: 25387
+  server: 176.223.131.167
+  type: vmess
+  uuid: f6c88808-77b8-459c-b3df-84f8884cdddc
+- cipher: aes-256-cfb
+  name: 🇬🇧_GB_英国
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.17.169
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇱🇹_LT_立陶宛_6
+  network: tcp
+  port: 14598
+  server: 176.223.131.167
+  type: vmess
+  uuid: ba2dd90b-6cc4-4d2d-e569-760fe1a8aae0
+- alterId: 0
+  cipher: auto
+  name: 🇬🇧_GB_英国_1
+  network: ws
+  port: 55256
+  server: 8.208.79.244
+  type: vmess
+  uuid: 0c98868b-d4a2-43f0-876b-064377446d92
+  ws-opts:
+    path: /arki?ed=2048
 - alterId: 2
   cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国
   network: ws
   port: 30808
   server: v8.heduian.link
@@ -89,44 +143,62 @@ proxies:
     headers:
       host: v8.heduian.link
     path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  network: ws
+  port: 30805
+  server: v5.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v5.heduian.link
+    path: /oooo
+- alterId: 0
+  cipher: auto
+  name: 🇱🇹_LT_立陶宛_7
+  network: tcp
+  port: 48219
+  server: 176.223.131.167
+  type: vmess
+  uuid: 3a58e86f-90e5-47b3-db49-6503c7fa20f4
+- cipher: aes-256-cfb
+  name: 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.153.197.5
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇱🇹_LT_立陶宛_8
+  network: tcp
+  port: 43990
+  server: 176.223.131.167
+  type: vmess
+  uuid: 5fbaae09-f11e-4a7e-fc58-6c8dce1072a6
+- alterId: 0
+  cipher: auto
+  name: 🇱🇹_LT_立陶宛_9
+  network: tcp
+  port: 20227
+  server: 176.223.131.167
+  type: vmess
+  uuid: 763e55c4-f939-405a-aac0-ee366977fa48
 - cipher: aes-256-cfb
   name: 🇮🇸_IS_冰岛
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 37.235.49.168
   type: ss
-- alterId: 2
+- alterId: 0
   cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_3
-  network: ws
-  port: 30829
-  server: v29.heduian.link
-  sni: ''
+  name: 🇱🇹_LT_立陶宛_10
+  network: tcp
+  port: 12407
+  server: 176.223.131.167
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v29.heduian.link
-    path: /oooo
-- cipher: chacha20-ietf-poly1305
-  name: 🇹🇷_TR_土耳其->🇨🇭_CH_瑞士
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 193.135.174.135
-  type: ss
-- name: 🇨🇳_CN_中国_3
-  password: 253bc477d4e43c209f2d427272968280
-  port: 2381
-  server: 36.156.102.84
-  skip-cert-verify: true
-  sni: fe2.update.microsoft.com
-  type: trojan
-- cipher: aes-256-cfb
-  name: 🇬🇧_GB_英国->🇨🇳_CN_中国
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.15.17.169
-  type: ss
+  uuid: fc45ae37-17da-4da4-cf6e-9223cf95cb9b
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: X_AE_speednode_0001
@@ -573,22 +645,25 @@ proxies:
   tls: false
   type: vmess
   uuid: ea897b9a-0894-4f17-ab5b-7e059678734d
-- name: X_🇭🇰 香港4|@ripaojiedian
-  password: 253bc477d4e43c209f2d427272968280
-  port: 443
-  server: 126.66.52.118
-  skip-cert-verify: false
+- name: X_香港4|@ripaojiedian
+  network: tcp
+  password: e9368912c4ed6046dca6949229cbff02
+  port: 4400
+  server: 221.128.195.222
+  skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: X_🇭🇰 香港6|@ripaojiedian
-  password: 253bc477d4e43c209f2d427272968280
+- name: X_香港6|@ripaojiedian
+  network: tcp
+  password: e9368912c4ed6046dca6949229cbff02
   port: 443
   server: 58.152.53.162
   skip-cert-verify: true
   sni: fe2.update.microsoft.com
   type: trojan
-- name: X_🇯🇵 日本2|@ripaojiedian
-  password: 253bc477d4e43c209f2d427272968280
+- name: X_日本2|@ripaojiedian
+  network: tcp
+  password: e9368912c4ed6046dca6949229cbff02
   port: 1920
   server: 36.156.102.84
   skip-cert-verify: false
@@ -612,12 +687,19 @@ proxies:
     path: /oooo
 - name: X_日本3|@ripaojiedian
   network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 3160
+  password: e9368912c4ed6046dca6949229cbff02
+  port: 3271
   server: 36.156.102.84
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+- cipher: aes-256-cfb
+  name: X_🇯🇵 日本4|@ripaojiedian
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 194.68.27.76
+  tfo: false
+  type: ss
 - cipher: aes-256-cfb
   name: X_🇰🇷 韩国|@ripaojiedian
   password: f8f7aCzcPKbsF8p3
@@ -627,7 +709,7 @@ proxies:
   type: ss
 - name: X_新加坡|@ripaojiedian
   network: tcp
-  password: 253bc477d4e43c209f2d427272968280
+  password: e9368912c4ed6046dca6949229cbff02
   port: 2173
   server: 36.156.102.84
   skip-cert-verify: true
@@ -635,7 +717,7 @@ proxies:
   type: trojan
 - name: X_新加坡2|@ripaojiedian
   network: tcp
-  password: 253bc477d4e43c209f2d427272968280
+  password: e9368912c4ed6046dca6949229cbff02
   port: 5321
   server: 36.156.102.84
   skip-cert-verify: true
@@ -654,7 +736,7 @@ proxies:
   type: ss
 - name: X_美国|@ripaojiedian
   network: tcp
-  password: 253bc477d4e43c209f2d427272968280
+  password: e9368912c4ed6046dca6949229cbff02
   port: 24673
   server: 36.156.102.84
   skip-cert-verify: true
@@ -662,7 +744,7 @@ proxies:
   type: trojan
 - name: X_美国2|@ripaojiedian
   network: tcp
-  password: 253bc477d4e43c209f2d427272968280
+  password: e9368912c4ed6046dca6949229cbff02
   port: 2381
   server: 36.156.102.84
   skip-cert-verify: true
@@ -679,46 +761,12 @@ proxies:
   cipher: auto
   name: X_香港3|@ripaojiedian
   network: tcp
-  port: '30485'
-  server: 103.224.80.67
+  port: '41522'
+  server: 43.247.135.17
   servername: ''
   tls: false
   type: vmess
-  uuid: a9ba904e-2d8b-401e-9226-b5114c049f05
-- name: X_香港4|@ripaojiedian
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 4419
-  server: 221.128.195.221
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: X_香港6|@ripaojiedian
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 443
-  server: 126.47.92.160
-  skip-cert-verify: true
-  sni: fe2.update.microsoft.com
-  type: trojan
-- name: X_日本2|@ripaojiedian
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 1806
-  server: 36.156.102.84
-  sni: www.nintendogames.net
-  type: trojan
-- name: X_美国3|@ripaojiedian
-  network: ws
-  password: wb6368
-  port: 2087
-  server: 92.243.75.49
-  sni: hsdgbuys.pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: hsdgbuys.pages.dev
-    path: '%2F'
+  uuid: ea897b9a-0894-4f17-ab5b-7e059678734d
 - alterId: 0
   cipher: auto
   name: X_美国_1
@@ -1461,37 +1509,53 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - DIRECT
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇲🇩_MD_摩尔多瓦
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇷🇺_RU_俄罗斯
-  - 🇳🇱_NL_荷兰
-  - 🇸🇰_SK_斯洛伐克->🏳️_unKnow_未知
+  - 🇱🇹_LT_立陶宛
+  - 🇸🇪_SE_瑞典
+  - 🇨🇳_CN_中国
+  - 🇱🇹_LT_立陶宛_1
+  - 未知
+  - 🇱🇹_LT_立陶宛_2
+  - 🇱🇹_LT_立陶宛_3
+  - 🇱🇹_LT_立陶宛_4
   - 🇩🇪_DE_德国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇱🇹_LT_立陶宛_5
+  - 🇬🇧_GB_英国
+  - 🇱🇹_LT_立陶宛_6
+  - 🇬🇧_GB_英国_1
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇱🇹_LT_立陶宛_7
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  - 🇱🇹_LT_立陶宛_8
+  - 🇱🇹_LT_立陶宛_9
   - 🇮🇸_IS_冰岛
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-  - 🇹🇷_TR_土耳其->🇨🇭_CH_瑞士
-  - 🇨🇳_CN_中国_3
-  - 🇬🇧_GB_英国->🇨🇳_CN_中国
+  - 🇱🇹_LT_立陶宛_10
   type: select
 - interval: 60
   name: ♻️ 自动选择
   proxies:
   - 🪐 负载均衡
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇲🇩_MD_摩尔多瓦
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇷🇺_RU_俄罗斯
-  - 🇳🇱_NL_荷兰
-  - 🇸🇰_SK_斯洛伐克->🏳️_unKnow_未知
+  - 🇱🇹_LT_立陶宛
+  - 🇸🇪_SE_瑞典
+  - 🇨🇳_CN_中国
+  - 🇱🇹_LT_立陶宛_1
+  - 未知
+  - 🇱🇹_LT_立陶宛_2
+  - 🇱🇹_LT_立陶宛_3
+  - 🇱🇹_LT_立陶宛_4
   - 🇩🇪_DE_德国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇱🇹_LT_立陶宛_5
+  - 🇬🇧_GB_英国
+  - 🇱🇹_LT_立陶宛_6
+  - 🇬🇧_GB_英国_1
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇱🇹_LT_立陶宛_7
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  - 🇱🇹_LT_立陶宛_8
+  - 🇱🇹_LT_立陶宛_9
   - 🇮🇸_IS_冰岛
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-  - 🇹🇷_TR_土耳其->🇨🇭_CH_瑞士
-  - 🇨🇳_CN_中国_3
-  - 🇬🇧_GB_英国->🇨🇳_CN_中国
+  - 🇱🇹_LT_立陶宛_10
   - X_美国_1
   - X_法国_1
   - X_美国_2
@@ -1559,73 +1623,105 @@ proxy-groups:
   - 🚀 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇲🇩_MD_摩尔多瓦
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇷🇺_RU_俄罗斯
-  - 🇳🇱_NL_荷兰
-  - 🇸🇰_SK_斯洛伐克->🏳️_unKnow_未知
+  - 🇱🇹_LT_立陶宛
+  - 🇸🇪_SE_瑞典
+  - 🇨🇳_CN_中国
+  - 🇱🇹_LT_立陶宛_1
+  - 未知
+  - 🇱🇹_LT_立陶宛_2
+  - 🇱🇹_LT_立陶宛_3
+  - 🇱🇹_LT_立陶宛_4
   - 🇩🇪_DE_德国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇱🇹_LT_立陶宛_5
+  - 🇬🇧_GB_英国
+  - 🇱🇹_LT_立陶宛_6
+  - 🇬🇧_GB_英国_1
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇱🇹_LT_立陶宛_7
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  - 🇱🇹_LT_立陶宛_8
+  - 🇱🇹_LT_立陶宛_9
   - 🇮🇸_IS_冰岛
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-  - 🇹🇷_TR_土耳其->🇨🇭_CH_瑞士
-  - 🇨🇳_CN_中国_3
-  - 🇬🇧_GB_英国->🇨🇳_CN_中国
+  - 🇱🇹_LT_立陶宛_10
   type: select
 - name: 📲 电报信息
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇲🇩_MD_摩尔多瓦
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇷🇺_RU_俄罗斯
-  - 🇳🇱_NL_荷兰
-  - 🇸🇰_SK_斯洛伐克->🏳️_unKnow_未知
+  - 🇱🇹_LT_立陶宛
+  - 🇸🇪_SE_瑞典
+  - 🇨🇳_CN_中国
+  - 🇱🇹_LT_立陶宛_1
+  - 未知
+  - 🇱🇹_LT_立陶宛_2
+  - 🇱🇹_LT_立陶宛_3
+  - 🇱🇹_LT_立陶宛_4
   - 🇩🇪_DE_德国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇱🇹_LT_立陶宛_5
+  - 🇬🇧_GB_英国
+  - 🇱🇹_LT_立陶宛_6
+  - 🇬🇧_GB_英国_1
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇱🇹_LT_立陶宛_7
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  - 🇱🇹_LT_立陶宛_8
+  - 🇱🇹_LT_立陶宛_9
   - 🇮🇸_IS_冰岛
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-  - 🇹🇷_TR_土耳其->🇨🇭_CH_瑞士
-  - 🇨🇳_CN_中国_3
-  - 🇬🇧_GB_英国->🇨🇳_CN_中国
+  - 🇱🇹_LT_立陶宛_10
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇲🇩_MD_摩尔多瓦
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇷🇺_RU_俄罗斯
-  - 🇳🇱_NL_荷兰
-  - 🇸🇰_SK_斯洛伐克->🏳️_unKnow_未知
+  - 🇱🇹_LT_立陶宛
+  - 🇸🇪_SE_瑞典
+  - 🇨🇳_CN_中国
+  - 🇱🇹_LT_立陶宛_1
+  - 未知
+  - 🇱🇹_LT_立陶宛_2
+  - 🇱🇹_LT_立陶宛_3
+  - 🇱🇹_LT_立陶宛_4
   - 🇩🇪_DE_德国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇱🇹_LT_立陶宛_5
+  - 🇬🇧_GB_英国
+  - 🇱🇹_LT_立陶宛_6
+  - 🇬🇧_GB_英国_1
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇱🇹_LT_立陶宛_7
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  - 🇱🇹_LT_立陶宛_8
+  - 🇱🇹_LT_立陶宛_9
   - 🇮🇸_IS_冰岛
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-  - 🇹🇷_TR_土耳其->🇨🇭_CH_瑞士
-  - 🇨🇳_CN_中国_3
-  - 🇬🇧_GB_英国->🇨🇳_CN_中国
+  - 🇱🇹_LT_立陶宛_10
   type: select
 - name: 🍎 苹果服务
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇲🇩_MD_摩尔多瓦
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇷🇺_RU_俄罗斯
-  - 🇳🇱_NL_荷兰
-  - 🇸🇰_SK_斯洛伐克->🏳️_unKnow_未知
+  - 🇱🇹_LT_立陶宛
+  - 🇸🇪_SE_瑞典
+  - 🇨🇳_CN_中国
+  - 🇱🇹_LT_立陶宛_1
+  - 未知
+  - 🇱🇹_LT_立陶宛_2
+  - 🇱🇹_LT_立陶宛_3
+  - 🇱🇹_LT_立陶宛_4
   - 🇩🇪_DE_德国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇱🇹_LT_立陶宛_5
+  - 🇬🇧_GB_英国
+  - 🇱🇹_LT_立陶宛_6
+  - 🇬🇧_GB_英国_1
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇱🇹_LT_立陶宛_7
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  - 🇱🇹_LT_立陶宛_8
+  - 🇱🇹_LT_立陶宛_9
   - 🇮🇸_IS_冰岛
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-  - 🇹🇷_TR_土耳其->🇨🇭_CH_瑞士
-  - 🇨🇳_CN_中国_3
-  - 🇬🇧_GB_英国->🇨🇳_CN_中国
+  - 🇱🇹_LT_立陶宛_10
   type: select
 - name: 🎯 全球直连
   proxies:
@@ -1648,19 +1744,27 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇲🇩_MD_摩尔多瓦
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  - 🇷🇺_RU_俄罗斯
-  - 🇳🇱_NL_荷兰
-  - 🇸🇰_SK_斯洛伐克->🏳️_unKnow_未知
+  - 🇱🇹_LT_立陶宛
+  - 🇸🇪_SE_瑞典
+  - 🇨🇳_CN_中国
+  - 🇱🇹_LT_立陶宛_1
+  - 未知
+  - 🇱🇹_LT_立陶宛_2
+  - 🇱🇹_LT_立陶宛_3
+  - 🇱🇹_LT_立陶宛_4
   - 🇩🇪_DE_德国
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_2
+  - 🇱🇹_LT_立陶宛_5
+  - 🇬🇧_GB_英国
+  - 🇱🇹_LT_立陶宛_6
+  - 🇬🇧_GB_英国_1
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇱🇹_LT_立陶宛_7
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  - 🇱🇹_LT_立陶宛_8
+  - 🇱🇹_LT_立陶宛_9
   - 🇮🇸_IS_冰岛
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_3
-  - 🇹🇷_TR_土耳其->🇨🇭_CH_瑞士
-  - 🇨🇳_CN_中国_3
-  - 🇬🇧_GB_英国->🇨🇳_CN_中国
+  - 🇱🇹_LT_立陶宛_10
   type: select
 - interval: 120
   name: 🪐 负载均衡
@@ -1702,11 +1806,12 @@ proxy-groups:
   - X_香港|@ripaojiedian
   - X_🇭🇰 香港2|@ripaojiedian
   - X_🇭🇰 香港3|@ripaojiedian
-  - X_🇭🇰 香港4|@ripaojiedian
-  - X_🇭🇰 香港6|@ripaojiedian
-  - X_🇯🇵 日本2|@ripaojiedian
+  - X_香港4|@ripaojiedian
+  - X_香港6|@ripaojiedian
+  - X_日本2|@ripaojiedian
   - X_日本|@ripaojiedian
   - X_日本3|@ripaojiedian
+  - X_🇯🇵 日本4|@ripaojiedian
   - X_🇰🇷 韩国|@ripaojiedian
   - X_新加坡|@ripaojiedian
   - X_新加坡2|@ripaojiedian
@@ -1715,10 +1820,6 @@ proxy-groups:
   - X_美国2|@ripaojiedian
   - X_🇻🇳 越南|@ripaojiedian
   - X_香港3|@ripaojiedian
-  - X_香港4|@ripaojiedian
-  - X_香港6|@ripaojiedian
-  - X_日本2|@ripaojiedian
-  - X_美国3|@ripaojiedian
   strategy: consistent-hashing
   type: load-balance
   url: https://client3.google.com/generate_204
