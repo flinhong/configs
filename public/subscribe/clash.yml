@@ -577,14 +577,6 @@ proxies:
   tls: false
   type: vmess
   uuid: bfcb103f-2133-4965-8684-6b4c8ef7a774
-- name: X_CN_speednode_0002
-  password: e531d1bc-a56f-4e1a-a295-1442369a19c1
-  port: 26004
-  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
-  skip-cert-verify: true
-  sni: www.bilibili.com
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: X_美国_1
@@ -1385,7 +1377,6 @@ proxy-groups:
   - X_🇬🇧 英国|@ripaojiedian
   - X_新加坡3|@ripaojiedian
   - X_新加坡4|@ripaojiedian
-  - X_CN_speednode_0002
   strategy: consistent-hashing
   type: load-balance
   url: https://client3.google.com/generate_204
