@@ -31,114 +31,120 @@ log-level: info
 mixed-port: 7890
 mode: rule
 proxies:
-- name: 🇩🇪_DE_德国
-  network: tcp
-  password: 15387474-c50e-4eab-ae51-47f60436fb46
-  port: 52312
-  server: 139.162.180.57
-  skip-cert-verify: true
-  sni: 0.0.0.0
-  type: trojan
-- name: 🇨🇳_CN_中国->🇩🇪_DE_德国
-  network: tcp
-  password: 15387474-c50e-4eab-ae51-47f60436fb46
-  port: 52312
-  server: 205.198.95.254
-  skip-cert-verify: true
-  sni: 0.0.0.0
-  type: trojan
-- name: 🇩🇪_DE_德国_1
-  network: tcp
-  password: 15387474-c50e-4eab-ae51-47f60436fb46
-  port: 52312
-  server: 139.162.144.54
-  skip-cert-verify: true
-  sni: 0.0.0.0
-  type: trojan
-- name: 🇺🇸_US_美国->🇩🇪_DE_德国
-  network: tcp
-  password: 15387474-c50e-4eab-ae51-47f60436fb46
-  port: 52155
-  server: 46.3.36.215
-  skip-cert-verify: true
-  sni: 0.0.0.0
-  type: trojan
-- cipher: aes-256-cfb
-  name: 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 185.153.197.5
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇲🇩_MD_摩尔多瓦
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 91.132.94.200
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪_DE_德国_2
-  password: cvII85TrW6n0OGyfpHVS1u
-  port: 8080
-  server: 45.87.175.193
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇮🇷_IR_伊朗
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 151.242.251.152
-  type: ss
-- name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  password: e9368912c4ed6046dca6949229cbff02
-  port: 24673
-  server: 36.156.102.84
-  skip-cert-verify: true
-  sni: fe2.update.microsoft.com
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 151.242.251.142
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 🇨🇦_CA_加拿大
-  network: ws
-  port: 52449
-  server: 74.48.194.126
+  fingerprint: ''
+  name: 🇮🇷_IR_伊朗
+  network: tcp
+  port: 40000
+  server: 91.99.150.59
   sni: ''
   type: vmess
-  uuid: a68840da-f202-4ab5-9c4a-237bff985814
-  ws-opts:
-    path: /a68840da-f202-4ab5-9c4a-237bff985814
+  uuid: 50a79e57-545f-419b-987d-6247c026272a
 - cipher: aes-256-cfb
-  name: 🇦🇺_AU_澳大利亚
+  name: 🇺🇸_US_美国
   password: amazonskr05
   port: 443
-  server: 3.25.225.79
+  server: 54.82.229.122
   type: ss
-- name: 🇨🇳_CN_中国->🇯🇵_JP_日本
-  password: e9368912c4ed6046dca6949229cbff02
-  port: 2173
-  server: 36.156.102.84
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 🇨🇳_CN_中国->🇯🇵_JP_日本_1
-  password: e9368912c4ed6046dca6949229cbff02
-  port: 2381
-  server: 36.156.102.84
-  skip-cert-verify: true
-  sni: fe2.update.microsoft.com
-  type: trojan
 - cipher: aes-256-cfb
-  name: 🇺🇸_US_美国->🇨🇳_CN_中国
+  name: 🇮🇪_IE_爱尔兰->🇺🇸_US_美国
+  password: amazonskr05
+  port: 443
+  server: 54.216.80.211
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇺🇸_US_美国_1
   password: amazonskr05
   port: 443
   server: 13.39.112.103
   type: ss
+- alterId: 0
+  cipher: auto
+  fingerprint: ''
+  name: 🇮🇷_IR_伊朗_1
+  network: ws
+  port: 30000
+  server: 91.99.150.59
+  sni: ''
+  type: vmess
+  uuid: 17642b7a-28cb-4a68-86c9-e3f5987fe3d3
+  ws-opts:
+    path: /
+- cipher: aes-256-cfb
+  name: 🇮🇸_IS_冰岛
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 37.235.49.168
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇺🇸_US_美国->🇮🇳_IN_印度
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 104.192.226.106
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇨🇳_CN_中国_3
+  network: tcp
+  port: 47084
+  server: entrance01.qqa678.cc
+  type: vmess
+  uuid: 8e94ed0e-3717-4c46-aa13-6757a89b392e
+- cipher: aes-256-cfb
+  name: 🇬🇧_GB_英国
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 51.15.17.169
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇩🇪_DE_德国_3
+  name: 🇩🇪_DE_德国
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 45.87.175.155
+  type: ss
+- cipher: aes-256-cfb
+  name: 未知
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.147
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  network: ws
+  port: 30808
+  server: v8.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v8.heduian.link
+    path: /oooo
+- alterId: 2
+  cipher: auto
+  name: 未知_1
+  network: ws
+  port: 30824
+  server: v24.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: v24.heduian.link
+    path: /oooo
+- cipher: aes-256-cfb
+  name: 🇦🇺_AU_澳大利亚->🇲🇩_MD_摩尔多瓦
+  password: amazonskr05
+  port: 443
+  server: 3.25.225.79
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪_DE_德国->🇺🇸_US_美国_1
   password: k1dBOmOB4oqi7Ump37a1bQ
   port: 8080
   server: 45.87.175.197
@@ -146,93 +152,64 @@ proxies:
 - alterId: 0
   cipher: auto
   fingerprint: ''
-  name: 🇺🇸_US_美国_1
+  name: 🇩🇪_DE_德国->🏳️_unKnow_未知
   network: tcp
-  port: 12449
-  server: 45.13.226.116
+  port: 100
+  server: cpanel.erade52.ir
   sni: ''
   type: vmess
-  uuid: b1053a67-88b9-4550-b5fb-826735adc045
-- cipher: aes-256-cfb
-  name: 🇬🇧_GB_英国
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.15.17.169
-  type: ss
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: 🇩🇪_DE_德国_4
-  network: tcp
-  port: 80
-  server: 78.47.12.94
-  sni: ''
-  type: vmess
-  uuid: 00451b7a-e0a9-4e19-a6e9-7e38693e3f1f
-- cipher: aes-256-cfb
-  name: 🇸🇪_SE_瑞典
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 192.71.166.100
-  type: ss
+  uuid: 366d0d7e-df02-48d0-8985-ca62aec03e02
 - cipher: chacha20-ietf-poly1305
-  name: 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰_1
-  password: k1dBOmOB4oqi7Ump37a1bQ
+  name: 🇩🇪_DE_德国_1
+  password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
-  server: 151.242.251.133
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇮🇳_IN_印度
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 134.209.147.198
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪_DE_德国_5
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 45.87.175.174
+  server: 45.87.175.177
   type: ss
 - alterId: 2
   cipher: auto
   name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
   network: ws
-  port: 30808
-  server: v8.heduian.link
+  port: 30829
+  server: v29.heduian.link
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      host: v8.heduian.link
+      host: ocbc.com
     path: /oooo
+- cipher: aes-256-cfb
+  name: 🇷🇺_RU_俄罗斯
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.231.233.112
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 151.242.251.133
+  type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: X_AE_speednode_0001
-  port: 443
+  name: X_AT_speednode_0001
+  port: 25801
   reality-opts:
-    public-key: RDAZYkEO3l0_jrv5O5edQ6zsMYrxKLp1GPV339ZTDSk
-    short-id: ec7212a8
-  server: 38.180.26.205
-  servername: nspk.ru
+    public-key: iC7qQK0Yu8sQsiIj5JPTGDVTrFkZDoesDUn24pDwgQk
+  server: mengying.eu.org
+  servername: updates.cdn-apple.com
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 677615f7-87d5-5019-a44d-4fc3ff8d59d7
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_CA_speednode_0002
-  port: 42557
-  reality-opts:
-    public-key: LiHpb4jWrgHBSpi1mjKH3I8m2ahpVNexeNDh-sMW3Xo
-    short-id: f430927d
-  server: 132.145.108.97
-  servername: www.yahoo.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
+  uuid: 4c7f66da-af49-4e6d-b60c-f6a0eaa00919
+- name: X_CN_speednode_0002
+  password: e531d1bc-a56f-4e1a-a295-1442369a19c1
+  port: 26004
+  server: e4d7a1c2f3b80976a5e2c1d4b3f0a987.1kmei.com
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
   udp: true
-  uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
 - name: X_CN_speednode_0003
   password: 80c9752a41
   port: 20443
@@ -242,96 +219,20 @@ proxies:
   type: http
   udp: true
   username: dd247fc262
-- alterId: 2
-  cipher: auto
-  name: X_CN_speednode_0004
-  network: ws
-  port: 30824
-  server: v24.heduian.link
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: v24.heduian.link
-    path: /oooo
 - client-fingerprint: chrome
-  name: X_DE_speednode_0006
-  port: 48769
+  name: X_DE_speednode_0004
+  port: 6666
   reality-opts:
-    public-key: 7nXyxyyn6fSlJzPO1DFmIEUV8LAmoP58-_1zP_MKo2E
-    short-id: 177f438f
-  server: fast7.hvitrin.ir
-  servername: miro.com
+    public-key: S_2bepGaT7EHeH5DdyEgio421RTgrAvvOOQiaq8zV0g
+    short-id: b525ecd2fc
+  server: 188.68.53.100
+  servername: Tgju.org
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: f8806934-15d7-4194-9c35-ec7a140bb6f6
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_DE_speednode_0007
-  port: 8443
-  reality-opts:
-    public-key: NvdLgcQKj0XeAmqIpCEdvcsgfNrtSyfGnQYNdZ7eTFE
-    short-id: 3be8ba17d00eb522
-  server: de.monkeyisland.life
-  servername: www.stackoverflow.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: fd71044e-127b-429c-9f4a-bd2432e473be
-- client-fingerprint: chrome
-  name: X_DE_speednode_0008
-  network: ws
-  port: 443
-  server: net2026.zanddynastyofpersia.org
-  servername: net2026.zanddynastyofpersia.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0ec8c120-33fa-4658-9bed-3a51cb04c55c
-  ws-opts:
-    headers:
-      Host: net2026.zanddynastyofpersia.org
-    path: /eJsVXFVZ6iavNx1EFxOyH861WH
-- alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: X_HK_speednode_0009
-  network: http
-  port: 31212
-  server: 47.242.90.210
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3a4271fb-2718-4489-da78-80a8e7701aa5
-- http-opts:
-    headers:
-      Host:
-      - Telewebion.com
-    method: GET
-    path:
-    - /
-  name: X_IR_speednode_0010
-  network: http
-  port: 20532
-  server: 94.182.137.12
-  servername: Telewebion.com
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 8496c102-4094-4dd3-ad63-7bb7a35cbaee
-- name: X_KR_speednode_0011
+  uuid: 0abf9050-c7be-464d-80af-24094c2b97de
+- name: X_KR_speednode_0005
   password: test.+
   port: 30446
   server: testkr3.ssv.vc
@@ -341,59 +242,19 @@ proxies:
   udp: true
   username: test
 - client-fingerprint: chrome
-  name: X_KZ_speednode_0012
-  port: 8080
+  name: X_NL_speednode_0006
+  port: 32155
   reality-opts:
-    public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
-    short-id: 27cfa05000c23cc4
-  server: 38.107.234.93
-  servername: yandex.com
+    public-key: 6-b7u_t7wG_jbda_lucHW4Au9biBl1E0tA2Zkqm8mSw
+    short-id: 737af772
+  server: 31.207.44.210
+  servername: yahoo.com
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_MD_speednode_0013
-  port: 443
-  reality-opts:
-    public-key: llaiqC-oIhL_bjc236FPq26LSn7IVhIa4cIC6OVytws
-    short-id: 8453e5fd9af927
-  server: rus-0001-xr.packet-drop-society.net
-  servername: hls-svod.itunes.apple.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: a71f0ddd-8ae5-437b-8d59-582779757296
-- client-fingerprint: chrome
-  name: X_NL_speednode_0014
-  port: 8080
-  reality-opts:
-    public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
-    short-id: 27cfa05000c23cc4
-  server: 77.246.100.169
-  servername: yandex.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37
-- client-fingerprint: chrome
-  name: X_PL_speednode_0015
-  port: 8080
-  reality-opts:
-    public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
-    short-id: 27cfa05000c23cc4
-  server: 77.83.245.220
-  servername: yandex.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1abaa2b6-ab8c-4525-8c91-b73bc2ab2b37
-- name: X_RU_speednode_0016
+  uuid: 2e23b585-a486-4541-83d8-5832a1409c6e
+- name: X_RU_speednode_0007
   network: ws
   port: 2096
   server: 188.42.145.253
@@ -407,36 +268,8 @@ proxies:
     headers:
       Host: gaosir.unfeeling.sbs
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- client-fingerprint: chrome
-  name: X_RU_speednode_0017
-  network: ws
-  port: 2096
-  server: 188.42.145.253
-  servername: gaosir.unfeeling.sbs
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  ws-opts:
-    headers:
-      Host: gaosir.unfeeling.sbs
-    path: /TelegramU0001F1E8U0001F1F3 @WangCai2 /?ed=2560
-- name: X_SG_speednode_0018
-  network: ws
-  password: wb6368
-  port: 2087
-  server: 92.243.75.49
-  skip-cert-verify: false
-  sni: hsdgbuys.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: hsdgbuys.pages.dev
-    path: /
 - cipher: chacha20-ietf-poly1305
-  name: X_SG_speednode_0019
+  name: X_SG_speednode_0008
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
@@ -447,79 +280,14 @@ proxies:
   server: 5.44.249.42
   type: ss
   udp: true
-- name: X_SG_speednode_0020
-  password: installshield
-  port: 8443
-  server: 38.180.106.124
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: X_US_speednode_0024
-  network: ws
-  port: 2083
-  server: 162.159.142.252
-  servername: fei.634676.xyz
-  skip-cert-verify: false
+- name: X_TW_speednode_0009
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 1443
+  server: twmoon1-cdn-route.couldflare-cdn.com
   tls: true
-  type: vless
+  type: http
   udp: true
-  uuid: d2965257-0536-4811-a0d5-cdce54e90326
-  ws-opts:
-    headers:
-      Host: fei.634676.xyz
-    path: /?ed=2560
-- name: X_US_speednode_0026
-  network: ws
-  port: 2096
-  server: 72.167.25.253
-  servername: gaosir.unfeeling.sbs
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f61a4285-7264-4d07-9408-7b9ba1922c26
-  ws-opts:
-    headers:
-      Host: gaosir.unfeeling.sbs
-    path: /Telegram
-- name: X_US_speednode_0027
-  network: ws
-  port: 2082
-  server: www.speedtest.net
-  servername: novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e6ac850f-c81a-482d-ab54-c3fa3b327e4e
-  ws-opts:
-    headers:
-      Host: novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.
-    path: /@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn?ed=2082
-- name: X_US_speednode_0028
-  network: ws
-  port: 80
-  server: www.speedtest.net
-  servername: websocket.network.www.speedtest.net.flutter.dev.russia.pyt.vegaskala.com.
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 375e6eaa-d849-40e4-b4f7-102e6ee0fe87
-  ws-opts:
-    headers:
-      Host: websocket.network.www.speedtest.net.flutter.dev.russia.pyt.vegaskala.com.
-    path: /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy
-- cipher: chacha20-ietf-poly1305
-  name: X_ZA_speednode_0029
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 156.38.168.58
-  type: ss
-  udp: true
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
 - alterId: 0
   cipher: auto
   name: X_防范境外势力渗透
@@ -641,91 +409,72 @@ proxies:
   server: 103.103.245.158
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: X_🇭🇰 香港3|@ripaojiedian
-  port: 41522
-  server: 43.247.135.17
+- name: X_香港3|@ripaojiedian
+  network: tcp
+  password: dce3c42b-f259-4b18-b5c1-a42ebef4e732
+  port: 13007
+  server: naiu-hk.05vr9nyqg5.download
   skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: ea897b9a-0894-4f17-ab5b-7e059678734d
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
 - name: X_香港4|@ripaojiedian
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 443
-  server: 60.82.70.104
+  server: 58.152.53.214
   skip-cert-verify: true
-  sni: www.nintendogames.net
+  sni: www.baidu.com
   type: trojan
 - name: X_香港6|@ripaojiedian
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 443
-  server: 58.152.53.162
+  server: 203.198.123.249
   skip-cert-verify: true
-  sni: fe2.update.microsoft.com
+  sni: www.baidu.com
   type: trojan
-- alterId: 2
-  cipher: auto
-  name: X_日本|@ripaojiedian
-  network: ws
-  port: '30806'
-  server: v6.heduian.link
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
 - name: X_日本2|@ripaojiedian
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
-  port: 3272
-  server: 36.156.102.84
-  skip-cert-verify: false
-  sni: www.nintendogames.net
+  port: 316
+  server: 160.16.144.208
+  skip-cert-verify: true
+  sni: www.baidu.com
   type: trojan
 - name: X_日本3|@ripaojiedian
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
-  port: 1806
-  server: 36.156.102.84
-  skip-cert-verify: false
-  sni: www.nintendogames.net
+  port: 1331
+  server: 160.16.144.208
+  skip-cert-verify: true
+  sni: www.baidu.com
   type: trojan
 - name: X_新加坡|@ripaojiedian
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 2283
-  server: 36.156.102.84
-  skip-cert-verify: false
-  sni: www.nintendogames.net
+  server: 160.16.144.208
+  skip-cert-verify: true
+  sni: www.baidu.com
   type: trojan
 - name: X_新加坡2|@ripaojiedian
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
-  port: 1085
-  server: 36.156.102.84
-  skip-cert-verify: false
-  sni: www.nintendogames.net
+  port: 5041
+  server: 160.16.138.24
+  skip-cert-verify: true
+  sni: www.baidu.com
   type: trojan
-- cipher: chacha20-ietf-poly1305
+- alterId: 0
+  cipher: auto
   name: X_🇸🇬 新加坡3|@ripaojiedian
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: (TG @ripaojiedian)32cf132:178330
-    mode: tls
-  port: 2377
-  server: 5.44.249.43
+  port: 22286
+  server: 47.245.106.193
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: 8646218f-a600-4b73-8721-aa5d4567819e
 - alterId: 0
   cipher: auto
   name: X_🇸🇬 新加坡4|@ripaojiedian
@@ -739,36 +488,50 @@ proxies:
 - name: X_美国|@ripaojiedian
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
-  port: 6752
-  server: 36.156.102.84
+  port: 2381
+  server: 160.16.144.208
   skip-cert-verify: true
-  sni: fe2.update.microsoft.com
+  sni: www.baidu.com
   type: trojan
 - name: X_美国2|@ripaojiedian
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
-  port: 2381
-  server: 36.156.102.84
+  port: 24673
+  server: 160.16.124.55
   skip-cert-verify: true
-  sni: fe2.update.microsoft.com
+  sni: www.baidu.com
   type: trojan
+- cipher: aes-256-gcm
+  name: X_🇦🇺 澳大利亚|@ripaojiedian
+  password: dada0801
+  port: 80
+  server: 3.107.184.53
+  tfo: false
+  type: ss
 - cipher: aes-256-cfb
   name: X_🇻🇳 越南|@ripaojiedian
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.154.237
+  server: 103.186.154.48
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: X_🇬🇧 英国|@ripaojiedian
+  password: k1v5g9FefdoO
+  port: 8388
+  server: 57.129.140.88
   tfo: false
   type: ss
 - alterId: 0
   cipher: auto
-  name: X_香港3|@ripaojiedian
+  name: X_新加坡3|@ripaojiedian
   network: tcp
-  port: '41522'
-  server: 43.247.135.17
+  port: '22286'
+  server: 47.245.106.193
   servername: ''
   tls: false
   type: vmess
-  uuid: ea897b9a-0894-4f17-ab5b-7e059678734d
+  uuid: 8646218f-a600-4b73-8721-aa5d4567819e
 - alterId: 0
   cipher: auto
   name: X_新加坡4|@ripaojiedian
@@ -1299,59 +1062,51 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - DIRECT
-  - 🇩🇪_DE_德国
-  - 🇨🇳_CN_中国->🇩🇪_DE_德国
-  - 🇩🇪_DE_德国_1
-  - 🇺🇸_US_美国->🇩🇪_DE_德国
-  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
-  - 🇲🇩_MD_摩尔多瓦
-  - 🇩🇪_DE_德国_2
   - 🇮🇷_IR_伊朗
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰
-  - 🇨🇦_CA_加拿大
-  - 🇦🇺_AU_澳大利亚
-  - 🇨🇳_CN_中国->🇯🇵_JP_日本
-  - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
-  - 🇺🇸_US_美国->🇨🇳_CN_中国
-  - 🇩🇪_DE_德国_3
+  - 🇺🇸_US_美国
+  - 🇮🇪_IE_爱尔兰->🇺🇸_US_美国
   - 🇺🇸_US_美国_1
+  - 🇮🇷_IR_伊朗_1
+  - 🇮🇸_IS_冰岛
+  - 🇺🇸_US_美国->🇮🇳_IN_印度
+  - 🇨🇳_CN_中国_3
   - 🇬🇧_GB_英国
-  - 🇩🇪_DE_德国_4
-  - 🇸🇪_SE_瑞典
-  - 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰_1
-  - 🇮🇳_IN_印度
-  - 🇩🇪_DE_德国_5
+  - 🇩🇪_DE_德国
+  - 未知
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 未知_1
+  - 🇦🇺_AU_澳大利亚->🇲🇩_MD_摩尔多瓦
+  - 🇩🇪_DE_德国->🇺🇸_US_美国_1
+  - 🇩🇪_DE_德国->🏳️_unKnow_未知
+  - 🇩🇪_DE_德国_1
   - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇷🇺_RU_俄罗斯
+  - 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰
   type: select
 - interval: 60
   name: ♻️ 自动选择
   proxies:
   - 🪐 负载均衡
-  - 🇩🇪_DE_德国
-  - 🇨🇳_CN_中国->🇩🇪_DE_德国
-  - 🇩🇪_DE_德国_1
-  - 🇺🇸_US_美国->🇩🇪_DE_德国
-  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
-  - 🇲🇩_MD_摩尔多瓦
-  - 🇩🇪_DE_德国_2
   - 🇮🇷_IR_伊朗
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰
-  - 🇨🇦_CA_加拿大
-  - 🇦🇺_AU_澳大利亚
-  - 🇨🇳_CN_中国->🇯🇵_JP_日本
-  - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
-  - 🇺🇸_US_美国->🇨🇳_CN_中国
-  - 🇩🇪_DE_德国_3
+  - 🇺🇸_US_美国
+  - 🇮🇪_IE_爱尔兰->🇺🇸_US_美国
   - 🇺🇸_US_美国_1
+  - 🇮🇷_IR_伊朗_1
+  - 🇮🇸_IS_冰岛
+  - 🇺🇸_US_美国->🇮🇳_IN_印度
+  - 🇨🇳_CN_中国_3
   - 🇬🇧_GB_英国
-  - 🇩🇪_DE_德国_4
-  - 🇸🇪_SE_瑞典
-  - 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰_1
-  - 🇮🇳_IN_印度
-  - 🇩🇪_DE_德国_5
+  - 🇩🇪_DE_德国
+  - 未知
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 未知_1
+  - 🇦🇺_AU_澳大利亚->🇲🇩_MD_摩尔多瓦
+  - 🇩🇪_DE_德国->🇺🇸_US_美国_1
+  - 🇩🇪_DE_德国->🏳️_unKnow_未知
+  - 🇩🇪_DE_德国_1
   - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇷🇺_RU_俄罗斯
+  - 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰
   - X_美国_1
   - X_美国_2
   - X_法国_1
@@ -1407,117 +1162,101 @@ proxy-groups:
   - 🚀 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇩🇪_DE_德国
-  - 🇨🇳_CN_中国->🇩🇪_DE_德国
-  - 🇩🇪_DE_德国_1
-  - 🇺🇸_US_美国->🇩🇪_DE_德国
-  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
-  - 🇲🇩_MD_摩尔多瓦
-  - 🇩🇪_DE_德国_2
   - 🇮🇷_IR_伊朗
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰
-  - 🇨🇦_CA_加拿大
-  - 🇦🇺_AU_澳大利亚
-  - 🇨🇳_CN_中国->🇯🇵_JP_日本
-  - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
-  - 🇺🇸_US_美国->🇨🇳_CN_中国
-  - 🇩🇪_DE_德国_3
+  - 🇺🇸_US_美国
+  - 🇮🇪_IE_爱尔兰->🇺🇸_US_美国
   - 🇺🇸_US_美国_1
+  - 🇮🇷_IR_伊朗_1
+  - 🇮🇸_IS_冰岛
+  - 🇺🇸_US_美国->🇮🇳_IN_印度
+  - 🇨🇳_CN_中国_3
   - 🇬🇧_GB_英国
-  - 🇩🇪_DE_德国_4
-  - 🇸🇪_SE_瑞典
-  - 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰_1
-  - 🇮🇳_IN_印度
-  - 🇩🇪_DE_德国_5
+  - 🇩🇪_DE_德国
+  - 未知
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 未知_1
+  - 🇦🇺_AU_澳大利亚->🇲🇩_MD_摩尔多瓦
+  - 🇩🇪_DE_德国->🇺🇸_US_美国_1
+  - 🇩🇪_DE_德国->🏳️_unKnow_未知
+  - 🇩🇪_DE_德国_1
   - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇷🇺_RU_俄罗斯
+  - 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰
   type: select
 - name: 📲 电报信息
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇩🇪_DE_德国
-  - 🇨🇳_CN_中国->🇩🇪_DE_德国
-  - 🇩🇪_DE_德国_1
-  - 🇺🇸_US_美国->🇩🇪_DE_德国
-  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
-  - 🇲🇩_MD_摩尔多瓦
-  - 🇩🇪_DE_德国_2
   - 🇮🇷_IR_伊朗
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰
-  - 🇨🇦_CA_加拿大
-  - 🇦🇺_AU_澳大利亚
-  - 🇨🇳_CN_中国->🇯🇵_JP_日本
-  - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
-  - 🇺🇸_US_美国->🇨🇳_CN_中国
-  - 🇩🇪_DE_德国_3
+  - 🇺🇸_US_美国
+  - 🇮🇪_IE_爱尔兰->🇺🇸_US_美国
   - 🇺🇸_US_美国_1
+  - 🇮🇷_IR_伊朗_1
+  - 🇮🇸_IS_冰岛
+  - 🇺🇸_US_美国->🇮🇳_IN_印度
+  - 🇨🇳_CN_中国_3
   - 🇬🇧_GB_英国
-  - 🇩🇪_DE_德国_4
-  - 🇸🇪_SE_瑞典
-  - 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰_1
-  - 🇮🇳_IN_印度
-  - 🇩🇪_DE_德国_5
+  - 🇩🇪_DE_德国
+  - 未知
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 未知_1
+  - 🇦🇺_AU_澳大利亚->🇲🇩_MD_摩尔多瓦
+  - 🇩🇪_DE_德国->🇺🇸_US_美国_1
+  - 🇩🇪_DE_德国->🏳️_unKnow_未知
+  - 🇩🇪_DE_德国_1
   - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇷🇺_RU_俄罗斯
+  - 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇩🇪_DE_德国
-  - 🇨🇳_CN_中国->🇩🇪_DE_德国
-  - 🇩🇪_DE_德国_1
-  - 🇺🇸_US_美国->🇩🇪_DE_德国
-  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
-  - 🇲🇩_MD_摩尔多瓦
-  - 🇩🇪_DE_德国_2
   - 🇮🇷_IR_伊朗
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰
-  - 🇨🇦_CA_加拿大
-  - 🇦🇺_AU_澳大利亚
-  - 🇨🇳_CN_中国->🇯🇵_JP_日本
-  - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
-  - 🇺🇸_US_美国->🇨🇳_CN_中国
-  - 🇩🇪_DE_德国_3
+  - 🇺🇸_US_美国
+  - 🇮🇪_IE_爱尔兰->🇺🇸_US_美国
   - 🇺🇸_US_美国_1
+  - 🇮🇷_IR_伊朗_1
+  - 🇮🇸_IS_冰岛
+  - 🇺🇸_US_美国->🇮🇳_IN_印度
+  - 🇨🇳_CN_中国_3
   - 🇬🇧_GB_英国
-  - 🇩🇪_DE_德国_4
-  - 🇸🇪_SE_瑞典
-  - 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰_1
-  - 🇮🇳_IN_印度
-  - 🇩🇪_DE_德国_5
+  - 🇩🇪_DE_德国
+  - 未知
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 未知_1
+  - 🇦🇺_AU_澳大利亚->🇲🇩_MD_摩尔多瓦
+  - 🇩🇪_DE_德国->🇺🇸_US_美国_1
+  - 🇩🇪_DE_德国->🏳️_unKnow_未知
+  - 🇩🇪_DE_德国_1
   - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇷🇺_RU_俄罗斯
+  - 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰
   type: select
 - name: 🍎 苹果服务
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇩🇪_DE_德国
-  - 🇨🇳_CN_中国->🇩🇪_DE_德国
-  - 🇩🇪_DE_德国_1
-  - 🇺🇸_US_美国->🇩🇪_DE_德国
-  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
-  - 🇲🇩_MD_摩尔多瓦
-  - 🇩🇪_DE_德国_2
   - 🇮🇷_IR_伊朗
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰
-  - 🇨🇦_CA_加拿大
-  - 🇦🇺_AU_澳大利亚
-  - 🇨🇳_CN_中国->🇯🇵_JP_日本
-  - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
-  - 🇺🇸_US_美国->🇨🇳_CN_中国
-  - 🇩🇪_DE_德国_3
+  - 🇺🇸_US_美国
+  - 🇮🇪_IE_爱尔兰->🇺🇸_US_美国
   - 🇺🇸_US_美国_1
+  - 🇮🇷_IR_伊朗_1
+  - 🇮🇸_IS_冰岛
+  - 🇺🇸_US_美国->🇮🇳_IN_印度
+  - 🇨🇳_CN_中国_3
   - 🇬🇧_GB_英国
-  - 🇩🇪_DE_德国_4
-  - 🇸🇪_SE_瑞典
-  - 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰_1
-  - 🇮🇳_IN_印度
-  - 🇩🇪_DE_德国_5
+  - 🇩🇪_DE_德国
+  - 未知
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 未知_1
+  - 🇦🇺_AU_澳大利亚->🇲🇩_MD_摩尔多瓦
+  - 🇩🇪_DE_德国->🇺🇸_US_美国_1
+  - 🇩🇪_DE_德国->🏳️_unKnow_未知
+  - 🇩🇪_DE_德国_1
   - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇷🇺_RU_俄罗斯
+  - 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰
   type: select
 - name: 🎯 全球直连
   proxies:
@@ -1540,58 +1279,39 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇩🇪_DE_德国
-  - 🇨🇳_CN_中国->🇩🇪_DE_德国
-  - 🇩🇪_DE_德国_1
-  - 🇺🇸_US_美国->🇩🇪_DE_德国
-  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
-  - 🇲🇩_MD_摩尔多瓦
-  - 🇩🇪_DE_德国_2
   - 🇮🇷_IR_伊朗
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰
-  - 🇨🇦_CA_加拿大
-  - 🇦🇺_AU_澳大利亚
-  - 🇨🇳_CN_中国->🇯🇵_JP_日本
-  - 🇨🇳_CN_中国->🇯🇵_JP_日本_1
-  - 🇺🇸_US_美国->🇨🇳_CN_中国
-  - 🇩🇪_DE_德国_3
+  - 🇺🇸_US_美国
+  - 🇮🇪_IE_爱尔兰->🇺🇸_US_美国
   - 🇺🇸_US_美国_1
+  - 🇮🇷_IR_伊朗_1
+  - 🇮🇸_IS_冰岛
+  - 🇺🇸_US_美国->🇮🇳_IN_印度
+  - 🇨🇳_CN_中国_3
   - 🇬🇧_GB_英国
-  - 🇩🇪_DE_德国_4
-  - 🇸🇪_SE_瑞典
-  - 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰_1
-  - 🇮🇳_IN_印度
-  - 🇩🇪_DE_德国_5
+  - 🇩🇪_DE_德国
+  - 未知
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 未知_1
+  - 🇦🇺_AU_澳大利亚->🇲🇩_MD_摩尔多瓦
+  - 🇩🇪_DE_德国->🇺🇸_US_美国_1
+  - 🇩🇪_DE_德国->🏳️_unKnow_未知
+  - 🇩🇪_DE_德国_1
   - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇷🇺_RU_俄罗斯
+  - 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰
   type: select
 - interval: 120
   name: 🪐 负载均衡
   proxies:
-  - X_AE_speednode_0001
-  - X_CA_speednode_0002
+  - X_AT_speednode_0001
+  - X_CN_speednode_0002
   - X_CN_speednode_0003
-  - X_CN_speednode_0004
-  - X_DE_speednode_0006
-  - X_DE_speednode_0007
-  - X_DE_speednode_0008
-  - X_HK_speednode_0009
-  - X_IR_speednode_0010
-  - X_KR_speednode_0011
-  - X_KZ_speednode_0012
-  - X_MD_speednode_0013
-  - X_NL_speednode_0014
-  - X_PL_speednode_0015
-  - X_RU_speednode_0016
-  - X_RU_speednode_0017
-  - X_SG_speednode_0018
-  - X_SG_speednode_0019
-  - X_SG_speednode_0020
-  - X_US_speednode_0024
-  - X_US_speednode_0026
-  - X_US_speednode_0027
-  - X_US_speednode_0028
-  - X_ZA_speednode_0029
+  - X_DE_speednode_0004
+  - X_KR_speednode_0005
+  - X_NL_speednode_0006
+  - X_RU_speednode_0007
+  - X_SG_speednode_0008
+  - X_TW_speednode_0009
   - X_防范境外势力渗透
   - 'X_防范境外势力渗透 #1'
   - 'X_防范境外势力渗透 #2'
@@ -1604,10 +1324,9 @@ proxy-groups:
   - 'X_防范境外势力渗透 #9'
   - X_香港|@ripaojiedian
   - X_🇭🇰 香港2|@ripaojiedian
-  - X_🇭🇰 香港3|@ripaojiedian
+  - X_香港3|@ripaojiedian
   - X_香港4|@ripaojiedian
   - X_香港6|@ripaojiedian
-  - X_日本|@ripaojiedian
   - X_日本2|@ripaojiedian
   - X_日本3|@ripaojiedian
   - X_新加坡|@ripaojiedian
@@ -1616,8 +1335,10 @@ proxy-groups:
   - X_🇸🇬 新加坡4|@ripaojiedian
   - X_美国|@ripaojiedian
   - X_美国2|@ripaojiedian
+  - X_🇦🇺 澳大利亚|@ripaojiedian
   - X_🇻🇳 越南|@ripaojiedian
-  - X_香港3|@ripaojiedian
+  - X_🇬🇧 英国|@ripaojiedian
+  - X_新加坡3|@ripaojiedian
   - X_新加坡4|@ripaojiedian
   strategy: consistent-hashing
   type: load-balance
