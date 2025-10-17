@@ -31,46 +31,36 @@ log-level: info
 mixed-port: 7890
 mode: rule
 proxies:
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: 🇮🇷_IR_伊朗
-  network: tcp
-  port: 40000
-  server: 91.99.150.59
-  sni: ''
-  type: vmess
-  uuid: 50a79e57-545f-419b-987d-6247c026272a
 - cipher: aes-256-cfb
   name: 🇺🇸_US_美国
   password: amazonskr05
   port: 443
-  server: 54.82.229.122
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇮🇪_IE_爱尔兰->🇺🇸_US_美国
-  password: amazonskr05
-  port: 443
-  server: 54.216.80.211
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇺🇸_US_美国_1
-  password: amazonskr05
-  port: 443
   server: 13.39.112.103
   type: ss
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: 🇮🇷_IR_伊朗_1
-  network: ws
-  port: 30000
-  server: 91.99.150.59
-  sni: ''
-  type: vmess
-  uuid: 17642b7a-28cb-4a68-86c9-e3f5987fe3d3
-  ws-opts:
-    path: /
+- cipher: aes-256-cfb
+  name: 🇲🇩_MD_摩尔多瓦
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 91.132.94.200
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇷🇺_RU_俄罗斯
+  password: SBM7R883jBmnqe6C
+  port: 9053
+  server: 217.30.10.70
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇷🇺_RU_俄罗斯_1
+  password: FAdUvMJUq5vDgKEq
+  port: 9006
+  server: 217.30.10.70
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇷🇺_RU_俄罗斯_2
+  password: HSZuyJQcWe8dxNdF
+  port: 9043
+  server: 217.30.10.70
+  type: ss
 - cipher: aes-256-cfb
   name: 🇮🇸_IS_冰岛
   password: f8f7aCzcPKbsF8p3
@@ -78,116 +68,61 @@ proxies:
   server: 37.235.49.168
   type: ss
 - cipher: aes-256-cfb
-  name: 🇺🇸_US_美国->🇮🇳_IN_印度
+  name: 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
   password: f8f7aCzcPKbsF8p3
   port: 989
-  server: 104.192.226.106
+  server: 185.153.197.5
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇷🇺_RU_俄罗斯_3
+  password: UWZQeLRWnkqgkseq
+  port: 9032
+  server: 217.30.10.70
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇺🇸_US_美国->🏳️_unKnow_未知
+  password: amazonskr05
+  port: 443
+  server: 54.84.99.165
+  type: ss
+- cipher: aes-256-cfb
+  name: 🇷🇺_RU_俄罗斯->🏳️_unKnow_未知
+  password: FG5ddLsMPbV5CutE
+  port: 9050
+  server: 217.30.10.70
   type: ss
 - alterId: 0
   cipher: auto
-  name: 🇨🇳_CN_中国_3
-  network: tcp
-  port: 47084
-  server: entrance01.qqa678.cc
+  name: 🇪🇸_ES_西班牙->🇺🇸_US_美国
+  network: ws
+  port: 27123
+  server: 212.192.15.176
+  sni: ''
   type: vmess
-  uuid: 8e94ed0e-3717-4c46-aa13-6757a89b392e
-- cipher: aes-256-cfb
-  name: 🇬🇧_GB_英国
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 51.15.17.169
+  uuid: 9d93dfcd-50a9-4722-a8e3-eb0ef276cdb1
+- cipher: chacha20-ietf-poly1305
+  name: 🇮🇷_IR_伊朗->🇺🇸_US_美国
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 151.242.251.133
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇩🇪_DE_德国
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 45.87.175.155
-  type: ss
-- cipher: aes-256-cfb
-  name: 未知
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.147
-  type: ss
-- alterId: 2
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国
-  network: ws
-  port: 30808
-  server: v8.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v8.heduian.link
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: 未知_1
-  network: ws
-  port: 30824
-  server: v24.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v24.heduian.link
-    path: /oooo
-- cipher: aes-256-cfb
-  name: 🇦🇺_AU_澳大利亚->🇲🇩_MD_摩尔多瓦
-  password: amazonskr05
-  port: 443
-  server: 3.25.225.79
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪_DE_德国->🇺🇸_US_美国_1
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 45.87.175.197
-  type: ss
-- alterId: 0
-  cipher: auto
-  fingerprint: ''
-  name: 🇩🇪_DE_德国->🏳️_unKnow_未知
-  network: tcp
-  port: 100
-  server: cpanel.erade52.ir
-  sni: ''
-  type: vmess
-  uuid: 366d0d7e-df02-48d0-8985-ca62aec03e02
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪_DE_德国_1
   password: cvII85TrW6n0OGyfpHVS1u
   port: 8080
-  server: 45.87.175.177
+  server: 45.87.175.193
   type: ss
-- alterId: 2
-  cipher: auto
-  name: 🇨🇳_CN_中国->🇺🇸_US_美国_1
-  network: ws
-  port: 30829
-  server: v29.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
 - cipher: aes-256-cfb
-  name: 🇷🇺_RU_俄罗斯
+  name: 🇷🇺_RU_俄罗斯_4
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 185.231.233.112
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰
-  password: k1dBOmOB4oqi7Ump37a1bQ
-  port: 8080
-  server: 151.242.251.133
+- cipher: aes-256-cfb
+  name: 🇷🇺_RU_俄罗斯_5
+  password: XPtzA9sCug3SPR4c
+  port: 9025
+  server: 217.30.10.70
   type: ss
 - name: X_CN_speednode_0001
   password: 80c9752a41
@@ -444,22 +379,40 @@ proxies:
   server: 103.103.245.158
   tfo: false
   type: ss
-- name: X_香港3|@ripaojiedian
-  network: tcp
-  password: dce3c42b-f259-4b18-b5c1-a42ebef4e732
-  port: 13007
-  server: naiu-hk.05vr9nyqg5.download
+- alterId: 0
+  cipher: none
+  name: X_香港3|@ripaojiedian
+  network: ws
+  port: '41199'
+  server: 38.55.106.62
+  servername: hk-vmiss-n4.nebulacloud.win
   skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: e18650e9-264b-4bf7-bbce-d846642dcf26
+  ws-opts:
+    headers:
+      Host: hk-vmiss-n4.nebulacloud.win
+    path: /hk-vmiss-n4/getData
 - name: X_香港4|@ripaojiedian
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 443
-  server: 58.152.53.214
-  skip-cert-verify: true
-  sni: www.baidu.com
+  server: 58.152.30.87
+  skip-cert-verify: false
+  sni: www.nintendogames.net
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: X_🇭🇰 香港5|@ripaojiedian
+  port: 38901
+  server: 103.224.80.42
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 230938d9-ae9d-49e7-b3cb-9f44168f89e8
 - name: X_香港6|@ripaojiedian
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
@@ -468,11 +421,18 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
+- cipher: chacha20-ietf
+  name: X_🇭🇰 香港7|@ripaojiedian
+  password: asd123456
+  port: 8388
+  server: 103.149.183.154
+  tfo: false
+  type: ss
 - name: X_日本2|@ripaojiedian
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 316
-  server: 160.16.144.208
+  server: 160.16.106.144
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
@@ -480,103 +440,99 @@ proxies:
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 1331
-  server: 160.16.144.208
+  server: 160.16.106.144
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
 - name: X_新加坡|@ripaojiedian
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
-  port: 2283
-  server: 160.16.144.208
+  port: 5041
+  server: 153.121.56.122
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
 - name: X_新加坡2|@ripaojiedian
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
-  port: 5041
-  server: 160.16.138.24
+  port: 5321
+  server: 153.121.56.122
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- alterId: 0
-  cipher: auto
+- cipher: chacha20-ietf-poly1305
   name: X_🇸🇬 新加坡3|@ripaojiedian
-  port: 22286
-  server: 47.245.106.193
-  skip-cert-verify: false
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 4a81070:6193
+    mode: tls
+  port: 2377
+  server: 5.44.249.42
   tfo: false
-  tls: false
-  type: vmess
-  uuid: 8646218f-a600-4b73-8721-aa5d4567819e
-- alterId: 0
-  cipher: auto
+  type: ss
+- cipher: chacha20-ietf-poly1305
   name: X_🇸🇬 新加坡4|@ripaojiedian
-  port: 22433
-  server: 47.245.106.193
-  skip-cert-verify: false
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: d4cbbb2:42774
+    mode: tls
+  port: 2377
+  server: 5.44.249.42
   tfo: false
-  tls: false
-  type: vmess
-  uuid: bfcb103f-2133-4965-8684-6b4c8ef7a774
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: X_🇸🇬 新加坡5|@ripaojiedian
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 874b20d:48331
+    mode: tls
+  port: 2377
+  server: 5.44.249.42
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: X_🇸🇬 新加坡6|@ripaojiedian
+  password: X2UQXuTGxwxE1ZMaTQwtxS
+  port: 60523
+  server: 174.138.29.1
+  tfo: false
+  type: ss
 - name: X_美国|@ripaojiedian
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
   port: 2381
-  server: 160.16.144.208
+  server: 160.16.106.144
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
 - name: X_美国2|@ripaojiedian
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
-  port: 24673
-  server: 160.16.124.55
+  port: 2467
+  server: 160.16.106.144
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- cipher: aes-256-gcm
-  name: X_🇦🇺 澳大利亚|@ripaojiedian
-  password: dada0801
-  port: 80
-  server: 3.107.184.53
-  tfo: false
-  type: ss
 - cipher: aes-256-cfb
   name: X_🇻🇳 越南|@ripaojiedian
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.154.48
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: X_🇬🇧 英国|@ripaojiedian
-  password: k1v5g9FefdoO
-  port: 8388
-  server: 57.129.140.88
+  server: 103.186.154.234
   tfo: false
   type: ss
 - alterId: 0
   cipher: auto
-  name: X_新加坡3|@ripaojiedian
+  name: X_香港5|@ripaojiedian
   network: tcp
-  port: '22286'
-  server: 47.245.106.193
+  port: '38901'
+  server: 103.224.80.42
   servername: ''
   tls: false
   type: vmess
-  uuid: 8646218f-a600-4b73-8721-aa5d4567819e
-- alterId: 0
-  cipher: auto
-  name: X_新加坡4|@ripaojiedian
-  network: tcp
-  port: '22433'
-  server: 47.245.106.193
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: bfcb103f-2133-4965-8684-6b4c8ef7a774
+  uuid: 230938d9-ae9d-49e7-b3cb-9f44168f89e8
 - alterId: 0
   cipher: auto
   name: X_美国_1
@@ -1097,51 +1053,41 @@ proxy-groups:
   proxies:
   - ♻️ 自动选择
   - DIRECT
-  - 🇮🇷_IR_伊朗
   - 🇺🇸_US_美国
-  - 🇮🇪_IE_爱尔兰->🇺🇸_US_美国
-  - 🇺🇸_US_美国_1
-  - 🇮🇷_IR_伊朗_1
-  - 🇮🇸_IS_冰岛
-  - 🇺🇸_US_美国->🇮🇳_IN_印度
-  - 🇨🇳_CN_中国_3
-  - 🇬🇧_GB_英国
-  - 🇩🇪_DE_德国
-  - 未知
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 未知_1
-  - 🇦🇺_AU_澳大利亚->🇲🇩_MD_摩尔多瓦
-  - 🇩🇪_DE_德国->🇺🇸_US_美国_1
-  - 🇩🇪_DE_德国->🏳️_unKnow_未知
-  - 🇩🇪_DE_德国_1
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇲🇩_MD_摩尔多瓦
   - 🇷🇺_RU_俄罗斯
-  - 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰
+  - 🇷🇺_RU_俄罗斯_1
+  - 🇷🇺_RU_俄罗斯_2
+  - 🇮🇸_IS_冰岛
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  - 🇷🇺_RU_俄罗斯_3
+  - 🇺🇸_US_美国->🏳️_unKnow_未知
+  - 🇷🇺_RU_俄罗斯->🏳️_unKnow_未知
+  - 🇪🇸_ES_西班牙->🇺🇸_US_美国
+  - 🇮🇷_IR_伊朗->🇺🇸_US_美国
+  - 🇩🇪_DE_德国
+  - 🇷🇺_RU_俄罗斯_4
+  - 🇷🇺_RU_俄罗斯_5
   type: select
 - interval: 60
   name: ♻️ 自动选择
   proxies:
   - 🪐 负载均衡
-  - 🇮🇷_IR_伊朗
   - 🇺🇸_US_美国
-  - 🇮🇪_IE_爱尔兰->🇺🇸_US_美国
-  - 🇺🇸_US_美国_1
-  - 🇮🇷_IR_伊朗_1
-  - 🇮🇸_IS_冰岛
-  - 🇺🇸_US_美国->🇮🇳_IN_印度
-  - 🇨🇳_CN_中国_3
-  - 🇬🇧_GB_英国
-  - 🇩🇪_DE_德国
-  - 未知
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 未知_1
-  - 🇦🇺_AU_澳大利亚->🇲🇩_MD_摩尔多瓦
-  - 🇩🇪_DE_德国->🇺🇸_US_美国_1
-  - 🇩🇪_DE_德国->🏳️_unKnow_未知
-  - 🇩🇪_DE_德国_1
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇲🇩_MD_摩尔多瓦
   - 🇷🇺_RU_俄罗斯
-  - 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰
+  - 🇷🇺_RU_俄罗斯_1
+  - 🇷🇺_RU_俄罗斯_2
+  - 🇮🇸_IS_冰岛
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  - 🇷🇺_RU_俄罗斯_3
+  - 🇺🇸_US_美国->🏳️_unKnow_未知
+  - 🇷🇺_RU_俄罗斯->🏳️_unKnow_未知
+  - 🇪🇸_ES_西班牙->🇺🇸_US_美国
+  - 🇮🇷_IR_伊朗->🇺🇸_US_美国
+  - 🇩🇪_DE_德国
+  - 🇷🇺_RU_俄罗斯_4
+  - 🇷🇺_RU_俄罗斯_5
   - X_美国_1
   - X_美国_2
   - X_法国_1
@@ -1197,101 +1143,81 @@ proxy-groups:
   - 🚀 节点选择
   - ♻️ 自动选择
   - 🎯 全球直连
-  - 🇮🇷_IR_伊朗
   - 🇺🇸_US_美国
-  - 🇮🇪_IE_爱尔兰->🇺🇸_US_美国
-  - 🇺🇸_US_美国_1
-  - 🇮🇷_IR_伊朗_1
-  - 🇮🇸_IS_冰岛
-  - 🇺🇸_US_美国->🇮🇳_IN_印度
-  - 🇨🇳_CN_中国_3
-  - 🇬🇧_GB_英国
-  - 🇩🇪_DE_德国
-  - 未知
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 未知_1
-  - 🇦🇺_AU_澳大利亚->🇲🇩_MD_摩尔多瓦
-  - 🇩🇪_DE_德国->🇺🇸_US_美国_1
-  - 🇩🇪_DE_德国->🏳️_unKnow_未知
-  - 🇩🇪_DE_德国_1
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇲🇩_MD_摩尔多瓦
   - 🇷🇺_RU_俄罗斯
-  - 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰
+  - 🇷🇺_RU_俄罗斯_1
+  - 🇷🇺_RU_俄罗斯_2
+  - 🇮🇸_IS_冰岛
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  - 🇷🇺_RU_俄罗斯_3
+  - 🇺🇸_US_美国->🏳️_unKnow_未知
+  - 🇷🇺_RU_俄罗斯->🏳️_unKnow_未知
+  - 🇪🇸_ES_西班牙->🇺🇸_US_美国
+  - 🇮🇷_IR_伊朗->🇺🇸_US_美国
+  - 🇩🇪_DE_德国
+  - 🇷🇺_RU_俄罗斯_4
+  - 🇷🇺_RU_俄罗斯_5
   type: select
 - name: 📲 电报信息
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇮🇷_IR_伊朗
   - 🇺🇸_US_美国
-  - 🇮🇪_IE_爱尔兰->🇺🇸_US_美国
-  - 🇺🇸_US_美国_1
-  - 🇮🇷_IR_伊朗_1
-  - 🇮🇸_IS_冰岛
-  - 🇺🇸_US_美国->🇮🇳_IN_印度
-  - 🇨🇳_CN_中国_3
-  - 🇬🇧_GB_英国
-  - 🇩🇪_DE_德国
-  - 未知
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 未知_1
-  - 🇦🇺_AU_澳大利亚->🇲🇩_MD_摩尔多瓦
-  - 🇩🇪_DE_德国->🇺🇸_US_美国_1
-  - 🇩🇪_DE_德国->🏳️_unKnow_未知
-  - 🇩🇪_DE_德国_1
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇲🇩_MD_摩尔多瓦
   - 🇷🇺_RU_俄罗斯
-  - 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰
+  - 🇷🇺_RU_俄罗斯_1
+  - 🇷🇺_RU_俄罗斯_2
+  - 🇮🇸_IS_冰岛
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  - 🇷🇺_RU_俄罗斯_3
+  - 🇺🇸_US_美国->🏳️_unKnow_未知
+  - 🇷🇺_RU_俄罗斯->🏳️_unKnow_未知
+  - 🇪🇸_ES_西班牙->🇺🇸_US_美国
+  - 🇮🇷_IR_伊朗->🇺🇸_US_美国
+  - 🇩🇪_DE_德国
+  - 🇷🇺_RU_俄罗斯_4
+  - 🇷🇺_RU_俄罗斯_5
   type: select
 - name: Ⓜ️ 微软服务
   proxies:
   - 🎯 全球直连
   - 🚀 节点选择
-  - 🇮🇷_IR_伊朗
   - 🇺🇸_US_美国
-  - 🇮🇪_IE_爱尔兰->🇺🇸_US_美国
-  - 🇺🇸_US_美国_1
-  - 🇮🇷_IR_伊朗_1
-  - 🇮🇸_IS_冰岛
-  - 🇺🇸_US_美国->🇮🇳_IN_印度
-  - 🇨🇳_CN_中国_3
-  - 🇬🇧_GB_英国
-  - 🇩🇪_DE_德国
-  - 未知
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 未知_1
-  - 🇦🇺_AU_澳大利亚->🇲🇩_MD_摩尔多瓦
-  - 🇩🇪_DE_德国->🇺🇸_US_美国_1
-  - 🇩🇪_DE_德国->🏳️_unKnow_未知
-  - 🇩🇪_DE_德国_1
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇲🇩_MD_摩尔多瓦
   - 🇷🇺_RU_俄罗斯
-  - 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰
+  - 🇷🇺_RU_俄罗斯_1
+  - 🇷🇺_RU_俄罗斯_2
+  - 🇮🇸_IS_冰岛
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  - 🇷🇺_RU_俄罗斯_3
+  - 🇺🇸_US_美国->🏳️_unKnow_未知
+  - 🇷🇺_RU_俄罗斯->🏳️_unKnow_未知
+  - 🇪🇸_ES_西班牙->🇺🇸_US_美国
+  - 🇮🇷_IR_伊朗->🇺🇸_US_美国
+  - 🇩🇪_DE_德国
+  - 🇷🇺_RU_俄罗斯_4
+  - 🇷🇺_RU_俄罗斯_5
   type: select
 - name: 🍎 苹果服务
   proxies:
   - 🚀 节点选择
   - 🎯 全球直连
-  - 🇮🇷_IR_伊朗
   - 🇺🇸_US_美国
-  - 🇮🇪_IE_爱尔兰->🇺🇸_US_美国
-  - 🇺🇸_US_美国_1
-  - 🇮🇷_IR_伊朗_1
-  - 🇮🇸_IS_冰岛
-  - 🇺🇸_US_美国->🇮🇳_IN_印度
-  - 🇨🇳_CN_中国_3
-  - 🇬🇧_GB_英国
-  - 🇩🇪_DE_德国
-  - 未知
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 未知_1
-  - 🇦🇺_AU_澳大利亚->🇲🇩_MD_摩尔多瓦
-  - 🇩🇪_DE_德国->🇺🇸_US_美国_1
-  - 🇩🇪_DE_德国->🏳️_unKnow_未知
-  - 🇩🇪_DE_德国_1
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇲🇩_MD_摩尔多瓦
   - 🇷🇺_RU_俄罗斯
-  - 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰
+  - 🇷🇺_RU_俄罗斯_1
+  - 🇷🇺_RU_俄罗斯_2
+  - 🇮🇸_IS_冰岛
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  - 🇷🇺_RU_俄罗斯_3
+  - 🇺🇸_US_美国->🏳️_unKnow_未知
+  - 🇷🇺_RU_俄罗斯->🏳️_unKnow_未知
+  - 🇪🇸_ES_西班牙->🇺🇸_US_美国
+  - 🇮🇷_IR_伊朗->🇺🇸_US_美国
+  - 🇩🇪_DE_德国
+  - 🇷🇺_RU_俄罗斯_4
+  - 🇷🇺_RU_俄罗斯_5
   type: select
 - name: 🎯 全球直连
   proxies:
@@ -1314,26 +1240,21 @@ proxy-groups:
   - 🚀 节点选择
   - 🎯 全球直连
   - ♻️ 自动选择
-  - 🇮🇷_IR_伊朗
   - 🇺🇸_US_美国
-  - 🇮🇪_IE_爱尔兰->🇺🇸_US_美国
-  - 🇺🇸_US_美国_1
-  - 🇮🇷_IR_伊朗_1
-  - 🇮🇸_IS_冰岛
-  - 🇺🇸_US_美国->🇮🇳_IN_印度
-  - 🇨🇳_CN_中国_3
-  - 🇬🇧_GB_英国
-  - 🇩🇪_DE_德国
-  - 未知
-  - 🇨🇳_CN_中国->🇺🇸_US_美国
-  - 未知_1
-  - 🇦🇺_AU_澳大利亚->🇲🇩_MD_摩尔多瓦
-  - 🇩🇪_DE_德国->🇺🇸_US_美国_1
-  - 🇩🇪_DE_德国->🏳️_unKnow_未知
-  - 🇩🇪_DE_德国_1
-  - 🇨🇳_CN_中国->🇺🇸_US_美国_1
+  - 🇲🇩_MD_摩尔多瓦
   - 🇷🇺_RU_俄罗斯
-  - 🇮🇷_IR_伊朗->🇳🇱_NL_荷兰
+  - 🇷🇺_RU_俄罗斯_1
+  - 🇷🇺_RU_俄罗斯_2
+  - 🇮🇸_IS_冰岛
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  - 🇷🇺_RU_俄罗斯_3
+  - 🇺🇸_US_美国->🏳️_unKnow_未知
+  - 🇷🇺_RU_俄罗斯->🏳️_unKnow_未知
+  - 🇪🇸_ES_西班牙->🇺🇸_US_美国
+  - 🇮🇷_IR_伊朗->🇺🇸_US_美国
+  - 🇩🇪_DE_德国
+  - 🇷🇺_RU_俄罗斯_4
+  - 🇷🇺_RU_俄罗斯_5
   type: select
 - interval: 120
   name: 🪐 负载均衡
@@ -1363,20 +1284,21 @@ proxy-groups:
   - X_🇭🇰 香港2|@ripaojiedian
   - X_香港3|@ripaojiedian
   - X_香港4|@ripaojiedian
+  - X_🇭🇰 香港5|@ripaojiedian
   - X_香港6|@ripaojiedian
+  - X_🇭🇰 香港7|@ripaojiedian
   - X_日本2|@ripaojiedian
   - X_日本3|@ripaojiedian
   - X_新加坡|@ripaojiedian
   - X_新加坡2|@ripaojiedian
   - X_🇸🇬 新加坡3|@ripaojiedian
   - X_🇸🇬 新加坡4|@ripaojiedian
+  - X_🇸🇬 新加坡5|@ripaojiedian
+  - X_🇸🇬 新加坡6|@ripaojiedian
   - X_美国|@ripaojiedian
   - X_美国2|@ripaojiedian
-  - X_🇦🇺 澳大利亚|@ripaojiedian
   - X_🇻🇳 越南|@ripaojiedian
-  - X_🇬🇧 英国|@ripaojiedian
-  - X_新加坡3|@ripaojiedian
-  - X_新加坡4|@ripaojiedian
+  - X_香港5|@ripaojiedian
   strategy: consistent-hashing
   type: load-balance
   url: https://client3.google.com/generate_204
