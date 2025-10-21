@@ -570,13 +570,6 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: X_香港5|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 4451
-  server: 36.150.215.138
-  skip-cert-verify: true
-  type: trojan
 - name: X_日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
@@ -655,14 +648,13 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: X_CN_speednode_0008
+- name: X_美国3|@ripaojiedian
   network: tcp
   password: BxceQaOe
   port: 26876
   server: 36.156.102.115
   skip-cert-verify: true
   type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: X_🇺🇸 美国4|@ripaojiedian
@@ -693,13 +685,6 @@ proxies:
   tls: false
   type: vmess
   uuid: fd49381f-9fd8-4403-8698-48331a4d775d
-- name: X_CN_speednode_0009
-  password: BxceQaOe
-  port: 811
-  server: 36.151.251.18
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - alterId: 0
   cipher: auto
   name: X_法国_1
@@ -1618,7 +1603,6 @@ proxy-groups:
   - X_🇭🇰 香港2|@ripaojiedian
   - X_🇭🇰 香港3|@ripaojiedian
   - X_香港4|@ripaojiedian
-  - X_香港5|@ripaojiedian
   - X_日本|@ripaojiedian
   - X_日本2|@ripaojiedian
   - X_日本3|@ripaojiedian
@@ -1628,11 +1612,10 @@ proxy-groups:
   - X_新加坡4|@ripaojiedian
   - X_美国|@ripaojiedian
   - X_美国2|@ripaojiedian
-  - X_CN_speednode_0008
+  - X_美国3|@ripaojiedian
   - X_🇺🇸 美国4|@ripaojiedian
   - X_香港3|@ripaojiedian
   - X_美国4|@ripaojiedian
-  - X_CN_speednode_0009
   strategy: consistent-hashing
   type: load-balance
   url: https://client3.google.com/generate_204
