@@ -1,0 +1,25 @@
+@use "fonts";
+
+// smzdm.com
+// 什么值得买
+body,
+#global-nav,
+.ranking-list *,
+#feed-main-list *,
+.info *,
+.content *,
+.m-contant *,
+#articleId *,
+.category-box ul li {
+  font-family: fonts.$font-serif;
+}
+
+button {
+  font-family: fonts.$font-sans;
+}
+
+pre,
+code,
+.prompt {
+  font-family: fonts.$font-mono;
+}
