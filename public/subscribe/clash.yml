@@ -1,0 +1,1092 @@
+allow-lan: false
+dns:
+  default-nameserver:
+  - 223.5.5.5
+  - 114.114.114.114
+  enable: true
+  enhanced-mode: fake-ip
+  fake-ip-filter:
+  - '*.lan'
+  - '*.localdomain'
+  - '*.example'
+  - '*.invalid'
+  - '*.localhost'
+  - '*.test'
+  - '*.local'
+  - '*.home.arpa'
+  - router.asus.com
+  - localhost.sec.qq.com
+  - localhost.ptlogin2.qq.com
+  - +.msftconnecttest.com
+  fake-ip-range: 198.18.0.1/16
+  ipv6: false
+  listen: 0.0.0.0:53
+  nameserver:
+  - 223.5.5.5
+  - 114.114.114.114
+  - 119.29.29.29
+  - 180.76.76.76
+external-controller: 127.0.0.1:9999
+log-level: info
+mixed-port: 7890
+mode: rule
+proxies:
+- name: 🇨🇳_CN_中国->🇯🇵_JP_日本
+  password: BxceQaOe
+  port: 26876
+  server: 36.156.102.115
+  skip-cert-verify: true
+  type: trojan
+- alterId: 2
+  cipher: auto
+  name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: ocbc.com
+    path: /oooo
+- cipher: aes-256-cfb
+  name: 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 185.153.197.5
+  type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: X_AT_speednode_0001
+  port: 56765
+  reality-opts:
+    public-key: DHIEcMf3BTEwQ_XEFx1j02jzn0KkKKeyPWH7wnWwuG8
+    short-id: f50f5a
+  server: drow-ranger.fonixapp.org
+  servername: stackoverflow.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 866f919c-aa0d-4edb-b6a9-d5412c1c2ca3
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: X_AT_speednode_0002
+  port: 10922
+  reality-opts:
+    public-key: BWGB4WcFMvsxbu7rfyGTqVSWVlxNUz0HbmotfvlXuxg
+    short-id: d2900d
+  server: magnataur.fonixapp.org
+  servername: ilovepdf.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 31d35cbe-92d1-44cd-9991-e58d00499fb2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: X_AT_speednode_0003
+  port: 33115
+  reality-opts:
+    public-key: 53Q1y0Vmf2zaGBBlcO1NyKFvQM1TShkJKBCNjlevpns
+    short-id: 09cb
+  server: sandking.fonixapp.org
+  servername: yelp.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: c37cdcff-42f1-4f09-8ce1-0df6cf7e2520
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: X_AT_speednode_0004
+  port: 26143
+  reality-opts:
+    public-key: ng3D2eUM-UM3ariA2eCDibCNo_peaKijOWUZJJKiIUI
+    short-id: 0d
+  server: bloodseeker.fonixapp.org
+  servername: steampowered.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2360d5e9-5503-4e6d-9e4a-fe5fb25c38fa
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: X_AT_speednode_0005
+  port: 22925
+  reality-opts:
+    public-key: Pzsb-3zlxbYLJwRE0ACSqzTL7h3ubqREGMEs17q_1z4
+    short-id: 886d
+  server: bonefletcher.fonixapp.org
+  servername: ilovepdf.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0226ef52-e556-4f36-ab0f-6c9f5414942a
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: X_AT_speednode_0006
+  port: 20220
+  reality-opts:
+    public-key: KSW4e1R98qljwxyP6YaRrwGF4Rp_8hfXQaaShYUXwSc
+    short-id: d91671
+  server: butcher.fonixapp.org
+  servername: cloudtalk.io
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: cac59dc2-e5a9-44f0-88da-e56ba06eac15
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: X_CA_speednode_0007
+  port: 40106
+  reality-opts:
+    public-key: gqmHb9i4USmQ78auzhAFJMQIrUpnq8QaykJgnjHDTBg
+    short-id: f44fd3dd
+  server: 40.233.78.152
+  servername: apple.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: dcdd09ad-4519-46f7-8107-4c4290a9b2a3
+- alterId: 0
+  cipher: auto
+  name: X_CN_speednode_0008
+  port: 38637
+  server: tkcmi.5tk.top
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 93058ab5-bb29-44d4-c309-d224c0967732
+- name: X_CN_speednode_0009
+  password: BxceQaOe
+  port: 38799
+  server: 36.151.251.38
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  type: trojan
+  udp: true
+- name: X_CN_speednode_0010
+  password: e515ce48-fdfa-11ee-9970-f23c91cfbbc9
+  port: 27235
+  server: 20ba856c-t5gv40-te0r6o-1r7vv.cm5.oshuawei.com
+  tls: true
+  type: http
+  udp: true
+  username: e515ce48-fdfa-11ee-9970-f23c91cfbbc9
+- name: X_CN_speednode_0011
+  password: e515ce48-fdfa-11ee-9970-f23c91cfbbc9
+  port: 32233
+  server: a9964e2f-t5gv40-te0r6o-1r7vv.id.oshuawei.com
+  tls: true
+  type: http
+  udp: true
+  username: e515ce48-fdfa-11ee-9970-f23c91cfbbc9
+- name: X_CN_speednode_0012
+  password: BxceQaOe
+  port: 38799
+  server: 36.151.251.38
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: X_DE_speednode_0013
+  port: 39352
+  reality-opts:
+    public-key: bqBZxwknIQGVNxvW6agjANLI6jdKG8jgIJ6cLKBbjns
+    short-id: 8f
+  server: traxex.fonixapp.org
+  servername: lowes.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 84ac6559-30a8-4c3e-bbcb-894edd4de743
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: X_DE_speednode_0014
+  port: 49406
+  reality-opts:
+    public-key: UsAOmf7X1yYkjF73ChFECcZb2PFNuhqqvOUxcybV-20
+    short-id: a7
+  server: beast-masters.fonixapp.org
+  servername: ilovepdf.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 49d74535-837e-4132-90c7-4e06de7db303
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: X_FI_speednode_0015
+  port: 13955
+  reality-opts:
+    public-key: 01fWMRp1FAcZQ7NzoLwmfdY9bCYGUGGiUyB-mfiB_Rc
+    short-id: b5482c
+  server: dl.huskar.fonixapp.org
+  servername: stackoverflow.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5926e98a-f6af-4676-8c73-3f3d0146357d
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: X_FI_speednode_0016
+  port: 57601
+  reality-opts:
+    public-key: 0sSvrVd-7MT_3P_3Q12BPsWK7ZQoICQsqOJUOCumNUw
+    short-id: 0feb5b
+  server: moonrider.fonixapp.org
+  servername: deepl.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: c7a3a1dd-4bd2-4b47-9724-5ee41c5ccaba
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: X_FI_speednode_0017
+  port: 23747
+  reality-opts:
+    public-key: u7gBBaokHefxp8JS3G_Nu1X5y6Rh5SsRBrVC1L-4ySY
+    short-id: b7
+  server: helsinki.fonixapp.org
+  servername: lowes.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 38ced162-2eb3-4aee-998f-747961f02c01
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: X_FI_speednode_0018
+  port: 36534
+  reality-opts:
+    public-key: Vq0bh06jdIg-3eyAjHfA8_RZKT9C-a9IbqRqzayWl28
+    short-id: 41f255
+  server: lifestealer.fonixapp.org
+  servername: asos.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 28a6787d-b076-4c7a-be0c-772f5990a25d
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: X_FI_speednode_0019
+  port: 37843
+  reality-opts:
+    public-key: _i2_awg5k15giouaYv4HqMGsbUC7OuY5YAU2CZVBpE8
+    short-id: 5e
+  server: necrolyte.fonixapp.org
+  servername: ilovepdf.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3c4486a2-68af-4fa9-80f9-7f2e0387871d
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: X_FR_speednode_0020
+  port: 15833
+  reality-opts:
+    public-key: 8z6qPN2t7wZ0nmOGhSTYaq__XqP8gDZar85XauwP4i0
+    short-id: d0
+  server: paris.fonixapp.org
+  servername: canva.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 40c4812d-b1fe-4ff1-922b-a10e95ee1d70
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: X_GB_speednode_0021
+  port: 46490
+  reality-opts:
+    public-key: mNnK0d5tF-8FazWFmDLsp9YPAf1PL2k9S1bvKV8p_Uk
+    short-id: fa41
+  server: ezalor.fonixapp.org
+  servername: stackoverflow.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 28e8d9d8-3442-46e8-8697-0280c2917242
+- client-fingerprint: chrome
+  name: X_GB_speednode_0022
+  port: 80
+  reality-opts:
+    public-key: 9Ie_yGzhOZbjK8OeoCx-iWl0uFe0qu63dtVRAO_aVUI
+    short-id: 2d
+  server: 212.134.84.117
+  servername: tgju.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d6afdc56-8c96-43e5-9164-43f504d8793f
+- name: X_HK_speednode_0023
+  password: BxceQaOe
+  port: 443
+  server: 203.198.122.129
+  skip-cert-verify: true
+  sni: 203.198.122.129
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: X_KR_speednode_0024
+  network: http
+  port: 80
+  server: 152.70.92.69
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: bb9c3993-a4b9-4dad-aeb9-ac86371ae68b
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: X_NL_speednode_0025
+  port: 31603
+  reality-opts:
+    public-key: OLM6uNG4kXvdtjI8uak4GsPsO1p7g9pSsHSJSVZx_D0
+    short-id: a1db
+  server: amsterdam.fonixapp.org
+  servername: merriam-webster.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0581705f-e7ae-40df-9d27-f51fbbc7c42f
+- name: X_SI_speednode_0026
+  network: ws
+  port: 443
+  server: fl-3-direct.djarbnet.ru
+  servername: fl-3-direct.djarbnet.ru
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: cc67ca7f-064e-4117-ac31-a66d5728a11c
+  ws-opts:
+    headers:
+      Host: fl-3-direct.djarbnet.ru
+    path: /getupdates
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: X_TR_speednode_0027
+  port: 11594
+  reality-opts:
+    public-key: 3HEjTRfm4CREo6uPExMNwscXcT00q-zlMocwlhmg2DM
+    short-id: 4f
+  server: istanbul.fonixapp.org
+  servername: yelp.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: caaea994-1af3-47af-8352-f51c49d4c5c2
+- name: X_US_speednode_0028
+  password: telegram-id-directvpn
+  port: 22223
+  server: 51.45.27.162
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: X_US_speednode_0029
+  port: 443
+  reality-opts:
+    public-key: g0EvKBte8zYrEc8oF0VNhxvIqqUvNXCp54UWYekc60k
+    short-id: f529bb49dc4de6
+  server: 104.167.199.50
+  servername: bit-site.ru
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b25e3c62-f4eb-45df-adda-eb738959b845
+- alterId: 0
+  cipher: auto
+  name: X_防范境外势力渗透
+  network: tcp
+  port: '80'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: 'X_防范境外势力渗透 #1'
+  network: tcp
+  port: '81'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: 'X_防范境外势力渗透 #2'
+  network: tcp
+  port: '82'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: 'X_防范境外势力渗透 #3'
+  network: tcp
+  port: '83'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: 'X_防范境外势力渗透 #4'
+  network: tcp
+  port: '84'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: 'X_防范境外势力渗透 #5'
+  network: tcp
+  port: '85'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: 'X_防范境外势力渗透 #6'
+  network: tcp
+  port: '86'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: 'X_防范境外势力渗透 #7'
+  network: tcp
+  port: '87'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: 'X_防范境外势力渗透 #8'
+  network: tcp
+  port: '88'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 0
+  cipher: auto
+  name: 'X_防范境外势力渗透 #9'
+  network: tcp
+  port: '89'
+  server: 127.0.0.53
+  tls: false
+  type: vmess
+  uuid: 88888888-8888-8888-8888-888888888888
+- alterId: 2
+  cipher: auto
+  name: X_香港|@ripaojiedian
+  network: ws
+  port: '30809'
+  server: v9.heduian.link
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
+- cipher: aes-256-gcm
+  name: X_🇭🇰 香港2|@ripaojiedian
+  password: ccf426f1fe78
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: newroot2v1.dsjsapp.com
+    mode: websocket
+    mux: true
+    path: /zksuapgx
+    skip-cert-verify: false
+    tls: true
+  port: 443
+  server: 103.103.245.158
+  tfo: false
+  type: ss
+- name: X_香港3|@ripaojiedian
+  network: tcp
+  password: 1b57001bd214304027025a740b6cf1ac
+  port: 3841
+  server: 221.128.195.12
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: X_香港4|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 1251
+  server: 36.150.215.247
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: X_香港5|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 443
+  server: 58.152.53.186
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- alterId: 2
+  cipher: auto
+  name: X_🇭🇰 香港6|@ripaojiedian
+  port: 11210
+  server: 8.148.194.27
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: c74f0304-5b43-3772-852a-2b108c423d23
+- name: X_日本|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 4011
+  server: 36.150.215.248
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: X_日本2|@ripaojiedian
+  network: tcp
+  password: 1b57001bd214304027025a740b6cf1ac
+  port: 1334
+  server: 117.172.176.22
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: X_日本3|@ripaojiedian
+  network: tcp
+  password: 1b57001bd214304027025a740b6cf1ac
+  port: 4095
+  server: 117.172.176.22
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: X_🇯🇵 日本4|@ripaojiedian
+  password: 89d52514-f5a4-45c6-96ea-49e113e60129
+  port: 10007
+  server: 183.2.133.119
+  tfo: false
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: X_🇰🇷 韩国|@ripaojiedian
+  port: 11215
+  server: 8.148.248.105
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: c74f0304-5b43-3772-852a-2b108c423d23
+- name: X_新加坡|@ripaojiedian
+  network: tcp
+  password: 1b57001bd214304027025a740b6cf1ac
+  port: 2283
+  server: 117.172.176.22
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: X_新加坡2|@ripaojiedian
+  network: tcp
+  password: 1b57001bd214304027025a740b6cf1ac
+  port: 2173
+  server: 117.172.176.22
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: X_新加坡3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 8041
+  server: 36.150.215.248
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: X_美国|@ripaojiedian
+  network: tcp
+  password: 1b57001bd214304027025a740b6cf1ac
+  port: 1328
+  server: 153.121.44.99
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: X_美国2|@ripaojiedian
+  network: tcp
+  password: e4e262d453466988575c397a30562337
+  port: 4173
+  server: 117.172.176.22
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- cipher: aes-256-cfb
+  name: X_🇻🇳 越南|@ripaojiedian
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.215
+  tfo: false
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: X_香港6|@ripaojiedian
+  network: tcp
+  port: '11210'
+  server: 8.148.194.27
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c74f0304-5b43-3772-852a-2b108c423d23
+- alterId: 2
+  cipher: auto
+  name: X_韩国|@ripaojiedian
+  network: tcp
+  port: '11215'
+  server: 8.148.248.105
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c74f0304-5b43-3772-852a-2b108c423d23
+- name: X_🇨🇳_CN_中国
+  network: tcp
+  password: adbac894-90b9-4913-b77e-a715a8d4ebc8
+  port: 20021
+  server: oss-cn-shanghai.letssepub.com
+  sni: dingding-doc.com
+  tls: true
+  type: trojan
+- name: X_🇨🇳_CN_中国_1
+  network: tcp
+  password: BxceQaOe
+  port: 194
+  server: 36.151.192.242
+  skip-cert-verify: true
+  type: trojan
+- name: X_🇨🇳_CN_中国_2
+  network: tcp
+  password: BxceQaOe
+  port: 4556
+  server: 36.151.192.242
+  skip-cert-verify: true
+  type: trojan
+- name: X_🇨🇳_CN_中国_3
+  network: tcp
+  password: BxceQaOe
+  port: 24392
+  server: 36.150.215.239
+  skip-cert-verify: true
+  type: trojan
+- name: X_🇨🇳_CN_中国_4
+  network: tcp
+  password: BxceQaOe
+  port: 53743
+  server: 36.150.215.239
+  skip-cert-verify: true
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: X_🇩🇪 德国 33
+  network: ws
+  port: 80
+  server: 185.146.173.16
+  servername: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+  type: vmess
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  ws-opts:
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+    path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
+      TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
+- alterId: 0
+  cipher: auto
+  name: X_🇩🇪 德国 33_1
+  network: ws
+  port: 80
+  server: 141.101.121.250
+  servername: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+  type: vmess
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  ws-opts:
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+    path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
+      TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
+- fingerprint: random
+  name: X_🇺🇸_US_美国_2
+  network: ws
+  password: trojan
+  port: 443
+  server: www.digitalocean.com
+  sni: azadnet-9ya.pages.dev
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: azadnet-9ya.pages.dev
+    path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: X_🇩🇪 德国 26
+  network: ws
+  port: 80
+  server: 185.146.173.117
+  servername: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+  type: vmess
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  ws-opts:
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+    path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
+      TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸 美国 CloudFlare节点
+  network: ws
+  port: 80
+  server: 104.18.240.238
+  servername: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+  type: vmess
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  ws-opts:
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+    path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
+      TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
+- cipher: chacha20-ietf
+  name: X_🇨🇳_CN_中国_7
+  password: asd123456
+  port: 8388
+  server: 103.36.91.32
+  type: ss
+- fingerprint: random
+  name: X_🇺🇸_US_美国_13
+  network: ws
+  password: trojan
+  port: 443
+  server: ip.sb
+  sni: nixian.pages.dev
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: nixian.pages.dev
+    path: /?ed=2560/?Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-Join-sho--Telegram--VITUREY-
+- alterId: 0
+  cipher: auto
+  name: X_🇩🇪 德国 18
+  network: ws
+  port: 80
+  server: 185.146.173.24
+  servername: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+  type: vmess
+  uuid: d967ffca-de90-4daa-bd00-d527e5bae11f
+  ws-opts:
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.leoshopping77.ir.
+    path: /?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
+      TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)
+proxy-groups:
+- name: 🚀 节点选择
+  proxies:
+  - ♻️ 自动选择
+  - DIRECT
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  type: select
+- interval: 60
+  name: ♻️ 自动选择
+  proxies:
+  - 🪐 负载均衡
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  - X_🇨🇳_CN_中国
+  - X_🇨🇳_CN_中国_1
+  - X_🇨🇳_CN_中国_2
+  - X_🇨🇳_CN_中国_3
+  - X_🇨🇳_CN_中国_4
+  - X_🇩🇪 德国 33
+  - X_🇩🇪 德国 33_1
+  - X_🇺🇸_US_美国_2
+  - X_🇩🇪 德国 26
+  - X_🇺🇸 美国 CloudFlare节点
+  - X_🇨🇳_CN_中国_7
+  - X_🇺🇸_US_美国_13
+  - X_🇩🇪 德国 18
+  tolerance: 5
+  type: url-test
+  url: https://www.facebook.com/common/referer_frame.php
+- name: 🌍 国外媒体
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🎯 全球直连
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  type: select
+- name: 📲 电报信息
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  type: select
+- name: Ⓜ️ 微软服务
+  proxies:
+  - 🎯 全球直连
+  - 🚀 节点选择
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  type: select
+- name: 🍎 苹果服务
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  type: select
+- name: 🎯 全球直连
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  type: select
+- name: 🛑 全球拦截
+  proxies:
+  - REJECT
+  - DIRECT
+  type: select
+- name: 🍃 应用净化
+  proxies:
+  - REJECT
+  - DIRECT
+  type: select
+- name: 🐟 漏网之鱼
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - ♻️ 自动选择
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  type: select
+- interval: 120
+  name: 🪐 负载均衡
+  proxies:
+  - X_AT_speednode_0001
+  - X_AT_speednode_0002
+  - X_AT_speednode_0003
+  - X_AT_speednode_0004
+  - X_AT_speednode_0005
+  - X_AT_speednode_0006
+  - X_CA_speednode_0007
+  - X_CN_speednode_0008
+  - X_CN_speednode_0009
+  - X_CN_speednode_0010
+  - X_CN_speednode_0011
+  - X_CN_speednode_0012
+  - X_DE_speednode_0013
+  - X_DE_speednode_0014
+  - X_FI_speednode_0015
+  - X_FI_speednode_0016
+  - X_FI_speednode_0017
+  - X_FI_speednode_0018
+  - X_FI_speednode_0019
+  - X_FR_speednode_0020
+  - X_GB_speednode_0021
+  - X_GB_speednode_0022
+  - X_HK_speednode_0023
+  - X_KR_speednode_0024
+  - X_NL_speednode_0025
+  - X_SI_speednode_0026
+  - X_TR_speednode_0027
+  - X_US_speednode_0028
+  - X_US_speednode_0029
+  - X_防范境外势力渗透
+  - 'X_防范境外势力渗透 #1'
+  - 'X_防范境外势力渗透 #2'
+  - 'X_防范境外势力渗透 #3'
+  - 'X_防范境外势力渗透 #4'
+  - 'X_防范境外势力渗透 #5'
+  - 'X_防范境外势力渗透 #6'
+  - 'X_防范境外势力渗透 #7'
+  - 'X_防范境外势力渗透 #8'
+  - 'X_防范境外势力渗透 #9'
+  - X_香港|@ripaojiedian
+  - X_🇭🇰 香港2|@ripaojiedian
+  - X_香港3|@ripaojiedian
+  - X_香港4|@ripaojiedian
+  - X_香港5|@ripaojiedian
+  - X_🇭🇰 香港6|@ripaojiedian
+  - X_日本|@ripaojiedian
+  - X_日本2|@ripaojiedian
+  - X_日本3|@ripaojiedian
+  - X_🇯🇵 日本4|@ripaojiedian
+  - X_🇰🇷 韩国|@ripaojiedian
+  - X_新加坡|@ripaojiedian
+  - X_新加坡2|@ripaojiedian
+  - X_新加坡3|@ripaojiedian
+  - X_美国|@ripaojiedian
+  - X_美国2|@ripaojiedian
+  - X_🇻🇳 越南|@ripaojiedian
+  - X_香港6|@ripaojiedian
+  - X_韩国|@ripaojiedian
+  strategy: consistent-hashing
+  type: load-balance
+  url: https://client3.google.com/generate_204
+rule-providers:
+  Apple:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/Apple.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/Apple.list
+  BanAD:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/BanAD.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/BanAD.list
+  BanProgramAD:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/BanProgramAD.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/BanProgramAD.list
+  ChinaCompanyIp:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/ChinaCompanyIp.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
+  ChinaDomain:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/ChinaDomain.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
+  GoogleCN:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/GoogleCN.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
+  LocalAreaNetwork:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/LocalAreaNetwork.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
+  Microsoft:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/Microsoft.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
+  ProxyLite:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/ProxyLite.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list
+  ProxyMedia:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/ProxyMedia.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
+  SteamCN:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/SteamCN.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
+  Telegram:
+    behavior: classical
+    format: text
+    interval: 3600
+    path: ./Clash/Telegram.list
+    type: http
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
+rules:
+- RULE-SET,LocalAreaNetwork,🎯 全球直连
+- RULE-SET,BanAD,🛑 全球拦截
+- RULE-SET,BanProgramAD,🍃 应用净化
+- RULE-SET,GoogleCN,🎯 全球直连
+- RULE-SET,SteamCN,🎯 全球直连
+- RULE-SET,Microsoft,Ⓜ️ 微软服务
+- RULE-SET,Apple,🍎 苹果服务
+- RULE-SET,ProxyMedia,🌍 国外媒体
+- RULE-SET,Telegram,📲 电报信息
+- RULE-SET,ProxyLite,🚀 节点选择
+- RULE-SET,ChinaDomain,🎯 全球直连
+- RULE-SET,ChinaCompanyIp,🎯 全球直连
+- GEOIP,CN,🎯 全球直连
+- MATCH,🐟 漏网之鱼
+tun:
+  auto-detect-interface: true
+  auto-route: true
+  dns-hijack:
+  - 114.114.114.114
+  - 180.76.76.76
+  - 119.29.29.29
+  - 223.5.5.5
+  - 8.8.8.8
+  - 8.8.4.4
+  - 1.1.1.1
+  - 1.0.0.1
+  enable: true
