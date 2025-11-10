@@ -546,8 +546,8 @@ proxies:
 - name: X_香港3|@ripaojiedian
   network: tcp
   password: 1b57001bd214304027025a740b6cf1ac
-  port: 3841
-  server: 221.128.195.12
+  port: 443
+  server: 58.152.110.25
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -567,20 +567,20 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- alterId: 2
+- alterId: 0
   cipher: auto
   name: X_🇭🇰 香港6|@ripaojiedian
-  port: 11210
-  server: 8.148.194.27
+  port: 28034
+  server: 175.29.22.101
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: c74f0304-5b43-3772-852a-2b108c423d23
+  uuid: d2540325-9ad6-33d7-be86-259b5bba4ef8
 - name: X_日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 4011
+  port: 881
   server: 36.150.215.248
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
@@ -601,23 +601,6 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: X_🇯🇵 日本4|@ripaojiedian
-  password: 89d52514-f5a4-45c6-96ea-49e113e60129
-  port: 10007
-  server: 183.2.133.119
-  tfo: false
-  type: ss
-- alterId: 2
-  cipher: auto
-  name: X_🇰🇷 韩国|@ripaojiedian
-  port: 11215
-  server: 8.148.248.105
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: c74f0304-5b43-3772-852a-2b108c423d23
 - name: X_新加坡|@ripaojiedian
   network: tcp
   password: 1b57001bd214304027025a740b6cf1ac
@@ -645,7 +628,7 @@ proxies:
 - name: X_美国|@ripaojiedian
   network: tcp
   password: 1b57001bd214304027025a740b6cf1ac
-  port: 1328
+  port: 5097
   server: 153.121.44.99
   skip-cert-verify: false
   sni: www.nintendogames.net
@@ -658,33 +641,16 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- cipher: aes-256-cfb
-  name: X_🇻🇳 越南|@ripaojiedian
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.215
-  tfo: false
-  type: ss
-- alterId: 2
+- alterId: 0
   cipher: auto
   name: X_香港6|@ripaojiedian
   network: tcp
-  port: '11210'
-  server: 8.148.194.27
+  port: '28034'
+  server: 175.29.22.101
   servername: ''
   tls: false
   type: vmess
-  uuid: c74f0304-5b43-3772-852a-2b108c423d23
-- alterId: 2
-  cipher: auto
-  name: X_韩国|@ripaojiedian
-  network: tcp
-  port: '11215'
-  server: 8.148.248.105
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c74f0304-5b43-3772-852a-2b108c423d23
+  uuid: d2540325-9ad6-33d7-be86-259b5bba4ef8
 - name: X_🇨🇳_CN_中国
   network: tcp
   password: adbac894-90b9-4913-b77e-a715a8d4ebc8
@@ -964,16 +930,12 @@ proxy-groups:
   - X_日本|@ripaojiedian
   - X_日本2|@ripaojiedian
   - X_日本3|@ripaojiedian
-  - X_🇯🇵 日本4|@ripaojiedian
-  - X_🇰🇷 韩国|@ripaojiedian
   - X_新加坡|@ripaojiedian
   - X_新加坡2|@ripaojiedian
   - X_新加坡3|@ripaojiedian
   - X_美国|@ripaojiedian
   - X_美国2|@ripaojiedian
-  - X_🇻🇳 越南|@ripaojiedian
   - X_香港6|@ripaojiedian
-  - X_韩国|@ripaojiedian
   strategy: consistent-hashing
   type: load-balance
   url: https://client3.google.com/generate_204
