@@ -1,0 +1,21 @@
+// ebooks.frankindev.com
+$font-serif:
+  "Crimson Text", "LXGW Bright TC", "Noto Serif SC", "Microsoft YaHei UI", serif !important;
+$font-sans:
+  "Outfit", "LXGW Bright TC", "Noto Serif SC", "Microsoft YaHei UI", sans-serif !important;
+$font-mono:
+  "IBM Plex Mono", "LXGW Bright TC", "Noto Serif SC", "Microsoft YaHei UI",
+  monospace !important;
+
+body {
+  font-family: $font-sans;
+  .book-content {
+    font-family: $font-serif;
+  }
+}
+
+:root .default {
+  --body-font-family:
+    "Outfit", "LXGW Bright TC", "Noto Serif SC", "Microsoft YaHei UI",
+    sans-serif !important;
+}

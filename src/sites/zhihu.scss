@@ -1,0 +1,25 @@
+@use "fonts";
+
+// zhihu.com
+// 知乎
+html {
+  --zFontSansSerif: "Outfit", "Noto Serif SC", "Microsoft YaHei UI", sans-serif;
+}
+
+body,
+.ContentItem-title,
+.AuthorInfo-content,
+.RichContent,
+.CommentContent {
+  font-family: fonts.$font-serif;
+}
+
+button {
+  font-family: fonts.$font-sans;
+}
+
+pre,
+code,
+.prompt {
+  font-family: fonts.$font-mono;
+}

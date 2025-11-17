@@ -1,0 +1,18 @@
+:root {
+  --font-sans: "Outfit", "Noto Serif SC", "Microsoft YaHei UI", sans-serif;
+  --font-mono:
+    "IBM Plex Mono", "Noto Serif SC", "Microsoft YaHei UI", monospace;
+  --font-serif: "Crimson Text", "Noto Serif SC", "Microsoft YaHei UI", serif;
+}
+
+body {
+  font-family: var(--font-sans) !important;
+}
+body pre,
+body code {
+  font-family: var(--font-mono) !important;
+}
+body .text-neutral-content-strong {
+  font-family: "Lato", var(--font-sans) !important;
+  font-weight: bold;
+}
