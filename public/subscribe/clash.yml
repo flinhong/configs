@@ -748,19 +748,13 @@ proxies:
   uuid: 88888888-8888-8888-8888-888888888888
 - alterId: 2
   cipher: auto
-  name: X_香港|@ripaojiedian
-  network: ws
-  port: '30809'
-  server: v9.heduian.link
-  servername: ''
+  name: X_🇭🇰 香港|@ripaojiedian
+  port: 30809
+  server: v9.hdacd.com
   skip-cert-verify: false
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
 - cipher: aes-256-gcm
   name: X_🇭🇰 香港2|@ripaojiedian
   password: ccf426f1fe78
@@ -799,19 +793,25 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+- cipher: chacha20-ietf
+  name: X_🇭🇰 香港6|@ripaojiedian
+  password: asd123456
+  port: 8388
+  server: 103.149.182.86
+  type: ss
 - name: X_日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 2145
-  server: 160.16.151.9
+  port: 4012
+  server: 13.231.125.141
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
 - name: X_日本2|@ripaojiedian
   network: tcp
   password: 2cf6d686799e6fa95316394064f26c0a
-  port: 3093
-  server: 153.121.39.240
+  port: 3169
+  server: 160.16.204.136
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -819,24 +819,15 @@ proxies:
   network: tcp
   password: 2cf6d686799e6fa95316394064f26c0a
   port: 3169
-  server: 160.16.106.144
+  server: 160.16.89.176
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: X_🇰🇷 韩国|@ripaojiedian
-  port: 80
-  server: 152.70.92.69
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: bb9c3993-a4b9-4dad-aeb9-ac86371ae68b
 - name: X_新加坡|@ripaojiedian
   network: tcp
   password: 2cf6d686799e6fa95316394064f26c0a
-  port: 127
-  server: 160.16.132.158
+  port: 2760
+  server: 57.180.29.221
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -844,23 +835,23 @@ proxies:
   network: tcp
   password: 2cf6d686799e6fa95316394064f26c0a
   port: 127
-  server: 160.16.106.144
+  server: 160.16.89.176
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: X_新加坡3|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 3127
-  server: 43.199.204.112
+  port: 1196
+  server: 43.199.161.175
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
 - name: X_美国|@ripaojiedian
   network: tcp
   password: 2cf6d686799e6fa95316394064f26c0a
-  port: 4054
-  server: 153.121.76.9
+  port: 2890
+  server: 160.16.204.136
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -868,7 +859,7 @@ proxies:
   network: tcp
   password: 2cf6d686799e6fa95316394064f26c0a
   port: 2890
-  server: 153.121.76.9
+  server: 160.16.89.176
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
@@ -876,7 +867,7 @@ proxies:
   network: tcp
   password: BxceQaOe
   port: 2173
-  server: 57.180.57.41
+  server: 43.198.99.56
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -884,18 +875,18 @@ proxies:
   name: X_🇻🇳 越南|@ripaojiedian
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.155.145
+  server: 103.186.154.140
   type: ss
-- alterId: 0
+- alterId: 2
   cipher: auto
-  name: X_韩国|@ripaojiedian
+  name: X_香港|@ripaojiedian
   network: tcp
-  port: '80'
-  server: 152.70.92.69
+  port: '30809'
+  server: v9.hdacd.com
   servername: ''
   tls: false
   type: vmess
-  uuid: bb9c3993-a4b9-4dad-aeb9-ac86371ae68b
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
   name: X_🇭🇰HK²_5|0.6MB/s|2%|YT|NF|D+|X|KeepHistory
@@ -1226,15 +1217,15 @@ proxy-groups:
   - 'X_防范境外势力渗透 #7'
   - 'X_防范境外势力渗透 #8'
   - 'X_防范境外势力渗透 #9'
-  - X_香港|@ripaojiedian
+  - X_🇭🇰 香港|@ripaojiedian
   - X_🇭🇰 香港2|@ripaojiedian
   - X_香港3|@ripaojiedian
   - X_香港4|@ripaojiedian
   - X_香港5|@ripaojiedian
+  - X_🇭🇰 香港6|@ripaojiedian
   - X_日本|@ripaojiedian
   - X_日本2|@ripaojiedian
   - X_日本3|@ripaojiedian
-  - X_🇰🇷 韩国|@ripaojiedian
   - X_新加坡|@ripaojiedian
   - X_新加坡2|@ripaojiedian
   - X_新加坡3|@ripaojiedian
@@ -1242,7 +1233,7 @@ proxy-groups:
   - X_美国2|@ripaojiedian
   - X_美国3|@ripaojiedian
   - X_🇻🇳 越南|@ripaojiedian
-  - X_韩国|@ripaojiedian
+  - X_香港|@ripaojiedian
   strategy: consistent-hashing
   type: load-balance
   url: https://client3.google.com/generate_204
