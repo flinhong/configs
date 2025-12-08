@@ -20,6 +20,15 @@ def write_log(content, level="INFO"):
     with open(f'./public/subscribe/log/{time.strftime("%Y-%m", time.localtime(time.time()))}-update.log', 'a', encoding="utf-8") as f:
         f.write(update_log)
 
+headers = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/120.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept-Language": "en-US,en;q=0.5",
+    "Referer": "https://bing.com/",
+}
+
 def get_subscribe_main():
     dirs = './public/subscribe'
     if not os.path.exists(dirs):
@@ -28,7 +37,7 @@ def get_subscribe_main():
     if not os.path.exists(log_dir):
         os.makedirs(log_dir)
 
-    clash_req = requests.get("https://github.com/ermaozi/get_subscribe/raw/main/subscribe/clash.yml")
+    clash_req = requests.get("https://github.com/ermaozi/get_subscribe/raw/main/subscribe/clash.yml", headers=headers)
 
     # 检查下载是否成功
     if not clash_req.status_code in ok_code:
@@ -132,7 +141,7 @@ def validate_yaml(data):
         return False
 
 def check_and_validate_file(url):
-    response = requests.get(url)
+    response = requests.get(url, headers=headers)
     print(f"获取 {url} 状态码: {response.status_code}")
     if not response.status_code in ok_code:
         return None
@@ -150,29 +159,17 @@ def check_and_validate_file(url):
 def download_extra_proxies(auto=False):
     current_date = datetime.now()
     current_date_str = (current_date).strftime('%Y/%m/%Y%m%d')
+    current_date_str_alt = (current_date).strftime('%Y/%m/1-%Y%m%d')
 
     if auto == True:  
         urls = [
-            # "https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml",
-            # "https://raw.githubusercontent.com/NiREvil/vless/main/sub/clash-meta-wg.yml",
-            # "https://raw.githubusercontent.com/ts-sf/fly/main/clash",
-            # "https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/clash-meta/actives_under_1000ms.yaml",
-            # "https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/sub_merge_yaml.yml",
-            # "https://suo.yt/d5UCwQr", # https://github.com/Pawdroid/Free-servers
             f"https://v2rayshare.githubrowcontent.com/{current_date_str}.yaml",
             f"https://nodefree.githubrowcontent.com/{current_date_str}.yaml",
-            # "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml"
+            f"https://node.freeclashnode.com/uploads/{current_date_str_alt}.yaml"
         ]
     else:
         urls = [
             "https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml",
-            # "https://raw.githubusercontent.com/NiREvil/vless/main/sub/clash-meta-wg.yml",
-            # "https://raw.githubusercontent.com/ts-sf/fly/main/clash",
-            # "https://raw.githubusercontent.com/MrMohebi/xray-proxy-grabber-telegram/master/collected-proxies/clash-meta/actives_under_1000ms.yaml",
-            # "https://raw.githubusercontent.com/mahdibland/V2RayAggregator/master/sub/sub_merge_yaml.yml",
-            # "https://suo.yt/d5UCwQr", # https://github.com/Pawdroid/Free-servers
-            # f"https://v2rayshare.githubrowcontent.com/{current_date_str}.yaml",
-            # f"https://nodefree.githubrowcontent.com/{current_date_str}.yaml",
             "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml"
         ]
     all_proxies = []
