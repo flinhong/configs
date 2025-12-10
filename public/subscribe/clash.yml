@@ -56,401 +56,70 @@ proxies:
   port: 989
   server: 185.153.197.5
   type: ss
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_AT_speednode_0001
-  port: 8443
-  reality-opts:
-    public-key: Yxj9S7VH0OV7B6gT68Hsglo5_ctsn5Z89bhqjBps-0Y
-    short-id: 9593b1c3cf54836c
-  server: us.connect-opengate.ru
-  servername: deepl.com
+- cipher: aes-256-gcm
+  name: X_CA_speednode_0001
+  password: 0690659746980c46
+  port: 10081
+  server: 167.17.179.197
+  type: ss
+  udp: true
+- name: X_DE_speednode_0002
+  network: ws
+  port: 80
+  server: fs.ir-sub.fun
+  servername: zedd.global.ssl.fastly.net
   skip-cert-verify: false
-  tls: true
+  tls: false
   type: vless
   udp: true
-  uuid: 7039f4f0-4733-49ce-8925-2852a42d9a37
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_AT_speednode_0002
-  port: 443
-  reality-opts:
-    public-key: MrCEmqtF6MdAfyvwu7VWipCvi_8P0RjI8TF571XT6l0
-    short-id: 209f
-  server: 152.53.147.46
-  servername: fonts.gstatic.com
+  uuid: 2e9177ce-d1cc-45cd-b27f-f16f8fbc117a
+  ws-opts:
+    headers:
+      Host: zedd.global.ssl.fastly.net
+    path: /ZEDMODEON-ZEDMODEON-bia-ZEDMODEON
+- alterId: 0
+  cipher: auto
+  name: X_ES_speednode_0003
+  port: 29431
+  server: 185.221.23.251
   skip-cert-verify: false
-  tls: true
-  type: vless
+  tls: false
+  type: vmess
   udp: true
-  uuid: 9fe667f5-ffea-4272-a0b6-3abd73941c52
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_BE_speednode_0003
-  port: 4443
-  reality-opts:
-    public-key: 5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE
-    short-id: aa7e96542880027a
-  server: 146.103.113.79
-  servername: github.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
+  uuid: 8b78363e-3c3a-44ab-f0d8-f13d950c8572
+- alterId: 2
+  cipher: auto
+  name: X_HK_speednode_0006
+  network: ws
+  port: 80
+  server: 73d73acd-sv2sg0-t7bo2t-1psmw.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
   udp: true
-  uuid: 3121850a-24aa-41f9-936d-dbdf10a3b31f
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_GB_speednode_0005
-  port: 443
-  reality-opts:
-    public-key: gbP2G_j0cmFvgmWaWLpzZavEzQiPzky-fApmbF2BWxU
-    short-id: f961007b26f6
-  server: 144.124.248.211
-  servername: pimg.mycdn.me
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2a2a6062-003c-4f44-b293-ee0d0416afee
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_GB_speednode_0006
-  port: 443
-  reality-opts:
-    public-key: gbP2G_j0cmFvgmWaWLpzZavEzQiPzky-fApmbF2BWxU
-    short-id: 58e3e82f80
-  server: 144.124.251.166
-  servername: pimg.mycdn.me
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2a2a6062-003c-4f44-b293-ee0d0416afee
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_GB_speednode_0007
-  port: 443
-  reality-opts:
-    public-key: gbP2G_j0cmFvgmWaWLpzZavEzQiPzky-fApmbF2BWxU
-    short-id: 1fdea407109a1750
-  server: 144.124.252.72
-  servername: pimg.mycdn.me
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2a2a6062-003c-4f44-b293-ee0d0416afee
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_GB_speednode_0008
-  port: 443
-  reality-opts:
-    public-key: gbP2G_j0cmFvgmWaWLpzZavEzQiPzky-fApmbF2BWxU
-    short-id: c6fe
-  server: 144.124.248.141
-  servername: pimg.mycdn.me
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2a2a6062-003c-4f44-b293-ee0d0416afee
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_GB_speednode_0009
-  port: 443
-  reality-opts:
-    public-key: gbP2G_j0cmFvgmWaWLpzZavEzQiPzky-fApmbF2BWxU
-    short-id: 58e3e82f80
-  server: 144.124.254.31
-  servername: pimg.mycdn.me
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2a2a6062-003c-4f44-b293-ee0d0416afee
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_GB_speednode_0010
-  port: 443
-  reality-opts:
-    public-key: gbP2G_j0cmFvgmWaWLpzZavEzQiPzky-fApmbF2BWxU
-    short-id: 1fdea407109a1750
-  server: 144.124.246.187
-  servername: pimg.mycdn.me
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2a2a6062-003c-4f44-b293-ee0d0416afee
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_GB_speednode_0011
-  port: 443
-  reality-opts:
-    public-key: gbP2G_j0cmFvgmWaWLpzZavEzQiPzky-fApmbF2BWxU
-    short-id: 58e3e82f80
-  server: 144.124.252.229
-  servername: pimg.mycdn.me
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2a2a6062-003c-4f44-b293-ee0d0416afee
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_GB_speednode_0012
-  port: 443
-  reality-opts:
-    public-key: gbP2G_j0cmFvgmWaWLpzZavEzQiPzky-fApmbF2BWxU
-    short-id: 1fdea407109a1750
-  server: 144.124.253.100
-  servername: pimg.mycdn.me
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2a2a6062-003c-4f44-b293-ee0d0416afee
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_GB_speednode_0013
-  port: 443
-  reality-opts:
-    public-key: gbP2G_j0cmFvgmWaWLpzZavEzQiPzky-fApmbF2BWxU
-    short-id: c6fe
-  server: 144.124.246.106
-  servername: pimg.mycdn.me
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2a2a6062-003c-4f44-b293-ee0d0416afee
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_GB_speednode_0014
-  port: 443
-  reality-opts:
-    public-key: gbP2G_j0cmFvgmWaWLpzZavEzQiPzky-fApmbF2BWxU
-    short-id: 1fdea407109a1750
-  server: 144.124.254.185
-  servername: pimg.mycdn.me
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2a2a6062-003c-4f44-b293-ee0d0416afee
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_GB_speednode_0015
-  port: 443
-  reality-opts:
-    public-key: gbP2G_j0cmFvgmWaWLpzZavEzQiPzky-fApmbF2BWxU
-    short-id: f961007b26f6
-  server: 144.124.246.127
-  servername: pimg.mycdn.me
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2a2a6062-003c-4f44-b293-ee0d0416afee
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_GB_speednode_0016
-  port: 443
-  reality-opts:
-    public-key: gbP2G_j0cmFvgmWaWLpzZavEzQiPzky-fApmbF2BWxU
-    short-id: f961007b26f6
-  server: 144.124.252.173
-  servername: pimg.mycdn.me
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2a2a6062-003c-4f44-b293-ee0d0416afee
-- client-fingerprint: chrome
-  name: X_IL_speednode_0022
-  port: 24170
-  reality-opts:
-    public-key: VsmNi1ZMXVOwhCWpbCp51w-D_DzrxWX4jgfpcU0S9G4
-    short-id: 2fb2106a629b
-  server: 185.136.132.171
-  servername: speedtest.net
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: fe21e399-ec6f-4cb5-8441-e911178665b1
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_IR_speednode_0023
-  port: 443
-  reality-opts:
-    public-key: BkAG_uWeUj7BCHqYjrz1JyH0TMvO_KywubV7WJN17ho
-    short-id: ee6f3e8f44b1f0b6
-  server: 62.60.148.21
-  servername: st.ozone.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 39e5cc2f-1294-4a42-bb58-306a8be785e1
-- name: X_KR_speednode_0024
+  uuid: 42bb6d36-97c7-11ee-be7f-f23c9164ca5d
+- name: X_KR_speednode_0007
   port: 1090
   server: 121.169.46.116
   type: socks5
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: X_LB_speednode_0025
-  port: 443
+  name: X_RU_speednode_0008
+  port: 2443
   reality-opts:
-    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
-    short-id: 86e999a2cdc2
-  server: us01-vlr01-gmn03.vpnvezdehod.net
-  servername: hls-svod.itunes.apple.com
+    public-key: IgaNLuUg1JOIoUdX4CegMU_XBU35B5RAYRL_-KZfpSY
+    short-id: c84a28bb05989ff4
+  server: 158.160.175.98
+  servername: yandex.ru
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: c52e7342-2c31-4f0b-83e9-007ad8d1691a
+  uuid: 62b0e46b-d2a5-423d-8457-95bde707fc19
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_NL_speednode_0026
-  port: 443
-  reality-opts:
-    public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
-  server: eng25.netliberated.org
-  servername: www.halfords.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3513666b-d8ca-414f-856b-4ce192a0071b
-- client-fingerprint: chrome
-  name: X_RU_speednode_0027
-  port: 52900
-  reality-opts:
-    public-key: AjYSCSFHfqOg-NbP_ngiRvJkKNKZXuHNDa1sJd4TRRQ
-    short-id: 1fbc
-  server: wolfy.ufavpn.ru
-  servername: ozon.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 97e7c83c-9346-49b4-85a5-1e3bbf7488b9
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_RU_speednode_0028
-  port: 1488
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
-  server: 51.250.25.11
-  servername: ads.x5.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4a6de183-2ad3-456c-b420-feeac81f6257
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_RU_speednode_0029
-  port: 1488
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
-  server: 51.250.109.47
-  servername: ads.x5.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4a6de183-2ad3-456c-b420-feeac81f6257
-- client-fingerprint: chrome
-  name: X_RU_speednode_0030
-  port: 52900
-  reality-opts:
-    public-key: AjYSCSFHfqOg-NbP_ngiRvJkKNKZXuHNDa1sJd4TRRQ
-    short-id: 1fbc
-  server: 62.113.42.65
-  servername: ozon.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 97e7c83c-9346-49b4-85a5-1e3bbf7488b9
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_RU_speednode_0031
-  port: 1488
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  server: 51.250.99.190
-  servername: ads.x5.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4a6de183-2ad3-456c-b420-feeac81f6257
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_RU_speednode_0032
-  port: 8443
-  reality-opts:
-    public-key: 73XglR9lOaXBISd7mGgTEP60v28mz8pmCDivcDAF_WU
-    short-id: d71e3bba229829
-  server: 176.109.105.24
-  servername: pimg.mycdn.me
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2a2a6062-003c-000e-b293-ee0d0416afee
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_RU_speednode_0033
-  port: 8443
-  reality-opts:
-    public-key: 73XglR9lOaXBISd7mGgTEP60v28mz8pmCDivcDAF_WU
-    short-id: 062f17
-  server: 87.242.100.82
-  servername: pimg.mycdn.me
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2a2a6062-003c-0005-b293-ee0d0416afee
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_SE_speednode_0034
-  port: 4443
-  reality-opts:
-    public-key: 5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE
-    short-id: aa7e96542880027a
-  server: 89.23.123.8
-  servername: github.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 3121850a-24aa-41f9-936d-dbdf10a3b31f
-- alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: X_SG_speednode_0035
-  network: http
-  port: 19751
-  server: 43.165.7.71
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6cfa6103-5d06-40cb-f452-b563db578288
-- client-fingerprint: chrome
-  name: X_US_speednode_0036
+  name: X_US_speednode_0009
   network: ws
   port: 443
   server: 69.84.182.13
@@ -459,32 +128,11 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: be52060e-7934-4bc6-89b3-0b6cf4cda789
+  uuid: 1347acec-0c12-46c0-9436-19603093d9ab
   ws-opts:
     headers:
       Host: fr-1-fr-1.aiopen.sbs
     path: /kbjc/fr1
-- cipher: aes-256-cfb
-  name: X_VN_speednode_0037
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.154.192
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: X_VN_speednode_0038
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.46
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: X_VN_speednode_0039
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.50
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   name: X_防范境外势力渗透
@@ -741,124 +389,45 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: X_🇭🇰 HK_183
+  name: X_HK_102
   network: ws
   port: 80
-  server: 457a1492-sv4n40-t6kzbp-1h5u7.hk3.p5pv.com
+  server: 486a4149-t0bog0-t14dgl-duku.hk3.p5pv.com
   servername: broadcastlv.chat.bilibili.com
   type: vmess
-  uuid: e3fdbd22-8c17-11ee-ace4-f23c913c8d2b
+  uuid: 8e0f8ef2-5fe3-11ec-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- cipher: aes-256-cfb
+  name: X_🇰🇷_KR_韩国
+  password: qwerREWQ@@
+  port: 4652
+  server: 218.237.185.230
+  type: ss
+- cipher: aes-256-cfb
+  name: X_🇰🇷_KR_韩国_1
+  password: qwerREWQ@@
+  port: 4652
+  server: p141.panda001.net
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: X_🇭🇰 HK_168
+  network: ws
+  port: 80
+  server: 2e617951-sv2sg0-taj9mo-1tco3.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  type: vmess
+  uuid: e29de954-ea01-11ef-a271-f23c91cfbbc9
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
 - alterId: 2
   cipher: auto
-  name: X_🇭🇰 HK_136
-  network: ws
-  port: 80
-  server: 0afadb4a-sv4n40-tc61cs-1tja8.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  type: vmess
-  uuid: d2f0bee2-02f1-11f0-8eb0-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: X_🇭🇰HK-1.36.218.178-5158
-  network: ws
-  port: 80
-  server: 033d62df-sv4n40-tcsjnd-1tff5.hk3.p5pv.com
-  servername: 033d62df-sv4n40-tcsjnd-1tff5.hk3.p5pv.com
-  type: vmess
-  uuid: dfb6b402-f422-11ef-80e5-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: 033d62df-sv4n40-tcsjnd-1tff5.hk3.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: X_🇭🇰HK-1.36.223.11-5391
-  network: ws
-  port: 80
-  server: 5e4f31de-sv0xs0-sv0wpw-17xo8.hk3.p5pv.com
-  servername: 5e4f31de-sv0xs0-sv0wpw-17xo8.hk3.p5pv.com
-  type: vmess
-  uuid: b4e40aa2-74a1-11ed-b0b5-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: 5e4f31de-sv0xs0-sv0wpw-17xo8.hk3.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: X_🇭🇰HK-1.36.223.11-4974
-  network: ws
-  port: 80
-  server: 80f0806d-szg740-t41p4y-1hpo0.hk3.p5pv.com
-  servername: 80f0806d-szg740-t41p4y-1hpo0.hk3.p5pv.com
-  type: vmess
-  uuid: c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: 80f0806d-szg740-t41p4y-1hpo0.hk3.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: X_🇭🇰 HK_186
-  network: ws
-  port: 80
-  server: 7dfe4b59-svc1s0-tc67m2-1tjc4.hk3.p5pv.com
-  servername: 7dfe4b59-svc1s0-tc67m2-1tjc4.hk3.p5pv.com
-  type: vmess
-  uuid: fac704ae-0304-11f0-a2ef-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: 7dfe4b59-svc1s0-tc67m2-1tjc4.hk3.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: X_🇭🇰 HK_177
-  network: ws
-  port: 80
-  server: 659ce73e-sv2sg0-tcsjnd-1tff5.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  type: vmess
-  uuid: dfb6b402-f422-11ef-80e5-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: X_🇭🇰HK-1.65.208.140-0339
-  network: ws
-  port: 80
-  server: 6de4b9d4-suk9s0-t8ro7t-1ey07.hk3.p5pv.com
-  servername: 6de4b9d4-suk9s0-t8ro7t-1ey07.hk3.p5pv.com
-  type: vmess
-  uuid: 203d1d64-3313-11ed-bb74-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: 6de4b9d4-suk9s0-t8ro7t-1ey07.hk3.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: X_🇭🇰HK-1.36.218.178-5373
-  network: ws
-  port: 80
-  server: 87a8ce25-sv2sg0-tbicd9-1go3q.hk3.p5pv.com
-  servername: 87a8ce25-sv2sg0-tbicd9-1go3q.hk3.p5pv.com
-  type: vmess
-  uuid: 19dd9c70-e4a5-11ed-8347-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: 87a8ce25-sv2sg0-tbicd9-1go3q.hk3.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: X_🇭🇰 HK_134
+  name: X_HK_134
   network: ws
   port: 80
   server: 418446e2-sv2sg0-t2nkut-jx5r.hk3.p5pv.com
@@ -871,107 +440,59 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: X_🇭🇰HK-1.36.223.11-5288
+  name: X_🇭🇰HK²_28|2.9MB/s|0%|NF|X
   network: ws
   port: 80
-  server: 4bbf82ea-t0bog0-ta64ri-1qzi1.hk3.p5pv.com
-  servername: 4bbf82ea-t0bog0-ta64ri-1qzi1.hk3.p5pv.com
-  type: vmess
-  uuid: 8f99107c-f091-11ee-9935-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: 4bbf82ea-t0bog0-ta64ri-1qzi1.hk3.p5pv.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: X_🇨🇳 中国 V2CROSS.COM
-  network: tcp
-  port: 30812
-  server: v12.hdacd.com
-  servername: v12.hdacd.com
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  name: X_🇭🇰 HK_176
-  network: ws
-  port: 80
-  server: a58b4c29-sv4n40-syfj90-1r9dt.hk3.p5pv.com
+  server: eb328762-t6ngg0-t85e8f-141tv.hk3.p5pv.com
   servername: broadcastlv.chat.bilibili.com
   type: vmess
-  uuid: de003c72-0157-11ef-86da-f23c91cfbbc9
+  uuid: bd77bfe8-e0f3-11ec-bd7c-f23c913c8d2b
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
 - alterId: 2
   cipher: auto
-  name: X_🇭🇰 HK_188
+  name: X_🇭🇰 HK_177
   network: ws
   port: 80
-  server: 865c5c01-sv4n40-t65a3e-tqgz.hk3.p5pv.com
+  server: fdda39f3-sv4n40-tasors-1tdqt.hk3.p5pv.com
   servername: broadcastlv.chat.bilibili.com
   type: vmess
-  uuid: 88da0d21-b25d-11ec-b9f7-f23c91cfbbc9
+  uuid: 167db97c-ee01-11ef-b737-f23c91cfbbc9
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
 - alterId: 2
   cipher: auto
-  name: X_🇭🇰HK-1.36.218.178-5151
+  name: X_🇭🇰 HK_102
   network: ws
   port: 80
-  server: 73d73acd-sv2sg0-t7bo2t-1psmw.hk3.p5pv.com
-  servername: 73d73acd-sv2sg0-t7bo2t-1psmw.hk3.p5pv.com
-  type: vmess
-  uuid: 42bb6d36-97c7-11ee-be7f-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: 73d73acd-sv2sg0-t7bo2t-1psmw.hk3.p5pv.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: X_🇭🇰 HK_149
-  network: ws
-  port: 80
-  server: c5765779-sv2sg0-syu0n5-1hd7v.hk3.p5pv.com
+  server: 5f0f42e9-sv4n40-t7udc0-1pqhp.hk3.p5pv.com
   servername: broadcastlv.chat.bilibili.com
   type: vmess
-  uuid: f73c64bc-9e8c-11ec-bd7c-f23c913c8d2b
+  uuid: b02327ac-a49a-11ef-a673-f23c913c8d2b
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
 - alterId: 2
   cipher: auto
-  name: X_🇭🇰 HK_160
+  name: X_🇭🇰 HK_173
   network: ws
   port: 80
-  server: a731a8b3-sv2sg0-sy1a0y-1iyov.hk3.p5pv.com
+  server: cf9c1166-sv2sg0-tcp4th-1c4g6.hk3.p5pv.com
   servername: broadcastlv.chat.bilibili.com
   type: vmess
-  uuid: 33629870-e57e-11ec-bb74-f23c9164ca5d
+  uuid: 676c67c6-5e73-11ee-9a79-f23c9164ca5d
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
 - alterId: 2
   cipher: auto
-  name: X_🇭🇰 HK_213
-  network: ws
-  port: 80
-  server: 93933a41-sv0xs0-t1jamc-1fvdh.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  type: vmess
-  uuid: 9e1ddc04-073b-11ed-bd7c-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: X_🇭🇰 HK_135
+  name: X_HK_135
   network: ws
   port: 80
   server: 04165a49-sv2sg0-t5cryd-4w8.hk3.p5pv.com
@@ -984,28 +505,58 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: X_🇭🇰HK-1.36.218.178-5027
+  name: X_🇭🇰 HK-1.36.223.11-4974
   network: ws
   port: 80
-  server: 5c4dc91c-sv2sg0-tbnucr-1thfv.hk3.p5pv.com
-  servername: 5c4dc91c-sv2sg0-tbnucr-1thfv.hk3.p5pv.com
+  server: 80f0806d-szg740-t41p4y-1hpo0.hk3.p5pv.com
+  servername: 80f0806d-szg740-t41p4y-1hpo0.hk3.p5pv.com
   type: vmess
-  uuid: 0a4d1c88-fb3a-11ef-8c3f-f23c913c8d2b
+  uuid: c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9
   ws-opts:
     headers:
-      Host: 5c4dc91c-sv2sg0-tbnucr-1thfv.hk3.p5pv.com
+      Host: 80f0806d-szg740-t41p4y-1hpo0.hk3.p5pv.com
     path: /
 - alterId: 2
   cipher: auto
-  name: X__16
+  name: X_🇭🇰 HK_172
   network: ws
   port: 80
-  server: 34013157-sunz40-taz53d-1j0y6.hk3.p5pv.com
+  server: 04e4679b-sv2sg0-swfla6-1rdqg.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
   type: vmess
-  uuid: 1cce7df2-251c-11ee-9409-f23c9164ca5d
+  uuid: 2b57ec48-0da4-11ef-8f35-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  down: 55 Mbps
+  name: X_🇫🇷_FR_法国
+  port: 50011
+  protocol: udp
+  server: 62.210.10.186
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  up: 11 Mbps
 - alterId: 2
   cipher: auto
-  name: X_🇭🇰 HK_139
+  name: X_🇭🇰 HK_187
+  network: ws
+  port: 80
+  server: 266007c7-sv4n40-syu0n5-1hd7v.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  type: vmess
+  uuid: f73c64bc-9e8c-11ec-bd7c-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: X_HK_139
   network: ws
   port: 80
   server: 0f64e685-sv0xs0-svwnuh-1t4wg.hk3.p5pv.com
@@ -1018,52 +569,195 @@ proxies:
     path: /
 - alterId: 2
   cipher: auto
-  name: X_🇭🇰 HK_119
+  name: X_🇭🇰 HK_100
   network: ws
   port: 80
-  server: 814047e3-sv2sg0-t09t13-z7a1.hk3.p5pv.com
+  server: da79f07b-sv0xs0-t7hu58-1q1la.hk3.p5pv.com
   servername: broadcastlv.chat.bilibili.com
   type: vmess
-  uuid: 3bd247a8-993e-11ec-a8bf-f23c91cfbbc9
+  uuid: 25b46954-9a33-11ee-8b86-f23c91cfbbc9
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
 - alterId: 2
   cipher: auto
-  name: X_🇭🇰 HK_182
+  name: X__15
   network: ws
   port: 80
-  server: c7f55f8c-sv2sg0-t15jkc-eyem.hk3.p5pv.com
+  server: 5b2c09e0-suvds0-t2oosc-xm0q.hk3.p5pv.com
+  servername: 5b2c09e0-suvds0-t2oosc-xm0q.hk3.p5pv.com
+  type: vmess
+  uuid: 3437f34e-1b77-11eb-8684-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 5b2c09e0-suvds0-t2oosc-xm0q.hk3.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: X_🇭🇰 HK_77
+  network: ws
+  port: 80
+  server: 3a0b963a-t02f40-tiuovf-v3c2.hk3.p5pv.com
   servername: broadcastlv.chat.bilibili.com
   type: vmess
-  uuid: 64617ed2-4823-11ef-9f2d-f23c9164ca5d
+  uuid: 5f091cbe-fb34-11ea-9777-f23c9164ca5d
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
 - alterId: 2
   cipher: auto
-  name: X_🇭🇰HK-1.36.223.11-0701
+  name: X_🇭🇰HK²_55|1.5MB/s|YT|NF|X
   network: ws
   port: 80
-  server: 4020d7a1-sv0xs0-swkmdk-1imi4.hk3.p5pv.com
+  server: 73256a3a-t53wg0-teivih-1rz31.hk3.p5pv.com
+  servername: 73256a3a-t53wg0-teivih-1rz31.hk3.p5pv.com
+  type: vmess
+  uuid: 7699767c-44ae-11ef-80c7-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: 73256a3a-t53wg0-teivih-1rz31.hk3.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: X_🇭🇰 HK_116
+  network: ws
+  port: 80
+  server: 3f54bee7-sv4n40-tbpu76-1thmd.hk3.p5pv.com
   servername: broadcastlv.chat.bilibili.com
   type: vmess
-  uuid: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
+  uuid: 2d8c38cc-fc12-11ef-94aa-f23c913c8d2b
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
 - alterId: 2
   cipher: auto
-  name: X_🇭🇰 HK_143
+  name: X_🇭🇰 HK-1.36.223.11-5391
   network: ws
   port: 80
-  server: 12988683-sv2sg0-t2whio-1jcwu.hk3.p5pv.com
+  server: 5e4f31de-sv0xs0-sv0wpw-17xo8.hk3.p5pv.com
+  servername: 5e4f31de-sv0xs0-sv0wpw-17xo8.hk3.p5pv.com
+  type: vmess
+  uuid: b4e40aa2-74a1-11ed-b0b5-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: 5e4f31de-sv0xs0-sv0wpw-17xo8.hk3.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: X_🇭🇰 HK_160
+  network: ws
+  port: 80
+  server: 272ffc58-sv2sg0-t4v3jz-1k8ga.hk3.p5pv.com
   servername: broadcastlv.chat.bilibili.com
   type: vmess
-  uuid: f93486ce-cc84-11ed-9e98-f23c913c8d2b
+  uuid: f860f2da-5035-11ed-bb74-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: X_🇭🇰 HK_124
+  network: ws
+  port: 80
+  server: a0ae8f27-sv4n40-sw5wi7-ufc0.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  type: vmess
+  uuid: 22308988-8548-11ea-a22e-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: X_🇭🇰 HK_171
+  network: ws
+  port: 80
+  server: 6bbeaaf6-sv4n40-t8tsp0-1szmi.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  type: vmess
+  uuid: ba151628-b3a2-11ef-bdb9-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: X_🇭🇰HK²_24|1.8MB/s|2%|YT|X
+  network: ws
+  port: 80
+  server: 6bbacbda-t1ekg0-t2uo6p-yjq0.hk3.p5pv.com
+  servername: 6bbacbda-t1ekg0-t2uo6p-yjq0.hk3.p5pv.com
+  type: vmess
+  uuid: 25b2699a-e18e-11ec-8e69-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: 6bbacbda-t1ekg0-t2uo6p-yjq0.hk3.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: X_🇭🇰 HK_103
+  network: ws
+  port: 80
+  server: 2bc8c2b4-sv0xs0-tcr97d-2b2n.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  type: vmess
+  uuid: fcd39788-ca23-11ed-86e2-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: X_🇭🇰 HK_104
+  network: ws
+  port: 80
+  server: 10cd2f16-sv2sg0-t7hu58-1q1la.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  type: vmess
+  uuid: 25b46954-9a33-11ee-8b86-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: X_🇭🇰 HK_179
+  network: ws
+  port: 80
+  server: 1dd7778a-sv4n40-szxh9w-46gc.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  type: vmess
+  uuid: 225d1cca-d744-11ef-b790-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: X_🇭🇰 HK_64
+  network: ws
+  port: 80
+  server: 4cdbea97-t53wg0-to8xn3-l4nv.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  type: vmess
+  uuid: 1469e09e-027c-11ec-a0fc-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: X_🇭🇰 HK_66
+  network: ws
+  port: 80
+  server: dfed4efb-t4n8g0-t636g9-luwe.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  type: vmess
+  uuid: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
@@ -1084,32 +778,36 @@ proxy-groups:
   - 🇨🇳_CN_中国->🇯🇵_JP_日本
   - 🇨🇳_CN_中国->🇺🇸_US_美国
   - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
-  - X_🇭🇰 HK_183
-  - X_🇭🇰 HK_136
-  - X_🇭🇰HK-1.36.218.178-5158
-  - X_🇭🇰HK-1.36.223.11-5391
-  - X_🇭🇰HK-1.36.223.11-4974
-  - X_🇭🇰 HK_186
+  - X_HK_102
+  - X_🇰🇷_KR_韩国
+  - X_🇰🇷_KR_韩国_1
+  - X_🇭🇰 HK_168
+  - X_HK_134
+  - X_🇭🇰HK²_28|2.9MB/s|0%|NF|X
   - X_🇭🇰 HK_177
-  - X_🇭🇰HK-1.65.208.140-0339
-  - X_🇭🇰HK-1.36.218.178-5373
-  - X_🇭🇰 HK_134
-  - X_🇭🇰HK-1.36.223.11-5288
-  - X_🇨🇳 中国 V2CROSS.COM
-  - X_🇭🇰 HK_176
-  - X_🇭🇰 HK_188
-  - X_🇭🇰HK-1.36.218.178-5151
-  - X_🇭🇰 HK_149
+  - X_🇭🇰 HK_102
+  - X_🇭🇰 HK_173
+  - X_HK_135
+  - X_🇭🇰 HK-1.36.223.11-4974
+  - X_🇭🇰 HK_172
+  - X_🇫🇷_FR_法国
+  - X_🇭🇰 HK_187
+  - X_HK_139
+  - X_🇭🇰 HK_100
+  - X__15
+  - X_🇭🇰 HK_77
+  - X_🇭🇰HK²_55|1.5MB/s|YT|NF|X
+  - X_🇭🇰 HK_116
+  - X_🇭🇰 HK-1.36.223.11-5391
   - X_🇭🇰 HK_160
-  - X_🇭🇰 HK_213
-  - X_🇭🇰 HK_135
-  - X_🇭🇰HK-1.36.218.178-5027
-  - X__16
-  - X_🇭🇰 HK_139
-  - X_🇭🇰 HK_119
-  - X_🇭🇰 HK_182
-  - X_🇭🇰HK-1.36.223.11-0701
-  - X_🇭🇰 HK_143
+  - X_🇭🇰 HK_124
+  - X_🇭🇰 HK_171
+  - X_🇭🇰HK²_24|1.8MB/s|2%|YT|X
+  - X_🇭🇰 HK_103
+  - X_🇭🇰 HK_104
+  - X_🇭🇰 HK_179
+  - X_🇭🇰 HK_64
+  - X_🇭🇰 HK_66
   tolerance: 5
   type: url-test
   url: https://www.facebook.com/common/referer_frame.php
@@ -1174,39 +872,13 @@ proxy-groups:
 - interval: 120
   name: 🪐 负载均衡
   proxies:
-  - X_AT_speednode_0001
-  - X_AT_speednode_0002
-  - X_BE_speednode_0003
-  - X_GB_speednode_0005
-  - X_GB_speednode_0006
-  - X_GB_speednode_0007
-  - X_GB_speednode_0008
-  - X_GB_speednode_0009
-  - X_GB_speednode_0010
-  - X_GB_speednode_0011
-  - X_GB_speednode_0012
-  - X_GB_speednode_0013
-  - X_GB_speednode_0014
-  - X_GB_speednode_0015
-  - X_GB_speednode_0016
-  - X_IL_speednode_0022
-  - X_IR_speednode_0023
-  - X_KR_speednode_0024
-  - X_LB_speednode_0025
-  - X_NL_speednode_0026
-  - X_RU_speednode_0027
-  - X_RU_speednode_0028
-  - X_RU_speednode_0029
-  - X_RU_speednode_0030
-  - X_RU_speednode_0031
-  - X_RU_speednode_0032
-  - X_RU_speednode_0033
-  - X_SE_speednode_0034
-  - X_SG_speednode_0035
-  - X_US_speednode_0036
-  - X_VN_speednode_0037
-  - X_VN_speednode_0038
-  - X_VN_speednode_0039
+  - X_CA_speednode_0001
+  - X_DE_speednode_0002
+  - X_ES_speednode_0003
+  - X_HK_speednode_0006
+  - X_KR_speednode_0007
+  - X_RU_speednode_0008
+  - X_US_speednode_0009
   - X_防范境外势力渗透
   - 'X_防范境外势力渗透 #1'
   - 'X_防范境外势力渗透 #2'
