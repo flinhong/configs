@@ -299,28 +299,31 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
+- alterId: 2
   cipher: auto
   name: X_🇭🇰 香港2|@ripaojiedian
-  port: 59501
-  server: 183.236.97.72
+  network: ws
+  port: 80
+  server: 74ebcaaa-t70f40-t8be2y-1ryup.hkt.gotochinatown.net
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 0f227b79-c26c-4a85-a6b8-fb3f5017f0d3
-- name: X_香港3|@ripaojiedian
-  network: tcp
-  password: 76d630f2af6619c4a5de0ef953df3c6a
+  uuid: 3ee091ca-ab9c-11ef-a791-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- name: X_🇭🇰 香港3|@ripaojiedian
+  password: e2722c0fb503f8a592436c12bce0509a
   port: 443
-  server: 112.118.116.127
+  server: 112.118.116.198
   skip-cert-verify: false
-  sni: www.nintendogames.net
+  sni: www.baidu.com
   type: trojan
-- name: X_香港4|@ripaojiedian
-  network: tcp
+- name: X_🇭🇰 香港4|@ripaojiedian
   password: BxceQaOe
   port: 443
-  server: 58.152.53.174
+  server: 58.152.18.155
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -332,93 +335,85 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: X_日本|@ripaojiedian
-  network: tcp
+- name: X_🇭🇰 香港6|@ripaojiedian
+  password: c9f83e78-e03b-4080-b882-d8676e52adaa
+  port: 49213
+  server: 120.232.218.114
+  skip-cert-verify: false
+  sni: t.me%2FWangCai2
+  type: trojan
+- name: X_🇯🇵 日本|@ripaojiedian
   password: BxceQaOe
-  port: 1924
-  server: 52.195.194.77
+  port: 48756
+  server: 3.112.242.221
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: X_日本2|@ripaojiedian
-  network: tcp
-  password: 76d630f2af6619c4a5de0ef953df3c6a
-  port: 1331
-  server: 160.16.70.180
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: X_日本3|@ripaojiedian
-  network: tcp
-  password: 76d630f2af6619c4a5de0ef953df3c6a
+- name: X_🇯🇵 日本2|@ripaojiedian
+  password: e2722c0fb503f8a592436c12bce0509a
   port: 3093
-  server: 54.238.222.14
+  server: 160.16.107.37
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: X_新加坡|@ripaojiedian
-  network: tcp
-  password: 76d630f2af6619c4a5de0ef953df3c6a
-  port: 507
-  server: 18.183.180.31
+- name: X_🇯🇵 日本3|@ripaojiedian
+  password: e2722c0fb503f8a592436c12bce0509a
+  port: 3093
+  server: 18.179.7.49
   skip-cert-verify: false
   sni: www.nintendogames.net
-  type: trojan
-- name: X_新加坡2|@ripaojiedian
-  network: tcp
-  password: 76d630f2af6619c4a5de0ef953df3c6a
-  port: 3145
-  server: 18.183.180.31
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: X_新加坡3|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 3127
-  server: 18.183.180.31
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
   type: trojan
 - alterId: 0
   cipher: auto
-  name: X_🇸🇬 新加坡4|@ripaojiedian
-  port: 30812
-  server: v12.hdacd.com
+  name: X_🇯🇵 日本4|@ripaojiedian
+  port: 59503
+  server: 119.147.110.88
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: X_美国|@ripaojiedian
-  network: tcp
-  password: 76d630f2af6619c4a5de0ef953df3c6a
-  port: 4054
-  server: 160.16.151.196
+  uuid: 539443eb-5076-496b-80ad-20b5c87f92f0
+- name: X_🇸🇬 新加坡|@ripaojiedian
+  password: e2722c0fb503f8a592436c12bce0509a
+  port: 3145
+  server: 160.16.150.76
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: X_美国2|@ripaojiedian
-  network: tcp
-  password: 76d630f2af6619c4a5de0ef953df3c6a
-  port: 4054
-  server: 160.16.81.84
-  skip-cert-verify: true
+- name: X_🇸🇬 新加坡2|@ripaojiedian
+  password: e2722c0fb503f8a592436c12bce0509a
+  port: 1507
+  server: 160.16.68.250
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: X_美国3|@ripaojiedian
-  network: tcp
+- name: X_🇸🇬 新加坡3|@ripaojiedian
   password: BxceQaOe
-  port: 4569
-  server: 43.198.243.183
+  port: 804
+  server: 16.162.21.116
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+- name: X_🇺🇸 美国|@ripaojiedian
+  password: e2722c0fb503f8a592436c12bce0509a
+  port: 4054
+  server: 153.121.39.240
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: X_🇺🇸 美国2|@ripaojiedian
+  password: e2722c0fb503f8a592436c12bce0509a
+  port: 4054
+  server: 160.16.63.16
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: X_🇺🇸 美国3|@ripaojiedian
+  password: BxceQaOe
+  port: 2173
+  server: 54.238.178.152
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- cipher: aes-256-cfb
-  name: X_🇻🇳 越南|@ripaojiedian
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.117
-  type: ss
 - alterId: 2
   cipher: auto
   name: X_香港|@ripaojiedian
@@ -439,6 +434,65 @@ proxies:
   tls: false
   type: vmess
   uuid: 0f227b79-c26c-4a85-a6b8-fb3f5017f0d3
+- name: X_香港3|@ripaojiedian
+  network: tcp
+  password: 76d630f2af6619c4a5de0ef953df3c6a
+  port: 443
+  server: 112.118.116.127
+  sni: www.nintendogames.net
+  type: trojan
+- name: X_香港4|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 443
+  server: 58.152.53.174
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: X_日本|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 1924
+  server: 52.195.194.77
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+- name: X_日本2|@ripaojiedian
+  network: tcp
+  password: 76d630f2af6619c4a5de0ef953df3c6a
+  port: 1331
+  server: 160.16.70.180
+  sni: www.nintendogames.net
+  type: trojan
+- name: X_日本3|@ripaojiedian
+  network: tcp
+  password: 76d630f2af6619c4a5de0ef953df3c6a
+  port: 3093
+  server: 54.238.222.14
+  sni: www.nintendogames.net
+  type: trojan
+- name: X_新加坡|@ripaojiedian
+  network: tcp
+  password: 76d630f2af6619c4a5de0ef953df3c6a
+  port: 507
+  server: 18.183.180.31
+  sni: www.nintendogames.net
+  type: trojan
+- name: X_新加坡2|@ripaojiedian
+  network: tcp
+  password: 76d630f2af6619c4a5de0ef953df3c6a
+  port: 3145
+  server: 18.183.180.31
+  sni: www.nintendogames.net
+  type: trojan
+- name: X_新加坡3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 3127
+  server: 18.183.180.31
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
 - alterId: 0
   cipher: auto
   name: X_新加坡4|@ripaojiedian
@@ -449,6 +503,29 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: X_美国|@ripaojiedian
+  network: tcp
+  password: 76d630f2af6619c4a5de0ef953df3c6a
+  port: 4054
+  server: 160.16.151.196
+  sni: www.nintendogames.net
+  type: trojan
+- name: X_美国2|@ripaojiedian
+  network: tcp
+  password: 76d630f2af6619c4a5de0ef953df3c6a
+  port: 4054
+  server: 160.16.81.84
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: X_美国3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 4569
+  server: 43.198.243.183
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
 - alterId: 2
   cipher: auto
   name: X_HK_102
@@ -824,6 +901,681 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: X_FR法国(mibei77.com 米贝节点分享)
+  password: RFK38Cg7APneSB5cWDcpbm
+  port: 443
+  server: switcher-nick-croquet.freesocks.work
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: X_HK香港(mibei77.com 米贝节点分享)
+  port: 30830
+  server: v30.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- cipher: chacha20-ietf-poly1305
+  name: X_HK香港(mibei77.com 米贝节点分享) 2
+  password: p78naCf2EfOlRSLTX0wFVx
+  port: 443
+  server: pupas-shirting-unsung.freesocks.work
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: X_HK香港(mibei77.com 米贝节点分享) 3
+  port: 30830
+  server: v30.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- cipher: chacha20-ietf-poly1305
+  name: X_HK香港(mibei77.com 米贝节点分享) 4
+  password: 9tqhMdIrTkgQ46PvhyAtMH
+  port: 443
+  server: switcher-nick-croquet.freesocks.work
+  type: ss
+  udp: true
+- name: X_US美国(mibei77.com 米贝节点分享)
+  password: Q9gofGxinwLv0TfDfdKmdttdPGxrhKQS
+  port: 5223
+  server: psg2-ag.t.sgateway.link
+  skip-cert-verify: true
+  sni: psg2-ag.t.sgateway.link
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: X_US美国(mibei77.com 米贝节点分享) 2
+  password: 345dbf842bce4b66
+  port: 57456
+  server: nd-tor.vmagnum.win
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: X_US美国(mibei77.com 米贝节点分享) 3
+  password: wwzVn2ZnHfqYa6l8EWh3eY
+  port: 443
+  server: switcher-nick-croquet.freesocks.work
+  type: ss
+  udp: true
+- name: X_US美国(mibei77.com 米贝节点分享) 4
+  password: 87d1bfd4-574e-4c96-ad42-0426f27461ff
+  port: 443
+  server: saas.sin.fan
+  skip-cert-verify: true
+  sni: saas.sin.fan
+  type: trojan
+  udp: true
+- cipher: aes-128-gcm
+  name: X_US美国(mibei77.com 米贝节点分享) 5
+  password: XMj65epCcyjN6DSqz0W0VLlZWaW+XLQdMftFQIXff6s=
+  port: 55588
+  server: zyipv6.pai50288.uk
+  type: ss
+  udp: true
+- alterId: 32
+  cipher: auto
+  name: X_US美国(mibei77.com 米贝节点分享) 6
+  network: ws
+  port: 443
+  server: vc.fly.dev
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  ws-headers:
+    Host: vc.fly.dev
+  ws-path: /vc
+- alterId: 0
+  cipher: auto
+  name: X_US美国(mibei77.com 米贝节点分享) 7
+  port: 30812
+  server: v12.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- cipher: chacha20-ietf-poly1305
+  name: X_FR法国(mibei77.com 米贝节点分享) 2
+  password: 9tqhMdIrTkgQ46PvhyAtMH
+  port: 443
+  server: switcher-nick-croquet.freesocks.work
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: X_FR法国(mibei77.com 米贝节点分享) 3
+  network: ws
+  port: 44579
+  server: 2001:bc8:32d7:302::10
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  ws-headers:
+    Host: 2001:bc8:32d7:302::10
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: X_FR法国(mibei77.com 米贝节点分享) 4
+  network: ws
+  port: 44579
+  server: 2001:bc8:32d7:302::10
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  ws-headers:
+    Host: 2001:bc8:32d7:302::10
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: X_FR法国(mibei77.com 米贝节点分享) 5
+  network: ws
+  port: 44579
+  server: 2001:bc8:32d7:302::10
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  ws-headers:
+    Host: 2001:bc8:32d7:302::10
+  ws-path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
+- alterId: 0
+  cipher: auto
+  name: X_FR法国(mibei77.com 米贝节点分享) 6
+  network: ws
+  port: 44579
+  server: 2001:bc8:32d7:302::10
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  ws-headers:
+    Host: 2001:bc8:32d7:302::10
+  ws-path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
+- alterId: 0
+  cipher: auto
+  name: X_FR法国(mibei77.com 米贝节点分享) 7
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: X_FR法国(mibei77.com 米贝节点分享) 8
+  network: ws
+  port: 44579
+  server: 2001:bc8:32d7:302::10
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  ws-headers:
+    Host: 2001:bc8:32d7:302::10
+  ws-path: /?ed=2048HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN--HiByeVPNN
+- alterId: 0
+  cipher: auto
+  name: X_FR法国(mibei77.com 米贝节点分享) 9
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: X_FR法国(mibei77.com 米贝节点分享) 10
+  network: ws
+  port: 44579
+  server: 2001:bc8:32d7:302::10
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  ws-headers:
+    Host: 2001:bc8:32d7:302::10
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: X_US美国(mibei77.com 米贝节点分享) 8
+  port: 36334
+  server: 160.119.196.92
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 575ac7a3-0127-4420-a9ea-5ff3f6c02ac7
+- alterId: 0
+  cipher: auto
+  name: X_US美国(mibei77.com 米贝节点分享) 9
+  network: ws
+  port: 62211
+  server: 2001:bc8:32d7:2013::8
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e1786d49-ccba-466b-a0dd-e1ab59bd83bb
+  ws-headers:
+    Host: www.bing.com
+  ws-path: /github.com/Alvin9999
+- cipher: chacha20-ietf-poly1305
+  name: X_US美国(mibei77.com 米贝节点分享) 10
+  password: RFK38Cg7APneSB5cWDcpbm
+  port: 443
+  server: switcher-nick-croquet.freesocks.work
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: X_US美国(mibei77.com 米贝节点分享) 11
+  network: ws
+  port: 44579
+  server: 2001:bc8:32d7:302::10
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  ws-headers:
+    Host: TURK1.NET.NET
+  ws-path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+- alterId: 0
+  cipher: auto
+  name: X_US美国(mibei77.com 米贝节点分享) 12
+  network: ws
+  port: 44579
+  server: 2001:bc8:32d7:302::10
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  ws-headers:
+    Host: 2001:bc8:32d7:302::10
+  ws-path: ?ed=2048
+- alterId: 0
+  cipher: auto
+  name: X_US美国(mibei77.com 米贝节点分享) 13
+  port: 30812
+  server: v12.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  name: X_US美国(mibei77.com 米贝节点分享) 14
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: X_US美国(mibei77.com 米贝节点分享) 15
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: X_US美国(mibei77.com 米贝节点分享) 16
+  port: 30812
+  server: v12.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: X_US美国(mibei77.com 米贝节点分享) 17
+  password: 87d1bfd4-574e-4c96-ad42-0426f27461ff
+  port: 443
+  server: saas.sin.fan
+  skip-cert-verify: true
+  sni: saas.sin.fan
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: X_US美国(mibei77.com 米贝节点分享) 18
+  network: ws
+  port: 41320
+  server: 14.17.71.237
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 82539eb7-18c8-48d0-bb9c-55d1b6e47f59
+  ws-headers:
+    Host: img14.360buyimg.com
+  ws-path: /obj
+- alterId: 0
+  cipher: auto
+  name: X_US美国(mibei77.com 米贝节点分享) 19
+  network: ws
+  port: 41313
+  server: 14.17.71.237
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 82539eb7-18c8-48d0-bb9c-55d1b6e47f59
+  ws-headers:
+    Host: img14.360buyimg.com
+  ws-path: /obj
+- alterId: 0
+  cipher: auto
+  name: X_US美国(mibei77.com 米贝节点分享) 20
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- cipher: chacha20-ietf-poly1305
+  name: X_US美国(mibei77.com 米贝节点分享) 21
+  password: p78naCf2EfOlRSLTX0wFVx
+  port: 443
+  server: pupas-shirting-unsung.freesocks.work
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: X_US美国(mibei77.com 米贝节点分享) 22
+  password: XMj65epCcyjN6DSqz0W0VLlZWaW+XLQdMftFQIXff6s=
+  port: 55588
+  server: zyipv6.pai50288.uk
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: X_US美国(mibei77.com 米贝节点分享) 23
+  network: ws
+  port: 44579
+  server: 2001:bc8:32d7:302::10
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  ws-headers:
+    Host: AZERB.NET
+  ws-path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+- alterId: 2
+  cipher: auto
+  name: X_US美国(mibei77.com 米贝节点分享) 24
+  port: 30833
+  server: v33.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  name: X_US美国(mibei77.com 米贝节点分享) 25
+  network: ws
+  port: 41319
+  server: 14.17.71.237
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 82539eb7-18c8-48d0-bb9c-55d1b6e47f59
+  ws-headers:
+    Host: img14.360buyimg.com
+  ws-path: /obj
+- alterId: 0
+  cipher: auto
+  name: X_US美国(mibei77.com 米贝节点分享) 26
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- cipher: chacha20-ietf-poly1305
+  name: X_US美国(mibei77.com 米贝节点分享) 27
+  password: wwzVn2ZnHfqYa6l8EWh3eY
+  port: 443
+  server: switcher-nick-croquet.freesocks.work
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: X_US美国(mibei77.com 米贝节点分享) 28
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: X_US美国(mibei77.com 米贝节点分享) 29
+  network: ws
+  port: 41317
+  server: 183.60.254.173
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 82539eb7-18c8-48d0-bb9c-55d1b6e47f59
+  ws-headers:
+    Host: img14.360buyimg.com
+  ws-path: /obj
+- alterId: 0
+  cipher: auto
+  name: X_US美国(mibei77.com 米贝节点分享) 30
+  network: ws
+  port: 44579
+  server: 2001:bc8:32d7:302::10
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  ws-headers:
+    Host: 2001:bc8:32d7:302::10
+  ws-path: /?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10
+- alterId: 0
+  cipher: auto
+  name: X_US美国(mibei77.com 米贝节点分享) 31
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: X_US美国(mibei77.com 米贝节点分享) 32
+  network: ws
+  port: 44579
+  server: 2001:bc8:32d7:302::10
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  ws-headers:
+    Host: 2001:bc8:32d7:302::10
+  ws-path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: X_US美国(mibei77.com 米贝节点分享) 33
+  network: ws
+  port: 44579
+  server: 2001:bc8:32d7:302::10
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  ws-headers:
+    Host: 2001:bc8:32d7:302::10
+  ws-path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: X_US美国(mibei77.com 米贝节点分享) 34
+  port: 30812
+  server: v12.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  name: X_US美国(mibei77.com 米贝节点分享) 35
+  network: ws
+  port: 44579
+  server: 2001:bc8:32d7:302::10
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  ws-headers:
+    Host: AZERB.NET
+  ws-path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+- alterId: 0
+  cipher: auto
+  name: X_US美国(mibei77.com 米贝节点分享) 36
+  network: ws
+  port: 41311
+  server: gs7ds312f.gdufds.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 82539eb7-18c8-48d0-bb9c-55d1b6e47f59
+  ws-headers:
+    Host: img14.360buyimg.com
+  ws-path: /obj
+- alterId: 0
+  cipher: auto
+  name: X_US美国(mibei77.com 米贝节点分享) 37
+  network: ws
+  port: 44579
+  server: 2001:bc8:32d7:302::10
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  ws-headers:
+    Host: 2001:bc8:32d7:302::10
+  ws-path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+- alterId: 0
+  cipher: auto
+  name: X_US美国(mibei77.com 米贝节点分享) 38
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: X_SG新加坡(mibei77.com 米贝节点分享)
+  port: 19751
+  server: 43.165.7.71
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6cfa6103-5d06-40cb-f452-b563db578288
+- alterId: 0
+  cipher: auto
+  name: X_SG新加坡(mibei77.com 米贝节点分享) 2
+  port: 19751
+  server: 43.165.7.71
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6cfa6103-5d06-40cb-f452-b563db578288
+- alterId: 0
+  cipher: auto
+  name: X_GB英国(mibei77.com 米贝节点分享)
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: X_GB英国(mibei77.com 米贝节点分享) 2
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: X_GB英国(mibei77.com 米贝节点分享) 3
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: X_GB英国(mibei77.com 米贝节点分享) 4
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: X_GB英国(mibei77.com 米贝节点分享) 5
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: X_GB英国(mibei77.com 米贝节点分享) 6
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: X_GB英国(mibei77.com 米贝节点分享) 7
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: X_GB英国(mibei77.com 米贝节点分享) 8
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: X_GB英国(mibei77.com 米贝节点分享) 9
+  port: 180
+  server: 82.198.246.97
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 proxy-groups:
 - name: 🚀 节点选择
   proxies:
@@ -870,6 +1622,69 @@ proxy-groups:
   - X_🇭🇰 HK_179
   - X_🇭🇰 HK_64
   - X_🇭🇰 HK_66
+  - X_FR法国(mibei77.com 米贝节点分享)
+  - X_HK香港(mibei77.com 米贝节点分享)
+  - X_HK香港(mibei77.com 米贝节点分享) 2
+  - X_HK香港(mibei77.com 米贝节点分享) 3
+  - X_HK香港(mibei77.com 米贝节点分享) 4
+  - X_US美国(mibei77.com 米贝节点分享)
+  - X_US美国(mibei77.com 米贝节点分享) 2
+  - X_US美国(mibei77.com 米贝节点分享) 3
+  - X_US美国(mibei77.com 米贝节点分享) 4
+  - X_US美国(mibei77.com 米贝节点分享) 5
+  - X_US美国(mibei77.com 米贝节点分享) 6
+  - X_US美国(mibei77.com 米贝节点分享) 7
+  - X_FR法国(mibei77.com 米贝节点分享) 2
+  - X_FR法国(mibei77.com 米贝节点分享) 3
+  - X_FR法国(mibei77.com 米贝节点分享) 4
+  - X_FR法国(mibei77.com 米贝节点分享) 5
+  - X_FR法国(mibei77.com 米贝节点分享) 6
+  - X_FR法国(mibei77.com 米贝节点分享) 7
+  - X_FR法国(mibei77.com 米贝节点分享) 8
+  - X_FR法国(mibei77.com 米贝节点分享) 9
+  - X_FR法国(mibei77.com 米贝节点分享) 10
+  - X_US美国(mibei77.com 米贝节点分享) 8
+  - X_US美国(mibei77.com 米贝节点分享) 9
+  - X_US美国(mibei77.com 米贝节点分享) 10
+  - X_US美国(mibei77.com 米贝节点分享) 11
+  - X_US美国(mibei77.com 米贝节点分享) 12
+  - X_US美国(mibei77.com 米贝节点分享) 13
+  - X_US美国(mibei77.com 米贝节点分享) 14
+  - X_US美国(mibei77.com 米贝节点分享) 15
+  - X_US美国(mibei77.com 米贝节点分享) 16
+  - X_US美国(mibei77.com 米贝节点分享) 17
+  - X_US美国(mibei77.com 米贝节点分享) 18
+  - X_US美国(mibei77.com 米贝节点分享) 19
+  - X_US美国(mibei77.com 米贝节点分享) 20
+  - X_US美国(mibei77.com 米贝节点分享) 21
+  - X_US美国(mibei77.com 米贝节点分享) 22
+  - X_US美国(mibei77.com 米贝节点分享) 23
+  - X_US美国(mibei77.com 米贝节点分享) 24
+  - X_US美国(mibei77.com 米贝节点分享) 25
+  - X_US美国(mibei77.com 米贝节点分享) 26
+  - X_US美国(mibei77.com 米贝节点分享) 27
+  - X_US美国(mibei77.com 米贝节点分享) 28
+  - X_US美国(mibei77.com 米贝节点分享) 29
+  - X_US美国(mibei77.com 米贝节点分享) 30
+  - X_US美国(mibei77.com 米贝节点分享) 31
+  - X_US美国(mibei77.com 米贝节点分享) 32
+  - X_US美国(mibei77.com 米贝节点分享) 33
+  - X_US美国(mibei77.com 米贝节点分享) 34
+  - X_US美国(mibei77.com 米贝节点分享) 35
+  - X_US美国(mibei77.com 米贝节点分享) 36
+  - X_US美国(mibei77.com 米贝节点分享) 37
+  - X_US美国(mibei77.com 米贝节点分享) 38
+  - X_SG新加坡(mibei77.com 米贝节点分享)
+  - X_SG新加坡(mibei77.com 米贝节点分享) 2
+  - X_GB英国(mibei77.com 米贝节点分享)
+  - X_GB英国(mibei77.com 米贝节点分享) 2
+  - X_GB英国(mibei77.com 米贝节点分享) 3
+  - X_GB英国(mibei77.com 米贝节点分享) 4
+  - X_GB英国(mibei77.com 米贝节点分享) 5
+  - X_GB英国(mibei77.com 米贝节点分享) 6
+  - X_GB英国(mibei77.com 米贝节点分享) 7
+  - X_GB英国(mibei77.com 米贝节点分享) 8
+  - X_GB英国(mibei77.com 米贝节点分享) 9
   tolerance: 5
   type: url-test
   url: https://www.facebook.com/common/referer_frame.php
@@ -957,23 +1772,34 @@ proxy-groups:
   - 'X_防范境外势力渗透 #9'
   - X_🇭🇰 香港|@ripaojiedian
   - X_🇭🇰 香港2|@ripaojiedian
+  - X_🇭🇰 香港3|@ripaojiedian
+  - X_🇭🇰 香港4|@ripaojiedian
+  - X_香港5|@ripaojiedian
+  - X_🇭🇰 香港6|@ripaojiedian
+  - X_🇯🇵 日本|@ripaojiedian
+  - X_🇯🇵 日本2|@ripaojiedian
+  - X_🇯🇵 日本3|@ripaojiedian
+  - X_🇯🇵 日本4|@ripaojiedian
+  - X_🇸🇬 新加坡|@ripaojiedian
+  - X_🇸🇬 新加坡2|@ripaojiedian
+  - X_🇸🇬 新加坡3|@ripaojiedian
+  - X_🇺🇸 美国|@ripaojiedian
+  - X_🇺🇸 美国2|@ripaojiedian
+  - X_🇺🇸 美国3|@ripaojiedian
+  - X_香港|@ripaojiedian
+  - X_香港2|@ripaojiedian
   - X_香港3|@ripaojiedian
   - X_香港4|@ripaojiedian
-  - X_香港5|@ripaojiedian
   - X_日本|@ripaojiedian
   - X_日本2|@ripaojiedian
   - X_日本3|@ripaojiedian
   - X_新加坡|@ripaojiedian
   - X_新加坡2|@ripaojiedian
   - X_新加坡3|@ripaojiedian
-  - X_🇸🇬 新加坡4|@ripaojiedian
+  - X_新加坡4|@ripaojiedian
   - X_美国|@ripaojiedian
   - X_美国2|@ripaojiedian
   - X_美国3|@ripaojiedian
-  - X_🇻🇳 越南|@ripaojiedian
-  - X_香港|@ripaojiedian
-  - X_香港2|@ripaojiedian
-  - X_新加坡4|@ripaojiedian
   strategy: consistent-hashing
   type: load-balance
   url: https://client3.google.com/generate_204
