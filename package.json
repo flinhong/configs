@@ -1,21 +1,31 @@
 {
-    "name": "configs",
-    "version": "0.1.37",
-    "description": "custom scripts for tampermonkey and userscript with font styles...",
-    "main": "index.js",
-    "repository": "git@github.com:flinhong/configs.git",
-    "author": "Frank Lin <honglin@duck.com>",
-    "license": "MIT",
-    "scripts": {
-        "build:scss": "sass ./src/sites/:./public/styles/ --no-source-map",
-        "build:userscript": "node build.userscript.js",
-        "build": "npm run build:scss && npm run build:userscript",
-        "publish": "npx auto-version && npm run build"
-    },
-    "dependencies": {
-        "auto-version-js": "^0.3.10",
-        "js-beautify": "^1.15.1",
-        "prettier": "^3.4.2",
-        "sass": "^1.83.0"
-    }
+  "name": "userscripts",
+  "version": "0.0.2",
+  "description": "my custom configuration for development",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && node scripts/build.js",
+    "release": "node scripts/release.js bump patch",
+    "release:minor": "node scripts/release.js bump minor",
+    "release:major": "node scripts/release.js bump major",
+    "release:dryrun": "node scripts/release.js bump patch --dryrun",
+    "version:set": "node scripts/release.js set",
+    "version:reset": "node scripts/release.js reset"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flinhong/configs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/flinhong/configs/issues"
+  },
+  "homepage": "https://github.com/flinhong/configs#readme",
+  "devDependencies": {
+    "semver": "^7.7.3"
+  }
 }
