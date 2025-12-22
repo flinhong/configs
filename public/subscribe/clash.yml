@@ -581,157 +581,15 @@ proxies:
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 2
-  cipher: auto
-  name: X_🇭🇰 香港
-  port: 30807
-  server: v10.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  name: X_🇭🇰 香港2
-  network: ws
-  port: 80
-  server: fc9d3bb0-t70f40-t7hmka-1plv4.hkt.gotochinatown.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 28213b50-7ed5-11ee-add6-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- name: X_🇭🇰 香港3
-  password: 44e660b0ee21cf3ac66aee2c08af85d2
-  port: 443
-  server: 58.152.110.192
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: X_🇭🇰 香港4
-  password: BxceQaOe
-  port: 443
-  server: 58.152.25.71
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: X_🇷🇺RU俄罗斯
+  password: 36ZCHeabUSfKjfQEvJ4HDV
+  port: 54170
+  server: 185.242.86.156
   skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: X_🇭🇰 香港5
-  password: BxceQaOe
-  port: 443
-  server: 58.152.26.107
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- cipher: chacha20-ietf
-  name: X_🇭🇰 香港6
-  password: asd123456
-  port: 8388
-  server: 103.149.183.191
+  tls: true
   type: ss
-- name: X_🇯🇵 日本
-  password: BxceQaOe
-  port: 4012
-  server: 54.248.35.48
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- name: X_🇯🇵 日本2
-  password: 44e660b0ee21cf3ac66aee2c08af85d2
-  port: 3169
-  server: 13.114.27.223
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: X_🇯🇵 日本3
-  password: 44e660b0ee21cf3ac66aee2c08af85d2
-  port: 3093
-  server: 153.121.67.215
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: X_🇯🇵 日本4
-  port: 20022
-  server: 46.3.47.250
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: e5ce425e-0b84-435c-aee5-9f9ecbe2cb16
-- name: X_🇸🇬 新加坡
-  password: 44e660b0ee21cf3ac66aee2c08af85d2
-  port: 2760
-  server: 160.16.81.84
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: X_🇸🇬 新加坡2
-  password: 44e660b0ee21cf3ac66aee2c08af85d2
-  port: 2760
-  server: 160.16.236.32
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: X_🇸🇬 新加坡3
-  password: BxceQaOe
-  port: 381
-  server: 95.40.79.48
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- name: X_🇺🇸 美国
-  password: 44e660b0ee21cf3ac66aee2c08af85d2
-  port: 4054
-  server: 160.16.151.196
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: X_🇺🇸 美国2
-  password: 44e660b0ee21cf3ac66aee2c08af85d2
-  port: 2890
-  server: 160.16.81.84
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-- name: X_🇺🇸 美国3
-  password: BxceQaOe
-  port: 4569
-  server: 3.112.30.103
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: X_🇺🇸 美国4
-  port: 180
-  server: 82.198.246.97
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  name: X_🇸🇬SG新加坡
-  password: 44e660b0ee21cf3ac66aee2c08af85d2
-  port: 2760
-  server: 160.16.236.32
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: X_🇯🇵JP日本 10.3MB/s
-  password: 44e660b0ee21cf3ac66aee2c08af85d2
-  port: 3093
-  server: 153.121.67.215
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  tls: true
-  type: trojan
-  udp: true
 - alterId: 0
   name: X_🇨🇳CN中国
   password: BxceQaOe
@@ -743,134 +601,7 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: X_🇺🇸US美国
-  password: 5a2c16f9
-  port: 443
-  server: cf.130519.xyz
-  skip-cert-verify: true
-  sni: snippets.kkii.eu.org
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: X_🇺🇸US美国2
-  password: 5a2c16f9
-  port: 443
-  server: 104.19.220.22
-  skip-cert-verify: true
-  sni: snippets.kkii.eu.org
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: aes-256-gcm
-  name: X_🇨🇦CA加拿大 1.1MB/s
-  password: 8JCsPssfgS8tiRwiMlhARg==
-  port: 12000
-  server: 144.217.164.29
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: aes-256-gcm
-  name: X_🇺🇸US美国3
-  password: 8JCsPssfgS8tiRwiMlhARg==
-  port: 12000
-  server: 15.204.247.49
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: X_🇸🇬SG新加坡2
-  password: 44e660b0ee21cf3ac66aee2c08af85d2
-  port: 2760
-  server: 160.16.81.84
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: X_🇯🇵JP日本2
-  password: BxceQaOe
-  port: 4012
-  server: 54.248.35.48
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: X_🇺🇸US美国7
-  password: e2722c0fb503f8a592436c12bce0509a
-  port: 443
-  server: 112.118.116.8
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: aes-128-gcm
-  name: X_🇺🇸US美国8
-  password: 57bc0c04-8184-48f5-906b-897d095ed445
-  port: 17459
-  server: liubu9.singdns.com
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: X_🇸🇬SG新加坡3
-  password: BxceQaOe
-  port: 381
-  server: 95.40.79.48
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: X_🇹🇼TW台湾2
-  password: 04a6a322-b08e-4635-99af-219c01ade7dd
-  port: 33301
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
   name: X_🇭🇰HK香港
-  password: BxceQaOe
-  port: 443
-  server: 58.152.30.31
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: X_🇺🇸US美国9
-  password: 5a2c16f9
-  port: 443
-  server: 104.17.167.134
-  skip-cert-verify: true
-  sni: snippets.kkii.eu.org
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: X_🇺🇸US美国10
-  password: 44e660b0ee21cf3ac66aee2c08af85d2
-  port: 2890
-  server: 160.16.81.84
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: X_🇭🇰HK香港2
   password: BxceQaOe
   port: 443
   server: 58.152.25.71
@@ -880,43 +611,15 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  name: X_🇺🇸US美国11
-  password: .ie4rghJuMkcf0oF
-  port: 18509
-  server: 38.96.254.102
+  name: X_🇯🇵JP日本
+  password: 44e660b0ee21cf3ac66aee2c08af85d2
+  port: 3169
+  server: 3.112.16.3
   skip-cert-verify: true
-  sni: shoppingmall.electricbanana.click
+  sni: www.nintendogames.net
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: X_🇺🇸US美国12
-  password: qFvn2fNEvBgM5knffrN96q
-  port: 9483
-  server: 92.118.112.101
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: X_🇹🇼TW台湾3
-  password: a5049baa-eadf-4523-bcac-33139e4a99ea
-  port: 35501
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: X_🇨🇦CA加拿大2 124.5MB/s
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 79.127.233.170
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 0
   name: X_🇭🇰HK香港3
   password: BxceQaOe
@@ -928,73 +631,82 @@ proxies:
   type: trojan
   udp: true
 - alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: X_🇷🇺RU俄罗斯
-  password: 36ZCHeabUSfKjfQEvJ4HDV
-  port: 54170
-  server: 185.242.86.156
+  name: X_🇸🇬SG新加坡
+  password: BxceQaOe
+  port: 804
+  server: 57.180.15.254
   skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: X_🇺🇸US美国13 1.8MB/s
-  password: p78naCf2EfOlRSLTX0wFVx
-  port: 443
-  server: pupas-shirting-unsung.freesocks.work
-  skip-cert-verify: true
-  tls: true
-  type: ss
-- alterId: 0
-  name: X_🇹🇼TW台湾4
-  password: ef76d08c-9841-47e8-92a6-5b74df5d58ac
-  port: 35502
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
+  sni: t.me%2Fripaojiedian
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: X_🇭🇰HK香港4
+  name: X_🇯🇵JP日本2 9.6MB/s
   password: 44e660b0ee21cf3ac66aee2c08af85d2
-  port: 443
-  server: 58.152.110.192
+  port: 3093
+  server: 160.16.242.183
   skip-cert-verify: true
   sni: www.nintendogames.net
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: X_🇺🇸US美国14
+  name: X_🇺🇸US美国3 1.3MB/s
   password: 44e660b0ee21cf3ac66aee2c08af85d2
-  port: 4054
-  server: 160.16.151.196
+  port: 2890
+  server: 160.16.63.16
   skip-cert-verify: true
   sni: www.nintendogames.net
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: X_🇺🇸US美国15
-  password: 7418004a-0ecd-41c0-a062-42bf966d3fb2
-  port: 443
-  server: cf.877774.xyz
+  cipher: aes-256-gcm
+  name: X_🇺🇸US美国4
+  password: 8JCsPssfgS8tiRwiMlhARg==
+  port: 12000
+  server: 15.204.247.49
   skip-cert-verify: true
-  sni: guang.bgm2024.dpdns.org
+  tls: true
+  type: ss
+- alterId: 0
+  name: X_🇸🇬SG新加坡2
+  password: 44e660b0ee21cf3ac66aee2c08af85d2
+  port: 2760
+  server: 153.121.39.240
+  skip-cert-verify: true
+  sni: www.nintendogames.net
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: X_🇺🇸US美国16
-  password: 5a2c16f9
+  cipher: chacha20-ietf-poly1305
+  name: X_🇳🇱NL荷兰
+  password: 9tqhMdIrTkgQ46PvhyAtMH
   port: 443
-  server: 104.26.1.110
+  server: switcher-nick-croquet.freesocks.work
   skip-cert-verify: true
-  sni: snippets.kkii.eu.org
+  tls: true
+  type: ss
+- alterId: 0
+  name: X_🇸🇬SG新加坡3
+  password: 44e660b0ee21cf3ac66aee2c08af85d2
+  port: 2760
+  server: 160.16.63.16
+  skip-cert-verify: true
+  sni: www.nintendogames.net
   tls: true
   type: trojan
   udp: true
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: X_🇺🇸US美国6
+  password: qFvn2fNEvBgM5knffrN96q
+  port: 9483
+  server: 92.118.112.101
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - alterId: 0
   cipher: chacha20-ietf-poly1305
   name: X_🇮🇷IR伊朗
@@ -1005,6 +717,26 @@ proxies:
   tls: true
   type: ss
 - alterId: 0
+  name: X_🇺🇸US美国7 25.2MB/s
+  password: .ie4rghJuMkcf0oF
+  port: 18509
+  server: 38.96.254.102
+  skip-cert-verify: true
+  sni: shoppingmall.electricbanana.click
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  name: X_🇺🇸US美国8
+  password: BxceQaOe
+  port: 1221
+  server: 43.206.210.137
+  skip-cert-verify: true
+  sni: t.me/ripaojiedian
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
   cipher: chacha20-ietf-poly1305
   name: X_🇩🇪DE德国 1.7MB/s
   password: k1dBOmOB4oqi7Ump37a1bQ
@@ -1014,52 +746,50 @@ proxies:
   tls: true
   type: ss
 - alterId: 0
-  name: X_🇯🇵JP日本3
-  password: 44e660b0ee21cf3ac66aee2c08af85d2
-  port: 3169
-  server: 13.114.27.223
+  name: X_🇹🇼TW台湾3
+  password: ef76d08c-9841-47e8-92a6-5b74df5d58ac
+  port: 34411
+  server: green2.cdntencentmusic.com
   skip-cert-verify: true
-  sni: www.nintendogames.net
+  sni: green2.cdntencentmusic.com
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: X_🇺🇸US美国18
+  cipher: aes-256-gcm
+  name: X_🇨🇦CA加拿大
+  password: 8JCsPssfgS8tiRwiMlhARg==
+  port: 12000
+  server: 144.217.164.29
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  cipher: chacha20-ietf-poly1305
+  name: X_🇨🇦CA加拿大2 81.8MB/s
+  password: f8f7aCzcPKbsF8p3
+  port: 990
+  server: 79.127.233.170
+  skip-cert-verify: true
+  tls: true
+  type: ss
+- alterId: 0
+  name: X_🇭🇰HK香港4
   password: BxceQaOe
-  port: 4569
-  server: 3.112.30.103
-  skip-cert-verify: true
-  sni: t.me/ripaojiedian
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: X_🇺🇸US美国19
-  password: 5a2c16f9
   port: 443
-  server: 777.ai7777777.xyz
+  server: 58.152.30.31
   skip-cert-verify: true
-  sni: snippets.kkii.eu.org
+  sni: t.me%2Fripaojiedian
   tls: true
   type: trojan
   udp: true
 - alterId: 0
-  name: X_🇺🇸US美国20
-  password: 5a2c16f9
-  port: 443
-  server: 104.17.162.3
+  name: X_🇯🇵JP日本3
+  password: BxceQaOe
+  port: 2762
+  server: 3.112.233.197
   skip-cert-verify: true
-  sni: snippets.kkii.eu.org
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  name: X_🇺🇸US美国21
-  password: Aimer
-  port: 2053
-  server: 167.68.4.199
-  skip-cert-verify: true
-  sni: epge.muarua.filegear-sg.me
+  sni: t.me%2Fripaojiedian
   tls: true
   type: trojan
   udp: true
@@ -1840,59 +1570,28 @@ proxy-groups:
   - X_🇻🇳 越南|@ripaojiedian
   - X_香港|@ripaojiedian
   - X_美国4|@ripaojiedian
-  - X_🇭🇰 香港
-  - X_🇭🇰 香港2
-  - X_🇭🇰 香港3
-  - X_🇭🇰 香港4
-  - X_🇭🇰 香港5
-  - X_🇭🇰 香港6
-  - X_🇯🇵 日本
-  - X_🇯🇵 日本2
-  - X_🇯🇵 日本3
-  - X_🇯🇵 日本4
-  - X_🇸🇬 新加坡
-  - X_🇸🇬 新加坡2
-  - X_🇸🇬 新加坡3
-  - X_🇺🇸 美国
-  - X_🇺🇸 美国2
-  - X_🇺🇸 美国3
-  - X_🇺🇸 美国4
-  - X_🇸🇬SG新加坡
-  - X_🇯🇵JP日本 10.3MB/s
-  - X_🇨🇳CN中国
-  - X_🇺🇸US美国
-  - X_🇺🇸US美国2
-  - X_🇨🇦CA加拿大 1.1MB/s
-  - X_🇺🇸US美国3
-  - X_🇸🇬SG新加坡2
-  - X_🇯🇵JP日本2
-  - X_🇺🇸US美国7
-  - X_🇺🇸US美国8
-  - X_🇸🇬SG新加坡3
-  - X_🇹🇼TW台湾2
-  - X_🇭🇰HK香港
-  - X_🇺🇸US美国9
-  - X_🇺🇸US美国10
-  - X_🇭🇰HK香港2
-  - X_🇺🇸US美国11
-  - X_🇺🇸US美国12
-  - X_🇹🇼TW台湾3
-  - X_🇨🇦CA加拿大2 124.5MB/s
-  - X_🇭🇰HK香港3
   - X_🇷🇺RU俄罗斯
-  - X_🇺🇸US美国13 1.8MB/s
-  - X_🇹🇼TW台湾4
-  - X_🇭🇰HK香港4
-  - X_🇺🇸US美国14
-  - X_🇺🇸US美国15
-  - X_🇺🇸US美国16
+  - X_🇨🇳CN中国
+  - X_🇭🇰HK香港
+  - X_🇯🇵JP日本
+  - X_🇭🇰HK香港3
+  - X_🇸🇬SG新加坡
+  - X_🇯🇵JP日本2 9.6MB/s
+  - X_🇺🇸US美国3 1.3MB/s
+  - X_🇺🇸US美国4
+  - X_🇸🇬SG新加坡2
+  - X_🇳🇱NL荷兰
+  - X_🇸🇬SG新加坡3
+  - X_🇺🇸US美国6
   - X_🇮🇷IR伊朗
+  - X_🇺🇸US美国7 25.2MB/s
+  - X_🇺🇸US美国8
   - X_🇩🇪DE德国 1.7MB/s
+  - X_🇹🇼TW台湾3
+  - X_🇨🇦CA加拿大
+  - X_🇨🇦CA加拿大2 81.8MB/s
+  - X_🇭🇰HK香港4
   - X_🇯🇵JP日本3
-  - X_🇺🇸US美国18
-  - X_🇺🇸US美国19
-  - X_🇺🇸US美国20
-  - X_🇺🇸US美国21
   strategy: consistent-hashing
   type: load-balance
   url: https://client3.google.com/generate_204
