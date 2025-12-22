@@ -11,14 +11,38 @@
     monospace !important;
 }
 
-#s-top-left .c-font-normal {
+#s-top-left .c-font-normal,
+.wrapper_new,
+#container,
+#container.sam_newgrid,
+.new-pmd.c-container,
+.cosc-title-slot,
+.cos-button,
+#container.sam_newgrid td,
+#container.sam_newgrid th,
+.cos-font-medium {
   font-family: var(--font-family-sans);
 }
 
-.s-top-right .c-font-normal {
+body,
+button,
+input,
+select,
+textarea,
+em,
+.c-font-normal,
+.c-font-medium,
+span.gradient-text,
+#chat-input-main textarea,
+#chat-input-footer button,
+#container .c-title,
+.cos-text-body,
+.cos-text-body-lg {
   font-family: var(--font-family-serif);
 }
 
-.s-bottom-layer-content a {
+.s-bottom-layer-content,
+.cosc-source-text,
+#page.page-sample {
   font-family: var(--font-family-mono);
 }
