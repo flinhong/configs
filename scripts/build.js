@@ -30,8 +30,32 @@ function processRules() {
     rules.forEach((rule) => {
         uniqueStyles.add(rule.name)
         rule.domains.forEach((domain) => {
+            // 简化的通配符逻辑，支持各种域名格式
+            // 自动处理HTTP/HTTPS兼容性
+
+            // 提取主域名（移除开头的 www.）
+            let baseDomain = domain.replace(/^www\./, "")
+            
+            // 分割域名部分，确定顶级域名（TLD）
+            const domainParts = baseDomain.split('.')
+            
+            let rootDomain
+            if (domainParts.length >= 3 && 
+                (domainParts[domainParts.length - 1].length === 2 || 
+                 ['co', 'com', 'org', 'net', 'gov', 'edu', 'mil'].includes(domainParts[domainParts.length - 2]))) {
+                // 处理复杂域名如 www.example.co.uk 或 cn.example.com
+                rootDomain = domainParts.slice(-3).join('.')
+            } else {
+                // 处理简单域名如 example.com 或 example.de
+                rootDomain = domainParts.slice(-2).join('.')
+            }
+
+            // 使用通配符模式匹配所有协议和子域名
+            // 这将同时匹配 http:// 和 https://
+            allMatchPatterns.add(`*://*.${rootDomain}/*`)
+            
+            // 原始域名匹配（确保精确覆盖）
             allMatchPatterns.add(`*://${domain}/*`)
-            allMatchPatterns.add(`*://*.${domain}/*`)
         })
     })
 
