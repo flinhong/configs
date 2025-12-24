@@ -13,7 +13,7 @@
 // @match         *://www.baidu.com/*
 // @match         *://www.google.co.uk/*
 // @match         *://www.google.com/*
-// @run-at        document-start
+// @run-at        document-end
 // @downloadURL   https://cdn.honglin.ac.cn/statically/gh/flinhong/configs@main/dist/userscripts.js
 // @updateURL     https://cdn.honglin.ac.cn/statically/gh/flinhong/configs@main/dist/userscripts.meta.js
 // ==/UserScript==
