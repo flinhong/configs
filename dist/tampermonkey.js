@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name          Styling Fonts
 // @namespace     https://github.com/flinhong/configs
-// @version       0.0.5
+// @version       0.0.6
 // @description   Styling fonts with CSS for better reading experience.
 // @author        Frank Lin
 // @icon          https://cdn.honglin.ac.cn/favicon.ico
