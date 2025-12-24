@@ -164,16 +164,13 @@ def download_extra_proxies(auto=False):
         urls = [
             f"https://v2rayshare.githubrowcontent.com/{current_date_str}.yaml",
             f"https://nodefree.githubrowcontent.com/{current_date_str}.yaml",
-            "https://neko-warp.nloli.xyz/neko_warp.yaml",
             "https://tt.vg/freeclash"
 
         ]
     else:
         urls = [
             "https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml",
-            "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml",
-            f"https://free.datiya.com/uploads/{(current_date).strftime('%Y%m%d')}-clash.yaml",
-            "https://raw.githubusercontent.com/ts-sf/fly/main/clash"
+            "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml"
         ]
     all_proxies = []
 
