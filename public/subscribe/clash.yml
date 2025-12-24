@@ -56,263 +56,81 @@ proxies:
   port: 989
   server: 185.153.197.5
   type: ss
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
+- cipher: chacha20-ietf-poly1305
   name: X_CA_speednode_0001
-  port: 8443
-  reality-opts:
-    public-key: 8W9r2aXGhKNtvPxnL6EiPpQuSm9OJT17x2xyxwxIo30
-    short-id: 84f70f1177981563
-  server: 167.17.70.16
-  servername: www.microsoft.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55975415-43c0-461c-8752-d5b8013364e3
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_CH_speednode_0002
+  password: S6jUK9Fw5fMHgNqlqXObHZWv8Tf4nEkm
   port: 443
-  reality-opts:
-    public-key: pPGE5Uacj1AGAB_WLOXB_UUnVBOmuJGH0vTSfmRBKzM
-    short-id: 2e40144ddc07e8e1
-  server: ch3.tunnely.ru
-  servername: ch3.tunnely.ru
+  server: 193.203.203.66
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: X_CR_speednode_0002
+  network: ws
+  port: 2053
+  server: 190.93.246.191
+  servername: saasorg.saaas.ccwu.cc
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: c42e4667-ca09-4769-b544-89a8da730daf
-- alterId: 0
-  cipher: auto
-  name: X_CN_speednode_0003
-  port: 30812
-  server: v12.hdacd.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
+  uuid: 694899b7-3e90-f695-efde-abe17d0bb1da
+  ws-opts:
+    headers:
+      Host: saasorg.saaas.ccwu.cc
+    path: /proxyip=sjc.o00o.ooo
+- cipher: chacha20-ietf-poly1305
+  name: X_GB_speednode_0004
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  port: 8080
+  server: 82.38.31.184
+  type: ss
   udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: X_FR_speednode_0004
+- client-fingerprint: chrome
+  name: X_GB_speednode_0005
   network: ws
   packet-encoding: xudp
-  port: 443
-  server: 185.231.205.152
-  servername: ads.x5.ru
+  port: 2096
+  server: 164.38.155.61
+  servername: vless.hubp.de
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 2b74e019-81b0-4c77-9f41-2f3aaf04132d
+  uuid: 12345678-1234-1234-1234-123456789123
   ws-opts:
     headers:
-      Host: ads.x5.ru
-    path: /uefsanws
-- name: X_FR_speednode_0005
-  network: ws
+      Host: vless.hubp.de
+    path: /snippets
+- cipher: chacha20-ietf-poly1305
+  name: X_MD_speednode_0006
+  password: HaNqw9pIE4jcx98sg7UQgHeGNTM4R2pk
   port: 443
-  server: 94.131.118.18
-  servername: ads.x5.ru
-  skip-cert-verify: true
-  tls: true
+  server: 194.246.114.101
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: X_PL_speednode_0007
+  password: wjTugX3ZtHMB9c3Z
+  port: 9057
+  server: 217.30.10.70
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: X_PL_speednode_0008
+  password: FG5ddLsMPbV5CutE
+  port: 9050
+  server: 217.30.10.70
+  type: ss
+  udp: true
+- name: X_RU_speednode_0009
+  port: 41770
+  server: 81.200.146.76
+  skip-cert-verify: false
+  tls: false
   type: vless
   udp: true
-  uuid: 784ac0b2-3837-4889-8ad6-b58259dd1d0f
-  ws-opts:
-    headers:
-      Host: ads.x5.ru
-    path: /kmdznvws
-- name: X_GB_speednode_0006
-  network: ws
-  port: 700
-  server: 185.138.164.228
-  servername: zybs.worker.ddns-ip.net
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 00000000-0000-4000-8000-000000000000
-  ws-opts:
-    headers:
-      Host: zybs.worker.ddns-ip.net
-    path: /@Marisa_kristi
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_GR_speednode_0007
-  port: 443
-  reality-opts:
-    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
-    short-id: 8453e5fd9af927
-  server: ru-nl01-vlr01.tcp-reset-club.net
-  servername: hls-svod.itunes.apple.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8e2cc81d-7ac4-4352-a7b5-bbfcfa81e49e
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_HK_speednode_0008
-  port: 10122
-  reality-opts:
-    public-key: TU2OTQBiMyK-mKCI3G6fENadfG-fdNlWJF7Qv9ywkFY
-    short-id: 8a6394aa28d6
-  server: 1.36.189.217
-  servername: music.apple.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7f60f6e7-8419-4cff-9e1b-14179f677a5e
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_HK_speednode_0009
-  port: 8443
-  reality-opts:
-    public-key: 63yW4tl7SgDqIGhPc8pakSHJRi4yQpyePUEaoBPm5Fs
-    short-id: dcedb9f230283db1
-  server: verahk1.uspn.io
-  servername: xverahk1.uspn.io
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 45553a57-d94e-46bd-bea7-306eefab0d58
-- client-fingerprint: chrome
-  name: X_IR_speednode_0010
-  port: 28485
-  reality-opts:
-    public-key: mtI5whxB2OoaxxS5MLS-G8L5tv4EZqWIQyzCz5m6qgM
-    short-id: a4777add9457
-  server: 62.60.217.8
-  servername: www.latimes.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1a053b22-2ca1-4689-b06a-5fa66e6f9975
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_JP_speednode_0011
-  port: 443
-  reality-opts:
-    public-key: KX1PfrASrflF1Ra1TcjujnOAK-4sPiEVDSfAPS1DAl8
-    short-id: e33013f4
-  server: 188.253.16.31
-  servername: yahoo.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: a8c099ce-04d8-43d2-8100-34e72f7beba4
-- name: X_KR_speednode_0012
-  password: test.+
-  port: 30446
-  server: testkr3.ssv.vc
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: test
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_NL_speednode_0013
-  port: 443
-  reality-opts:
-    public-key: pPGE5Uacj1AGAB_WLOXB_UUnVBOmuJGH0vTSfmRBKzM
-    short-id: 2e40144ddc07e8e1
-  server: nl5.tunnely.ru
-  servername: nl5.tunnely.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: c42e4667-ca09-4769-b544-89a8da730daf
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_RU_speednode_0014
-  port: 443
-  reality-opts:
-    public-key: TrAxIFIhSCc4C5IWnGvvAs2cSD_mVag1MlTCJPeLkGg
-    short-id: b9ceed646f470d2d
-  server: 158.160.197.118
-  servername: ya.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4d7a559b-6379-41a7-9e51-41ef759846aa
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_RU_speednode_0015
-  port: 443
-  reality-opts:
-    public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
-    short-id: e55fd8f9c9a9a0ca
-  server: 51.250.75.158
-  servername: ads.x5.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: abff54b1-a5a6-46a6-a202-08452fd07ae7
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_RU_speednode_0016
-  port: 443
-  reality-opts:
-    public-key: MofBU4YalVzrV7O_T5OmaUA5BmkITNw8qbkVSeOMvTE
-    short-id: ed3eb3256dee971f
-  server: 158.160.191.241
-  servername: ya.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4d7a559b-6379-41a7-9e51-41ef759846aa
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_RU_speednode_0017
-  port: 443
-  reality-opts:
-    public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
-    short-id: 6354585c37827955
-  server: 51.250.65.209
-  servername: api-maps.yandex.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: abff54b1-a5a6-46a6-a202-08452fd07ae7
-- name: X_RU_speednode_0018
-  network: ws
-  password: 5a2c16f9
-  port: 443
-  server: cf.130519.xyz
-  skip-cert-verify: false
-  sni: snippets.kkii.eu.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: /
-- client-fingerprint: qq
-  flow: xtls-rprx-vision
-  name: X_RU_speednode_0019
-  port: 443
-  reality-opts:
-    public-key: r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs
-    short-id: 65c7748be8
-  server: 51.250.10.228
-  servername: sun6-21.userapi.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: fd4b0117-d752-46fd-9a94-21a21e360fdb
-- name: X_RU_speednode_0020
+  uuid: e80f6880-f525-48a2-9d3f-faea2cd7c967
+- name: X_RU_speednode_0010
   network: ws
   password: 5a2c16f9
   port: 443
@@ -325,116 +143,695 @@ proxies:
     headers:
       Host: snippets.kkii.eu.org
     path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_RU_speednode_0021
+- cipher: chacha20-ietf-poly1305
+  name: X_TR_speednode_0011
+  password: pQmnC03JObbPhdh5FBJHgD6jnTLchsRA
   port: 443
-  reality-opts:
-    public-key: mza5Hn1aolSz65qu-UwvBP3oesxMe25r11o4nxvikF0
-    short-id: d1579a8745398e34
-  server: 89.169.137.193
-  servername: eh.vk.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
+  server: 95.164.116.33
+  type: ss
   udp: true
-  uuid: 2c8adcaa-e428-4cea-9c88-e88166651ab3
-- name: X_SE_speednode_0022
+- name: X_US_speednode_0012
   network: ws
-  port: 2052
-  server: 185.146.173.185
-  servername: fggvggvvvv.fggghbvhh-ghvghggg-fgvg-mahdi-net-irancel.BLOG
+  port: 2095
+  server: www.udemy.com
+  servername: fangbinxingnmsl.pusytroller.cf
   skip-cert-verify: false
   tls: false
   type: vless
   udp: true
-  uuid: a2e3da23-4359-4d00-b6a3-0313113d3f5a
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   ws-opts:
     headers:
-      Host: fggvggvvvv.fggghbvhh-ghvghggg-fgvg-mahdi-net-irancel.BLOG
-    path: /Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-Telegramjoin:@V2Ray_Rolly-
-- name: X_TW_speednode_0023
-  password: 15299860-fadf-4a95-bb62-63666856822b
-  port: 31102
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
-- name: X_TW_speednode_0024
-  password: adb3985f-f23b-42f9-9332-cac7604021fd
-  port: 35501
-  server: green2.cdntencentmusic.com
-  skip-cert-verify: true
-  sni: green2.cdntencentmusic.com
-  type: trojan
-  udp: true
+      Host: fangbinxingnmsl.pusytroller.cf
+    path: /
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_US_speednode_0025
-  port: 33873
-  reality-opts:
-    public-key: RV6FhlbDmMyc_qCuuTbUZt3QMUsKZU7EjyjGkYxHS34
-    short-id: de550428
-  server: 139.144.199.41
-  servername: www.nokia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: ffb5a850-edbc-4831-ad0b-e29483949ea8
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_US_speednode_0026
+  name: X_US_speednode_0013
+  network: ws
   port: 443
-  reality-opts:
-    public-key: 51TT1F2DugIjuNuGgaeEoW_BWhEKg3mNyNkjNGd_2RM
-  server: ru2.tunnely.ru
-  servername: vk.com
+  server: 104.17.69.244
+  servername: snippets.kkii.eu.org
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: c42e4667-ca09-4769-b544-89a8da730daf
+  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: X_US_speednode_0027
-  port: 28190
-  reality-opts:
-    public-key: ZJRnFU-1s1JOnO8E9uZ7b00l1fPEh63fGRbdBANFRno
-  server: 159.89.87.21
-  servername: aws.amazon.com
+  name: X_US_speednode_0014
+  network: ws
+  port: 443
+  server: 198.41.208.234
+  servername: snippets.kkii.eu.org
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 14c80e0e-f7ce-4991-94fc-99a1db4a9b1e
+  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /
+- name: X_US_speednode_0015
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: 104.19.220.22
+  skip-cert-verify: false
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /
+- name: X_US_speednode_0016
+  network: ws
+  port: 443
+  server: 108.162.198.185
+  servername: snippets.kkii.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /
+- name: X_US_speednode_0017
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: 104.17.167.134
+  skip-cert-verify: false
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /
+- name: X_US_speednode_0018
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: cf.130519.xyz
+  skip-cert-verify: false
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /
+- client-fingerprint: chrome
+  name: X_US_speednode_0019
+  network: ws
+  port: 443
+  server: 104.16.65.1
+  servername: snippets.kkii.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /
+- client-fingerprint: chrome
+  name: X_US_speednode_0020
+  network: ws
+  port: 2053
+  server: 104.17.53.155
+  servername: saasorg.saaas.ccwu.cc
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 694899b7-3e90-f695-efde-abe17d0bb1da
+  ws-opts:
+    headers:
+      Host: saasorg.saaas.ccwu.cc
+    path: /proxyip=sjc.o00o.ooo
+- name: X_US_speednode_0021
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: one.cf.cdn.hyli.xyz
+  skip-cert-verify: false
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /
+- name: X_US_speednode_0022
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: 104.26.1.110
+  skip-cert-verify: false
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /
+- name: X_US_speednode_0023
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: 162.159.24.131
+  skip-cert-verify: false
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /
+- client-fingerprint: chrome
+  name: X_US_speednode_0024
+  network: ws
+  port: 2053
+  server: cfxr.eu.org
+  servername: stall.saass.ccwu.cc
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6949ea89-4825-1b47-3b03-113cede87254
+  ws-opts:
+    headers:
+      Host: stall.saass.ccwu.cc
+    path: /proxyip=sjc.o00o.ooo
+- name: X_US_speednode_0025
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: 172.64.229.205
+  skip-cert-verify: false
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /
+- client-fingerprint: chrome
+  name: X_US_speednode_0026
+  network: ws
+  port: 2053
+  server: notion.site
+  servername: saasorg.saaas.ccwu.cc
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 694899b7-3e90-f695-efde-abe17d0bb1da
+  ws-opts:
+    headers:
+      Host: saasorg.saaas.ccwu.cc
+    path: /proxyip=sjc.o00o.ooo
+- name: X_US_speednode_0027
+  network: ws
+  password: 5a2c16f9
+  port: 443
+  server: 777.ai7777777.xyz
+  skip-cert-verify: false
+  sni: snippets.kkii.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /
 - name: X_US_speednode_0028
   network: ws
-  password: Aimer
-  port: 2053
-  server: 167.68.4.199
+  password: 5a2c16f9
+  port: 443
+  server: 162.159.128.253
   skip-cert-verify: false
-  sni: epge.muarua.filegear-sg.me
+  sni: snippets.kkii.eu.org
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: epge.muarua.filegear-sg.me
+      Host: snippets.kkii.eu.org
     path: /
 - client-fingerprint: chrome
   name: X_US_speednode_0029
-  port: 10001
-  reality-opts:
-    public-key: kKX1o7FhJLyDaVE6sqXUcYpUIuFUgij_ueRYc_E4JhM
-    short-id: 1a24af87
-  server: 172.234.130.82
-  servername: yahoo.com
+  network: ws
+  port: 2053
+  server: 208.103.161.32
+  servername: sni.111000.dynv6.net
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 53cd8178-2ee6-43d9-a2a7-881f287fd408
+  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: X_US_speednode_0030
+  network: ws
+  port: 2053
+  server: 208.103.161.33
+  servername: sni.111000.dynv6.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: /?ed=2560
+- name: X_US_speednode_0031
+  network: ws
+  port: 2095
+  server: 104.16.142.237
+  servername: fangbinxingnmsl.pusytroller.cf
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  ws-opts:
+    headers:
+      Host: fangbinxingnmsl.pusytroller.cf
+    path: /
+- name: X_US_speednode_0032
+  network: ws
+  password: 87d1bfd4-574e-4c96-ad42-0426f27461ff
+  port: 443
+  server: cf.zhetengsha.eu.org
+  skip-cert-verify: false
+  sni: _acme-challenge.2go.cloudns.be
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: _acme-challenge.2go.cloudns.be
+    path: /
+- client-fingerprint: chrome
+  name: X_US_speednode_0033
+  network: ws
+  port: 443
+  server: 172.64.53.226
+  servername: snippets.kkii.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /
+- client-fingerprint: chrome
+  name: X_US_speednode_0034
+  network: ws
+  port: 443
+  server: 172.64.229.205
+  servername: snippets.kkii.eu.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /
+- client-fingerprint: chrome
+  name: X_US_speednode_0035
+  network: ws
+  port: 2053
+  server: one.dash.cloudflare.com
+  servername: saasorg.saaas.ccwu.cc
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 694899b7-3e90-f695-efde-abe17d0bb1da
+  ws-opts:
+    headers:
+      Host: saasorg.saaas.ccwu.cc
+    path: /proxyip=sjc.o00o.ooo
+- client-fingerprint: chrome
+  name: X_US_speednode_0036
+  network: ws
+  port: 2053
+  server: convera.com
+  servername: sni.111000.dynv6.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: X_US_speednode_0037
+  network: ws
+  port: 2053
+  server: 208.103.161.33
+  servername: sni.111000.dynv6.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: /
+- client-fingerprint: chrome
+  name: X_US_speednode_0038
+  network: ws
+  port: 2053
+  server: 104.16.241.241
+  servername: stall.saass.ccwu.cc
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6949ea89-4825-1b47-3b03-113cede87254
+  ws-opts:
+    headers:
+      Host: stall.saass.ccwu.cc
+    path: /proxyip=sjc.o00o.ooo
+- client-fingerprint: chrome
+  name: X_US_speednode_0039
+  network: ws
+  port: 2053
+  server: www.aapanel.com
+  servername: sni.111000.dynv6.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: /?ed=2560
+- name: X_US_speednode_0040
+  network: ws
+  password: 22367c45-f6c4-4ca8-8d52-d9787d7bbe91
+  port: 2053
+  server: www.shopify.com
+  skip-cert-verify: true
+  sni: cm2-bpg.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: cm2-bpg.filegear-sg.me
+    path: /proxyip=210.61.97.241:81
+- name: X_US_speednode_0041
+  network: ws
+  password: 22367c45-f6c4-4ca8-8d52-d9787d7bbe91
+  port: 2096
+  server: mfa.gov.ua
+  skip-cert-verify: true
+  sni: cm2-bpg.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: cm2-bpg.filegear-sg.me
+    path: /proxyip=210.61.97.241:81
+- client-fingerprint: chrome
+  name: X_US_speednode_0042
+  network: ws
+  port: 2053
+  server: go2.lenovo.com
+  servername: stall.saass.ccwu.cc
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6949ea89-4825-1b47-3b03-113cede87254
+  ws-opts:
+    headers:
+      Host: stall.saass.ccwu.cc
+    path: /proxyip=sjc.o00o.ooo
+- name: X_US_speednode_0043
+  network: ws
+  port: 443
+  server: 104.17.2.63
+  servername: vless1-bu3.pages.dev
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
+  ws-opts:
+    headers:
+      Host: vless1-bu3.pages.dev
+    path: /
+- client-fingerprint: chrome
+  name: X_US_speednode_0044
+  network: ws
+  port: 2053
+  server: oralb.com
+  servername: stall.saass.ccwu.cc
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6949ea89-4825-1b47-3b03-113cede87254
+  ws-opts:
+    headers:
+      Host: stall.saass.ccwu.cc
+    path: /proxyip=sjc.o00o.ooo
+- client-fingerprint: chrome
+  name: X_US_speednode_0045
+  network: ws
+  port: 2053
+  server: quick-edit.devprod.cloudflare.dev
+  servername: sni.111000.dynv6.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1a25f8ad-cad2-4e93-b5bf-34e42bcac02a
+  ws-opts:
+    headers:
+      Host: sni.111000.dynv6.net
+    path: /?ed=2560
+- name: X_US_speednode_0046
+  network: ws
+  password: 22367c45-f6c4-4ca8-8d52-d9787d7bbe91
+  port: 2083
+  server: cf.090227.xyz
+  skip-cert-verify: false
+  sni: cm2-bpg.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: cm2-bpg.filegear-sg.me
+    path: /proxyip=210.61.97.241:81
+- client-fingerprint: chrome
+  name: X_US_speednode_0047
+  network: ws
+  port: 443
+  server: 104.19.220.22
+  servername: snippets.kkii.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /
+- client-fingerprint: chrome
+  name: X_US_speednode_0048
+  network: ws
+  port: 2053
+  server: cfxr.eu.org
+  servername: saasorg.saaas.ccwu.cc
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 694899b7-3e90-f695-efde-abe17d0bb1da
+  ws-opts:
+    headers:
+      Host: saasorg.saaas.ccwu.cc
+    path: /proxyip=sjc.o00o.ooo
+- client-fingerprint: chrome
+  name: X_US_speednode_0049
+  network: ws
+  port: 2053
+  server: quick-edit.devprod.cloudflare.dev
+  servername: stall.saass.ccwu.cc
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6949ea89-4825-1b47-3b03-113cede87254
+  ws-opts:
+    headers:
+      Host: stall.saass.ccwu.cc
+    path: /proxyip=sjc.o00o.ooo
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: X_US_speednode_0050
+  network: ws
+  port: 2083
+  server: 104.18.36.0
+  servername: vless.hubp.de
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 29187857-4a1f-4d1e-88eb-0016771e0dbb
+  ws-opts:
+    headers:
+      Host: vless.hubp.de
+    path: /
+- name: X_US_speednode_0051
+  network: ws
+  password: 22367c45-f6c4-4ca8-8d52-d9787d7bbe91
+  port: 443
+  server: ct.877774.xyz
+  skip-cert-verify: false
+  sni: cm2-bpg.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: cm2-bpg.filegear-sg.me
+    path: /proxyip=210.61.97.241:81
+- name: X_US_speednode_0052
+  network: ws
+  password: 22367c45-f6c4-4ca8-8d52-d9787d7bbe91
+  port: 2087
+  server: cf.877774.xyz
+  skip-cert-verify: true
+  sni: cm2-bpg.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: cm2-bpg.filegear-sg.me
+    path: /proxyip=210.61.97.241:81
+- client-fingerprint: chrome
+  name: X_US_speednode_0053
+  network: ws
+  port: 2053
+  server: convera.com
+  servername: saasorg.saaas.ccwu.cc
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 694899b7-3e90-f695-efde-abe17d0bb1da
+  ws-opts:
+    headers:
+      Host: saasorg.saaas.ccwu.cc
+    path: /proxyip=sjc.o00o.ooo
+- client-fingerprint: chrome
+  name: X_US_speednode_0054
+  network: ws
+  port: 443
+  server: cdn.204910.best
+  servername: snippets.kkii.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: X_US_speednode_0055
+  network: ws
+  port: 8443
+  server: 141.101.122.17
+  servername: vless.hubp.de
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 29187857-4a1f-4d1e-88eb-0016771e0dbb
+  ws-opts:
+    headers:
+      Host: vless.hubp.de
+    path: /
+- name: X_US_speednode_0056
+  network: ws
+  port: 443
+  server: cf.zhetengsha.eu.org
+  servername: snippets.kkii.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+  ws-opts:
+    headers:
+      Host: snippets.kkii.eu.org
+    path: /
+- client-fingerprint: chrome
+  name: X_US_speednode_0057
+  network: ws
+  port: 2053
+  server: 162.159.254.137
+  servername: saasorg.saaas.ccwu.cc
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 694899b7-3e90-f695-efde-abe17d0bb1da
+  ws-opts:
+    headers:
+      Host: saasorg.saaas.ccwu.cc
+    path: /proxyip=sjc.o00o.ooo
+- cipher: aes-256-cfb
+  name: X_VN_speednode_0058
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.22
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: X_VN_speednode_0059
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.186
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: X_VN_speednode_0060
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.127
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   name: X_防范境外势力渗透
@@ -581,18 +978,6 @@ proxies:
   skip-cert-verify: false
   sni: green2.cdntencentmusic.com
   type: trojan
-- name: X_🇹🇼 台湾|@ripaojiedian
-  network: ws
-  password: 5a2c16f9
-  port: 443
-  server: one.cf.cdn.hyli.xyz
-  skip-cert-verify: false
-  sni: snippets.kkii.eu.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: snippets.kkii.eu.org
-    path: /
 - name: X_日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
@@ -1086,43 +1471,209 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
+- name: "X_节点日期：12-24\r"
+  network: ws
+  port: 2053
+  server: legion.lenovo.com
+  servername: stall.saass.ccwu.cc
+  tls: true
+  type: vless
+  uuid: 6949ea89-4825-1b47-3b03-113cede87254
+  ws-opts:
+    path: /proxyip=sjc.o00o.ooo
 - cipher: chacha20-ietf-poly1305
-  name: X_节点日期：12-23
+  name: "X_【机场推荐：https://a0a.xyz/】2\r"
   password: pQmnC03JObbPhdh5FBJHgD6jnTLchsRA
   port: 443
   server: 95.164.116.33
   type: ss
+- name: "X_【机场推荐：https://a0a.xyz/】3\r"
+  network: ws
+  port: 2053
+  server: 104.19.73.126
+  servername: saasorg.saaas.ccwu.cc
+  tls: true
+  type: vless
+  uuid: 694899b7-3e90-f695-efde-abe17d0bb1da
+  ws-opts:
+    path: /proxyip=sjc.o00o.ooo
+- name: "X_【机场推荐：https://a0a.xyz/】4\r"
+  network: ws
+  port: 2053
+  server: cfxr.eu.org
+  servername: stall.saass.ccwu.cc
+  tls: true
+  type: vless
+  uuid: 6949ea89-4825-1b47-3b03-113cede87254
+  ws-opts:
+    path: /proxyip=sjc.o00o.ooo
+- name: "X_【机场推荐：https://a0a.xyz/】5\r"
+  network: ws
+  port: 2053
+  server: www.gco.gov.qa
+  servername: stall.saass.ccwu.cc
+  tls: true
+  type: vless
+  uuid: 6949ea89-4825-1b47-3b03-113cede87254
+  ws-opts:
+    path: /proxyip=sjc.o00o.ooo
+- name: "X_【机场推荐：https://a0a.xyz/】6\r"
+  network: ws
+  port: 2053
+  server: pages.cloudflare.com
+  servername: stall.saass.ccwu.cc
+  tls: true
+  type: vless
+  uuid: 6949ea89-4825-1b47-3b03-113cede87254
+  ws-opts:
+    path: /proxyip=sjc.o00o.ooo
+- name: "X_【机场推荐：https://a0a.xyz/】7\r"
+  network: ws
+  port: 2096
+  server: support.zoom.us
+  servername: zero.seaseus.pp.ua
+  tls: true
+  type: vless
+  uuid: fba4e0e0-118c-431f-9f6a-4cfc99f39de8
+  ws-opts:
+    path: /seaseus
+- name: "X_【机场推荐：https://a0a.xyz/】8\r"
+  network: ws
+  port: 2053
+  server: oralb.com
+  servername: saasorg.saaas.ccwu.cc
+  tls: true
+  type: vless
+  uuid: 694899b7-3e90-f695-efde-abe17d0bb1da
+  ws-opts:
+    path: /proxyip=sjc.o00o.ooo
+- name: "X_【机场推荐：https://a0a.xyz/】9\r"
+  network: tcp
+  password: 44e660b0ee21cf3ac66aee2c08af85d2
+  port: 443
+  server: 112.118.116.8
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+  udp: true
+- name: "X_【机场推荐：https://a0a.xyz/】10\r"
+  network: ws
+  port: 443
+  server: zoom.seaseus.pp.ua
+  servername: zoom.seaseus.pp.ua
+  tls: true
+  type: vless
+  uuid: fba4e0e0-118c-431f-9f6a-4cfc99f39de8
+  ws-opts:
+    path: /seaseus
+- name: "X_【机场推荐：https://a0a.xyz/】11\r"
+  network: ws
+  port: 2053
+  server: notion.site
+  servername: stall.saass.ccwu.cc
+  tls: true
+  type: vless
+  uuid: 6949ea89-4825-1b47-3b03-113cede87254
+  ws-opts:
+    path: /proxyip=sjc.o00o.ooo
+- name: "X_【机场推荐：https://a0a.xyz/】12\r"
+  network: ws
+  port: 443
+  server: 104.19.39.97
+  servername: snippets.kkii.eu.org
+  tls: true
+  type: vless
+  uuid: 5a2c16f9-e365-4080-8d38-6924c3835586
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: X_【机场推荐：https://a0a.xyz/】13
+  network: ws
+  port: 443
+  server: sssssssxxxx.2032.pp.ua
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 4174b95d-115e-4d39-add6-1f8db95bb860
+  ws-opts:
+    headers:
+      host: sssssssxxxx.2032.pp.ua
+    path: /6We3U9Df1WGxgFnoFPw1
 - cipher: chacha20-ietf-poly1305
-  name: X_【机场推荐：https://a0a.xyz/】26
+  name: "X_【机场推荐：https://a0a.xyz/】14\r"
   password: yCbQ4bry4otfifK7oel71NaXpPL9pYJb
   port: 443
   server: 89.221.225.15
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: X_【机场推荐：https://a0a.xyz/】6
-  password: HaNqw9pIE4jcx98sg7UQgHeGNTM4R2pk
+- name: "X_【机场推荐：https://a0a.xyz/】15\r"
+  network: ws
+  port: 2053
+  server: china.embassy.gov.au
+  servername: saasorg.saaas.ccwu.cc
+  tls: true
+  type: vless
+  uuid: 694899b7-3e90-f695-efde-abe17d0bb1da
+  ws-opts:
+    path: /proxyip=sjc.o00o.ooo
+- name: "X_【机场推荐：https://a0a.xyz/】16\r"
+  network: ws
   port: 443
-  server: 194.246.114.101
-  type: ss
+  server: 162.159.152.2
+  servername: asuka.boringdad.netlib.re
+  tls: true
+  type: vless
+  uuid: 495c0dad-3268-4470-ac57-887c5089db0d
+  ws-opts:
+    path: /
+- name: "X_【机场推荐：https://a0a.xyz/】17\r"
+  network: tcp
+  port: 8443
+  server: 167.235.146.176
+  tls: false
+  type: vless
+  uuid: 07f29b2e-b64b-4224-a215-4abefc89d728
 - alterId: 0
   cipher: auto
-  name: X_【机场推荐：https://a0a.xyz/】48
+  name: X_【机场推荐：https://a0a.xyz/】18
+  network: tcp
   port: 180
   server: 82.198.246.97
+  servername: ''
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- name: "X_【机场推荐：https://a0a.xyz/】19\r"
+  network: ws
+  port: 2095
+  server: 104.16.142.237
+  servername: fangbinxingnmsl.pusytroller.cf
+  tls: false
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  ws-opts:
+    path: /
 - cipher: chacha20-ietf-poly1305
-  name: X_【机场推荐：https://a0a.xyz/】18
-  password: f8f7aCzcPKbsF8p3
-  port: 990
-  server: 119.59.98.58
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: X_【机场推荐：https://a0a.xyz/】53
+  name: "X_【机场推荐：https://a0a.xyz/】20\r"
   password: S6jUK9Fw5fMHgNqlqXObHZWv8Tf4nEkm
   port: 443
   server: 193.203.203.66
+  type: ss
+- name: "X_【机场推荐：https://a0a.xyz/】21\r"
+  network: grpc
+  port: 443
+  server: fr-raiv2mmr-telegram.koyeb.app
+  servername: fr-raiv2mmr-telegram.koyeb.app
+  tls: true
+  type: vless
+  uuid: 5c9b6087-f955-4506-9c1d-67a5aae44bc9
+- cipher: chacha20-ietf-poly1305
+  name: "X_【机场推荐：https://a0a.xyz/】22\r"
+  password: HaNqw9pIE4jcx98sg7UQgHeGNTM4R2pk
+  port: 443
+  server: 194.246.114.101
   type: ss
 proxy-groups:
 - name: 🚀 节点选择
@@ -1170,12 +1721,28 @@ proxy-groups:
   - X_🇭🇰 HK_179
   - X_🇭🇰 HK_64
   - X_🇭🇰 HK_66
-  - X_节点日期：12-23
-  - X_【机场推荐：https://a0a.xyz/】26
-  - X_【机场推荐：https://a0a.xyz/】6
-  - X_【机场推荐：https://a0a.xyz/】48
+  - "X_节点日期：12-24\r"
+  - "X_【机场推荐：https://a0a.xyz/】2\r"
+  - "X_【机场推荐：https://a0a.xyz/】3\r"
+  - "X_【机场推荐：https://a0a.xyz/】4\r"
+  - "X_【机场推荐：https://a0a.xyz/】5\r"
+  - "X_【机场推荐：https://a0a.xyz/】6\r"
+  - "X_【机场推荐：https://a0a.xyz/】7\r"
+  - "X_【机场推荐：https://a0a.xyz/】8\r"
+  - "X_【机场推荐：https://a0a.xyz/】9\r"
+  - "X_【机场推荐：https://a0a.xyz/】10\r"
+  - "X_【机场推荐：https://a0a.xyz/】11\r"
+  - "X_【机场推荐：https://a0a.xyz/】12\r"
+  - X_【机场推荐：https://a0a.xyz/】13
+  - "X_【机场推荐：https://a0a.xyz/】14\r"
+  - "X_【机场推荐：https://a0a.xyz/】15\r"
+  - "X_【机场推荐：https://a0a.xyz/】16\r"
+  - "X_【机场推荐：https://a0a.xyz/】17\r"
   - X_【机场推荐：https://a0a.xyz/】18
-  - X_【机场推荐：https://a0a.xyz/】53
+  - "X_【机场推荐：https://a0a.xyz/】19\r"
+  - "X_【机场推荐：https://a0a.xyz/】20\r"
+  - "X_【机场推荐：https://a0a.xyz/】21\r"
+  - "X_【机场推荐：https://a0a.xyz/】22\r"
   tolerance: 5
   type: url-test
   url: https://www.facebook.com/common/referer_frame.php
@@ -1241,34 +1808,64 @@ proxy-groups:
   name: 🪐 负载均衡
   proxies:
   - X_CA_speednode_0001
-  - X_CH_speednode_0002
-  - X_CN_speednode_0003
-  - X_FR_speednode_0004
-  - X_FR_speednode_0005
-  - X_GB_speednode_0006
-  - X_GR_speednode_0007
-  - X_HK_speednode_0008
-  - X_HK_speednode_0009
-  - X_IR_speednode_0010
-  - X_JP_speednode_0011
-  - X_KR_speednode_0012
-  - X_NL_speednode_0013
-  - X_RU_speednode_0014
-  - X_RU_speednode_0015
-  - X_RU_speednode_0016
-  - X_RU_speednode_0017
-  - X_RU_speednode_0018
-  - X_RU_speednode_0019
-  - X_RU_speednode_0020
-  - X_RU_speednode_0021
-  - X_SE_speednode_0022
-  - X_TW_speednode_0023
-  - X_TW_speednode_0024
+  - X_CR_speednode_0002
+  - X_GB_speednode_0004
+  - X_GB_speednode_0005
+  - X_MD_speednode_0006
+  - X_PL_speednode_0007
+  - X_PL_speednode_0008
+  - X_RU_speednode_0009
+  - X_RU_speednode_0010
+  - X_TR_speednode_0011
+  - X_US_speednode_0012
+  - X_US_speednode_0013
+  - X_US_speednode_0014
+  - X_US_speednode_0015
+  - X_US_speednode_0016
+  - X_US_speednode_0017
+  - X_US_speednode_0018
+  - X_US_speednode_0019
+  - X_US_speednode_0020
+  - X_US_speednode_0021
+  - X_US_speednode_0022
+  - X_US_speednode_0023
+  - X_US_speednode_0024
   - X_US_speednode_0025
   - X_US_speednode_0026
   - X_US_speednode_0027
   - X_US_speednode_0028
   - X_US_speednode_0029
+  - X_US_speednode_0030
+  - X_US_speednode_0031
+  - X_US_speednode_0032
+  - X_US_speednode_0033
+  - X_US_speednode_0034
+  - X_US_speednode_0035
+  - X_US_speednode_0036
+  - X_US_speednode_0037
+  - X_US_speednode_0038
+  - X_US_speednode_0039
+  - X_US_speednode_0040
+  - X_US_speednode_0041
+  - X_US_speednode_0042
+  - X_US_speednode_0043
+  - X_US_speednode_0044
+  - X_US_speednode_0045
+  - X_US_speednode_0046
+  - X_US_speednode_0047
+  - X_US_speednode_0048
+  - X_US_speednode_0049
+  - X_US_speednode_0050
+  - X_US_speednode_0051
+  - X_US_speednode_0052
+  - X_US_speednode_0053
+  - X_US_speednode_0054
+  - X_US_speednode_0055
+  - X_US_speednode_0056
+  - X_US_speednode_0057
+  - X_VN_speednode_0058
+  - X_VN_speednode_0059
+  - X_VN_speednode_0060
   - X_防范境外势力渗透
   - 'X_防范境外势力渗透 #1'
   - 'X_防范境外势力渗透 #2'
@@ -1285,7 +1882,6 @@ proxy-groups:
   - X_香港4|@ripaojiedian
   - X_香港5|@ripaojiedian
   - X_香港6|@ripaojiedian
-  - X_🇹🇼 台湾|@ripaojiedian
   - X_日本|@ripaojiedian
   - X_日本2|@ripaojiedian
   - X_日本3|@ripaojiedian
