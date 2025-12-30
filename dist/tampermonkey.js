@@ -1,15 +1,12 @@
 // ==UserScript==
 // @name          Styling Fonts
 // @namespace     https://github.com/flinhong/configs
-// @version       0.0.7
+// @version       0.0.8
 // @description   Styling fonts with CSS for better reading experience.
 // @author        Frank Lin
 // @icon          https://cdn.honglin.ac.cn/favicon.ico
-// @match         *://*.baidu.com/*
-// @match         *://*.google.co.uk/*
-// @match         *://*.google.com/*
-// @match         *://baidu.com/*
 // @match         *://google.com/*
+// @match         *://news.baidu.com/*
 // @match         *://www.baidu.com/*
 // @match         *://www.google.co.uk/*
 // @match         *://www.google.com/*
