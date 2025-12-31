@@ -1,7 +1,7 @@
 import os
 import re
 import time
-from datetime import datetime
+from datetime import datetime, timedelta
 
 import requests
 import yaml
@@ -157,7 +157,7 @@ def check_and_validate_file(url):
         return None
 
 def download_extra_proxies(auto=False):
-    current_date = datetime.now()
+    current_date = datetime.now().date() - timedelta(days=1)
     current_date_str = (current_date).strftime('%Y/%m/%Y%m%d')
 
     if auto == True:  
