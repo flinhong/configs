@@ -9,6 +9,8 @@
   --font-family-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo,
     Monaco, Consolas, "Liberation Mono", "Courier New", "Noto Serif SC",
     monospace !important;
+
+  --cos-font-family: var(--font-family-sans);
 }
 
 #s-top-left .c-font-normal,
@@ -21,7 +23,10 @@
 #container.sam_newgrid td,
 #container.sam_newgrid th,
 .cos-font-medium,
-[class^="panel-list_"] span.gradient-text {
+[class^="panel-list_"] span.gradient-text,
+.cosd-markdown .marklang .marklang-paragraph,
+.cosd-question-guide-title,
+.cosd-question-guide-title-icon {
   font-family: var(--font-family-sans);
 }
 
