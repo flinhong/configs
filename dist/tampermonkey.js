@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name          Styling Fonts
 // @namespace     https://github.com/flinhong/configs
-// @version       0.0.10
+// @version       0.0.11
 // @description   Styling fonts with CSS for better reading experience.
 // @author        Frank Lin
 // @icon          https://cdn.honglin.ac.cn/favicon.ico
@@ -23,36 +23,29 @@ function tampermonkeyCore() {
     "use strict"
 
     // Extract main domain name for CSS resource lookup (elegant approach)
-    const domain = (function () {
-        // Correctly split hostname into parts
-        const parts = window.location.hostname.replace(/^www\./, "").split(".")
-        const len = parts.length
+    const domain = (() => {
+        const h = location.hostname.split(":")[0].replace(/^www\./, "")
+        if (h === "localhost" || h === "127.0.0.1") return "localhost"
 
-        // Handle TLDs like .co.uk, .com.au, etc.
-        // A simple heuristic for ccSLDs (country-code second-level domains).
-        const specialTLDs = ["co", "com"]
-        const isSpecialTLD = len >= 3 && specialTLDs.includes(parts[len - 2])
+        const p = h.split("."),
+            l = p.length
+        const s = ["co", "com", "org", "net", "gov", "edu"]
+        const special = l >= 3 && s.includes(p[l - 2])
+        const dIdx = special ? l - 3 : l - 2
 
-        if (len === 1) {
-            // Handles 'localhost' or other single-word hostnames
-            return parts[0]
-        }
+        const original = location.hostname
+            .split(":")[0]
+            .replace(/^www\./, "")
+            .split(".")
+        const base =
+            original.length === 2 ||
+            (original.length === 3 && s.includes(original[1]))
 
-        // For isSpecialTLD (e.g., news.google.co.uk), return the part before the ccSLD ('google').
-        // For normal subdomains (e.g., news.google.com), return the part before the TLD ('google').
-        // For base domains (e.g., google.com), also return the part before the TLD ('google').
-        return isSpecialTLD ? parts[len - 3] : parts[len - 2]
+        return base ? p[dIdx] : p[dIdx - 1] + "_" + p[dIdx]
     })()
 
-    // Map domain to resource key
-    function getResourceKey(domain) {
-        // Domain is already processed and standardized, use it directly
-        return domain
-    }
-
     try {
-        const resourceKey = getResourceKey(domain)
-        const styleContent = GM_getResourceText("css_" + resourceKey)
+        const styleContent = GM_getResourceText("css_" + domain)
         if (styleContent) {
             GM_addStyle(styleContent)
         }
