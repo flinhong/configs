@@ -515,15 +515,6 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: X_🇭🇰 香港2|@ripaojiedian
-  port: 46524
-  server: 8.218.238.254
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 5d564055-2b42-406b-9183-28cc63d8914a
 - name: X_香港3|@ripaojiedian
   network: tcp
   password: f36f4495b4b26cc2fe346cfa23e05b1b
@@ -548,39 +539,35 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- cipher: aes-128-gcm
-  name: X_🇹🇼 台湾|@ripaojiedian
-  password: 30f1d255-b825-435a-945c-fe5b597a1b8f
-  port: 33113
-  server: 59.38.114.209
-  type: ss
 - name: X_日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 4012
-  server: 52.194.193.12
+  port: 3194
+  server: 54.238.144.17
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
+  type: trojan
+- name: X_日本2|@ripaojiedian
+  network: tcp
+  password: f36f4495b4b26cc2fe346cfa23e05b1b
+  port: 1933
+  server: 52.198.241.226
+  skip-cert-verify: false
+  sni: www.nintendogames.net
   type: trojan
 - name: X_日本3|@ripaojiedian
   network: tcp
   password: f36f4495b4b26cc2fe346cfa23e05b1b
-  port: 1933
-  server: 54.238.137.20
+  port: 4006
+  server: 52.198.241.226
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- cipher: aes-128-gcm
-  name: X_🇯🇵 日本4|@ripaojiedian
-  password: 30f1d255-b825-435a-945c-fe5b597a1b8f
-  port: 33116
-  server: 120.232.217.4
-  type: ss
 - name: X_新加坡|@ripaojiedian
   network: tcp
   password: f36f4495b4b26cc2fe346cfa23e05b1b
   port: 3901
-  server: 54.238.137.20
+  server: 52.198.241.226
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -595,22 +582,16 @@ proxies:
 - name: X_新加坡3|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 2673
-  server: 43.207.71.183
+  port: 804
+  server: 52.198.241.226
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
-- cipher: aes-128-gcm
-  name: X_🇸🇬 新加坡4|@ripaojiedian
-  password: 30f1d255-b825-435a-945c-fe5b597a1b8f
-  port: 33118
-  server: 120.232.217.4
-  type: ss
 - name: X_美国|@ripaojiedian
   network: tcp
   password: f36f4495b4b26cc2fe346cfa23e05b1b
   port: 1281
-  server: 54.238.137.20
+  server: 52.198.241.226
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -625,8 +606,8 @@ proxies:
 - name: X_美国3|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 2173
-  server: 43.207.71.183
+  port: 1221
+  server: 3.113.31.15
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -640,16 +621,6 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: X_香港2|@ripaojiedian
-  network: tcp
-  port: '46524'
-  server: 8.218.238.254
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5d564055-2b42-406b-9183-28cc63d8914a
 - alpn:
   - h3
   auth-str: dongtaiwang.com
@@ -1035,23 +1006,19 @@ proxy-groups:
   - X_#120 US38
   - X_#122 HK44
   - X_🇭🇰 香港|@ripaojiedian
-  - X_🇭🇰 香港2|@ripaojiedian
   - X_香港3|@ripaojiedian
   - X_香港4|@ripaojiedian
   - X_香港5|@ripaojiedian
-  - X_🇹🇼 台湾|@ripaojiedian
   - X_日本|@ripaojiedian
+  - X_日本2|@ripaojiedian
   - X_日本3|@ripaojiedian
-  - X_🇯🇵 日本4|@ripaojiedian
   - X_新加坡|@ripaojiedian
   - X_新加坡2|@ripaojiedian
   - X_新加坡3|@ripaojiedian
-  - X_🇸🇬 新加坡4|@ripaojiedian
   - X_美国|@ripaojiedian
   - X_美国2|@ripaojiedian
   - X_美国3|@ripaojiedian
   - X_香港|@ripaojiedian
-  - X_香港2|@ripaojiedian
   strategy: consistent-hashing
   type: load-balance
   url: https://client3.google.com/generate_204
