@@ -164,7 +164,8 @@ def download_extra_proxies(auto=False):
         urls = [
             f"https://v2rayshare.githubrowcontent.com/{current_date_str}.yaml",
             f"https://nodefree.githubrowcontent.com/{current_date_str}.yaml",
-            "https://tt.vg/freeclash"
+            "https://tt.vg/freeclash",
+            "https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/c.yaml"
 
         ]
     else:
