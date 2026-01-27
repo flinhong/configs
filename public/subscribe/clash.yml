@@ -815,12 +815,11 @@ proxies:
   sni: login-staticjpc.jasmine-douyin.top
   type: trojan
   cipher: auto
-- name: X_新加坡|@ripaojiedian
-  network: tcp
+- name: X_HK157｜家宽｜非常安全
   password: 869e9086806483ca4744a4cb0f3d6e16
   port: 443
   server: 203.198.122.227
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
   cipher: auto
@@ -1028,8 +1027,8 @@ proxies:
 - name: X_香港4|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 432
-  server: 18.182.8.233
+  port: 443
+  server: 203.198.122.187
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -1038,16 +1037,34 @@ proxies:
   network: tcp
   password: BxceQaOe
   port: 1867
-  server: 54.250.244.16
+  server: 18.179.118.202
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
   cipher: auto
-- name: X_日本2|@ripaojiedian
+- name: X_日本|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 2595
+  server: 13.158.129.83
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+  cipher: auto
+- name: X_日本3|@ripaojiedian
   network: tcp
   password: 869e9086806483ca4744a4cb0f3d6e16
   port: 1933
-  server: 153.121.51.29
+  server: 52.195.170.6
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+  cipher: auto
+- name: X_新加坡|@ripaojiedian
+  network: tcp
+  password: 869e9086806483ca4744a4cb0f3d6e16
+  port: 3901
+  server: 160.16.70.180
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -1056,47 +1073,12 @@ proxies:
   network: tcp
   password: 869e9086806483ca4744a4cb0f3d6e16
   port: 3901
-  server: 160.16.150.76
+  server: 160.16.87.174
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
   cipher: auto
-- name: X_美国|@ripaojiedian
-  network: tcp
-  password: 869e9086806483ca4744a4cb0f3d6e16
-  port: 5076
-  server: 160.16.132.38
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-  cipher: auto
-- name: X_美国2|@ripaojiedian
-  network: tcp
-  password: 869e9086806483ca4744a4cb0f3d6e16
-  port: 5076
-  server: 160.16.72.33
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
-  cipher: auto
 - name: X_电报群：https://t.me/vvkj11
-  type: vless
-  server: vy1.sangar.net
-  port: 443
-  uuid: 5a9a33eb-546c-4ffa-aadc-1c75b3ac084b
-  tls: true
-  flow: xtls-rprx-vision
-  cipher: auto
-- name: X_每天更新，请加电报群防止失联
-  type: trojan
-  server: tuntro000.instconn.com
-  port: 443
-  password: 30077070-596e-48ea-9400-14c8ed07bd97
-  sni: hkip5.686911.xyz
-  skip-cert-verify: false
-  tls: true
-  cipher: auto
-- name: X_日期：01-26
   type: vless
   server: sakura.bunnywaffle.org
   port: 26978
@@ -1109,7 +1091,64 @@ proxies:
     public-key: n2w4hj7Q7wN6P21LSJJwIPitfYZbwWh5a2seJHH58SE
     short-id: 28bf
   cipher: auto
+- name: X_每天更新，请加电报群防止失联
+  type: vmess
+  server: tunnel2.qqa678.com
+  port: 47084
+  uuid: 2ab2ff5b-9684-4150-bec0-6bd036ae7c26
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: X_日期：01-27
+  type: vmess
+  server: faq1.lieerr222.cn
+  port: 43525
+  uuid: af55d648-b429-44c0-ac6a-d8786743dad3
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
 - name: X_免费VPN：https://tt.vg/gwaAy
+  type: vless
+  server: 94.228.213.219
+  port: 443
+  uuid: 45e3b7ad-03b6-42fc-b616-1e92bdd0a5b3
+  servername: hls-svod.itunes.apple.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+    short-id: 48720c
+  cipher: auto
+- name: X_🇫🇮_芬兰
+  type: vless
+  server: 135.181.155.97
+  port: 443
+  uuid: 309fa273-6579-4cb2-9143-7cad50401eba
+  servername: www.cloudflare.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: gZGVp5PUdafgsmi1gawa1yLuha_XhXRc_W9SvPiGmTY
+    short-id: 7cad5040
+  cipher: auto
+- name: X_🇫🇮_芬兰_1
+  type: vless
+  server: 78.153.139.68
+  port: 8443
+  uuid: fd8972d7-cf5e-11f0-9970-45e1d80c4039
+  servername: images.apple.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: pekfYPV5U8EjfQ4_zS5c6I2NnOZ2jUlyMGAWa4FWPF4
+    short-id: 58c512b4422e2517
+  cipher: auto
+- name: X_🇫🇷_法国
   type: vless
   server: 138.124.79.4
   port: 443
@@ -1123,74 +1162,25 @@ proxies:
   cipher: auto
 - name: X_🇷🇺_俄罗斯
   type: vless
-  server: 95.174.92.156
+  server: 217.12.40.76
   port: 443
-  uuid: cc61ea7c-92f2-4c2d-b272-32cfe8fdf99f
-  servername: carreta.ru
+  uuid: c38e6142-9223-47ef-84ce-2a84a308cafb
+  servername: sun9-38.userapi.com
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   reality-opts:
-    public-key: CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw
-    short-id: 2f3e735aedc55aaf
+    public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+    short-id: 4b523a98e1bbd15b
   cipher: auto
-- name: X_🇭🇰_香港
-  type: vless
-  server: 43.161.253.78
-  port: 9527
-  uuid: d4a23188-85b0-4b46-b84b-f1d36d66c03e
-  tls: false
-  cipher: auto
-- name: X_🇬🇷_希腊
-  type: vless
-  server: 185.234.57.207
-  port: 443
-  uuid: dd92c4f8-be88-4c61-84eb-d261f798071e
-  servername: teamdocs.su
+- name: X_🇬🇧_英国
+  type: trojan
+  server: xiaozhu1.kkieo555.cn
+  port: 41275
+  password: 2dbd7d94-7cb5-4cb1-8b46-e8318a9c8bfe
+  sni: douyin.com
+  skip-cert-verify: true
   tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Yu1_Agl1_bJb298G9ukjGuvfksVTUs1X7laYJ3VqwwQ
-    short-id: b5e0cd9ca194c0a5
-  cipher: auto
-- name: X_🇺🇸_美国
-  type: vless
-  server: visg.556359.xyz
-  port: 443
-  uuid: a274571a-c17e-46e5-9a30-be4c2157f6fd
-  servername: go.microsoft.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: u8QRsWmmGZBqVS9kcyYeJL9jyKoEjxY88JcUp43J3gY
-    short-id: 7a0d93af
-  cipher: auto
-- name: X_🇧🇬_保加利亚
-  type: vless
-  server: 87.120.165.175
-  port: 8443
-  uuid: cc235335-34f0-4f1b-b3e3-5f32e2eeaa89
-  servername: monolithgate.xyz
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: llSF90j8PQdR0alqH2OGlh7fEtoxO-xfZW_B4bQ4eSw
-    short-id: 6ba85179e30d4fc2
-  cipher: auto
-- name: X_🇷🇴_罗马尼亚
-  type: vless
-  server: 185.221.222.206
-  port: 56824
-  uuid: af1a9622-5deb-480c-8539-d8763f59e012
-  servername: ya.ru
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Gpzl6U5r_tIq-xIGyXhzT37vIDsZW6Vot6XL1sH6lVM
-    short-id: aabbccdd
   cipher: auto
 - name: X_🇺🇦_乌克兰
   type: vless
@@ -1200,67 +1190,68 @@ proxies:
   servername: apple.com
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: chrome
+  client-fingerprint: random
   reality-opts:
     public-key: GgiY38LjRI1hS1LKhdqvtJ5SDDO436GvihG-TzEI2XE
     short-id: aabbccdd
   cipher: auto
+- name: X_🇮🇶_伊拉克
+  type: vless
+  server: 178.17.53.28
+  port: 47539
+  uuid: 447c45cd-ade0-4bfe-90a0-3e581829f741
+  servername: yandex.ru
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: uapzi5mhLkADHuak0eXEKq9vIl2A8IGrMhjdIG-tn3U
+    short-id: 82a55f31981ea6be
+  cipher: auto
+- name: X_🇭🇰_香港
+  type: trojan
+  server: 219.76.135.98
+  port: 443
+  password: BxceQaOe
+  skip-cert-verify: true
+  tls: true
+  cipher: auto
+- name: X_🇺🇸_美国
+  type: trojan
+  server: vn.yiciyuanquicken.online
+  port: 27638
+  password: d51abb35-94a4-4529-9244-2808beaa4624
+  sni: vn.yiciyuanquicken.online
+  skip-cert-verify: false
+  tls: true
+  cipher: auto
+- name: X_🇩🇰_丹麦
+  type: vless
+  server: 159.195.26.28
+  port: 443
+  uuid: 84f66368-8a37-468e-ae95-5622255fd4db
+  servername: live.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: ckRcueERkPqqjZABwxqni_J_Nbb70Q6k5fEEUAjoImw
+  cipher: auto
 - name: X_🇳🇱_荷兰
   type: vless
-  server: 94.228.213.219
-  port: 443
-  uuid: 45e3b7ad-03b6-42fc-b616-1e92bdd0a5b3
-  servername: hls-svod.itunes.apple.com
+  server: u1.mizulina.top
+  port: 22231
+  uuid: 2ad04efa-d18a-442b-875f-48d12e11d822
+  servername: u1.mizulina.top
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-  reality-opts:
-    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
-    short-id: 48720c
   cipher: auto
-- name: X_🇷🇴_罗马尼亚_1
+- name: X_🇩🇪_德国
   type: vless
-  server: nl11.odavpn.online
-  port: 56824
-  uuid: af1a9622-5deb-480c-8539-d8763f59e012
-  servername: ya.ru
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Gpzl6U5r_tIq-xIGyXhzT37vIDsZW6Vot6XL1sH6lVM
-    short-id: aabbccdd
-  cipher: auto
-- name: X_🇨🇦_加拿大
-  type: trojan
-  server: tuntro006.instconn.com
+  server: neth.pingxbaz.com
   port: 443
-  password: 30077070-596e-48ea-9400-14c8ed07bd97
-  sni: torontorm1.686911.xyz
-  skip-cert-verify: false
-  tls: true
-  cipher: auto
-- name: X_🇯🇵_日本
-  type: trojan
-  server: tuntro003.instconn.com
-  port: 443
-  password: 30077070-596e-48ea-9400-14c8ed07bd97
-  sni: login-staticjpc.jasmine-douyin.top
-  skip-cert-verify: false
-  tls: true
-  cipher: auto
-- name: X_🇷🇺_俄罗斯_1
-  type: vless
-  server: 176.109.104.107
-  port: 443
-  uuid: cc61ea7c-92f2-4c2d-b272-32cfe8fdf99f
-  servername: sun6-21.userapi.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: CMkW1axrhEXoiJ6anMz9XEjlfqlAtEZya7L0b5ZPMyw
-    short-id: c7e42004e5f024be
+  uuid: b3176e0b-ffaf-4e1b-fd8a-c073bcc4272d
+  tls: false
   cipher: auto
 - name: X_🇮🇱_以色列
   type: vless
@@ -1275,282 +1266,117 @@ proxies:
     public-key: YVDo7U4O-AT2fa5H9E7hyYHKgfZd1vB6UdbAf2ggWQE
     short-id: 55e6af1a35e64a98
   cipher: auto
-- name: X_🇮🇶_伊拉克
+- name: X_🇵🇱_波兰
   type: vless
-  server: 178.17.53.28
-  port: 47539
-  uuid: 447c45cd-ade0-4bfe-90a0-3e581829f741
-  servername: yandex.ru
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: uapzi5mhLkADHuak0eXEKq9vIl2A8IGrMhjdIG-tn3U
-    short-id: 82a55f31981ea6be
-  cipher: auto
-- name: X_🇫🇮_芬兰
-  type: vless
-  server: 78.153.139.68
-  port: 8443
-  uuid: fd8972d7-cf5e-11f0-9970-45e1d80c4039
-  servername: images.apple.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: pekfYPV5U8EjfQ4_zS5c6I2NnOZ2jUlyMGAWa4FWPF4
-    short-id: 58c512b4422e2517
-  cipher: auto
-- name: X_🇮🇷_伊朗
-  type: vless
-  server: uae.torprospeed.ir
-  port: 587
-  uuid: 65a1e22c-d37e-4b92-b6ca-1d09dcd1d441
-  servername: excoino.com
-  tls: true
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: HnPEhCDTcZnDejsAiidoOSx2-h0EvJMILj4bv3X1mBc
-    short-id: 916e8258c4a01b02
-  cipher: auto
-- name: X_🇨🇳_中国
-  type: vmess
-  server: cees.owwoedu.com
-  port: 49309
-  uuid: 5d1e8d21-d8b1-4e5c-bd1e-4709f95d7dd2
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-- name: X_🇨🇳_中国_16
-  type: vmess
-  server: beiyong.sdnlv0.cn
-  port: 49301
-  uuid: 5d1e8d21-d8b1-4e5c-bd1e-4709f95d7dd2
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-- name: X_🇨🇳_中国_20
-  type: vmess
-  server: kina.owwoedu.com
-  port: 49301
-  uuid: 5d1e8d21-d8b1-4e5c-bd1e-4709f95d7dd2
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-- name: X_🇯🇵_日本_1
-  type: vless
-  server: jpsb.xxn233.top
-  port: 49617
-  uuid: bfdafd1b-795b-44c7-9bad-f441f08d08b5
-  servername: www.microsoft.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: xROz9VezyG2CpoZHeG_-A9so_JPEhFYDrq0a9IYxiFs
-  cipher: auto
-- name: X_🇺🇸_美国_1
-  type: vless
-  server: 38.6.219.21
-  port: 8443
-  uuid: bfdafd1b-795b-44c7-9bad-f441f08d08b5
-  servername: www.microsoft.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: ios
-  reality-opts:
-    public-key: vFDGUExOUGmoaNpIBYvdi3wUTE-DRaU_OwZ6ZxmkhCM
-  cipher: auto
-- name: X_🇩🇪_德国
-  type: vless
-  server: 141.11.238.89
+  server: 185.28.119.14
   port: 443
-  uuid: bfdafd1b-795b-44c7-9bad-f441f08d08b5
-  servername: www.microsoft.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: edge
-  reality-opts:
-    public-key: WyKbSO2sRG7k3PGesyLuG7arPl2KspDGt1lMEpXgNjM
-    short-id: 1299ec
-  cipher: auto
-- name: X_🇭🇰_香港_1
-  type: vless
-  server: hkt1.hkg.hypernat.com
-  port: 39875
-  uuid: bfdafd1b-795b-44c7-9bad-f441f08d08b5
-  servername: www.microsoft.com
+  uuid: 5dd5d72b-1965-44f3-b342-5e96bcb921cb
+  servername: sberbank.ru
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   reality-opts:
-    public-key: VjM5am4Y_Re7e4wSwt7SZi0L3Y2laOHOs7YBcN_Isjg
-  cipher: auto
-- name: X_🇳🇱_荷兰_1
-  type: vless
-  server: 145.79.143.69
-  port: 8443
-  uuid: bfdafd1b-795b-44c7-9bad-f441f08d08b5
-  servername: www.microsoft.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: safari
-  reality-opts:
-    public-key: OM9j2paQmlAv1CdxqIwyOxKnkq7Dda2gWf3K0uevDkU
-  cipher: auto
-- name: X_🇮🇹_意大利
-  type: vless
-  server: v6zou.xxn233.top
-  port: 8080
-  uuid: bfdafd1b-795b-44c7-9bad-f441f08d08b5
-  servername: www.microsoft.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: safari
-  reality-opts:
-    public-key: Iu8cv5ktfvHIEY5O2021JhGOWpEdYEfu0mkJKPQ1G2E
+    public-key: 8Y-wG0HpnevxydnNcN0iqGgToTjq9gZ44V2sdPmmsi4
+    short-id: 94f01bc9c864dcbb
   cipher: auto
 - name: X_🇹🇼_中国台湾省
-  type: vless
-  server: jk.xxn233.top
-  port: 58778
-  uuid: bfdafd1b-795b-44c7-9bad-f441f08d08b5
-  servername: www.microsoft.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: edge
-  reality-opts:
-    public-key: bhj_btw5XModFekfNHI2-uLqRJ7VM2x30JpmJ5oHZzM
-  cipher: auto
-- name: X_🇹🇼_中国台湾省_1
-  type: vless
-  server: mktw.ddns.xxn233.top
-  port: 58788
-  uuid: bfdafd1b-795b-44c7-9bad-f441f08d08b5
-  servername: www.microsoft.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: edge
-  reality-opts:
-    public-key: JkKZRcHe-f7heveyDbOfS7omipcDBQg3B6lQMzhsP0A
-  cipher: auto
-- name: X_🇸🇬_新加坡
-  type: vless
-  server: 50.114.55.87
-  port: 8443
-  uuid: bfdafd1b-795b-44c7-9bad-f441f08d08b5
-  servername: www.microsoft.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
-  reality-opts:
-    public-key: ylA50OShIa0QmHa6FMTnk3XPLsxSrUJ8G7SMnRbvdCA
-  cipher: auto
-- name: X_🇺🇸_美国_2
-  type: vless
-  server: 107.174.210.201
-  port: 8443
-  uuid: bfdafd1b-795b-44c7-9bad-f441f08d08b5
-  servername: www.microsoft.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: ios
-  reality-opts:
-    public-key: EMMFVVpM4kKkqHI8cLO68kXeWpy4VI0y87Q8GnjpojM
-  cipher: auto
-- name: X_🇬🇧_英国
-  type: vless
-  server: tls.xxn233.top
-  port: 8443
-  uuid: bfdafd1b-795b-44c7-9bad-f441f08d08b5
-  servername: yahoo.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: safari
-  reality-opts:
-    public-key: f4doPXiIDYh1BNnp_Q6hY3DkAXMEJB_iMZ-Tb6xjfDs
-  cipher: auto
-- name: X_🇨🇳_中国_24
-  type: vmess
-  server: tunnel2.qqa678.com
-  port: 47083
-  uuid: 0e497122-8ee0-44fe-b7be-6c5de6cf938b
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-- name: X_🇨🇳_中国_25
-  type: vmess
-  server: tunnel1.qqa678.com
-  port: 47083
-  uuid: 0e497122-8ee0-44fe-b7be-6c5de6cf938b
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-- name: X_🇳🇱_荷兰_2
-  type: vless
-  server: 77.105.137.100
-  port: 4443
-  uuid: 6e6609bf-6867-4fa7-b4c3-d5555d67d724
-  servername: github.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE
-    short-id: aa7e96542880027a
-  cipher: auto
-- name: X_🇮🇷_伊朗_1
-  type: vless
-  server: s2.gmax12.ir
-  port: 4450
-  uuid: 76aa0ce6-04df-4b40-9642-a9bdb3efc38d
-  servername: excoino.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: y6JSkggQ__RA_nmCJpX1_ddSQC6vzDUPaN7KyvjVuic
-  cipher: auto
-- name: X_🇭🇰_香港_2
   type: trojan
-  server: 219.76.135.98
-  port: 443
-  password: BxceQaOe
-  sni: 219.76.135.98
-  skip-cert-verify: true
+  server: 220.130.58.136
+  port: 31102
+  password: 47c07984-4f34-472c-93b0-15021fcdceb8
+  sni: green2.cdntencentmusic.com
+  skip-cert-verify: false
   tls: true
   cipher: auto
-- name: X_🇳🇱_荷兰_3
-  type: vless
-  server: 45.67.231.129
-  port: 4443
-  uuid: 6e6609bf-6867-4fa7-b4c3-d5555d67d724
-  servername: github.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE
-    short-id: aa7e96542880027a
+- name: X_🇭🇰_香港_1
+  type: vmess
+  server: v30.hdacd.com
+  port: 30830
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 0
   cipher: auto
-- name: X_🇦🇹_奥地利
-  type: vless
-  server: 5.181.21.101
-  port: 4443
-  uuid: 6e6609bf-6867-4fa7-b4c3-d5555d67d724
-  servername: github.com
+  tls: false
+  skip-cert-verify: false
+- name: X_🇭🇰_香港_2
+  type: vmess
+  server: v12.hdacd.com
+  port: 30812
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: X_🇹🇼_中国台湾省_1
+  type: trojan
+  server: green2.cdntencentmusic.com
+  port: 31101
+  password: 157db8b8-45bb-46dd-9d27-13e9b2b5ab91
+  sni: green2.cdntencentmusic.com
+  skip-cert-verify: false
   tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE
-    short-id: aa7e96542880027a
   cipher: auto
 - name: X_🇭🇰_香港_3
+  type: vmess
+  server: v9.hdacd.com
+  port: 30809
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: X_🇨🇦_加拿大
+  type: trojan
+  server: tuntro006.instconn.com
+  port: 443
+  password: 30077070-596e-48ea-9400-14c8ed07bd97
+  sni: torontorm1.686911.xyz
+  skip-cert-verify: false
+  tls: true
+  cipher: auto
+- name: X_🇭🇰_香港_6
+  type: vmess
+  server: 202.85.53.179
+  port: 30812
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: X_🇮🇷_伊朗
+  type: vless
+  server: m1.melalgame.com
+  port: 33093
+  uuid: 2c2143d5-5d80-4a76-8094-88f1e47251ca
+  tls: true
+  cipher: auto
+- name: X_🇨🇳_中国_10
+  type: vmess
+  server: ffiw.owwoedu.com
+  port: 59510
+  uuid: f98b8cd2-9bd6-4116-a0d1-d156d6e6f3d1
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: X_🇭🇰_香港_23
+  type: vmess
+  server: v33.hdacd.com
+  port: 30833
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: X_🇬🇧_英国_13
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: X_🇭🇰_香港_25
   type: vmess
   server: v8.hdacd.com
   port: 30808
@@ -1559,59 +1385,32 @@ proxies:
   cipher: auto
   tls: false
   skip-cert-verify: false
-- name: X_🇫🇷_法国
+- name: X_🇭🇰_香港_27
   type: vless
-  server: 138.124.79.3
+  server: 43.161.253.78
+  port: 9527
+  uuid: d4a23188-85b0-4b46-b84b-f1d36d66c03e
+  tls: false
+  cipher: auto
+- name: X_🇭🇰_香港_40
+  type: vmess
+  server: v36.hdacd.com
+  port: 30836
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: X_🇭🇰_香港_41
+  type: trojan
+  server: 58.152.110.210
   port: 443
-  uuid: d6b1327d-2bec-4366-a3a1-9b1284f95841
-  servername: sun6-21.userapi.com
+  password: 869e9086806483ca4744a4cb0f3d6e16
+  sni: www.nintendogames.net
+  skip-cert-verify: false
   tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
   cipher: auto
-- name: X_🇱🇻_拉脱维亚
-  type: vless
-  server: 176.120.67.111
-  port: 8443
-  uuid: d0dea598-9047-4567-a934-84c2797c0978
-  servername: ozon.ru
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 7HejPU15kdTl9QG_8AygEM3w0ythsbhG6q_SwUumyR0
-    short-id: f1071c148a5aefc4
-  cipher: auto
-- name: X_🇷🇺_俄罗斯_3
-  type: vless
-  server: 185.251.89.26
-  port: 4443
-  uuid: 6e6609bf-6867-4fa7-b4c3-d5555d67d724
-  servername: github.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE
-    short-id: aa7e96542880027a
-  cipher: auto
-- name: X_🇦🇲_亚美尼亚
-  type: vless
-  server: 45.15.127.139
-  port: 4443
-  uuid: 6e6609bf-6867-4fa7-b4c3-d5555d67d724
-  servername: github.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE
-    short-id: aa7e96542880027a
-  cipher: auto
-- name: X_🇷🇺_俄罗斯_4
+- name: X_🇷🇺_俄罗斯_1
   type: vless
   server: 45.139.26.152
   port: 7443
@@ -1624,477 +1423,363 @@ proxies:
     public-key: BTkKaFt2xac4xAHn3EXrBKV0d8ItHSfciMFnxg57BGA
     short-id: fd88bd27db4cc661
   cipher: auto
-- name: X_🇬🇧_英国_1
+- name: X_🇭🇰_香港_42
+  type: trojan
+  server: 58.152.53.45
+  port: 443
+  password: BxceQaOe
+  sni: t.me/ripaojiedian
+  skip-cert-verify: true
+  tls: true
+  cipher: auto
+- name: X_🇱🇻_拉脱维亚
   type: vless
-  server: 78.141.197.131
+  server: sausi.izumii.ir
+  port: 8080
+  uuid: 73130c36-8b0a-4f5a-865c-bf92c182c1a7
+  servername: JouRNaloFbIgdATA.SpRinGeropEn.coM
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: -UukiBzugWD2vIyTqKN5L8i4TbneIekXDD9IEs3TiVw
+    short-id: 98815cc9bcf5b56f
+  cipher: auto
+- name: X_🇯🇵_日本
+  type: trojan
+  server: tuntro000.instconn.com
+  port: 443
+  password: 30077070-596e-48ea-9400-14c8ed07bd97
+  sni: hkip5.686911.xyz
+  skip-cert-verify: false
+  tls: true
+  cipher: auto
+- name: X_🇭🇰_香港_44
+  type: trojan
+  server: 203.198.122.227
+  port: 443
+  password: 869e9086806483ca4744a4cb0f3d6e16
+  sni: www.nintendogames.net
+  skip-cert-verify: false
+  tls: true
+  cipher: auto
+- name: X_🇱🇻_拉脱维亚_1
+  type: trojan
+  server: 195.135.253.29
+  port: 443
+  password: 42bbf526-5530-470a-aeec-3b919b21c58d
+  sni: 0000.hkvip.ip-ddns.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 0000.hkvip.ip-ddns.com
+  cipher: auto
+- name: X_🇺🇦_乌克兰_3
+  type: trojan
+  server: 80.66.85.115
+  port: 2053
+  password: 42bbf526-5530-470a-aeec-3b919b21c58d
+  sni: 0000.hkvip.ip-ddns.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 0000.hkvip.ip-ddns.com
+  cipher: auto
+- name: X_🇦🇲_亚美尼亚
+  type: trojan
+  server: 2.56.204.183
+  port: 443
+  password: 42bbf526-5530-470a-aeec-3b919b21c58d
+  sni: 0000.hkvip.ip-ddns.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 0000.hkvip.ip-ddns.com
+  cipher: auto
+- name: X_🇺🇸_美国_1
+  type: trojan
+  server: 176.105.253.102
   port: 8443
-  uuid: 34050a14-f55f-4878-981f-886ab0a52b56
-  servername: www.refersion.com
+  password: 42bbf526-5530-470a-aeec-3b919b21c58d
+  sni: 0000.hkvip.ip-ddns.com
+  skip-cert-verify: true
   tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 4WqRiCOcMKx7ffnW2tQ_il4gSwuR58ReAjnwR5CfBX4
-    short-id: b873709a
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 0000.hkvip.ip-ddns.com
   cipher: auto
-- name: X_🇷🇺_俄罗斯_6
-  type: vless
-  server: 5.129.214.27
-  port: 4443
-  uuid: 6e6609bf-6867-4fa7-b4c3-d5555d67d724
-  servername: github.com
+- name: X_🇷🇺_俄罗斯_2
+  type: trojan
+  server: 176.109.106.61
+  port: 8443
+  password: 42bbf526-5530-470a-aeec-3b919b21c58d
+  sni: 0000.hkvip.ip-ddns.com
+  skip-cert-verify: true
   tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: 5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE
-    short-id: aa7e96542880027a
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 0000.hkvip.ip-ddns.com
   cipher: auto
-- name: X_🇳🇱_荷兰_5
-  type: vless
-  server: u1.mizulina.top
-  port: 22231
-  uuid: 2ad04efa-d18a-442b-875f-48d12e11d822
-  servername: u1.mizulina.top
+- name: X_🇩🇪_德国_1
+  type: trojan
+  server: 194.58.33.218
+  port: 443
+  password: 42bbf526-5530-470a-aeec-3b919b21c58d
+  sni: 0000.hkvip.ip-ddns.com
+  skip-cert-verify: true
   tls: true
-  flow: xtls-rprx-vision
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 0000.hkvip.ip-ddns.com
+  cipher: auto
+- name: X_🇺🇸_美国_2
+  type: trojan
+  server: 193.17.183.157
+  port: 8443
+  password: 42bbf526-5530-470a-aeec-3b919b21c58d
+  sni: 0000.hkvip.ip-ddns.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 0000.hkvip.ip-ddns.com
+  cipher: auto
+- name: X_🇬🇧_英国_62
+  type: trojan
+  server: 185.245.83.41
+  port: 31687
+  password: 42bbf526-5530-470a-aeec-3b919b21c58d
+  sni: 0000.hkvip.ip-ddns.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 0000.hkvip.ip-ddns.com
+  cipher: auto
+- name: X_🇵🇱_波兰_1
+  type: trojan
+  server: 31.133.0.167
+  port: 2053
+  password: 42bbf526-5530-470a-aeec-3b919b21c58d
+  sni: 0000.hkvip.ip-ddns.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 0000.hkvip.ip-ddns.com
+  cipher: auto
+- name: X_🇷🇺_俄罗斯_3
+  type: trojan
+  server: 89.169.13.12
+  port: 443
+  password: 42bbf526-5530-470a-aeec-3b919b21c58d
+  sni: 0000.hkvip.ip-ddns.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 0000.hkvip.ip-ddns.com
+  cipher: auto
+- name: X_🇳🇱_荷兰_4
+  type: trojan
+  server: 2.59.183.233
+  port: 444
+  password: 42bbf526-5530-470a-aeec-3b919b21c58d
+  sni: 0000.hkvip.ip-ddns.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 0000.hkvip.ip-ddns.com
+  cipher: auto
+- name: X_🇹🇷_土耳其
+  type: trojan
+  server: 45.89.52.247
+  port: 443
+  password: 42bbf526-5530-470a-aeec-3b919b21c58d
+  sni: 0000.hkvip.ip-ddns.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 0000.hkvip.ip-ddns.com
+  cipher: auto
+- name: X_🇵🇱_波兰_2
+  type: trojan
+  server: 31.133.0.159
+  port: 2053
+  password: 42bbf526-5530-470a-aeec-3b919b21c58d
+  sni: 0000.hkvip.ip-ddns.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 0000.hkvip.ip-ddns.com
   cipher: auto
 - name: X_🇺🇸_美国_3
-  type: vless
-  server: 69.84.182.152
-  port: 443
-  uuid: 684dd578-bc98-445f-9a42-14dd9a210b27
-  network: ws
+  type: trojan
+  server: 173.249.201.109
+  port: 54443
+  password: 42bbf526-5530-470a-aeec-3b919b21c58d
+  sni: 0000.hkvip.ip-ddns.com
+  skip-cert-verify: true
   tls: true
   ws-opts:
-    path: /ws
+    path: /?ed=2560
     headers:
-      Host: rAyAn-cOnFiG-it-1.pAriSa.dPdNs.oRg
+      Host: 0000.hkvip.ip-ddns.com
+  cipher: auto
+- name: X_🇺🇸_美国_4
+  type: trojan
+  server: 208.103.161.231
+  port: 443
+  password: 2238e2f3-1a01-485e-8c22-24b65764c68b
+  sni: gzjx.dpdns.org
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /51.91.253.83=8443
+  cipher: auto
+- name: X_🇳🇱_荷兰_5
+  type: trojan
+  server: 2.59.183.181
+  port: 443
+  password: 42bbf526-5530-470a-aeec-3b919b21c58d
+  sni: 0000.hkvip.ip-ddns.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 0000.hkvip.ip-ddns.com
+  cipher: auto
+- name: X_🇳🇱_荷兰_6
+  type: trojan
+  server: 163.5.207.235
+  port: 443
+  password: 42bbf526-5530-470a-aeec-3b919b21c58d
+  sni: 0000.hkvip.ip-ddns.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 0000.hkvip.ip-ddns.com
+  cipher: auto
+- name: X_🇳🇱_荷兰_7
+  type: trojan
+  server: 2.59.183.219
+  port: 443
+  password: 42bbf526-5530-470a-aeec-3b919b21c58d
+  sni: 0000.hkvip.ip-ddns.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 0000.hkvip.ip-ddns.com
+  cipher: auto
+- name: X_🇳🇱_荷兰_8
+  type: trojan
+  server: 163.5.207.31
+  port: 443
+  password: 42bbf526-5530-470a-aeec-3b919b21c58d
+  sni: 0000.hkvip.ip-ddns.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: 0000.hkvip.ip-ddns.com
+  cipher: auto
+- name: X_🇷🇺_俄罗斯_4
+  type: vless
+  server: dns.turboo-server.space
+  port: 443
+  uuid: 60a2998c-cd85-562e-a3fd-396e4925dd3a
+  network: ws
+  servername: serverpro.turbooo-server.com
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /turboo-server
+    headers:
+      Host: serverpro.turbooo-server.com
+  cipher: auto
+- name: X_🇫🇷_法国_2
+  type: vmess
+  server: 2001:bc8:32d7:302::10
+  port: 44579
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048@V2Ray_hiddify10--https://t.me/V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--V2Ray_hiddify10--https://t.me/V2Ray_hiddify10
+- name: X_🇺🇸_美国_5
+  type: vless
+  server: xhero.kharabetam.de
+  port: 2053
+  uuid: 33a57acf-163f-4cdd-8b23-cc52a58f2362
+  network: ws
+  servername: mrx.xher0.de
+  tls: true
+  ws-opts:
+    path: /IfUknowThenUKnow
+    headers:
+      Host: mrx.xher0.de
+  cipher: auto
+- name: X_🇺🇸_美国_6
+  type: vless
+  server: 192.0.54.34
+  port: 443
+  uuid: 96dd3618-ae4e-4a9d-89f9-5316296d7814
+  network: ws
+  servername: cErT.sHakHle.iR
+  tls: true
+  ws-opts:
+    path: /?ed=1024/?TELEGRAM--BYA--CHANEL----@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN
+    headers:
+      Host: cErT.sHakHle.iR
   cipher: auto
 - name: X_🇺🇸_美国_7
-  type: vless
-  server: 69.84.182.20
-  port: 443
-  uuid: 2dfb0dd6-65c9-46fe-bd43-776a9e015d8e
-  network: ws
+  type: trojan
+  server: 167.68.4.199
+  port: 2053
+  password: Aimer
+  sni: epge.muarua.filegear-sg.me
+  skip-cert-verify: false
   tls: true
   ws-opts:
-    path: /ws
+    path: /
     headers:
-      Host: rAyAn-cOnFiG-tr-1.pAriSa.dPdNs.oRg
+      Host: epge.muarua.filegear-sg.me
   cipher: auto
-- name: X_🇺🇸_美国_13
+- name: X_🇬🇧_英国_63
   type: vless
-  server: 198.62.62.241
-  port: 443
-  uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
-  network: ws
-  tls: true
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: l.ayovo.netlib.re
-  cipher: auto
-- name: X_🇸🇬_新加坡_1
-  type: vless
-  server: 27.50.48.8
-  port: 443
-  uuid: 15235ce9-4cd2-4483-b6b6-7fc4a3f44735
-  network: ws
-  servername: snip.ere.de5.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: snip.ere.de5.net
-  cipher: auto
-- name: X_🇭🇰_香港_4
-  type: vless
-  server: 154.211.8.18
-  port: 443
-  uuid: 15235ce9-4cd2-4483-b6b6-7fc4a3f44735
-  network: ws
-  servername: snip.ere.de5.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: snip.ere.de5.net
-  cipher: auto
-- name: X_🇺🇸_美国_14
-  type: vless
-  server: icook.hk
-  port: 443
-  uuid: 15235ce9-4cd2-4483-b6b6-7fc4a3f44735
-  network: ws
-  servername: snip.ere.de5.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: snip.ere.de5.net
-  cipher: auto
-- name: X_🇺🇸_美国_15
-  type: vless
-  server: icook.tw
-  port: 443
-  uuid: 15235ce9-4cd2-4483-b6b6-7fc4a3f44735
-  network: ws
-  servername: snip.ere.de5.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: snip.ere.de5.net
-  cipher: auto
-- name: X_🇺🇸_美国_16
-  type: vless
-  server: www.shopify.com
-  port: 443
-  uuid: 15235ce9-4cd2-4483-b6b6-7fc4a3f44735
-  network: ws
-  servername: snip.ere.de5.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: snip.ere.de5.net
-  cipher: auto
-- name: X_🇺🇸_美国_17
-  type: vless
-  server: staticdelivery.nexusmods.com
-  port: 443
-  uuid: 15235ce9-4cd2-4483-b6b6-7fc4a3f44735
-  network: ws
-  servername: snip.ere.de5.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: snip.ere.de5.net
-  cipher: auto
-- name: X_🇺🇸_美国_18
-  type: vless
-  server: registry.cyou
-  port: 443
-  uuid: 15235ce9-4cd2-4483-b6b6-7fc4a3f44735
-  network: ws
-  servername: snip.ere.de5.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: snip.ere.de5.net
-  cipher: auto
-- name: X_🇺🇸_美国_19
-  type: vless
-  server: blog.811520.xyz
-  port: 443
-  uuid: 15235ce9-4cd2-4483-b6b6-7fc4a3f44735
-  network: ws
-  servername: snip.ere.de5.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: snip.ere.de5.net
-  cipher: auto
-- name: X_🇭🇰_香港_5
-  type: vless
-  server: 154.218.15.198
-  port: 443
-  uuid: 15235ce9-4cd2-4483-b6b6-7fc4a3f44735
-  network: ws
-  servername: snip.ere.de5.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: snip.ere.de5.net
-  cipher: auto
-- name: X_🇸🇬_新加坡_2
-  type: vless
-  server: 27.50.48.6
-  port: 443
-  uuid: 15235ce9-4cd2-4483-b6b6-7fc4a3f44735
-  network: ws
-  servername: snip.ere.de5.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: snip.ere.de5.net
-  cipher: auto
-- name: X_🇸🇬_新加坡_3
-  type: vless
-  server: 27.50.48.13
-  port: 443
-  uuid: 15235ce9-4cd2-4483-b6b6-7fc4a3f44735
-  network: ws
-  servername: snip.ere.de5.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: snip.ere.de5.net
-  cipher: auto
-- name: X_🇭🇰_香港_6
-  type: vless
-  server: 154.218.15.1
-  port: 443
-  uuid: 15235ce9-4cd2-4483-b6b6-7fc4a3f44735
-  network: ws
-  servername: snip.ere.de5.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: snip.ere.de5.net
-  cipher: auto
-- name: X_🇸🇬_新加坡_4
-  type: vless
-  server: 27.50.48.2
-  port: 443
-  uuid: 15235ce9-4cd2-4483-b6b6-7fc4a3f44735
-  network: ws
-  servername: snip.ere.de5.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: snip.ere.de5.net
-  cipher: auto
-- name: X_🇸🇬_新加坡_5
-  type: vless
-  server: 27.50.49.104
-  port: 443
-  uuid: 15235ce9-4cd2-4483-b6b6-7fc4a3f44735
-  network: ws
-  servername: snip.ere.de5.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: snip.ere.de5.net
-  cipher: auto
-- name: X_🇲🇾_马来西亚
-  type: vless
-  server: 8.35.211.198
-  port: 443
-  uuid: 15235ce9-4cd2-4483-b6b6-7fc4a3f44735
-  network: ws
-  servername: snip.ere.de5.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: snip.ere.de5.net
-  cipher: auto
-- name: X_🇲🇾_马来西亚_1
-  type: vless
-  server: 8.39.125.167
-  port: 443
-  uuid: 15235ce9-4cd2-4483-b6b6-7fc4a3f44735
-  network: ws
-  servername: snip.ere.de5.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: snip.ere.de5.net
-  cipher: auto
-- name: X_🇲🇾_马来西亚_2
-  type: vless
-  server: 8.39.125.179
-  port: 443
-  uuid: 15235ce9-4cd2-4483-b6b6-7fc4a3f44735
-  network: ws
-  servername: snip.ere.de5.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: snip.ere.de5.net
-  cipher: auto
-- name: X_🇺🇸_美国_20
-  type: vless
-  server: 173.245.59.209
-  port: 443
-  uuid: 15235ce9-4cd2-4483-b6b6-7fc4a3f44735
-  network: ws
-  servername: snip.ere.de5.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: snip.ere.de5.net
-  cipher: auto
-- name: X_🇺🇸_美国_21
-  type: vless
-  server: 172.64.52.218
-  port: 443
-  uuid: 15235ce9-4cd2-4483-b6b6-7fc4a3f44735
-  network: ws
-  servername: snip.ere.de5.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: snip.ere.de5.net
-  cipher: auto
-- name: X_🇺🇸_美国_22
-  type: vless
-  server: 172.64.53.176
-  port: 443
-  uuid: 15235ce9-4cd2-4483-b6b6-7fc4a3f44735
-  network: ws
-  servername: snip.ere.de5.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: snip.ere.de5.net
-  cipher: auto
-- name: X_🇺🇸_美国_23
-  type: vless
-  server: 108.162.198.38
-  port: 443
-  uuid: 15235ce9-4cd2-4483-b6b6-7fc4a3f44735
-  network: ws
-  servername: snip.ere.de5.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: snip.ere.de5.net
-  cipher: auto
-- name: X_🇺🇸_美国_24
-  type: vless
-  server: 172.64.229.90
-  port: 443
-  uuid: 15235ce9-4cd2-4483-b6b6-7fc4a3f44735
-  network: ws
-  servername: snip.ere.de5.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: snip.ere.de5.net
-  cipher: auto
-- name: X_🇺🇸_美国_25
-  type: vless
-  server: 173.245.59.220
-  port: 443
-  uuid: 15235ce9-4cd2-4483-b6b6-7fc4a3f44735
-  network: ws
-  servername: snip.ere.de5.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: snip.ere.de5.net
-  cipher: auto
-- name: X_🇺🇸_美国_26
-  type: vless
-  server: 172.64.144.22
-  port: 443
-  uuid: 15235ce9-4cd2-4483-b6b6-7fc4a3f44735
-  network: ws
-  servername: snip.ere.de5.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: snip.ere.de5.net
-  cipher: auto
-- name: X_🇺🇸_美国_27
-  type: vless
-  server: 172.64.53.248
-  port: 443
-  uuid: 15235ce9-4cd2-4483-b6b6-7fc4a3f44735
-  network: ws
-  servername: snip.ere.de5.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: snip.ere.de5.net
-  cipher: auto
-- name: X_🇺🇸_美国_28
-  type: vless
-  server: 108.162.198.31
-  port: 443
-  uuid: 15235ce9-4cd2-4483-b6b6-7fc4a3f44735
-  network: ws
-  servername: snip.ere.de5.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: snip.ere.de5.net
-  cipher: auto
-- name: X_🇺🇸_美国_29
-  type: vless
-  server: 172.64.148.31
-  port: 443
-  uuid: 15235ce9-4cd2-4483-b6b6-7fc4a3f44735
-  network: ws
-  servername: snip.ere.de5.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: snip.ere.de5.net
-  cipher: auto
-- name: X_🇺🇸_美国_30
-  type: vless
-  server: 172.64.52.201
-  port: 443
-  uuid: 15235ce9-4cd2-4483-b6b6-7fc4a3f44735
-  network: ws
-  servername: snip.ere.de5.net
-  tls: true
-  client-fingerprint: random
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: snip.ere.de5.net
-  cipher: auto
-- name: X_🇯🇵_日本_2
-  type: vless
-  server: 8.211.137.100
-  port: 11867
+  server: 213.210.55.72
+  port: 24443
   uuid: 00000000-0000-4000-8000-000000000000
   network: ws
   servername: mot.saghv.filegear-sg.me
   tls: true
-  client-fingerprint: chrome
   ws-opts:
     path: /@Marisa_kristi
     headers:
@@ -2108,100 +1793,145 @@ proxies:
   network: ws
   servername: mot.saghv.filegear-sg.me
   tls: true
-  client-fingerprint: chrome
   ws-opts:
     path: /@Marisa_kristi
     headers:
       Host: mot.saghv.filegear-sg.me
   cipher: auto
-- name: X_🇰🇷_韩国
+- name: X_🇭🇰_香港_45
   type: vless
-  server: 175.123.172.254
-  port: 30003
-  uuid: 00000000-0000-4000-8000-000000000000
-  network: ws
-  servername: mot.saghv.filegear-sg.me
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mot.saghv.filegear-sg.me
-  cipher: auto
-- name: X_🇺🇸_美国_36
-  type: vless
-  server: 137.184.122.138
-  port: 12306
-  uuid: 00000000-0000-4000-8000-000000000000
-  network: ws
-  servername: mot.saghv.filegear-sg.me
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mot.saghv.filegear-sg.me
-  cipher: auto
-- name: X_🇺🇸_美国_37
-  type: vless
-  server: 192.0.54.34
+  server: 43.161.254.121
   port: 443
-  uuid: 96dd3618-ae4e-4a9d-89f9-5316296d7814
+  uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
   network: ws
-  servername: cErT.sHakHle.iR
+  servername: l.ayovo.netlib.re
   tls: true
-  client-fingerprint: chrome
   ws-opts:
-    path: /?ed=1024/?TELEGRAM--BYA--CHANEL----@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN---@JKVPN--@JKVPN---@JKVPN---@JKVPN---@JKVPN
+    path: /?ed=2560
     headers:
-      Host: cErT.sHakHle.iR
+      Host: l.ayovo.netlib.re
   cipher: auto
-- name: X_🇰🇷_韩国_1
+- name: X_🇪🇸_西班牙
+  type: trojan
+  server: 109.234.211.66
+  port: 2087
+  password: trojan
+  sni: store.timimi.dpdns.org
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /?BIA_TELEGRAM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)TM(@AZARBAYJAB1)
+    headers:
+      Host: store.timimi.dpdns.org
+  cipher: auto
+- name: X_🇳🇬_尼日利亚
   type: vless
-  server: 125.129.129.66
-  port: 30216
+  server: 83.229.120.141
+  port: 30050
+  uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+  network: ws
+  servername: l.ayovo.netlib.re
+  tls: true
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: l.ayovo.netlib.re
+  cipher: auto
+- name: X_🇬🇧_英国_64
+  type: vless
+  server: 134.209.19.200
+  port: 20205
   uuid: 00000000-0000-4000-8000-000000000000
   network: ws
   servername: mot.saghv.filegear-sg.me
   tls: true
-  client-fingerprint: chrome
   ws-opts:
     path: /@Marisa_kristi
     headers:
       Host: mot.saghv.filegear-sg.me
   cipher: auto
-- name: X_🇰🇷_韩国_2
+- name: X_🇹🇼_中国台湾省_19
   type: vless
-  server: 175.118.73.120
-  port: 17223
+  server: 220.128.110.108
+  port: 43
+  uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+  network: ws
+  servername: l.ayovo.netlib.re
+  tls: true
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: l.ayovo.netlib.re
+  cipher: auto
+- name: X_🇸🇬_新加坡
+  type: vless
+  server: 54.255.217.120
+  port: 4096
   uuid: 00000000-0000-4000-8000-000000000000
   network: ws
   servername: mot.saghv.filegear-sg.me
   tls: true
-  client-fingerprint: chrome
   ws-opts:
     path: /@Marisa_kristi
     headers:
       Host: mot.saghv.filegear-sg.me
   cipher: auto
-- name: X_🇸🇬_新加坡_6
+- name: X_🇯🇵_日本_1
   type: vless
-  server: 47.129.153.84
-  port: 15789
+  server: 8.211.137.100
+  port: 11867
   uuid: 00000000-0000-4000-8000-000000000000
   network: ws
   servername: mot.saghv.filegear-sg.me
   tls: true
-  client-fingerprint: chrome
   ws-opts:
     path: /@Marisa_kristi
     headers:
       Host: mot.saghv.filegear-sg.me
   cipher: auto
-- name: X_🇸🇬_新加坡_7
+- name: X_🇺🇸_美国_10
+  type: vless
+  server: 23.27.20.244
+  port: 13896
+  uuid: 00000000-0000-4000-8000-000000000000
+  network: ws
+  servername: mot.saghv.filegear-sg.me
+  tls: true
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: mot.saghv.filegear-sg.me
+  cipher: auto
+- name: X_🇸🇬_新加坡_1
   type: vless
   server: 43.165.190.11
   port: 42841
+  uuid: 00000000-0000-4000-8000-000000000000
+  network: ws
+  servername: mot.morisi.ggff.net
+  tls: true
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: mot.morisi.ggff.net
+  cipher: auto
+- name: X_🇹🇼_中国台湾省_20
+  type: vless
+  server: 114.32.9.249
+  port: 51443
+  uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+  network: ws
+  servername: l.ayovo.netlib.re
+  tls: true
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: l.ayovo.netlib.re
+  cipher: auto
+- name: X_🇷🇺_俄罗斯_5
+  type: vless
+  server: 94.159.106.227
+  port: 12020
   uuid: 00000000-0000-4000-8000-000000000000
   network: ws
   servername: mot.luyuju.dpdns.org
@@ -2211,133 +1941,7 @@ proxies:
     headers:
       Host: mot.luyuju.dpdns.org
   cipher: auto
-- name: X_🇮🇷_伊朗_2
-  type: vless
-  server: 62.60.156.158
-  port: 8082
-  uuid: 00000000-0000-4000-8000-000000000000
-  network: ws
-  servername: ennyfe.zipgd3vx91o.ddns-ip.net
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ennyfe.zipgd3vx91o.ddns-ip.net
-  cipher: auto
-- name: X_🇬🇧_英国_2
-  type: vless
-  server: 213.210.55.72
-  port: 24443
-  uuid: 00000000-0000-4000-8000-000000000000
-  network: ws
-  servername: mot.saghv.filegear-sg.me
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mot.saghv.filegear-sg.me
-  cipher: auto
-- name: X_🇬🇧_英国_3
-  type: vless
-  server: 134.209.19.200
-  port: 20205
-  uuid: 00000000-0000-4000-8000-000000000000
-  network: ws
-  servername: mot.saghv.filegear-sg.me
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mot.saghv.filegear-sg.me
-  cipher: auto
-- name: X_🇯🇵_日本_3
-  type: vless
-  server: 47.245.61.234
-  port: 45239
-  uuid: 00000000-0000-4000-8000-000000000000
-  network: ws
-  servername: mot.saghv.filegear-sg.me
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mot.saghv.filegear-sg.me
-  cipher: auto
-- name: X_🇩🇪_德国_1
-  type: vless
-  server: 91.107.167.127
-  port: 12345
-  uuid: 00000000-0000-4000-8000-000000000000
-  network: ws
-  servername: mot.saghv.filegear-sg.me
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mot.saghv.filegear-sg.me
-  cipher: auto
-- name: X_🇸🇬_新加坡_10
-  type: vless
-  server: 129.226.95.29
-  port: 35051
-  uuid: 00000000-0000-4000-8000-000000000000
-  network: ws
-  servername: mot.saghv.filegear-sg.me
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mot.saghv.filegear-sg.me
-  cipher: auto
-- name: X_🇱🇹_立陶宛_1
-  type: vless
-  server: 185.212.113.58
-  port: 2077
-  uuid: 00000000-0000-4000-8000-000000000000
-  network: ws
-  servername: mot.saghv.filegear-sg.me
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mot.saghv.filegear-sg.me
-  cipher: auto
-- name: X_🇫🇷_法国_1
-  type: vless
-  server: 51.195.199.65
-  port: 700
-  uuid: 00000000-0000-4000-8000-000000000000
-  network: ws
-  servername: mot.saghv.filegear-sg.me
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mot.saghv.filegear-sg.me
-  cipher: auto
-- name: X_🇺🇸_美国_38
-  type: vless
-  server: 173.249.201.109
-  port: 18521
-  uuid: 00000000-0000-4000-8000-000000000000
-  network: ws
-  servername: mot.saghv.filegear-sg.me
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mot.saghv.filegear-sg.me
-  cipher: auto
-- name: X_🇸🇬_新加坡_11
+- name: X_🇸🇬_新加坡_2
   type: vless
   server: 175.41.167.160
   port: 10101
@@ -2345,54 +1949,237 @@ proxies:
   network: ws
   servername: mot.saghv.filegear-sg.me
   tls: true
-  client-fingerprint: chrome
   ws-opts:
     path: /@Marisa_kristi
     headers:
       Host: mot.saghv.filegear-sg.me
   cipher: auto
-- name: X_🇯🇵_日本_4
+- name: X_🇸🇬_新加坡_3
   type: vless
-  server: 126.163.80.176
-  port: 10463
-  uuid: 00000000-0000-4000-8000-000000000000
+  server: 34.143.159.175
+  port: 443
+  uuid: 97e79a62-f686-4b91-87a7-be39c9e57658
   network: ws
-  servername: mot.saghv.filegear-sg.me
+  servername: page.anjue39.qzz.io
   tls: true
-  client-fingerprint: chrome
   ws-opts:
-    path: /@Marisa_kristi
+    path: /
     headers:
-      Host: mot.saghv.filegear-sg.me
+      Host: page.anjue39.qzz.io
   cipher: auto
-- name: X_🇺🇸_美国_39
-  type: trojan
-  server: 167.68.4.199
-  port: 2053
-  password: Aimer
-  sni: epge.muarua.filegear-sg.me
+- name: X_🇳🇱_荷兰_9
+  type: vless
+  server: 45.131.4.192
+  port: 80
+  uuid: 5f4845b4-11dc-41d6-9508-4ff6a02e36c1
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Cczu8jOo6HDo?ed=2560
+    headers:
+      Host: silent-paper-fa57.fipiyag989.workers.dev
+  cipher: auto
+- name: X_🇳🇱_荷兰_10
+  type: vless
+  server: 188.114.97.3
+  port: 80
+  uuid: c3f75f0e-3fe6-4037-95be-ec869c453dfc
+  network: ws
+  servername: 188.114.97.3
+  tls: false
+  ws-opts:
+    path: /eyJqdW5rIjoiZUtoUTZYaXU3TmIiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
+    headers:
+      Host: 024.electrocellco-cf-024.workers.dev
+  cipher: auto
+- name: X_🇺🇸_美国_11
+  type: vmess
+  server: vc.fly.dev
+  port: 443
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  alterId: 32
+  cipher: auto
+  tls: true
   skip-cert-verify: false
-  tls: true
+  servername: vc.fly.dev
+  network: ws
   ws-opts:
-    path: /?ed
+    path: /vc
     headers:
-      Host: epge.muarua.filegear-sg.me
-  cipher: auto
-- name: X_🇱🇹_立陶宛_2
+      Host: vc.fly.dev
+- name: X_🇰🇷_韩国
   type: vless
-  server: 185.212.113.6
-  port: 2077
+  server: 125.129.129.66
+  port: 30216
   uuid: 00000000-0000-4000-8000-000000000000
   network: ws
   servername: mot.saghv.filegear-sg.me
   tls: true
-  client-fingerprint: chrome
   ws-opts:
     path: /@Marisa_kristi
     headers:
       Host: mot.saghv.filegear-sg.me
   cipher: auto
-- name: X_🇰🇷_韩国_3
+- name: X_🇹🇼_中国台湾省_21
+  type: vless
+  server: 220.130.58.230
+  port: 443
+  uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+  network: ws
+  servername: l.ayovo.netlib.re
+  tls: true
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: l.ayovo.netlib.re
+  cipher: auto
+- name: X_🇩🇪_德国_2
+  type: vless
+  server: 91.107.167.127
+  port: 12345
+  uuid: 00000000-0000-4000-8000-000000000000
+  network: ws
+  servername: mot.saghv.filegear-sg.me
+  tls: true
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: mot.saghv.filegear-sg.me
+  cipher: auto
+- name: X_🇫🇷_法国_8
+  type: vmess
+  server: 2001:bc8:32d7:302::14
+  port: 44579
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+    headers:
+      Host: TABRIZ.NET
+- name: X_🇿🇦_南非
+  type: vless
+  server: fox2.wizard2shop.org
+  port: 2083
+  uuid: 517c776e-afbf-4749-9643-73c3ea26b905
+  network: ws
+  servername: xiz20.wizard2shop.org
+  tls: true
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: xiz20.wizard2shop.org
+  cipher: auto
+- name: X_🇫🇷_法国_9
+  type: vmess
+  server: 2001:bc8:32d7:302::15
+  port: 44579
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+    headers:
+      Host: TURK.NET
+- name: X_🇫🇷_法国_11
+  type: vmess
+  server: 2001:bc8:32d7:302::11
+  port: 44579
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+    headers:
+      Host: TABRIZ.NET
+- name: X_🇺🇸_美国_12
+  type: vless
+  server: 198.62.62.241
+  port: 443
+  uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+  network: ws
+  servername: l.ayovo.netlib.re
+  tls: true
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: l.ayovo.netlib.re
+  cipher: auto
+- name: X_🇺🇸_美国_13
+  type: vless
+  server: www.whatismyip.net
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing-nmsl.sbfangbinxing.workers.dev
+  cipher: auto
+- name: X_🇫🇷_法国_16
+  type: vmess
+  server: 2001:bc8:32d7:302::16
+  port: 44579
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+    headers:
+      Host: AZERB.NET
+- name: X_🇫🇷_法国_22
+  type: vmess
+  server: 2001:bc8:32d7:302::17
+  port: 44579
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+    headers:
+      Host: AZERB.NET
+- name: X_🇧🇬_保加利亚
+  type: vless
+  server: us.asreabi.ir
+  port: 443
+  uuid: 11003d58-cbb3-4ade-a70b-9e095e49d676
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: playstation.com
+  cipher: auto
+- name: X_🇲🇾_马来西亚
+  type: vless
+  server: 8.35.211.15
+  port: 2087
+  uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+  network: ws
+  servername: l.ayovo.netlib.re
+  tls: true
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: l.ayovo.netlib.re
+  cipher: auto
+- name: X_🇰🇷_韩国_1
   type: vless
   server: 185.214.103.86
   port: 57569
@@ -2400,108 +2187,125 @@ proxies:
   network: ws
   servername: mot.saghv.filegear-sg.me
   tls: true
-  client-fingerprint: chrome
   ws-opts:
     path: /@Marisa_kristi
     headers:
       Host: mot.saghv.filegear-sg.me
   cipher: auto
-- name: X_🇸🇬_新加坡_12
+- name: X_🇰🇷_韩国_2
   type: vless
-  server: 54.255.217.120
-  port: 4096
+  server: 175.123.172.254
+  port: 30003
   uuid: 00000000-0000-4000-8000-000000000000
   network: ws
   servername: mot.saghv.filegear-sg.me
   tls: true
-  client-fingerprint: chrome
   ws-opts:
     path: /@Marisa_kristi
     headers:
       Host: mot.saghv.filegear-sg.me
   cipher: auto
-- name: X_🇸🇬_新加坡_13
+- name: X_🇮🇷_伊朗_1
   type: vless
-  server: 3.0.148.109
-  port: 37262
+  server: 62.60.156.158
+  port: 8082
   uuid: 00000000-0000-4000-8000-000000000000
   network: ws
-  servername: mot.saghv.filegear-sg.me
+  servername: ennyfe.zipgd3vx91o.ddns-ip.net
   tls: true
-  client-fingerprint: chrome
   ws-opts:
     path: /@Marisa_kristi
     headers:
-      Host: mot.saghv.filegear-sg.me
+      Host: ennyfe.zipgd3vx91o.ddns-ip.net
   cipher: auto
-- name: X_🇺🇸_美国_41
+- name: X_🇺🇸_美国_16
   type: vless
-  server: 144.34.230.143
-  port: 88
-  uuid: 00000000-0000-4000-8000-000000000000
-  network: ws
-  servername: mot.saghv.filegear-sg.me
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mot.saghv.filegear-sg.me
-  cipher: auto
-- name: X_🇺🇸_美国_42
-  type: vless
-  server: 23.27.20.244
-  port: 13896
-  uuid: 00000000-0000-4000-8000-000000000000
-  network: ws
-  servername: mot.saghv.filegear-sg.me
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mot.saghv.filegear-sg.me
-  cipher: auto
-- name: X_🇰🇷_韩国_4
-  type: vless
-  server: 211.228.123.55
-  port: 35654
-  uuid: 00000000-0000-4000-8000-000000000000
-  network: ws
-  servername: mot.saghv.filegear-sg.me
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mot.saghv.filegear-sg.me
-  cipher: auto
-- name: X_🇷🇺_俄罗斯_7
-  type: vless
-  server: iran.zone-server-irani.ir
+  server: 68.64.179.248
   port: 443
-  uuid: 0f1b6d8d-3f8c-4713-b32d-c94947083485
+  uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
   network: ws
-  servername: apexbhao1.qzz.io
+  servername: l.ayovo.netlib.re
   tls: true
   ws-opts:
-    path: /43.218.77.16=1443
+    path: /?ed=2560
     headers:
-      Host: apexbhao1.qzz.io
+      Host: l.ayovo.netlib.re
   cipher: auto
-- name: X_🇺🇸_美国_45
+- name: X_🇱🇹_立陶宛_1
   type: vless
-  server: xhero.kharabetam.de
-  port: 2053
-  uuid: 33a57acf-163f-4cdd-8b23-cc52a58f2362
+  server: 185.212.113.6
+  port: 2077
+  uuid: 00000000-0000-4000-8000-000000000000
   network: ws
-  servername: mrx.xher0.de
+  servername: mot.saghv.filegear-sg.me
   tls: true
-  client-fingerprint: chrome
   ws-opts:
-    path: /IfUknowThenUKnow
+    path: /@Marisa_kristi
     headers:
-      Host: mrx.xher0.de
+      Host: mot.saghv.filegear-sg.me
+  cipher: auto
+- name: X_🇺🇸_美国_17
+  type: vmess
+  server: cfn.cdn.moe233.org
+  port: 443
+  uuid: 36989e03-b3b9-4e85-8a96-6d02de7c4f3a
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  servername: d232fuc3xd1vzm.cloudfront.net
+  network: ws
+  ws-opts:
+    path: /riolu/4
+    headers:
+      Host: d232fuc3xd1vzm.cloudfront.net
+- name: X_🇯🇵_日本_2
+  type: vless
+  server: 126.163.80.176
+  port: 10463
+  uuid: 00000000-0000-4000-8000-000000000000
+  network: ws
+  servername: mot.saghv.filegear-sg.me
+  tls: true
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: mot.saghv.filegear-sg.me
+  cipher: auto
+- name: X_🇳🇬_尼日利亚_1
+  type: vless
+  server: 83.229.124.163
+  port: 30443
+  uuid: 3e2e3c21-3fc8-468f-9ab5-e782bdf5bf97
+  network: ws
+  servername: l.ayovo.netlib.re
+  tls: true
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: l.ayovo.netlib.re
+  cipher: auto
+- name: X_🇺🇸_美国_18
+  type: trojan
+  server: 172.64.152.23
+  port: 443
+  password: 2238e2f3-1a01-485e-8c22-24b65764c68b
+  sni: gzjx.dpdns.org
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /51.91.253.83=8443
+  cipher: auto
+- name: X_🇬🇧_英国_65
+  type: trojan
+  server: c.panelniazi.sbs
+  port: 443
+  password: humanity
+  sni: www.gossipglove.com
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /assignment
   cipher: auto
 proxy-groups:
 - name: 🚀 节点选择
@@ -2524,115 +2328,107 @@ proxy-groups:
   - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
   - X_电报群：https://t.me/vvkj11
   - X_每天更新，请加电报群防止失联
-  - X_日期：01-26
+  - X_日期：01-27
   - X_免费VPN：https://tt.vg/gwaAy
-  - X_🇷🇺_俄罗斯
-  - X_🇭🇰_香港
-  - X_🇬🇷_希腊
-  - X_🇺🇸_美国
-  - X_🇧🇬_保加利亚
-  - X_🇷🇴_罗马尼亚
-  - X_🇺🇦_乌克兰
-  - X_🇳🇱_荷兰
-  - X_🇷🇴_罗马尼亚_1
-  - X_🇨🇦_加拿大
-  - X_🇯🇵_日本
-  - X_🇷🇺_俄罗斯_1
-  - X_🇮🇱_以色列
-  - X_🇮🇶_伊拉克
   - X_🇫🇮_芬兰
-  - X_🇮🇷_伊朗
-  - X_🇨🇳_中国
-  - X_🇨🇳_中国_16
-  - X_🇨🇳_中国_20
-  - X_🇯🇵_日本_1
-  - X_🇺🇸_美国_1
-  - X_🇩🇪_德国
-  - X_🇭🇰_香港_1
-  - X_🇳🇱_荷兰_1
-  - X_🇮🇹_意大利
-  - X_🇹🇼_中国台湾省
-  - X_🇹🇼_中国台湾省_1
-  - X_🇸🇬_新加坡
-  - X_🇺🇸_美国_2
-  - X_🇬🇧_英国
-  - X_🇨🇳_中国_24
-  - X_🇨🇳_中国_25
-  - X_🇳🇱_荷兰_2
-  - X_🇮🇷_伊朗_1
-  - X_🇭🇰_香港_2
-  - X_🇳🇱_荷兰_3
-  - X_🇦🇹_奥地利
-  - X_🇭🇰_香港_3
+  - X_🇫🇮_芬兰_1
   - X_🇫🇷_法国
+  - X_🇷🇺_俄罗斯
+  - X_🇬🇧_英国
+  - X_🇺🇦_乌克兰
+  - X_🇮🇶_伊拉克
+  - X_🇭🇰_香港
+  - X_🇺🇸_美国
+  - X_🇩🇰_丹麦
+  - X_🇳🇱_荷兰
+  - X_🇩🇪_德国
+  - X_🇮🇱_以色列
+  - X_🇵🇱_波兰
+  - X_🇹🇼_中国台湾省
+  - X_🇭🇰_香港_1
+  - X_🇭🇰_香港_2
+  - X_🇹🇼_中国台湾省_1
+  - X_🇭🇰_香港_3
+  - X_🇨🇦_加拿大
+  - X_🇭🇰_香港_6
+  - X_🇮🇷_伊朗
+  - X_🇨🇳_中国_10
+  - X_🇭🇰_香港_23
+  - X_🇬🇧_英国_13
+  - X_🇭🇰_香港_25
+  - X_🇭🇰_香港_27
+  - X_🇭🇰_香港_40
+  - X_🇭🇰_香港_41
+  - X_🇷🇺_俄罗斯_1
+  - X_🇭🇰_香港_42
   - X_🇱🇻_拉脱维亚
-  - X_🇷🇺_俄罗斯_3
+  - X_🇯🇵_日本
+  - X_🇭🇰_香港_44
+  - X_🇱🇻_拉脱维亚_1
+  - X_🇺🇦_乌克兰_3
   - X_🇦🇲_亚美尼亚
-  - X_🇷🇺_俄罗斯_4
-  - X_🇬🇧_英国_1
-  - X_🇷🇺_俄罗斯_6
-  - X_🇳🇱_荷兰_5
+  - X_🇺🇸_美国_1
+  - X_🇷🇺_俄罗斯_2
+  - X_🇩🇪_德国_1
+  - X_🇺🇸_美国_2
+  - X_🇬🇧_英国_62
+  - X_🇵🇱_波兰_1
+  - X_🇷🇺_俄罗斯_3
+  - X_🇳🇱_荷兰_4
+  - X_🇹🇷_土耳其
+  - X_🇵🇱_波兰_2
   - X_🇺🇸_美国_3
+  - X_🇺🇸_美国_4
+  - X_🇳🇱_荷兰_5
+  - X_🇳🇱_荷兰_6
+  - X_🇳🇱_荷兰_7
+  - X_🇳🇱_荷兰_8
+  - X_🇷🇺_俄罗斯_4
+  - X_🇫🇷_法国_2
+  - X_🇺🇸_美国_5
+  - X_🇺🇸_美国_6
   - X_🇺🇸_美国_7
-  - X_🇺🇸_美国_13
+  - X_🇬🇧_英国_63
+  - X_🇱🇹_立陶宛
+  - X_🇭🇰_香港_45
+  - X_🇪🇸_西班牙
+  - X_🇳🇬_尼日利亚
+  - X_🇬🇧_英国_64
+  - X_🇹🇼_中国台湾省_19
+  - X_🇸🇬_新加坡
+  - X_🇯🇵_日本_1
+  - X_🇺🇸_美国_10
   - X_🇸🇬_新加坡_1
-  - X_🇭🇰_香港_4
-  - X_🇺🇸_美国_14
-  - X_🇺🇸_美国_15
-  - X_🇺🇸_美国_16
-  - X_🇺🇸_美国_17
-  - X_🇺🇸_美国_18
-  - X_🇺🇸_美国_19
-  - X_🇭🇰_香港_5
+  - X_🇹🇼_中国台湾省_20
+  - X_🇷🇺_俄罗斯_5
   - X_🇸🇬_新加坡_2
   - X_🇸🇬_新加坡_3
-  - X_🇭🇰_香港_6
-  - X_🇸🇬_新加坡_4
-  - X_🇸🇬_新加坡_5
-  - X_🇲🇾_马来西亚
-  - X_🇲🇾_马来西亚_1
-  - X_🇲🇾_马来西亚_2
-  - X_🇺🇸_美国_20
-  - X_🇺🇸_美国_21
-  - X_🇺🇸_美国_22
-  - X_🇺🇸_美国_23
-  - X_🇺🇸_美国_24
-  - X_🇺🇸_美国_25
-  - X_🇺🇸_美国_26
-  - X_🇺🇸_美国_27
-  - X_🇺🇸_美国_28
-  - X_🇺🇸_美国_29
-  - X_🇺🇸_美国_30
-  - X_🇯🇵_日本_2
-  - X_🇱🇹_立陶宛
+  - X_🇳🇱_荷兰_9
+  - X_🇳🇱_荷兰_10
+  - X_🇺🇸_美国_11
   - X_🇰🇷_韩国
-  - X_🇺🇸_美国_36
-  - X_🇺🇸_美国_37
+  - X_🇹🇼_中国台湾省_21
+  - X_🇩🇪_德国_2
+  - X_🇫🇷_法国_8
+  - X_🇿🇦_南非
+  - X_🇫🇷_法国_9
+  - X_🇫🇷_法国_11
+  - X_🇺🇸_美国_12
+  - X_🇺🇸_美国_13
+  - X_🇫🇷_法国_16
+  - X_🇫🇷_法国_22
+  - X_🇧🇬_保加利亚
+  - X_🇲🇾_马来西亚
   - X_🇰🇷_韩国_1
   - X_🇰🇷_韩国_2
-  - X_🇸🇬_新加坡_6
-  - X_🇸🇬_新加坡_7
-  - X_🇮🇷_伊朗_2
-  - X_🇬🇧_英国_2
-  - X_🇬🇧_英国_3
-  - X_🇯🇵_日本_3
-  - X_🇩🇪_德国_1
-  - X_🇸🇬_新加坡_10
+  - X_🇮🇷_伊朗_1
+  - X_🇺🇸_美国_16
   - X_🇱🇹_立陶宛_1
-  - X_🇫🇷_法国_1
-  - X_🇺🇸_美国_38
-  - X_🇸🇬_新加坡_11
-  - X_🇯🇵_日本_4
-  - X_🇺🇸_美国_39
-  - X_🇱🇹_立陶宛_2
-  - X_🇰🇷_韩国_3
-  - X_🇸🇬_新加坡_12
-  - X_🇸🇬_新加坡_13
-  - X_🇺🇸_美国_41
-  - X_🇺🇸_美国_42
-  - X_🇰🇷_韩国_4
-  - X_🇷🇺_俄罗斯_7
-  - X_🇺🇸_美国_45
+  - X_🇺🇸_美国_17
+  - X_🇯🇵_日本_2
+  - X_🇳🇬_尼日利亚_1
+  - X_🇺🇸_美国_18
+  - X_🇬🇧_英国_65
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -2760,7 +2556,7 @@ proxy-groups:
   - X_HK77｜家宽｜非常安全
   - X_HK218｜家宽｜非常安全
   - X_JP2｜机房｜低风险
-  - X_新加坡|@ripaojiedian
+  - X_HK157｜家宽｜非常安全
   - X_CA3｜机房｜低风险
   - X_US90｜机房｜低风险
   - X_US98｜机房｜低风险
@@ -2782,10 +2578,10 @@ proxy-groups:
   - X_香港3|@ripaojiedian
   - X_香港4|@ripaojiedian
   - X_香港5|@ripaojiedian
-  - X_日本2|@ripaojiedian
+  - X_日本|@ripaojiedian
+  - X_日本3|@ripaojiedian
+  - X_新加坡|@ripaojiedian
   - X_新加坡2|@ripaojiedian
-  - X_美国|@ripaojiedian
-  - X_美国2|@ripaojiedian
 rule-providers:
   Apple:
     type: http
