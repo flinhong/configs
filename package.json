@@ -1,0 +1,31 @@
+{
+  "name": "userscripts",
+  "version": "0.0.14",
+  "description": "my custom configuration for development",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && node scripts/build.js",
+    "release": "node scripts/release.js bump patch",
+    "release:minor": "node scripts/release.js bump minor",
+    "release:major": "node scripts/release.js bump major",
+    "release:dryrun": "node scripts/release.js bump patch --dryrun",
+    "version:set": "node scripts/release.js set",
+    "version:reset": "node scripts/release.js reset"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flinhong/configs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/flinhong/configs/issues"
+  },
+  "homepage": "https://github.com/flinhong/configs#readme",
+  "devDependencies": {
+    "semver": "^7.7.3"
+  }
+}
