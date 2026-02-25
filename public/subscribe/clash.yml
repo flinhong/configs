@@ -84,125 +84,29 @@ proxies:
     short-id: cad317b20db4aad2
   udp: true
   cipher: auto
-- name: X_CH_speednode_0002
-  server: 138.124.73.80
-  port: 8443
-  type: vless
-  uuid: 010c8bf7-0a43-404f-a6c5-2427acb4d476
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: sun6-21.userapi.com
-  reality-opts:
-    public-key: upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo
-    short-id: 3ca620a7ed5f3196
+- name: X_FI_speednode_0003
+  server: 95.164.113.153
+  port: 5669
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: cJvGkXLQg1TCouv8BmE0Xu
   udp: true
-  cipher: auto
-- name: X_CH_speednode_0003
-  server: 138.124.73.189
+- name: X_FI_speednode_0004
+  server: 78.153.139.68
   port: 8443
   type: vless
-  uuid: 010c8bf7-0a43-404f-a6c5-2427acb4d476
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: sun6-21.userapi.com
-  reality-opts:
-    public-key: upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo
-    short-id: 3ca620a7ed5f3196
-  udp: true
-  cipher: auto
-- name: X_CY_speednode_0004
-  server: de.voxyvpn.ru
-  port: 8443
-  type: vless
-  uuid: a133a912-7382-46ce-8e72-5aa886d56a61
+  uuid: fd8972d7-cf5e-11f0-9970-45e1d80c4039
   flow: xtls-rprx-vision
   tls: true
   skip-cert-verify: false
   client-fingerprint: chrome
-  servername: apple.com
+  servername: images.apple.com
   reality-opts:
-    public-key: l78iryfyBl_JIg0KXgb0VQ3zxfhtkD1odwO09qs9SH4
-    short-id: deadbeef
+    public-key: pekfYPV5U8EjfQ4_zS5c6I2NnOZ2jUlyMGAWa4FWPF4
+    short-id: 58c512b4422e2517
   udp: true
   cipher: auto
-- name: X_DE_speednode_0005
-  server: 185.219.84.221
-  port: 443
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  skip-cert-verify: false
-  servername: sni.111000.v6.navy
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sni.111000.v6.navy
-  udp: true
-  cipher: auto
-- name: X_FR_speednode_0006
-  server: fr.prod.n7.homes
-  port: 8443
-  type: vless
-  uuid: 010c8bf7-0a43-404f-a6c5-2427acb4d476
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: sun6-21.userapi.com
-  reality-opts:
-    public-key: upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo
-    short-id: 3ca620a7ed5f3196
-  udp: true
-  cipher: auto
-- name: X_FR_speednode_0007
-  server: 185.171.202.55
-  port: 443
-  type: vless
-  uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: fran.scroogethebest.com
-  reality-opts:
-    public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
-    short-id: 4fa44664f6a566d3
-  udp: true
-  cipher: auto
-- name: X_FR_speednode_0008
-  server: 34.155.19.30
-  port: 2053
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  skip-cert-verify: false
-  servername: sni.111000.v6.navy
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sni.111000.v6.navy
-  udp: true
-  cipher: auto
-- name: X_FR_speednode_0009
-  server: 95.182.97.125
-  port: 8443
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: sni.111000.v6.navy
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sni.111000.v6.navy
-  udp: true
-  cipher: auto
-- name: X_FR_speednode_0010
+- name: X_FR_speednode_0005
   server: fran.scroogethebest.com
   port: 443
   type: vless
@@ -217,7 +121,14 @@ proxies:
     short-id: 4fa44664f6a566d3
   udp: true
   cipher: auto
-- name: X_GB_speednode_0011
+- name: X_GB_speednode_0006
+  server: 20.108.41.100
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: kaQH3hGdcP80XEDI
+  udp: true
+- name: X_GB_speednode_0007
   server: 217.154.38.156
   port: 443
   type: vless
@@ -231,174 +142,405 @@ proxies:
     short-id: 2e0f
   udp: true
   cipher: auto
-- name: X_HK_speednode_0012
-  server: 8.210.197.138
-  port: 1004
+- name: X_GB_speednode_0008
+  server: 82.198.246.97
+  port: 180
   type: vmess
-  uuid: a13d3f6b-b961-4512-fc8a-9f1d908937b8
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 8.210.197.138
   udp: true
-- name: X_IQ_speednode_0013
-  server: 178.17.51.238
-  port: 8443
-  type: vless
-  uuid: 010c8bf7-0a43-404f-a6c5-2427acb4d476
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: sun6-21.userapi.com
-  reality-opts:
-    public-key: upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo
-    short-id: 3ca620a7ed5f3196
-  udp: true
-  cipher: auto
-- name: X_KR_speednode_0014
-  server: 121.169.46.116
-  port: 1090
-  type: socks5
-  udp: true
-  cipher: auto
-- name: X_NL_speednode_0015
-  server: 188.227.86.12
-  port: 30718
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  skip-cert-verify: false
-  servername: sni.111000.v6.navy
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sni.111000.v6.navy
-  udp: true
-  cipher: auto
-- name: X_NL_speednode_0016
-  server: 5.35.46.221
+- name: X_GR_speednode_0009
+  server: 185.234.57.207
   port: 443
   type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  skip-cert-verify: false
-  servername: sni.111000.v6.navy
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sni.111000.v6.navy
-  udp: true
-  cipher: auto
-- name: X_NL_speednode_0017
-  server: 185.243.112.61
-  port: 2053
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
-  skip-cert-verify: false
-  servername: sni.111000.v6.navy
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sni.111000.v6.navy
-  udp: true
-  cipher: auto
-- name: X_RU_speednode_0018
-  server: yytbework.vpnhub.shop
-  port: 443
-  type: vless
-  uuid: f1449968-0329-468b-b56b-1c573ac2a767
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: www.apple.com
-  reality-opts:
-    public-key: EJKcPSl0dv7mtU26gg6tUmKPw_aDvO2AHraRgNn6B14
-    short-id: 425ba80cd1a821a8
-  udp: true
-  cipher: auto
-- name: X_RU_speednode_0019
-  server: 62.182.195.78
-  port: 8443
-  type: vless
-  uuid: 9a63b59c-5e54-437a-b7a1-2788780a7c13
+  uuid: dd92c4f8-be88-4c61-84eb-d261f798071e
   flow: xtls-rprx-vision
   tls: true
   skip-cert-verify: false
   client-fingerprint: chrome
-  servername: retn.net
+  servername: teamdocs.su
   reality-opts:
-    public-key: qBcUlVqkzWxGORpDCj_FcNHACi3mrAYTCZeJyVQa5yU
-    short-id: 6b374e33af12fd1e
+    public-key: Yu1_Agl1_bJb298G9ukjGuvfksVTUs1X7laYJ3VqwwQ
+    short-id: b5e0cd9ca194c0a5
   udp: true
   cipher: auto
-- name: X_SI_speednode_0020
-  server: 109.172.55.232
-  port: 13760
+- name: X_IQ_speednode_0010
+  server: deu469.unboundworld.org
+  port: 443
   type: vless
-  uuid: 5fad3ad2-1a94-40d0-85bb-51eb83f5c7df
+  uuid: cc9f7840-757a-430b-bddc-a73478bea434
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: www.t3n.de
+  reality-opts:
+    public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
+  udp: true
+  cipher: auto
+- name: X_KR_speednode_0011
+  server: testkr3.ssv.vc
+  port: 30446
+  type: http
+  username: test
+  password: test.+
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_RU_speednode_0012
+  server: 5.cdnconn.com
+  port: 23335
+  type: vless
+  uuid: e384913f-8863-47b4-8858-a84b68abb4a6
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: icloud.com
+  reality-opts:
+    public-key: 7Gi8eiUU9TIVbGuvSU16gl5-Aqt7tcCSB9x6CSxyvik
+  udp: true
+  cipher: auto
+- name: X_RU_speednode_0013
+  server: us01-vlr01-gmn03.tcp-reset-club.net
+  port: 18443
+  type: vless
+  uuid: 1c4aceb6-bff7-4737-8c5d-43afb3dc350b
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: hls-svod.itunes.apple.com
+  reality-opts:
+    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
+    short-id: f79448a30d
+  udp: true
+  cipher: auto
+- name: X_RU_speednode_0014
+  server: basic-ru-0.undef.network
+  port: 43902
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 5kWesolQ0y0PVdIrb65LbHT2u
+  udp: true
+- name: X_RU_speednode_0015
+  server: 51.250.4.119
+  port: 443
+  type: vless
+  uuid: 9a599b2e-5455-44d5-9a72-5c76f28e93e3
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: ads.x5.ru
+  reality-opts:
+    public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+    short-id: 87cc0414902bee2d
+  udp: true
+  cipher: auto
+- name: X_RU_speednode_0016
+  server: 51.250.83.255
+  port: 443
+  type: vless
+  uuid: 9a599b2e-5455-44d5-9a72-5c76f28e93e3
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: ads.x5.ru
+  reality-opts:
+    public-key: FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg
+    short-id: 65ce6cee3941af69
+  udp: true
+  cipher: auto
+- name: X_SC_speednode_0017
+  server: 80.253.251.122
+  port: 13686
+  type: vless
+  uuid: 8f09e644-7208-4f38-ac2f-db6d23cc647f
   tls: true
   skip-cert-verify: false
   client-fingerprint: chrome
   servername: yandex.ru
   reality-opts:
-    public-key: ktZ1lxOpDoIq3mk39kNAi1uK0z3qTA6f-6u2KbQmICg
-    short-id: 58a8787420b6a153
+    public-key: E2rSTxjCs8arrVzkG0htKf5OQt6wyoIsvwnsvkmKanQ
+    short-id: fd38dd693669e822
+  udp: true
+  cipher: auto
+- name: X_SG_speednode_0018
+  server: 68.183.227.4
+  port: 8080
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+  udp: true
+- name: X_US_speednode_0019
+  server: www.fbi.gov
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0020
+  server: www.npmjs.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
   udp: true
   cipher: auto
 - name: X_US_speednode_0021
-  server: 209.102.207.120
-  port: 443
+  server: developers.cloudflare.com
+  port: 2095
   type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  tls: true
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
   skip-cert-verify: false
-  servername: sni.111000.v6.navy
+  client-fingerprint: randomized
+  servername: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
   network: ws
   ws-opts:
-    path: /?ed=2560
+    path: /
     headers:
-      Host: sni.111000.v6.navy
+      Host: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
   udp: true
   cipher: auto
 - name: X_US_speednode_0022
-  server: 156.236.76.45
-  port: 37952
+  server: www.udemy.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0023
+  server: 47.84.126.255
+  port: 443
   type: vmess
-  uuid: b8304f18-9a28-427c-b1fe-d92ee1757c0b
+  uuid: 32285564-1664-485c-f4db-daa776321a52
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
+  udp: true
+- name: X_US_speednode_0024
+  server: cf.090227.xyz
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
   network: ws
   ws-opts:
-    path: /arki
+    path: /
     headers:
-      Host: 156.236.76.45
+      Host: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
   udp: true
-- name: X_US_speednode_0023
-  server: 130.49.177.161
-  port: 8443
+  cipher: auto
+- name: X_US_speednode_0025
+  server: blog.cloudflare.com
+  port: 2095
   type: vless
-  uuid: 010c8bf7-0a43-404f-a6c5-2427acb4d476
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0026
+  server: cloudflare-dns.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0027
+  server: ns.cloudflare.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0028
+  server: openai.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0029
+  server: support.cloudflare.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0030
+  server: www.epicgames.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0031
+  server: 143.20.236.51
+  port: 443
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
   tls: true
   skip-cert-verify: false
   client-fingerprint: chrome
-  servername: sun6-21.userapi.com
+  servername: yahoo.com
   reality-opts:
-    public-key: upDCW94g-pSYQrmXvOrTVYlwBUrSKhYFF9QwrqObdVo
-    short-id: 3ca620a7ed5f3196
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
   udp: true
   cipher: auto
-- name: X_US_speednode_0024
+- name: X_US_speednode_0032
+  server: zf.sg1000.eu.cc
+  port: 50000
+  type: vless
+  uuid: 7473f95b-5a12-4972-b882-9fcd41ceff72
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: yahoo.com
+  reality-opts:
+    public-key: XcaJjk49Yof0-ZTuwFlFvBqd_QJC_uabiIWC1g6rvAk
+    short-id: 1f7bfe
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0034
+  server: www.temu.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0035
+  server: www.shopify.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxingnmsl.cnm-fangbinxing-cnm.workers.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0036
+  server: 3.cdnconn.com
+  port: 23335
+  type: vless
+  uuid: e384913f-8863-47b4-8858-a84b68abb4a6
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: icloud.com
+  reality-opts:
+    public-key: 7Gi8eiUU9TIVbGuvSU16gl5-Aqt7tcCSB9x6CSxyvik
+    short-id: 67b1e94e4dd1ef90
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0037
   server: 66.179.82.126
   port: 443
   type: vless
@@ -412,179 +554,34 @@ proxies:
     short-id: 2f2a
   udp: true
   cipher: auto
-- alterId: 0
-  cipher: auto
-  name: X_SC1｜原生/疑似家宽｜非常安全
-  network: tcp
-  port: '80'
-  server: 45.196.235.171
-  tls: false
-  type: vmess
-  uuid: 47eefac2-9767-49e1-c8e6-524e39d8765f
-- alterId: 0
-  cipher: auto
-  name: X_DE38｜机房｜高风险 (黑名单)
-  network: tcp
-  port: '180'
-  server: 82.198.246.97
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: X_US8｜机房｜低风险
-  network: ws
-  password: 92544946-dea2-4cd9-bd5b-32be565a5a62
-  port: 2087
-  server: bestcdn0.868863.xyz
-  skip-cert-verify: true
-  sni: 17718944721466.682637.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17718944722777.682637.xyz
-    path: '%2Fahyrtuyjykl'
-  cipher: auto
-- name: X_US16｜机房｜低风险
-  network: ws
-  password: 92544946-dea2-4cd9-bd5b-32be565a5a62
-  port: 2053
-  server: bestcdn1.868863.xyz
-  skip-cert-verify: true
-  sni: 17718944723450.206352.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17718944724815.206352.xyz
-    path: '%2Fagraeabtegrrh'
-  cipher: auto
-- name: X_US19｜机房｜低风险
-  network: ws
-  password: 92544946-dea2-4cd9-bd5b-32be565a5a62
-  port: 2083
-  server: bestcdn2.868863.xyz
-  skip-cert-verify: true
-  sni: 17718944722849.206352.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17718944722923.206352.xyz
-    path: '%2Fagraeabtegrrh'
-  cipher: auto
-- name: X_US22｜机房｜低风险
-  network: ws
-  password: 92544946-dea2-4cd9-bd5b-32be565a5a62
-  port: 2087
-  server: bestcdn3.868863.xyz
-  skip-cert-verify: true
-  sni: 17718944723080.206352.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17718944725979.206352.xyz
-    path: '%2Fagraeabtegrrh'
-  cipher: auto
-- name: X_US25｜机房｜低风险
-  network: ws
-  password: 92544946-dea2-4cd9-bd5b-32be565a5a62
-  port: 2096
-  server: bestcdn4.868863.xyz
-  skip-cert-verify: true
-  sni: 17718944726542.206352.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17718944728864.206352.xyz
-    path: '%2Fagraeabtegrrh'
-  cipher: auto
-- name: X_US28｜机房｜低风险
-  network: ws
-  password: 92544946-dea2-4cd9-bd5b-32be565a5a62
-  port: 8443
-  server: bestcdn5.868863.xyz
-  skip-cert-verify: true
-  sni: 17718944729591.206352.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 17718944723768.206352.xyz
-    path: '%2Fagraeabtegrrh'
-  cipher: auto
-- alterId: 2
-  cipher: auto
-  name: X_US31｜机房｜低风险
-  network: tcp
-  port: '30809'
-  server: v9.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: X_JP1｜机房｜低风险
-  network: tcp
-  password: 736cd94d-7b94-3e44-8106-3419f64eaf09
-  port: 2053
-  server: 05.tokyometropolis.kiev.ua
-  skip-cert-verify: true
-  sni: 05.tokyometropolis.kiev.ua
-  type: trojan
-  cipher: auto
-- alterId: 2
-  cipher: auto
-  name: X_US49｜机房｜低风险
-  network: tcp
-  port: '30804'
-  server: v4.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  name: X_FR8｜机房｜低风险
-  network: tcp
-  port: '30835'
-  server: v35.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: X_HK50｜原生/疑似家宽｜非常安全
-  network: ws
-  port: '443'
-  server: sg.ok12345.ggff.net
-  servername: hk001.nhk01.ggff.net
-  tls: true
-  type: vmess
-  uuid: ee7b0420-d4ef-42b0-92c6-dbdc1280c470
-  ws-opts:
-    headers:
-      Host: hk001.nhk01.ggff.net
-    path: /
-- alterId: 0
-  cipher: auto
-  name: X_US84｜原生/疑似家宽｜非常安全
-  network: tcp
-  port: '17356'
-  server: freedom.vipgsmteam.info
-  tls: false
-  type: vmess
-  uuid: f95cb5ae-1b06-4a57-aba0-30afe12d23ed
-- alpn:
-  - http/1.1
-  name: X_US94｜机房｜低风险
-  network: ws
-  password: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+- name: X_US_speednode_0038
+  server: 198.62.62.248
   port: 443
-  server: mkii.1x4.indevs.in
-  skip-cert-verify: true
-  sni: mkii.1x4.indevs.in
-  type: trojan
+  type: vless
+  uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: tar.alabama-tigr.info
+  network: ws
   ws-opts:
+    path: /love
     headers:
-      Host: mkii.1x4.indevs.in
-    path: '%2Fy1moM5CyNvYMZlzsYHmsMrnO'
+      Host: tar.alabama-tigr.info
+  udp: true
   cipher: auto
+- alterId: 2
+  cipher: auto
+  name: X_DE13｜机房｜低风险
+  network: tcp
+  port: '30833'
+  server: v33.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 0
   cipher: auto
-  name: X_US117｜机房｜低风险
+  name: X_US82｜机房｜低风险
   network: ws
   port: '80'
   server: jnm.1x2.indevs.in
@@ -597,49 +594,210 @@ proxies:
     path: /iSRWSKUJKNuXvVzsYHmsMrnO
 - alterId: 0
   cipher: auto
-  name: X_TR1｜商宽｜非常安全
+  name: X_IN5｜机房｜低风险
   network: ws
-  port: '80'
-  server: TM_AZARBAYJAB1.SERV.9.pagES.DEV
+  port: '12887'
+  server: 85.211.242.85
   tls: false
   type: vmess
-  uuid: 43dcdce1-3cea-4193-bc8d-90b92071d779
+  uuid: 421bb038-91ff-4a55-bfd4-36f36331ecda
   ws-opts:
     headers:
-      Host: tr1-smart.adelping.com
-    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1/?de=2560
-- alterId: 2
+      Host: baidu.com
+    path: /
+- name: X_US131｜机房｜低风险
+  network: ws
+  password: 8be1f222-92fc-4e84-a6e9-26c74713e3d3
+  port: 2087
+  server: bestcdn0.868863.xyz
+  skip-cert-verify: true
+  sni: 17720002269286.682637.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 17720002268705.682637.xyz
+    path: '%2Fahyrtuyjykl'
   cipher: auto
-  name: X_DE40｜机房｜低风险
+- name: X_US137｜机房｜低风险
+  network: ws
+  password: 8be1f222-92fc-4e84-a6e9-26c74713e3d3
+  port: 2053
+  server: bestcdn1.868863.xyz
+  skip-cert-verify: true
+  sni: 17720002269723.206352.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 17720002265184.206352.xyz
+    path: '%2Fagraeabtegrrh'
+  cipher: auto
+- name: X_US141｜机房｜低风险
+  network: ws
+  password: 8be1f222-92fc-4e84-a6e9-26c74713e3d3
+  port: 2083
+  server: bestcdn2.868863.xyz
+  skip-cert-verify: true
+  sni: 17720002264812.206352.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 17720002265663.206352.xyz
+    path: '%2Fagraeabtegrrh'
+  cipher: auto
+- name: X_US145｜机房｜低风险
+  network: ws
+  password: 8be1f222-92fc-4e84-a6e9-26c74713e3d3
+  port: 2087
+  server: bestcdn3.868863.xyz
+  skip-cert-verify: true
+  sni: 17720002269501.206352.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 17720002266707.206352.xyz
+    path: '%2Fagraeabtegrrh'
+  cipher: auto
+- name: X_US149｜机房｜低风险
+  network: ws
+  password: 8be1f222-92fc-4e84-a6e9-26c74713e3d3
+  port: 2096
+  server: bestcdn4.868863.xyz
+  skip-cert-verify: true
+  sni: 17720002261980.206352.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 17720002267030.206352.xyz
+    path: '%2Fagraeabtegrrh'
+  cipher: auto
+- alpn:
+  - http/1.1
+  name: X_US165｜机房｜低风险
+  network: ws
+  password: 4e45c1b4-9107-45dd-9995-cdf7cbb44d9d
+  port: 443
+  server: bgt.1x2.indevs.in
+  skip-cert-verify: true
+  sni: bgt.1x2.indevs.in
+  type: trojan
+  ws-opts:
+    headers:
+      Host: bgt.1x2.indevs.in
+    path: '%2Fy1moM5CyNvYMZlzsYHmsMrnO'
+  cipher: auto
+- name: X_HK18｜家宽｜非常安全
   network: tcp
-  port: '30833'
-  server: v33.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  password: 736cd94d-7b94-3e44-8106-3419f64eaf09
+  port: 3462
+  server: a12.taipeicitygovernment.org.ua
+  skip-cert-verify: true
+  sni: a12.taipeicitygovernment.org.ua
+  type: trojan
+  cipher: auto
 - alterId: 0
   cipher: auto
-  name: X_US109｜机房｜低风险
-  network: ws
-  port: '443'
-  server: 199.34.230.199
-  servername: ous3.dean52.top
-  tls: true
-  type: vmess
-  uuid: f08369d1-5ee7-4b16-d786-30bce12fc33c
-  ws-opts:
-    headers:
-      Host: ous3.dean52.top
-    path: /f08369d1-5ee7-4b16-d786-30bce12fc33c
-- alterId: 0
-  cipher: auto
-  name: X_VN8｜商宽｜非常安全
+  name: X_VN17｜商宽｜非常安全
   network: tcp
   port: '43528'
   server: faq1.lieerr222.cn
   tls: false
   type: vmess
-  uuid: eb9c50e3-a4b5-4fcf-8023-3abdededd9ef
+  uuid: 38cba758-a831-4869-a4b5-e1410a798c16
+- alterId: 0
+  cipher: auto
+  name: X_HK35｜机房｜低风险
+  network: ws
+  port: '2053'
+  server: youxuan.513514.xyz
+  servername: afeicloudhk.54141528.xyz
+  tls: true
+  type: vmess
+  uuid: de0c4b78-82d5-4f30-8d57-5302748b6af9
+  ws-opts:
+    headers:
+      Host: afeicloudhk.54141528.xyz
+    path: /hk
+- alterId: 2
+  cipher: auto
+  name: X_HK43｜家宽｜非常安全
+  network: ws
+  port: '80'
+  server: cedba343-t94cg0-t9lm1q-1p1b.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 279b8588-616b-11ed-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: X_AU1｜机房｜低风险
+  network: ws
+  port: '443'
+  server: sy4.620720.xyz
+  servername: sy4.620720.xyz
+  tls: true
+  type: vmess
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  ws-opts:
+    headers:
+      Host: sy4.620720.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: X_JP39｜机房｜低风险
+  network: ws
+  port: '8443'
+  server: t1.620720.xyz
+  servername: t1.620720.xyz
+  tls: true
+  type: vmess
+  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
+  ws-opts:
+    headers:
+      Host: t1.620720.xyz
+    path: /
+- alterId: 2
+  cipher: auto
+  name: X_HK44｜家宽｜非常安全
+  network: ws
+  port: '80'
+  server: e3c7f60e-t8pj40-t9b2j8-11p9g.hkt.gotochinatown.net
+  tls: false
+  type: vmess
+  uuid: 384d1b42-655f-11ed-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- name: X_FR4｜机房｜低风险
+  network: tcp
+  password: af4b064a9c39472fb34ad8b113acdc6b
+  port: 443
+  server: 162.19.10.218
+  skip-cert-verify: true
+  sni: 162.19.10.218
+  type: trojan
+  cipher: auto
+- name: X_NL31｜机房｜低风险
+  network: tcp
+  password: af4b064a9c39472fb34ad8b113acdc6b
+  port: 443
+  server: 5.180.79.168
+  skip-cert-verify: true
+  sni: 5.180.79.168
+  type: trojan
+  cipher: auto
+- name: X_LU1｜商宽｜非常安全
+  network: tcp
+  password: af4b064a9c39472fb34ad8b113acdc6b
+  port: 443
+  server: 45.12.144.61
+  skip-cert-verify: true
+  sni: 45.12.144.61
+  type: trojan
+  cipher: auto
 - alterId: 2
   cipher: auto
   name: X_🇭🇰 香港|@ripaojiedian
@@ -2246,49 +2404,60 @@ proxy-groups:
   strategy: consistent-hashing
   proxies:
   - X_BY_speednode_0001
-  - X_CH_speednode_0002
-  - X_CH_speednode_0003
-  - X_CY_speednode_0004
-  - X_DE_speednode_0005
-  - X_FR_speednode_0006
-  - X_FR_speednode_0007
-  - X_FR_speednode_0008
-  - X_FR_speednode_0009
-  - X_FR_speednode_0010
-  - X_GB_speednode_0011
-  - X_HK_speednode_0012
-  - X_IQ_speednode_0013
-  - X_KR_speednode_0014
-  - X_NL_speednode_0015
-  - X_NL_speednode_0016
-  - X_NL_speednode_0017
-  - X_RU_speednode_0018
-  - X_RU_speednode_0019
-  - X_SI_speednode_0020
+  - X_FI_speednode_0003
+  - X_FI_speednode_0004
+  - X_FR_speednode_0005
+  - X_GB_speednode_0006
+  - X_GB_speednode_0007
+  - X_GB_speednode_0008
+  - X_GR_speednode_0009
+  - X_IQ_speednode_0010
+  - X_KR_speednode_0011
+  - X_RU_speednode_0012
+  - X_RU_speednode_0013
+  - X_RU_speednode_0014
+  - X_RU_speednode_0015
+  - X_RU_speednode_0016
+  - X_SC_speednode_0017
+  - X_SG_speednode_0018
+  - X_US_speednode_0019
+  - X_US_speednode_0020
   - X_US_speednode_0021
   - X_US_speednode_0022
   - X_US_speednode_0023
   - X_US_speednode_0024
-  - X_SC1｜原生/疑似家宽｜非常安全
-  - X_DE38｜机房｜高风险 (黑名单)
-  - X_US8｜机房｜低风险
-  - X_US16｜机房｜低风险
-  - X_US19｜机房｜低风险
-  - X_US22｜机房｜低风险
-  - X_US25｜机房｜低风险
-  - X_US28｜机房｜低风险
-  - X_US31｜机房｜低风险
-  - X_JP1｜机房｜低风险
-  - X_US49｜机房｜低风险
-  - X_FR8｜机房｜低风险
-  - X_HK50｜原生/疑似家宽｜非常安全
-  - X_US84｜原生/疑似家宽｜非常安全
-  - X_US94｜机房｜低风险
-  - X_US117｜机房｜低风险
-  - X_TR1｜商宽｜非常安全
-  - X_DE40｜机房｜低风险
-  - X_US109｜机房｜低风险
-  - X_VN8｜商宽｜非常安全
+  - X_US_speednode_0025
+  - X_US_speednode_0026
+  - X_US_speednode_0027
+  - X_US_speednode_0028
+  - X_US_speednode_0029
+  - X_US_speednode_0030
+  - X_US_speednode_0031
+  - X_US_speednode_0032
+  - X_US_speednode_0034
+  - X_US_speednode_0035
+  - X_US_speednode_0036
+  - X_US_speednode_0037
+  - X_US_speednode_0038
+  - X_DE13｜机房｜低风险
+  - X_US82｜机房｜低风险
+  - X_IN5｜机房｜低风险
+  - X_US131｜机房｜低风险
+  - X_US137｜机房｜低风险
+  - X_US141｜机房｜低风险
+  - X_US145｜机房｜低风险
+  - X_US149｜机房｜低风险
+  - X_US165｜机房｜低风险
+  - X_HK18｜家宽｜非常安全
+  - X_VN17｜商宽｜非常安全
+  - X_HK35｜机房｜低风险
+  - X_HK43｜家宽｜非常安全
+  - X_AU1｜机房｜低风险
+  - X_JP39｜机房｜低风险
+  - X_HK44｜家宽｜非常安全
+  - X_FR4｜机房｜低风险
+  - X_NL31｜机房｜低风险
+  - X_LU1｜商宽｜非常安全
   - X_🇭🇰 香港|@ripaojiedian
   - X_香港3|@ripaojiedian
   - X_香港4|@ripaojiedian
