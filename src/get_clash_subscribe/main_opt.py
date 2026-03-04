@@ -126,21 +126,28 @@ def process_proxies(content):
         if is_local_server(proxy['server']):
             continue
 
-        # 3. Fix missing cipher
+        # 3. Filter reality-opts without short-id
+        if 'reality-opts' in proxy:
+            reality_opts = proxy.get('reality-opts', {})
+            if 'short-id' not in reality_opts or not reality_opts['short-id']:
+                logging.warning(f"Filtered proxy {proxy.get('name', 'unknown')}: reality-opts missing short-id")
+                continue
+
+        # 4. Fix missing cipher
         if 'cipher' not in proxy or not proxy['cipher']:
             proxy['cipher'] = 'auto'
 
-        # 4. Clean name: remove non-printable characters
+        # 5. Clean name: remove non-printable characters
         clean_name = "".join(ch for ch in str(proxy['name']) if ch.isprintable()).strip()
         if not clean_name:
             continue
         proxy['name'] = clean_name
             
-        # 5. Filter unwanted names
+        # 6. Filter unwanted names
         if any(kw in proxy['name'] for kw in filter_keywords):
             continue
             
-        # 6. Rename to avoid collisions
+        # 7. Rename to avoid collisions
         proxy['name'] = f"X_{proxy['name']}"
         valid_proxies.append(proxy)
         
