@@ -190,14 +190,30 @@ def remove_duplicate_proxies(proxies):
             
     return unique_proxies
 
+def filter_reality_opts_proxies(proxies):
+    """Filter out proxies that have reality-opts but missing short-id."""
+    filtered = []
+    for proxy in proxies:
+        if 'reality-opts' in proxy:
+            reality_opts = proxy.get('reality-opts', {})
+            if 'short-id' not in reality_opts or not reality_opts['short-id']:
+                logging.warning(f"Filtered proxy {proxy.get('name', 'unknown')}: reality-opts missing short-id")
+                continue
+        filtered.append(proxy)
+    return filtered
+
 def merge_proxies_to_config(config, lb_proxies, auto_proxies):
     """Merge proxies into the main configuration logic."""
     
-    # 1. Update Proxy List
+    # 1. Filter and Update Proxy List
     original_proxies = config.get('proxies', [])
     if original_proxies is None:
         original_proxies = []
-        
+    
+    # Filter original proxies for reality-opts without short-id
+    original_proxies = filter_reality_opts_proxies(original_proxies)
+    logging.info(f"Filtered original proxies: {len(original_proxies)} remaining")
+    
     # Add both sets of proxies to the main list
     original_proxies.extend(lb_proxies)
     original_proxies.extend(auto_proxies)
