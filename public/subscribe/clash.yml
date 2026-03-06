@@ -254,10 +254,11 @@ proxies:
   cipher: auto
 - alterId: 2
   cipher: auto
-  name: X_🇭🇰 香港|@ripaojiedian
-  port: 30807
+  name: X_香港|@ripaojiedian
+  network: tcp
+  port: '30807'
   server: v10.hdacd.com
-  skip-cert-verify: false
+  servername: ''
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
@@ -266,7 +267,6 @@ proxies:
   password: f7dbed8b1ca85124e793ba6c0bcfd0db
   port: 443
   server: 58.152.18.189
-  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
   cipher: auto
@@ -302,7 +302,6 @@ proxies:
   password: f7dbed8b1ca85124e793ba6c0bcfd0db
   port: 34818
   server: 54.250.6.236
-  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
   cipher: auto
@@ -311,7 +310,6 @@ proxies:
   password: f7dbed8b1ca85124e793ba6c0bcfd0db
   port: 4937
   server: 13.114.100.13
-  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
   cipher: auto
@@ -335,31 +333,57 @@ proxies:
   cipher: auto
 - name: X_电报群：https://t.me/vvkj11
   type: vless
-  server: 185.248.33.27
+  server: hk1.miyazono-kaori.com
   port: 443
-  uuid: 0a0d8e6f-8747-4ff6-afe0-e70aa97e7de8
-  servername: finance.yahoo.com
+  uuid: f6c7016b-6f94-4a32-975c-013f2494d312
+  servername: www.microsoft.com
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   reality-opts:
-    public-key: 1LHMePKT5PP9F9WQ1HhZUWZlrK2p9AW_sUwKNfO4ZC0
-    short-id: dd8ca121bb77dad9
+    public-key: JEH14p4YvGvmDdBct-yekywfh8xcbbHjTBoBteh_qSs
+    short-id: 7538ac
   cipher: auto
 - name: X_每天更新，请加电报群防止失联
   type: vless
-  server: 78.159.131.16
+  server: tw1.miyazono-kaori.com
   port: 443
-  uuid: 400c1f85-9d3a-444a-8a50-81b11f3b4c20
-  servername: alb.denditop.site
+  uuid: 726dd73e-e06b-4665-a2c6-38a2277c499b
+  servername: www.apple.com
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: random
+  client-fingerprint: chrome
   reality-opts:
-    public-key: BxD77zyPkOaShiNfOkRbbJvpmSzFHIKx4xhhLR4PSQU
-    short-id: 9c2378562188c3cb
+    public-key: KJgODVMTQcncG_l1ZCDhzn8gEgMU2YRl2Yw2je6moWY
+    short-id: c0d856ec
+  cipher: auto
+- name: X_日期：03-06
+  type: vless
+  server: tw2.miyazono-kaori.com
+  port: 443
+  uuid: f6c7016b-6f94-4a32-975c-013f2494d312
+  servername: www.apple.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: cJc4dNsluJs9LimkkO6uVVafilOvr6H8Jx2uM9JnhEE
+    short-id: '129271'
   cipher: auto
 - name: X_免费VPN：https://tt.vg/gwaAy
+  type: vless
+  server: tw3.miyazono-kaori.com
+  port: 443
+  uuid: f6c7016b-6f94-4a32-975c-013f2494d312
+  servername: www.wistron.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: YpRldYiKUICUFKdAHhvvKip65u9EcV8IDcZHE3E6WUQ
+    short-id: 94f93da0fb16
+  cipher: auto
+- name: X_🇺🇸_美国
   type: vless
   server: 159.223.205.196
   port: 443
@@ -372,7 +396,98 @@ proxies:
     public-key: qKKK80HelRY6m3BxpQipcg2B09oMDA360saGZH2Us3w
     short-id: 0092e5714c4b8401
   cipher: auto
-- name: X_🇺🇸_美国
+- name: X_🇺🇸_美国_1
+  type: vless
+  server: us1.miyazono-kaori.com
+  port: 443
+  uuid: f6c7016b-6f94-4a32-975c-013f2494d312
+  servername: download-porter.hoyoverse.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: MrVc8uqpwhoXwJXD-2rOkZp-gXyIH15mYx0noP7joxM
+    short-id: 014c5bef3f
+  cipher: auto
+- name: X_🇺🇸_美国_2
+  type: vless
+  server: us2.miyazono-kaori.com
+  port: 443
+  uuid: f6c7016b-6f94-4a32-975c-013f2494d312
+  servername: download-porter.hoyoverse.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: OIVDQIpAT0W0VQ5E8qHlBZjXtcPOxrbWpx3CxN5L-iQ
+    short-id: 2714177825354e
+  cipher: auto
+- name: X_🇬🇧_英国
+  type: vless
+  server: uk1.miyazono-kaori.com
+  port: 443
+  uuid: f6c7016b-6f94-4a32-975c-013f2494d312
+  servername: www.bp.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: _dsOu_vxEU7pY3sIeGJxIpR0Ac2KoqIyBor2Bx0CwGA
+    short-id: d923
+  cipher: auto
+- name: X_🇺🇸_美国_4
+  type: vless
+  server: us4.miyazono-kaori.com
+  port: 443
+  uuid: f6c7016b-6f94-4a32-975c-013f2494d312
+  servername: download-porter.hoyoverse.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: YphMgjDVmVZ61e0Mk-zN-U6g7J8GYJ54Fu-6jWspLCM
+    short-id: df87bd8692334e
+  cipher: auto
+- name: X_🇳🇱_荷兰
+  type: vless
+  server: nl1.miyazono-kaori.com
+  port: 443
+  uuid: 726dd73e-e06b-4665-a2c6-38a2277c499b
+  servername: www.philips.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: AFQAIB5u9Uu6nf9fkP1BdcSHivSuUv97l4FH-LoFYgw
+    short-id: 92dca6
+  cipher: auto
+- name: X_🇳🇱_荷兰_1
+  type: vless
+  server: nl2.miyazono-kaori.com
+  port: 443
+  uuid: f6c7016b-6f94-4a32-975c-013f2494d312
+  servername: www.philips.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: Ncb78PVwvwU2tB1eiOlJd0ZCG2CbqG7-dPIHztlq2yM
+    short-id: 69cc4c0d5e
+  cipher: auto
+- name: X_🇭🇺_匈牙利
+  type: vless
+  server: 217.13.105.19
+  port: 5443
+  uuid: 928beba1-eef6-478a-b06f-db6bc020e078
+  servername: api-maps.yandex.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: RVs7ZIQ7v3MIiCru0IttBEoTSrln5Au_8aSmyJq8pjM
+    short-id: 5cae63084b3281f3
+  cipher: auto
+- name: X_🇺🇸_美国_5
   type: vless
   server: 143.20.236.51
   port: 443
@@ -385,7 +500,277 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   cipher: auto
-- name: X_🇺🇸_美国_1
+- name: X_🇭🇺_匈牙利_1
+  type: vless
+  server: 217.13.105.1
+  port: 443
+  uuid: 928beba1-eef6-478a-b06f-db6bc020e078
+  servername: eh.vk.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: ZGwYjRp5RxlVpHUTPzi7pB4ZZuDU5FZEaFgBM71teiQ
+    short-id: 0669a3e6b300d069
+  cipher: auto
+- name: X_🇬🇧_英国_2
+  type: vless
+  server: uk2.miyazono-kaori.com
+  port: 443
+  uuid: f6c7016b-6f94-4a32-975c-013f2494d312
+  servername: www.bp.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: QdYs12kmf0mAXNOEPgMpLN5dbZUlgvRK2zCqynOmqBk
+    short-id: '20'
+  cipher: auto
+- name: X_🇨🇳_中国
+  type: vmess
+  server: 103.181.164.237
+  port: 34114
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: X_🇨🇳_中国_1
+  type: vmess
+  server: v8.hdacd.com
+  port: 30808
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: X_🇨🇳_中国_2
+  type: vmess
+  server: v36.hdacd.com
+  port: 30836
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: X_🇨🇳_中国_3
+  type: vmess
+  server: v29.hdacd.com
+  port: 30829
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: X_🇨🇳_中国_4
+  type: vmess
+  server: v30.hdacd.com
+  port: 30830
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: X_🇹🇼_中国台湾省_1
+  type: trojan
+  server: 220.130.58.136
+  port: 35501
+  password: 66c62e1a-8037-4154-ad0b-7a0ec415f46c
+  sni: green2.cdntencentmusic.com
+  skip-cert-verify: false
+  tls: true
+  cipher: auto
+- name: X_🇸🇮_斯洛文尼亚
+  type: vless
+  server: 45.144.53.13
+  port: 443
+  uuid: bf77f272-4220-4655-ab76-5ccdf0d2a60f
+  servername: fl.raketa-balance.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: JaP4bhvIMW-l7T0_RkLra59DeBYI6W9XemKa8MyRPSY
+    short-id: 6c6082a2223c1d03
+  cipher: auto
+- name: X_🇹🇼_中国台湾省_2
+  type: trojan
+  server: green2.cdntencentmusic.com
+  port: 35501
+  password: 11cfbea5-eae4-4654-8aa9-a9481f38dc42
+  sni: green2.cdntencentmusic.com
+  skip-cert-verify: false
+  tls: true
+  cipher: auto
+- name: X_🇯🇵_日本
+  type: vless
+  server: jp.cdn.stun.su
+  port: 443
+  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+  servername: jp.cdn.stun.su
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 2Q0J_OPL73qhEIYf3YBLCuY4RIBurgz5QDVchQ8e9ks
+    short-id: f189d91760bb6663
+  cipher: auto
+- name: X_🇯🇵_日本_1
+  type: vless
+  server: 176.97.71.171
+  port: 443
+  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+  servername: jp.cdn.stun.su
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 2Q0J_OPL73qhEIYf3YBLCuY4RIBurgz5QDVchQ8e9ks
+    short-id: f189d91760bb6663
+  cipher: auto
+- name: X_🇫🇷_法国
+  type: vless
+  server: 51.158.206.97
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  servername: fuck.rkn
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  cipher: auto
+- name: X_🇫🇷_法国_1
+  type: vless
+  server: 51.158.206.8
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  servername: fuck.rkn
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  cipher: auto
+- name: X_🇬🇧_英国_4
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: X_🇫🇷_法国_2
+  type: vless
+  server: 51.158.206.86
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  servername: fuck.rkn
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  cipher: auto
+- name: X_🇫🇷_法国_3
+  type: vless
+  server: 51.158.151.24
+  port: 31727
+  uuid: a02e0f63-d96e-4b0f-8270-56c28caef171
+  tls: false
+  cipher: auto
+- name: X_🇷🇺_俄罗斯
+  type: vless
+  server: 90.156.255.198
+  port: 51114
+  uuid: 8b575b35-3c7c-42b0-ac80-2aa6b0d7717c
+  servername: yahoo.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: lf7NJGZAcj3b-YdbsmD6oEISr0dZRjp_gM8ZhLHwb0U
+    short-id: 772e
+  cipher: auto
+- name: X_🇪🇸_西班牙
+  type: vless
+  server: us.netvora.space
+  port: 443
+  uuid: 2baffe9c-099d-481b-8d9c-7eb351c9bf35
+  servername: us.netvora.space
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: qq
+  reality-opts:
+    public-key: OyMR_bsXbxfwuJ6HCtDOisl2Xf78RWYZXbaXb3CEiks
+    short-id: d513ea7473969a0a
+  cipher: auto
+- name: X_🇫🇷_法国_4
+  type: vless
+  server: 57.129.49.1
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  servername: fuck.rkn
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
+  cipher: auto
+- name: X_🇷🇺_俄罗斯_1
+  type: vless
+  server: 83.222.20.64
+  port: 17910
+  uuid: 079c1b04-7ef9-4c49-8a7a-849a18ba7b9b
+  servername: yahoo.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: KUhrhiJBplVCVCrAKP2KjIA_asOgkkvEEAxUJVofjgc
+    short-id: 8c09fb78b12f
+  cipher: auto
+- name: X_🇵🇱_波兰
+  type: vless
+  server: 178.250.191.11
+  port: 34045
+  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+    short-id: e8ab71d0
+  cipher: auto
+- name: X_🇺🇸_美国_7
+  type: vless
+  server: 74.48.142.49
+  port: 20299
+  uuid: 2e0c37cf-d746-4264-89c6-76df8995218f
+  servername: apple.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: dMSJb9t_gfHkMT9sQGSAjxVcX_Vc-JUSihPyd9JPNzc
+    short-id: 1a3236d7
+  cipher: auto
+- name: X_🇨🇳_中国_5
+  type: vmess
+  server: v12.hdacd.com
+  port: 30812
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: X_🇺🇸_美国_8
   type: vless
   server: dns.dressforida.monster
   port: 443
@@ -398,240 +783,226 @@ proxies:
     public-key: 4YLfHf90V012Oyd2wHbwAXaJNvNUGrKWmatTKc165U8
     short-id: 174c6cf22e22
   cipher: auto
-- name: X_🇷🇺_俄罗斯
+- name: X_🇦🇺_澳大利亚
+  type: vmess
+  server: 94.232.247.165
+  port: 45653
+  uuid: 9e91d19a-c73f-4276-adbc-b337c374259c
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: X_🇱🇹_立陶宛
   type: vless
-  server: nr-01.opsvpnvless.ru
+  server: 7.cdnconn.com
+  port: 23335
+  uuid: e384913f-8863-47b4-8858-a84b68abb4a6
+  servername: icloud.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 7Gi8eiUU9TIVbGuvSU16gl5-Aqt7tcCSB9x6CSxyvik
+    short-id: 67b1e94e4dd1ef90
+  cipher: auto
+- name: X_🇬🇧_英国_5
+  type: vless
+  server: nl.crunch-crunch.com
   port: 443
-  uuid: 1218c022-dca8-49e5-b7d4-a04f3023db81
-  servername: stats.vk-portal.net
+  uuid: 95be7de0-2394-47b8-aa2c-27773d61807f
+  servername: nl.crunch-crunch.com
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   reality-opts:
-    public-key: 2ryk_zFs_pzxv-bL9FkOk0Jb5oQw1jAbyXjp6oh96R0
-    short-id: 4e249e62
+    public-key: djTtGqd0XWqtt_WHukU7BTPQSn9o7gIpAosAxMy8tUo
+    short-id: ea1058117be12087
   cipher: auto
-- name: X_🇫🇮_芬兰
-  type: vless
-  server: 78.153.139.68
-  port: 8443
-  uuid: fd8972d7-cf5e-11f0-9970-45e1d80c4039
-  servername: images.apple.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: pekfYPV5U8EjfQ4_zS5c6I2NnOZ2jUlyMGAWa4FWPF4
-    short-id: 58c512b4422e2517
-  cipher: auto
-- name: X_🇮🇷_伊朗
-  type: vless
-  server: 31.57.28.209
-  port: 8443
-  uuid: 9a63b59c-5e54-437a-b7a1-2788780a7c13
-  servername: retn.net
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: qBcUlVqkzWxGORpDCj_FcNHACi3mrAYTCZeJyVQa5yU
-    short-id: 6b374e33af12fd1e
-  cipher: auto
-- name: X_🇺🇸_美国_4
-  type: vless
-  server: us-01.vitalik.space
+- name: X_🇺🇸_美国_9
+  type: vmess
+  server: 165.140.216.141
   port: 443
-  uuid: 2478528e-ecad-4134-a7cc-878f08a76865
-  servername: us-01.vitalik.space
+  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: X_🇫🇷_法国_5
+  type: vmess
+  server: 162.19.248.238
+  port: 550
+  uuid: ede27a79-b039-490b-932c-495de4b68880
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: X_🇦🇺_澳大利亚_1
+  type: vmess
+  server: 94.232.247.164
+  port: 44030
+  uuid: 22c396a3-95da-4be8-beef-834d17d75784
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: X_🇨🇿_捷克
+  type: vless
+  server: eespeed.netvora.space
+  port: 443
+  uuid: 2baffe9c-099d-481b-8d9c-7eb351c9bf35
+  servername: eespeed.netvora.space
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: qq
+  reality-opts:
+    public-key: Y02bCuiAW7DYXIvuW0NngdcPgnhbYmf9Y6QuRMZufUQ
+    short-id: b69999829aa1b67e
+  cipher: auto
+- name: X_🇷🇴_罗马尼亚
+  type: vless
+  server: crghxqxyoy-518237151-direct.bahame.co
+  port: 443
+  uuid: 31922c21-4292-5183-8e3b-52341ed80660
+  servername: crghxqxyoy-518237151-direct.bahame.co
+  tls: true
+  flow: xtls-rprx-vision
+  cipher: auto
+- name: X_🇦🇺_澳大利亚_2
+  type: vless
+  server: 82.97.243.225
+  port: 443
+  uuid: ccedb1b1-35f3-46d1-a85a-c699eef5f3e1
+  servername: spb.scroogethebest.com
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   reality-opts:
-    public-key: 0avHPgwKcQEgcKbhMAoO6NR8vj90Gw2NGzWqg37cMkQ
-    short-id: 7291f48ae856f540
+    public-key: C3hc32Cknec2shasKJIH2DYVb7Fyu64RF9v71L3ipEg
+    short-id: 9c2378562188c3cb
   cipher: auto
-- name: X_🇭🇰_香港
+- name: X_🇵🇱_波兰_1
   type: vless
-  server: aws.xn--9kqp42aims.top
-  port: 1314
-  uuid: 07043942-12a4-4f28-b4a8-f7509bad7931
-  servername: buylite.music.apple.com
+  server: 77.83.245.189
+  port: 27414
+  uuid: 94712dd9-17d8-4813-a118-cc487fadd137
+  servername: yandex.ru
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: edge
+  client-fingerprint: chrome
   reality-opts:
-    public-key: fbABzUObM1ehY0C9V83p34p8ah9w2s4lDrdAiXdzGxI
-    short-id: 4b070735
+    public-key: eiA4uP7O29DoX6lvwhjaIXPTANlwvPB1Jzom_V2Z5gE
+    short-id: 1ba8b4cd54627171
   cipher: auto
-- name: X_🇭🇰_香港_1
+- name: X_🇦🇹_奥地利
   type: vless
-  server: hkt-home.xn--9kqp42aims.top
-  port: 1000
-  uuid: 07043942-12a4-4f28-b4a8-f7509bad7931
-  servername: buylite.music.apple.com
+  server: 152.53.66.46
+  port: 443
+  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+  servername: at.jojack.ru
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: edge
+  client-fingerprint: chrome
   reality-opts:
-    public-key: fbABzUObM1ehY0C9V83p34p8ah9w2s4lDrdAiXdzGxI
-    short-id: 4b070735
+    public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
+    short-id: 8dc4fccb2bcfc99d
   cipher: auto
-- name: X_🇭🇰_香港_2
+- name: X_🇪🇸_西班牙_1
   type: vless
-  server: hkt.xn--9kqp42aims.top
-  port: 20519
-  uuid: 07043942-12a4-4f28-b4a8-f7509bad7931
-  servername: buylite.music.apple.com
+  server: 45.12.150.145
+  port: 15470
+  uuid: ecc97810-557a-44ef-9957-ba078d0ac414
+  servername: yahoo.com
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: edge
+  client-fingerprint: chrome
   reality-opts:
-    public-key: fbABzUObM1ehY0C9V83p34p8ah9w2s4lDrdAiXdzGxI
-    short-id: 4b070735
+    public-key: Io59wtB0RP01ty3SWv8Hn-z84vrckaEPVJi6SRBqFXY
+    short-id: e08a28
   cipher: auto
-- name: X_🇭🇰_香港_4
+- name: X_🇮🇱_以色列
   type: vless
-  server: hkt1.xn--9kqp42aims.top
-  port: 20417
-  uuid: 07043942-12a4-4f28-b4a8-f7509bad7931
-  servername: buylite.music.apple.com
+  server: israel.youtuber-vps.com
+  port: 443
+  uuid: 20a70054-8d93-4c8c-b8f0-d1113f431daf
+  servername: israel.youtuber-vps.com
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: edge
+  client-fingerprint: chrome
   reality-opts:
-    public-key: fbABzUObM1ehY0C9V83p34p8ah9w2s4lDrdAiXdzGxI
-    short-id: 4b070735
+    public-key: NORopwdahIs7ay8UsSLKaDs3alkPhYl6fIMWPgjTSwY
+    short-id: b95d09fc94955ba4
   cipher: auto
-- name: X_🇹🇼_中国台湾省
+- name: X_🇦🇹_奥地利_1
   type: vless
-  server: hinet3.xn--9kqp42aims.top
-  port: 20519
-  uuid: 07043942-12a4-4f28-b4a8-f7509bad7931
-  servername: buylite.music.apple.com
+  server: at.jojack.ru
+  port: 443
+  uuid: eb071647-72a6-46be-8e89-ff3d228d52f6
+  servername: at.jojack.ru
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: edge
+  client-fingerprint: chrome
   reality-opts:
-    public-key: fbABzUObM1ehY0C9V83p34p8ah9w2s4lDrdAiXdzGxI
-    short-id: 4b070735
+    public-key: ca5sfJNcjkh3oNt51hRexXbGWgITAqCprGSU-YKCJBA
+    short-id: 8dc4fccb2bcfc99d
   cipher: auto
-- name: X_🇹🇼_中国台湾省_1
-  type: vless
-  server: hinet1.xn--9kqp42aims.top
-  port: 20200
-  uuid: 07043942-12a4-4f28-b4a8-f7509bad7931
-  servername: buylite.music.apple.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: edge
-  reality-opts:
-    public-key: fbABzUObM1ehY0C9V83p34p8ah9w2s4lDrdAiXdzGxI
-    short-id: 4b070735
-  cipher: auto
-- name: X_🇹🇼_中国台湾省_2
-  type: vless
-  server: hinet2.xn--9kqp42aims.top
-  port: 20280
-  uuid: 07043942-12a4-4f28-b4a8-f7509bad7931
-  servername: buylite.music.apple.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: edge
-  reality-opts:
-    public-key: fbABzUObM1ehY0C9V83p34p8ah9w2s4lDrdAiXdzGxI
-    short-id: 4b070735
-  cipher: auto
-- name: X_🇨🇳_中国
+- name: X_🇦🇪_阿联酋
   type: vmess
-  server: v12.hdacd.com
-  port: 30812
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  server: 89.31.120.192
+  port: 443
+  uuid: 44537595-9ccc-4b83-8936-5f9ad3229019
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: false
-- name: X_🇨🇳_中国_1
-  type: vmess
-  server: v36.hdacd.com
-  port: 30836
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
+- name: X_🇱🇻_拉脱维亚
+  type: vless
+  server: 94.131.104.229
+  port: 2040
+  uuid: 14818654-7689-453a-9a1f-4c72f89782d5
+  servername: tradingview.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1RJ2ulM9UyAC8PFy194dV0RTZI6xF6U4CGClhNz9fTg
+    short-id: 50ed6f6007515d63
   cipher: auto
-  tls: false
-  skip-cert-verify: false
-- name: X_🇬🇧_英国
+- name: X_🇺🇸_美国_10
   type: vmess
-  server: 82.198.246.97
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 172.233.229.91
+  port: 14102
+  uuid: 27ba87fc-583f-4763-9060-83cf0b9264db
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: false
-- name: X_🇨🇳_中国_2
-  type: vmess
-  server: 103.181.164.237
-  port: 34114
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
+- name: X_🇺🇸_美国_11
+  type: vless
+  server: 15.204.97.195
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  servername: fuck.rkn
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
   cipher: auto
-  tls: false
-  skip-cert-verify: false
-- name: X_🇨🇳_中国_3
-  type: vmess
-  server: v30.hdacd.com
-  port: 30830
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 0
+- name: X_🇺🇸_美国_12
+  type: vless
+  server: 15.204.97.216
+  port: 23576
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  servername: fuck.rkn
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+    short-id: '01'
   cipher: auto
-  tls: false
-  skip-cert-verify: false
-- name: X_🇨🇳_中国_5
-  type: vmess
-  server: v9.hdacd.com
-  port: 30809
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-- name: X_🇨🇳_中国_6
-  type: vmess
-  server: v33.hdacd.com
-  port: 30833
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-- name: X_🇨🇳_中国_14
-  type: vmess
-  server: v8.hdacd.com
-  port: 30808
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-- name: X_🇨🇳_中国_20
-  type: vmess
-  server: v29.hdacd.com
-  port: 30829
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-- name: X_🇨🇳_中国_34
-  type: vmess
-  server: v24.hdacd.com
-  port: 30824
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-- name: X_🇺🇸_美国_5
+- name: X_🇺🇸_美国_13
   type: vless
   server: 198.62.62.235
   port: 443
@@ -645,387 +1016,46 @@ proxies:
     headers:
       Host: bank.alaska-tigr.info
   cipher: auto
-- name: X_🇺🇸_美国_6
-  type: vless
-  server: 63.141.128.158
-  port: 443
-  uuid: 772bd54a-c493-4329-9bfb-7ffe4593c0bc
-  network: ws
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /ym/us1
-    headers:
-      Host: us1s.xn--mirrors-oj8km52txc7d.com
-  cipher: auto
-- name: X_🇫🇷_法国
-  type: vmess
-  server: 2001:bc8:32d7:302::10
-  port: 44579
-  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-    headers:
-      Host: AZERB.NET
-- name: X_🇺🇸_美国_12
-  type: vless
-  server: cf.877774.xyz
-  port: 443
-  uuid: 8ae7cac7-36f7-d208-367d-2322dcb73973
-  network: ws
-  servername: n518.kqa.eduin.indevs.in
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: n518.kqa.eduin.indevs.in
-  cipher: auto
-- name: X_🇸🇬_新加坡
-  type: vless
-  server: 8.223.63.150
-  port: 443
-  uuid: 8ae7cac7-36f7-d208-367d-2322dcb73973
-  network: ws
-  servername: dyj0.q78.eduin.indevs.in
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: dyj0.q78.eduin.indevs.in
-  cipher: auto
-- name: X_🇭🇰_香港_5
-  type: vless
-  server: 206.237.17.52
-  port: 443
-  uuid: 8ae7cac7-36f7-d208-367d-2322dcb73973
-  network: ws
-  servername: hwdc.h9a.edueu.dpdns.org
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: hwdc.h9a.edueu.dpdns.org
-  cipher: auto
-- name: X_🇭🇰_香港_6
-  type: vless
-  server: 43.161.217.205
-  port: 1443
-  uuid: 8ae7cac7-36f7-d208-367d-2322dcb73973
-  network: ws
-  servername: qtto.6xp.snl.cc.cd
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: qtto.6xp.snl.cc.cd
-  cipher: auto
-- name: X_🇭🇰_香港_7
-  type: vless
-  server: 223.16.138.113
-  port: 10002
-  uuid: 8ae7cac7-36f7-d208-367d-2322dcb73973
-  network: ws
-  servername: lq9z.qfn.snl.cc.cd
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: lq9z.qfn.snl.cc.cd
-  cipher: auto
-- name: X_🇭🇰_香港_8
-  type: vless
-  server: 45.121.138.23
-  port: 26688
-  uuid: 8ae7cac7-36f7-d208-367d-2322dcb73973
-  network: ws
-  servername: ehy4.xcl.eduin.indevs.in
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: ehy4.xcl.eduin.indevs.in
-  cipher: auto
-- name: X_🇭🇰_香港_9
-  type: vless
-  server: 125.59.175.7
-  port: 60006
-  uuid: 8ae7cac7-36f7-d208-367d-2322dcb73973
-  network: ws
-  servername: j4fk.dvs.edukg.dpdns.org
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: j4fk.dvs.edukg.dpdns.org
-  cipher: auto
-- name: X_🇭🇰_香港_10
-  type: vless
-  server: 123.254.106.203
-  port: 443
-  uuid: 8ae7cac7-36f7-d208-367d-2322dcb73973
-  network: ws
-  servername: w5xo.gc7.snl.cc.cd
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: w5xo.gc7.snl.cc.cd
-  cipher: auto
-- name: X_🇲🇾_马来西亚
-  type: vless
-  server: 154.83.86.98
-  port: 55443
-  uuid: 8ae7cac7-36f7-d208-367d-2322dcb73973
-  network: ws
-  servername: m4pp.5f3.edueu.dpdns.org
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: m4pp.5f3.edueu.dpdns.org
-  cipher: auto
-- name: X_🇭🇰_香港_11
-  type: vless
-  server: 58.176.95.46
-  port: 443
-  uuid: 8ae7cac7-36f7-d208-367d-2322dcb73973
-  network: ws
-  servername: gb2t.ake.eduin.indevs.in
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: gb2t.ake.eduin.indevs.in
-  cipher: auto
-- name: X_🇭🇰_香港_12
-  type: vless
-  server: 103.194.107.166
-  port: 443
-  uuid: 8ae7cac7-36f7-d208-367d-2322dcb73973
-  network: ws
-  servername: gb2t.ake.eduin.indevs.in
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: gb2t.ake.eduin.indevs.in
-  cipher: auto
-- name: X_🇰🇷_韩国
-  type: vless
-  server: 3.39.228.46
-  port: 443
-  uuid: 8ae7cac7-36f7-d208-367d-2322dcb73973
-  network: ws
-  servername: ie00.gnu.edukg.dpdns.org
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: ie00.gnu.edukg.dpdns.org
-  cipher: auto
-- name: X_🇰🇷_韩国_1
-  type: vless
-  server: 211.48.77.114
-  port: 12312
-  uuid: 8ae7cac7-36f7-d208-367d-2322dcb73973
-  network: ws
-  servername: m4pp.5f3.edueu.dpdns.org
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: m4pp.5f3.edueu.dpdns.org
-  cipher: auto
-- name: X_🇰🇷_韩国_2
-  type: vless
-  server: 121.152.46.7
-  port: 10243
-  uuid: 8ae7cac7-36f7-d208-367d-2322dcb73973
-  network: ws
-  servername: n518.kqa.eduin.indevs.in
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: n518.kqa.eduin.indevs.in
-  cipher: auto
-- name: X_🇰🇷_韩国_3
-  type: vless
-  server: 112.168.144.172
-  port: 20256
-  uuid: 8ae7cac7-36f7-d208-367d-2322dcb73973
-  network: ws
-  servername: sb9e.9kx.edueu.dpdns.org
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: sb9e.9kx.edueu.dpdns.org
-  cipher: auto
-- name: X_🇰🇷_韩国_4
-  type: vless
-  server: 59.187.250.47
-  port: 18091
-  uuid: 8ae7cac7-36f7-d208-367d-2322dcb73973
-  network: ws
-  servername: dyj0.q78.eduin.indevs.in
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: dyj0.q78.eduin.indevs.in
-  cipher: auto
-- name: X_🇰🇷_韩国_5
-  type: vless
-  server: 61.106.187.201
-  port: 12426
-  uuid: 8ae7cac7-36f7-d208-367d-2322dcb73973
-  network: ws
-  servername: 2hm0.wea.edukg.dpdns.org
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: 2hm0.wea.edukg.dpdns.org
-  cipher: auto
-- name: X_🇰🇷_韩国_6
-  type: vless
-  server: 125.142.163.239
-  port: 14873
-  uuid: 8ae7cac7-36f7-d208-367d-2322dcb73973
-  network: ws
-  servername: fvso.9zz.snl.cc.cd
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: fvso.9zz.snl.cc.cd
-  cipher: auto
-- name: X_🇰🇷_韩国_7
-  type: vless
-  server: 222.106.133.238
-  port: 10200
-  uuid: 8ae7cac7-36f7-d208-367d-2322dcb73973
-  network: ws
-  servername: fvso.9zz.snl.cc.cd
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: fvso.9zz.snl.cc.cd
-  cipher: auto
-- name: X_🇰🇷_韩国_8
-  type: vless
-  server: 125.130.209.159
-  port: 10256
-  uuid: 8ae7cac7-36f7-d208-367d-2322dcb73973
-  network: ws
-  servername: ie00.gnu.edukg.dpdns.org
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: ie00.gnu.edukg.dpdns.org
-  cipher: auto
-- name: X_🇰🇷_韩国_9
-  type: vless
-  server: 1.221.122.2
-  port: 50000
-  uuid: 8ae7cac7-36f7-d208-367d-2322dcb73973
-  network: ws
-  servername: p4hv.46y.eduin.indevs.in
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: p4hv.46y.eduin.indevs.in
-  cipher: auto
-- name: X_🇺🇸_美国_13
-  type: vless
-  server: 198.62.62.124
-  port: 443
-  uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-  network: ws
-  servername: war.connecticut-haloo.info
-  tls: true
-  ws-opts:
-    path: /love
-    headers:
-      Host: war.connecticut-haloo.info
-  cipher: auto
-- name: X_🇬🇧_英国_43
-  type: vless
-  server: 5.178.110.202
-  port: 2053
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
 - name: X_🇺🇸_美国_14
-  type: vless
-  server: 45.145.42.170
-  port: 8005
-  uuid: 00000000-0000-4000-8000-000000000000
-  network: ws
-  servername: mg7w1wjw8ak76znl5defo0678z.saghv.filegear-sg.me
-  tls: true
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mg7w1wjw8ak76znl5defo0678z.saghv.filegear-sg.me
-  cipher: auto
-- name: X_🇺🇸_美国_15
-  type: vless
-  server: www.shopify.com
-  port: 2087
-  uuid: 77777777-6663-4ef2-b26b-ed2d70642678
-  network: ws
-  servername: xsfvxv55x1.fx03.ccwu.cc
-  tls: true
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: xsfvxv55x1.fx03.ccwu.cc
-  cipher: auto
-- name: X_🇺🇸_美国_16
-  type: vless
-  server: 198.62.62.248
-  port: 443
-  uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-  network: ws
-  servername: tar.alabama-tigr.info
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /love
-    headers:
-      Host: tar.alabama-tigr.info
-  cipher: auto
-- name: X_🇪🇸_西班牙
   type: trojan
-  server: 109.234.211.66
+  server: bestcdn3.868863.xyz
   port: 2087
-  password: trojan
-  sni: store.timimi.dpdns.org
+  password: a83d5fc6-0736-4898-b14c-e6ad0547b4e0
+  sni: 17727636828234.206352.xyz
   skip-cert-verify: false
   tls: true
   ws-opts:
-    path: /
+    path: /agraeabtegrrh
     headers:
-      Host: store.timimi.dpdns.org
+      Host: 17727636824897.206352.xyz
   cipher: auto
-- name: X_🇺🇸_美国_17
+- name: X_🇺🇸_美国_19
+  type: trojan
+  server: bestcdn4.868863.xyz
+  port: 2096
+  password: a83d5fc6-0736-4898-b14c-e6ad0547b4e0
+  sni: 17727636827679.206352.xyz
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /agraeabtegrrh
+    headers:
+      Host: 17727636826778.206352.xyz
+  cipher: auto
+- name: X_🇮🇷_伊朗
+  type: vless
+  server: 94.183.182.216
+  port: 2053
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇺🇸_美国_24
   type: trojan
   server: 167.68.4.199
   port: 2053
@@ -1038,263 +1068,10 @@ proxies:
     headers:
       Host: epge.muarua.filegear-sg.me
   cipher: auto
-- name: X_🇫🇷_法国_1
-  type: vmess
-  server: 2001:bc8:32d7:302::11
-  port: 44579
-  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-    headers:
-      Host: TABRIZ.NET
-- name: X_🇺🇸_美国_18
-  type: vless
-  server: 209.177.165.17
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇷🇺_俄罗斯_1
-  type: vless
-  server: 185.244.49.38
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇺🇸_美国_19
-  type: vmess
-  server: 130.250.137.199
-  port: 443
-  uuid: f08369d1-5ee7-4b16-d786-30bce12fc33c
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  servername: ous3.dean52.top
-  network: ws
-  ws-opts:
-    path: /f08369d1-5ee7-4b16-d786-30bce12fc33c
-    headers:
-      Host: ous3.dean52.top
-- name: X_🇺🇸_美国_20
-  type: vless
-  server: 143.20.160.195
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇯🇵_日本
-  type: vless
-  server: 109.123.231.212
-  port: 2053
-  uuid: 69a647a9-c60f-1366-ec63-1332eb2d2105
-  network: ws
-  servername: 6f221d78.mfree.ccwu.cc
-  tls: true
-  ws-opts:
-    path: /socks5=4b2c7676:6f0f4cbba5bb@38.111.30.111:26433
-    headers:
-      Host: 6f221d78.mfree.ccwu.cc
-  cipher: auto
-- name: X_🇩🇪_德国
-  type: vless
-  server: 185.110.189.174
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇸🇬_新加坡_1
-  type: vless
-  server: 213.35.100.31
-  port: 47112
-  uuid: 69a647a9-c60f-1366-ec63-1332eb2d2105
-  network: ws
-  servername: 6f221d78.mfree.ccwu.cc
-  tls: true
-  ws-opts:
-    path: /socks5=4b2c7676:6f0f4cbba5bb@38.111.30.111:26433
-    headers:
-      Host: 6f221d78.mfree.ccwu.cc
-  cipher: auto
-- name: X_🇬🇧_英国_44
-  type: vmess
-  server: 94.247.142.199
-  port: 443
-  uuid: f08369d1-5ee7-4b16-d786-30bce12fc33c
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /f08369d1-5ee7-4b16-d786-30bce12fc33c
-    headers:
-      Host: ous3.dean52.top
-- name: X_🇺🇸_美国_21
-  type: vless
-  server: ffgghjuuuuui.007770777.xyz
-  port: 443
-  uuid: 4ef1e946-aa74-4ce3-8875-4339a07d46aa
-  network: ws
-  servername: ffgghjuuuuui.007770777.xyz
-  tls: true
-  ws-opts:
-    path: /gswYtzBd52XmedI6YBH
-    headers:
-      Host: ffgghjuuuuui.007770777.xyz
-  cipher: auto
-- name: X_🇺🇸_美国_22
-  type: vless
-  server: 45.145.42.211
-  port: 2016
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇳🇱_荷兰
-  type: vless
-  server: 185.94.29.156
-  port: 4001
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇯🇵_日本_2
-  type: vless
-  server: 158.101.158.212
-  port: 80
-  uuid: 69a647a9-c60f-1366-ec63-1332eb2d2105
-  network: ws
-  servername: 6f221d78.mfree.ccwu.cc
-  tls: true
-  ws-opts:
-    path: /socks5=4b2c7676:6f0f4cbba5bb@38.111.30.111:26433
-    headers:
-      Host: 6f221d78.mfree.ccwu.cc
-  cipher: auto
-- name: X_🇺🇸_美国_24
-  type: vless
-  server: 143.20.213.77
-  port: 8443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇺🇸_美国_25
-  type: vmess
-  server: dcvbg67.0m0.ccwu.cc
-  port: 80
-  uuid: 0617025a-660d-40e3-9108-74611138dde5
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /vd2I8EQzt8xbgTRzxuv6d8
-    headers:
-      Host: dcvbg67.0m0.ccwu.cc
-- name: X_🇺🇸_美国_26
-  type: vmess
-  server: 198.62.62.199
-  port: 443
-  uuid: f08369d1-5ee7-4b16-d786-30bce12fc33c
-  alterId: 0
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /f08369d1-5ee7-4b16-d786-30bce12fc33c
-    headers:
-      Host: ous3.dean52.top
-- name: X_🇺🇸_美国_27
-  type: vless
-  server: 143.20.213.179
-  port: 8443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇪🇸_西班牙_2
-  type: vless
-  server: 185.236.26.30
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇺🇸_美国_28
-  type: vless
-  server: 143.20.213.193
-  port: 8443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
 - name: X_🇹🇼_中国台湾省_3
   type: vless
   server: 60.248.139.106
-  port: 10428
+  port: 23281
   uuid: 69a647a9-c60f-1366-ec63-1332eb2d2105
   network: ws
   servername: 6f221d78.mfree.ccwu.cc
@@ -1304,199 +1081,18 @@ proxies:
     headers:
       Host: 6f221d78.mfree.ccwu.cc
   cipher: auto
-- name: X_🇩🇪_德国_1
+- name: X_🇳🇬_尼日利亚
   type: vless
-  server: 64.238.203.99
-  port: 8443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇹🇼_中国台湾省_4
-  type: vless
-  server: 203.69.248.40
-  port: 10443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇯🇵_日本_3
-  type: vless
-  server: 153.121.45.101
+  server: 83.229.123.36
   port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
   network: ws
-  servername: sni.111000.dynv6.net
+  servername: 002.ljk-clouflare.dns.army
   tls: true
   ws-opts:
     path: /?ed=2560&Telegram🇨🇳@WangCai2
     headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇺🇸_美国_29
-  type: vless
-  server: nnmkki9.6no.ccwu.cc
-  port: 80
-  uuid: 5f6c3f92-7220-4275-b34d-57c04db3f967
-  network: ws
-  tls: false
-  ws-opts:
-    path: /F24D1rlC85bVBOSONBms
-    headers:
-      Host: nnmkki9.6no.ccwu.cc
-  cipher: auto
-- name: X_🇩🇪_德国_2
-  type: vless
-  server: 195.133.44.199
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇷🇴_罗马尼亚
-  type: vless
-  server: 188.241.241.123
-  port: 2053
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇩🇪_德国_3
-  type: vless
-  server: 91.107.242.69
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇷🇴_罗马尼亚_1
-  type: vless
-  server: 188.241.241.3
-  port: 2053
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇮🇷_伊朗_1
-  type: vless
-  server: 217.60.39.10
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇰🇷_韩国_10
-  type: vless
-  server: 132.145.84.148
-  port: 39567
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇵🇹_葡萄牙
-  type: vless
-  server: 45.12.133.190
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇷🇴_罗马尼亚_2
-  type: vless
-  server: 188.241.241.32
-  port: 2053
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇷🇺_俄罗斯_2
-  type: vless
-  server: 109.107.164.64
-  port: 8443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇬🇧_英国_46
-  type: vless
-  server: 195.200.17.63
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇬🇧_英国_47
-  type: vless
-  server: 195.200.17.21
-  port: 2053
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
+      Host: 002.ljk-clouflare.dns.army
   cipher: auto
 - name: X_🇹🇭_泰国
   type: vless
@@ -1511,9 +1107,102 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
   cipher: auto
-- name: X_🇩🇪_德国_4
+- name: X_🇫🇷_法国_6
+  type: vmess
+  server: 2001:bc8:32d7:302::11
+  port: 44579
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+    headers:
+      Host: TABRIZ.NET
+- name: X_🇫🇷_法国_7
+  type: vmess
+  server: 2001:bc8:32d7:302::10
+  port: 44579
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: AZERB.NET
+- name: X_🇰🇷_韩国
   type: vless
-  server: 45.153.230.220
+  server: 59.24.1.109
+  port: 50001
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  network: ws
+  servername: k7ryegiaeu.chinam.eu.org
+  tls: true
+  ws-opts:
+    path: /danfeng
+    headers:
+      Host: k7ryegiaeu.chinam.eu.org
+  cipher: auto
+- name: X_🇯🇵_日本_2
+  type: vless
+  server: 202.84.53.85
+  port: 17892
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560?Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇸🇬_新加坡
+  type: vless
+  server: 34.143.159.175
+  port: 443
+  uuid: 69a647a9-c60f-1366-ec63-1332eb2d2105
+  network: ws
+  servername: 6f221d78.mfree.ccwu.cc
+  tls: true
+  ws-opts:
+    path: /socks5=4b2c7676:6f0f4cbba5bb@38.111.30.111:26433
+    headers:
+      Host: 6f221d78.mfree.ccwu.cc
+  cipher: auto
+- name: X_🇸🇬_新加坡_1
+  type: vless
+  server: 43.160.248.66
+  port: 8443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇭🇰_香港
+  type: vless
+  server: 223.16.138.113
+  port: 10002
+  uuid: 69a647a9-c60f-1366-ec63-1332eb2d2105
+  network: ws
+  servername: 6f221d78.mfree.ccwu.cc
+  tls: true
+  ws-opts:
+    path: /socks5=4b2c7676:6f0f4cbba5bb@38.111.30.111:26433
+    headers:
+      Host: 6f221d78.mfree.ccwu.cc
+  cipher: auto
+- name: X_🇺🇸_美国_26
+  type: vless
+  server: 143.20.160.195
   port: 443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
@@ -1524,9 +1213,9 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
   cipher: auto
-- name: X_🇬🇧_英国_48
+- name: X_🇩🇪_德国
   type: vless
-  server: 195.200.17.57
+  server: 185.110.189.174
   port: 443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
@@ -1537,7 +1226,515 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
   cipher: auto
-- name: X_🇰🇷_韩国_12
+- name: X_🇺🇸_美国_27
+  type: vless
+  server: 68.64.179.105
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇳🇬_尼日利亚_1
+  type: vless
+  server: 83.229.123.16
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇺🇸_美国_28
+  type: vless
+  server: 68.64.179.94
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇺🇸_美国_29
+  type: vless
+  server: ffgghjuuuuui.007770777.xyz
+  port: 443
+  uuid: 4ef1e946-aa74-4ce3-8875-4339a07d46aa
+  network: ws
+  servername: ffgghjuuuuui.007770777.xyz
+  tls: true
+  ws-opts:
+    path: /gswYtzBd52XmedI6YBH
+    headers:
+      Host: ffgghjuuuuui.007770777.xyz
+  cipher: auto
+- name: X_🇳🇬_尼日利亚_2
+  type: vless
+  server: 83.229.122.218
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇳🇬_尼日利亚_3
+  type: vless
+  server: 83.229.123.87
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇺🇸_美国_30
+  type: vless
+  server: 68.64.179.243
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇺🇸_美国_31
+  type: vless
+  server: 68.64.179.248
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇸🇬_新加坡_2
+  type: vless
+  server: 8.223.63.150
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇳🇬_尼日利亚_4
+  type: vless
+  server: 83.229.123.13
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇳🇬_尼日利亚_5
+  type: vless
+  server: 83.229.123.15
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇳🇬_尼日利亚_6
+  type: vless
+  server: 83.229.121.12
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇬🇧_英国_6
+  type: vmess
+  server: 94.247.142.199
+  port: 443
+  uuid: f08369d1-5ee7-4b16-d786-30bce12fc33c
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /f08369d1-5ee7-4b16-d786-30bce12fc33c
+    headers:
+      Host: ous3.dean52.top
+- name: X_🇺🇸_美国_32
+  type: vless
+  server: 68.64.179.90
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇺🇸_美国_33
+  type: vless
+  server: 198.62.62.248
+  port: 443
+  uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+  network: ws
+  servername: tar.alabama-tigr.info
+  tls: true
+  ws-opts:
+    path: /love
+    headers:
+      Host: tar.alabama-tigr.info
+  cipher: auto
+- name: X_🇭🇰_香港_1
+  type: vless
+  server: 34.150.58.144
+  port: 443
+  uuid: 69a6c1d3-9637-2e38-8f5c-4e75cd624317
+  network: ws
+  servername: 6f221d78.mfree.ccwu.cc
+  tls: true
+  ws-opts:
+    path: /socks5=4b2c7676:6f0f4cbba5bb@38.111.30.111:26433
+    headers:
+      Host: 6f221d78.mfree.ccwu.cc
+  cipher: auto
+- name: X_🇳🇬_尼日利亚_7
+  type: vless
+  server: 83.229.123.217
+  port: 8443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇳🇬_尼日利亚_8
+  type: vless
+  server: 83.229.122.50
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&telegram🇨🇳@wangcai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇳🇬_尼日利亚_9
+  type: vless
+  server: 83.229.122.174
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇳🇬_尼日利亚_10
+  type: vless
+  server: 83.229.123.227
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇹🇼_中国台湾省_4
+  type: vless
+  server: 203.69.248.40
+  port: 10443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇳🇬_尼日利亚_11
+  type: vless
+  server: 83.229.123.18
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇳🇬_尼日利亚_13
+  type: vless
+  server: 83.229.121.78
+  port: 8443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇸🇬_新加坡_3
+  type: vless
+  server: 139.162.51.191
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇸🇬_新加坡_4
+  type: vless
+  server: 43.160.251.110
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇪🇸_西班牙_2
+  type: vless
+  server: 185.236.26.30
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇸🇬_新加坡_5
+  type: vless
+  server: 43.160.195.223
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇯🇵_日本_10
+  type: vless
+  server: 126.220.82.161
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇺🇸_美国_34
+  type: vless
+  server: 68.64.179.220
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇺🇸_美国_35
+  type: vless
+  server: 68.64.176.135
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇺🇸_美国_36
+  type: vless
+  server: 45.145.42.211
+  port: 2016
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇺🇸_美国_37
+  type: vless
+  server: 143.20.213.193
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇺🇸_美国_38
+  type: vless
+  server: 188.209.141.74
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇹🇼_中国台湾省_5
+  type: vless
+  server: 114.33.57.170
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇸🇬_新加坡_6
+  type: vless
+  server: 128.199.128.117
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇭🇰_香港_2
+  type: vless
+  server: video.livecuts.de
+  port: 443
+  uuid: 11ffccca-bab6-423f-ae75-1084b18fffd0
+  network: ws
+  servername: video.livecuts.de
+  tls: true
+  ws-opts:
+    path: /video
+    headers:
+      Host: video.livecuts.de
+  cipher: auto
+- name: X_🇺🇸_美国_39
+  type: vless
+  server: huu89.0h0.ccwu.cc
+  port: 80
+  uuid: 60c4d55d-bee3-4719-9568-aabf45153f9f
+  network: ws
+  servername: huu89.0h0.ccwu.cc
+  tls: false
+  ws-opts:
+    path: /gPvZ4oCcNDyuc3szX7xhuvpEm
+    headers:
+      Host: huu89.0h0.ccwu.cc
+  cipher: auto
+- name: X_🇺🇸_美国_40
+  type: vless
+  server: 209.177.165.17
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇯🇵_日本_13
+  type: vless
+  server: 153.121.45.101
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇰🇷_韩国_1
   type: vless
   server: kr-tls01.gunyoung.top
   port: 50000
@@ -1550,10 +1747,10 @@ proxies:
     headers:
       Host: cloud-newcf.hwoong.top
   cipher: auto
-- name: X_🇨🇿_捷克
+- name: X_🇰🇷_韩国_2
   type: vless
-  server: 95.182.97.125
-  port: 8443
+  server: 211.48.77.114
+  port: 12312
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
   servername: sni.111000.dynv6.net
@@ -1563,423 +1760,20 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
   cipher: auto
-- name: X_🇩🇪_德国_5
+- name: X_🇯🇵_日本_15
   type: vless
-  server: 141.147.10.210
-  port: 8881
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 118.17.106.193
+  port: 38978
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
   network: ws
-  servername: sni.111000.dynv6.net
+  servername: 002.ljk-clouflare.dns.army
   tls: true
   ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    path: /?ed=2560?Telegram🇨🇳@WangCai2
     headers:
-      Host: sni.111000.dynv6.net
+      Host: 002.ljk-clouflare.dns.army
   cipher: auto
-- name: X_🇳🇱_荷兰_1
-  type: vless
-  server: 160.153.1.155
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇺🇸_美国_30
-  type: vless
-  server: 199.34.230.158
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇭🇺_匈牙利
-  type: vless
-  server: 87.229.97.221
-  port: 8443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇺🇸_美国_31
-  type: vless
-  server: 135.84.73.184
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇺🇸_美国_32
-  type: vless
-  server: 135.84.74.90
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇰🇷_韩国_13
-  type: vless
-  server: 121.180.225.222
-  port: 16035
-  uuid: 69a647a9-c60f-1366-ec63-1332eb2d2105
-  network: ws
-  servername: 6f221d78.mfree.ccwu.cc
-  tls: true
-  ws-opts:
-    path: /socks5=4b2c7676:6f0f4cbba5bb@38.111.30.111:26433
-    headers:
-      Host: 6f221d78.mfree.ccwu.cc
-  cipher: auto
-- name: X_🇺🇸_美国_33
-  type: vless
-  server: 135.84.73.123
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇺🇸_美国_34
-  type: vless
-  server: 135.84.74.20
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇱🇻_拉脱维亚
-  type: vless
-  server: 195.135.255.177
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇫🇷_法国_8
-  type: vless
-  server: 185.16.110.0
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇺🇸_美国_35
-  type: vless
-  server: 135.84.64.244
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇨🇭_瑞士
-  type: vless
-  server: 2.56.179.4
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇺🇸_美国_36
-  type: vless
-  server: 135.84.73.247
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇺🇸_美国_37
-  type: vless
-  server: 135.84.72.75
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇺🇸_美国_38
-  type: vless
-  server: 135.84.73.122
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇺🇸_美国_39
-  type: vless
-  server: 135.84.74.55
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇺🇸_美国_40
-  type: vless
-  server: 135.84.72.18
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇺🇸_美国_41
-  type: vless
-  server: 135.84.73.129
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇺🇸_美国_42
-  type: vless
-  server: 135.84.74.190
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇳🇱_荷兰_2
-  type: vless
-  server: 160.153.1.65
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇺🇸_美国_43
-  type: vless
-  server: 199.34.230.66
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇺🇸_美国_44
-  type: vless
-  server: 199.34.228.182
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇳🇱_荷兰_3
-  type: vless
-  server: 160.153.1.146
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇺🇸_美国_45
-  type: vless
-  server: 135.84.67.96
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇺🇸_美国_46
-  type: vless
-  server: 135.84.75.14
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇺🇸_美国_47
-  type: vless
-  server: 135.84.72.42
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇷🇺_俄罗斯_3
-  type: vless
-  server: 77.238.247.93
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇺🇸_美国_48
-  type: vless
-  server: 135.84.74.34
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇳🇱_荷兰_4
-  type: vless
-  server: 160.153.1.54
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇺🇸_美国_49
-  type: vless
-  server: 143.20.213.9
-  port: 8443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇺🇸_美国_50
-  type: vless
-  server: 135.84.74.152
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇯🇵_日本_4
+- name: X_🇯🇵_日本_16
   type: vless
   server: 188.253.26.128
   port: 443
@@ -1992,9 +1786,74 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
   cipher: auto
-- name: X_🇺🇸_美国_51
+- name: X_🇯🇵_日本_17
   type: vless
-  server: 135.84.64.79
+  server: 219.103.68.164
+  port: 20770
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560?Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇳🇬_尼日利亚_14
+  type: vless
+  server: 83.229.123.173
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇹🇼_中国台湾省_6
+  type: vless
+  server: 85.237.207.19
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&telegram🇨🇳@wangcai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇨🇿_捷克_1
+  type: vless
+  server: 95.182.97.125
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇹🇼_中国台湾省_7
+  type: vless
+  server: 125.227.233.197
+  port: 2083
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇩🇪_德国_1
+  type: vless
+  server: 195.133.44.199
   port: 443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
@@ -2005,9 +1864,99 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
   cipher: auto
-- name: X_🇺🇸_美国_52
+- name: X_🇬🇧_英国_7
   type: vless
-  server: 63.141.128.9
+  server: 5.178.110.202
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇳🇱_荷兰_4
+  type: vless
+  server: 45.131.4.192
+  port: 80
+  uuid: 5f4845b4-11dc-41d6-9508-4ff6a02e36c1
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Cczu8jOo6HDo?ed=2560
+    headers:
+      Host: silent-paper-fa57.fipiyag989.workers.dev
+  cipher: auto
+- name: X_🇪🇸_西班牙_3
+  type: trojan
+  server: 109.234.211.66
+  port: 2087
+  password: trojan
+  sni: store.timimi.dpdns.org
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: store.timimi.dpdns.org
+  cipher: auto
+- name: X_🇳🇬_尼日利亚_15
+  type: vless
+  server: 83.229.122.219
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇰🇷_韩国_3
+  type: vless
+  server: 59.3.3.161
+  port: 8443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇷🇴_罗马尼亚_1
+  type: vless
+  server: 188.241.241.3
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇭🇰_香港_3
+  type: vless
+  server: 103.194.107.166
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&telegram🇨🇳@wangcai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇮🇷_伊朗_1
+  type: vless
+  server: 217.60.39.10
   port: 443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
@@ -2018,9 +1967,60 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
   cipher: auto
-- name: X_🇺🇸_美国_53
+- name: X_🇷🇴_罗马尼亚_2
   type: vless
-  server: 135.84.74.203
+  server: 188.241.241.123
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇰🇷_韩国_4
+  type: vless
+  server: 116.44.53.251
+  port: 12126
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇷🇴_罗马尼亚_3
+  type: vless
+  server: 188.241.241.32
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇳🇱_荷兰_5
+  type: vless
+  server: 188.114.98.112
+  port: 80
+  uuid: 0991a0c4-0ee5-4213-af89-7ad589f853f3
+  network: ws
+  tls: false
+  ws-opts:
+    path: /ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY?ed=2560
+    headers:
+      Host: elenaaaaaaaaaa.cloudns.pro.
+  cipher: auto
+- name: X_🇩🇪_德国_2
+  type: vless
+  server: 45.153.230.220
   port: 443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
@@ -2031,7 +2031,20 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
   cipher: auto
-- name: X_🇺🇸_美国_54
+- name: X_🇺🇸_美国_41
+  type: vless
+  server: 135.84.74.20
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇺🇸_美国_42
   type: vless
   server: 192.200.160.20
   port: 443
@@ -2044,24 +2057,35 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
   cipher: auto
-- name: X_🇺🇸_美国_55
-  type: vmess
-  server: vc.fly.dev
-  port: 443
-  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
-  alterId: 32
-  cipher: auto
-  tls: true
-  skip-cert-verify: false
-  servername: vc.fly.dev
-  network: ws
-  ws-opts:
-    path: /vc
-    headers:
-      Host: vc.fly.dev
-- name: X_🇺🇸_美国_56
+- name: X_🇬🇧_英国_8
   type: vless
-  server: 135.84.74.166
+  server: 194.147.16.51
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇺🇸_美国_43
+  type: vless
+  server: 103.219.194.43
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&telegram🇨🇳@wangcai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇫🇷_法国_16
+  type: vless
+  server: 185.16.110.0
   port: 443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
@@ -2072,9 +2096,9 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
   cipher: auto
-- name: X_🇺🇸_美国_57
+- name: X_🇺🇸_美国_44
   type: vless
-  server: 216.24.57.4
+  server: 135.84.74.90
   port: 443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
@@ -2085,9 +2109,9 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
   cipher: auto
-- name: X_🇳🇱_荷兰_5
+- name: X_🇺🇸_美国_45
   type: vless
-  server: 160.153.1.216
+  server: 199.107.164.217
   port: 443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
@@ -2098,7 +2122,85 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
   cipher: auto
-- name: X_🇺🇸_美国_58
+- name: X_🇺🇸_美国_46
+  type: vless
+  server: 135.84.74.55
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇺🇸_美国_47
+  type: vless
+  server: 135.84.73.123
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇺🇸_美国_48
+  type: vless
+  server: 135.84.72.118
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇺🇸_美国_49
+  type: vless
+  server: 135.84.64.244
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇺🇸_美国_50
+  type: vless
+  server: 199.34.230.66
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇺🇸_美国_51
+  type: vless
+  server: 135.84.72.18
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇺🇸_美国_52
   type: vless
   server: 135.84.73.96
   port: 443
@@ -2111,9 +2213,73 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
   cipher: auto
-- name: X_🇳🇱_荷兰_6
+- name: X_🇺🇸_美国_53
   type: vless
-  server: 160.153.1.214
+  server: 135.84.74.190
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇺🇸_美国_54
+  type: vless
+  server: 135.84.64.74
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇺🇸_美国_55
+  type: vless
+  server: 216.24.57.4
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇺🇸_美国_56
+  type: vless
+  server: 135.84.67.96
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇺🇸_美国_57
+  type: vless
+  server: www.temu.com
+  port: 2095
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: cnmfangbinxing.wcnm-fangbinxingnmsl.workers.dev
+  cipher: auto
+- name: X_🇺🇸_美国_58
+  type: vless
+  server: 135.84.73.184
   port: 443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
@@ -2139,7 +2305,7 @@ proxies:
   cipher: auto
 - name: X_🇺🇸_美国_60
   type: vless
-  server: 135.84.73.160
+  server: 135.84.73.247
   port: 443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
@@ -2152,72 +2318,7 @@ proxies:
   cipher: auto
 - name: X_🇺🇸_美国_61
   type: vless
-  server: 135.84.64.226
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇳🇱_荷兰_7
-  type: vless
-  server: 178.130.40.109
-  port: 2053
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇳🇱_荷兰_8
-  type: vless
-  server: 160.153.1.70
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇷🇺_俄罗斯_4
-  type: vless
-  server: 109.107.167.104
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇳🇱_荷兰_9
-  type: vless
-  server: 89.110.102.110
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇳🇱_荷兰_10
-  type: vless
-  server: 160.153.1.219
+  server: 63.141.128.9
   port: 443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
@@ -2230,7 +2331,7 @@ proxies:
   cipher: auto
 - name: X_🇺🇸_美国_62
   type: vless
-  server: 199.34.228.50
+  server: 135.84.74.203
   port: 443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
@@ -2242,32 +2343,21 @@ proxies:
       Host: sni.111000.dynv6.net
   cipher: auto
 - name: X_🇺🇸_美国_63
-  type: vless
-  server: 135.84.73.245
+  type: vmess
+  server: vc.fly.dev
   port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  alterId: 32
   cipher: auto
+  tls: true
+  skip-cert-verify: false
+  servername: vc.fly.dev
+  network: ws
+  ws-opts:
+    path: /vc
+    headers:
+      Host: vc.fly.dev
 - name: X_🇺🇸_美国_64
-  type: vless
-  server: 135.84.64.74
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇺🇸_美国_65
   type: vless
   server: 135.84.64.66
   port: 443
@@ -2280,9 +2370,22 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
   cipher: auto
+- name: X_🇺🇸_美国_65
+  type: vless
+  server: 135.84.64.79
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
 - name: X_🇺🇸_美国_66
   type: vless
-  server: 45.40.154.139
+  server: 135.84.73.129
   port: 443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
@@ -2295,7 +2398,7 @@ proxies:
   cipher: auto
 - name: X_🇺🇸_美国_67
   type: vless
-  server: 135.84.72.118
+  server: 135.84.72.75
   port: 443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
@@ -2308,7 +2411,7 @@ proxies:
   cipher: auto
 - name: X_🇺🇸_美国_68
   type: vless
-  server: 199.107.164.217
+  server: 199.34.230.158
   port: 443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
@@ -2319,10 +2422,179 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
   cipher: auto
+- name: X_🇬🇧_英国_9
+  type: vless
+  server: 104.238.174.7
+  port: 8443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&telegram🇨🇳@wangcai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
 - name: X_🇺🇸_美国_69
+  type: vless
+  server: 135.84.74.152
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇺🇸_美国_70
+  type: vless
+  server: 135.84.64.226
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇯🇵_日本_18
+  type: vless
+  server: 103.232.213.87
+  port: 2053
+  uuid: 69a6c1d3-9637-2e38-8f5c-4e75cd624317
+  network: ws
+  servername: 6f221d78.mfree.ccwu.cc
+  tls: true
+  ws-opts:
+    path: /socks5=4b2c7676:6f0f4cbba5bb@38.111.30.111:26433
+    headers:
+      Host: 6f221d78.mfree.ccwu.cc
+  cipher: auto
+- name: X_🇺🇸_美国_71
+  type: vless
+  server: 135.84.73.160
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇺🇸_美国_72
+  type: vless
+  server: 135.84.73.245
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇺🇸_美国_73
+  type: vless
+  server: 135.84.74.34
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇺🇸_美国_74
+  type: vless
+  server: 135.84.73.122
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇺🇸_美国_75
   type: vless
   server: 135.84.73.222
   port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇺🇸_美国_76
+  type: vless
+  server: 135.84.75.14
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇺🇸_美国_77
+  type: vless
+  server: 135.84.72.42
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇺🇸_美国_78
+  type: vless
+  server: 135.84.74.166
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇱🇻_拉脱维亚_1
+  type: vless
+  server: 195.135.255.177
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇺🇸_美国_79
+  type: vless
+  server: 143.20.213.9
+  port: 8443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
   servername: sni.111000.dynv6.net
@@ -2345,11 +2617,24 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
   cipher: auto
-- name: X_🇰🇷_韩国_14
+- name: X_🇷🇺_俄罗斯_2
   type: vless
-  server: 59.27.133.60
-  port: 11000
-  uuid: 69a647a9-c60f-1366-ec63-1332eb2d2105
+  server: 109.120.176.90
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&telegram🇨🇳@wangcai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇭🇰_香港_4
+  type: vless
+  server: 103.56.114.25
+  port: 443
+  uuid: 69a6c1d3-9637-2e38-8f5c-4e75cd624317
   network: ws
   servername: 6f221d78.mfree.ccwu.cc
   tls: true
@@ -2358,88 +2643,7 @@ proxies:
     headers:
       Host: 6f221d78.mfree.ccwu.cc
   cipher: auto
-- name: X_🇯🇵_日本_5
-  type: vless
-  server: 202.84.53.85
-  port: 19999
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇫🇷_法国_15
-  type: vmess
-  server: 2001:bc8:32d7:302::17
-  port: 44579
-  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-    headers:
-      Host: AZERB.NET
-- name: X_🇫🇷_法国_17
-  type: vmess
-  server: 2001:bc8:32d7:302::16
-  port: 44579
-  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-    headers:
-      Host: AZERB.NET
-- name: X_🇷🇺_俄罗斯_5
-  type: vless
-  server: 94.141.123.231
-  port: 443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇰🇷_韩国_15
-  type: vless
-  server: 116.44.53.251
-  port: 12126
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  servername: sni.111000.dynv6.net
-  tls: true
-  ws-opts:
-    path: /?ed=2560&Telegram🇨🇳@WangCai2
-    headers:
-      Host: sni.111000.dynv6.net
-  cipher: auto
-- name: X_🇫🇷_法国_19
-  type: vmess
-  server: 2001:bc8:32d7:302::14
-  port: 44579
-  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
-    headers:
-      Host: TABRIZ.NET
-- name: X_🇯🇵_日本_6
+- name: X_🇯🇵_日本_19
   type: vless
   server: 188.253.23.98
   port: 443
@@ -2452,24 +2656,10 @@ proxies:
     headers:
       Host: kuangbao.xiejiang.dpdns.org
   cipher: auto
-- name: X_🇫🇷_法国_20
-  type: vmess
-  server: 2001:bc8:32d7:302::15
-  port: 44579
-  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
-    headers:
-      Host: TURK.NET
-- name: X_🇺🇸_美国_72
+- name: X_🇷🇺_俄罗斯_3
   type: vless
-  server: 143.20.213.10
-  port: 8443
+  server: 94.141.123.231
+  port: 443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
   servername: sni.111000.dynv6.net
@@ -2479,7 +2669,33 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
   cipher: auto
-- name: X_🇩🇪_德国_6
+- name: X_🇺🇸_美国_81
+  type: vless
+  server: 173.249.198.22
+  port: 8443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇭🇰_香港_5
+  type: vless
+  server: 8.210.75.107
+  port: 2010
+  uuid: 69a6c1d3-9637-2e38-8f5c-4e75cd624317
+  network: ws
+  servername: 6f221d78.mfree.ccwu.cc
+  tls: true
+  ws-opts:
+    path: /socks5=4b2c7676:6f0f4cbba5bb@38.111.30.111:26433
+    headers:
+      Host: 6f221d78.mfree.ccwu.cc
+  cipher: auto
+- name: X_🇩🇪_德国_3
   type: vless
   server: 89.58.26.175
   port: 2083
@@ -2492,18 +2708,84 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
   cipher: auto
-- name: X_🇺🇸_美国_73
+- name: X_🇺🇸_美国_82
   type: vless
-  server: 143.20.213.130
-  port: 8443
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  server: 68.64.179.250
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
   network: ws
-  servername: sni.111000.dynv6.net
+  servername: 002.ljk-clouflare.dns.army
   tls: true
   ws-opts:
     path: /?ed=2560&Telegram🇨🇳@WangCai2
     headers:
-      Host: sni.111000.dynv6.net
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇺🇸_美国_83
+  type: vmess
+  server: 198.62.62.199
+  port: 443
+  uuid: f08369d1-5ee7-4b16-d786-30bce12fc33c
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /f08369d1-5ee7-4b16-d786-30bce12fc33c
+    headers:
+      Host: ous3.dean52.top
+- name: X_🇺🇸_美国_84
+  type: vless
+  server: 68.64.179.30
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇺🇸_美国_85
+  type: vless
+  server: 162.243.131.126
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇸🇬_新加坡_8
+  type: vless
+  server: 146.190.91.9
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
+  cipher: auto
+- name: X_🇸🇬_新加坡_9
+  type: vless
+  server: 165.22.99.110
+  port: 443
+  uuid: e3713ba4-a8fc-44ec-b401-3b736e67718d
+  network: ws
+  servername: 002.ljk-clouflare.dns.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: 002.ljk-clouflare.dns.army
   cipher: auto
 - name: X_🇱🇧_黎巴嫩
   type: vless
@@ -2518,10 +2800,10 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
   cipher: auto
-- name: X_🇺🇸_美国_74
+- name: X_🇺🇸_美国_86
   type: vless
-  server: 103.219.194.43
-  port: 443
+  server: 143.20.213.77
+  port: 8443
   uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   network: ws
   servername: sni.111000.dynv6.net
@@ -2531,6 +2813,891 @@ proxies:
     headers:
       Host: sni.111000.dynv6.net
   cipher: auto
+- name: X_🇺🇸_美国_87
+  type: vless
+  server: 143.20.213.130
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇺🇸_美国_88
+  type: vless
+  server: 143.20.213.179
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇺🇸_美国_89
+  type: vless
+  server: 143.20.213.10
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇳🇱_荷兰_6
+  type: vless
+  server: 185.94.29.156
+  port: 4001
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇺🇸_美国_91
+  type: vless
+  server: 198.62.62.124
+  port: 443
+  uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
+  network: ws
+  servername: war.connecticut-haloo.info
+  tls: true
+  ws-opts:
+    path: /love
+    headers:
+      Host: war.connecticut-haloo.info
+  cipher: auto
+- name: X_🇺🇸_美国_92
+  type: vless
+  server: 135.84.74.118
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_🇺🇸_美国_96
+  type: vless
+  server: a.monohob.eu.org
+  port: 443
+  uuid: 4f4a8022-0a8e-4f55-9883-777b6830802e
+  network: ws
+  servername: a.monohob.eu.org
+  tls: true
+  ws-opts:
+    path: /vless
+    headers:
+      Host: a.monohob.eu.org
+  cipher: auto
+- name: X_🇺🇸_美国_100
+  type: vless
+  server: www.shopify.com
+  port: 2087
+  uuid: 77777777-6663-4ef2-b26b-ed2d70642678
+  network: ws
+  servername: xsfvxv55x1.fx03.ccwu.cc
+  tls: true
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: xsfvxv55x1.fx03.ccwu.cc
+  cipher: auto
+- name: X_🇩🇪_德国_5
+  type: vless
+  server: 176.96.138.17
+  port: 2087
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.indevs.in
+  tls: true
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇭🇰_香港_6
+  type: vmess
+  server: 47.243.135.74
+  port: 55185
+  uuid: 1375985e-334a-4c25-8f64-52a182bc8037
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /Notif_Chat
+- name: X_🇺🇸_美国_101
+  type: vless
+  server: 172.66.43.117
+  port: 443
+  uuid: 1679af35-6dd6-4c09-ae3b-18f239217f3e
+  network: ws
+  servername: rAyAn-007.pArViN.DpDnS.OrG
+  tls: true
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇩🇪_德国_6
+  type: vless
+  server: 185.158.133.138
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.indevs.in
+  tls: true
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇩🇪_德国_7
+  type: vless
+  server: 188.244.122.138
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.indevs.in
+  tls: true
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇺🇸_美国_102
+  type: vless
+  server: 172.66.202.57
+  port: 443
+  uuid: 5db4fb64-d99f-4745-b550-9e937bd2f448
+  network: ws
+  servername: steep-poetry-829c.false-mossy-caucus.workers.dev
+  tls: true
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇭🇰_香港_7
+  type: vmess
+  server: n1752248946.4u9ma.icu
+  port: 443
+  uuid: ef167986-d154-4409-88b1-757efb6ae823
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: n1752248946.4u9ma.icu
+- name: X_🇺🇸_美国_103
+  type: vless
+  server: restless-dew-894b.amirhost4.workers.dev
+  port: 443
+  uuid: 40afa553-1745-4f62-a380-4163c7bb4870
+  network: ws
+  servername: restless-dew-894b.amirhost4.workers.dev
+  tls: true
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇭🇰_香港_8
+  type: vmess
+  server: 47.244.120.197
+  port: 36703
+  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+- name: X_🇭🇰_香港_9
+  type: vmess
+  server: 8.218.52.5
+  port: 443
+  uuid: 1f2daf43-ff90-4df9-9276-dfb8486d72bc
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: n1761214915.mv7wh.tech
+- name: X_🇳🇱_荷兰_8
+  type: vless
+  server: 188.114.96.0
+  port: 443
+  uuid: 40afa553-1745-4f62-a380-4163c7bb4870
+  network: ws
+  servername: restless-dew-894b.amirhost4.workers.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇺🇸_美国_104
+  type: trojan
+  server: 190.93.244.43
+  port: 8443
+  password: Nova-Proxy
+  sni: small-morning-2668.drusavm.workers.dev
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: small-morning-2668.drusavm.workers.dev
+  cipher: auto
+- name: X_🇩🇪_德国_8
+  type: vless
+  server: 89.23.106.39
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.indevs.in
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇺🇸_美国_106
+  type: vless
+  server: 172.64.145.93
+  port: 2087
+  uuid: 77777777-6663-4ef2-b26b-ed2d70642678
+  network: ws
+  servername: 8fbxjhscv17.fx02.ccwu.cc
+  tls: true
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇩🇪_德国_9
+  type: vless
+  server: 185.135.9.138
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.indevs.in
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇫🇷_法国_24
+  type: vless
+  server: 185.16.110.238
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.jpmj.dev
+  tls: true
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇺🇸_美国_107
+  type: vless
+  server: 192.0.63.138
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.indevs.in
+  tls: true
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇺🇸_美国_108
+  type: vless
+  server: 172.64.145.202
+  port: 2087
+  uuid: 77777777-6663-4ef2-b26b-ed2d70642678
+  network: ws
+  servername: afxmsv51.fx02.ccwu.cc
+  tls: true
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇺🇸_美国_109
+  type: vless
+  server: 172.64.52.178
+  port: 443
+  uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
+  network: ws
+  servername: powered-by-surena.user68f797c2f3e1b.workers.dev
+  tls: true
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇪🇪_爱沙尼亚
+  type: vless
+  server: 45.80.110.238
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.jpmj.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇦🇲_亚美尼亚
+  type: vless
+  server: 185.162.231.138
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.indevs.in
+  tls: true
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇺🇸_美国_110
+  type: vless
+  server: 192.0.54.238
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.jpmj.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇺🇸_美国_111
+  type: trojan
+  server: blackshadow.dpdns.org
+  port: 443
+  password: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  sni: blackshadow.dpdns.org
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /195.123.218.174-443
+    headers:
+      Host: blackshadow.dpdns.org
+  cipher: auto
+- name: X_🇪🇸_西班牙_4
+  type: vless
+  server: 185.238.228.238
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.jpmj.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇺🇸_美国_112
+  type: vless
+  server: 172.67.214.25
+  port: 2053
+  uuid: ef23616d-8a9d-4b22-b2f5-9bda864de179
+  network: ws
+  servername: index.arcane509.workers.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇳🇱_荷兰_9
+  type: vless
+  server: 188.114.98.0
+  port: 443
+  uuid: 3f9c8463-8610-3ed8-86c8-a26713067825
+  network: ws
+  servername: dabaius2.sylu.net
+  tls: true
+  ws-opts:
+    path: /db10240eb751d6ab
+  cipher: auto
+- name: X_🇭🇰_香港_10
+  type: vmess
+  server: 8.210.79.212
+  port: 55185
+  uuid: aa3c3018-288b-46f3-af1c-9044e18d6e5b
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /Notif_Chat
+- name: X_🇲🇾_马来西亚
+  type: vmess
+  server: 47.250.45.234
+  port: 8613
+  uuid: 80039b4d-bac0-4f89-82c7-54fad3b0a1ea
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /arki?ed=2048
+- name: X_🇸🇬_新加坡_10
+  type: vless
+  server: 213.35.100.31
+  port: 47112
+  uuid: 69a647a9-c60f-1366-ec63-1332eb2d2105
+  network: ws
+  servername: 6f221d78.mfree.ccwu.cc
+  tls: true
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇺🇸_美国_113
+  type: vless
+  server: 1password.com
+  port: 443
+  uuid: d2d0f796-edb0-427a-af32-ae360679f9e7
+  network: ws
+  servername: rAyAn-007.fOtOn.dPdNs.oRg
+  tls: true
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇳🇱_荷兰_11
+  type: vless
+  server: 163.5.207.124
+  port: 443
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  network: ws
+  servername: _acme-challenge.443888.xyz
+  tls: true
+  client-fingerprint: random
+  ws-opts:
+    path: /danfeng
+  cipher: auto
+- name: X_🇻🇳_越南
+  type: vless
+  server: 103.245.237.124
+  port: 58202
+  uuid: cca053d5-7123-4a87-83d6-babe4e9c8115
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇳🇱_荷兰_12
+  type: vless
+  server: 188.114.99.243
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.indevs.in
+  tls: true
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇺🇸_美国_114
+  type: vless
+  server: 60ysrd9-v10nswi4duhvlrv0yxuspeth.efownd9to.workers.dev
+  port: 443
+  uuid: 937d410f-1858-471d-bc0e-cdf3b43e78b8
+  network: ws
+  servername: 60ysrd9-v10nswi4duhvlrv0yxuspeth.efownd9to.workers.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇰🇿_哈萨克斯坦
+  type: vless
+  server: 194.59.5.238
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.jpmj.dev
+  tls: true
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇰🇿_哈萨克斯坦_1
+  type: vless
+  server: 194.76.18.222
+  port: 443
+  uuid: 5be777c2-38f7-44cd-b653-c93b19967887
+  network: ws
+  servername: 3b6Pv6fAQ5rpR3d5qCC33M8vNUhWzhdK.oHQliYx.WoRKeRs.DEV
+  tls: true
+  ws-opts:
+    path: /eyJqdW5rIjoiZlczclE4VDFFQnUiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
+  cipher: auto
+- name: X_🇮🇩_印尼
+  type: vmess
+  server: neva.azlan.biz.id
+  port: 443
+  uuid: 8072298f-cd28-4a61-8e05-5879c84b9100
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /vmess
+    headers:
+      Host: neva.azlan.biz.id
+- name: X_🇪🇸_西班牙_5
+  type: vless
+  server: 185.251.81.238
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.jpmj.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇮🇳_印度
+  type: vless
+  server: g.sandesh.qzz.io
+  port: 443
+  uuid: 1027b850-de79-4a94-b337-eccdac28e141
+  network: ws
+  servername: g.sandesh.qzz.io
+  tls: true
+  ws-opts:
+    path: /vless
+  cipher: auto
+- name: X_🇫🇷_法国_26
+  type: vmess
+  server: 2001:bc8:32d7:302::15
+  port: 44579
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+    headers:
+      Host: TURK.NET
+- name: X_🇫🇷_法国_27
+  type: vmess
+  server: 2001:bc8:32d7:302::14
+  port: 44579
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+    headers:
+      Host: TABRIZ.NET
+- name: X_🇫🇷_法国_28
+  type: vmess
+  server: 2001:bc8:32d7:302::16
+  port: 44579
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+    headers:
+      Host: AZERB.NET
+- name: X_🇺🇸_美国_115
+  type: vless
+  server: 192.200.160.238
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.jpmj.dev
+  tls: true
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇺🇸_美国_116
+  type: vless
+  server: 43.153.61.80
+  port: 40874
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  network: ws
+  servername: k7ryegiaeu.chinam.eu.org
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /danfeng
+  cipher: auto
+- name: X_🇫🇷_法国_29
+  type: vmess
+  server: 2001:bc8:32d7:302::17
+  port: 44579
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+    headers:
+      Host: AZERB.NET
+- name: X_🇺🇸_美国_117
+  type: trojan
+  server: 158.101.11.204
+  port: 15805
+  password: iwangjie
+  sni: nodes.830901.xyz
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: nodes.830901.xyz
+  cipher: auto
+- name: X_🇫🇷_法国_31
+  type: vless
+  server: 57.129.47.12
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.indevs.in
+  tls: true
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇺🇸_美国_118
+  type: vless
+  server: 108.162.194.176
+  port: 2096
+  uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
+  network: ws
+  servername: hetz.x-smm.com
+  tls: true
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇺🇸_美国_119
+  type: vless
+  server: hosts.global.ssl.fastly.net
+  port: 443
+  uuid: dfe13f5a-9ce4-44fc-be96-1067bbf9202d
+  network: ws
+  servername: hosts.global.ssl.fastly.net
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /site
+  cipher: auto
+- name: X_🇩🇪_德国_11
+  type: vless
+  server: 159.69.162.184
+  port: 42944
+  uuid: 00000000-0000-4000-8000-000000000000
+  network: ws
+  servername: sub.mot.ip-ddns.com
+  tls: true
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇺🇸_美国_120
+  type: trojan
+  server: 172.64.152.23
+  port: 443
+  password: humanity
+  sni: www.gossipglove.com
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.gossipglove.com
+  cipher: auto
+- name: X_🇪🇸_西班牙_6
+  type: vless
+  server: es2.vpnbyvinarsky.ru
+  port: 443
+  uuid: fb27b6f5-bb5c-45a6-8bc2-265fcfd2b658
+  network: ws
+  servername: es2.vpnbyvinarsky.ru
+  tls: true
+  ws-opts:
+    path: /chat
+  cipher: auto
+- name: X_🇺🇸_美国_121
+  type: trojan
+  server: v1.dabache.top
+  port: 443
+  password: humanity
+  sni: www.multiplydose.com
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.multiplydose.com
+  cipher: auto
+- name: X_🇺🇸_美国_122
+  type: vless
+  server: 108.162.194.99
+  port: 2096
+  uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
+  network: ws
+  servername: hetz.x-smm.com
+  tls: true
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇨🇭_瑞士
+  type: vless
+  server: 194.87.97.6
+  port: 2053
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  network: ws
+  servername: _acme-challenge.443888.xyz
+  tls: true
+  client-fingerprint: random
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇳🇱_荷兰_14
+  type: trojan
+  server: 188.114.96.3
+  port: 443
+  password: humanity
+  sni: www.gossipglove.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.gossipglove.com
+  cipher: auto
+- name: X_🇺🇸_美国_123
+  type: vless
+  server: 173.245.59.217
+  port: 2096
+  uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
+  network: ws
+  servername: hetz.x-smm.com
+  tls: true
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇺🇸_美国_124
+  type: vless
+  server: 108.162.193.91
+  port: 2096
+  uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
+  network: ws
+  servername: hetz.x-smm.com
+  tls: true
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇺🇸_美国_125
+  type: vless
+  server: 172.64.33.91
+  port: 2096
+  uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
+  network: ws
+  servername: hetz.x-smm.com
+  tls: true
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇺🇸_美国_126
+  type: vless
+  server: 108.162.193.217
+  port: 443
+  uuid: 94daa8ad-75ed-4dbf-a6de-d05036d98df5
+  network: ws
+  servername: vangoghhh.info
+  tls: true
+  ws-opts:
+    path: /tixvuws
+  cipher: auto
+- name: X_🇺🇸_美国_128
+  type: vmess
+  server: v2ray.codefyinc.com
+  port: 443
+  uuid: 2c981164-9b93-4bca-94ff-b78d3f8498d7
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /vmessws
+    headers:
+      Host: v2ray.codefyinc.com
+- name: X_🇺🇸_美国_129
+  type: vless
+  server: 108.162.195.45
+  port: 2096
+  uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
+  network: ws
+  servername: hetz.x-smm.com
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇺🇸_美国_130
+  type: vless
+  server: betty.ns.cloudflare.com
+  port: 2096
+  uuid: 3f0f36f5-f091-45c5-88c9-4bcc545b922c
+  network: ws
+  servername: hetz.x-smm.com
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇰🇷_韩国_7
+  type: vless
+  server: 59.27.133.60
+  port: 11000
+  uuid: 69a647a9-c60f-1366-ec63-1332eb2d2105
+  network: ws
+  servername: 6f221d78.mfree.ccwu.cc
+  tls: true
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇩🇪_德国_12
+  type: vless
+  server: 89.168.68.57
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.navy
+  tls: true
+  ws-opts:
+    path: /
+  cipher: auto
+- name: X_🇨🇦_加拿大
+  type: vmess
+  server: 51.79.102.253
+  port: 80
+  uuid: 58fe1542-5290-40ad-815a-77707a81afe5
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /IOebhLMhl1CTbFHbL95myfRX2
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -2552,134 +3719,152 @@ proxy-groups:
   - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
   - X_电报群：https://t.me/vvkj11
   - X_每天更新，请加电报群防止失联
+  - X_日期：03-06
   - X_免费VPN：https://tt.vg/gwaAy
   - X_🇺🇸_美国
   - X_🇺🇸_美国_1
-  - X_🇷🇺_俄罗斯
-  - X_🇫🇮_芬兰
-  - X_🇮🇷_伊朗
+  - X_🇺🇸_美国_2
+  - X_🇬🇧_英国
   - X_🇺🇸_美国_4
-  - X_🇭🇰_香港
-  - X_🇭🇰_香港_1
-  - X_🇭🇰_香港_2
-  - X_🇭🇰_香港_4
-  - X_🇹🇼_中国台湾省
-  - X_🇹🇼_中国台湾省_1
-  - X_🇹🇼_中国台湾省_2
+  - X_🇳🇱_荷兰
+  - X_🇳🇱_荷兰_1
+  - X_🇭🇺_匈牙利
+  - X_🇺🇸_美国_5
+  - X_🇭🇺_匈牙利_1
+  - X_🇬🇧_英国_2
   - X_🇨🇳_中国
   - X_🇨🇳_中国_1
-  - X_🇬🇧_英国
   - X_🇨🇳_中国_2
   - X_🇨🇳_中国_3
-  - X_🇨🇳_中国_5
-  - X_🇨🇳_中国_6
-  - X_🇨🇳_中国_14
-  - X_🇨🇳_中国_20
-  - X_🇨🇳_中国_34
-  - X_🇺🇸_美国_5
-  - X_🇺🇸_美国_6
-  - X_🇫🇷_法国
-  - X_🇺🇸_美国_12
-  - X_🇸🇬_新加坡
-  - X_🇭🇰_香港_5
-  - X_🇭🇰_香港_6
-  - X_🇭🇰_香港_7
-  - X_🇭🇰_香港_8
-  - X_🇭🇰_香港_9
-  - X_🇭🇰_香港_10
-  - X_🇲🇾_马来西亚
-  - X_🇭🇰_香港_11
-  - X_🇭🇰_香港_12
-  - X_🇰🇷_韩国
-  - X_🇰🇷_韩国_1
-  - X_🇰🇷_韩国_2
-  - X_🇰🇷_韩国_3
-  - X_🇰🇷_韩国_4
-  - X_🇰🇷_韩国_5
-  - X_🇰🇷_韩国_6
-  - X_🇰🇷_韩国_7
-  - X_🇰🇷_韩国_8
-  - X_🇰🇷_韩国_9
-  - X_🇺🇸_美国_13
-  - X_🇬🇧_英国_43
-  - X_🇺🇸_美国_14
-  - X_🇺🇸_美国_15
-  - X_🇺🇸_美国_16
-  - X_🇪🇸_西班牙
-  - X_🇺🇸_美国_17
-  - X_🇫🇷_法国_1
-  - X_🇺🇸_美国_18
-  - X_🇷🇺_俄罗斯_1
-  - X_🇺🇸_美国_19
-  - X_🇺🇸_美国_20
+  - X_🇨🇳_中国_4
+  - X_🇹🇼_中国台湾省_1
+  - X_🇸🇮_斯洛文尼亚
+  - X_🇹🇼_中国台湾省_2
   - X_🇯🇵_日本
-  - X_🇩🇪_德国
-  - X_🇸🇬_新加坡_1
-  - X_🇬🇧_英国_44
-  - X_🇺🇸_美国_21
-  - X_🇺🇸_美国_22
-  - X_🇳🇱_荷兰
-  - X_🇯🇵_日本_2
-  - X_🇺🇸_美国_24
-  - X_🇺🇸_美国_25
-  - X_🇺🇸_美国_26
-  - X_🇺🇸_美国_27
-  - X_🇪🇸_西班牙_2
-  - X_🇺🇸_美国_28
-  - X_🇹🇼_中国台湾省_3
-  - X_🇩🇪_德国_1
-  - X_🇹🇼_中国台湾省_4
-  - X_🇯🇵_日本_3
-  - X_🇺🇸_美国_29
-  - X_🇩🇪_德国_2
-  - X_🇷🇴_罗马尼亚
-  - X_🇩🇪_德国_3
-  - X_🇷🇴_罗马尼亚_1
-  - X_🇮🇷_伊朗_1
-  - X_🇰🇷_韩国_10
-  - X_🇵🇹_葡萄牙
-  - X_🇷🇴_罗马尼亚_2
-  - X_🇷🇺_俄罗斯_2
-  - X_🇬🇧_英国_46
-  - X_🇬🇧_英国_47
-  - X_🇹🇭_泰国
-  - X_🇩🇪_德国_4
-  - X_🇬🇧_英国_48
-  - X_🇰🇷_韩国_12
+  - X_🇯🇵_日本_1
+  - X_🇫🇷_法国
+  - X_🇫🇷_法国_1
+  - X_🇬🇧_英国_4
+  - X_🇫🇷_法国_2
+  - X_🇫🇷_法国_3
+  - X_🇷🇺_俄罗斯
+  - X_🇪🇸_西班牙
+  - X_🇫🇷_法国_4
+  - X_🇷🇺_俄罗斯_1
+  - X_🇵🇱_波兰
+  - X_🇺🇸_美国_7
+  - X_🇨🇳_中国_5
+  - X_🇺🇸_美国_8
+  - X_🇦🇺_澳大利亚
+  - X_🇱🇹_立陶宛
+  - X_🇬🇧_英国_5
+  - X_🇺🇸_美国_9
+  - X_🇫🇷_法国_5
+  - X_🇦🇺_澳大利亚_1
   - X_🇨🇿_捷克
-  - X_🇩🇪_德国_5
-  - X_🇳🇱_荷兰_1
-  - X_🇺🇸_美国_30
-  - X_🇭🇺_匈牙利
-  - X_🇺🇸_美国_31
-  - X_🇺🇸_美国_32
-  - X_🇰🇷_韩国_13
-  - X_🇺🇸_美国_33
-  - X_🇺🇸_美国_34
+  - X_🇷🇴_罗马尼亚
+  - X_🇦🇺_澳大利亚_2
+  - X_🇵🇱_波兰_1
+  - X_🇦🇹_奥地利
+  - X_🇪🇸_西班牙_1
+  - X_🇮🇱_以色列
+  - X_🇦🇹_奥地利_1
+  - X_🇦🇪_阿联酋
   - X_🇱🇻_拉脱维亚
-  - X_🇫🇷_法国_8
+  - X_🇺🇸_美国_10
+  - X_🇺🇸_美国_11
+  - X_🇺🇸_美国_12
+  - X_🇺🇸_美国_13
+  - X_🇺🇸_美国_14
+  - X_🇺🇸_美国_19
+  - X_🇮🇷_伊朗
+  - X_🇺🇸_美国_24
+  - X_🇹🇼_中国台湾省_3
+  - X_🇳🇬_尼日利亚
+  - X_🇹🇭_泰国
+  - X_🇫🇷_法国_6
+  - X_🇫🇷_法国_7
+  - X_🇰🇷_韩国
+  - X_🇯🇵_日本_2
+  - X_🇸🇬_新加坡
+  - X_🇸🇬_新加坡_1
+  - X_🇭🇰_香港
+  - X_🇺🇸_美国_26
+  - X_🇩🇪_德国
+  - X_🇺🇸_美国_27
+  - X_🇳🇬_尼日利亚_1
+  - X_🇺🇸_美国_28
+  - X_🇺🇸_美国_29
+  - X_🇳🇬_尼日利亚_2
+  - X_🇳🇬_尼日利亚_3
+  - X_🇺🇸_美国_30
+  - X_🇺🇸_美国_31
+  - X_🇸🇬_新加坡_2
+  - X_🇳🇬_尼日利亚_4
+  - X_🇳🇬_尼日利亚_5
+  - X_🇳🇬_尼日利亚_6
+  - X_🇬🇧_英国_6
+  - X_🇺🇸_美国_32
+  - X_🇺🇸_美国_33
+  - X_🇭🇰_香港_1
+  - X_🇳🇬_尼日利亚_7
+  - X_🇳🇬_尼日利亚_8
+  - X_🇳🇬_尼日利亚_9
+  - X_🇳🇬_尼日利亚_10
+  - X_🇹🇼_中国台湾省_4
+  - X_🇳🇬_尼日利亚_11
+  - X_🇳🇬_尼日利亚_13
+  - X_🇸🇬_新加坡_3
+  - X_🇸🇬_新加坡_4
+  - X_🇪🇸_西班牙_2
+  - X_🇸🇬_新加坡_5
+  - X_🇯🇵_日本_10
+  - X_🇺🇸_美国_34
   - X_🇺🇸_美国_35
-  - X_🇨🇭_瑞士
   - X_🇺🇸_美国_36
   - X_🇺🇸_美国_37
   - X_🇺🇸_美国_38
+  - X_🇹🇼_中国台湾省_5
+  - X_🇸🇬_新加坡_6
+  - X_🇭🇰_香港_2
   - X_🇺🇸_美国_39
   - X_🇺🇸_美国_40
+  - X_🇯🇵_日本_13
+  - X_🇰🇷_韩国_1
+  - X_🇰🇷_韩国_2
+  - X_🇯🇵_日本_15
+  - X_🇯🇵_日本_16
+  - X_🇯🇵_日本_17
+  - X_🇳🇬_尼日利亚_14
+  - X_🇹🇼_中国台湾省_6
+  - X_🇨🇿_捷克_1
+  - X_🇹🇼_中国台湾省_7
+  - X_🇩🇪_德国_1
+  - X_🇬🇧_英国_7
+  - X_🇳🇱_荷兰_4
+  - X_🇪🇸_西班牙_3
+  - X_🇳🇬_尼日利亚_15
+  - X_🇰🇷_韩国_3
+  - X_🇷🇴_罗马尼亚_1
+  - X_🇭🇰_香港_3
+  - X_🇮🇷_伊朗_1
+  - X_🇷🇴_罗马尼亚_2
+  - X_🇰🇷_韩国_4
+  - X_🇷🇴_罗马尼亚_3
+  - X_🇳🇱_荷兰_5
+  - X_🇩🇪_德国_2
   - X_🇺🇸_美国_41
   - X_🇺🇸_美国_42
-  - X_🇳🇱_荷兰_2
+  - X_🇬🇧_英国_8
   - X_🇺🇸_美国_43
+  - X_🇫🇷_法国_16
   - X_🇺🇸_美国_44
-  - X_🇳🇱_荷兰_3
   - X_🇺🇸_美国_45
   - X_🇺🇸_美国_46
   - X_🇺🇸_美国_47
-  - X_🇷🇺_俄罗斯_3
   - X_🇺🇸_美国_48
-  - X_🇳🇱_荷兰_4
   - X_🇺🇸_美国_49
   - X_🇺🇸_美国_50
-  - X_🇯🇵_日本_4
   - X_🇺🇸_美国_51
   - X_🇺🇸_美国_52
   - X_🇺🇸_美国_53
@@ -2687,17 +3872,10 @@ proxy-groups:
   - X_🇺🇸_美国_55
   - X_🇺🇸_美国_56
   - X_🇺🇸_美国_57
-  - X_🇳🇱_荷兰_5
   - X_🇺🇸_美国_58
-  - X_🇳🇱_荷兰_6
   - X_🇺🇸_美国_59
   - X_🇺🇸_美国_60
   - X_🇺🇸_美国_61
-  - X_🇳🇱_荷兰_7
-  - X_🇳🇱_荷兰_8
-  - X_🇷🇺_俄罗斯_4
-  - X_🇳🇱_荷兰_9
-  - X_🇳🇱_荷兰_10
   - X_🇺🇸_美国_62
   - X_🇺🇸_美国_63
   - X_🇺🇸_美国_64
@@ -2705,22 +3883,110 @@ proxy-groups:
   - X_🇺🇸_美国_66
   - X_🇺🇸_美国_67
   - X_🇺🇸_美国_68
+  - X_🇬🇧_英国_9
   - X_🇺🇸_美国_69
-  - X_🇱🇰_斯里兰卡
-  - X_🇰🇷_韩国_14
-  - X_🇯🇵_日本_5
-  - X_🇫🇷_法国_15
-  - X_🇫🇷_法国_17
-  - X_🇷🇺_俄罗斯_5
-  - X_🇰🇷_韩国_15
-  - X_🇫🇷_法国_19
-  - X_🇯🇵_日本_6
-  - X_🇫🇷_法国_20
+  - X_🇺🇸_美国_70
+  - X_🇯🇵_日本_18
+  - X_🇺🇸_美国_71
   - X_🇺🇸_美国_72
-  - X_🇩🇪_德国_6
   - X_🇺🇸_美国_73
-  - X_🇱🇧_黎巴嫩
   - X_🇺🇸_美国_74
+  - X_🇺🇸_美国_75
+  - X_🇺🇸_美国_76
+  - X_🇺🇸_美国_77
+  - X_🇺🇸_美国_78
+  - X_🇱🇻_拉脱维亚_1
+  - X_🇺🇸_美国_79
+  - X_🇱🇰_斯里兰卡
+  - X_🇷🇺_俄罗斯_2
+  - X_🇭🇰_香港_4
+  - X_🇯🇵_日本_19
+  - X_🇷🇺_俄罗斯_3
+  - X_🇺🇸_美国_81
+  - X_🇭🇰_香港_5
+  - X_🇩🇪_德国_3
+  - X_🇺🇸_美国_82
+  - X_🇺🇸_美国_83
+  - X_🇺🇸_美国_84
+  - X_🇺🇸_美国_85
+  - X_🇸🇬_新加坡_8
+  - X_🇸🇬_新加坡_9
+  - X_🇱🇧_黎巴嫩
+  - X_🇺🇸_美国_86
+  - X_🇺🇸_美国_87
+  - X_🇺🇸_美国_88
+  - X_🇺🇸_美国_89
+  - X_🇳🇱_荷兰_6
+  - X_🇺🇸_美国_91
+  - X_🇺🇸_美国_92
+  - X_🇺🇸_美国_96
+  - X_🇺🇸_美国_100
+  - X_🇩🇪_德国_5
+  - X_🇭🇰_香港_6
+  - X_🇺🇸_美国_101
+  - X_🇩🇪_德国_6
+  - X_🇩🇪_德国_7
+  - X_🇺🇸_美国_102
+  - X_🇭🇰_香港_7
+  - X_🇺🇸_美国_103
+  - X_🇭🇰_香港_8
+  - X_🇭🇰_香港_9
+  - X_🇳🇱_荷兰_8
+  - X_🇺🇸_美国_104
+  - X_🇩🇪_德国_8
+  - X_🇺🇸_美国_106
+  - X_🇩🇪_德国_9
+  - X_🇫🇷_法国_24
+  - X_🇺🇸_美国_107
+  - X_🇺🇸_美国_108
+  - X_🇺🇸_美国_109
+  - X_🇪🇪_爱沙尼亚
+  - X_🇦🇲_亚美尼亚
+  - X_🇺🇸_美国_110
+  - X_🇺🇸_美国_111
+  - X_🇪🇸_西班牙_4
+  - X_🇺🇸_美国_112
+  - X_🇳🇱_荷兰_9
+  - X_🇭🇰_香港_10
+  - X_🇲🇾_马来西亚
+  - X_🇸🇬_新加坡_10
+  - X_🇺🇸_美国_113
+  - X_🇳🇱_荷兰_11
+  - X_🇻🇳_越南
+  - X_🇳🇱_荷兰_12
+  - X_🇺🇸_美国_114
+  - X_🇰🇿_哈萨克斯坦
+  - X_🇰🇿_哈萨克斯坦_1
+  - X_🇮🇩_印尼
+  - X_🇪🇸_西班牙_5
+  - X_🇮🇳_印度
+  - X_🇫🇷_法国_26
+  - X_🇫🇷_法国_27
+  - X_🇫🇷_法国_28
+  - X_🇺🇸_美国_115
+  - X_🇺🇸_美国_116
+  - X_🇫🇷_法国_29
+  - X_🇺🇸_美国_117
+  - X_🇫🇷_法国_31
+  - X_🇺🇸_美国_118
+  - X_🇺🇸_美国_119
+  - X_🇩🇪_德国_11
+  - X_🇺🇸_美国_120
+  - X_🇪🇸_西班牙_6
+  - X_🇺🇸_美国_121
+  - X_🇺🇸_美国_122
+  - X_🇨🇭_瑞士
+  - X_🇳🇱_荷兰_14
+  - X_🇺🇸_美国_123
+  - X_🇺🇸_美国_124
+  - X_🇺🇸_美国_125
+  - X_🇺🇸_美国_126
+  - X_🇺🇸_美国_128
+  - X_🇺🇸_美国_129
+  - X_🇺🇸_美国_130
+  - X_🇰🇷_韩国_7
+  - X_🇩🇪_德国_12
+  - X_🇨🇦_加拿大
 - name: 🌍 国外媒体
   type: select
   proxies:
@@ -2799,7 +4065,7 @@ proxy-groups:
   - X_US_speednode_0018
   - X_US_speednode_0019
   - X_US_speednode_0020
-  - X_🇭🇰 香港|@ripaojiedian
+  - X_香港|@ripaojiedian
   - X_香港3|@ripaojiedian
   - X_香港4|@ripaojiedian
   - X_香港5|@ripaojiedian
