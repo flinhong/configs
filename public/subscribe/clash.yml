@@ -826,7 +826,7 @@ proxies:
   cipher: auto
 - alterId: 0
   cipher: auto
-  name: X_SG7｜机房｜低风险
+  name: X_SG13｜机房｜低风险
   network: tcp
   port: '30812'
   server: v12.hdacd.com
@@ -835,34 +835,16 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: X_FR3｜机房｜低风险
+  name: X_JP4｜机房｜低风险
   network: tcp
-  port: '30835'
-  server: v35.hdacd.com
+  port: '30806'
+  server: v6.hdacd.com
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 64
-  cipher: auto
-  name: X_US49｜机房｜低风险
-  network: tcp
-  port: '34114'
-  server: 103.181.164.237
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: X_SE2｜机房｜低风险
-  network: tcp
-  password: af4b064a9c39472fb34ad8b113acdc6b
-  port: 443
-  server: 45.145.154.8
-  skip-cert-verify: true
-  sni: 45.145.154.8
-  type: trojan
-  cipher: auto
 - alterId: 2
   cipher: auto
-  name: X_US50｜机房｜低风险
+  name: X_US70｜机房｜低风险
   network: tcp
   port: '30829'
   server: v29.hdacd.com
@@ -871,96 +853,31 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: X_US56｜机房｜低风险
+  name: X_HK21｜机房｜低风险
   network: tcp
-  port: '30824'
-  server: v24.hdacd.com
+  port: '30809'
+  server: v9.hdacd.com
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alpn:
-  - h3%2Ch2%2Chttp%2F1.1
-  name: X_HK39｜机房｜低风险
-  network: ws
-  password: 823cbccd-3a71-4248-ac3c-3c460de1552d
+- name: X_HK23｜家宽｜非常安全
+  network: tcp
+  password: af4b064a9c39472fb34ad8b113acdc6b
   port: 443
-  server: 108.162.198.247
+  server: 183.179.43.254
   skip-cert-verify: true
-  sni: snll100.pages.dev
+  sni: 183.179.43.254
   type: trojan
-  ws-opts:
-    headers:
-      Host: snll100.pages.dev
-    path: '%2F'
   cipher: auto
-- alterId: 0
-  cipher: auto
-  name: X_NL8｜机房｜低风险
-  network: tcp
-  port: '30830'
-  server: v30.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - alterId: 2
   cipher: auto
-  name: X_US54｜机房｜低风险
+  name: X_US76｜机房｜低风险
   network: tcp
   port: '30808'
   server: v8.hdacd.com
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: X_ID4｜家宽｜非常安全
-  network: ws
-  port: '443'
-  server: 68.64.179.210
-  servername: mn1ray.jagoanvip.xyz
-  tls: true
-  type: vmess
-  uuid: 462d9694-62b5-4781-a287-61a422b920e8
-  ws-opts:
-    headers:
-      Host: mn1ray.jagoanvip.xyz
-    path: /vvip
-- alterId: 0
-  cipher: auto
-  name: X_AU1｜机房｜低风险
-  network: ws
-  port: '443'
-  server: sy4.620720.xyz
-  servername: sy4.620720.xyz
-  tls: true
-  type: vmess
-  uuid: 516d8a7a-3f0b-41d3-bad0-246116381516
-  ws-opts:
-    headers:
-      Host: sy4.620720.xyz
-    path: /
-- alterId: 2
-  cipher: auto
-  name: X_SG8｜机房｜低风险
-  network: tcp
-  port: '30845'
-  server: v45.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: X_HK40｜机房｜低风险
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: v1.dabache.top
-  skip-cert-verify: true
-  sni: mashdt.pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: mashdt.pages.dev
-    path: '%2Ftr'
-  cipher: auto
 - alterId: 2
   cipher: auto
   name: X_🇭🇰 香港|@ripaojiedian
@@ -5454,19 +5371,12 @@ proxy-groups:
   - X_US_speednode_0057
   - X_US_speednode_0058
   - X_US_speednode_0059
-  - X_SG7｜机房｜低风险
-  - X_FR3｜机房｜低风险
-  - X_US49｜机房｜低风险
-  - X_SE2｜机房｜低风险
-  - X_US50｜机房｜低风险
-  - X_US56｜机房｜低风险
-  - X_HK39｜机房｜低风险
-  - X_NL8｜机房｜低风险
-  - X_US54｜机房｜低风险
-  - X_ID4｜家宽｜非常安全
-  - X_AU1｜机房｜低风险
-  - X_SG8｜机房｜低风险
-  - X_HK40｜机房｜低风险
+  - X_SG13｜机房｜低风险
+  - X_JP4｜机房｜低风险
+  - X_US70｜机房｜低风险
+  - X_HK21｜机房｜低风险
+  - X_HK23｜家宽｜非常安全
+  - X_US76｜机房｜低风险
   - X_🇭🇰 香港|@ripaojiedian
   - X_香港3|@ripaojiedian
   - X_香港4|@ripaojiedian
