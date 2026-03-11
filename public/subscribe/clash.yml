@@ -69,209 +69,67 @@ proxies:
   port: 989
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
-- name: X_BG_speednode_0001
-  server: 93.123.39.225
-  port: 443
-  type: vless
-  uuid: 3130fccb-e72e-468d-b2ce-0721bb3058c8
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: www.apple.com
-  reality-opts:
-    public-key: pOdL1l8cGGg7qnOPAbDcAIVOgA7O8f75XevxeYyaYCg
-    short-id: cd11af
-  udp: true
-  cipher: auto
-- name: X_CH_speednode_0002
-  server: estonia.scroogethebest.com
-  port: 443
-  type: vless
-  uuid: e2e1ddaa-1acf-4c4c-a211-92284f6440ed
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: random
-  servername: estonia.scroogethebest.com
-  reality-opts:
-    public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
-    short-id: 4fa44664f6a566d3
-  udp: true
-  cipher: auto
-- name: X_CN_speednode_0003
-  server: a.cdn-bilibili.cn
-  port: 30003
+- name: X_CN_speednode_0001
+  server: pub.ap20260228.com
+  port: 64021
   type: vmess
-  uuid: 69de9a52-36b0-4265-a3cf-d06bcefe713d
+  uuid: a739e782-1682-38a5-9153-aad09d779ae9
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: false
   udp: true
-- name: X_CN_speednode_0004
-  server: 106.54.236.100
-  port: 18000
-  type: vless
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: random
-  servername: snippet.fgfw.ye.gs
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /danfeng
-    headers:
-      Host: snippet.fgfw.ye.gs
-  udp: true
-  cipher: auto
 - name: X_CN_speednode_0005
-  server: 4d2f203f-ta1og0-ta00rd-1o8ak.cm4.oshuawei.com
-  port: 27233
-  type: http
-  username: 8bb68d04-6973-11ee-b518-f23c9164ca5d
-  password: 8bb68d04-6973-11ee-b518-f23c9164ca5d
-  tls: true
+  server: sg03.stimaysmhy8.com
+  port: 35902
+  type: trojan
+  password: d5fa43f9-1ace-4b8f-b865-627e67b1fe37
+  sni: jsygouer.weixin-baidu-qq.com
+  skip-cert-verify: true
   udp: true
   cipher: auto
-- name: X_DE_speednode_0006
-  server: 78.47.172.250
-  port: 433
+- name: X_GB_speednode_0006
+  server: 185.191.118.144
+  port: 443
   type: vless
-  uuid: c8181481-8544-49da-b4dd-46a3ddb27cae
-  flow: xtls-rprx-vision
+  uuid: 7a37a4a1-0750-4311-a355-ff7d499c6797
   tls: true
   skip-cert-verify: false
   client-fingerprint: chrome
   servername: www.microsoft.com
   reality-opts:
-    public-key: Bz2HLyFLCOrdtrxIgBPFIIb7BJFfLpnqJ1u-pw0Gpwo
-    short-id: 374dc2
+    public-key: qrnqrRbyJ3KLRDdvO0Ed2ewMvTn1i5XWyF07q_4eunk
+    short-id: 8cb5caf3547681c1
   udp: true
   cipher: auto
-- name: X_DE_speednode_0007
-  server: 91.149.232.164
-  port: 39738
+- name: X_HK_speednode_0007
+  server: 83.229.123.173
+  port: 443
   type: vless
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
   tls: true
   skip-cert-verify: false
-  client-fingerprint: random
-  servername: snippet.gfw.nn.kg
-  alpn:
-  - http/1.1
+  servername: ylnhh.cc.cd
   network: ws
   ws-opts:
-    path: /danfeng
+    path: /Telegram🇨🇳@WangCai2
     headers:
-      Host: snippet.gfw.nn.kg
+      Host: ylnhh.cc.cd
   udp: true
   cipher: auto
-- name: X_ES_speednode_0008
-  server: madrid-meow.nethcloud.top
-  port: 8443
-  type: vless
-  uuid: d6415904-ebd7-43da-a4a0-26a627aa20fb
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: wikihow.com
-  reality-opts:
-    public-key: 1HeKf_8KDjfzXfUi9P7WBaGStMvr96TKdUbofpkwBzQ
-    short-id: 8bd29483ded126b4
-  udp: true
-  cipher: auto
-- name: X_GB_speednode_0009
-  server: 82.198.246.97
-  port: 180
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: X_GB_speednode_0010
-  server: series-a2.samanehha.co
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: W74XFALLLuw6m5IA
-  udp: true
-- name: X_GB_speednode_0011
-  server: admin.c1.webramz.co
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: W74XFALLLuw6m5IA
-  udp: true
-- name: X_GB_speednode_0012
-  server: admin.c1.havij.co
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 1kVr0KATIJI7mwOF
-  udp: true
-- name: X_GB_speednode_0013
-  server: series-a1.samanehha.co
-  port: 443
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: W74XFALLLuw6m5IA
-  udp: true
-- name: X_GB_speednode_0014
-  server: 85.211.242.85
-  port: 12889
-  type: vmess
-  uuid: 37c67a5e-2b2a-49b2-a197-889e80b28bee
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: baidu.com
-  udp: true
-- name: X_HK_speednode_0015
-  server: 58.152.25.253
-  port: 443
-  type: trojan
-  password: BxceQaOe
-  sni: t.me%2Fripaojiedian
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_HK_speednode_0016
-  server: 15b72b06-ta1og0-ts3rye-mrtr.hkt.cdnhuawei.com
-  port: 8443
+- name: X_KR_speednode_0008
+  server: testkr3.ssv.vc
+  port: 30446
   type: http
-  username: 28a8a4d0-3e02-11eb-a8bf-f23c91cfbbc9
-  password: <password>
+  username: test
+  password: test.+
   tls: true
+  skip-cert-verify: true
   udp: true
   cipher: auto
-- name: X_IQ_speednode_0017
-  server: scvad1tel-ru.golden-cards.me
-  port: 443
-  type: vless
-  uuid: a774f61d-a518-4c61-902f-807797da6caf
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: avatars.mds.yandex.net
-  reality-opts:
-    public-key: whYmACpNNY4B3Yv8iBJ9AmxokZL2Tb7O210utmzvGSo
-    short-id: 6ba85179e30d4fc2
-  udp: true
-  cipher: auto
-- name: X_KR_speednode_0018
-  server: 112.167.47.83
-  port: 23297
+- name: X_KR_speednode_0009
+  server: 221.146.116.77
+  port: 15284
   type: vless
   uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
   tls: true
@@ -284,237 +142,56 @@ proxies:
       Host: ylnhh.cc.cd
   udp: true
   cipher: auto
-- name: X_KR_speednode_0019
-  server: 211.238.83.146
-  port: 32641
-  type: vless
-  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-  tls: true
-  skip-cert-verify: false
-  servername: ylnhh.cc.cd
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳@WangCai2
-    headers:
-      Host: ylnhh.cc.cd
-  udp: true
-  cipher: auto
-- name: X_KR_speednode_0020
+- name: X_KR_speednode_0010
   server: 210.105.224.42
   port: 10840
   type: vless
   uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
   tls: true
   skip-cert-verify: false
+  client-fingerprint: chrome
   servername: ylnhh.cc.cd
   network: ws
   ws-opts:
-    path: /Telegram🇨🇳@WangCai2
+    path: /TelegramU0001F1E8U0001F1F3@WangCai2
     headers:
       Host: ylnhh.cc.cd
   udp: true
   cipher: auto
-- name: X_KR_speednode_0021
-  server: 119.192.158.53
-  port: 25095
-  type: vless
-  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-  tls: true
-  skip-cert-verify: false
-  servername: ylnhh.cc.cd
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳@WangCai2
-    headers:
-      Host: ylnhh.cc.cd
-  udp: true
-  cipher: auto
-- name: X_KR_speednode_0022
-  server: 121.157.190.209
-  port: 11717
-  type: vless
-  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-  tls: true
-  skip-cert-verify: false
-  servername: ylnhh.cc.cd
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳@WangCai2
-    headers:
-      Host: ylnhh.cc.cd
-  udp: true
-  cipher: auto
-- name: X_KR_speednode_0023
-  server: 121.168.144.41
-  port: 12511
-  type: vless
-  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-  tls: true
-  skip-cert-verify: false
-  servername: ylnhh.cc.cd
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳@WangCai2
-    headers:
-      Host: ylnhh.cc.cd
-  udp: true
-  cipher: auto
-- name: X_KR_speednode_0024
-  server: 211.48.77.114
-  port: 11265
-  type: vless
-  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-  tls: true
-  skip-cert-verify: false
-  servername: ylnhh.cc.cd
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳@WangCai2
-    headers:
-      Host: ylnhh.cc.cd
-  udp: true
-  cipher: auto
-- name: X_KR_speednode_0025
-  server: 220.71.102.124
-  port: 16691
-  type: vless
-  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-  tls: true
-  skip-cert-verify: false
-  servername: ylnhh.cc.cd
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳@WangCai2
-    headers:
-      Host: ylnhh.cc.cd
-  udp: true
-  cipher: auto
-- name: X_KR_speednode_0027
-  server: 121.158.68.235
-  port: 12025
-  type: vless
-  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-  tls: true
-  skip-cert-verify: false
-  servername: ylnhh.cc.cd
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳@WangCai2
-    headers:
-      Host: ylnhh.cc.cd
-  udp: true
-  cipher: auto
-- name: X_KR_speednode_0028
-  server: 59.29.89.197
-  port: 18765
-  type: vless
-  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-  tls: true
-  skip-cert-verify: false
-  servername: ylnhh.cc.cd
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳@WangCai2
-    headers:
-      Host: ylnhh.cc.cd
-  udp: true
-  cipher: auto
-- name: X_KR_speednode_0029
-  server: 119.195.168.105
-  port: 12417
-  type: vless
-  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-  tls: true
-  skip-cert-verify: false
-  servername: ylnhh.cc.cd
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳@WangCai2
-    headers:
-      Host: ylnhh.cc.cd
-  udp: true
-  cipher: auto
-- name: X_KR_speednode_0030
-  server: 220.94.94.109
-  port: 10177
-  type: vless
-  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-  tls: true
-  skip-cert-verify: false
-  servername: ylnhh.cc.cd
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳@WangCai2
-    headers:
-      Host: ylnhh.cc.cd
-  udp: true
-  cipher: auto
-- name: X_KR_speednode_0031
-  server: 121.131.136.208
-  port: 11001
-  type: trojan
-  password: trojan
-  sni: jflsjlaf.pages.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: jflsjlaf.pages.dev
-  udp: true
-  cipher: auto
-- name: X_KR_speednode_0032
-  server: 203.170.125.48
-  port: 32920
+- name: X_KR_speednode_0011
+  server: 220.73.70.34
+  port: 50001
   type: vless
   uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
   tls: true
   skip-cert-verify: false
   client-fingerprint: random
-  servername: snippet.gfw.nn.kg
+  servername: snippet.fgfw.de5.net
   alpn:
   - http/1.1
   network: ws
   ws-opts:
     path: /danfeng
     headers:
-      Host: snippet.gfw.nn.kg
+      Host: snippet.fgfw.de5.net
   udp: true
   cipher: auto
-- name: X_KR_speednode_0033
-  server: 125.143.88.47
-  port: 10243
+- name: X_KR_speednode_0012
+  server: 59.3.3.161
+  port: 8443
   type: vless
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
   tls: true
   skip-cert-verify: false
-  client-fingerprint: random
-  servername: snippet.gfw.nn.kg
-  alpn:
-  - http/1.1
+  servername: ylnhh.cc.cd
   network: ws
   ws-opts:
-    path: /danfeng
+    path: /Telegram🇨🇳+@WangCai2
     headers:
-      Host: snippet.gfw.nn.kg
+      Host: ylnhh.cc.cd
   udp: true
   cipher: auto
-- name: X_KR_speednode_0034
-  server: 211.105.16.79
-  port: 20201
-  type: vless
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  tls: true
-  skip-cert-verify: false
-  servername: snippet.fgfw.indevs.in
-  network: ws
-  ws-opts:
-    path: /danfeng
-    headers:
-      Host: snippet.fgfw.indevs.in
-  udp: true
-  cipher: auto
-- name: X_KR_speednode_0035
+- name: X_KR_speednode_0013
   server: 183.97.71.221
   port: 12125
   type: vless
@@ -524,14 +201,14 @@ proxies:
   servername: ylnhh.cc.cd
   network: ws
   ws-opts:
-    path: /Telegram🇨🇳@WangCai2
+    path: /Telegram🇨🇳+@WangCai2
     headers:
       Host: ylnhh.cc.cd
   udp: true
   cipher: auto
-- name: X_KR_speednode_0036
-  server: 222.114.88.230
-  port: 10769
+- name: X_KR_speednode_0015
+  server: 220.88.3.5
+  port: 11099
   type: vless
   uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
   tls: true
@@ -544,9 +221,9 @@ proxies:
       Host: ylnhh.cc.cd
   udp: true
   cipher: auto
-- name: X_KR_speednode_0037
-  server: 121.166.253.13
-  port: 30038
+- name: X_KR_speednode_0016
+  server: 220.85.201.216
+  port: 10448
   type: vless
   uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
   tls: true
@@ -559,9 +236,9 @@ proxies:
       Host: ylnhh.cc.cd
   udp: true
   cipher: auto
-- name: X_KR_speednode_0039
-  server: 118.42.204.220
-  port: 12281
+- name: X_KR_speednode_0017
+  server: 61.102.250.123
+  port: 15347
   type: vless
   uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
   tls: true
@@ -574,24 +251,9 @@ proxies:
       Host: ylnhh.cc.cd
   udp: true
   cipher: auto
-- name: X_KR_speednode_0040
-  server: 121.187.96.157
-  port: 20201
-  type: vless
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  tls: true
-  skip-cert-verify: false
-  servername: snippet.gfw.nn.kg
-  network: ws
-  ws-opts:
-    path: /danfeng
-    headers:
-      Host: snippet.gfw.nn.kg
-  udp: true
-  cipher: auto
-- name: X_KR_speednode_0041
-  server: 211.198.215.67
-  port: 16034
+- name: X_KR_speednode_0018
+  server: 211.184.116.84
+  port: 50000
   type: vless
   uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
   tls: true
@@ -599,128 +261,42 @@ proxies:
   servername: ylnhh.cc.cd
   network: ws
   ws-opts:
-    path: /Telegram🇨🇳@WangCai2
+    path: /Telegram🇨🇳+@WangCai2
     headers:
       Host: ylnhh.cc.cd
   udp: true
   cipher: auto
-- name: X_KR_speednode_0042
-  server: 211.245.79.29
-  port: 19318
-  type: vless
-  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-  tls: true
-  skip-cert-verify: false
-  servername: ylnhh.cc.cd
-  network: ws
-  ws-opts:
-    path: /Telegram🇨🇳@WangCai2
-    headers:
-      Host: ylnhh.cc.cd
-  udp: true
-  cipher: auto
-- name: X_KR_speednode_0043
-  server: 218.154.216.119
-  port: 12616
-  type: vless
-  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: ylnhh.cc.cd
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3@WangCai2
-    headers:
-      Host: ylnhh.cc.cd
-  udp: true
-  cipher: auto
-- name: X_KR_speednode_0046
-  server: 220.78.129.86
-  port: 11937
-  type: vless
-  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: ylnhh.cc.cd
-  network: ws
-  ws-opts:
-    path: /TelegramU0001F1E8U0001F1F3@WangCai2
-    headers:
-      Host: ylnhh.cc.cd
-  udp: true
-  cipher: auto
-- name: X_NL_speednode_0048
-  server: routewhitenl.subv.ru
+- name: X_NL_speednode_0020
+  server: 77.93.91.159
   port: 443
   type: vless
-  uuid: c67f81df-34e8-4cb3-ab43-599585775fa9
-  flow: xtls-rprx-vision
+  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
   tls: true
   skip-cert-verify: false
-  client-fingerprint: qq
-  servername: routewhitenl.subv.ru
-  reality-opts:
-    public-key: sxyxV0_y1o09gKJBL9AJJyRSEg6MiYK0j-kb5unzHh4
-    short-id: ba262a270ecb844e
+  servername: ylnhh.cc.cd
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳+@WangCai2
+    headers:
+      Host: ylnhh.cc.cd
   udp: true
   cipher: auto
-- name: X_NL_speednode_0049
-  server: nll.scroogethebest.com
-  port: 443
+- name: X_SG_speednode_0022
+  server: 43.160.248.66
+  port: 8443
   type: vless
-  uuid: e2e1ddaa-1acf-4c4c-a211-92284f6440ed
-  flow: xtls-rprx-vision
+  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
   tls: true
   skip-cert-verify: false
-  client-fingerprint: random
-  servername: nll.scroogethebest.com
-  reality-opts:
-    public-key: AYQOZFxjvHN-RIzKYEibwFiFsp03cdlWGdCmyFfuNVc
-    short-id: 4fa44664f6a566d3
+  servername: ylnhh.cc.cd
+  network: ws
+  ws-opts:
+    path: /Telegram🇨🇳+@WangCai2
+    headers:
+      Host: ylnhh.cc.cd
   udp: true
   cipher: auto
-- name: X_RU_speednode_0050
-  server: 51.250.119.248
-  port: 16409
-  type: vless
-  uuid: 1537344c-663d-45d7-aeee-0c89e3430fff
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: www.microsoft.com
-  reality-opts:
-    public-key: G9mVzpnzkZkCJz-2yBZlDcPifowapcFvKNacVDroynk
-    short-id: ac43
-  udp: true
-  cipher: auto
-- name: X_RU_speednode_0051
-  server: 146.185.240.171
-  port: 52006
-  type: vless
-  uuid: b3da836c-d6d8-03e8-ba4a-0a7a54491924
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: qq
-  servername: max.ru
-  reality-opts:
-    public-key: 4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik
-    short-id: d8c6b58bcbb0c323
-  udp: true
-  cipher: auto
-- name: X_SC_speednode_0052
-  server: 8443.golden-cards.me
-  port: 443
-  type: trojan
-  password: q2GRUM1-odJBWq_KV6xv2fuNvu8ed-
-  sni: 8443.golden-cards.me
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_US_speednode_0053
+- name: X_US_speednode_0023
   server: 143.20.236.51
   port: 443
   type: vless
@@ -735,38 +311,7 @@ proxies:
     short-id: c39cc7310a
   udp: true
   cipher: auto
-- name: X_US_speednode_0054
-  server: 198.62.62.248
-  port: 443
-  type: vless
-  uuid: 5a4abb78-ecd7-4d68-ab2a-c11a3842f261
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: tar.alabama-tigr.info
-  network: ws
-  ws-opts:
-    path: /love
-    headers:
-      Host: tar.alabama-tigr.info
-  udp: true
-  cipher: auto
-- name: X_US_speednode_0055
-  server: 204.197.163.238
-  port: 43643
-  type: vless
-  uuid: ff111801-768c-4d23-8f46-e90ef677c80d
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: www.bing.com
-  reality-opts:
-    public-key: U_AczMjOIM-_AgDZrEtTBrInB4lcZxXpGB5CCNeqSCs
-    short-id: 0708e917
-  udp: true
-  cipher: auto
-- name: X_US_speednode_0056
+- name: X_US_speednode_0024
   server: 68.64.179.96
   port: 443
   type: vless
@@ -781,49 +326,58 @@ proxies:
       Host: ylnhh.cc.cd
   udp: true
   cipher: auto
-- name: X_US_speednode_0057
-  server: 68.64.179.243
+- name: X_US_speednode_0027
+  server: 144.31.2.248
   port: 443
   type: vless
-  uuid: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  uuid: a16bd0e2-ff2e-4e4c-a955-0c684255a065
+  flow: xtls-rprx-vision
   tls: true
   skip-cert-verify: false
-  servername: ylnhh.cc.cd
+  client-fingerprint: chrome
+  servername: pl.fasti.win
+  reality-opts:
+    public-key: -YTGWg5DjsLDyaDfr1D83kiUK22LVcrK3yC53lqqigs
+    short-id: feedbacc
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0031
+  server: 192.0.63.91
+  port: 443
+  type: vless
+  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  tls: true
+  skip-cert-verify: false
+  servername: snippet.fgfw.indevs.in
   network: ws
   ws-opts:
-    path: /Telegram🇨🇳@WangCai2
+    path: /danfeng
     headers:
-      Host: ylnhh.cc.cd
+      Host: snippet.fgfw.indevs.in
   udp: true
   cipher: auto
-- name: X_US_speednode_0058
-  server: 64.188.64.63
-  port: 8081
-  type: vless
-  uuid: b8e03ade-a2a1-4cbb-b002-5e1148049735
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: www.vk.com
-  reality-opts:
-    public-key: EJKcPSl0dv7mtU26gg6tUmKPw_aDvO2AHraRgNn6B14
-    short-id: 425ba80cd1a821a8
-  udp: true
+- alterId: 0
   cipher: auto
-- name: X_US_speednode_0059
-  server: gfm.vpnhub.shop
-  port: 8081
-  type: vless
-  uuid: b8e03ade-a2a1-4cbb-b002-5e1148049735
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: www.vk.com
-  reality-opts:
-    public-key: EJKcPSl0dv7mtU26gg6tUmKPw_aDvO2AHraRgNn6B14
-    short-id: 425ba80cd1a821a8
-  udp: true
+  name: X_DE29｜机房｜高风险 (黑名单)
+  network: tcp
+  port: '180'
+  server: 82.198.246.97
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
   cipher: auto
+  name: X_AU3｜机房｜低风险
+  network: ws
+  port: '12889'
+  server: 85.211.242.85
+  tls: false
+  type: vmess
+  uuid: 37c67a5e-2b2a-49b2-a197-889e80b28bee
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /
 - alterId: 0
   cipher: auto
   name: X_SG13｜机房｜低风险
@@ -940,6 +494,38 @@ proxies:
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
+  cipher: auto
+- name: X_HK_speednode_0015
+  password: BxceQaOe
+  port: 443
+  server: 58.152.25.253
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+  udp: true
+  cipher: auto
+- name: X_KR_speednode_0031
+  network: ws
+  password: trojan
+  port: 11001
+  server: 121.131.136.208
+  skip-cert-verify: true
+  sni: jflsjlaf.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: jflsjlaf.pages.dev
+    path: /
+  cipher: auto
+- name: X_SC_speednode_0052
+  password: q2GRUM1-odJBWq_KV6xv2fuNvu8ed-
+  port: 443
+  server: 8443.golden-cards.me
+  skip-cert-verify: true
+  sni: 8443.golden-cards.me
+  type: trojan
+  udp: true
   cipher: auto
 - name: X_电报群：https://t.me/vvkj11
   type: vless
@@ -2776,60 +2362,28 @@ proxy-groups:
   interval: 120
   strategy: consistent-hashing
   proxies:
-  - X_BG_speednode_0001
-  - X_CH_speednode_0002
-  - X_CN_speednode_0003
-  - X_CN_speednode_0004
+  - X_CN_speednode_0001
   - X_CN_speednode_0005
-  - X_DE_speednode_0006
-  - X_DE_speednode_0007
-  - X_ES_speednode_0008
-  - X_GB_speednode_0009
-  - X_GB_speednode_0010
-  - X_GB_speednode_0011
-  - X_GB_speednode_0012
-  - X_GB_speednode_0013
-  - X_GB_speednode_0014
-  - X_HK_speednode_0015
-  - X_HK_speednode_0016
-  - X_IQ_speednode_0017
+  - X_GB_speednode_0006
+  - X_HK_speednode_0007
+  - X_KR_speednode_0008
+  - X_KR_speednode_0009
+  - X_KR_speednode_0010
+  - X_KR_speednode_0011
+  - X_KR_speednode_0012
+  - X_KR_speednode_0013
+  - X_KR_speednode_0015
+  - X_KR_speednode_0016
+  - X_KR_speednode_0017
   - X_KR_speednode_0018
-  - X_KR_speednode_0019
-  - X_KR_speednode_0020
-  - X_KR_speednode_0021
-  - X_KR_speednode_0022
-  - X_KR_speednode_0023
-  - X_KR_speednode_0024
-  - X_KR_speednode_0025
-  - X_KR_speednode_0027
-  - X_KR_speednode_0028
-  - X_KR_speednode_0029
-  - X_KR_speednode_0030
-  - X_KR_speednode_0031
-  - X_KR_speednode_0032
-  - X_KR_speednode_0033
-  - X_KR_speednode_0034
-  - X_KR_speednode_0035
-  - X_KR_speednode_0036
-  - X_KR_speednode_0037
-  - X_KR_speednode_0039
-  - X_KR_speednode_0040
-  - X_KR_speednode_0041
-  - X_KR_speednode_0042
-  - X_KR_speednode_0043
-  - X_KR_speednode_0046
-  - X_NL_speednode_0048
-  - X_NL_speednode_0049
-  - X_RU_speednode_0050
-  - X_RU_speednode_0051
-  - X_SC_speednode_0052
-  - X_US_speednode_0053
-  - X_US_speednode_0054
-  - X_US_speednode_0055
-  - X_US_speednode_0056
-  - X_US_speednode_0057
-  - X_US_speednode_0058
-  - X_US_speednode_0059
+  - X_NL_speednode_0020
+  - X_SG_speednode_0022
+  - X_US_speednode_0023
+  - X_US_speednode_0024
+  - X_US_speednode_0027
+  - X_US_speednode_0031
+  - X_DE29｜机房｜高风险 (黑名单)
+  - X_AU3｜机房｜低风险
   - X_SG13｜机房｜低风险
   - X_JP4｜机房｜低风险
   - X_US70｜机房｜低风险
@@ -2843,6 +2397,9 @@ proxy-groups:
   - X_日本|@ripaojiedian
   - X_日本2|@ripaojiedian
   - X_新加坡3|@ripaojiedian
+  - X_HK_speednode_0015
+  - X_KR_speednode_0031
+  - X_SC_speednode_0052
 rule-providers:
   Apple:
     type: http
