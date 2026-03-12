@@ -69,171 +69,6 @@ proxies:
   port: 989
   cipher: aes-256-cfb
   password: f8f7aCzcPKbsF8p3
-- alterId: 0
-  cipher: auto
-  name: X_DE29｜机房｜高风险 (黑名单)
-  network: tcp
-  port: '180'
-  server: 82.198.246.97
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 0
-  cipher: auto
-  name: X_AU3｜机房｜低风险
-  network: ws
-  port: '12889'
-  server: 85.211.242.85
-  tls: false
-  type: vmess
-  uuid: 37c67a5e-2b2a-49b2-a197-889e80b28bee
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: X_SG13｜机房｜低风险
-  network: tcp
-  port: '30812'
-  server: v12.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  name: X_JP4｜机房｜低风险
-  network: tcp
-  port: '30806'
-  server: v6.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  name: X_US70｜机房｜低风险
-  network: tcp
-  port: '30829'
-  server: v29.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  name: X_HK21｜机房｜低风险
-  network: tcp
-  port: '30809'
-  server: v9.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: X_HK23｜家宽｜非常安全
-  network: tcp
-  password: af4b064a9c39472fb34ad8b113acdc6b
-  port: 443
-  server: 183.179.43.254
-  skip-cert-verify: true
-  sni: 183.179.43.254
-  type: trojan
-  cipher: auto
-- alterId: 2
-  cipher: auto
-  name: X_US76｜机房｜低风险
-  network: tcp
-  port: '30808'
-  server: v8.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 2
-  cipher: auto
-  name: X_🇭🇰 香港|@ripaojiedian
-  port: 30807
-  server: v10.hdacd.com
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: X_香港3|@ripaojiedian
-  network: tcp
-  password: f389ed926e512e15f382dc3804029474
-  port: 921
-  server: 54.178.24.255
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  tfo: false
-  type: trojan
-  cipher: auto
-- name: X_香港4|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 5823
-  server: 95.40.5.151
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  tfo: false
-  type: trojan
-  cipher: auto
-- name: X_香港5|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 443
-  server: 58.152.25.253
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  tfo: false
-  type: trojan
-  cipher: auto
-- name: X_日本2|@ripaojiedian
-  network: tcp
-  password: f389ed926e512e15f382dc3804029474
-  port: 34818
-  server: 153.121.45.139
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  tfo: false
-  type: trojan
-  cipher: auto
-- name: X_新加坡3|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 29666
-  server: 54.238.164.64
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  tfo: false
-  type: trojan
-  cipher: auto
-- name: X_美国2|@ripaojiedian
-  network: tcp
-  password: f389ed926e512e15f382dc3804029474
-  port: 4920
-  server: 13.231.7.33
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  tfo: false
-  type: trojan
-  cipher: auto
-- name: X_美国3|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 23287
-  server: 18.163.182.91
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  tfo: false
-  type: trojan
-  cipher: auto
-- name: X_CN_speednode_0005
-  password: d5fa43f9-1ace-4b8f-b865-627e67b1fe37
-  port: 35902
-  server: sg03.stimaysmhy8.com
-  skip-cert-verify: true
-  sni: jsygouer.weixin-baidu-qq.com
-  type: trojan
-  udp: true
-  cipher: auto
 - name: X_CN_speednode_0001
   server: pub.ap20260228.com
   port: 64021
@@ -244,6 +79,15 @@ proxies:
   tls: false
   skip-cert-verify: false
   udp: true
+- name: X_CN_speednode_0005
+  server: sg03.stimaysmhy8.com
+  port: 35902
+  type: trojan
+  password: d5fa43f9-1ace-4b8f-b865-627e67b1fe37
+  sni: jsygouer.weixin-baidu-qq.com
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
 - name: X_GB_speednode_0006
   server: 185.191.118.144
   port: 443
@@ -511,6 +355,162 @@ proxies:
     headers:
       Host: snippet.fgfw.indevs.in
   udp: true
+  cipher: auto
+- alterId: 0
+  cipher: auto
+  name: X_DE29｜机房｜高风险 (黑名单)
+  network: tcp
+  port: '180'
+  server: 82.198.246.97
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: X_AU3｜机房｜低风险
+  network: ws
+  port: '12889'
+  server: 85.211.242.85
+  tls: false
+  type: vmess
+  uuid: 37c67a5e-2b2a-49b2-a197-889e80b28bee
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: X_SG13｜机房｜低风险
+  network: tcp
+  port: '30812'
+  server: v12.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: auto
+  name: X_JP4｜机房｜低风险
+  network: tcp
+  port: '30806'
+  server: v6.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: auto
+  name: X_US70｜机房｜低风险
+  network: tcp
+  port: '30829'
+  server: v29.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: auto
+  name: X_HK21｜机房｜低风险
+  network: tcp
+  port: '30809'
+  server: v9.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: X_HK23｜家宽｜非常安全
+  network: tcp
+  password: af4b064a9c39472fb34ad8b113acdc6b
+  port: 443
+  server: 183.179.43.254
+  skip-cert-verify: true
+  sni: 183.179.43.254
+  type: trojan
+  cipher: auto
+- alterId: 2
+  cipher: auto
+  name: X_US76｜机房｜低风险
+  network: tcp
+  port: '30808'
+  server: v8.hdacd.com
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 2
+  cipher: auto
+  name: X_🇭🇰 香港|@ripaojiedian
+  port: 30807
+  server: v10.hdacd.com
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: X_香港3|@ripaojiedian
+  network: tcp
+  password: f389ed926e512e15f382dc3804029474
+  port: 921
+  server: 54.178.24.255
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  tfo: false
+  type: trojan
+  cipher: auto
+- name: X_香港4|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 5823
+  server: 95.40.5.151
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  tfo: false
+  type: trojan
+  cipher: auto
+- name: X_香港5|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 443
+  server: 58.152.25.253
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  tfo: false
+  type: trojan
+  cipher: auto
+- name: X_日本2|@ripaojiedian
+  network: tcp
+  password: f389ed926e512e15f382dc3804029474
+  port: 34818
+  server: 153.121.45.139
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  tfo: false
+  type: trojan
+  cipher: auto
+- name: X_新加坡3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 29666
+  server: 54.238.164.64
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  tfo: false
+  type: trojan
+  cipher: auto
+- name: X_美国2|@ripaojiedian
+  network: tcp
+  password: f389ed926e512e15f382dc3804029474
+  port: 4920
+  server: 13.231.7.33
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  tfo: false
+  type: trojan
+  cipher: auto
+- name: X_美国3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 23287
+  server: 18.163.182.91
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  tfo: false
+  type: trojan
   cipher: auto
 - name: X_电报群：https://t.me/vvkj11
   type: vmess
@@ -2192,24 +2192,8 @@ proxy-groups:
   interval: 120
   strategy: consistent-hashing
   proxies:
-  - X_DE29｜机房｜高风险 (黑名单)
-  - X_AU3｜机房｜低风险
-  - X_SG13｜机房｜低风险
-  - X_JP4｜机房｜低风险
-  - X_US70｜机房｜低风险
-  - X_HK21｜机房｜低风险
-  - X_HK23｜家宽｜非常安全
-  - X_US76｜机房｜低风险
-  - X_🇭🇰 香港|@ripaojiedian
-  - X_香港3|@ripaojiedian
-  - X_香港4|@ripaojiedian
-  - X_香港5|@ripaojiedian
-  - X_日本2|@ripaojiedian
-  - X_新加坡3|@ripaojiedian
-  - X_美国2|@ripaojiedian
-  - X_美国3|@ripaojiedian
-  - X_CN_speednode_0005
   - X_CN_speednode_0001
+  - X_CN_speednode_0005
   - X_GB_speednode_0006
   - X_HK_speednode_0007
   - X_KR_speednode_0008
@@ -2228,6 +2212,22 @@ proxy-groups:
   - X_US_speednode_0024
   - X_US_speednode_0027
   - X_US_speednode_0031
+  - X_DE29｜机房｜高风险 (黑名单)
+  - X_AU3｜机房｜低风险
+  - X_SG13｜机房｜低风险
+  - X_JP4｜机房｜低风险
+  - X_US70｜机房｜低风险
+  - X_HK21｜机房｜低风险
+  - X_HK23｜家宽｜非常安全
+  - X_US76｜机房｜低风险
+  - X_🇭🇰 香港|@ripaojiedian
+  - X_香港3|@ripaojiedian
+  - X_香港4|@ripaojiedian
+  - X_香港5|@ripaojiedian
+  - X_日本2|@ripaojiedian
+  - X_新加坡3|@ripaojiedian
+  - X_美国2|@ripaojiedian
+  - X_美国3|@ripaojiedian
 rule-providers:
   Apple:
     type: http
