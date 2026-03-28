@@ -150,20 +150,51 @@ proxies:
   sni: t.me%2Fripaojiedian
   type: trojan
   cipher: auto
-- name: X_AU_speednode_0004
-  password: IL37892054
-  port: 443
-  server: enhanced-crayfish.rooster465.autos
+- name: X_AT_speednode_0002
+  network: ws
+  password: trojan
+  port: 8444
+  server: 152.53.200.98
   skip-cert-verify: false
-  sni: enhanced-crayfish.rooster465.autos
+  sni: jflsjlaf.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: jflsjlaf.pages.dev
+    path: /
+  cipher: auto
+- name: X_CN_speednode_0004
+  password: 71165393-5252-4fea-ac96-c36b508720c8
+  port: 44302
+  server: hk07.jsytongxin.com
+  skip-cert-verify: true
+  sni: jsygouer.weixin-baidu-qq.com
   type: trojan
   udp: true
   cipher: auto
-- name: X_KR_speednode_0021
+- name: X_CN_speednode_0005
+  password: 71165393-5252-4fea-ac96-c36b508720c8
+  port: 39204
+  server: jp14.jsyjiedian8.com
+  skip-cert-verify: true
+  sni: jsygouer.weixin-baidu-qq.com
+  type: trojan
+  udp: true
+  cipher: auto
+- name: X_MD_speednode_0012
+  password: strong-secret-pass-777
+  port: 4443
+  server: 103.231.73.181
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+  cipher: auto
+- name: X_NL_speednode_0013
   network: ws
   password: trojan
-  port: 20000
-  server: 211.110.32.47
+  port: 82
+  server: 136.244.105.89
   skip-cert-verify: true
   sni: jflsjlaf.pages.dev
   type: trojan
@@ -173,62 +204,15 @@ proxies:
       Host: jflsjlaf.pages.dev
     path: /
   cipher: auto
-- name: X_KR_speednode_0026
-  network: ws
-  password: trojan
-  port: 11434
-  server: 118.35.208.37
-  skip-cert-verify: true
-  sni: jflsjlaf.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: jflsjlaf.pages.dev
-    path: /
-  cipher: auto
-- name: X_MD_speednode_0028
-  password: 3ac6a6ca99f74941b1eaf892818e2ddb
-  port: 443
-  server: 89.221.225.71
+- name: X_NL_speednode_0015
+  password: strong-secret-pass-777
+  port: 4443
+  server: 94.131.105.125
   skip-cert-verify: true
   type: trojan
   udp: true
   cipher: auto
-- name: X_PL_speednode_0029
-  password: IL37892054
-  port: 443
-  server: outgoing-ladybird.rooster465.autos
-  skip-cert-verify: false
-  sni: outgoing-ladybird.rooster465.autos
-  type: trojan
-  udp: true
-  cipher: auto
-- name: X_PL_speednode_0030
-  password: IL37892054
-  port: 443
-  server: fluent-stingray.crayfish192.xyz
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-  cipher: auto
-- name: X_SG_speednode_0034
-  password: 3ac6a6ca99f74941b1eaf892818e2ddb
-  port: 443
-  server: 185.151.146.40
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-  cipher: auto
-- name: X_TW_speednode_0036
-  password: 3ac6a6ca99f74941b1eaf892818e2ddb
-  port: 443
-  server: 85.237.206.249
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-  cipher: auto
-- name: X_US_speednode_0039
+- name: X_US_speednode_0019
   network: ws
   password: trojan
   port: 8025
@@ -242,102 +226,53 @@ proxies:
       Host: jflsjlaf.pages.dev
     path: /
   cipher: auto
-- name: X_US_speednode_0065
-  password: 3ac6a6ca99f74941b1eaf892818e2ddb
-  port: 443
-  server: 77.247.126.137
+- name: X_US_speednode_0026
+  network: ws
+  password: trojan
+  port: 28080
+  server: 38.83.41.89
   skip-cert-verify: true
+  sni: jflsjlaf.pages.dev
   type: trojan
   udp: true
-  cipher: auto
-- name: X_US_speednode_0068
-  password: 3ac6a6ca99f74941b1eaf892818e2ddb
-  port: 443
-  server: 194.33.45.157
-  skip-cert-verify: true
-  type: trojan
-  udp: true
+  ws-opts:
+    headers:
+      Host: jflsjlaf.pages.dev
+    path: /
   cipher: auto
 - name: X_AE_speednode_0001
-  server: 31.58.50.225
-  port: 8443
+  server: 217.60.252.232
+  port: 2053
   type: vless
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
   skip-cert-verify: false
-  servername: snippet.chinav.eu.cc
-  alpn:
-  - http/1.1
+  servername: sni.111000.v6.navy
   network: ws
   ws-opts:
-    path: /danfeng
+    path: /?ed=2560
     headers:
-      Host: snippet.chinav.eu.cc
+      Host: sni.111000.v6.navy
   udp: true
   cipher: auto
-- name: X_AT_speednode_0002
-  server: 152.53.80.40
-  port: 443
-  type: vless
-  uuid: e6567a1e-260f-4b0e-8de3-e2e12f90e854
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: sha.helper-internet.com
-  reality-opts:
-    public-key: W-zf_ncm9sYALF5EqvUsxqTkYGdAw-tQczT2SqwVMGE
-    short-id: ff776ff77be48b88
-  udp: true
+- name: X_CN_speednode_0003
+  server: hk18.stimaysmhy8.com
+  port: 51254
+  type: vmess
+  uuid: 71165393-5252-4fea-ac96-c36b508720c8
+  alterId: 0
   cipher: auto
-- name: X_AU_speednode_0003
-  server: 159.13.36.110
-  port: 2443
-  type: vless
-  uuid: 48b36b6a-eaa6-4843-9231-0bb8b38b5da5
-  flow: xtls-rprx-vision
-  tls: true
+  tls: false
   skip-cert-verify: false
-  client-fingerprint: safari
-  servername: www.microsoft.com
-  reality-opts:
-    public-key: uzRnmrb_UXbDNz5_IeFrC-PJfnuoUIsyaSEy1FgdPho
-    short-id: ae377cba
-  udp: true
-  cipher: auto
-- name: X_CH_speednode_0005
-  server: 138.124.104.221
-  port: 443
-  type: vless
-  uuid: fd37be2f-f8d1-47de-97e8-13c28107d31e
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: pol2.frostbot.ru
-  reality-opts:
-    public-key: iCY6H8CpnIfqmIkEABduJEAeJrnYS089R1-jKEyVp3w
-    short-id: e043995937
-  udp: true
-  cipher: auto
-- name: X_CZ_speednode_0006
-  server: 194.87.245.253
-  port: 443
-  type: vless
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  tls: true
-  skip-cert-verify: false
-  servername: snippet.danfeng.kozow.com
   network: ws
   ws-opts:
-    path: /danfeng?ed=2560
+    path: /
     headers:
-      Host: snippet.danfeng.kozow.com
+      Host: hk18.stimaysmhy8.com
   udp: true
-  cipher: auto
-- name: X_DE_speednode_0007
-  server: 45.145.42.170
-  port: 8005
+- name: X_DE_speednode_0006
+  server: 185.94.29.156
+  port: 4001
   type: vless
   uuid: 00000000-0000-4000-8000-000000000000
   tls: true
@@ -350,645 +285,178 @@ proxies:
       Host: sub.mot.ip-ddns.com
   udp: true
   cipher: auto
-- name: X_FI_speednode_0008
-  server: 94.156.116.254
-  port: 51198
-  type: vless
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: random
-  servername: snippet.fgfw.de5.net
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /danfeng
-    headers:
-      Host: snippet.fgfw.de5.net
+- name: X_GB_speednode_0007
+  server: 82.198.246.97
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: X_IR_speednode_0008
+  server: v12.hdacd.com
+  port: 30812
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: X_KR_speednode_0009
+  server: 121.169.46.116
+  port: 1090
+  type: socks5
   udp: true
   cipher: auto
-- name: X_GB_speednode_0009
-  server: 152.67.158.177
-  port: 2443
-  type: vless
-  uuid: 48b36b6a-eaa6-4843-9231-0bb8b38b5da5
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: 498LE1B8NFnfagrOnGGmuh80KqgKXMKiHbgcpxRqBB0
-    short-id: 2d989d13dba1
-  udp: true
-  cipher: auto
-- name: X_HK_speednode_0010
-  server: 203.168.131.110
-  port: 3389
-  type: vless
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: random
-  servername: snippet.chinav.eu.cc
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /danfengfp=random
-    headers:
-      Host: snippet.chinav.eu.cc
-  udp: true
-  cipher: auto
-- name: X_IE_speednode_0012
-  server: 20.67.254.104
-  port: 443
-  type: vless
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: random
-  servername: snippet.chinat.eu.cc
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /danfeng
-    headers:
-      Host: snippet.chinat.eu.cc
-  udp: true
-  cipher: auto
-- name: X_IR_speednode_0013
-  server: 62.60.237.240
-  port: 443
-  type: vless
-  uuid: d4de1f64-bf3c-4d97-9663-0091f8c07359
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: logggg.nammknammknammknammknammkb2.ir
-  reality-opts:
-    public-key: RravQN06gzsNsm5ojEhZGrxBgLGEpqEThtHEltdjpBk
-    short-id: b3d76d
-  udp: true
-  cipher: auto
-- name: X_JP_speednode_0014
-  server: 103.214.168.247
-  port: 39738
-  type: vless
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: random
-  servername: snippet.fgfw.de5.net
-  network: ws
-  ws-opts:
-    path: /danfeng
-    headers:
-      Host: snippet.fgfw.de5.net
-  udp: true
-  cipher: auto
-- name: X_JP_speednode_0015
-  server: 217.142.227.120
-  port: 2443
-  type: vless
-  uuid: 48b36b6a-eaa6-4843-9231-0bb8b38b5da5
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: safari
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: u8FFKKLif3K14_SqiDEF834Rpp4zETdOYt2mFrrsSnQ
-    short-id: b15116d00de0
-  udp: true
-  cipher: auto
-- name: X_KR_speednode_0018
-  server: 220.71.1.32
-  port: 20201
-  type: vless
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
+- name: X_KR_speednode_0010
+  server: testkr3.ssv.vc
+  port: 30446
+  type: http
+  username: test
+  password: test.+
   tls: true
   skip-cert-verify: true
-  client-fingerprint: random
-  servername: itz4m3m5v7.chinav.indevs.in
-  network: ws
-  ws-opts:
-    path: /danfeng?ed=2560
-    headers:
-      Host: itz4m3m5v7.chinav.indevs.in
   udp: true
   cipher: auto
-- name: X_KR_speednode_0019
-  server: 211.193.169.223
-  port: 37810
+- name: X_KR_speednode_0011
+  server: 106.255.89.151
+  port: 30035
   type: vless
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: random
-  servername: snippet.fgfw.de5.net
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /danfeng
-    headers:
-      Host: snippet.fgfw.de5.net
-  udp: true
-  cipher: auto
-- name: X_KR_speednode_0020
-  server: 121.174.43.148
-  port: 12345
-  type: vless
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: random
-  servername: snippet.chinat.eu.cc
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /danfeng
-    headers:
-      Host: snippet.chinat.eu.cc
-  udp: true
-  cipher: auto
-- name: X_KR_speednode_0022
-  server: 222.113.18.207
-  port: 16993
-  type: vless
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  uuid: 00000000-0000-4000-8000-000000000000
   tls: true
   skip-cert-verify: false
   client-fingerprint: chrome
-  servername: snippet.fgfw.de5.net
-  network: ws
-  ws-opts:
-    path: /danfeng
-    headers:
-      Host: snippet.fgfw.de5.net
-  udp: true
-  cipher: auto
-- name: X_KR_speednode_0023
-  server: 106.251.70.75
-  port: 10162
-  type: vless
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: random
-  servername: snippet.chinav.eu.cc
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /danfeng
-    headers:
-      Host: snippet.chinav.eu.cc
-  udp: true
-  cipher: auto
-- name: X_KR_speednode_0024
-  server: 175.199.169.221
-  port: 50006
-  type: vless
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: random
-  servername: snippet.fgfw.de5.net
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /danfeng
-    headers:
-      Host: snippet.fgfw.de5.net
-  udp: true
-  cipher: auto
-- name: X_KR_speednode_0025
-  server: 121.152.61.147
-  port: 11371
-  type: vless
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: snippet.fgfw.de5.net
-  network: ws
-  ws-opts:
-    path: /danfeng
-    headers:
-      Host: snippet.fgfw.de5.net
-  udp: true
-  cipher: auto
-- name: X_KR_speednode_0027
-  server: 140.238.11.149
-  port: 2443
-  type: vless
-  uuid: 48b36b6a-eaa6-4843-9231-0bb8b38b5da5
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: qq
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: BmqEE16ux216I-WcezMLroZxIoV09PfeMS-xhyfWTVs
-    short-id: ff93655f5d
-  udp: true
-  cipher: auto
-- name: X_RU_speednode_0033
-  server: 193.9.49.65
-  port: 443
-  type: vless
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  tls: true
-  skip-cert-verify: false
-  servername: r.icy.de5.net
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: r.icy.de5.net
-  udp: true
-  cipher: auto
-- name: X_SG_speednode_0035
-  server: 68.183.227.4
-  port: 8080
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-  udp: true
-- name: X_US_speednode_0037
-  server: www.npmjs.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+  servername: sub.mot.ip-ddns.com
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
+      Host: sub.mot.ip-ddns.com
   udp: true
   cipher: auto
-- name: X_US_speednode_0038
-  server: www.udemy.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
-  udp: true
-  cipher: auto
-- name: X_US_speednode_0040
-  server: 172.64.229.85
-  port: 443
-  type: vless
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  tls: true
-  skip-cert-verify: false
-  servername: r.icy.de5.net
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: r.icy.de5.net
-  udp: true
-  cipher: auto
-- name: X_US_speednode_0041
-  server: ns.cloudflare.com
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
-  udp: true
-  cipher: auto
-- name: X_US_speednode_0042
-  server: www.wto.org
-  port: 2095
-  type: vless
-  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
-  tls: false
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  servername: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: fuckingfangbinxing.cnm-fangbinxing-nmsl-ccc.workers.dev
-  udp: true
-  cipher: auto
-- name: X_US_speednode_0043
-  server: 162.159.38.78
-  port: 443
-  type: vless
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  tls: true
-  skip-cert-verify: false
-  servername: r.icy.de5.net
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: r.icy.de5.net
-  udp: true
-  cipher: auto
-- name: X_US_speednode_0044
-  server: 162.159.24.111
-  port: 443
-  type: vless
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  tls: true
-  skip-cert-verify: false
-  servername: r.icy.de5.net
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: r.icy.de5.net
-  udp: true
-  cipher: auto
-- name: X_US_speednode_0046
-  server: 162.159.7.2
-  port: 443
-  type: vless
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: r.icy.de5.net
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: r.icy.de5.net
-  udp: true
-  cipher: auto
-- name: X_US_speednode_0047
-  server: 172.64.229.165
-  port: 443
-  type: vless
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  tls: true
-  skip-cert-verify: false
-  servername: r.icy.de5.net
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: r.icy.de5.net
-  udp: true
-  cipher: auto
-- name: X_US_speednode_0048
-  server: www.visa.cn
-  port: 443
-  type: vless
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  tls: true
-  skip-cert-verify: false
-  servername: r.icy.de5.net
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: r.icy.de5.net
-  udp: true
-  cipher: auto
-- name: X_US_speednode_0049
-  server: 192.0.54.131
-  port: 443
-  type: vless
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  tls: true
-  skip-cert-verify: false
-  servername: snippet.danfeng.kozow.com
-  network: ws
-  ws-opts:
-    path: /danfeng?ed=2560
-    headers:
-      Host: snippet.danfeng.kozow.com
-  udp: true
-  cipher: auto
-- name: X_US_speednode_0050
-  server: 192.0.63.230
-  port: 443
-  type: vless
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  tls: true
-  skip-cert-verify: false
-  servername: snippet.danfeng.kozow.com
-  network: ws
-  ws-opts:
-    path: /danfeng?ed=2560
-    headers:
-      Host: snippet.danfeng.kozow.com
-  udp: true
-  cipher: auto
-- name: X_US_speednode_0051
-  server: 192.0.63.56
-  port: 443
-  type: vless
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  tls: true
-  skip-cert-verify: false
-  servername: snippet.danfeng.kozow.com
-  network: ws
-  ws-opts:
-    path: /danfeng?ed=2560
-    headers:
-      Host: snippet.danfeng.kozow.com
-  udp: true
-  cipher: auto
-- name: X_US_speednode_0052
-  server: 192.0.54.225
-  port: 443
-  type: vless
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  tls: true
-  skip-cert-verify: false
-  servername: snippet.danfeng.kozow.com
-  network: ws
-  ws-opts:
-    path: /danfeng?ed=2560
-    headers:
-      Host: snippet.danfeng.kozow.com
-  udp: true
-  cipher: auto
-- name: X_US_speednode_0053
-  server: 192.0.63.134
-  port: 443
-  type: vless
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  tls: true
-  skip-cert-verify: false
-  servername: snippet.danfeng.kozow.com
-  network: ws
-  ws-opts:
-    path: /danfeng?ed=2560
-    headers:
-      Host: snippet.danfeng.kozow.com
-  udp: true
-  cipher: auto
-- name: X_US_speednode_0054
-  server: 192.0.54.188
-  port: 443
-  type: vless
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
-  tls: true
-  skip-cert-verify: false
-  servername: snippet.danfeng.kozow.com
-  network: ws
-  ws-opts:
-    path: /danfeng?ed=2560
-    headers:
-      Host: snippet.danfeng.kozow.com
-  udp: true
-  cipher: auto
-- name: X_US_speednode_0055
-  server: 104.17.155.101
-  port: 443
-  type: vless
-  uuid: 29ff2954-dfea-4d20-8089-059cfa861453
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: wu.090881.xyz
-  network: ws
-  ws-opts:
-    path: /products/proxyip=ProxyIP.SG.CMLiussss.net/proxyip=ProxyIP.SG.CMLiussss.net
-    headers:
-      Host: wu.090881.xyz
-  udp: true
-  cipher: auto
-- name: X_US_speednode_0056
-  server: 172.64.156.0
-  port: 443
-  type: vless
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  tls: true
-  skip-cert-verify: false
-  servername: r.icy.de5.net
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: r.icy.de5.net
-  udp: true
-  cipher: auto
-- name: X_US_speednode_0057
-  server: vip1.kaixincloud.top
-  port: 443
-  type: vless
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: r.icy.de5.net
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: r.icy.de5.net
-  udp: true
-  cipher: auto
-- name: X_US_speednode_0059
-  server: 162.159.44.142
-  port: 443
-  type: vless
-  uuid: 9e4f36da-8f61-44f8-a9a7-0fd3a8d81234
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: r.icy.de5.net
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: r.icy.de5.net
-  udp: true
-  cipher: auto
-- name: X_US_speednode_0060
-  server: 159.54.185.35
-  port: 2443
-  type: vless
-  uuid: 48b36b6a-eaa6-4843-9231-0bb8b38b5da5
-  flow: xtls-rprx-vision
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: safari
-  servername: www.cloudflare.com
-  reality-opts:
-    public-key: Rp0axdMMyjBY3su8yFECX1rMCcg90y0HcCHalmxs73Y
-    short-id: 494cf2
-  udp: true
-  cipher: auto
-- name: X_US_speednode_0067
-  server: 157.254.223.44
-  port: 18959
-  type: vless
-  uuid: d0b3e27d-bbfc-4a3b-8e60-6973de8fcefa
-  tls: true
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  servername: itunes.apple.com
-  reality-opts:
-    public-key: -hwVEdgFkvjku8ESuDoAA7id5yGGv_zXBvBW_RdhmHA
-    short-id: d557c6895d014075
-  udp: true
-  cipher: auto
-- name: X_US_speednode_0069
-  server: 143.14.22.98
+- name: X_NL_speednode_0014
+  server: 195.181.173.199
   port: 8443
   type: vless
-  uuid: 948fac3c-42bf-41a6-a5f9-704d36ff0d8d
+  uuid: 394f6981-a782-4779-9a85-e6cf22935d93
+  tls: true
+  skip-cert-verify: false
+  servername: ams1.fromblancwithlove.com
+  udp: true
+  cipher: auto
+- name: X_SC_speednode_0018
+  server: 154.223.16.212
+  port: 989
+  type: ss
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+  udp: true
+- name: X_US_speednode_0020
+  server: store.ubi.com
+  port: 443
+  type: ss
+  cipher: none
+  password: 3e96ef7d-8637-42c2-ac73-75182196e755
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    host: mfvpn.fuchen.indevs.in
+    path: /3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560
+    tls: true
+    mux: false
+  udp: true
+- name: X_US_speednode_0021
+  server: 20.83.154.79
+  port: 7070
+  type: socks5
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0022
+  server: 209.102.207.120
+  port: 443
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: true
+  servername: sni.111000.v6.navy
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.v6.navy
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0023
+  server: 135.84.74.43
+  port: 443
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: true
+  servername: sni.111000.v6.navy
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.v6.navy
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0024
+  server: f755b173-tcb5s0-tcjoyq-2cg3.de.oshuawei.com
+  port: 443
+  type: http
+  username: c931310e-a5e7-11f0-bf66-f23c9164ca5d
+  password: c931310e-a5e7-11f0-bf66-f23c9164ca5d
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0025
+  server: 194.36.39.84
+  port: 8443
+  type: vless
+  uuid: 96a1cd77-d7f8-42b6-86c1-29a2e2e85ea0
+  flow: xtls-rprx-vision
   tls: true
   skip-cert-verify: false
   client-fingerprint: random
-  servername: snippet.chinat.eu.cc
-  alpn:
-  - http/1.1
-  network: ws
-  ws-opts:
-    path: /danfeng
-    headers:
-      Host: snippet.chinat.eu.cc
+  servername: rbc.ru
+  reality-opts:
+    public-key: 7HejPU15kdTl9QG_8AygEM3w0ythsbhG6q_SwUumyR0
+    short-id: f1071c148a5aefc4
   udp: true
   cipher: auto
-- name: X_US_speednode_0070
-  server: 192.200.160.20
+- name: X_US_speednode_0027
+  server: 135.84.74.155
   port: 443
   type: vless
-  uuid: 92b82d0f-d2f8-4f6f-b177-08f681a337e6
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   tls: true
   skip-cert-verify: false
-  servername: 639073677243791121.camry-perma.info
+  servername: sni.111000.v6.navy
   network: ws
   ws-opts:
-    path: /njvqoews?ed=2560
+    path: /
     headers:
-      Host: 639073677243791121.camry-perma.info
+      Host: sni.111000.v6.navy
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0028
+  server: braskivo.ru
+  port: 8443
+  type: vless
+  uuid: 96a1cd77-d7f8-42b6-86c1-29a2e2e85ea0
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: rbc.ru
+  reality-opts:
+    public-key: 7HejPU15kdTl9QG_8AygEM3w0ythsbhG6q_SwUumyR0
+    short-id: f1071c148a5aefc4
   udp: true
   cipher: auto
 - name: X_电报群：https://t.me/vvkj11
@@ -2362,64 +1830,32 @@ proxy-groups:
   - X_新加坡|@ripaojiedian
   - X_新加坡2|@ripaojiedian
   - X_美国3|@ripaojiedian
-  - X_AU_speednode_0004
-  - X_KR_speednode_0021
-  - X_KR_speednode_0026
-  - X_MD_speednode_0028
-  - X_PL_speednode_0029
-  - X_PL_speednode_0030
-  - X_SG_speednode_0034
-  - X_TW_speednode_0036
-  - X_US_speednode_0039
-  - X_US_speednode_0065
-  - X_US_speednode_0068
-  - X_AE_speednode_0001
   - X_AT_speednode_0002
-  - X_AU_speednode_0003
-  - X_CH_speednode_0005
-  - X_CZ_speednode_0006
-  - X_DE_speednode_0007
-  - X_FI_speednode_0008
-  - X_GB_speednode_0009
-  - X_HK_speednode_0010
-  - X_IE_speednode_0012
-  - X_IR_speednode_0013
-  - X_JP_speednode_0014
-  - X_JP_speednode_0015
-  - X_KR_speednode_0018
-  - X_KR_speednode_0019
-  - X_KR_speednode_0020
-  - X_KR_speednode_0022
-  - X_KR_speednode_0023
-  - X_KR_speednode_0024
-  - X_KR_speednode_0025
-  - X_KR_speednode_0027
-  - X_RU_speednode_0033
-  - X_SG_speednode_0035
-  - X_US_speednode_0037
-  - X_US_speednode_0038
-  - X_US_speednode_0040
-  - X_US_speednode_0041
-  - X_US_speednode_0042
-  - X_US_speednode_0043
-  - X_US_speednode_0044
-  - X_US_speednode_0046
-  - X_US_speednode_0047
-  - X_US_speednode_0048
-  - X_US_speednode_0049
-  - X_US_speednode_0050
-  - X_US_speednode_0051
-  - X_US_speednode_0052
-  - X_US_speednode_0053
-  - X_US_speednode_0054
-  - X_US_speednode_0055
-  - X_US_speednode_0056
-  - X_US_speednode_0057
-  - X_US_speednode_0059
-  - X_US_speednode_0060
-  - X_US_speednode_0067
-  - X_US_speednode_0069
-  - X_US_speednode_0070
+  - X_CN_speednode_0004
+  - X_CN_speednode_0005
+  - X_MD_speednode_0012
+  - X_NL_speednode_0013
+  - X_NL_speednode_0015
+  - X_US_speednode_0019
+  - X_US_speednode_0026
+  - X_AE_speednode_0001
+  - X_CN_speednode_0003
+  - X_DE_speednode_0006
+  - X_GB_speednode_0007
+  - X_IR_speednode_0008
+  - X_KR_speednode_0009
+  - X_KR_speednode_0010
+  - X_KR_speednode_0011
+  - X_NL_speednode_0014
+  - X_SC_speednode_0018
+  - X_US_speednode_0020
+  - X_US_speednode_0021
+  - X_US_speednode_0022
+  - X_US_speednode_0023
+  - X_US_speednode_0024
+  - X_US_speednode_0025
+  - X_US_speednode_0027
+  - X_US_speednode_0028
 rule-providers:
   Apple:
     type: http
