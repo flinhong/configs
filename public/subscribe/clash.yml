@@ -849,8 +849,8 @@ proxies:
 - name: X_香港3|@ripaojiedian
   network: tcp
   password: 9f7d5cb76d1645101994d9b25891e3b7
-  port: 21413
-  server: 43.207.198.5
+  port: 921
+  server: 13.193.218.6
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -859,7 +859,7 @@ proxies:
   network: tcp
   password: BxceQaOe
   port: 9211
-  server: 43.198.185.44
+  server: 95.40.35.187
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
@@ -867,17 +867,26 @@ proxies:
 - name: X_香港5|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 5823
-  server: 13.231.153.129
+  port: 6313
+  server: 3.112.236.46
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
   cipher: auto
-- name: X_日本3|@ripaojiedian
+- name: X_日本|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 16919
+  server: 43.207.66.138
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+  cipher: auto
+- name: X_日本2|@ripaojiedian
   network: tcp
   password: 9f7d5cb76d1645101994d9b25891e3b7
-  port: 34818
-  server: 52.195.170.179
+  port: 4937
+  server: 160.16.106.99
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -886,7 +895,7 @@ proxies:
   network: tcp
   password: 9f7d5cb76d1645101994d9b25891e3b7
   port: 4674
-  server: 160.16.124.17
+  server: 3.113.31.8
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -894,10 +903,19 @@ proxies:
 - name: X_新加坡3|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 12070
-  server: 95.40.68.20
+  port: 30726
+  server: 16.163.147.176
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
+  type: trojan
+  cipher: auto
+- name: X_美国3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 44386
+  server: 43.198.248.119
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
   type: trojan
   cipher: auto
 - name: X_电报群：https://t.me/vvkj11
@@ -2235,9 +2253,11 @@ proxy-groups:
   - X_香港3|@ripaojiedian
   - X_香港4|@ripaojiedian
   - X_香港5|@ripaojiedian
-  - X_日本3|@ripaojiedian
+  - X_日本|@ripaojiedian
+  - X_日本2|@ripaojiedian
   - X_新加坡2|@ripaojiedian
   - X_新加坡3|@ripaojiedian
+  - X_美国3|@ripaojiedian
 rule-providers:
   Apple:
     type: http
