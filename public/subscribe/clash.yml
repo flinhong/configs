@@ -1,0 +1,6113 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9999
+dns:
+  enable: true
+  listen: 0.0.0.0:53
+  ipv6: false
+  default-nameserver:
+  - 223.5.5.5
+  - 114.114.114.114
+  nameserver:
+  - 223.5.5.5
+  - 114.114.114.114
+  - 119.29.29.29
+  - 180.76.76.76
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+  - '*.lan'
+  - '*.localdomain'
+  - '*.example'
+  - '*.invalid'
+  - '*.localhost'
+  - '*.test'
+  - '*.local'
+  - '*.home.arpa'
+  - router.asus.com
+  - localhost.sec.qq.com
+  - localhost.ptlogin2.qq.com
+  - +.msftconnecttest.com
+tun:
+  enable: true
+  auto-route: true
+  auto-detect-interface: true
+  dns-hijack:
+  - 114.114.114.114
+  - 180.76.76.76
+  - 119.29.29.29
+  - 223.5.5.5
+  - 8.8.8.8
+  - 8.8.4.4
+  - 1.1.1.1
+  - 1.0.0.1
+proxies:
+- name: 🇨🇳_CN_中国->🇯🇵_JP_日本
+  type: trojan
+  server: 36.156.102.115
+  port: 26876
+  password: BxceQaOe
+  skip-cert-verify: true
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  type: vmess
+  server: v29.heduian.link
+  port: 30829
+  sni: ''
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /oooo
+    headers:
+      host: ocbc.com
+  alterId: 2
+- name: 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  type: ss
+  server: 185.153.197.5
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: X_AT_speednode_0001
+  server: 152.53.119.132
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_AT_speednode_0002
+  server: 152.53.228.86
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_AT_speednode_0003
+  server: 152.53.118.28
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_AU_speednode_0006
+  server: 103.109.234.64
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_BG_speednode_0008
+  server: 94.156.114.13
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_BG_speednode_0009
+  server: 93.123.84.194
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_BG_speednode_0011
+  server: 94.125.101.103
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_CH_speednode_0012
+  server: 138.124.28.78
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_CH_speednode_0013
+  server: 138.124.28.173
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_CH_speednode_0015
+  server: 138.124.32.0
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_CH_speednode_0017
+  server: 5.182.36.56
+  port: 45886
+  type: vless
+  uuid: 8338171d-2ea7-4015-bdea-492f3d5d4e60
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: yahoo.com
+  reality-opts:
+    public-key: zJeLZDPHoHMcAzBJh38tSavofNlkBrpADFx9jVVPil0
+    short-id: 94f9
+  udp: true
+  cipher: auto
+- name: X_CH_speednode_0019
+  server: 138.124.49.137
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_CH_speednode_0020
+  server: 138.124.240.36
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_CH_speednode_0022
+  server: 138.124.34.36
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_CH_speednode_0023
+  server: 138.124.230.45
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_CH_speednode_0024
+  server: 138.124.87.163
+  port: 8443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_CN_speednode_0026
+  server: planb.mojcn.com
+  port: 16632
+  type: vmess
+  uuid: d4ab51e4-4dc7-4394-9db2-bd6779586fef
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad0df36a3ca39e1a9e3e303f65b45db4.mobgslb.tbcache.com
+  udp: true
+- name: X_CN_speednode_0027
+  server: t3cache.71edgeiqiyi.com
+  port: 23445
+  type: http
+  username: f8eca8df-a1a5-4918-a194-d34112a3673f
+  password: f8eca8df-a1a5-4918-a194-d34112a3673f
+  tls: true
+  udp: true
+  cipher: auto
+- name: X_CZ_speednode_0029
+  server: 95.85.232.148
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_CZ_speednode_0030
+  server: 95.85.233.44
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_CZ_speednode_0031
+  server: 95.85.234.43
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_DE_speednode_0035
+  server: pl2-gws4.onnstreaming.ru
+  port: 443
+  type: vless
+  uuid: 19ef3d02-1c55-4fec-9794-6def8cbac396
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: pl2-gws4.onnstreaming.ru
+  reality-opts:
+    public-key: fN3l3mYSDO44IWNPHWOQo2JMUw2isUGoOqrS6hCFfBQ
+    short-id: d1f93724859d75ac
+  udp: true
+  cipher: auto
+- name: X_DE_speednode_0036
+  server: 193.23.218.192
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_DE_speednode_0038
+  server: 185.219.84.221
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_DE_speednode_0039
+  server: 202.61.195.167
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_DE_speednode_0041
+  server: 194.164.198.156
+  port: 8443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_DE_speednode_0043
+  server: 202.61.226.121
+  port: 2053
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_DE_speednode_0044
+  server: srv190.towersflowerss.com
+  port: 443
+  type: vless
+  uuid: 36d85d65-1b57-4cba-a2a6-f61131b08593
+  tls: false
+  skip-cert-verify: false
+  servername: srv190.towersflowerss.com
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: srv190.towersflowerss.com
+  udp: true
+  cipher: auto
+- name: X_DK_speednode_0045
+  server: 159.195.5.181
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_DK_speednode_0047
+  server: 159.195.44.151
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_FI_speednode_0048
+  server: 94.141.123.243
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_GB_speednode_0050
+  server: m.cnmjin.net
+  port: 16622
+  type: vmess
+  uuid: d4ab51e4-4dc7-4394-9db2-bd6779586fef
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad0df36a3ca39e1a9e3e303f65b45db4.mobgslb.tbcache.com
+  udp: true
+- name: X_GB_speednode_0052
+  server: 148.253.210.141
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_GB_speednode_0054
+  server: t.cnmjcn.cyou
+  port: 16618
+  type: vmess
+  uuid: d4ab51e4-4dc7-4394-9db2-bd6779586fef
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ad0df36a3ca39e1a9e3e303f65b45db4.mobgslb.tbcache.com
+  udp: true
+- name: X_GB_speednode_0056
+  server: 77.239.127.77
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_GB_speednode_0058
+  server: 2.27.35.199
+  port: 8443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_GB_speednode_0060
+  server: 185.170.153.115
+  port: 8443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_GB_speednode_0061
+  server: 148.253.215.61
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_GB_speednode_0064
+  server: 86.54.82.239
+  port: 443
+  type: vless
+  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: store.steampowered.com
+  reality-opts:
+    public-key: xzCEjrybgdtiyOYNKgEAEWzHjvsE2Pkj198_Ch1gZ2U
+    short-id: 41427aa565e28984
+  udp: true
+  cipher: auto
+- name: X_HK_speednode_0065
+  server: 38.22.93.20
+  port: 15079
+  type: vmess
+  uuid: 66e12acd-4f93-4e35-e229-5f93e2f379e1
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: http
+  http-opts:
+    method: GET
+    path:
+    - /
+  udp: true
+- name: X_IQ_speednode_0066
+  server: 178.17.48.170
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_IQ_speednode_0068
+  server: 178.17.48.78
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_IR_speednode_0069
+  server: 213.176.78.192
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_IR_speednode_0071
+  server: 213.176.77.30
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_IR_speednode_0072
+  server: 213.176.77.231
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_KR_speednode_0073
+  server: testkr3.ssv.vc
+  port: 30446
+  type: http
+  username: test
+  password: test.+
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_KR_speednode_0074
+  server: 118.41.26.148
+  port: 25448
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_KR_speednode_0075
+  server: 14.45.224.171
+  port: 11965
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_KR_speednode_0076
+  server: 220.76.161.128
+  port: 30303
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_KR_speednode_0077
+  server: 222.116.195.135
+  port: 19530
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_KR_speednode_0078
+  server: 175.197.105.20
+  port: 10035
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_KR_speednode_0079
+  server: 220.122.102.26
+  port: 30017
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_KR_speednode_0080
+  server: 220.122.15.78
+  port: 13486
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_KR_speednode_0081
+  server: 220.127.68.28
+  port: 50001
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_KR_speednode_0082
+  server: 220.125.240.77
+  port: 23424
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_KR_speednode_0083
+  server: 49.142.200.31
+  port: 28017
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_LB_speednode_0084
+  server: 77.110.116.7
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_RO_speednode_0085
+  server: 91.199.50.37
+  port: 443
+  type: vless
+  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: www.alibaba.com
+  reality-opts:
+    public-key: kkRsTNjRh_XrrTM6eZllllldzoL5Z9IqlBkDtmYLMhw
+    short-id: c906f73d3ba8211f
+  udp: true
+  cipher: auto
+- name: X_RU_speednode_0087
+  server: 89.169.9.177
+  port: 2053
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_SC_speednode_0089
+  server: 80.253.249.66
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_SC_speednode_0091
+  server: 195.66.27.165
+  port: 7443
+  type: vless
+  uuid: caa3af29-3b04-4099-9772-c64a1b7cca34
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: chat.deepseek.com
+  reality-opts:
+    public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
+    short-id: be0ce047
+  udp: true
+  cipher: auto
+- name: X_SE_speednode_0092
+  server: 194.87.77.91
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_SE_speednode_0094
+  server: 194.87.77.2
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_SE_speednode_0095
+  server: 109.120.134.104
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_TW_speednode_0096
+  server: 103.127.243.54
+  port: 53229
+  type: vmess
+  uuid: 2f50f5ef-1a3a-4585-a3c9-3a860d37b134
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: http
+  http-opts:
+    method: GET
+    path:
+    - /ABCDE
+  udp: true
+- name: X_US_speednode_0097
+  server: 144.31.85.72
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0098
+  server: 199.181.197.38
+  port: 443
+  type: ss
+  cipher: none
+  password: 3e96ef7d-8637-42c2-ac73-75182196e755
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    host: mfvpn.fuchen.indevs.in
+    path: 3e96ef7d-8637-42c2-ac73-75182196e755/?ed=2560
+    tls: true
+    mux: false
+  udp: true
+- name: X_US_speednode_0099
+  server: 144.31.139.103
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0100
+  server: 144.31.116.8
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0101
+  server: 144.31.118.170
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0103
+  server: 64.188.70.233
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0105
+  server: 216.57.105.74
+  port: 443
+  type: vless
+  uuid: 73c0a723-c0ab-4ad8-8f25-799b9bd54e36
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: yahoo.com
+  reality-opts:
+    public-key: A1OvYDljz8ZJr7_1xe4j2H1AHsMuYEKifyjdWhdybzk
+    short-id: 11e2
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0106
+  server: 144.31.192.220
+  port: 443
+  type: ss
+  cipher: none
+  password: 14b02e2a-8930-4afb-8412-ea4a4954ca5b
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    host: ylnhh.us.ci
+    path: 14b02e2a-8930-4afb-8412-ea4a4954ca5b/?ed=2560
+    tls: true
+    mux: false
+  udp: true
+- name: X_US_speednode_0107
+  server: 144.31.188.6
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0108
+  server: 144.31.216.160
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0109
+  server: 144.31.218.10
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0110
+  server: 192.200.160.50
+  port: 8880
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: false
+  skip-cert-verify: false
+  servername: vms.lifetime43.workers.dev
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: vms.lifetime43.workers.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0111
+  server: 64.188.118.193
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0112
+  server: 38.76.205.24
+  port: 16196
+  type: vless
+  uuid: 6810a725-9f09-4e44-89b1-0db4ad5003d1
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: www.mysql.com
+  reality-opts:
+    public-key: JZ-wjnzrf0Kr25tKSyDd8-iX4ciruu2bcdnEY8M7aT8
+    short-id: 6ba85179e30d4fc2
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0113
+  server: 92.118.228.109
+  port: 26432
+  type: vless
+  uuid: 3420808a-9251-4e96-8376-ed505492ae28
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: aws.amazon.com
+  reality-opts:
+    public-key: opy6DExNZ8ikbMcX9l11kyxBOYFb6WmkC6R4nrRirUA
+    short-id: facce7
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0115
+  server: 64.188.89.147
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0118
+  server: 64.188.105.7
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0119
+  server: 144.31.138.127
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0120
+  server: 104.128.139.68
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0121
+  server: us.musicperec.ru
+  port: 443
+  type: vless
+  uuid: ec9e7b71-72b6-0021-8549-2efb1b21a502
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: ads.x5.ru
+  reality-opts:
+    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
+    short-id: 6e3f0a5b
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0123
+  server: 64.188.115.82
+  port: 443
+  type: trojan
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: kfm-bn0.pages.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0124
+  server: 150.241.103.74
+  port: 443
+  type: vless
+  uuid: 19ef3d02-1c55-4fec-9794-6def8cbac396
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: st-2.globalcache.onnstreaming.ru
+  reality-opts:
+    public-key: NOhuaiHfc8Tv7VrFKnNgr-VN594kxtUCslNEBhySvXQ
+    short-id: aa69f619e4414362
+  udp: true
+  cipher: auto
+- alterId: 0
+  cipher: auto
+  name: X_🇭🇰HK_2|1.1MB/s
+  port: 7754
+  server: efan.dnsefan04881.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7cd96dbe-ecec-4937-9e05-87ab70af2f30
+- alterId: 2
+  cipher: auto
+  name: X_🇭🇰 香港|@ripaojiedian
+  port: 30807
+  server: v10.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: X_香港3|@ripaojiedian
+  network: tcp
+  password: 69ecb45889d99f31b8ccc10bf8f76a72
+  port: 52687
+  server: 54.199.29.37
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+  cipher: auto
+- name: X_香港4|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 50612
+  server: 95.40.57.109
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+  cipher: auto
+- name: X_香港5|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 9211
+  server: 16.162.22.95
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+  cipher: auto
+- name: X_日本|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 3357
+  server: 18.181.191.24
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+  cipher: auto
+- name: X_日本3|@ripaojiedian
+  network: tcp
+  password: 69ecb45889d99f31b8ccc10bf8f76a72
+  port: 2001
+  server: 52.197.216.139
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+  cipher: auto
+- name: X_日本2|@ripaojiedian
+  network: tcp
+  password: 69ecb45889d99f31b8ccc10bf8f76a72
+  port: 9201
+  server: 43.198.79.128
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+  cipher: auto
+- name: X_新加坡|@ripaojiedian
+  network: tcp
+  password: 69ecb45889d99f31b8ccc10bf8f76a72
+  port: 3057
+  server: 160.16.106.99
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+  cipher: auto
+- name: X_新加坡2|@ripaojiedian
+  network: tcp
+  password: 69ecb45889d99f31b8ccc10bf8f76a72
+  port: 32876
+  server: 160.16.132.38
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+  cipher: auto
+- name: X_新加坡3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 25675
+  server: 52.194.223.24
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+  cipher: auto
+- name: X_美国2|@ripaojiedian
+  network: tcp
+  password: 69ecb45889d99f31b8ccc10bf8f76a72
+  port: 4019
+  server: 18.183.167.10
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+  cipher: auto
+- name: X_美国3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 49534
+  server: 54.46.42.174
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+  cipher: auto
+- cipher: aes-128-gcm
+  name: X_🇯🇵JP_1|1.2MB/s
+  password: 931d70c1-8644-433a-9e8a-e09e10f5e7f5
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: aoe.o.eoa.ccwu.cc
+    mode: websocket
+    mux: false
+    path: /?enc\=aes-128-gcm
+    tls: true
+  port: 443
+  server: jp.111000.cc.cd
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸US_2|1.0MB/s
+  port: 180
+  server: 82.198.246.37
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- name: X_🇰🇷KR_1|1.2MB/s
+  network: ws
+  password: '1234567890'
+  port: '10088'
+  server: 118.47.197.17
+  skip-cert-verify: false
+  sni: kfm-bn0.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.103 Safari/537.36
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+  cipher: auto
+- cipher: aes-128-gcm
+  name: X_🇮🇹 意大利 | ITA 2|2.2MB/s
+  password: 931d70c1-8644-433a-9e8a-e09e10f5e7f5
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: aoe.o.eoa.ccwu.cc
+    mode: websocket
+    mux: false
+    path: /?enc\=aes-128-gcm
+    tls: true
+  port: 443
+  server: freeyx.cloudflare88.eu.org
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: X_🇯🇵JP_2|2.1MB/s
+  password: 931d70c1-8644-433a-9e8a-e09e10f5e7f5
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: aoe.o.eoa.ccwu.cc
+    mode: websocket
+    mux: false
+    path: /?enc\=aes-128-gcm
+    tls: true
+  port: 2083
+  server: 54.199.22.197
+  type: ss
+  udp: true
+- name: X_🇰🇷KR_4|1.2MB/s
+  network: ws
+  password: '1234567890'
+  port: 37215
+  server: 222.98.185.243
+  skip-cert-verify: true
+  sni: kfm-bn0.pages.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: kfm-bn0.pages.dev
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+  cipher: auto
+- name: X_每天更新，请加电报群防止失联
+  type: vless
+  server: 104.18.12.149
+  port: 80
+  uuid: fc53bae5-92f5-4572-9ce8-9e56901479f1
+  network: ws
+  tls: false
+  ws-opts:
+    path: /amo-mohammad
+    headers:
+      Host: 尼亞團員1尼亞團員2尼亞團員3尼亞團亞團員尼亞團尼亞團亞團員亞團員員亞3亞團員亞團員.尼亞團員1尼亞團員2尼亞團員3尼亞團亞團員尼亞團尼亞團亞團員亞團員員亞團亞團員亞團員.com.
+  cipher: auto
+- name: X_电报群：https://t.me/vvkj11
+  type: vmess
+  server: t.cnmjcn.cyou
+  port: 16617
+  uuid: 881da2de-238e-425e-a7e7-389f4842e545
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com
+- name: X_免费VPN：https://tt.vg/OWeaF
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: X_🇩🇪 德国 5
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: X_🇹🇷 土耳其 7
+  type: vless
+  server: srv18.datatowers.net
+  port: 64534
+  uuid: 36d85d65-1b57-4cba-a2a6-f61131b08593
+  tls: false
+  client-fingerprint: qq
+  cipher: auto
+- name: X_🇸🇨 塞舌尔 8
+  type: vless
+  server: srv190.towersflowerss.com
+  port: 443
+  uuid: 36d85d65-1b57-4cba-a2a6-f61131b08593
+  network: ws
+  servername: srv190.towersflowerss.com
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: srv190.towersflowerss.com
+  cipher: auto
+- name: X_🇨🇳 中国 9
+  type: vmess
+  server: 76c3.earthdraft.onezz.top
+  port: 20010
+  uuid: 7d81d7ed-03f4-331a-ab0d-e9a7425f05e0
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /chat
+    headers:
+      Host: ithome.com
+- name: X_🇫🇷 法国 10
+  type: vmess
+  server: 2001:bc8:32d7:302::10
+  port: 44579
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?ed=2048
+- name: X_🇫🇷 法国 12
+  type: vmess
+  server: m.cnmjin.net
+  port: 16632
+  uuid: 881da2de-238e-425e-a7e7-389f4842e545
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ba1b944c9237d79489431c3a8912f6f9.mobgslb.tbcache.com
+- name: X_🇩🇪 德国 14
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: X_🇫🇷 法国 15
+  type: vmess
+  server: 2001:bc8:32d7:302::17
+  port: 44579
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+    headers:
+      Host: AZERB.NET
+- name: X_🇩🇪 德国 19
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: X_🇫🇷 法国 21
+  type: vmess
+  server: 2001:bc8:32d7:302::15
+  port: 44579
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+    headers:
+      Host: TURK.NET
+- name: X_🇫🇷 法国 28
+  type: vmess
+  server: 2001:bc8:32d7:302::11
+  port: 44579
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+    headers:
+      Host: Azerb.NET
+- name: X_🇭🇰 香港 31
+  type: vmess
+  server: 103.181.164.145
+  port: 51556
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: X_🇫🇷 法国 35
+  type: vmess
+  server: 2001:bc8:32d7:302::16
+  port: 44579
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1
+    headers:
+      Host: AZERB.NET
+- name: X_🇩🇪 德国 38
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: X_🇭🇰 香港 40
+  type: vmess
+  server: efan.dnsefan04881.com
+  port: 7754
+  uuid: 009e558d-3cf4-49d8-b5e4-82c9e14fe1a4
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: X_🇭🇰 香港 42
+  type: vmess
+  server: vm51544542.dns8656815.com
+  port: 7754
+  uuid: 7cd96dbe-ecec-4937-9e05-87ab70af2f30
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: X_🇫🇷 法国 46
+  type: vmess
+  server: 2001:bc8:32d7:302::14
+  port: 44579
+  uuid: 8e34e170-13ae-4892-9d20-05962acc9f84
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /?BIA_TELEGRAM@AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1_AZARBAYJAB1?ed=2560
+    headers:
+      Host: TABRIZ.NET
+- name: X_🇺🇸 美国 48
+  type: vless
+  server: 45.40.153.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 49
+  type: vless
+  server: 192.169.223.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 50
+  type: vless
+  server: 45.40.146.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 51
+  type: vless
+  server: 63.141.128.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 52
+  type: vless
+  server: 192.200.160.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇸🇨 塞舌尔 54
+  type: vless
+  server: 154.211.8.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇱🇺 卢森堡 55
+  type: vless
+  server: 188.42.89.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇨🇾 塞浦路斯 56
+  type: vless
+  server: 195.26.229.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇸🇬 新加坡 57
+  type: vless
+  server: 27.50.48.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇱🇺 卢森堡 59
+  type: vless
+  server: 188.42.88.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇸🇮 斯洛文尼亚 60
+  type: vless
+  server: 92.53.191.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇳🇱 荷兰 61
+  type: vless
+  server: 45.131.211.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇪🇪 爱沙尼亚 62
+  type: vless
+  server: 185.159.247.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 63
+  type: vless
+  server: 14.102.228.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 64
+  type: vless
+  server: 185.148.104.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇳🇱 荷兰 65
+  type: vless
+  server: 45.131.210.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇸🇨 塞舌尔 66
+  type: vless
+  server: 154.197.64.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇩🇪 德国 67
+  type: vless
+  server: 45.80.111.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇸🇬 新加坡 68
+  type: vless
+  server: 92.243.75.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 69
+  type: vless
+  server: 45.142.120.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 70
+  type: vless
+  server: 167.68.11.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇬🇧 英国 71
+  type: vless
+  server: 77.75.199.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 72
+  type: vless
+  server: 162.251.82.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇸🇨 塞舌尔 73
+  type: vless
+  server: 154.206.12.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇫🇷 法国 74
+  type: vless
+  server: 141.11.202.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 75
+  type: vless
+  server: 185.148.106.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇱🇹 立陶宛 76
+  type: vless
+  server: 89.116.250.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇦🇪 阿拉伯联合酋长国 77
+  type: vless
+  server: 181.214.1.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: vms.lifetime39.workers.dev
+  cipher: auto
+- name: X_🇰🇿 哈萨克斯坦 78
+  type: vless
+  server: 31.43.179.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 79
+  type: vless
+  server: 167.68.5.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇬🇧 英国 80
+  type: vless
+  server: 185.193.31.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇸🇬 新加坡 81
+  type: vless
+  server: 92.243.74.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇨🇿 捷克 82
+  type: vless
+  server: 195.85.23.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 83
+  type: vless
+  server: 104.129.167.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_84
+  type: vless
+  server: 141.101.123.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 85
+  type: vless
+  server: 155.46.213.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 86
+  type: vless
+  server: 66.235.200.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇸🇨 塞舌尔 87
+  type: vless
+  server: 45.130.125.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇳🇱 荷兰 88
+  type: vless
+  server: 45.131.4.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇸🇨 塞舌尔 89
+  type: vless
+  server: 45.194.11.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇳🇱 荷兰 90
+  type: vless
+  server: 45.131.6.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 91
+  type: vless
+  server: 193.233.132.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 92
+  type: vless
+  server: 104.129.166.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇨🇿 捷克 93
+  type: vless
+  server: 185.149.135.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇧🇿 伯利兹 94
+  type: vless
+  server: 45.135.235.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇱🇹 立陶宛 95
+  type: vless
+  server: 89.117.112.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 96
+  type: vless
+  server: 104.129.164.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇹🇷 土耳其 97
+  type: vless
+  server: 91.206.71.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 98
+  type: vless
+  server: 198.177.56.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇬🇧 英国 99
+  type: vless
+  server: 185.156.19.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇳🇱 荷兰 100
+  type: vless
+  server: 5.10.244.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇯🇵 日本 101
+  type: vless
+  server: 154.197.88.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_102
+  type: vless
+  server: 173.245.49.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 103
+  type: vless
+  server: 170.114.45.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 104
+  type: vless
+  server: 193.233.21.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 105
+  type: vless
+  server: 45.8.211.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 106
+  type: vless
+  server: 50.62.174.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇨🇦 加拿大 107
+  type: vless
+  server: 23.227.60.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇬🇧 英国 108
+  type: vless
+  server: 185.193.30.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 109
+  type: vless
+  server: 192.0.54.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_110
+  type: vless
+  server: 8.34.146.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 111
+  type: vless
+  server: 166.62.105.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 112
+  type: vless
+  server: 166.62.113.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 113
+  type: vless
+  server: 72.167.243.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 114
+  type: vless
+  server: 166.62.114.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 115
+  type: vless
+  server: 166.62.109.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇦 乌克兰 116
+  type: vless
+  server: 91.124.127.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 117
+  type: vless
+  server: 185.148.107.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇸🇨 塞舌尔 118
+  type: vless
+  server: 154.198.173.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 119
+  type: vless
+  server: 198.71.191.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 120
+  type: vless
+  server: 50.62.175.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇪🇪 爱沙尼亚 121
+  type: vless
+  server: 45.80.110.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇧🇷 巴西 122
+  type: vless
+  server: 185.133.35.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 123
+  type: vless
+  server: 192.200.160.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: vms.lifetime43.workers.dev
+  cipher: auto
+- name: X_🇬🇧 英国 124
+  type: vless
+  server: 185.238.228.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 125
+  type: vless
+  server: 160.153.136.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 126
+  type: vless
+  server: 104.238.71.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇬🇧 英国 127
+  type: vless
+  server: 109.176.239.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 128
+  type: vless
+  server: 45.40.155.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 129
+  type: vless
+  server: 45.40.150.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 130
+  type: vless
+  server: 104.238.70.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 131
+  type: vless
+  server: 50.62.198.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 132
+  type: vless
+  server: 209.94.90.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇸🇪 瑞典 133
+  type: vless
+  server: 216.24.57.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 134
+  type: vless
+  server: 198.71.189.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 135
+  type: vless
+  server: 104.238.68.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 136
+  type: vless
+  server: 50.62.194.253
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇲🇾 马来西亚 139
+  type: vmess
+  server: v36.hdacd.com
+  port: 30836
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: X_🇮🇩 印度尼西亚 141
+  type: vmess
+  server: v4.hdacd.com
+  port: 30804
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: X_🇮🇩 印度尼西亚 142
+  type: vmess
+  server: v35.hdacd.com
+  port: 30835
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: X_🇩🇪 德国 143
+  type: vmess
+  server: 77.90.11.178
+  port: 80
+  uuid: b3cdfe2d-5eac-4b0d-a8eb-d3f6a647e13f
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: X_🇩🇪 德国 145
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+- name: X_146
+  type: trojan
+  server: jp.111000.cc.cd
+  port: 443
+  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  sni: sni.111000.dynv6.net
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /?ed=2560&proxyip=ip.111000.de5.net:443
+    headers:
+      Host: sni.111000.dynv6.net
+  cipher: auto
+- name: X_148
+  type: vless
+  server: 172.67.198.163
+  port: 443
+  uuid: d774c562-ac77-4976-befd-063969fae990
+  network: ws
+  servername: pUbliC.tEchNoisHop.coM.
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: pUbliC.tEchNoisHop.coM.
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 149
+  type: vless
+  server: cluster-russia-1.firstvideocdn.ru
+  port: 52006
+  uuid: 75807638-6f19-07d0-ae08-38492ee85c88
+  servername: cluster-russia-1.firstvideocdn.ru
+  tls: true
+  flow: xtls-rprx-vision
+  cipher: auto
+- name: X_🇹🇼 台湾 150
+  type: vless
+  server: 125.227.219.98
+  port: 6235
+  uuid: f6ddddaf-dfd6-4134-9dae-03b93b03d146
+  network: ws
+  servername: baidu.com
+  tls: true
+  ws-opts:
+    path: /xxxxhttp
+    headers:
+      Host: baidu.com
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 151
+  type: vless
+  server: 178.72.181.87
+  port: 52006
+  uuid: 75807638-6f19-01f4-ae08-38492ee85c88
+  servername: cluster-de-2.firstvideocdn.ru
+  tls: true
+  flow: xtls-rprx-vision
+  cipher: auto
+- name: X_🇯🇵 日本 152
+  type: trojan
+  server: jp2-8sb.6121999.dpdns.org
+  port: 24534
+  password: e136d465-0558-43b9-b50c-b1f45d4cb2c2
+  sni: jp2-8sb.6121999.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  cipher: auto
+- name: X_154
+  type: vless
+  server: xn-dns.onlineblog.ir
+  port: 2083
+  uuid: b24484be-a335-472c-8dff-060ccd2b8f3b
+  network: ws
+  servername: xn-de.shakhle.ir.
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: xn-de.shakhle.ir.
+  cipher: auto
+- name: X_🇯🇵 日本 156
+  type: vless
+  server: dongjing4.zqjsqapi.com
+  port: 443
+  uuid: 8d5e7f2a-3c1b-4d9e-a6f8-2b5c0e7d4a19
+  network: ws
+  servername: dongjing4.zqjsqapi.com
+  tls: true
+  ws-opts:
+    path: /proxy
+  cipher: auto
+- name: X_🇨🇾 塞浦路斯 157
+  type: vless
+  server: pq-india1.09vpn.com
+  port: 8443
+  uuid: 05b544a4-d479-4ba4-8208-950bd4411453
+  network: ws
+  servername: pq-India1.09vpn.com
+  tls: true
+  ws-opts:
+    path: /vless/
+  cipher: auto
+- name: X_🇭🇰 香港 158
+  type: vless
+  server: 43.161.221.27
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇭🇰 香港 159
+  type: vless
+  server: 43.161.217.205
+  port: 2443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 160
+  type: vless
+  server: 38.55.124.82
+  port: 32496
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇸🇬 新加坡 161
+  type: vless
+  server: 43.168.16.112
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇭🇰 香港 162
+  type: vless
+  server: 38.207.165.56
+  port: 10271
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇭🇰 香港 163
+  type: vless
+  server: 43.161.216.173
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇯🇵 日本 164
+  type: vless
+  server: 151.241.130.76
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇯🇵 日本 165
+  type: vless
+  server: 207.65.189.9
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇸🇬 新加坡 166
+  type: vless
+  server: 43.160.244.124
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇸🇬 新加坡 167
+  type: vless
+  server: 47.237.28.150
+  port: 10443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇸🇬 新加坡 168
+  type: vless
+  server: 43.160.207.175
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇰🇷 韩国 169
+  type: trojan
+  server: 210.123.143.214
+  port: 18789
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 170
+  type: trojan
+  server: 220.125.240.77
+  port: 23424
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 171
+  type: trojan
+  server: 221.165.212.251
+  port: 27016
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 172
+  type: vless
+  server: 222.109.40.96
+  port: 29876
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  network: ws
+  servername: snzeys.edge-node-a1.fgfw.qzz.io
+  tls: true
+  ws-opts:
+    path: /danfeng
+    headers:
+      Host: snzeys.edge-node-a1.fgfw.qzz.io
+  cipher: auto
+- name: X_🇰🇷 韩国 173
+  type: trojan
+  server: 221.168.213.173
+  port: 32677
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 174
+  type: trojan
+  server: 222.113.157.240
+  port: 20000
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 175
+  type: trojan
+  server: 220.122.42.198
+  port: 18781
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 176
+  type: trojan
+  server: 220.87.108.247
+  port: 18000
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 177
+  type: trojan
+  server: 59.27.228.160
+  port: 34567
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 178
+  type: vless
+  server: 59.24.2.248
+  port: 30032
+  uuid: 00000000-0000-4000-8000-000000000000
+  network: ws
+  servername: eiti60o44la.bsld.de5.net
+  tls: true
+  ws-opts:
+    path: /@Marisa_kristifp=chrome
+    headers:
+      Host: eiti60o44la.bsld.de5.net
+  cipher: auto
+- name: X_🇰🇷 韩国 179
+  type: trojan
+  server: 220.85.254.226
+  port: 19999
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 180
+  type: trojan
+  server: 220.124.181.251
+  port: 12300
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 181
+  type: trojan
+  server: 211.195.227.57
+  port: 15891
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 182
+  type: trojan
+  server: 211.184.99.67
+  port: 12309
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 183
+  type: trojan
+  server: 183.101.103.179
+  port: 10003
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 184
+  type: trojan
+  server: 59.2.96.181
+  port: 22335
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 185
+  type: trojan
+  server: 220.127.122.167
+  port: 22105
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 186
+  type: trojan
+  server: 220.79.138.184
+  port: 34599
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 187
+  type: trojan
+  server: 220.90.53.189
+  port: 32677
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 188
+  type: trojan
+  server: 112.170.127.240
+  port: 38241
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 190
+  type: trojan
+  server: 220.84.174.109
+  port: 27918
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 191
+  type: trojan
+  server: 218.147.66.126
+  port: 33338
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 193
+  type: vless
+  server: 220.77.18.195
+  port: 36814
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  network: ws
+  servername: snzeys.edge-node-a1.fgfw.qzz.io
+  tls: true
+  ws-opts:
+    path: /danfeng
+    headers:
+      Host: snzeys.edge-node-a1.fgfw.qzz.io
+  cipher: auto
+- name: X_🇰🇷 韩国 194
+  type: vless
+  server: 220.118.83.101
+  port: 60004
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇰🇷 韩国 195
+  type: trojan
+  server: 220.72.32.44
+  port: 18080
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 196
+  type: trojan
+  server: 121.128.161.235
+  port: 10002
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 197
+  type: trojan
+  server: 220.77.136.79
+  port: 10911
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 198
+  type: trojan
+  server: 14.58.60.153
+  port: 16992
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 200
+  type: trojan
+  server: 222.113.18.214
+  port: 11310
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 201
+  type: vless
+  server: 210.103.67.11
+  port: 32312
+  uuid: 00000000-0000-4000-8000-000000000000
+  network: ws
+  servername: eiti60o44la.bsld.de5.net
+  tls: true
+  ws-opts:
+    path: /@Marisa_kristifp=chrome
+    headers:
+      Host: eiti60o44la.bsld.de5.net
+  cipher: auto
+- name: X_🇰🇷 韩国 202
+  type: vless
+  server: 152.67.208.8
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇰🇷 韩国 204
+  type: trojan
+  server: 220.124.181.77
+  port: 18081
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 205
+  type: trojan
+  server: 222.113.18.218
+  port: 16010
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 206
+  type: trojan
+  server: 59.4.161.71
+  port: 28017
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 207
+  type: trojan
+  server: 121.132.124.22
+  port: 15000
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 208
+  type: trojan
+  server: 220.125.207.242
+  port: 25565
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 209
+  type: trojan
+  server: 222.113.18.213
+  port: 14265
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 210
+  type: trojan
+  server: 118.47.197.17
+  port: 10088
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 211
+  type: trojan
+  server: 220.87.152.138
+  port: 30005
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 212
+  type: trojan
+  server: 220.118.233.240
+  port: 23791
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 213
+  type: trojan
+  server: 220.95.25.188
+  port: 10250
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇸🇬 新加坡 214
+  type: vless
+  server: 20.6.12.145
+  port: 443
+  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
+  network: ws
+  servername: sni.skylee4.cloudns.ch
+  tls: true
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net
+    headers:
+      Host: sni.skylee4.cloudns.ch
+  cipher: auto
+- name: X_🇰🇷 韩国 215
+  type: trojan
+  server: 222.106.130.37
+  port: 20332
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 217
+  type: trojan
+  server: 211.195.61.136
+  port: 13722
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 219
+  type: trojan
+  server: 59.26.177.217
+  port: 22105
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 221
+  type: trojan
+  server: 14.32.205.160
+  port: 10035
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇺🇸 美国 222
+  type: vless
+  server: 154.17.22.103
+  port: 56213
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  network: ws
+  servername: snippet.gfw.qzz.io
+  tls: true
+  ws-opts:
+    path: /danfeng?ed=2560
+    headers:
+      Host: snippet.gfw.qzz.io
+  cipher: auto
+- name: X_🇰🇷 韩国 223
+  type: trojan
+  server: 222.110.67.145
+  port: 29090
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 224
+  type: trojan
+  server: 59.18.139.84
+  port: 18086
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 225
+  type: vless
+  server: 43.155.187.201
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇰🇷 韩国 227
+  type: trojan
+  server: 220.95.85.46
+  port: 24289
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 228
+  type: trojan
+  server: 220.76.161.128
+  port: 30303
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 229
+  type: trojan
+  server: 220.84.186.84
+  port: 10000
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 230
+  type: trojan
+  server: 220.127.68.28
+  port: 50001
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 231
+  type: trojan
+  server: 220.79.203.64
+  port: 28080
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇦🇹 奥地利 232
+  type: trojan
+  server: 152.53.228.86
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 233
+  type: vless
+  server: 110.35.234.200
+  port: 30016
+  uuid: 00000000-0000-4000-8000-000000000000
+  network: ws
+  servername: rcv3tz9brscasef8i.sate.qzz.io
+  tls: true
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: rcv3tz9brscasef8i.sate.qzz.io
+  cipher: auto
+- name: X_🇦🇹 奥地利 234
+  type: trojan
+  server: 152.53.236.205
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 235
+  type: trojan
+  server: 152.53.119.132
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇦🇹 奥地利 236
+  type: trojan
+  server: 152.53.138.238
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇸🇬 新加坡 237
+  type: vless
+  server: 141.11.43.124
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇩🇪 德国 238
+  type: trojan
+  server: 148.253.208.19
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 240
+  type: trojan
+  server: 152.53.118.28
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 241
+  type: vless
+  server: 61.43.63.174
+  port: 32677
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇰🇷 韩国 243
+  type: vless
+  server: 193.123.233.168
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇩🇪 德国 244
+  type: trojan
+  server: 93.123.84.194
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 245
+  type: vless
+  server: 193.122.102.79
+  port: 18161
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 246
+  type: trojan
+  server: 150.241.66.81
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 247
+  type: trojan
+  server: 202.61.195.167
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 248
+  type: trojan
+  server: 14.57.222.213
+  port: 20880
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 249
+  type: trojan
+  server: 14.55.153.119
+  port: 50001
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 251
+  type: trojan
+  server: 159.195.5.181
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇯🇵 日本 252
+  type: vless
+  server: 156.246.94.155
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇰🇷 韩国 253
+  type: vless
+  server: 132.145.91.181
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇩🇪 德国 255
+  type: trojan
+  server: 91.107.220.103
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 256
+  type: trojan
+  server: 188.245.161.141
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 257
+  type: vless
+  server: 146.56.173.243
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇦🇹 奥地利 259
+  type: trojan
+  server: 152.53.227.239
+  port: 8443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 260
+  type: trojan
+  server: 193.23.199.106
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 261
+  type: trojan
+  server: 202.61.226.121
+  port: 2053
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇦🇹 奥地利 262
+  type: trojan
+  server: 77.110.116.7
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇸🇬 新加坡 263
+  type: vless
+  server: 129.212.234.156
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇸🇬 新加坡 264
+  type: vless
+  server: 43.156.159.240
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇸🇬 新加坡 266
+  type: vless
+  server: 43.163.109.39
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇯🇵 日本 267
+  type: vless
+  server: 168.138.46.67
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇸🇬 新加坡 268
+  type: vless
+  server: 159.223.57.22
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇸🇬 新加坡 269
+  type: vless
+  server: 143.198.213.81
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇸🇬 新加坡 270
+  type: vless
+  server: 134.209.102.229
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇯🇵 日本 271
+  type: vless
+  server: 139.180.195.69
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇸🇬 新加坡 272
+  type: vless
+  server: 152.42.237.17
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇩🇪 德国 273
+  type: trojan
+  server: 194.164.198.156
+  port: 8443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 274
+  type: trojan
+  server: 89.169.9.177
+  port: 2053
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳=
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 275
+  type: trojan
+  server: 159.195.79.8
+  port: 8443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 278
+  type: trojan
+  server: 144.31.62.181
+  port: 8443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 279
+  type: trojan
+  server: 94.125.101.103
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 280
+  type: trojan
+  server: 95.164.123.131
+  port: 8443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 281
+  type: trojan
+  server: 159.195.44.151
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 282
+  type: trojan
+  server: 80.253.249.66
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 283
+  type: trojan
+  server: 144.31.118.170
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳=
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 284
+  type: trojan
+  server: 144.31.138.127
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 285
+  type: trojan
+  server: 144.31.116.8
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 286
+  type: trojan
+  server: 64.188.105.7
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇦🇪 阿拉伯联合酋长国 287
+  type: trojan
+  server: 104.128.139.68
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 288
+  type: trojan
+  server: 144.31.85.72
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 291
+  type: trojan
+  server: 185.219.84.221
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 293
+  type: trojan
+  server: 148.253.215.61
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇨🇭 瑞士 295
+  type: trojan
+  server: 138.124.32.121
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳=
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 296
+  type: trojan
+  server: 64.188.70.233
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 297
+  type: trojan
+  server: 84.200.192.87
+  port: 2053
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 298
+  type: trojan
+  server: 23.251.50.142
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇨🇭 瑞士 299
+  type: trojan
+  server: 138.124.28.78
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 301
+  type: trojan
+  server: 143.20.160.200
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 302
+  type: trojan
+  server: 138.124.230.45
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇯🇵 日本 303
+  type: vless
+  server: 64.176.42.143
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇮🇶 伊拉克 304
+  type: trojan
+  server: 178.17.48.170
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇨🇿 捷克 305
+  type: trojan
+  server: 95.85.232.148
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 306
+  type: trojan
+  server: 143.20.175.77
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇰🇷 韩国 307
+  type: trojan
+  server: 220.122.102.26
+  port: 30017
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇮🇩 印度尼西亚 308
+  type: vless
+  server: 43.165.195.160
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇮🇶 伊拉克 309
+  type: trojan
+  server: 178.17.48.78
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇨🇿 捷克 310
+  type: trojan
+  server: 194.87.77.2
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇨🇭 瑞士 311
+  type: trojan
+  server: 138.124.28.173
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 312
+  type: trojan
+  server: 94.156.114.13
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇺🇸 美国 313
+  type: trojan
+  server: 64.188.89.147
+  port: 8443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇨🇭 瑞士 314
+  type: trojan
+  server: 138.124.32.0
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 316
+  type: trojan
+  server: 144.31.98.216
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇯🇵 日本 318
+  type: vless
+  server: 64.176.52.176
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇳🇱 荷兰 319
+  type: trojan
+  server: 213.165.39.142
+  port: 2053
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 323
+  type: trojan
+  server: 144.31.218.10
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 324
+  type: trojan
+  server: 138.124.240.36
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 326
+  type: trojan
+  server: 94.141.123.243
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇨🇿 捷克 329
+  type: trojan
+  server: 95.85.233.44
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 330
+  type: trojan
+  server: 45.144.55.148
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇺🇸 美国 331
+  type: trojan
+  server: 64.188.115.82
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 332
+  type: trojan
+  server: 77.239.127.77
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇺🇸 美国 333
+  type: trojan
+  server: 144.31.51.34
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇨🇿 捷克 335
+  type: trojan
+  server: 194.87.77.91
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇮🇷 伊朗 336
+  type: trojan
+  server: 62.60.153.10
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 337
+  type: trojan
+  server: 144.31.216.160
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇮🇷 伊朗 338
+  type: trojan
+  server: 213.176.77.30
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇨🇭 瑞士 339
+  type: trojan
+  server: 138.124.32.78
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇮🇷 伊朗 340
+  type: trojan
+  server: 213.176.77.231
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇨🇭 瑞士 341
+  type: trojan
+  server: 138.124.32.120
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 342
+  type: trojan
+  server: 31.58.85.103
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇺🇸 美国 344
+  type: trojan
+  server: 2.27.35.199
+  port: 8443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇺🇸 美国 345
+  type: trojan
+  server: 185.170.153.115
+  port: 8443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 347
+  type: trojan
+  server: 158.101.190.78
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 352
+  type: trojan
+  server: 64.188.118.193
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 354
+  type: trojan
+  server: 2.27.120.108
+  port: 8443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 356
+  type: trojan
+  server: 144.31.188.6
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 361
+  type: trojan
+  server: 80.244.13.157
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇨🇿 捷克 365
+  type: trojan
+  server: 95.85.234.43
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 368
+  type: trojan
+  server: 193.23.218.192
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 369
+  type: trojan
+  server: 167.17.182.98
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇸🇪 瑞典 371
+  type: trojan
+  server: 138.124.49.137
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 373
+  type: trojan
+  server: 103.109.234.64
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 374
+  type: trojan
+  server: 103.109.234.41
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇮🇷 伊朗 375
+  type: trojan
+  server: 213.176.78.192
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇺🇸 美国 376
+  type: trojan
+  server: 131.143.125.183
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇸🇪 瑞典 377
+  type: trojan
+  server: 138.124.34.36
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇯🇵 日本 380
+  type: vless
+  server: 161.248.254.27
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇯🇵 日本 381
+  type: vless
+  server: 139.180.197.171
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇨🇭 瑞士 383
+  type: trojan
+  server: 138.124.87.163
+  port: 8443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇩🇪 德国 386
+  type: trojan
+  server: 148.253.210.141
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇭🇰 香港 387
+  type: vless
+  server: 217.60.248.3
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇩🇪 德国 388
+  type: trojan
+  server: 144.31.191.159
+  port: 8443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇭🇰 香港 389
+  type: vless
+  server: 217.60.38.182
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇭🇰 香港 390
+  type: vless
+  server: 217.60.38.249
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇸🇪 瑞典 391
+  type: trojan
+  server: 77.110.96.220
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇭🇰 香港 392
+  type: vless
+  server: 217.60.248.59
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇸🇪 瑞典 393
+  type: trojan
+  server: 92.246.137.150
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇭🇰 香港 394
+  type: vless
+  server: 217.60.248.94
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇰🇷 韩国 395
+  type: vless
+  server: 217.142.138.61
+  port: 37914
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇸🇪 瑞典 396
+  type: trojan
+  server: 109.120.134.104
+  port: 443
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇭🇰 香港 400
+  type: vless
+  server: 46.8.226.15
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇭🇰 香港 401
+  type: vless
+  server: 217.60.38.113
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇺🇸 美国 402
+  type: vless
+  server: 45.39.190.24
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: joss.jak.biz.id
+  tls: true
+  ws-opts:
+    path: /Free-VPN-CF-Geo-Project/HK?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: joss.jak.biz.id
+  cipher: auto
+- name: X_🇰🇷 韩国 403
+  type: trojan
+  server: 59.16.213.86
+  port: 12300
+  password: '1234567890'
+  sni: kfm-bn0.pages.dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: kfm-bn0.pages.dev
+  cipher: auto
+- name: X_🇨🇦 加拿大 404
+  type: vless
+  server: 23.173.104.229
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.rocks
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: sni.111000.v6.rocks
+  cipher: auto
+- name: X_🇺🇸 美国 405
+  type: vless
+  server: 139.64.235.238
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.jpmj.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.jpmj.dev
+  cipher: auto
+- name: X_🇱🇻 拉脱维亚 406
+  type: vless
+  server: 37.233.82.140
+  port: 40478
+  uuid: e977d854-33f3-4345-abee-bf3fa9a6d880
+  servername: yahoo.com
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: lcJ0LSh015XRfz5-7wB_hln3-bq5ZatFgPugSUCrdR0
+    short-id: 3c
+  cipher: auto
+- name: X_🇨🇳 中国 407
+  type: trojan
+  server: 0cfbd3c0-fdc0-4f26-82fb-5c8f8b6ce82b.bnsepserv.com
+  port: 32000
+  password: f792d9b5-c254-4756-a740-c314fa62f964
+  sni: w1.ding-doc.com
+  skip-cert-verify: false
+  tls: true
+  cipher: auto
+- name: X_409
+  type: vless
+  server: 8.35.211.68
+  port: 2087
+  uuid: 52f94104-7a84-4342-8bcd-96969eb46cbe
+  network: ws
+  servername: tristandeng.cc.cd
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: tristandeng.cc.cd
+  cipher: auto
+- name: X_🇨🇦 加拿大 410
+  type: vless
+  server: 44.32.224.207
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.rocks
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: sni.111000.v6.rocks
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 411
+  type: vmess
+  server: node-us.connectsuite.org
+  port: 2053
+  uuid: 9b91e960-f8f7-41aa-ac67-f5c7b6b72e74
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+- name: X_🇯🇵 日本 412
+  type: trojan
+  server: 18.183.76.130
+  port: 3057
+  password: 1774240c00db2b77d5a99f6540c47b69
+  sni: www.nintendogames.net
+  skip-cert-verify: false
+  tls: true
+  cipher: auto
+- name: X_🇲🇩 摩尔多瓦 413
+  type: vless
+  server: 94.131.8.19
+  port: 45448
+  uuid: 96fcf8cc-535d-46c4-b8f9-76058df48e3b
+  servername: yahoo.com
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: MmEVCRy11fz67vYJQWyA2a_ZPMBzv2le2cus1XSSI0E
+    short-id: 958639bf55e679
+  cipher: auto
+- name: X_🇨🇿 捷克 414
+  type: vless
+  server: 86.54.82.239
+  port: 443
+  uuid: 43488128-319e-f480-64ea-0acdc712e2a8
+  servername: store.steampowered.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: xzCEjrybgdtiyOYNKgEAEWzHjvsE2Pkj198_Ch1gZ2U
+    short-id: 41427aa565e28984
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 415
+  type: vless
+  server: 5.182.36.56
+  port: 45886
+  uuid: 8338171d-2ea7-4015-bdea-492f3d5d4e60
+  servername: yahoo.com
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: zJeLZDPHoHMcAzBJh38tSavofNlkBrpADFx9jVVPil0
+    short-id: 94f9
+  cipher: auto
+proxy-groups:
+- name: 🚀 节点选择
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - DIRECT
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+- name: ♻️ 自动选择
+  type: url-test
+  url: https://www.facebook.com/common/referer_frame.php
+  interval: 60
+  tolerance: 5
+  proxies:
+  - 🪐 负载均衡
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  - X_每天更新，请加电报群防止失联
+  - X_电报群：https://t.me/vvkj11
+  - X_免费VPN：https://tt.vg/OWeaF
+  - X_🇩🇪 德国 5
+  - X_🇹🇷 土耳其 7
+  - X_🇸🇨 塞舌尔 8
+  - X_🇨🇳 中国 9
+  - X_🇫🇷 法国 10
+  - X_🇫🇷 法国 12
+  - X_🇩🇪 德国 14
+  - X_🇫🇷 法国 15
+  - X_🇩🇪 德国 19
+  - X_🇫🇷 法国 21
+  - X_🇫🇷 法国 28
+  - X_🇭🇰 香港 31
+  - X_🇫🇷 法国 35
+  - X_🇩🇪 德国 38
+  - X_🇭🇰 香港 40
+  - X_🇭🇰 香港 42
+  - X_🇫🇷 法国 46
+  - X_🇺🇸 美国 48
+  - X_🇺🇸 美国 49
+  - X_🇺🇸 美国 50
+  - X_🇺🇸 美国 51
+  - X_🇺🇸 美国 52
+  - X_🇸🇨 塞舌尔 54
+  - X_🇱🇺 卢森堡 55
+  - X_🇨🇾 塞浦路斯 56
+  - X_🇸🇬 新加坡 57
+  - X_🇱🇺 卢森堡 59
+  - X_🇸🇮 斯洛文尼亚 60
+  - X_🇳🇱 荷兰 61
+  - X_🇪🇪 爱沙尼亚 62
+  - X_🇺🇸 美国 63
+  - X_🇷🇺 俄罗斯 64
+  - X_🇳🇱 荷兰 65
+  - X_🇸🇨 塞舌尔 66
+  - X_🇩🇪 德国 67
+  - X_🇸🇬 新加坡 68
+  - X_🇷🇺 俄罗斯 69
+  - X_🇺🇸 美国 70
+  - X_🇬🇧 英国 71
+  - X_🇺🇸 美国 72
+  - X_🇸🇨 塞舌尔 73
+  - X_🇫🇷 法国 74
+  - X_🇷🇺 俄罗斯 75
+  - X_🇱🇹 立陶宛 76
+  - X_🇦🇪 阿拉伯联合酋长国 77
+  - X_🇰🇿 哈萨克斯坦 78
+  - X_🇺🇸 美国 79
+  - X_🇬🇧 英国 80
+  - X_🇸🇬 新加坡 81
+  - X_🇨🇿 捷克 82
+  - X_🇺🇸 美国 83
+  - X_84
+  - X_🇺🇸 美国 85
+  - X_🇺🇸 美国 86
+  - X_🇸🇨 塞舌尔 87
+  - X_🇳🇱 荷兰 88
+  - X_🇸🇨 塞舌尔 89
+  - X_🇳🇱 荷兰 90
+  - X_🇷🇺 俄罗斯 91
+  - X_🇺🇸 美国 92
+  - X_🇨🇿 捷克 93
+  - X_🇧🇿 伯利兹 94
+  - X_🇱🇹 立陶宛 95
+  - X_🇺🇸 美国 96
+  - X_🇹🇷 土耳其 97
+  - X_🇺🇸 美国 98
+  - X_🇬🇧 英国 99
+  - X_🇳🇱 荷兰 100
+  - X_🇯🇵 日本 101
+  - X_102
+  - X_🇺🇸 美国 103
+  - X_🇷🇺 俄罗斯 104
+  - X_🇷🇺 俄罗斯 105
+  - X_🇺🇸 美国 106
+  - X_🇨🇦 加拿大 107
+  - X_🇬🇧 英国 108
+  - X_🇺🇸 美国 109
+  - X_110
+  - X_🇺🇸 美国 111
+  - X_🇺🇸 美国 112
+  - X_🇺🇸 美国 113
+  - X_🇺🇸 美国 114
+  - X_🇺🇸 美国 115
+  - X_🇺🇦 乌克兰 116
+  - X_🇷🇺 俄罗斯 117
+  - X_🇸🇨 塞舌尔 118
+  - X_🇺🇸 美国 119
+  - X_🇺🇸 美国 120
+  - X_🇪🇪 爱沙尼亚 121
+  - X_🇧🇷 巴西 122
+  - X_🇺🇸 美国 123
+  - X_🇬🇧 英国 124
+  - X_🇺🇸 美国 125
+  - X_🇺🇸 美国 126
+  - X_🇬🇧 英国 127
+  - X_🇺🇸 美国 128
+  - X_🇺🇸 美国 129
+  - X_🇺🇸 美国 130
+  - X_🇺🇸 美国 131
+  - X_🇺🇸 美国 132
+  - X_🇸🇪 瑞典 133
+  - X_🇺🇸 美国 134
+  - X_🇺🇸 美国 135
+  - X_🇺🇸 美国 136
+  - X_🇲🇾 马来西亚 139
+  - X_🇮🇩 印度尼西亚 141
+  - X_🇮🇩 印度尼西亚 142
+  - X_🇩🇪 德国 143
+  - X_🇩🇪 德国 145
+  - X_146
+  - X_148
+  - X_🇷🇺 俄罗斯 149
+  - X_🇹🇼 台湾 150
+  - X_🇷🇺 俄罗斯 151
+  - X_🇯🇵 日本 152
+  - X_154
+  - X_🇯🇵 日本 156
+  - X_🇨🇾 塞浦路斯 157
+  - X_🇭🇰 香港 158
+  - X_🇭🇰 香港 159
+  - X_🇺🇸 美国 160
+  - X_🇸🇬 新加坡 161
+  - X_🇭🇰 香港 162
+  - X_🇭🇰 香港 163
+  - X_🇯🇵 日本 164
+  - X_🇯🇵 日本 165
+  - X_🇸🇬 新加坡 166
+  - X_🇸🇬 新加坡 167
+  - X_🇸🇬 新加坡 168
+  - X_🇰🇷 韩国 169
+  - X_🇰🇷 韩国 170
+  - X_🇰🇷 韩国 171
+  - X_🇰🇷 韩国 172
+  - X_🇰🇷 韩国 173
+  - X_🇰🇷 韩国 174
+  - X_🇰🇷 韩国 175
+  - X_🇰🇷 韩国 176
+  - X_🇰🇷 韩国 177
+  - X_🇰🇷 韩国 178
+  - X_🇰🇷 韩国 179
+  - X_🇰🇷 韩国 180
+  - X_🇰🇷 韩国 181
+  - X_🇰🇷 韩国 182
+  - X_🇰🇷 韩国 183
+  - X_🇰🇷 韩国 184
+  - X_🇰🇷 韩国 185
+  - X_🇰🇷 韩国 186
+  - X_🇰🇷 韩国 187
+  - X_🇰🇷 韩国 188
+  - X_🇰🇷 韩国 190
+  - X_🇰🇷 韩国 191
+  - X_🇰🇷 韩国 193
+  - X_🇰🇷 韩国 194
+  - X_🇰🇷 韩国 195
+  - X_🇰🇷 韩国 196
+  - X_🇰🇷 韩国 197
+  - X_🇰🇷 韩国 198
+  - X_🇰🇷 韩国 200
+  - X_🇰🇷 韩国 201
+  - X_🇰🇷 韩国 202
+  - X_🇰🇷 韩国 204
+  - X_🇰🇷 韩国 205
+  - X_🇰🇷 韩国 206
+  - X_🇰🇷 韩国 207
+  - X_🇰🇷 韩国 208
+  - X_🇰🇷 韩国 209
+  - X_🇰🇷 韩国 210
+  - X_🇰🇷 韩国 211
+  - X_🇰🇷 韩国 212
+  - X_🇰🇷 韩国 213
+  - X_🇸🇬 新加坡 214
+  - X_🇰🇷 韩国 215
+  - X_🇰🇷 韩国 217
+  - X_🇰🇷 韩国 219
+  - X_🇰🇷 韩国 221
+  - X_🇺🇸 美国 222
+  - X_🇰🇷 韩国 223
+  - X_🇰🇷 韩国 224
+  - X_🇰🇷 韩国 225
+  - X_🇰🇷 韩国 227
+  - X_🇰🇷 韩国 228
+  - X_🇰🇷 韩国 229
+  - X_🇰🇷 韩国 230
+  - X_🇰🇷 韩国 231
+  - X_🇦🇹 奥地利 232
+  - X_🇰🇷 韩国 233
+  - X_🇦🇹 奥地利 234
+  - X_🇩🇪 德国 235
+  - X_🇦🇹 奥地利 236
+  - X_🇸🇬 新加坡 237
+  - X_🇩🇪 德国 238
+  - X_🇩🇪 德国 240
+  - X_🇰🇷 韩国 241
+  - X_🇰🇷 韩国 243
+  - X_🇩🇪 德国 244
+  - X_🇰🇷 韩国 245
+  - X_🇺🇸 美国 246
+  - X_🇩🇪 德国 247
+  - X_🇰🇷 韩国 248
+  - X_🇰🇷 韩国 249
+  - X_🇩🇪 德国 251
+  - X_🇯🇵 日本 252
+  - X_🇰🇷 韩国 253
+  - X_🇩🇪 德国 255
+  - X_🇩🇪 德国 256
+  - X_🇰🇷 韩国 257
+  - X_🇦🇹 奥地利 259
+  - X_🇩🇪 德国 260
+  - X_🇩🇪 德国 261
+  - X_🇦🇹 奥地利 262
+  - X_🇸🇬 新加坡 263
+  - X_🇸🇬 新加坡 264
+  - X_🇸🇬 新加坡 266
+  - X_🇯🇵 日本 267
+  - X_🇸🇬 新加坡 268
+  - X_🇸🇬 新加坡 269
+  - X_🇸🇬 新加坡 270
+  - X_🇯🇵 日本 271
+  - X_🇸🇬 新加坡 272
+  - X_🇩🇪 德国 273
+  - X_🇩🇪 德国 274
+  - X_🇩🇪 德国 275
+  - X_🇩🇪 德国 278
+  - X_🇩🇪 德国 279
+  - X_🇩🇪 德国 280
+  - X_🇩🇪 德国 281
+  - X_🇩🇪 德国 282
+  - X_🇩🇪 德国 283
+  - X_🇩🇪 德国 284
+  - X_🇩🇪 德国 285
+  - X_🇩🇪 德国 286
+  - X_🇦🇪 阿拉伯联合酋长国 287
+  - X_🇩🇪 德国 288
+  - X_🇩🇪 德国 291
+  - X_🇩🇪 德国 293
+  - X_🇨🇭 瑞士 295
+  - X_🇩🇪 德国 296
+  - X_🇩🇪 德国 297
+  - X_🇩🇪 德国 298
+  - X_🇨🇭 瑞士 299
+  - X_🇩🇪 德国 301
+  - X_🇩🇪 德国 302
+  - X_🇯🇵 日本 303
+  - X_🇮🇶 伊拉克 304
+  - X_🇨🇿 捷克 305
+  - X_🇩🇪 德国 306
+  - X_🇰🇷 韩国 307
+  - X_🇮🇩 印度尼西亚 308
+  - X_🇮🇶 伊拉克 309
+  - X_🇨🇿 捷克 310
+  - X_🇨🇭 瑞士 311
+  - X_🇩🇪 德国 312
+  - X_🇺🇸 美国 313
+  - X_🇨🇭 瑞士 314
+  - X_🇩🇪 德国 316
+  - X_🇯🇵 日本 318
+  - X_🇳🇱 荷兰 319
+  - X_🇩🇪 德国 323
+  - X_🇩🇪 德国 324
+  - X_🇩🇪 德国 326
+  - X_🇨🇿 捷克 329
+  - X_🇩🇪 德国 330
+  - X_🇺🇸 美国 331
+  - X_🇩🇪 德国 332
+  - X_🇺🇸 美国 333
+  - X_🇨🇿 捷克 335
+  - X_🇮🇷 伊朗 336
+  - X_🇩🇪 德国 337
+  - X_🇮🇷 伊朗 338
+  - X_🇨🇭 瑞士 339
+  - X_🇮🇷 伊朗 340
+  - X_🇨🇭 瑞士 341
+  - X_🇩🇪 德国 342
+  - X_🇺🇸 美国 344
+  - X_🇺🇸 美国 345
+  - X_🇩🇪 德国 347
+  - X_🇩🇪 德国 352
+  - X_🇩🇪 德国 354
+  - X_🇩🇪 德国 356
+  - X_🇩🇪 德国 361
+  - X_🇨🇿 捷克 365
+  - X_🇩🇪 德国 368
+  - X_🇩🇪 德国 369
+  - X_🇸🇪 瑞典 371
+  - X_🇩🇪 德国 373
+  - X_🇩🇪 德国 374
+  - X_🇮🇷 伊朗 375
+  - X_🇺🇸 美国 376
+  - X_🇸🇪 瑞典 377
+  - X_🇯🇵 日本 380
+  - X_🇯🇵 日本 381
+  - X_🇨🇭 瑞士 383
+  - X_🇩🇪 德国 386
+  - X_🇭🇰 香港 387
+  - X_🇩🇪 德国 388
+  - X_🇭🇰 香港 389
+  - X_🇭🇰 香港 390
+  - X_🇸🇪 瑞典 391
+  - X_🇭🇰 香港 392
+  - X_🇸🇪 瑞典 393
+  - X_🇭🇰 香港 394
+  - X_🇰🇷 韩国 395
+  - X_🇸🇪 瑞典 396
+  - X_🇭🇰 香港 400
+  - X_🇭🇰 香港 401
+  - X_🇺🇸 美国 402
+  - X_🇰🇷 韩国 403
+  - X_🇨🇦 加拿大 404
+  - X_🇺🇸 美国 405
+  - X_🇱🇻 拉脱维亚 406
+  - X_🇨🇳 中国 407
+  - X_409
+  - X_🇨🇦 加拿大 410
+  - X_🇷🇺 俄罗斯 411
+  - X_🇯🇵 日本 412
+  - X_🇲🇩 摩尔多瓦 413
+  - X_🇨🇿 捷克 414
+  - X_🇷🇺 俄罗斯 415
+- name: 🌍 国外媒体
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🎯 全球直连
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+- name: 📲 电报信息
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+- name: Ⓜ️ 微软服务
+  type: select
+  proxies:
+  - 🎯 全球直连
+  - 🚀 节点选择
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+- name: 🍎 苹果服务
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+- name: 🎯 全球直连
+  type: select
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - ♻️ 自动选择
+- name: 🛑 全球拦截
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+- name: 🍃 应用净化
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+- name: 🐟 漏网之鱼
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - ♻️ 自动选择
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+- name: 🪐 负载均衡
+  type: load-balance
+  url: https://client3.google.com/generate_204
+  interval: 120
+  strategy: consistent-hashing
+  proxies:
+  - X_AT_speednode_0001
+  - X_AT_speednode_0002
+  - X_AT_speednode_0003
+  - X_AU_speednode_0006
+  - X_BG_speednode_0008
+  - X_BG_speednode_0009
+  - X_BG_speednode_0011
+  - X_CH_speednode_0012
+  - X_CH_speednode_0013
+  - X_CH_speednode_0015
+  - X_CH_speednode_0017
+  - X_CH_speednode_0019
+  - X_CH_speednode_0020
+  - X_CH_speednode_0022
+  - X_CH_speednode_0023
+  - X_CH_speednode_0024
+  - X_CN_speednode_0026
+  - X_CN_speednode_0027
+  - X_CZ_speednode_0029
+  - X_CZ_speednode_0030
+  - X_CZ_speednode_0031
+  - X_DE_speednode_0035
+  - X_DE_speednode_0036
+  - X_DE_speednode_0038
+  - X_DE_speednode_0039
+  - X_DE_speednode_0041
+  - X_DE_speednode_0043
+  - X_DE_speednode_0044
+  - X_DK_speednode_0045
+  - X_DK_speednode_0047
+  - X_FI_speednode_0048
+  - X_GB_speednode_0050
+  - X_GB_speednode_0052
+  - X_GB_speednode_0054
+  - X_GB_speednode_0056
+  - X_GB_speednode_0058
+  - X_GB_speednode_0060
+  - X_GB_speednode_0061
+  - X_GB_speednode_0064
+  - X_HK_speednode_0065
+  - X_IQ_speednode_0066
+  - X_IQ_speednode_0068
+  - X_IR_speednode_0069
+  - X_IR_speednode_0071
+  - X_IR_speednode_0072
+  - X_KR_speednode_0073
+  - X_KR_speednode_0074
+  - X_KR_speednode_0075
+  - X_KR_speednode_0076
+  - X_KR_speednode_0077
+  - X_KR_speednode_0078
+  - X_KR_speednode_0079
+  - X_KR_speednode_0080
+  - X_KR_speednode_0081
+  - X_KR_speednode_0082
+  - X_KR_speednode_0083
+  - X_LB_speednode_0084
+  - X_RO_speednode_0085
+  - X_RU_speednode_0087
+  - X_SC_speednode_0089
+  - X_SC_speednode_0091
+  - X_SE_speednode_0092
+  - X_SE_speednode_0094
+  - X_SE_speednode_0095
+  - X_TW_speednode_0096
+  - X_US_speednode_0097
+  - X_US_speednode_0098
+  - X_US_speednode_0099
+  - X_US_speednode_0100
+  - X_US_speednode_0101
+  - X_US_speednode_0103
+  - X_US_speednode_0105
+  - X_US_speednode_0106
+  - X_US_speednode_0107
+  - X_US_speednode_0108
+  - X_US_speednode_0109
+  - X_US_speednode_0110
+  - X_US_speednode_0111
+  - X_US_speednode_0112
+  - X_US_speednode_0113
+  - X_US_speednode_0115
+  - X_US_speednode_0118
+  - X_US_speednode_0119
+  - X_US_speednode_0120
+  - X_US_speednode_0121
+  - X_US_speednode_0123
+  - X_US_speednode_0124
+  - X_🇭🇰HK_2|1.1MB/s
+  - X_🇭🇰 香港|@ripaojiedian
+  - X_香港3|@ripaojiedian
+  - X_香港4|@ripaojiedian
+  - X_香港5|@ripaojiedian
+  - X_日本|@ripaojiedian
+  - X_日本3|@ripaojiedian
+  - X_日本2|@ripaojiedian
+  - X_新加坡|@ripaojiedian
+  - X_新加坡2|@ripaojiedian
+  - X_新加坡3|@ripaojiedian
+  - X_美国2|@ripaojiedian
+  - X_美国3|@ripaojiedian
+  - X_🇯🇵JP_1|1.2MB/s
+  - X_🇺🇸US_2|1.0MB/s
+  - X_🇰🇷KR_1|1.2MB/s
+  - X_🇮🇹 意大利 | ITA 2|2.2MB/s
+  - X_🇯🇵JP_2|2.1MB/s
+  - X_🇰🇷KR_4|1.2MB/s
+rule-providers:
+  Apple:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/Apple.list
+    format: text
+    interval: 3600
+    path: ./Clash/Apple.list
+  Telegram:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/Telegram.list
+    format: text
+    interval: 3600
+    path: ./Clash/Telegram.list
+  ProxyLite:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyLite.list
+    format: text
+    interval: 3600
+    path: ./Clash/ProxyLite.list
+  ChinaDomain:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaDomain.list
+    format: text
+    interval: 3600
+    path: ./Clash/ChinaDomain.list
+  ChinaCompanyIp:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaCompanyIp.list
+    format: text
+    interval: 3600
+    path: ./Clash/ChinaCompanyIp.list
+  ProxyMedia:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyMedia.list
+    format: text
+    interval: 3600
+    path: ./Clash/ProxyMedia.list
+  LocalAreaNetwork:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/LocalAreaNetwork.list
+    format: text
+    interval: 3600
+    path: ./Clash/LocalAreaNetwork.list
+  Microsoft:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/Microsoft.list
+    format: text
+    interval: 3600
+    path: ./Clash/Microsoft.list
+  GoogleCN:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/GoogleCN.list
+    format: text
+    interval: 3600
+    path: ./Clash/GoogleCN.list
+  BanAD:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/BanAD.list
+    format: text
+    interval: 3600
+    path: ./Clash/BanAD.list
+  BanProgramAD:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/BanProgramAD.list
+    format: text
+    interval: 3600
+    path: ./Clash/BanProgramAD.list
+  SteamCN:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/SteamCN.list
+    format: text
+    interval: 3600
+    path: ./Clash/SteamCN.list
+rules:
+- RULE-SET,LocalAreaNetwork,🎯 全球直连
+- RULE-SET,BanAD,🛑 全球拦截
+- RULE-SET,BanProgramAD,🍃 应用净化
+- RULE-SET,GoogleCN,🎯 全球直连
+- RULE-SET,SteamCN,🎯 全球直连
+- RULE-SET,Microsoft,Ⓜ️ 微软服务
+- RULE-SET,Apple,🍎 苹果服务
+- RULE-SET,ProxyMedia,🌍 国外媒体
+- RULE-SET,Telegram,📲 电报信息
+- RULE-SET,ProxyLite,🚀 节点选择
+- RULE-SET,ChinaDomain,🎯 全球直连
+- RULE-SET,ChinaCompanyIp,🎯 全球直连
+- GEOIP,CN,🎯 全球直连
+- MATCH,🐟 漏网之鱼
