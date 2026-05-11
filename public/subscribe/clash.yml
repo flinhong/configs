@@ -1,0 +1,5437 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9999
+dns:
+  enable: true
+  listen: 0.0.0.0:53
+  ipv6: false
+  default-nameserver:
+  - 223.5.5.5
+  - 114.114.114.114
+  nameserver:
+  - 223.5.5.5
+  - 114.114.114.114
+  - 119.29.29.29
+  - 180.76.76.76
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+  - '*.lan'
+  - '*.localdomain'
+  - '*.example'
+  - '*.invalid'
+  - '*.localhost'
+  - '*.test'
+  - '*.local'
+  - '*.home.arpa'
+  - router.asus.com
+  - localhost.sec.qq.com
+  - localhost.ptlogin2.qq.com
+  - +.msftconnecttest.com
+tun:
+  enable: true
+  auto-route: true
+  auto-detect-interface: true
+  dns-hijack:
+  - 114.114.114.114
+  - 180.76.76.76
+  - 119.29.29.29
+  - 223.5.5.5
+  - 8.8.8.8
+  - 8.8.4.4
+  - 1.1.1.1
+  - 1.0.0.1
+proxies:
+- name: 🇨🇳_CN_中国->🇯🇵_JP_日本
+  type: trojan
+  server: 36.156.102.115
+  port: 26876
+  password: BxceQaOe
+  skip-cert-verify: true
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  type: vmess
+  server: v29.heduian.link
+  port: 30829
+  sni: ''
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /oooo
+    headers:
+      host: ocbc.com
+  alterId: 2
+- name: 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  type: ss
+  server: 185.153.197.5
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: X_AE_speednode_0001
+  server: 31.57.56.193
+  port: 51523
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: R2MPY2rqL2Gf3Lb1sP5n5fdEkUJ1d-wp
+  udp: true
+- name: X_BE_speednode_0002
+  server: 150.251.147.97
+  port: 8443
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: false
+  servername: sni.111000.v6.army
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_CH_speednode_0004
+  server: 138.124.32.78
+  port: 443
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  servername: sni.latonyamadeline.ndjp.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
+  udp: true
+  cipher: auto
+- name: X_DE_speednode_0006
+  server: 217.144.190.230
+  port: 443
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: false
+  servername: sni.latonyamadeline.ndjp.net
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
+  udp: true
+  cipher: auto
+- name: X_DE_speednode_0007
+  server: 31.56.7.90
+  port: 443
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: true
+  servername: sni.latonyamadeline.ndjp.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
+  udp: true
+  cipher: auto
+- name: X_DE_speednode_0008
+  server: 89.169.55.120
+  port: 4443
+  type: vless
+  uuid: 00000000-0000-4000-8000-000000000000
+  tls: true
+  skip-cert-verify: false
+  servername: nn9jdg-k7yewrrk.acg.xx.kg
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: nn9jdg-k7yewrrk.acg.xx.kg
+  udp: true
+  cipher: auto
+- name: X_DE_speednode_0009
+  server: 193.23.219.205
+  port: 8443
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: false
+  servername: sni.latonyamadeline.ndjp.net
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
+  udp: true
+  cipher: auto
+- name: X_GB_speednode_0010
+  server: 82.38.31.208
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+  udp: true
+- name: X_GB_speednode_0011
+  server: 82.198.246.9
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_GB_speednode_0012
+  server: 82.38.31.89
+  port: 443
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: X_GB_speednode_0015
+  server: 82.198.246.214
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_GB_speednode_0016
+  server: 82.38.31.99
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: X_GB_speednode_0017
+  server: 82.198.246.37
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_GB_speednode_0019
+  server: 82.38.31.35
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: X_GB_speednode_0020
+  server: v6.hdacd.com
+  port: 30806
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_HK_speednode_0021
+  server: 154.37.223.19
+  port: 56972
+  type: vmess
+  uuid: ae225455-5e8c-491d-d931-c06ac56f4aee
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: http
+  http-opts:
+    method: GET
+    path:
+    - /
+  udp: true
+- name: X_IE_speednode_0022
+  server: 78.17.76.197
+  port: 47644
+  type: vless
+  uuid: 9a21263b-1af0-41ec-9d3a-2afda61606dc
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: www.nvidia.com
+  reality-opts:
+    public-key: ks2xxgXE4JO2nYBdbxliHfvy5OEd6zdjE9UWNXJy4m4
+    short-id: bec61d2ccb
+  udp: true
+  cipher: auto
+- name: X_IR_speednode_0023
+  server: 151.242.69.201
+  port: 443
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: true
+  servername: sni.111000.v6.army
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_IR_speednode_0024
+  server: 151.242.69.214
+  port: 2053
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: false
+  servername: sni.111000.v6.army
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_IR_speednode_0025
+  server: 151.242.69.72
+  port: 8443
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: false
+  servername: sni.111000.v6.army
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_IR_speednode_0027
+  server: 62.60.152.64
+  port: 448
+  type: vless
+  uuid: 00000000-0000-4000-8000-000000000000
+  tls: true
+  skip-cert-verify: false
+  servername: sas0dpjv2rmyx842.makuyo.dpdns.org
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: sas0dpjv2rmyx842.makuyo.dpdns.org
+  udp: true
+  cipher: auto
+- name: X_JP_speednode_0028
+  server: 54.95.184.62
+  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: X_JP_speednode_0029
+  server: 8.211.174.145
+  port: 31772
+  type: vless
+  uuid: 00000000-0000-4000-8000-000000000000
+  tls: true
+  skip-cert-verify: false
+  servername: sas0dpjv2rmyx842.makuyo.dpdns.org
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: sas0dpjv2rmyx842.makuyo.dpdns.org
+  udp: true
+  cipher: auto
+- name: X_JP_speednode_0030
+  server: 193.32.151.49
+  port: 21219
+  type: vless
+  uuid: 00000000-0000-4000-8000-000000000000
+  tls: true
+  skip-cert-verify: false
+  servername: sas0dpjv2rmyx842.makuyo.dpdns.org
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: sas0dpjv2rmyx842.makuyo.dpdns.org
+  udp: true
+  cipher: auto
+- name: X_KR_speednode_0031
+  server: 49.128.202.132
+  port: 52771
+  type: vless
+  uuid: 00000000-0000-4000-8000-000000000000
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: vfn-6o8h-kht7rpd.zipgd3vx91o.ddns-ip.net
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristifp=chrome
+    headers:
+      Host: vfn-6o8h-kht7rpd.zipgd3vx91o.ddns-ip.net
+  udp: true
+  cipher: auto
+- name: X_KR_speednode_0032
+  server: 175.196.178.94
+  port: 11310
+  type: ss
+  cipher: none
+  password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    host: woshinidie-et3.pages.dev
+    path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed=2560
+    tls: true
+    mux: false
+  udp: true
+- name: X_KR_speednode_0033
+  server: 165.246.171.218
+  port: 10891
+  type: vless
+  uuid: 00000000-0000-4000-8000-000000000000
+  tls: true
+  skip-cert-verify: false
+  servername: sas0dpjv2rmyx842.makuyo.dpdns.org
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: sas0dpjv2rmyx842.makuyo.dpdns.org
+  udp: true
+  cipher: auto
+- name: X_KR_speednode_0034
+  server: 121.169.46.116
+  port: 1090
+  type: socks5
+  username: T2clM0QlM0Q6
+  udp: true
+  cipher: auto
+- name: X_KR_speednode_0035
+  server: 59.11.151.238
+  port: 12000
+  type: ss
+  cipher: none
+  password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    host: woshinidie-et3.pages.dev
+    path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed=2560
+    tls: true
+    mux: false
+  udp: true
+- name: X_LB_speednode_0036
+  server: 77.110.96.142
+  port: 443
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: sni.latonyamadeline.ndjp.net
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
+  udp: true
+  cipher: auto
+- name: X_MD_speednode_0037
+  server: 185.235.241.14
+  port: 4443
+  type: vless
+  uuid: 00000000-0000-4000-8000-000000000000
+  tls: true
+  skip-cert-verify: false
+  servername: sas0dpjv2rmyx842.makuyo.dpdns.org
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: sas0dpjv2rmyx842.makuyo.dpdns.org
+  udp: true
+  cipher: auto
+- name: X_NL_speednode_0038
+  server: 46.8.229.26
+  port: 2053
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: false
+  servername: sni.111000.v6.army
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_NL_speednode_0040
+  server: 46.8.229.218
+  port: 2053
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: false
+  servername: sni.111000.v6.army
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_NL_speednode_0042
+  server: 194.147.33.251
+  port: 443
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: false
+  servername: sni.111000.v6.army
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_PL_speednode_0044
+  server: 217.30.10.70
+  port: 9093
+  type: ss
+  cipher: aes-256-cfb
+  password: wfLC2y7rzZyCmuyt
+  udp: true
+- name: X_RU_speednode_0045
+  server: 85.92.108.39
+  port: 443
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  servername: sni.111000.v6.army
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_RU_speednode_0046
+  server: 45.139.77.52
+  port: 443
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: false
+  servername: sni.111000.v6.army
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_RU_speednode_0047
+  server: 5.129.233.22
+  port: 443
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: false
+  servername: sni.111000.v6.army
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_SE_speednode_0048
+  server: 109.120.157.29
+  port: 443
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: false
+  servername: sni.latonyamadeline.ndjp.net
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
+  udp: true
+  cipher: auto
+- name: X_SG_speednode_0049
+  server: 83.147.254.4
+  port: 36089
+  type: vless
+  uuid: 00000000-0000-4000-8000-000000000000
+  tls: true
+  skip-cert-verify: false
+  servername: sas0dpjv2rmyx842.makuyo.dpdns.org
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: sas0dpjv2rmyx842.makuyo.dpdns.org
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0050
+  server: www.shopify.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0051
+  server: www.fbi.gov
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0052
+  server: www.temu.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0053
+  server: 154.17.237.73
+  port: 37811
+  type: vless
+  uuid: 00000000-0000-4000-8000-000000000000
+  tls: true
+  skip-cert-verify: false
+  servername: sas0dpjv2rmyx842.makuyo.dpdns.org
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: sas0dpjv2rmyx842.makuyo.dpdns.org
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0054
+  server: support.cloudflare.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0055
+  server: 88.210.36.107
+  port: 2377
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    mode: tls
+    host: feb7fa9:154948
+    tls: false
+  udp: true
+- name: X_US_speednode_0056
+  server: blog.cloudflare.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0057
+  server: cloudflare-dns.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0058
+  server: 72.56.62.253
+  port: 22231
+  type: vless
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: r1.mizulina.top
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0059
+  server: www.whatismyip.net
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0060
+  server: 144.31.157.163
+  port: 443
+  type: vless
+  uuid: ae8ddd8e-00af-48e5-bd57-05074a1bbffb
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: www.deepl.com
+  reality-opts:
+    public-key: ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU
+    short-id: 0123456789abcdef
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0061
+  server: www.npmjs.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0062
+  server: developers.cloudflare.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0063
+  server: www.wto.org
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0064
+  server: www.epicgames.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0065
+  server: 144.31.5.23
+  port: 9443
+  type: vless
+  uuid: 4649d681-7f26-4959-a3f2-02eb8866230f
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: yahoo.com
+  reality-opts:
+    public-key: wAYsJ6RJXFy94w_WaTIhp1ZfCePAPoZmP27RarvUqXg
+    short-id: 2344766a270a6298
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0066
+  server: cf.090227.xyz
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0067
+  server: 144.31.237.162
+  port: 2053
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: false
+  servername: sni.111000.v6.army
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0068
+  server: cdnjs.com
+  port: 2095
+  type: vless
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  tls: false
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  servername: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fuckingfangbinxing.cnmfangbinxing-n.workers.dev
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0070
+  server: 130.49.176.227
+  port: 8443
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  tls: true
+  skip-cert-verify: false
+  servername: sni.111000.v6.army
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_VN_speednode_0071
+  server: 103.186.155.5
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: X_VN_speednode_0072
+  server: 103.186.155.84
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: X_VN_speednode_0073
+  server: 103.186.155.8
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: X_VN_speednode_0074
+  server: 103.186.154.19
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: X_VN_speednode_0075
+  server: 103.186.154.192
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: X_VN_speednode_0076
+  server: 103.186.155.80
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: X_VN_speednode_0077
+  server: 103.186.154.55
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: X_VN_speednode_0078
+  server: 103.186.155.233
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: X_VN_speednode_0079
+  server: 103.186.154.244
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: X_VN_speednode_0080
+  server: 103.186.155.154
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: X_VN_speednode_0081
+  server: 103.186.155.21
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: X_VN_speednode_0082
+  server: 103.186.154.247
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: X_VN_speednode_0083
+  server: 103.186.154.182
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: X_VN_speednode_0084
+  server: 103.186.154.16
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: X_VN_speednode_0085
+  server: 103.186.155.226
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: X_VN_speednode_0086
+  server: 103.186.154.202
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: X_VN_speednode_0087
+  server: 103.186.155.205
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: X_VN_speednode_0088
+  server: 103.186.154.252
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: X_VN_speednode_0089
+  server: 103.186.155.121
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: X_VN_speednode_0090
+  server: 103.186.155.49
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: X_VN_speednode_0091
+  server: 103.186.154.211
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: X_VN_speednode_0092
+  server: 103.186.155.44
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: X_VN_speednode_0093
+  server: 103.186.154.20
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: X_VN_speednode_0094
+  server: 103.186.155.106
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: X_VN_speednode_0095
+  server: 103.186.155.25
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: X_VN_speednode_0096
+  server: 103.186.155.142
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: X_VN_speednode_0097
+  server: 103.186.154.29
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- alterId: '0'
+  cipher: auto
+  name: X_🇭🇰HK_2|2.8MB/s
+  network: ws
+  port: 16622
+  server: m.cnmjin.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f365630d-15b5-4bd4-ad55-aa6284d7be30
+  ws-opts:
+    headers:
+      Host: 8a687da9458cc46e80abc85ec8d8ada7.mobgslb.tbcache.com
+    path: /
+  xudp: true
+- alterId: 2
+  cipher: auto
+  name: X_🇭🇰 香港|@ripaojiedian
+  port: 30807
+  server: v10.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: X_香港3|@ripaojiedian
+  network: tcp
+  password: 7ebc402f3383366fe4f554abd8625439
+  port: 2008
+  server: 3.112.206.12
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+  cipher: auto
+- name: X_香港5|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 63131
+  server: 54.46.123.251
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+  cipher: auto
+- name: X_日本|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 443
+  server: 116.80.61.236
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+  cipher: auto
+- name: X_日本2|@ripaojiedian
+  network: tcp
+  password: 7ebc402f3383366fe4f554abd8625439
+  port: 8066
+  server: 54.46.127.252
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+  cipher: auto
+- name: X_新加坡|@ripaojiedian
+  network: tcp
+  password: 7ebc402f3383366fe4f554abd8625439
+  port: 4840
+  server: 95.40.118.115
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+  cipher: auto
+- name: X_新加坡3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 5159
+  server: 43.206.119.178
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+  cipher: auto
+- name: X_美国2|@ripaojiedian
+  network: tcp
+  password: 7ebc402f3383366fe4f554abd8625439
+  port: 6604
+  server: 54.249.141.77
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+  cipher: auto
+- name: X_美国3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 44386
+  server: 43.198.240.167
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+  cipher: auto
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸 美国4|@ripaojiedian
+  port: 180
+  server: 82.198.246.250
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸 美国5|@ripaojiedian
+  port: 180
+  server: 82.198.246.233
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- cipher: aes-256-gcm
+  name: X_🇸🇬SG_1|4.7MB/s
+  password: dada1203
+  port: 80
+  server: 47.128.72.35
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: X_🇯🇵JP_1|1.3MB/s
+  network: ws
+  port: 16617
+  server: planb.mojcn.com
+  type: vmess
+  uuid: f365630d-15b5-4bd4-ad55-aa6284d7be30
+  ws-opts:
+    headers:
+      Host: 8a687da9458cc46e80abc85ec8d8ada7.mobgslb.tbcache.com
+    path: /
+- name: X_🇩🇪DE_1|1.3MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 89.167.100.106
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+  cipher: auto
+- name: X_🇺🇸US_2|1.1MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 2096
+  server: 146.235.226.118
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+  cipher: auto
+- name: X_🇺🇸US_3|1.7MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 45.79.96.108
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+  cipher: auto
+- name: X_🇺🇸US_4|1.3MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 24.199.122.93
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+  cipher: auto
+- name: X_🇺🇸US_6|1.1MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 8443
+  server: 23.95.34.158
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+  cipher: auto
+- name: X_🇺🇸US_7|1.2MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 8443
+  server: 148.135.70.157
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+  cipher: auto
+- name: X_🇺🇸US_8|1.1MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 2083
+  server: 31.172.79.138
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+  cipher: auto
+- name: X_🇨🇦CA_1|1.0MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 2053
+  server: 23.173.104.231
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+  cipher: auto
+- name: X_🇺🇸US_9|1.3MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 8443
+  server: 150.136.61.82
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+  cipher: auto
+- name: X_🇺🇸US_10|2.1MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 142.252.220.13
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+  cipher: auto
+- name: X_🇺🇸US_11|1.1MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 69.169.111.44
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+  cipher: auto
+- name: X_🇨🇦CA_2|1.5MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 2053
+  server: 23.173.104.235
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+  cipher: auto
+- name: X_🇩🇪DE_3|1.1MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 8443
+  server: 46.225.162.164
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+  cipher: auto
+- name: X_🇺🇸US_12|1.0MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 8443
+  server: 138.124.60.93
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+  cipher: auto
+- name: X_🇳🇱NL_4|1.1MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 2053
+  server: 178.62.255.169
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+  cipher: auto
+- name: X_🇳🇱NL_5|1.3MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 2087
+  server: 158.178.148.48
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+  cipher: auto
+- name: X_🇩🇪DE_4|1.5MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 2053
+  server: 185.233.80.60
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+  cipher: auto
+- name: X_🇩🇪DE_5|1.2MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 2053
+  server: 18.194.183.74
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+  cipher: auto
+- name: X_🇩🇪DE_6|1.5MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 2053
+  server: 194.76.173.184
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+  cipher: auto
+- name: X_🇳🇱NL_6|1.1MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 2053
+  server: 31.56.222.222
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+  cipher: auto
+- name: X_🇩🇪DE_7|1.8MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 2053
+  server: 93.115.19.15
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+  cipher: auto
+- name: X_🇩🇪DE_8|1.9MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 8443
+  server: 131.143.125.214
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+  cipher: auto
+- name: X_🇩🇪DE_9|1.7MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 8443
+  server: 158.180.49.11
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+  cipher: auto
+- name: X_🇩🇪DE_10|1.1MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 8443
+  server: 157.230.116.226
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+  cipher: auto
+- name: X_🇩🇪DE_11|1.0MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 8443
+  server: 157.230.28.94
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+  cipher: auto
+- name: X_🇫🇷FR_1|1.9MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 8443
+  server: 78.118.130.148
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+  cipher: auto
+- name: X_每天更新，请加电报群防止失联
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_免费VPN：https://tt.vg/OWeaF
+  type: vmess
+  server: 103.181.164.145
+  port: 51556
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_🇩🇪 德国 15
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_🇩🇪 德国 16
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_🇩🇪 德国 17
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_🇩🇪 德国 20
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_🇭🇰 香港 24
+  type: vmess
+  server: v10.hdacd.com
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_🇲🇾 马来西亚 26
+  type: vmess
+  server: v8.hdacd.com
+  port: 30808
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_🇩🇪 德国 30
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_🇯🇵 日本 93
+  type: vmess
+  server: 103.127.243.49
+  port: 53224
+  uuid: 4f47e6cc-659d-4588-8155-21d2782f1b91
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_🇵🇱 波兰 109
+  type: vless
+  server: 144.31.5.23
+  port: 9443
+  uuid: 4649d681-7f26-4959-a3f2-02eb8866230f
+  servername: yahoo.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: wAYsJ6RJXFy94w_WaTIhp1ZfCePAPoZmP27RarvUqXg
+    short-id: 2344766a270a6298
+  udp: true
+  cipher: auto
+- name: X_🇩🇪 德国 110
+  type: vless
+  server: 148.253.208.98
+  port: 20222
+  uuid: faed8940-ce1a-4613-a05b-65d833e3346b
+  servername: stats.vk-portal.net
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: USzu7jEsyeyLjhJ_w8Wm76bd6bSXy8TciAojicQKAHk
+    short-id: 48e9a51281c1
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 111
+  type: vless
+  server: us.musicperec.ru
+  port: 443
+  uuid: ec9e7b71-72b6-0021-8549-2efb1b21a502
+  servername: ads.x5.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
+    short-id: 6e3f0a5b
+  udp: true
+  cipher: auto
+- name: X_🇵🇱 波兰 112
+  type: vless
+  server: pl74.mechvpn.online
+  port: 443
+  uuid: 6d916d55-fead-4ff3-a3a9-83e175ea8ad7
+  servername: pl74.mechvpn.online
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  udp: true
+  cipher: auto
+- name: X_🇹🇷 土耳其 113
+  type: vless
+  server: mouse2.1lil1.de
+  port: 443
+  uuid: bcc094e4-1a85-8a25-f8e1-5b08b9af841c
+  servername: www.stackoverflow.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: LaGTRJ1CJnnYV7FnyqQnU28I0xFTPFKI8xmUFwig5ic
+    short-id: c410508e9721512b
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 115
+  type: vless
+  server: 67.102.180.16
+  port: 443
+  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
+  servername: www.microsoft.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 3j9h81MFAlsEOQ4K1ey1XD0tz1aEVNaMGMoMjQwif1w
+    short-id: '16'
+  udp: true
+  cipher: auto
+- name: X_🇲🇾 马来西亚 118
+  type: vmess
+  server: v45.hdacd.com
+  port: 30845
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_🇯🇵 日本 119
+  type: trojan
+  server: 35.78.121.124
+  port: 42750
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  cipher: auto
+- name: X_🇯🇵 日本 120
+  type: vless
+  server: tokyo1.ap221.com
+  port: 443
+  uuid: 03491a57-f071-4c0c-84f2-f4ec9062ede1
+  servername: tokyo.ap221.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  udp: true
+  cipher: auto
+- name: X_🇸🇪 瑞典 121
+  type: vless
+  server: 77.110.96.142
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.latonyamadeline.ndjp.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
+  udp: true
+  cipher: auto
+- name: X_🇩🇪 德国 122
+  type: vless
+  server: 148.253.210.141
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.latonyamadeline.ndjp.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
+  udp: true
+  cipher: auto
+- name: X_123
+  type: trojan
+  server: www.calmlunch.com
+  port: 443
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+  udp: true
+  cipher: auto
+- name: X_🇩🇪 德国 124
+  type: vless
+  server: 193.23.219.205
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.latonyamadeline.ndjp.net
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
+  udp: true
+  cipher: auto
+- name: X_🇨🇭 瑞士 125
+  type: trojan
+  server: 185.18.250.252
+  port: 443
+  password: humanity
+  sni: www.gossipglove.com
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.gossipglove.com
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 126
+  type: vless
+  server: 194.147.33.251
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 127
+  type: vless
+  server: 144.31.237.162
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.army
+  tls: true
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳=
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_🇩🇪 德国 128
+  type: vless
+  server: 194.247.186.199
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.latonyamadeline.ndjp.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
+  udp: true
+  cipher: auto
+- name: X_🇨🇭 瑞士 129
+  type: vless
+  server: 138.124.32.78
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.latonyamadeline.ndjp.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
+  udp: true
+  cipher: auto
+- name: X_🇩🇪 德国 130
+  type: vmess
+  server: xg1c6.waimaofuwujd.cc
+  port: 443
+  uuid: f00390ea-0820-49b9-9eb7-569e03b00fb3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  servername: xg1c6.waimaofuwujd.cc
+  network: ws
+  ws-opts:
+    path: /api/v1/graphql
+    headers:
+      Host: xg1c6.waimaofuwujd.cc
+  udp: true
+- name: X_131
+  type: vmess
+  server: xg1a3.waimaofuwujd.cc
+  port: 443
+  uuid: f00390ea-0820-49b9-9eb7-569e03b00fb3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  servername: xg1a3.waimaofuwujd.cc
+  network: ws
+  ws-opts:
+    path: /api/v1/graphql
+    headers:
+      Host: xg1a3.waimaofuwujd.cc
+  udp: true
+- name: X_132
+  type: vless
+  server: ciallo-egb.pages.dev
+  port: 443
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  network: ws
+  servername: CiaLLO-egb.PAGeS.dEV
+  tls: true
+  ws-opts:
+    path: /
+  udp: true
+  cipher: auto
+- name: X_🇨🇦 加拿大 133
+  type: vmess
+  server: xg1c7.waimaofuwujd.cc
+  port: 443
+  uuid: f00390ea-0820-49b9-9eb7-569e03b00fb3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  servername: xg1c7.waimaofuwujd.cc
+  network: ws
+  ws-opts:
+    path: /api/v1/graphql
+    headers:
+      Host: xg1c7.waimaofuwujd.cc
+  udp: true
+- name: X_134
+  type: trojan
+  server: v3.dabache.top
+  port: 443
+  password: humanity
+  sni: www.gossipglove.com
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.gossipglove.com
+  udp: true
+  cipher: auto
+- name: X_🇸🇪 瑞典 135
+  type: vless
+  server: 62.60.149.222
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.latonyamadeline.ndjp.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
+  udp: true
+  cipher: auto
+- name: X_136
+  type: trojan
+  server: www.ignitelimit.com
+  port: 443
+  password: humanity
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /assignment
+  udp: true
+  cipher: auto
+- name: X_🇩🇪 德国 137
+  type: vless
+  server: 217.144.190.230
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.latonyamadeline.ndjp.net
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
+  udp: true
+  cipher: auto
+- name: X_138
+  type: trojan
+  server: 188.114.96.3
+  port: 443
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.calmlunch.com
+  udp: true
+  cipher: auto
+- name: X_139
+  type: vless
+  server: wangcai15.cloudflare.182682.xyz
+  port: 8880
+  uuid: 7890ce31-9a25-4fd4-90e7-80e5823ff510
+  network: ws
+  servername: Telegram-channel-WangCai2
+  tls: false
+  ws-opts:
+    path: /Telegram🇨🇳@WangCai2/?ed=2560
+    headers:
+      Host: frejd.11258.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 141
+  type: vmess
+  server: 2a14:7584:d0a2::a
+  port: 23456
+  uuid: bd48e0ac-e90e-4451-a4f2-abf061cfb890
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /alvin9999.com
+    headers:
+      Host: www.bing.com
+  udp: true
+- name: X_🇸🇬 新加坡 142
+  type: vless
+  server: 20.6.12.145
+  port: 443
+  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
+  network: ws
+  servername: sni.skylee4.cloudns.ch
+  tls: true
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net
+    headers:
+      Host: sni.skylee4.cloudns.ch
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 143
+  type: vmess
+  server: vc.fly.dev
+  port: 443
+  uuid: 35379219-6535-4f2e-a4fe-3e44f61e0eee
+  alterId: 32
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  servername: vc.fly.dev
+  network: ws
+  ws-opts:
+    path: /vc
+    headers:
+      Host: vc.fly.dev
+  udp: true
+- name: X_🇳🇱 荷兰 144
+  type: vless
+  server: 45.131.5.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime60.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇮🇲 马恩岛 145
+  type: vless
+  server: 185.162.228.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime60.workers.dev
+  udp: true
+  cipher: auto
+- name: X_146
+  type: vless
+  server: 8.6.112.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime08.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 147
+  type: vless
+  server: 50.62.198.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime39.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇸🇨 塞舌尔 148
+  type: vless
+  server: 154.194.12.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime35.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇦🇲 亚美尼亚 149
+  type: vless
+  server: 77.105.163.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime60.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 150
+  type: vless
+  server: 185.148.107.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime55.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 151
+  type: vless
+  server: 66.235.200.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime47.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇦🇪 阿拉伯联合酋长国 152
+  type: vless
+  server: 94.140.0.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime26.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 153
+  type: vless
+  server: 77.232.140.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime61.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇸🇨 塞舌尔 154
+  type: vless
+  server: 154.206.12.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime44.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇸🇨 塞舌尔 155
+  type: vless
+  server: 45.130.125.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime58.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇩🇪 德国 156
+  type: vless
+  server: 77.37.33.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime57.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 157
+  type: vless
+  server: 50.62.195.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime38.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇱🇹 立陶宛 158
+  type: vless
+  server: 88.216.67.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime05.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 159
+  type: vless
+  server: 45.131.7.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime02.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 160
+  type: vless
+  server: 162.120.94.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime07.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 161
+  type: vless
+  server: 31.12.75.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime21.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 162
+  type: vless
+  server: 45.40.147.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime37.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇬🇧 英国 163
+  type: vless
+  server: 185.156.19.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime57.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇸🇨 塞舌尔 164
+  type: vless
+  server: 154.83.2.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime28.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇨🇦 加拿大 165
+  type: vless
+  server: 104.234.239.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime46.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇪🇪 爱沙尼亚 166
+  type: vless
+  server: 45.80.110.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime51.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 167
+  type: vless
+  server: 135.84.75.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime08.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 168
+  type: vless
+  server: 104.238.69.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime48.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇱🇹 立陶宛 169
+  type: vless
+  server: 45.153.7.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime11.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇩🇪 德国 170
+  type: vless
+  server: 185.135.9.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime50.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 171
+  type: vless
+  server: 63.141.128.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime42.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇨🇾 塞浦路斯 172
+  type: vless
+  server: 195.85.59.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime58.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇸🇨 塞舌尔 173
+  type: vless
+  server: 154.194.12.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime35.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 174
+  type: vless
+  server: 31.12.75.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime21.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇧🇷 巴西 175
+  type: vless
+  server: 185.133.35.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime48.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇱🇺 卢森堡 176
+  type: vless
+  server: 188.42.88.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime20.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇸🇮 斯洛文尼亚 177
+  type: vless
+  server: 92.53.190.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime20.workers.dev
+  udp: true
+  cipher: auto
+- name: X_178
+  type: vless
+  server: 173.245.59.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime37.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇩🇪 德国 179
+  type: vless
+  server: 77.37.33.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime57.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇨🇿 捷克 180
+  type: vless
+  server: 185.149.135.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime56.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 181
+  type: vless
+  server: 188.164.248.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime26.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇸🇨 塞舌尔 182
+  type: vless
+  server: 154.197.75.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime37.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇨🇾 塞浦路斯 183
+  type: vless
+  server: 195.26.229.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime56.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 184
+  type: vless
+  server: 213.219.247.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime26.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇩🇪 德国 185
+  type: vless
+  server: 35.156.76.43
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.latonyamadeline.ndjp.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
+  udp: true
+  cipher: auto
+- name: X_🇦🇲 亚美尼亚 186
+  type: vless
+  server: 188.164.158.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime23.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇩🇪 德国 188
+  type: vless
+  server: 77.37.33.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime57.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 189
+  type: vless
+  server: 45.40.144.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime34.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇩🇪 德国 190
+  type: vless
+  server: 185.135.9.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime50.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇩🇪 德国 191
+  type: vless
+  server: 31.185.108.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime23.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇱🇹 立陶宛 192
+  type: vless
+  server: 89.117.112.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime11.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 193
+  type: vless
+  server: 45.40.155.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime47.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇩🇪 德国 194
+  type: vless
+  server: 94.159.96.108
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.latonyamadeline.ndjp.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
+  udp: true
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 195
+  type: vless
+  server: 193.233.132.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime48.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 196
+  type: vless
+  server: 104.254.140.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime54.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇩🇪 德国 197
+  type: vless
+  server: 185.158.133.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime58.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 198
+  type: vless
+  server: 50.62.198.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime39.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇷🇴 罗马尼亚 199
+  type: vless
+  server: 45.12.30.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime28.workers.dev
+  udp: true
+  cipher: auto
+- name: X_200
+  type: vless
+  server: 173.245.49.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime36.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 201
+  type: vless
+  server: 45.40.147.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime37.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇦🇲 亚美尼亚 202
+  type: vless
+  server: 188.164.158.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime23.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇱🇹 立陶宛 203
+  type: vless
+  server: 45.153.7.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime11.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 204
+  type: vless
+  server: 185.148.106.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime54.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 205
+  type: vless
+  server: 184.174.80.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime42.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 206
+  type: vless
+  server: 45.40.154.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime46.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 207
+  type: vless
+  server: 50.62.173.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime34.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇹🇷 土耳其 208
+  type: vless
+  server: 91.206.71.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime15.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 209
+  type: vless
+  server: 5.10.244.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime03.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 210
+  type: vless
+  server: 184.168.47.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime40.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 211
+  type: vless
+  server: 45.156.25.85
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 212
+  type: vless
+  server: 45.40.149.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime39.workers.dev
+  udp: true
+  cipher: auto
+- name: X_213
+  type: vless
+  server: 173.245.59.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime37.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇮🇲 马恩岛 214
+  type: vless
+  server: 185.162.229.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime61.workers.dev
+  udp: true
+  cipher: auto
+- name: X_215
+  type: vless
+  server: 173.245.59.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime37.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇸🇨 塞舌尔 216
+  type: vless
+  server: 154.197.75.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime37.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 217
+  type: vless
+  server: 50.62.89.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime26.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇩🇪 德国 218
+  type: vless
+  server: 98.142.253.82
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.latonyamadeline.ndjp.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 219
+  type: vless
+  server: 88.210.20.43
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 220
+  type: vless
+  server: 185.148.105.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime52.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 221
+  type: vless
+  server: 66.225.252.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime46.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇧🇿 伯利兹 222
+  type: vless
+  server: 45.135.235.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime07.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 223
+  type: vless
+  server: 147.45.117.151
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 224
+  type: vless
+  server: 66.81.247.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime44.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇬🇧 英国 225
+  type: vless
+  server: 185.193.28.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime07.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 226
+  type: vless
+  server: 192.169.222.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime40.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇸🇨 塞舌尔 227
+  type: vless
+  server: 45.194.53.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime19.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇮🇲 马恩岛 228
+  type: vless
+  server: 185.162.229.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime61.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 229
+  type: vless
+  server: 195.211.124.200
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_🇩🇪 德国 230
+  type: vless
+  server: 31.185.108.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime23.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 231
+  type: vless
+  server: 45.131.211.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime06.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 232
+  type: vless
+  server: 69.84.182.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime48.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇸🇨 塞舌尔 233
+  type: vless
+  server: 154.198.173.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime43.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇷🇴 罗马尼亚 234
+  type: vless
+  server: 45.85.118.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime55.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 235
+  type: vless
+  server: 93.115.16.24
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_🇯🇵 日本 236
+  type: vless
+  server: 154.197.108.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime40.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 237
+  type: vless
+  server: 198.12.144.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime60.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇩🇪 德国 238
+  type: vless
+  server: 94.159.97.220
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.latonyamadeline.ndjp.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 239
+  type: vless
+  server: 50.62.175.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime36.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇩🇪 德国 240
+  type: vless
+  server: 94.159.100.154
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.latonyamadeline.ndjp.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
+  udp: true
+  cipher: auto
+- name: X_🇬🇧 英国 241
+  type: vless
+  server: 185.193.29.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime08.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 242
+  type: vless
+  server: 104.129.167.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime44.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 243
+  type: vless
+  server: 195.133.39.134
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_🇹🇷 土耳其 244
+  type: vless
+  server: 185.7.240.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime43.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 245
+  type: vless
+  server: 46.28.234.72
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_🇬🇧 英国 246
+  type: vless
+  server: 185.193.29.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime08.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 247
+  type: vless
+  server: 185.31.200.81
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 248
+  type: vless
+  server: 66.225.252.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime46.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 249
+  type: vless
+  server: 45.40.144.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime34.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 250
+  type: vless
+  server: 212.34.135.97
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 251
+  type: vless
+  server: 45.40.154.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime46.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 252
+  type: vless
+  server: 45.67.215.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime48.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇩🇪 德国 253
+  type: vless
+  server: 94.159.96.182
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.latonyamadeline.ndjp.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 254
+  type: vless
+  server: 45.89.244.77
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_🇮🇲 马恩岛 255
+  type: vless
+  server: 185.162.230.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime02.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇬🇧 英国 256
+  type: vless
+  server: 185.193.31.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime10.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇸🇨 塞舌尔 257
+  type: vless
+  server: 154.211.8.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime46.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 258
+  type: vless
+  server: 193.233.21.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime47.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 259
+  type: vless
+  server: 50.62.195.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime38.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇦🇹 奥地利 260
+  type: vless
+  server: 212.183.88.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime23.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇱🇹 立陶宛 261
+  type: vless
+  server: 88.216.69.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime06.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇱🇹 立陶宛 262
+  type: vless
+  server: 45.146.201.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime09.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 263
+  type: vless
+  server: 93.185.166.37
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 264
+  type: vless
+  server: 205.233.181.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime20.workers.dev
+  udp: true
+  cipher: auto
+- name: X_265
+  type: vless
+  server: 8.34.70.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime09.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇨🇦 加拿大 266
+  type: vless
+  server: 104.234.239.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime46.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 267
+  type: vless
+  server: 188.164.248.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime26.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 268
+  type: vless
+  server: 213.219.247.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime26.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 269
+  type: vless
+  server: 45.40.146.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime36.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 270
+  type: vless
+  server: 50.62.194.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime37.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 271
+  type: vless
+  server: 188.253.26.127
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_🇬🇧 英国 272
+  type: vless
+  server: 109.176.239.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime03.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 273
+  type: vless
+  server: 104.238.68.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime47.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇸🇨 塞舌尔 274
+  type: vless
+  server: 154.197.75.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime37.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇲🇭 马绍尔群岛 275
+  type: vless
+  server: 185.207.196.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime11.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇱🇹 立陶宛 276
+  type: vless
+  server: 45.153.7.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime11.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇱🇹 立陶宛 277
+  type: vless
+  server: 89.117.112.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime11.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇨🇭 瑞士 278
+  type: vless
+  server: 185.18.250.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime47.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 279
+  type: vless
+  server: 45.40.153.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime44.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 280
+  type: vless
+  server: 80.93.202.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime02.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 281
+  type: vless
+  server: 185.148.104.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime51.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 282
+  type: vless
+  server: 185.23.238.150
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_🇱🇹 立陶宛 283
+  type: vless
+  server: 89.116.161.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime08.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇪🇪 爱沙尼亚 284
+  type: vless
+  server: 45.80.110.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime51.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇱🇹 立陶宛 285
+  type: vless
+  server: 89.116.161.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime08.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 286
+  type: vless
+  server: 216.24.57.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime28.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 287
+  type: vless
+  server: 50.62.91.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime28.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇬🇧 英国 288
+  type: vless
+  server: 104.239.72.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime52.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇬🇧 英国 289
+  type: vless
+  server: 185.193.28.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime07.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 290
+  type: vless
+  server: 45.90.236.107
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_🇱🇻 拉脱维亚 291
+  type: vless
+  server: 212.52.1.202
+  port: 81
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.latonyamadeline.ndjp.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
+  udp: true
+  cipher: auto
+- name: X_🇰🇿 哈萨克斯坦 292
+  type: vless
+  server: 185.176.26.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime06.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇸🇨 塞舌尔 293
+  type: vless
+  server: 154.219.5.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime48.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇩🇪 德国 294
+  type: vless
+  server: 45.80.111.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime52.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 295
+  type: vless
+  server: 66.45.118.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime43.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 296
+  type: vless
+  server: 5.10.244.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime03.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 297
+  type: vless
+  server: 50.62.174.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime35.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇸🇨 塞舌尔 298
+  type: vless
+  server: 156.243.83.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime54.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 299
+  type: vless
+  server: 104.129.164.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime40.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇫🇷 法国 300
+  type: vless
+  server: 185.16.110.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime44.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 301
+  type: vless
+  server: 199.181.197.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime19.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇨🇾 塞浦路斯 302
+  type: vless
+  server: 195.85.59.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime58.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇬🇧 英国 303
+  type: vless
+  server: 185.156.19.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime57.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇲🇭 马绍尔群岛 304
+  type: vless
+  server: 185.207.198.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime15.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 305
+  type: vless
+  server: 66.235.200.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime47.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇱🇹 立陶宛 306
+  type: vless
+  server: 88.216.67.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime05.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 307
+  type: vless
+  server: 45.142.120.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime08.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 308
+  type: vless
+  server: 45.40.146.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime36.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 309
+  type: vless
+  server: 45.131.4.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime59.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 310
+  type: vless
+  server: 104.254.140.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime54.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 311
+  type: vless
+  server: 77.232.140.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime61.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 312
+  type: vless
+  server: 45.40.151.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime42.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇸🇮 斯洛文尼亚 313
+  type: vless
+  server: 92.53.189.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime19.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇱🇹 立陶宛 314
+  type: vless
+  server: 89.116.250.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime10.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 315
+  type: vless
+  server: 45.149.12.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime10.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 316
+  type: vless
+  server: 45.144.154.195
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 317
+  type: vless
+  server: 93.113.171.10
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_🇩🇪 德国 318
+  type: vless
+  server: 152.89.239.249
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.latonyamadeline.ndjp.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
+  udp: true
+  cipher: auto
+- name: X_🇸🇨 塞舌尔 319
+  type: vless
+  server: 154.218.15.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime47.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 320
+  type: vless
+  server: 50.62.89.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime26.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇷🇴 罗马尼亚 321
+  type: vless
+  server: 45.85.119.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime56.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇸🇨 塞舌尔 322
+  type: vless
+  server: 154.219.5.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime48.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 323
+  type: vless
+  server: 50.62.173.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime34.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇬🇧 英国 324
+  type: vless
+  server: 185.170.166.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime04.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 325
+  type: vless
+  server: 46.29.239.56
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 326
+  type: vless
+  server: 188.253.25.189
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 327
+  type: vless
+  server: 45.87.153.53
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_🇩🇪 德国 328
+  type: vless
+  server: 89.116.46.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime07.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇮🇲 马恩岛 329
+  type: vless
+  server: 185.162.229.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime61.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇱🇹 立陶宛 330
+  type: vless
+  server: 89.116.180.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime09.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 331
+  type: vless
+  server: 192.169.222.40
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime40.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 332
+  type: vless
+  server: 188.164.248.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime26.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇸🇮 斯洛文尼亚 333
+  type: vless
+  server: 92.53.190.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
+    headers:
+      Host: vms.lifetime20.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 334
+  type: trojan
+  server: 77.110.103.243
+  port: 8443
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 335
+  type: trojan
+  server: 95.164.62.196
+  port: 443
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  cipher: auto
+- name: X_🇪🇪 爱沙尼亚 336
+  type: trojan
+  server: 5.189.254.235
+  port: 443
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 337
+  type: trojan
+  server: 95.213.226.60
+  port: 443
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 338
+  type: vmess
+  server: xg1c2.waimaofuwujd.cc
+  port: 443
+  uuid: f00390ea-0820-49b9-9eb7-569e03b00fb3
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  servername: xg1c2.waimaofuwujd.cc
+  network: ws
+  ws-opts:
+    path: /api/v1/graphql
+    headers:
+      Host: xg1c2.waimaofuwujd.cc
+  udp: true
+- name: X_🇳🇱 荷兰 339
+  type: vless
+  server: 151.242.69.72
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.army
+  tls: true
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 342
+  type: vless
+  server: 138.124.16.38
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.army
+  tls: true
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳=
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 343
+  type: vless
+  server: 46.8.229.26
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/wangcai2🇨🇳
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 344
+  type: vless
+  server: 151.242.69.214
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/wangcai2🇨🇳
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 346
+  type: vless
+  server: 150.251.147.97
+  port: 8443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/wangcai2🇨🇳
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_🇰🇷 韩国 347
+  type: vless
+  server: 114.110.181.49
+  port: 443
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  network: ws
+  servername: 177-e06.pages.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /socks5=gogo:gogo@185.184.70.120:50088
+    headers:
+      Host: 177-e06.pages.dev
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 348
+  type: vless
+  server: 46.8.229.218
+  port: 2053
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/wangcai2🇨🇳
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 349
+  type: vless
+  server: 192.200.160.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: vms.lifetime43.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇦🇪 阿拉伯联合酋长国 350
+  type: vless
+  server: 181.214.1.30
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: vms.lifetime39.workers.dev
+  udp: true
+  cipher: auto
+- name: X_351
+  type: vless
+  server: 104.18.32.47
+  port: 443
+  uuid: 9d27a374-26d9-46df-9895-312a2062bc47
+  network: ws
+  servername: uin-ape.pages.dev
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: uin-ape.pages.dev
+  udp: true
+  cipher: auto
+- name: X_🇸🇪 瑞典 353
+  type: vless
+  server: 109.120.157.29
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.latonyamadeline.ndjp.net
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560&https://t.me/wangcai2🇨🇳
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 354
+  type: vless
+  server: 141.193.213.10
+  port: 2053
+  uuid: 8c4604ef-749c-4b56-adf1-7da405002a21
+  network: ws
+  servername: qyi.fqjd663.ggff.net
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: qyi.fqjd663.ggff.net
+  udp: true
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 355
+  type: vless
+  server: 5.129.233.22
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.army
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 356
+  type: vless
+  server: 85.92.108.39
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.army
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳=
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_🇨🇳 中国 357
+  type: vless
+  server: 103.44.244.149
+  port: 443
+  uuid: ce069292-c8bf-40dd-a6b1-87818a1e64e9
+  network: ws
+  servername: gogo2.kmj.qzz.io
+  tls: true
+  ws-opts:
+    path: /fp=chrome
+    headers:
+      Host: gogo2.kmj.qzz.io
+  udp: true
+  cipher: auto
+- name: X_🇭🇰 香港 358
+  type: vmess
+  server: n1753356378.4u9ma.icu
+  port: 443
+  uuid: 37b20639-0d6e-46f2-9db5-472201b10cdd
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: false
+  servername: n1753356378.4u9ma.icu
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: n1753356378.4u9ma.icu
+  udp: true
+- name: X_🇱🇻 拉脱维亚 359
+  type: vless
+  server: 169.40.1.34
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.rocks
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: sni.111000.v6.rocks
+  udp: true
+  cipher: auto
+- name: X_🇲🇾 马来西亚 360
+  type: vmess
+  server: gtm1.ktmwan.net
+  port: 12883
+  uuid: 21324e77-b4d2-4fca-8884-5e8b75836d2a
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: baidu.com
+  udp: true
+proxy-groups:
+- name: 🚀 节点选择
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - DIRECT
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+- name: ♻️ 自动选择
+  type: url-test
+  url: https://www.facebook.com/common/referer_frame.php
+  interval: 60
+  tolerance: 5
+  proxies:
+  - 🪐 负载均衡
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  - X_每天更新，请加电报群防止失联
+  - X_免费VPN：https://tt.vg/OWeaF
+  - X_🇩🇪 德国 15
+  - X_🇩🇪 德国 16
+  - X_🇩🇪 德国 17
+  - X_🇩🇪 德国 20
+  - X_🇭🇰 香港 24
+  - X_🇲🇾 马来西亚 26
+  - X_🇩🇪 德国 30
+  - X_🇯🇵 日本 93
+  - X_🇵🇱 波兰 109
+  - X_🇩🇪 德国 110
+  - X_🇺🇸 美国 111
+  - X_🇵🇱 波兰 112
+  - X_🇹🇷 土耳其 113
+  - X_🇺🇸 美国 115
+  - X_🇲🇾 马来西亚 118
+  - X_🇯🇵 日本 119
+  - X_🇯🇵 日本 120
+  - X_🇸🇪 瑞典 121
+  - X_🇩🇪 德国 122
+  - X_123
+  - X_🇩🇪 德国 124
+  - X_🇨🇭 瑞士 125
+  - X_🇳🇱 荷兰 126
+  - X_🇳🇱 荷兰 127
+  - X_🇩🇪 德国 128
+  - X_🇨🇭 瑞士 129
+  - X_🇩🇪 德国 130
+  - X_131
+  - X_132
+  - X_🇨🇦 加拿大 133
+  - X_134
+  - X_🇸🇪 瑞典 135
+  - X_136
+  - X_🇩🇪 德国 137
+  - X_138
+  - X_139
+  - X_🇺🇸 美国 141
+  - X_🇸🇬 新加坡 142
+  - X_🇺🇸 美国 143
+  - X_🇳🇱 荷兰 144
+  - X_🇮🇲 马恩岛 145
+  - X_146
+  - X_🇺🇸 美国 147
+  - X_🇸🇨 塞舌尔 148
+  - X_🇦🇲 亚美尼亚 149
+  - X_🇷🇺 俄罗斯 150
+  - X_🇺🇸 美国 151
+  - X_🇦🇪 阿拉伯联合酋长国 152
+  - X_🇷🇺 俄罗斯 153
+  - X_🇸🇨 塞舌尔 154
+  - X_🇸🇨 塞舌尔 155
+  - X_🇩🇪 德国 156
+  - X_🇺🇸 美国 157
+  - X_🇱🇹 立陶宛 158
+  - X_🇳🇱 荷兰 159
+  - X_🇺🇸 美国 160
+  - X_🇷🇺 俄罗斯 161
+  - X_🇺🇸 美国 162
+  - X_🇬🇧 英国 163
+  - X_🇸🇨 塞舌尔 164
+  - X_🇨🇦 加拿大 165
+  - X_🇪🇪 爱沙尼亚 166
+  - X_🇺🇸 美国 167
+  - X_🇺🇸 美国 168
+  - X_🇱🇹 立陶宛 169
+  - X_🇩🇪 德国 170
+  - X_🇺🇸 美国 171
+  - X_🇨🇾 塞浦路斯 172
+  - X_🇸🇨 塞舌尔 173
+  - X_🇷🇺 俄罗斯 174
+  - X_🇧🇷 巴西 175
+  - X_🇱🇺 卢森堡 176
+  - X_🇸🇮 斯洛文尼亚 177
+  - X_178
+  - X_🇩🇪 德国 179
+  - X_🇨🇿 捷克 180
+  - X_🇳🇱 荷兰 181
+  - X_🇸🇨 塞舌尔 182
+  - X_🇨🇾 塞浦路斯 183
+  - X_🇷🇺 俄罗斯 184
+  - X_🇩🇪 德国 185
+  - X_🇦🇲 亚美尼亚 186
+  - X_🇩🇪 德国 188
+  - X_🇺🇸 美国 189
+  - X_🇩🇪 德国 190
+  - X_🇩🇪 德国 191
+  - X_🇱🇹 立陶宛 192
+  - X_🇺🇸 美国 193
+  - X_🇩🇪 德国 194
+  - X_🇷🇺 俄罗斯 195
+  - X_🇺🇸 美国 196
+  - X_🇩🇪 德国 197
+  - X_🇺🇸 美国 198
+  - X_🇷🇴 罗马尼亚 199
+  - X_200
+  - X_🇺🇸 美国 201
+  - X_🇦🇲 亚美尼亚 202
+  - X_🇱🇹 立陶宛 203
+  - X_🇷🇺 俄罗斯 204
+  - X_🇺🇸 美国 205
+  - X_🇺🇸 美国 206
+  - X_🇺🇸 美国 207
+  - X_🇹🇷 土耳其 208
+  - X_🇳🇱 荷兰 209
+  - X_🇺🇸 美国 210
+  - X_🇳🇱 荷兰 211
+  - X_🇺🇸 美国 212
+  - X_213
+  - X_🇮🇲 马恩岛 214
+  - X_215
+  - X_🇸🇨 塞舌尔 216
+  - X_🇺🇸 美国 217
+  - X_🇩🇪 德国 218
+  - X_🇳🇱 荷兰 219
+  - X_🇷🇺 俄罗斯 220
+  - X_🇺🇸 美国 221
+  - X_🇧🇿 伯利兹 222
+  - X_🇳🇱 荷兰 223
+  - X_🇺🇸 美国 224
+  - X_🇬🇧 英国 225
+  - X_🇺🇸 美国 226
+  - X_🇸🇨 塞舌尔 227
+  - X_🇮🇲 马恩岛 228
+  - X_🇳🇱 荷兰 229
+  - X_🇩🇪 德国 230
+  - X_🇳🇱 荷兰 231
+  - X_🇺🇸 美国 232
+  - X_🇸🇨 塞舌尔 233
+  - X_🇷🇴 罗马尼亚 234
+  - X_🇳🇱 荷兰 235
+  - X_🇯🇵 日本 236
+  - X_🇺🇸 美国 237
+  - X_🇩🇪 德国 238
+  - X_🇺🇸 美国 239
+  - X_🇩🇪 德国 240
+  - X_🇬🇧 英国 241
+  - X_🇺🇸 美国 242
+  - X_🇳🇱 荷兰 243
+  - X_🇹🇷 土耳其 244
+  - X_🇳🇱 荷兰 245
+  - X_🇬🇧 英国 246
+  - X_🇳🇱 荷兰 247
+  - X_🇺🇸 美国 248
+  - X_🇺🇸 美国 249
+  - X_🇳🇱 荷兰 250
+  - X_🇺🇸 美国 251
+  - X_🇷🇺 俄罗斯 252
+  - X_🇩🇪 德国 253
+  - X_🇳🇱 荷兰 254
+  - X_🇮🇲 马恩岛 255
+  - X_🇬🇧 英国 256
+  - X_🇸🇨 塞舌尔 257
+  - X_🇷🇺 俄罗斯 258
+  - X_🇺🇸 美国 259
+  - X_🇦🇹 奥地利 260
+  - X_🇱🇹 立陶宛 261
+  - X_🇱🇹 立陶宛 262
+  - X_🇷🇺 俄罗斯 263
+  - X_🇺🇸 美国 264
+  - X_265
+  - X_🇨🇦 加拿大 266
+  - X_🇳🇱 荷兰 267
+  - X_🇷🇺 俄罗斯 268
+  - X_🇺🇸 美国 269
+  - X_🇺🇸 美国 270
+  - X_🇳🇱 荷兰 271
+  - X_🇬🇧 英国 272
+  - X_🇺🇸 美国 273
+  - X_🇸🇨 塞舌尔 274
+  - X_🇲🇭 马绍尔群岛 275
+  - X_🇱🇹 立陶宛 276
+  - X_🇱🇹 立陶宛 277
+  - X_🇨🇭 瑞士 278
+  - X_🇺🇸 美国 279
+  - X_🇺🇸 美国 280
+  - X_🇷🇺 俄罗斯 281
+  - X_🇳🇱 荷兰 282
+  - X_🇱🇹 立陶宛 283
+  - X_🇪🇪 爱沙尼亚 284
+  - X_🇱🇹 立陶宛 285
+  - X_🇺🇸 美国 286
+  - X_🇺🇸 美国 287
+  - X_🇬🇧 英国 288
+  - X_🇬🇧 英国 289
+  - X_🇳🇱 荷兰 290
+  - X_🇱🇻 拉脱维亚 291
+  - X_🇰🇿 哈萨克斯坦 292
+  - X_🇸🇨 塞舌尔 293
+  - X_🇩🇪 德国 294
+  - X_🇺🇸 美国 295
+  - X_🇳🇱 荷兰 296
+  - X_🇺🇸 美国 297
+  - X_🇸🇨 塞舌尔 298
+  - X_🇺🇸 美国 299
+  - X_🇫🇷 法国 300
+  - X_🇺🇸 美国 301
+  - X_🇨🇾 塞浦路斯 302
+  - X_🇬🇧 英国 303
+  - X_🇲🇭 马绍尔群岛 304
+  - X_🇺🇸 美国 305
+  - X_🇱🇹 立陶宛 306
+  - X_🇷🇺 俄罗斯 307
+  - X_🇺🇸 美国 308
+  - X_🇳🇱 荷兰 309
+  - X_🇺🇸 美国 310
+  - X_🇷🇺 俄罗斯 311
+  - X_🇺🇸 美国 312
+  - X_🇸🇮 斯洛文尼亚 313
+  - X_🇱🇹 立陶宛 314
+  - X_🇳🇱 荷兰 315
+  - X_🇳🇱 荷兰 316
+  - X_🇳🇱 荷兰 317
+  - X_🇩🇪 德国 318
+  - X_🇸🇨 塞舌尔 319
+  - X_🇺🇸 美国 320
+  - X_🇷🇴 罗马尼亚 321
+  - X_🇸🇨 塞舌尔 322
+  - X_🇺🇸 美国 323
+  - X_🇬🇧 英国 324
+  - X_🇳🇱 荷兰 325
+  - X_🇳🇱 荷兰 326
+  - X_🇷🇺 俄罗斯 327
+  - X_🇩🇪 德国 328
+  - X_🇮🇲 马恩岛 329
+  - X_🇱🇹 立陶宛 330
+  - X_🇺🇸 美国 331
+  - X_🇳🇱 荷兰 332
+  - X_🇸🇮 斯洛文尼亚 333
+  - X_🇳🇱 荷兰 334
+  - X_🇺🇸 美国 335
+  - X_🇪🇪 爱沙尼亚 336
+  - X_🇷🇺 俄罗斯 337
+  - X_🇺🇸 美国 338
+  - X_🇳🇱 荷兰 339
+  - X_🇳🇱 荷兰 342
+  - X_🇳🇱 荷兰 343
+  - X_🇳🇱 荷兰 344
+  - X_🇳🇱 荷兰 346
+  - X_🇰🇷 韩国 347
+  - X_🇳🇱 荷兰 348
+  - X_🇺🇸 美国 349
+  - X_🇦🇪 阿拉伯联合酋长国 350
+  - X_351
+  - X_🇸🇪 瑞典 353
+  - X_🇺🇸 美国 354
+  - X_🇷🇺 俄罗斯 355
+  - X_🇷🇺 俄罗斯 356
+  - X_🇨🇳 中国 357
+  - X_🇭🇰 香港 358
+  - X_🇱🇻 拉脱维亚 359
+  - X_🇲🇾 马来西亚 360
+- name: 🌍 国外媒体
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🎯 全球直连
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+- name: 📲 电报信息
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+- name: Ⓜ️ 微软服务
+  type: select
+  proxies:
+  - 🎯 全球直连
+  - 🚀 节点选择
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+- name: 🍎 苹果服务
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+- name: 🎯 全球直连
+  type: select
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - ♻️ 自动选择
+- name: 🛑 全球拦截
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+- name: 🍃 应用净化
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+- name: 🐟 漏网之鱼
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - ♻️ 自动选择
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+- name: 🪐 负载均衡
+  type: load-balance
+  url: https://client3.google.com/generate_204
+  interval: 120
+  strategy: consistent-hashing
+  proxies:
+  - X_AE_speednode_0001
+  - X_BE_speednode_0002
+  - X_CH_speednode_0004
+  - X_DE_speednode_0006
+  - X_DE_speednode_0007
+  - X_DE_speednode_0008
+  - X_DE_speednode_0009
+  - X_GB_speednode_0010
+  - X_GB_speednode_0011
+  - X_GB_speednode_0012
+  - X_GB_speednode_0015
+  - X_GB_speednode_0016
+  - X_GB_speednode_0017
+  - X_GB_speednode_0019
+  - X_GB_speednode_0020
+  - X_HK_speednode_0021
+  - X_IE_speednode_0022
+  - X_IR_speednode_0023
+  - X_IR_speednode_0024
+  - X_IR_speednode_0025
+  - X_IR_speednode_0027
+  - X_JP_speednode_0028
+  - X_JP_speednode_0029
+  - X_JP_speednode_0030
+  - X_KR_speednode_0031
+  - X_KR_speednode_0032
+  - X_KR_speednode_0033
+  - X_KR_speednode_0034
+  - X_KR_speednode_0035
+  - X_LB_speednode_0036
+  - X_MD_speednode_0037
+  - X_NL_speednode_0038
+  - X_NL_speednode_0040
+  - X_NL_speednode_0042
+  - X_PL_speednode_0044
+  - X_RU_speednode_0045
+  - X_RU_speednode_0046
+  - X_RU_speednode_0047
+  - X_SE_speednode_0048
+  - X_SG_speednode_0049
+  - X_US_speednode_0050
+  - X_US_speednode_0051
+  - X_US_speednode_0052
+  - X_US_speednode_0053
+  - X_US_speednode_0054
+  - X_US_speednode_0055
+  - X_US_speednode_0056
+  - X_US_speednode_0057
+  - X_US_speednode_0058
+  - X_US_speednode_0059
+  - X_US_speednode_0060
+  - X_US_speednode_0061
+  - X_US_speednode_0062
+  - X_US_speednode_0063
+  - X_US_speednode_0064
+  - X_US_speednode_0065
+  - X_US_speednode_0066
+  - X_US_speednode_0067
+  - X_US_speednode_0068
+  - X_US_speednode_0070
+  - X_VN_speednode_0071
+  - X_VN_speednode_0072
+  - X_VN_speednode_0073
+  - X_VN_speednode_0074
+  - X_VN_speednode_0075
+  - X_VN_speednode_0076
+  - X_VN_speednode_0077
+  - X_VN_speednode_0078
+  - X_VN_speednode_0079
+  - X_VN_speednode_0080
+  - X_VN_speednode_0081
+  - X_VN_speednode_0082
+  - X_VN_speednode_0083
+  - X_VN_speednode_0084
+  - X_VN_speednode_0085
+  - X_VN_speednode_0086
+  - X_VN_speednode_0087
+  - X_VN_speednode_0088
+  - X_VN_speednode_0089
+  - X_VN_speednode_0090
+  - X_VN_speednode_0091
+  - X_VN_speednode_0092
+  - X_VN_speednode_0093
+  - X_VN_speednode_0094
+  - X_VN_speednode_0095
+  - X_VN_speednode_0096
+  - X_VN_speednode_0097
+  - X_🇭🇰HK_2|2.8MB/s
+  - X_🇭🇰 香港|@ripaojiedian
+  - X_香港3|@ripaojiedian
+  - X_香港5|@ripaojiedian
+  - X_日本|@ripaojiedian
+  - X_日本2|@ripaojiedian
+  - X_新加坡|@ripaojiedian
+  - X_新加坡3|@ripaojiedian
+  - X_美国2|@ripaojiedian
+  - X_美国3|@ripaojiedian
+  - X_🇺🇸 美国4|@ripaojiedian
+  - X_🇺🇸 美国5|@ripaojiedian
+  - X_🇸🇬SG_1|4.7MB/s
+  - X_🇯🇵JP_1|1.3MB/s
+  - X_🇩🇪DE_1|1.3MB/s
+  - X_🇺🇸US_2|1.1MB/s
+  - X_🇺🇸US_3|1.7MB/s
+  - X_🇺🇸US_4|1.3MB/s
+  - X_🇺🇸US_6|1.1MB/s
+  - X_🇺🇸US_7|1.2MB/s
+  - X_🇺🇸US_8|1.1MB/s
+  - X_🇨🇦CA_1|1.0MB/s
+  - X_🇺🇸US_9|1.3MB/s
+  - X_🇺🇸US_10|2.1MB/s
+  - X_🇺🇸US_11|1.1MB/s
+  - X_🇨🇦CA_2|1.5MB/s
+  - X_🇩🇪DE_3|1.1MB/s
+  - X_🇺🇸US_12|1.0MB/s
+  - X_🇳🇱NL_4|1.1MB/s
+  - X_🇳🇱NL_5|1.3MB/s
+  - X_🇩🇪DE_4|1.5MB/s
+  - X_🇩🇪DE_5|1.2MB/s
+  - X_🇩🇪DE_6|1.5MB/s
+  - X_🇳🇱NL_6|1.1MB/s
+  - X_🇩🇪DE_7|1.8MB/s
+  - X_🇩🇪DE_8|1.9MB/s
+  - X_🇩🇪DE_9|1.7MB/s
+  - X_🇩🇪DE_10|1.1MB/s
+  - X_🇩🇪DE_11|1.0MB/s
+  - X_🇫🇷FR_1|1.9MB/s
+rule-providers:
+  Apple:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/Apple.list
+    format: text
+    interval: 3600
+    path: ./Clash/Apple.list
+  Telegram:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/Telegram.list
+    format: text
+    interval: 3600
+    path: ./Clash/Telegram.list
+  ProxyLite:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyLite.list
+    format: text
+    interval: 3600
+    path: ./Clash/ProxyLite.list
+  ChinaDomain:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaDomain.list
+    format: text
+    interval: 3600
+    path: ./Clash/ChinaDomain.list
+  ChinaCompanyIp:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaCompanyIp.list
+    format: text
+    interval: 3600
+    path: ./Clash/ChinaCompanyIp.list
+  ProxyMedia:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyMedia.list
+    format: text
+    interval: 3600
+    path: ./Clash/ProxyMedia.list
+  LocalAreaNetwork:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/LocalAreaNetwork.list
+    format: text
+    interval: 3600
+    path: ./Clash/LocalAreaNetwork.list
+  Microsoft:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/Microsoft.list
+    format: text
+    interval: 3600
+    path: ./Clash/Microsoft.list
+  GoogleCN:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/GoogleCN.list
+    format: text
+    interval: 3600
+    path: ./Clash/GoogleCN.list
+  BanAD:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/BanAD.list
+    format: text
+    interval: 3600
+    path: ./Clash/BanAD.list
+  BanProgramAD:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/BanProgramAD.list
+    format: text
+    interval: 3600
+    path: ./Clash/BanProgramAD.list
+  SteamCN:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/SteamCN.list
+    format: text
+    interval: 3600
+    path: ./Clash/SteamCN.list
+rules:
+- RULE-SET,LocalAreaNetwork,🎯 全球直连
+- RULE-SET,BanAD,🛑 全球拦截
+- RULE-SET,BanProgramAD,🍃 应用净化
+- RULE-SET,GoogleCN,🎯 全球直连
+- RULE-SET,SteamCN,🎯 全球直连
+- RULE-SET,Microsoft,Ⓜ️ 微软服务
+- RULE-SET,Apple,🍎 苹果服务
+- RULE-SET,ProxyMedia,🌍 国外媒体
+- RULE-SET,Telegram,📲 电报信息
+- RULE-SET,ProxyLite,🚀 节点选择
+- RULE-SET,ChinaDomain,🎯 全球直连
+- RULE-SET,ChinaCompanyIp,🎯 全球直连
+- GEOIP,CN,🎯 全球直连
+- MATCH,🐟 漏网之鱼
