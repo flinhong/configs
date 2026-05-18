@@ -1,0 +1,2776 @@
+mixed-port: 7890
+allow-lan: false
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9999
+dns:
+  enable: true
+  listen: 0.0.0.0:53
+  ipv6: false
+  default-nameserver:
+  - 223.5.5.5
+  - 114.114.114.114
+  nameserver:
+  - 223.5.5.5
+  - 114.114.114.114
+  - 119.29.29.29
+  - 180.76.76.76
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+  - '*.lan'
+  - '*.localdomain'
+  - '*.example'
+  - '*.invalid'
+  - '*.localhost'
+  - '*.test'
+  - '*.local'
+  - '*.home.arpa'
+  - router.asus.com
+  - localhost.sec.qq.com
+  - localhost.ptlogin2.qq.com
+  - +.msftconnecttest.com
+tun:
+  enable: true
+  auto-route: true
+  auto-detect-interface: true
+  dns-hijack:
+  - 114.114.114.114
+  - 180.76.76.76
+  - 119.29.29.29
+  - 223.5.5.5
+  - 8.8.8.8
+  - 8.8.4.4
+  - 1.1.1.1
+  - 1.0.0.1
+proxies:
+- name: 🇨🇳_CN_中国->🇯🇵_JP_日本
+  type: trojan
+  server: 36.156.102.115
+  port: 26876
+  password: BxceQaOe
+  skip-cert-verify: true
+- name: 🇨🇳_CN_中国->🇺🇸_US_美国
+  type: vmess
+  server: v29.heduian.link
+  port: 30829
+  sni: ''
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /oooo
+    headers:
+      host: ocbc.com
+  alterId: 2
+- name: 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  type: ss
+  server: 185.153.197.5
+  port: 989
+  cipher: aes-256-cfb
+  password: f8f7aCzcPKbsF8p3
+- name: X_AU_speednode_0001
+  server: 54.252.231.115
+  port: 55292
+  type: vless
+  uuid: aca32055-db88-4634-b623-6429ddbb6c93
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  servername: yahoo.com
+  reality-opts:
+    public-key: kPx16abMZD2x6dv7NW_hn1HSc2P8RsPptytcCT-neQs
+    short-id: bd711c02c8dc9955
+  udp: true
+  cipher: auto
+- name: X_AU_speednode_0002
+  server: 3.27.234.120
+  port: 51808
+  type: vless
+  uuid: b64ced11-143e-4ded-a985-a8de25461061
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  servername: yahoo.com
+  reality-opts:
+    public-key: XHnwfyEySdx57QT_8P_7vDVFzdLHO4tO9BQOsHxxlEk
+    short-id: 8810c789eea55c28
+  udp: true
+  cipher: auto
+- name: X_BG_speednode_0003
+  server: de.skysafe.online
+  port: 8443
+  type: vless
+  uuid: 0e3a9376-1bf0-4b9e-a328-f28083bf6c34
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: random
+  servername: de.skysafe.online
+  reality-opts:
+    public-key: nMZty6MwsYsHk180yJ5PiKaHdY40bpdD9yUIycZYmCc
+    short-id: ea9158334ab2
+  udp: true
+  cipher: auto
+- name: X_BG_speednode_0004
+  server: ee18.mechvpn.online
+  port: 443
+  type: vless
+  uuid: 6d916d55-fead-4ff3-a3a9-83e175ea8ad7
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: ee18.mechvpn.online
+  udp: true
+  cipher: auto
+- name: X_CA_speednode_0005
+  server: 35.182.252.92
+  port: 51072
+  type: vless
+  uuid: b6b2c827-4ac1-4e2c-af28-dfa7edbfeb81
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  servername: www.sony.com
+  reality-opts:
+    public-key: 5KJ1tLErCUEfqxc3IsnY_49p_gWe0mPB8eXJ3MLucgU
+    short-id: 0675732ab101
+  udp: true
+  cipher: auto
+- name: X_CA_speednode_0006
+  server: 15.223.121.250
+  port: 41087
+  type: vless
+  uuid: 57d94cf7-ca36-4c2a-bec5-90cf38588cda
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  servername: www.tesla.com
+  reality-opts:
+    public-key: aoGL5vNnsEuKoBXQFXyHTxjvcdAn3SxT4qUgV6aJxnw
+    short-id: 190d259bbd40d4c3
+  udp: true
+  cipher: auto
+- name: X_CN_speednode_0007
+  server: planb.mojcn.com
+  port: 16622
+  type: vmess
+  uuid: ccb2a1ea-285f-4dda-b798-6ad925aa784b
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 4c38377a449c350ad3b4c6858225defb.mobgslb.tbcache.com
+  udp: true
+- name: X_GB_speednode_0010
+  server: 82.38.31.131
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: X_GB_speednode_0011
+  server: 82.38.31.141
+  port: 8080
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+  udp: true
+- name: X_GB_speednode_0012
+  server: 82.198.246.37
+  port: 180
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_GB_speednode_0013
+  server: shop.harddahir.cyou
+  port: 443
+  type: vless
+  uuid: 5bd36fef-18ac-4d69-8080-25df6c9b369e
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: www.hollywoodreporter.com
+  reality-opts:
+    public-key: SqNAL7L50tQTHhkvN4dT3O-DqdI1qan5iwg6ai4U_hY
+    short-id: a3a5df265540
+  udp: true
+  cipher: auto
+- name: X_GB_speednode_0014
+  server: m.cnmjin.net
+  port: 16617
+  type: vmess
+  uuid: ccb2a1ea-285f-4dda-b798-6ad925aa784b
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 4c38377a449c350ad3b4c6858225defb.mobgslb.tbcache.com
+  udp: true
+- name: X_ID_speednode_0015
+  server: v9.hdacd.com
+  port: 30809
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_JP_speednode_0017
+  server: 188.253.17.104
+  port: 443
+  type: vless
+  uuid: 63f26629-a4a4-4550-bffc-afabb3b5b3c3
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: random
+  servername: yahoo.com
+  reality-opts:
+    public-key: rwZxMeKJhN-LkKkP-u6qXYFzSlbuyqxYzloqaOpFLUM
+    short-id: e98e89a0
+  udp: true
+  cipher: auto
+- name: X_KR_speednode_0018
+  server: 121.169.46.116
+  port: 1090
+  type: socks5
+  username: Og%3D%3D
+  udp: true
+  cipher: auto
+- name: X_KR_speednode_0019
+  server: 220.124.181.77
+  port: 18081
+  type: ss
+  cipher: none
+  password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    host: woshinidie-et3.pages.dev
+    path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed=2560
+    tls: true
+    mux: false
+  udp: true
+- name: X_KR_speednode_0020
+  server: 211.194.210.183
+  port: 30047
+  type: ss
+  cipher: none
+  password: 59fc5f8c-5697-4eb8-acf2-8ae363f203a2
+  plugin: v2ray-plugin
+  plugin-opts:
+    mode: websocket
+    host: woshinidie-et3.pages.dev
+    path: /59fc5f8c-5697-4eb8-acf2-8ae363f203a2/?ed=2560
+    tls: true
+    mux: false
+  udp: true
+- name: X_NL_speednode_0021
+  server: fr-tx.sbrf-cdn342.ru
+  port: 443
+  type: vless
+  uuid: 85b5cb2e-2617-4930-b6a4-4aeaf3b7b9aa
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: sub.sbrf-cdn342.ru
+  udp: true
+  cipher: auto
+- name: X_NO_speednode_0022
+  server: nv01.myxavpn.com
+  port: 443
+  type: vless
+  uuid: 6a09b684-1a73-4d4b-9dd7-7da5caf6cfd2
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: nv01.myxavpn.com
+  reality-opts:
+    public-key: OCLtjVdRxsou3429LRfjkDYgiAPs24TSgSeFZpChCEw
+    short-id: d67ec5a8fc40ebea
+  udp: true
+  cipher: auto
+- name: X_RO_speednode_0023
+  server: de.sbrf-cdn342.ru
+  port: 443
+  type: vless
+  uuid: 85b5cb2e-2617-4930-b6a4-4aeaf3b7b9aa
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: qq
+  servername: sub.sbrf-cdn342.ru
+  alpn:
+  - http/1.1
+  udp: true
+  cipher: auto
+- name: X_RU_speednode_0024
+  server: yt-noads.sbrf-cdn342.ru
+  port: 443
+  type: vless
+  uuid: 85b5cb2e-2617-4930-b6a4-4aeaf3b7b9aa
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: qq
+  servername: sub.sbrf-cdn342.ru
+  alpn:
+  - http/1.1
+  udp: true
+  cipher: auto
+- name: X_RU_speednode_0025
+  server: 194.226.169.189
+  port: 443
+  type: vless
+  uuid: 701bab46-9453-41e6-ad47-009aa3df47e9
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: stats.vk-portal.net
+  reality-opts:
+    public-key: 6eN2NciEaZis5J4muRRqpfLQ1OglI3A8lNSTmAGo6Do
+    short-id: 3c6fc84d
+  udp: true
+  cipher: auto
+- name: X_TW_speednode_0034
+  server: s5.db-link.in
+  port: 17820
+  type: vless
+  uuid: 75d4d24d-ba8d-3676-a5c6-edd6ea6dbfb6
+  tls: true
+  skip-cert-verify: true
+  servername: 48afa0c5c9.shopify.com
+  network: ws
+  ws-opts:
+    path: /db102448afa0c5c9fp=chrome
+    headers:
+      Host: 48afa0c5c9.shopify.com
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0036
+  server: 64.49.46.225
+  port: 57502
+  type: vless
+  uuid: a4caef32-090f-4f17-b7fa-2808f205620d
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  servername: www.tesla.com
+  reality-opts:
+    public-key: IOAu39FSiRk_VX4sfzCVZorWhUY0ikftPdHqcmNoY1c
+    short-id: ebfeeffb94d5bd5d
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0037
+  server: r1.mizulina.top
+  port: 22231
+  type: vless
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: edge
+  servername: r1.mizulina.top
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0038
+  server: 156.238.254.5
+  port: 23100
+  type: vless
+  uuid: d5a17f2f-aa94-4b61-8574-ce0b301f9062
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: aws.amazon.com
+  reality-opts:
+    public-key: H0HQU-snRgdfuIYOe9VkVHVn3mFqrHUD8lle55dilxU
+    short-id: 303a58f57b0d
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0039
+  server: 144.31.157.163
+  port: 443
+  type: vless
+  uuid: ae8ddd8e-00af-48e5-bd57-05074a1bbffb
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  servername: www.deepl.com
+  reality-opts:
+    public-key: ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU
+    short-id: 0123456789abcdef
+  udp: true
+  cipher: auto
+- name: X_US_speednode_0040
+  server: it-bridge.sbrf-cdn342.ru
+  port: 443
+  type: vless
+  uuid: 7bd29cac-f692-48a3-88d1-505f7e55f0d0
+  flow: xtls-rprx-vision
+  tls: true
+  skip-cert-verify: false
+  client-fingerprint: qq
+  servername: sub.sbrf-cdn342.ru
+  alpn:
+  - http/1.1
+  udp: true
+  cipher: auto
+- name: X_VN_speednode_0041
+  server: 103.186.154.214
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: X_VN_speednode_0042
+  server: 103.186.155.58
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: X_VN_speednode_0043
+  server: 103.186.155.213
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: X_VN_speednode_0044
+  server: 103.186.155.229
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- name: X_VN_speednode_0045
+  server: 103.186.154.24
+  port: 38388
+  type: ss
+  cipher: aes-256-cfb
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: X_🇭🇰 香港|@ripaojiedian
+  port: 30807
+  server: v10.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- grpc-opts:
+    grpc-service-name: db
+  name: X_❓Other_1|1.3MB/s
+  network: grpc
+  password: 3f5bc61547b1f0d9
+  port: 443
+  server: 125.227.86.47
+  skip-cert-verify: true
+  sni: TG.freecodes
+  tls: true
+  type: trojan
+  cipher: auto
+- name: X_🇺🇸US_7|1.2MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 129.159.37.136
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+  cipher: auto
+- name: X_香港3|@ripaojiedian
+  network: tcp
+  password: a922dfbe65cf53c7bc225fcfeb6cedbc
+  port: 2008
+  server: 18.162.149.118
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+  cipher: auto
+- name: X_香港4|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 3685
+  server: 16.163.95.49
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+  cipher: auto
+- name: X_香港5|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 11233
+  server: 18.162.145.230
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+  cipher: auto
+- name: X_日本|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 6463
+  server: 16.162.188.88
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+  cipher: auto
+- name: X_日本2|@ripaojiedian
+  network: tcp
+  password: a922dfbe65cf53c7bc225fcfeb6cedbc
+  port: 3135
+  server: 3.112.129.188
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+  cipher: auto
+- name: X_日本3|@ripaojiedian
+  network: tcp
+  password: a922dfbe65cf53c7bc225fcfeb6cedbc
+  port: 3135
+  server: 54.238.114.193
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+  cipher: auto
+- name: X_新加坡3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 4203
+  server: 54.248.24.57
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+  cipher: auto
+- name: X_美国3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 44386
+  server: 18.166.29.176
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+  cipher: auto
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸US_2|2.0MB/s
+  port: 180
+  server: 82.198.246.250
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸US_5|4.0MB/s
+  port: 180
+  server: 82.198.246.233
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- cipher: aes-128-gcm
+  name: X_🇸🇬SG_1|1.0MB/s
+  password: '666'
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: edcloudwasm.nellewizaijn.workers.dev
+    mode: websocket
+    mux: 0
+    skip-cert-verify: false
+  port: 80
+  server: youxuan.cf.090227.xyz
+  skip-cert-verify: false
+  type: ss
+  udp: false
+- cipher: chacha20-ietf-poly1305
+  name: X_🇹🇼TW_1|2.9MB/s
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+  port: '50099'
+  server: r3mrcg007147vhp.cybervena.com
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: X_🇻🇳VN_1|1.2MB/s
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: '38388'
+  server: 103.186.154.63
+  type: ss
+  udp: true
+- alterId: '0'
+  cipher: auto
+  name: X_🇺🇸US_3|3.0MB/s
+  network: tcp
+  port: '180'
+  server: 82.198.246.9
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  xudp: true
+- name: X_🇩🇪DE_4|1.1MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: '8443'
+  server: 144.31.122.162
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; SM-J111M Build/LMY47V) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /trTelegram🇨🇳 @WangCai2
+  cipher: auto
+- name: X_🇳🇱NL_2|1.1MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: '8443'
+  server: 152.53.200.164
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1; HUAWEI CUN-L22 Build/HUAWEICUN-L22;
+        wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84
+        Mobile Safari/537.36
+    path: /trTelegram🇨🇳 @WangCai2
+  cipher: auto
+- alterId: 0
+  cipher: auto
+  name: X_🇭🇰HK_2|1.1MB/s
+  port: 9006
+  server: select-hk.ddnskunlun.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: a8bcce43-abda-315b-8e81-e3e65bcb3d07
+- name: X_🇸🇬SG_2|1.5MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 194.87.29.106
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1; HUAWEI CUN-L22 Build/HUAWEICUN-L22;
+        wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84
+        Mobile Safari/537.36
+    path: /trTelegram🇨🇳 @WangCai2
+  cipher: auto
+- name: X_🇰🇷KR_3|1.2MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 7778
+  server: 146.56.113.221
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+  cipher: auto
+- name: X_🇺🇸US_12|1.0MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 157.245.178.181
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+  cipher: auto
+- name: X_🇺🇸US_13|1.2MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 173.230.145.212
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+  cipher: auto
+- name: X_🇺🇸US_14|1.4MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 192.241.201.168
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳
+  cipher: auto
+- name: X_🇺🇸US_15|1.4MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 2096
+  server: 165.227.60.231
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+  cipher: auto
+- name: X_🇺🇸US_16|2.5MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 2096
+  server: 5.78.79.91
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+  cipher: auto
+- name: X_🇺🇸US_17|1.2MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 8443
+  server: 23.165.104.123
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+  cipher: auto
+- name: X_🇺🇸US_18|1.3MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 443
+  server: 77.110.114.254
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳 @WangCai2
+  cipher: auto
+- name: X_🇨🇦CA_1|1.6MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 2053
+  server: 23.173.104.208
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+  cipher: auto
+- name: X_🇯🇵JP_4|1.9MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 2083
+  server: 64.176.38.23
+  skip-cert-verify: true
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳
+  cipher: auto
+- name: X_🇩🇪DE_6|2.3MB/s
+  network: ws
+  password: 8r<[9'l6hAO#8ZQi
+  port: 8443
+  server: 144.31.188.1
+  sni: Koma-YT.PAGeS.Dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+    path: /trTelegram🇨🇳+@WangCai2
+  cipher: auto
+- name: X_每天更新，请加电报群防止失联
+  type: vless
+  server: 43.161.219.163
+  port: 22335
+  uuid: a3a8c354-a85c-477b-90f3-dbe08cadf31c
+  servername: www.yahoo.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: zPM3iLhD0ppwxYWzwiXFhQd1PwXCjFN9u28DbXdy604
+    short-id: a2346cd0
+  udp: true
+  cipher: auto
+- name: X_电报群：https://t.me/vvkj11
+  type: vmess
+  server: v8.hdacd.com
+  port: 30808
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_日期：05-17
+  type: vmess
+  server: v24.hdacd.com
+  port: 30824
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_免费VPN：https://tt.vg/OWeaF
+  type: vmess
+  server: v10.hdacd.com
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_🇲🇾 马来西亚 5
+  type: vmess
+  server: v36.hdacd.com
+  port: 30836
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_🇲🇾 马来西亚 7
+  type: vmess
+  server: v4.hdacd.com
+  port: 30804
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_🇲🇾 马来西亚 8
+  type: vmess
+  server: v9.hdacd.com
+  port: 30809
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_🇯🇵 日本 9
+  type: vmess
+  server: 103.127.243.49
+  port: 53224
+  uuid: 4f47e6cc-659d-4588-8155-21d2782f1b91
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_🇳🇱 荷兰 11
+  type: vless
+  server: 141.11.197.127
+  port: 55269
+  uuid: 231e88bb-3a39-4f26-848e-908f83070283
+  servername: vk.ru
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: i1e3hqslC-n7XGp72HmDKU7ZuRk72pHbzujbNaYF-0s
+    short-id: 8f
+  udp: true
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 12
+  type: vless
+  server: cl-ru-tw.fastaichat.ru
+  port: 52006
+  uuid: 75807638-6f19-07d0-ae08-38492ee85c88
+  servername: cl-ru-tw.fastaichat.ru
+  tls: true
+  flow: xtls-rprx-vision
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 13
+  type: vless
+  server: 209.166.46.195
+  port: 443
+  uuid: 73c16ed4-d111-4434-8b24-0dfe112a0813
+  servername: www.microsoft.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: wIFJUBk4GRYT8Oim0-cPDwlGaTHh3kUYP2tOlKz1xlc
+    short-id: 9f4380a6
+  udp: true
+  cipher: auto
+- name: X_🇵🇱 波兰 14
+  type: vless
+  server: pl74.mechvpn.online
+  port: 443
+  uuid: 6d916d55-fead-4ff3-a3a9-83e175ea8ad7
+  servername: pl74.mechvpn.online
+  tls: true
+  flow: xtls-rprx-vision
+  udp: true
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 15
+  type: vless
+  server: r1.mizulina.top
+  port: 22231
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  servername: r1.mizulina.top
+  tls: true
+  client-fingerprint: chrome
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 16
+  type: vless
+  server: 144.31.207.111
+  port: 443
+  uuid: 2001daf3-5c56-4bef-8ea6-8dd0493c5a4c
+  servername: www.deepl.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU
+    short-id: 1a
+  udp: true
+  cipher: auto
+- name: X_🇩🇪 德国 21
+  type: vmess
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_🇩🇪 德国 22
+  type: vmess
+  server: 82.198.246.9
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: aes-128-gcm
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_🇱🇹 立陶宛 23
+  type: vless
+  server: 84.32.209.6
+  port: 443
+  uuid: 37253a6a-2a9b-42bb-992c-b5f1b1ef1791
+  servername: vltch.mostserv.xyz
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 3WzSgL8uXA3vE3IHrfdBpJmOO4MYrsWpczDSY_jJRjI
+    short-id: 226509f017e4c36d
+  udp: true
+  cipher: auto
+- name: X_🇩🇪 德国 24
+  type: vmess
+  server: 82.198.246.37
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_🇩🇪 德国 25
+  type: vmess
+  server: 82.198.246.233
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_🇩🇪 德国 26
+  type: vmess
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_🇩🇪 德国 34
+  type: vmess
+  server: 82.198.246.97
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_🇬🇧 英国 50
+  type: vless
+  server: london1.ap221.com
+  port: 443
+  uuid: 79b78774-0ccd-4792-aa2d-189887dd987f
+  servername: london.ap221.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 79
+  type: vless
+  server: 144.31.157.163
+  port: 443
+  uuid: ae8ddd8e-00af-48e5-bd57-05074a1bbffb
+  servername: www.deepl.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: ZHEMPjSWslk6_qD2JNQzd5enUPz8nY9mYRRuM6NkZmU
+    short-id: 0123456789abcdef
+  udp: true
+  cipher: auto
+- name: X_🇱🇹 立陶宛 83
+  type: vless
+  server: vltch.mostserv.xyz
+  port: 443
+  uuid: 37253a6a-2a9b-42bb-992c-b5f1b1ef1791
+  servername: vltch.mostserv.xyz
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: 3WzSgL8uXA3vE3IHrfdBpJmOO4MYrsWpczDSY_jJRjI
+    short-id: 226509f017e4c36d
+  udp: true
+  cipher: auto
+- name: X_🇭🇰 香港 107
+  type: vless
+  server: 22335.hk7.anan.cc
+  port: 22335
+  uuid: a3a8c354-a85c-477b-90f3-dbe08cadf31c
+  servername: www.yahoo.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: zPM3iLhD0ppwxYWzwiXFhQd1PwXCjFN9u28DbXdy604
+    short-id: a2346cd0
+  udp: true
+  cipher: auto
+- name: X_🇭🇰 香港 108
+  type: vmess
+  server: 103.181.164.145
+  port: 54022
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_🇩🇪 德国 118
+  type: vless
+  server: 159.195.82.187
+  port: 9443
+  uuid: 4649d681-7f26-4959-a3f2-02eb8866230f
+  servername: yahoo.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: wAYsJ6RJXFy94w_WaTIhp1ZfCePAPoZmP27RarvUqXg
+    short-id: 2344766a270a6298
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 119
+  type: vless
+  server: 2.27.63.99
+  port: 443
+  uuid: 76713d07-5a6b-49c2-abd8-bc450a2fa7fc
+  servername: download.spectrum.vu
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: sXC7sPCzHG_uYfvk3GSUdYQKfHAwirOVWMhO50Y9Pn8
+    short-id: ad8c7a6ace2f
+  udp: true
+  cipher: auto
+- name: X_🇩🇪 德国 124
+  type: vless
+  server: frankfurt1.ap221.com
+  port: 443
+  uuid: 03491a57-f071-4c0c-84f2-f4ec9062ede1
+  servername: frankfurt.ap221.com
+  tls: true
+  flow: xtls-rprx-vision
+  udp: true
+  cipher: auto
+- name: X_🇯🇵 日本 125
+  type: vmess
+  server: 103.127.243.59
+  port: 56738
+  uuid: 5f49c80e-7770-4bd1-9c86-43c2068a3a26
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_🇷🇺 俄罗斯 157
+  type: vless
+  server: cl-de-2.edgeflux.ru
+  port: 52006
+  uuid: 75807638-6f19-01f4-ae08-38492ee85c88
+  servername: cl-de-2.edgeflux.ru
+  tls: true
+  flow: xtls-rprx-vision
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 158
+  type: vless
+  server: 185.184.70.120
+  port: 443
+  uuid: 145adeb9-279d-4c1d-a97c-93fe28ca071e
+  servername: time.is
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: KUD5RiuqMRrhOoN6X2FcXpYZfoN_7z8BcviSBlyxOBw
+    short-id: cbd8f4
+  udp: true
+  cipher: auto
+- name: X_🇲🇾 马来西亚 167
+  type: vmess
+  server: v6.hdacd.com
+  port: 30806
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_170
+  type: trojan
+  server: jp.111000.cc.cd
+  port: 443
+  password: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  sni: sni.111000.dynv6.net
+  alpn:
+  - http/1.1
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /?ed=2560&proxyip=ip.111000.de5.net:443
+    headers:
+      Host: sni.111000.dynv6.net
+  udp: true
+  cipher: auto
+- name: X_171
+  type: vless
+  server: 188.114.98.112
+  port: 80
+  uuid: 0991a0c4-0ee5-4213-af89-7ad589f853f3
+  network: ws
+  tls: false
+  ws-opts:
+    path: /ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY----ELiV2-RAY?ed=2560
+    headers:
+      Host: elenaaaaaaaaaa.cloudns.pro.
+  udp: true
+  cipher: auto
+- name: X_🇱🇻 拉脱维亚 172
+  type: vless
+  server: 192.124.209.62
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.rocks
+  tls: true
+  ws-opts:
+    path: /?ed=2560&https://t.me/WangCai2🇨🇳
+    headers:
+      Host: sni.111000.v6.rocks
+  udp: true
+  cipher: auto
+- name: X_🇰🇷 韩国 173
+  type: trojan
+  server: 14.36.170.70
+  port: 19888
+  password: GKHWMe2R4qwNcNxu6l3KMkdd
+  sni: vpn1.rnmcnm.com
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /trj-ws
+    headers:
+      Host: vpn1.rnmcnm.com
+  udp: true
+  cipher: auto
+- name: X_174
+  type: vless
+  server: cdn.tzpro.xyz
+  port: 80
+  uuid: 5aa7d17e-7dc2-46dd-9acf-c3c97440259b
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: sss.yaml7.ggff.net
+  udp: true
+  cipher: auto
+- name: X_🇰🇷 韩国 175
+  type: trojan
+  server: 59.21.203.65
+  port: 10443
+  password: GKHWMe2R4qwNcNxu6l3KMkdd
+  sni: vpn1.rnmcnm.com
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /trj-ws
+    headers:
+      Host: vpn1.rnmcnm.com
+  udp: true
+  cipher: auto
+- name: X_🇸🇬 新加坡 176
+  type: vless
+  server: 43.160.207.175
+  port: 443
+  uuid: 981fca81-5be1-41f8-ac9b-d138e8109943
+  network: ws
+  servername: babayaga-6i7.pages.dev
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: babayaga-6i7.pages.dev
+  udp: true
+  cipher: auto
+- name: X_🇰🇷 韩国 177
+  type: trojan
+  server: 121.154.97.193
+  port: 38699
+  password: GKHWMe2R4qwNcNxu6l3KMkdd
+  sni: vpn1.rnmcnm.com
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /trj-ws
+    headers:
+      Host: vpn1.rnmcnm.com
+  udp: true
+  cipher: auto
+- name: X_🇰🇷 韩国 178
+  type: trojan
+  server: 218.150.34.228
+  port: 10912
+  password: GKHWMe2R4qwNcNxu6l3KMkdd
+  sni: vpn1.rnmcnm.com
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /trj-ws
+    headers:
+      Host: vpn1.rnmcnm.com
+  udp: true
+  cipher: auto
+- name: X_179
+  type: vless
+  server: 104.16.239.205
+  port: 80
+  uuid: 69d38faa-21a1-4d18-82cb-796a942c181b
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: sfsl.ardomains1.dpdns.org
+  udp: true
+  cipher: auto
+- name: X_180
+  type: trojan
+  server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz
+  port: 443
+  password: 87d1bfd4-574e-4c96-ad42-0426f27461ff
+  sni: _acme-challenge.sb.cloudns.biz
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: _acme-challenge.sb.cloudns.biz
+  udp: true
+  cipher: auto
+- name: X_🇰🇷 韩国 181
+  type: trojan
+  server: 121.172.210.22
+  port: 18790
+  password: GKHWMe2R4qwNcNxu6l3KMkdd
+  sni: vpn1.rnmcnm.com
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /trj-ws
+    headers:
+      Host: vpn1.rnmcnm.com
+  udp: true
+  cipher: auto
+- name: X_🇰🇷 韩国 182
+  type: trojan
+  server: 222.98.185.243
+  port: 37215
+  password: GKHWMe2R4qwNcNxu6l3KMkdd
+  sni: vpn1.rnmcnm.com
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /trj-ws
+    headers:
+      Host: vpn1.rnmcnm.com
+  udp: true
+  cipher: auto
+- name: X_🇰🇷 韩国 183
+  type: trojan
+  server: 112.172.55.228
+  port: 25010
+  password: GKHWMe2R4qwNcNxu6l3KMkdd
+  sni: vpn1.rnmcnm.com
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /trj-ws
+    headers:
+      Host: vpn1.rnmcnm.com
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 184
+  type: vless
+  server: 199.107.164.217
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  ws-opts:
+    path: /?ed=2560&Telegram🇨🇳@WangCai2
+    headers:
+      Host: sni.111000.dynv6.net
+  udp: true
+  cipher: auto
+- name: X_🇰🇷 韩国 185
+  type: trojan
+  server: 211.225.164.199
+  port: 22335
+  password: GKHWMe2R4qwNcNxu6l3KMkdd
+  sni: vpn1.rnmcnm.com
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /trj-ws
+    headers:
+      Host: vpn1.rnmcnm.com
+  udp: true
+  cipher: auto
+- name: X_🇰🇷 韩国 186
+  type: vless
+  server: 218.158.249.174
+  port: 10000
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.army
+  tls: true
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: sni.111000.v6.army
+  udp: true
+  cipher: auto
+- name: X_187
+  type: vless
+  server: ciallo-egb.pages.dev
+  port: 8443
+  uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9
+  network: ws
+  servername: CiallO-eGb.pAGEs.Dev
+  tls: true
+  ws-opts:
+    path: //
+  udp: true
+  cipher: auto
+- name: X_188
+  type: trojan
+  server: www.ignitelimit.com
+  port: 443
+  password: humanity
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /assignment
+  udp: true
+  cipher: auto
+- name: X_🇸🇬 新加坡 189
+  type: vless
+  server: 20.6.12.145
+  port: 443
+  uuid: 06b65903-406d-4a41-8463-6fd5c0ee7798
+  network: ws
+  servername: sni.skylee4.cloudns.ch
+  tls: true
+  ws-opts:
+    path: /proxyip=ProxyIP.CMLiussss.net
+    headers:
+      Host: sni.skylee4.cloudns.ch
+  udp: true
+  cipher: auto
+- name: X_🇰🇷 韩国 190
+  type: trojan
+  server: 121.162.61.37
+  port: 20031
+  password: GKHWMe2R4qwNcNxu6l3KMkdd
+  sni: vpn1.rnmcnm.com
+  skip-cert-verify: false
+  tls: true
+  ws-opts:
+    path: /trj-ws
+    headers:
+      Host: vpn1.rnmcnm.com
+  udp: true
+  cipher: auto
+- name: X_191
+  type: vless
+  server: 104.19.58.118
+  port: 443
+  uuid: fadab0a4-861d-4ebf-89ac-c9b34aef631a
+  network: ws
+  servername: us1-us1.aiopen.sbs
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /kbjc/us1
+    headers:
+      Host: us1-us1.aiopen.sbs
+  udp: true
+  cipher: auto
+- name: X_🇯🇵 日本 192
+  type: vmess
+  server: 2a02:6ea0:d32f::f8fe:349b
+  port: 24202
+  uuid: b20a7042-70ff-4376-a79f-b68f9edb7519
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /github.com/Alvin9999-newpac/fanqiang
+  udp: true
+- name: X_🇺🇸 美国 193
+  type: vless
+  server: 69.84.182.13
+  port: 443
+  uuid: 37f33475-b528-4e28-b379-0282f0677a4d
+  network: ws
+  servername: jp1-jp1.aiopen.sbs
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /kbjc/jp1
+    headers:
+      Host: jp1-jp1.aiopen.sbs
+  udp: true
+  cipher: auto
+- name: X_🇭🇰 香港 194
+  type: vmess
+  server: v3.cdn.wp85x4frjf6x.jjxdns.net
+  port: 31723
+  uuid: 29e5f410-68ce-33e0-b0ed-be1f73ab2088
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /04235e8c-cea8-4f16-8934-b704a89b40cb.live238.m3u8
+  udp: true
+- name: X_🇷🇺 俄罗斯 196
+  type: vless
+  server: s28233.cdn.ngenix.net
+  port: 443
+  uuid: c3f112fc-1041-Fade-b85c-5ed478daeeb9
+  network: ws
+  servername: s28233.cdn.ngenix.net
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: s28233.cdn.ngenix.net
+  udp: true
+  cipher: auto
+- name: X_🇭🇰 香港 197
+  type: trojan
+  server: 47.76.218.163
+  port: 443
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  cipher: auto
+- name: X_🇯🇵 日本 198
+  type: trojan
+  server: 176.97.70.51
+  port: 8443
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  cipher: auto
+- name: X_🇫🇷 法国 199
+  type: trojan
+  server: 138.124.81.204
+  port: 443
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 200
+  type: trojan
+  server: 185.162.9.60
+  port: 8443
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 201
+  type: trojan
+  server: 166.62.106.253
+  port: 443
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trTelegram🇨🇳+@WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  cipher: auto
+- name: X_🇦🇹 奥地利 202
+  type: trojan
+  server: 46.102.156.144
+  port: 2053
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 203
+  type: trojan
+  server: 94.183.185.151
+  port: 443
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  cipher: auto
+- name: X_🇹🇷 土耳其 204
+  type: vless
+  server: 91.206.71.50
+  port: 8880
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?https://t.me/YouTube@小青科学网🇨🇳
+    headers:
+      Host: vms.lifetime15.workers.dev
+  udp: true
+  cipher: auto
+- name: X_🇷🇴 罗马尼亚 205
+  type: trojan
+  server: 38.180.35.88
+  port: 443
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 206
+  type: trojan
+  server: 95.163.242.189
+  port: 8443
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  cipher: auto
+- name: X_🇨🇭 瑞士 207
+  type: trojan
+  server: 140.238.208.240
+  port: 443
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 208
+  type: trojan
+  server: 77.110.103.243
+  port: 8443
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 209
+  type: trojan
+  server: 38.180.233.61
+  port: 443
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 210
+  type: trojan
+  server: 38.180.96.40
+  port: 443
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 211
+  type: trojan
+  server: 74.48.90.185
+  port: 443
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  cipher: auto
+- name: X_🇸🇪 瑞典 212
+  type: trojan
+  server: 176.125.240.147
+  port: 2053
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  cipher: auto
+- name: X_🇸🇪 瑞典 213
+  type: trojan
+  server: 176.125.240.63
+  port: 2053
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  cipher: auto
+- name: X_🇦🇹 奥地利 214
+  type: trojan
+  server: 38.180.143.51
+  port: 2053
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 215
+  type: trojan
+  server: 185.31.200.184
+  port: 2053
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 216
+  type: trojan
+  server: 144.31.122.162
+  port: 8443
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 217
+  type: trojan
+  server: 159.65.240.40
+  port: 443
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 218
+  type: trojan
+  server: 31.15.17.129
+  port: 2053
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 219
+  type: trojan
+  server: 152.53.200.163
+  port: 8443
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trTelegram🇨🇳+@WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 220
+  type: trojan
+  server: 85.239.39.144
+  port: 8443
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 221
+  type: trojan
+  server: 95.164.62.196
+  port: 443
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  cipher: auto
+- name: X_🇰🇷 韩国 222
+  type: trojan
+  server: 59.0.95.106
+  port: 32773
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  cipher: auto
+- name: X_🇪🇸 西班牙 223
+  type: trojan
+  server: 172.233.97.34
+  port: 443
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 224
+  type: trojan
+  server: 152.53.200.164
+  port: 8443
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  cipher: auto
+- name: X_🇪🇪 爱沙尼亚 225
+  type: trojan
+  server: 5.189.254.235
+  port: 443
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  cipher: auto
+- name: X_🇺🇸 美国 226
+  type: trojan
+  server: 68.64.182.39
+  port: 443
+  password: GKHWMe2R4qwNcNxu6l3KMkdd
+  sni: vpn1.rnmcnm.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trj-ws
+    headers:
+      Host: vpn1.rnmcnm.com
+  udp: true
+  cipher: auto
+- name: X_🇰🇷 韩国 227
+  type: trojan
+  server: 106.245.187.246
+  port: 34973
+  password: GKHWMe2R4qwNcNxu6l3KMkdd
+  sni: vpn1.rnmcnm.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trj-ws
+    headers:
+      Host: vpn1.rnmcnm.com
+  udp: true
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 228
+  type: vless
+  server: 195.209.82.149
+  port: 443
+  uuid: 5a478129-3e7e-Fade-99d7-95e1da14fbdc
+  network: ws
+  servername: s28233.cdn.ngenix.net
+  tls: true
+  client-fingerprint: qq
+  ws-opts:
+    path: /
+    headers:
+      Host: s28233.cdn.ngenix.net
+  udp: true
+  cipher: auto
+- name: X_🇰🇷 韩国 229
+  type: trojan
+  server: 221.150.188.210
+  port: 12300
+  password: GKHWMe2R4qwNcNxu6l3KMkdd
+  sni: vpn1.rnmcnm.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trj-ws
+    headers:
+      Host: vpn1.rnmcnm.com
+  udp: true
+  cipher: auto
+- name: X_🇰🇷 韩国 230
+  type: trojan
+  server: 59.12.158.224
+  port: 11001
+  password: GKHWMe2R4qwNcNxu6l3KMkdd
+  sni: vpn1.rnmcnm.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trj-ws
+    headers:
+      Host: vpn1.rnmcnm.com
+  udp: true
+  cipher: auto
+- name: X_🇰🇷 韩国 231
+  type: trojan
+  server: 112.163.117.142
+  port: 30005
+  password: GKHWMe2R4qwNcNxu6l3KMkdd
+  sni: vpn1.rnmcnm.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trj-ws
+    headers:
+      Host: vpn1.rnmcnm.com
+  udp: true
+  cipher: auto
+- name: X_🇰🇷 韩国 232
+  type: trojan
+  server: 14.40.27.140
+  port: 18889
+  password: GKHWMe2R4qwNcNxu6l3KMkdd
+  sni: vpn1.rnmcnm.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trj-ws
+    headers:
+      Host: vpn1.rnmcnm.com
+  udp: true
+  cipher: auto
+- name: X_🇰🇷 韩国 233
+  type: trojan
+  server: 121.179.212.16
+  port: 10001
+  password: GKHWMe2R4qwNcNxu6l3KMkdd
+  sni: vpn1.rnmcnm.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trj-ws
+    headers:
+      Host: vpn1.rnmcnm.com
+  udp: true
+  cipher: auto
+- name: X_🇰🇷 韩国 234
+  type: trojan
+  server: 59.2.63.17
+  port: 12300
+  password: GKHWMe2R4qwNcNxu6l3KMkdd
+  sni: vpn1.rnmcnm.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trj-ws
+    headers:
+      Host: vpn1.rnmcnm.com
+  udp: true
+  cipher: auto
+- name: X_🇰🇷 韩国 235
+  type: trojan
+  server: 121.178.83.161
+  port: 26214
+  password: GKHWMe2R4qwNcNxu6l3KMkdd
+  sni: vpn1.rnmcnm.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trj-ws
+    headers:
+      Host: vpn1.rnmcnm.com
+  udp: true
+  cipher: auto
+- name: X_🇰🇷 韩国 237
+  type: trojan
+  server: 175.201.34.127
+  port: 18786
+  password: GKHWMe2R4qwNcNxu6l3KMkdd
+  sni: vpn1.rnmcnm.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trj-ws
+    headers:
+      Host: vpn1.rnmcnm.com
+  udp: true
+  cipher: auto
+- name: X_🇷🇺 俄罗斯 238
+  type: trojan
+  server: 95.213.226.60
+  port: 443
+  password: 8r<[9'l6hAO#8ZQi
+  sni: Koma-YT.PAGeS.Dev
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trTelegram🇨🇳 @WangCai2
+    headers:
+      Host: Koma-YT.PAGeS.Dev
+  udp: true
+  cipher: auto
+- name: X_🇯🇵 日本 239
+  type: trojan
+  server: 219.103.68.164
+  port: 20770
+  password: GKHWMe2R4qwNcNxu6l3KMkdd
+  sni: vpn1.rnmcnm.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trj-ws
+    headers:
+      Host: vpn1.rnmcnm.com
+  udp: true
+  cipher: auto
+- name: X_🇰🇷 韩国 240
+  type: vless
+  server: 116.44.147.152
+  port: 22085
+  uuid: b2b62085-f202-4c49-9f19-a44676a3d76d
+  network: ws
+  servername: vpn2.rnmcnm.com
+  tls: true
+  ws-opts:
+    path: /ray
+  udp: true
+  cipher: auto
+- name: X_🇰🇷 韩国 241
+  type: trojan
+  server: 14.41.44.168
+  port: 12300
+  password: GKHWMe2R4qwNcNxu6l3KMkdd
+  sni: vpn1.rnmcnm.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trj-ws
+    headers:
+      Host: vpn1.rnmcnm.com
+  udp: true
+  cipher: auto
+- name: X_🇰🇷 韩国 242
+  type: trojan
+  server: 221.149.34.13
+  port: 10909
+  password: GKHWMe2R4qwNcNxu6l3KMkdd
+  sni: vpn1.rnmcnm.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trj-ws
+    headers:
+      Host: vpn1.rnmcnm.com
+  udp: true
+  cipher: auto
+- name: X_🇰🇷 韩国 243
+  type: trojan
+  server: 183.103.4.162
+  port: 32677
+  password: GKHWMe2R4qwNcNxu6l3KMkdd
+  sni: vpn1.rnmcnm.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trj-ws
+    headers:
+      Host: vpn1.rnmcnm.com
+  udp: true
+  cipher: auto
+- name: X_🇰🇷 韩国 244
+  type: trojan
+  server: 221.158.4.230
+  port: 18853
+  password: GKHWMe2R4qwNcNxu6l3KMkdd
+  sni: vpn1.rnmcnm.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trj-ws
+    headers:
+      Host: vpn1.rnmcnm.com
+  udp: true
+  cipher: auto
+- name: X_🇰🇷 韩国 246
+  type: trojan
+  server: 112.166.213.102
+  port: 16993
+  password: GKHWMe2R4qwNcNxu6l3KMkdd
+  sni: vpn1.rnmcnm.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trj-ws
+    headers:
+      Host: vpn1.rnmcnm.com
+  udp: true
+  cipher: auto
+- name: X_🇰🇷 韩国 247
+  type: trojan
+  server: 210.123.143.214
+  port: 18789
+  password: GKHWMe2R4qwNcNxu6l3KMkdd
+  sni: vpn1.rnmcnm.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trj-ws
+    headers:
+      Host: vpn1.rnmcnm.com
+  udp: true
+  cipher: auto
+- name: X_🇰🇷 韩国 248
+  type: trojan
+  server: 121.180.171.43
+  port: 11310
+  password: GKHWMe2R4qwNcNxu6l3KMkdd
+  sni: vpn1.rnmcnm.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trj-ws
+    headers:
+      Host: vpn1.rnmcnm.com
+  udp: true
+  cipher: auto
+- name: X_🇰🇷 韩国 249
+  type: trojan
+  server: 125.141.32.222
+  port: 11371
+  password: GKHWMe2R4qwNcNxu6l3KMkdd
+  sni: vpn1.rnmcnm.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trj-ws
+    headers:
+      Host: vpn1.rnmcnm.com
+  udp: true
+  cipher: auto
+- name: X_🇰🇷 韩国 250
+  type: trojan
+  server: 121.132.124.22
+  port: 15000
+  password: GKHWMe2R4qwNcNxu6l3KMkdd
+  sni: vpn1.rnmcnm.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /trj-ws
+    headers:
+      Host: vpn1.rnmcnm.com
+  udp: true
+  cipher: auto
+- name: X_252
+  type: vless
+  server: 162.159.36.5
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.dynv6.net
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: sni.111000.dynv6.net
+  udp: true
+  cipher: auto
+- name: X_🇩🇪 德国 253
+  type: vless
+  server: 159.65.125.162
+  port: 2087
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.latonyamadeline.ndjp.net
+  tls: true
+  ws-opts:
+    path: /?https://t.me/WangCai2🇨🇳=
+    headers:
+      Host: sni.latonyamadeline.ndjp.net
+  udp: true
+  cipher: auto
+- name: X_🇭🇰 香港 254
+  type: vmess
+  server: n1761296889.4u9ma.icu
+  port: 443
+  uuid: 5fdc6ab1-8347-411c-9bbf-fbc3ea853d2f
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: n1761296889.4u9ma.icu
+  udp: true
+- name: X_🇱🇻 拉脱维亚 255
+  type: vless
+  server: 169.40.1.34
+  port: 443
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.111000.v6.rocks
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: sni.111000.v6.rocks
+  udp: true
+  cipher: auto
+- name: X_🇳🇱 荷兰 256
+  type: vless
+  server: 45.131.6.191
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.my111000.tech
+  tls: true
+  ws-opts:
+    path: Telegram🇨🇳@WangCai2/
+    headers:
+      Host: sni.my111000.tech
+  udp: true
+  cipher: auto
+- name: X_🇷🇴 罗马尼亚 257
+  type: vless
+  server: 45.12.30.191
+  port: 2096
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  servername: sni.my111000.tech
+  tls: true
+  ws-opts:
+    path: Telegram🇨🇳@WangCai2/
+    headers:
+      Host: sni.my111000.tech
+  udp: true
+  cipher: auto
+- name: X_258
+  type: vless
+  server: 162.159.14.88
+  port: 80
+  uuid: 55cb8179-ce11-4ec8-a03c-333f797265f9
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: long-forest-ac72.salari1382m.workers.dev
+  udp: true
+  cipher: auto
+- name: X_259
+  type: vless
+  server: 162.159.152.4
+  port: 443
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  network: ws
+  servername: rAyAn-007.mAxImA.DpDnS.OrG
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: rAyAn-007.mAxImA.DpDnS.OrG
+  udp: true
+  cipher: auto
+proxy-groups:
+- name: 🚀 节点选择
+  type: select
+  proxies:
+  - ♻️ 自动选择
+  - DIRECT
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+- name: ♻️ 自动选择
+  type: url-test
+  url: https://www.facebook.com/common/referer_frame.php
+  interval: 60
+  tolerance: 5
+  proxies:
+  - 🪐 负载均衡
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+  - X_每天更新，请加电报群防止失联
+  - X_电报群：https://t.me/vvkj11
+  - X_日期：05-17
+  - X_免费VPN：https://tt.vg/OWeaF
+  - X_🇲🇾 马来西亚 5
+  - X_🇲🇾 马来西亚 7
+  - X_🇲🇾 马来西亚 8
+  - X_🇯🇵 日本 9
+  - X_🇳🇱 荷兰 11
+  - X_🇷🇺 俄罗斯 12
+  - X_🇺🇸 美国 13
+  - X_🇵🇱 波兰 14
+  - X_🇷🇺 俄罗斯 15
+  - X_🇺🇸 美国 16
+  - X_🇩🇪 德国 21
+  - X_🇩🇪 德国 22
+  - X_🇱🇹 立陶宛 23
+  - X_🇩🇪 德国 24
+  - X_🇩🇪 德国 25
+  - X_🇩🇪 德国 26
+  - X_🇩🇪 德国 34
+  - X_🇬🇧 英国 50
+  - X_🇳🇱 荷兰 79
+  - X_🇱🇹 立陶宛 83
+  - X_🇭🇰 香港 107
+  - X_🇭🇰 香港 108
+  - X_🇩🇪 德国 118
+  - X_🇺🇸 美国 119
+  - X_🇩🇪 德国 124
+  - X_🇯🇵 日本 125
+  - X_🇷🇺 俄罗斯 157
+  - X_🇺🇸 美国 158
+  - X_🇲🇾 马来西亚 167
+  - X_170
+  - X_171
+  - X_🇱🇻 拉脱维亚 172
+  - X_🇰🇷 韩国 173
+  - X_174
+  - X_🇰🇷 韩国 175
+  - X_🇸🇬 新加坡 176
+  - X_🇰🇷 韩国 177
+  - X_🇰🇷 韩国 178
+  - X_179
+  - X_180
+  - X_🇰🇷 韩国 181
+  - X_🇰🇷 韩国 182
+  - X_🇰🇷 韩国 183
+  - X_🇺🇸 美国 184
+  - X_🇰🇷 韩国 185
+  - X_🇰🇷 韩国 186
+  - X_187
+  - X_188
+  - X_🇸🇬 新加坡 189
+  - X_🇰🇷 韩国 190
+  - X_191
+  - X_🇯🇵 日本 192
+  - X_🇺🇸 美国 193
+  - X_🇭🇰 香港 194
+  - X_🇷🇺 俄罗斯 196
+  - X_🇭🇰 香港 197
+  - X_🇯🇵 日本 198
+  - X_🇫🇷 法国 199
+  - X_🇳🇱 荷兰 200
+  - X_🇺🇸 美国 201
+  - X_🇦🇹 奥地利 202
+  - X_🇺🇸 美国 203
+  - X_🇹🇷 土耳其 204
+  - X_🇷🇴 罗马尼亚 205
+  - X_🇷🇺 俄罗斯 206
+  - X_🇨🇭 瑞士 207
+  - X_🇳🇱 荷兰 208
+  - X_🇳🇱 荷兰 209
+  - X_🇳🇱 荷兰 210
+  - X_🇺🇸 美国 211
+  - X_🇸🇪 瑞典 212
+  - X_🇸🇪 瑞典 213
+  - X_🇦🇹 奥地利 214
+  - X_🇳🇱 荷兰 215
+  - X_🇳🇱 荷兰 216
+  - X_🇺🇸 美国 217
+  - X_🇳🇱 荷兰 218
+  - X_🇳🇱 荷兰 219
+  - X_🇷🇺 俄罗斯 220
+  - X_🇺🇸 美国 221
+  - X_🇰🇷 韩国 222
+  - X_🇪🇸 西班牙 223
+  - X_🇳🇱 荷兰 224
+  - X_🇪🇪 爱沙尼亚 225
+  - X_🇺🇸 美国 226
+  - X_🇰🇷 韩国 227
+  - X_🇷🇺 俄罗斯 228
+  - X_🇰🇷 韩国 229
+  - X_🇰🇷 韩国 230
+  - X_🇰🇷 韩国 231
+  - X_🇰🇷 韩国 232
+  - X_🇰🇷 韩国 233
+  - X_🇰🇷 韩国 234
+  - X_🇰🇷 韩国 235
+  - X_🇰🇷 韩国 237
+  - X_🇷🇺 俄罗斯 238
+  - X_🇯🇵 日本 239
+  - X_🇰🇷 韩国 240
+  - X_🇰🇷 韩国 241
+  - X_🇰🇷 韩国 242
+  - X_🇰🇷 韩国 243
+  - X_🇰🇷 韩国 244
+  - X_🇰🇷 韩国 246
+  - X_🇰🇷 韩国 247
+  - X_🇰🇷 韩国 248
+  - X_🇰🇷 韩国 249
+  - X_🇰🇷 韩国 250
+  - X_252
+  - X_🇩🇪 德国 253
+  - X_🇭🇰 香港 254
+  - X_🇱🇻 拉脱维亚 255
+  - X_🇳🇱 荷兰 256
+  - X_🇷🇴 罗马尼亚 257
+  - X_258
+  - X_259
+- name: 🌍 国外媒体
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - ♻️ 自动选择
+  - 🎯 全球直连
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+- name: 📲 电报信息
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+- name: Ⓜ️ 微软服务
+  type: select
+  proxies:
+  - 🎯 全球直连
+  - 🚀 节点选择
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+- name: 🍎 苹果服务
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+- name: 🎯 全球直连
+  type: select
+  proxies:
+  - DIRECT
+  - 🚀 节点选择
+  - ♻️ 自动选择
+- name: 🛑 全球拦截
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+- name: 🍃 应用净化
+  type: select
+  proxies:
+  - REJECT
+  - DIRECT
+- name: 🐟 漏网之鱼
+  type: select
+  proxies:
+  - 🚀 节点选择
+  - 🎯 全球直连
+  - ♻️ 自动选择
+  - 🇨🇳_CN_中国->🇯🇵_JP_日本
+  - 🇨🇳_CN_中国->🇺🇸_US_美国
+  - 🇲🇩_MD_摩尔多瓦->🇷🇺_RU_俄罗斯
+- name: 🪐 负载均衡
+  type: load-balance
+  url: https://client3.google.com/generate_204
+  interval: 120
+  strategy: consistent-hashing
+  proxies:
+  - X_AU_speednode_0001
+  - X_AU_speednode_0002
+  - X_BG_speednode_0003
+  - X_BG_speednode_0004
+  - X_CA_speednode_0005
+  - X_CA_speednode_0006
+  - X_CN_speednode_0007
+  - X_GB_speednode_0010
+  - X_GB_speednode_0011
+  - X_GB_speednode_0012
+  - X_GB_speednode_0013
+  - X_GB_speednode_0014
+  - X_ID_speednode_0015
+  - X_JP_speednode_0017
+  - X_KR_speednode_0018
+  - X_KR_speednode_0019
+  - X_KR_speednode_0020
+  - X_NL_speednode_0021
+  - X_NO_speednode_0022
+  - X_RO_speednode_0023
+  - X_RU_speednode_0024
+  - X_RU_speednode_0025
+  - X_TW_speednode_0034
+  - X_US_speednode_0036
+  - X_US_speednode_0037
+  - X_US_speednode_0038
+  - X_US_speednode_0039
+  - X_US_speednode_0040
+  - X_VN_speednode_0041
+  - X_VN_speednode_0042
+  - X_VN_speednode_0043
+  - X_VN_speednode_0044
+  - X_VN_speednode_0045
+  - X_🇭🇰 香港|@ripaojiedian
+  - X_❓Other_1|1.3MB/s
+  - X_🇺🇸US_7|1.2MB/s
+  - X_香港3|@ripaojiedian
+  - X_香港4|@ripaojiedian
+  - X_香港5|@ripaojiedian
+  - X_日本|@ripaojiedian
+  - X_日本2|@ripaojiedian
+  - X_日本3|@ripaojiedian
+  - X_新加坡3|@ripaojiedian
+  - X_美国3|@ripaojiedian
+  - X_🇺🇸US_2|2.0MB/s
+  - X_🇺🇸US_5|4.0MB/s
+  - X_🇸🇬SG_1|1.0MB/s
+  - X_🇹🇼TW_1|2.9MB/s
+  - X_🇻🇳VN_1|1.2MB/s
+  - X_🇺🇸US_3|3.0MB/s
+  - X_🇩🇪DE_4|1.1MB/s
+  - X_🇳🇱NL_2|1.1MB/s
+  - X_🇭🇰HK_2|1.1MB/s
+  - X_🇸🇬SG_2|1.5MB/s
+  - X_🇰🇷KR_3|1.2MB/s
+  - X_🇺🇸US_12|1.0MB/s
+  - X_🇺🇸US_13|1.2MB/s
+  - X_🇺🇸US_14|1.4MB/s
+  - X_🇺🇸US_15|1.4MB/s
+  - X_🇺🇸US_16|2.5MB/s
+  - X_🇺🇸US_17|1.2MB/s
+  - X_🇺🇸US_18|1.3MB/s
+  - X_🇨🇦CA_1|1.6MB/s
+  - X_🇯🇵JP_4|1.9MB/s
+  - X_🇩🇪DE_6|2.3MB/s
+rule-providers:
+  Apple:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/Apple.list
+    format: text
+    interval: 3600
+    path: ./Clash/Apple.list
+  Telegram:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/Telegram.list
+    format: text
+    interval: 3600
+    path: ./Clash/Telegram.list
+  ProxyLite:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyLite.list
+    format: text
+    interval: 3600
+    path: ./Clash/ProxyLite.list
+  ChinaDomain:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaDomain.list
+    format: text
+    interval: 3600
+    path: ./Clash/ChinaDomain.list
+  ChinaCompanyIp:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaCompanyIp.list
+    format: text
+    interval: 3600
+    path: ./Clash/ChinaCompanyIp.list
+  ProxyMedia:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyMedia.list
+    format: text
+    interval: 3600
+    path: ./Clash/ProxyMedia.list
+  LocalAreaNetwork:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/LocalAreaNetwork.list
+    format: text
+    interval: 3600
+    path: ./Clash/LocalAreaNetwork.list
+  Microsoft:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/Microsoft.list
+    format: text
+    interval: 3600
+    path: ./Clash/Microsoft.list
+  GoogleCN:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/GoogleCN.list
+    format: text
+    interval: 3600
+    path: ./Clash/GoogleCN.list
+  BanAD:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/BanAD.list
+    format: text
+    interval: 3600
+    path: ./Clash/BanAD.list
+  BanProgramAD:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/BanProgramAD.list
+    format: text
+    interval: 3600
+    path: ./Clash/BanProgramAD.list
+  SteamCN:
+    type: http
+    behavior: classical
+    url: https://cdn.honglin.ac.cn/statically/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/SteamCN.list
+    format: text
+    interval: 3600
+    path: ./Clash/SteamCN.list
+rules:
+- RULE-SET,LocalAreaNetwork,🎯 全球直连
+- RULE-SET,BanAD,🛑 全球拦截
+- RULE-SET,BanProgramAD,🍃 应用净化
+- RULE-SET,GoogleCN,🎯 全球直连
+- RULE-SET,SteamCN,🎯 全球直连
+- RULE-SET,Microsoft,Ⓜ️ 微软服务
+- RULE-SET,Apple,🍎 苹果服务
+- RULE-SET,ProxyMedia,🌍 国外媒体
+- RULE-SET,Telegram,📲 电报信息
+- RULE-SET,ProxyLite,🚀 节点选择
+- RULE-SET,ChinaDomain,🎯 全球直连
+- RULE-SET,ChinaCompanyIp,🎯 全球直连
+- GEOIP,CN,🎯 全球直连
+- MATCH,🐟 漏网之鱼
