@@ -912,177 +912,56 @@ proxies:
   cipher: auto
 - name: X_每天更新，请加电报群防止失联
   type: vless
-  server: 85.234.114.53
+  server: tw3.miyazono-kaori.com
   port: 443
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-  servername: r1.mizulina.top
+  uuid: bce38beb-a6d0-41d7-9c0a-26eed9a6634d
+  servername: dlcdnets.asus.com
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: edge
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: JE82iOR_U_H7ffxJ5yfoxXeRkMlE-aVu1wxR7n6jrVM
+    short-id: 473277e2
   skip-cert-verify: true
   udp: true
   cipher: auto
 - name: X_电报群：https://t.me/vvkj11
   type: vless
-  server: r1.mizulina.top
+  server: 85.234.114.53
   port: 22231
   uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
   servername: r1.mizulina.top
   tls: true
-  flow: xtls-rprx-vision
   client-fingerprint: edge
   skip-cert-verify: true
   udp: true
   cipher: auto
-- name: X_免费VPN：https://tt.vg/OWeaF
-  type: vmess
-  server: v10.hdacd.com
-  port: 30807
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: X_法国
-  type: vmess
-  server: v35.hdacd.com
-  port: 30835
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: X_中国香港
-  type: vmess
-  server: v9.hdacd.com
-  port: 30809
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
 - name: X_美国
-  type: vmess
-  server: v4.hdacd.com
-  port: 30804
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: X_日本
-  type: vmess
-  server: v6.hdacd.com
-  port: 30806
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: X_德国
-  type: vmess
-  server: v33.hdacd.com
-  port: 30833
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: X_英国
-  type: vmess
-  server: v36.hdacd.com
-  port: 30836
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: X_新加坡
-  type: vmess
-  server: v45.hdacd.com
-  port: 30845
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: X_美国_1
-  type: vmess
-  server: v24.hdacd.com
-  port: 30824
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: X_爱尔兰
-  type: vmess
-  server: v8.hdacd.com
-  port: 30808
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: X_中国台湾
-  type: vmess
-  server: v29.hdacd.com
-  port: 30829
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: X_新加坡_1
   type: vless
-  server: 8.219.213.195
-  port: 10032
-  uuid: e4e7866d-920b-4a53-a8e2-6ae9b2a42fc2
-  tls: false
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_中国台湾_1
-  type: vmess
-  server: v11.zgtfqs.click
-  port: 30811
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: X_美国_2
-  type: vless
-  server: panels2.airboxvip.top
-  port: 4028
-  uuid: d89a329c-c256-4956-ab21-517606ac3370
-  tls: false
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_3
-  type: trojan
-  server: 90081bb25c.node.tro.cac.cab
-  port: 48697
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: gh.01.naiun.bilibili.com
-  skip-cert-verify: true
+  server: r1.mizulina.top
+  port: 22231
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
   tls: true
+  flow: xtls-rprx-vision
+  skip-cert-verify: true
   udp: true
   cipher: auto
-- name: X_美国_4
+- name: X_美国_11
+  type: vless
+  server: 152.114.193.11
+  port: 47200
+  uuid: ffaa8e95-74e2-4ef4-8974-69dd3651b6f9
+  servername: stats.vk-portal.net
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: aom9XGtg9tre2RGo8XkCaRqlE02nrZ4smmnpLpzidRE
+    short-id: b2a9bd658fc81dc6
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_德国_1
   type: vmess
   server: 82.198.246.250
   port: 180
@@ -1092,7 +971,7 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: X_美国_5
+- name: X_美国_13
   type: vmess
   server: 82.198.246.214
   port: 180
@@ -1102,28 +981,124 @@ proxies:
   tls: false
   skip-cert-verify: true
   udp: true
-- name: X_美国_6
+- name: X_日本
   type: vless
-  server: wangcai139.cloudflare.182682.xyz
-  port: 8880
-  uuid: 7890ce31-9a25-4fd4-90e7-80e5823ff510
-  network: ws
-  servername: Telegram-channel-WangCai2
-  tls: false
-  ws-opts:
-    path: /Telegram🇨🇳@WangCai2/?ed=2560
-    headers:
-      Host: frejd.11258.workers.dev
+  server: 144.31.230.72
+  port: 47200
+  uuid: ffaa8e95-74e2-4ef4-8974-69dd3651b6f9
+  servername: stats.vk-portal.net
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: aom9XGtg9tre2RGo8XkCaRqlE02nrZ4smmnpLpzidRE
+    short-id: b2a9bd658fc81dc6
   skip-cert-verify: true
   udp: true
   cipher: auto
-- name: X_美国_7
+- name: X_俄罗斯_5
   type: vless
-  server: 144.24.66.151
-  port: 21828
+  server: 89.232.177.114
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  servername: cdn3-87.vk-cdnvideo.com
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_28
+  type: vless
+  server: 213.171.24.172
+  port: 8443
+  uuid: 931729a8-3c20-4841-89a1-f18dc9ce0a6f
+  servername: cdn7-09.vk-cdnvideo.com
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_31
+  type: vless
+  server: 194.93.0.180
+  port: 47200
+  uuid: ffaa8e95-74e2-4ef4-8974-69dd3651b6f9
+  servername: stats.vk-portal.net
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: aom9XGtg9tre2RGo8XkCaRqlE02nrZ4smmnpLpzidRE
+    short-id: b2a9bd658fc81dc6
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_德国_9
+  type: vless
+  server: 159.54.134.203
+  port: 443
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  servername: r1.mizulina.top
+  tls: true
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_德国_10
+  type: vless
+  server: 38.54.45.184
+  port: 443
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  servername: r1.mizulina.top
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: edge
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_中国香港
+  type: vmess
+  server: v10.hdacd.com
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: X_美国_32
+  type: trojan
+  server: 90081bb25c.node.tro.cac.cab
+  port: 48697
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: gh.01.naiun.bilibili.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  cipher: auto
+- name: X_中国香港_1
+  type: vless
+  server: 47.86.55.200
+  port: 19321
+  uuid: 394086c4-d8a4-4298-9b62-f70fa711082d
+  tls: false
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_马来西亚
+  type: vmess
+  server: v33.hdacd.com
+  port: 30833
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: X_美国_33
+  type: vless
+  server: 54.178.110.17
+  port: 4443
   uuid: 00000000-0000-4000-8000-000000000000
   network: ws
-  servername: ufo4dxyv6255yk8eh1ejyxgxc.worker.ddns-ip.net
+  servername: nn9jdg-k7yewrrk.acg.xx.kg
   tls: true
   client-fingerprint: chrome
   ws-opts:
@@ -1131,21 +1106,277 @@ proxies:
   skip-cert-verify: true
   udp: true
   cipher: auto
-- name: X_美国_22
+- name: X_美国_34
   type: vless
-  server: yd.mmhh.eu.cc
-  port: 443
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  server: 172.64.146.222
+  port: 2096
+  uuid: c2bad7c0-eb2c-42f6-807e-56570e8094c9
   network: ws
-  servername: hhlfy.twiladaphne.ndjp.net
+  servername: artin-7ra.pages.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /pay/class/favourites
+    headers:
+      Host: artin-7ra.pages.dev
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_新加坡
+  type: vless
+  server: 172.104.53.198
+  port: 443
+  uuid: c135158e-5869-4397-8116-6695ca18cd48
+  network: ws
+  servername: cf.hulume.ccwu.cc
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: cf.hulume.ccwu.cc
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_35
+  type: vless
+  server: mfa.gov.ua
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  network: ws
+  servername: nn9jdg-k7yewrrk.acg.xx.kg
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /@Marisa_kristi
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_36
+  type: vless
+  server: 8.219.2.255
+  port: 33284
+  uuid: 00000000-0000-4000-8000-000000000000
+  network: ws
+  servername: nn9jdg-k7yewrrk.acg.xx.kg
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /@Marisa_kristi
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_37
+  type: vless
+  server: cloudflare.182682.xyz
+  port: 443
+  uuid: c135158e-5869-4397-8116-6695ca18cd48
+  network: ws
+  servername: cf.hulume.ccwu.cc
   tls: true
   client-fingerprint: chrome
   ws-opts:
     path: /
+    headers:
+      Host: cf.hulume.ccwu.cc
   skip-cert-verify: true
   udp: true
   cipher: auto
-- name: X_美国_26
+- name: X_美国_39
+  type: vless
+  server: 23.141.52.169
+  port: 443
+  uuid: c135158e-5869-4397-8116-6695ca18cd48
+  network: ws
+  servername: cf.hulume.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: cf.hulume.ccwu.cc
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_40
+  type: vless
+  server: www.sage.com
+  port: 443
+  uuid: c135158e-5869-4397-8116-6695ca18cd48
+  network: ws
+  servername: cf.hulume.ccwu.cc
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: cf.hulume.ccwu.cc
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_42
+  type: vless
+  server: 104.17.223.130
+  port: 443
+  uuid: c135158e-5869-4397-8116-6695ca18cd48
+  network: ws
+  servername: cf.hulume.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: cf.hulume.ccwu.cc
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_43
+  type: vless
+  server: 104.17.163.249
+  port: 443
+  uuid: c135158e-5869-4397-8116-6695ca18cd48
+  network: ws
+  servername: cf.hulume.ccwu.cc
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: cf.hulume.ccwu.cc
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_44
+  type: vless
+  server: 104.17.121.243
+  port: 443
+  uuid: c135158e-5869-4397-8116-6695ca18cd48
+  network: ws
+  servername: cf.hulume.ccwu.cc
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: cf.hulume.ccwu.cc
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_47
+  type: vless
+  server: virtualcommtraining.verizon.com
+  port: 443
+  uuid: c135158e-5869-4397-8116-6695ca18cd48
+  network: ws
+  servername: cf.hulume.ccwu.cc
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: cf.hulume.ccwu.cc
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_48
+  type: vless
+  server: 166.88.167.206
+  port: 30715
+  uuid: 00000000-0000-4000-8000-000000000000
+  network: ws
+  servername: nn9jdg-k7yewrrk.acg.xx.kg
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /@Marisa_kristi
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_49
+  type: vless
+  server: lt.hhhhh.eu.org
+  port: 443
+  uuid: c135158e-5869-4397-8116-6695ca18cd48
+  network: ws
+  servername: cf.hulume.ccwu.cc
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: cf.hulume.ccwu.cc
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_50
+  type: vless
+  server: www.epicgames.com
+  port: 443
+  uuid: c135158e-5869-4397-8116-6695ca18cd48
+  network: ws
+  servername: cf.hulume.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: cf.hulume.ccwu.cc
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_53
+  type: vless
+  server: 146.70.20.110
+  port: 20205
+  uuid: 00000000-0000-4000-8000-000000000000
+  network: ws
+  servername: nn9jdg-k7yewrrk.acg.xx.kg
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /@Marisa_kristi
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_54
+  type: vless
+  server: 93.179.99.130
+  port: 777
+  uuid: 00000000-0000-4000-8000-000000000000
+  network: ws
+  servername: nn9jdg-k7yewrrk.acg.xx.kg
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /@Marisa_kristi
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_56
+  type: vless
+  server: cf.0sm.com
+  port: 80
+  uuid: 93526fcb-8dbf-442e-a656-eb304f1da4ef
+  network: ws
+  tls: false
+  ws-opts:
+    path: /?ed=2048
+    headers:
+      Host: lucky-voice-d6f3.difat89954-0c6.workers.dev
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_57
+  type: vless
+  server: 172.67.76.108
+  port: 443
+  uuid: c135158e-5869-4397-8116-6695ca18cd48
+  network: ws
+  servername: cf.hulume.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: cf.hulume.ccwu.cc
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_58
   type: vless
   server: 141.101.121.196
   port: 443
@@ -1159,36 +1390,406 @@ proxies:
   skip-cert-verify: true
   udp: true
   cipher: auto
-- name: X_美国_27
+- name: X_美国_60
   type: vless
-  server: 45.136.58.34
+  server: 172.67.185.178
   port: 443
-  uuid: a6e72947-cd53-449e-8ae2-11140ea398df
-  encryption: mlkem768x25519plus.native.0rtt.nG3V55mC3ymWk7jI7HJBM4ou3sd9-9OlQpe7tsPiD0U
-  servername: www.samsung.com
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  network: ws
+  servername: hhlfy.twiladaphne.ndjp.net
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_61
+  type: vless
+  server: 172.64.53.74
+  port: 443
+  uuid: 77777777-8a3e-6666-b6d1-a9c5f0e8b3a2
+  network: ws
+  servername: fgnix832fx.fx6hsv0.ccwu.cc
   tls: true
   client-fingerprint: chrome
-  reality-opts:
-    public-key: DMliziQZIP7k6OYcVSTi6gZ5xqK595sbyrpdzI6CdUs
-    short-id: 70e2107044b9
+  ws-opts:
+    path: /
+    headers:
+      Host: fgnix832fx.fx6hsv0.ccwu.cc
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_63
+  type: vless
+  server: 173.245.58.62
+  port: 443
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  network: ws
+  servername: juzi.qea.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_64
+  type: vless
+  server: 172.67.111.41
+  port: 443
+  uuid: 69d38faa-21a1-4d18-82cb-796a942c181b
+  network: ws
+  servername: sfsl.ardomains1.dpdns.org
+  tls: true
+  ws-opts:
+    path: /
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_65
+  type: vless
+  server: 162.159.35.90
+  port: 443
+  uuid: c135158e-5869-4397-8116-6695ca18cd48
+  network: ws
+  servername: cf.hulume.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: cf.hulume.ccwu.cc
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_66
+  type: vless
+  server: www.nestle.com
+  port: 443
+  uuid: c135158e-5869-4397-8116-6695ca18cd48
+  network: ws
+  servername: cf.hulume.ccwu.cc
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: cf.hulume.ccwu.cc
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_67
+  type: vless
+  server: hongkongairport.com
+  port: 443
+  uuid: c135158e-5869-4397-8116-6695ca18cd48
+  network: ws
+  servername: cf.hulume.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: cf.hulume.ccwu.cc
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_68
+  type: vless
+  server: youxuan.cf.090227.xyz
+  port: 443
+  uuid: 00000000-0000-4000-8000-000000000000
+  network: ws
+  servername: rvbtoc55o588ipfx2qieoygyk0hur.saghv.filegear-sg.me
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /@Marisa_kristi
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_69
+  type: vless
+  server: 45.32.103.8
+  port: 20742
+  uuid: 00000000-0000-4000-8000-000000000000
+  network: ws
+  servername: nn9jdg-k7yewrrk.acg.xx.kg
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /@Marisa_kristi
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_70
+  type: vless
+  server: 162.159.38.172
+  port: 443
+  uuid: c135158e-5869-4397-8116-6695ca18cd48
+  network: ws
+  servername: cf.hulume.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: cf.hulume.ccwu.cc
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_73
+  type: vless
+  server: 104.16.0.5
+  port: 443
+  uuid: c135158e-5869-4397-8116-6695ca18cd48
+  network: ws
+  servername: cf.hulume.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: cf.hulume.ccwu.cc
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_74
+  type: vless
+  server: 104.16.0.4
+  port: 443
+  uuid: c135158e-5869-4397-8116-6695ca18cd48
+  network: ws
+  servername: cf.hulume.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: cf.hulume.ccwu.cc
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_75
+  type: vless
+  server: anadoluefes.com
+  port: 443
+  uuid: c135158e-5869-4397-8116-6695ca18cd48
+  network: ws
+  servername: cf.hulume.ccwu.cc
+  tls: true
+  ws-opts:
+    path: /
+    headers:
+      Host: cf.hulume.ccwu.cc
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_76
+  type: vless
+  server: 173.245.58.77
+  port: 443
+  uuid: a6f1755f-0140-4bea-8727-0db1bed7c4df
+  network: ws
+  servername: juzi.qea.ccwu.cc
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_80
+  type: vless
+  server: 158.178.225.153
+  port: 41493
+  uuid: 00000000-0000-4000-8000-000000000000
+  network: ws
+  servername: 020g5uxcxmqlndg.luyuju.dpdns.org
+  tls: true
+  client-fingerprint: firefox
+  ws-opts:
+    path: /@Marisa_kristi
   skip-cert-verify: true
   udp: true
   cipher: auto
 - name: X_日本_1
+  type: vmess
+  server: 2a02:6ea0:d32f::f8fe:349b
+  port: 24202
+  uuid: b20a7042-70ff-4376-a79f-b68f9edb7519
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /github.com/Alvin9999-newpac/fanqiang
+    headers:
+      Host: 2a02:6ea0:d32f::f8fe:349b
+  udp: true
+- name: X_美国_82
+  type: vless
+  server: 209.97.170.177
+  port: 74
+  uuid: 00000000-0000-4000-8000-000000000000
+  network: ws
+  servername: nn9jdg-k7yewrrk.acg.xx.kg
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /@Marisa_kristi
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_83
+  type: vmess
+  server: renderer-stream-1-411.mirra.now
+  port: 443
+  uuid: df9c9355-b02c-4c12-909d-0dbeb725d52b
+  alterId: 0
+  cipher: auto
+  tls: true
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api/v1/gpu-stream/socket
+    headers:
+      Host: renderer-stream-1-411.mirra.now
+  udp: true
+- name: X_法国
+  type: trojan
+  server: 172.64.152.23
+  port: 443
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: //assignment
+    headers:
+      Host: www.calmlunch.com
+  udp: true
+  cipher: auto
+- name: X_美国_84
+  type: vless
+  server: 213.179.69.150
+  port: 35130
+  uuid: 00000000-0000-4000-8000-000000000000
+  network: ws
+  servername: nn9jdg-k7yewrrk.acg.xx.kg
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /@Marisa_kristi
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_85
+  type: vless
+  server: 91.184.240.106
+  port: 433
+  uuid: 00000000-0000-4000-8000-000000000000
+  network: ws
+  servername: nn9jdg-k7yewrrk.acg.xx.kg
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /@Marisa_kristi
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_日本_2
   type: vless
   server: 151.101.108.223
   port: 443
-  uuid: 8bcdc02a-6197-4e5b-bbbf-4e7790d2796a
+  uuid: b4a00211-ae46-49bc-8f36-0c4425eb7e86
   network: ws
   servername: default.ssl.fastly.net
   tls: true
   ws-opts:
     path: /
     headers:
-      Host: nesfeshzksab.global.ssl.fastly.net
+      Host: nesfsheshab.global.ssl.fastly.net
   skip-cert-verify: true
   udp: true
   cipher: auto
+- name: X_美国_88
+  type: trojan
+  server: 104.17.131.88
+  port: 443
+  password: humanity
+  sni: www.gossipglove.com
+  skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /assignment
+    headers:
+      Host: www.gossipglove.com
+  udp: true
+  cipher: auto
+- name: X_美国_89
+  type: vless
+  server: 108.162.192.75
+  port: 443
+  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
+  network: ws
+  servername: octopusss4.com
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /tsghdws
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_90
+  type: vless
+  server: 104.18.155.229
+  port: 2053
+  uuid: e26b40ff-5182-42bf-8529-dbeb5859b46a
+  network: ws
+  servername: mrnetwork.pages.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /en/http://nz6dNVWWqy:iqKcbEJGQP@91.228.227.175:9996
+    headers:
+      Host: mrnetwork.pages.dev
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_91
+  type: vless
+  server: 104.17.62.57
+  port: 443
+  uuid: 57dc2c12-e27f-a250-2479-6eed68599b66
+  network: ws
+  servername: misty-salad-77ae.hiupokjiop.workers.dev
+  tls: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /mahdi--mmahdi--mahdi----mahdi--mahdi--mahdi
+    headers:
+      Host: misty-salad-77ae.hiupokjiop.workers.dev
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_94
+  type: vmess
+  server: 172.67.187.219
+  port: 80
+  uuid: 65b17c0b-0a52-4b54-9bc9-60e31397b841
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /65b17c0b-0a52-4b54-9bc9-60e31397b841-vmess
+    headers:
+      Host: accklsj.bufu.us.ci
+  udp: true
 - name: X_🇵🇱_PL_波兰
   type: vless
   server: pl.prostosetup.org
@@ -1203,6 +1804,16 @@ proxies:
     short-id: 514d02a2addd6476
   udp: true
   cipher: auto
+- name: X_🇲🇾_MY_马来西亚->🇺🇸_US_美国
+  type: vmess
+  server: v24.hdacd.com
+  port: 30824
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
 - name: X_🇳🇱_NL_荷兰
   type: vless
   server: 144.124.228.113
@@ -1472,30 +2083,69 @@ proxy-groups:
   - 🇭🇰_HK_中国香港_3
   - X_每天更新，请加电报群防止失联
   - X_电报群：https://t.me/vvkj11
-  - X_免费VPN：https://tt.vg/OWeaF
-  - X_法国
-  - X_中国香港
   - X_美国
+  - X_美国_11
+  - X_德国_1
+  - X_美国_13
   - X_日本
-  - X_德国
-  - X_英国
+  - X_俄罗斯_5
+  - X_美国_28
+  - X_美国_31
+  - X_德国_9
+  - X_德国_10
+  - X_中国香港
+  - X_美国_32
+  - X_中国香港_1
+  - X_马来西亚
+  - X_美国_33
+  - X_美国_34
   - X_新加坡
-  - X_美国_1
-  - X_爱尔兰
-  - X_中国台湾
-  - X_新加坡_1
-  - X_中国台湾_1
-  - X_美国_2
-  - X_美国_3
-  - X_美国_4
-  - X_美国_5
-  - X_美国_6
-  - X_美国_7
-  - X_美国_22
-  - X_美国_26
-  - X_美国_27
+  - X_美国_35
+  - X_美国_36
+  - X_美国_37
+  - X_美国_39
+  - X_美国_40
+  - X_美国_42
+  - X_美国_43
+  - X_美国_44
+  - X_美国_47
+  - X_美国_48
+  - X_美国_49
+  - X_美国_50
+  - X_美国_53
+  - X_美国_54
+  - X_美国_56
+  - X_美国_57
+  - X_美国_58
+  - X_美国_60
+  - X_美国_61
+  - X_美国_63
+  - X_美国_64
+  - X_美国_65
+  - X_美国_66
+  - X_美国_67
+  - X_美国_68
+  - X_美国_69
+  - X_美国_70
+  - X_美国_73
+  - X_美国_74
+  - X_美国_75
+  - X_美国_76
+  - X_美国_80
   - X_日本_1
+  - X_美国_82
+  - X_美国_83
+  - X_法国
+  - X_美国_84
+  - X_美国_85
+  - X_日本_2
+  - X_美国_88
+  - X_美国_89
+  - X_美国_90
+  - X_美国_91
+  - X_美国_94
   - X_🇵🇱_PL_波兰
+  - X_🇲🇾_MY_马来西亚->🇺🇸_US_美国
   - X_🇳🇱_NL_荷兰
   - X_🇭🇰_HK_中国香港->🇹🇼_TW_中国台湾
   - X_🇫🇮_FI_芬兰
