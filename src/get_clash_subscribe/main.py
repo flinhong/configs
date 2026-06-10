@@ -105,7 +105,8 @@ def get_dynamic_urls(is_auto=False):
         return [
             *(t.format(date=current_date.strftime(fmt)) for t, fmt in DATE_BASED_URL_TEMPLATES),
             "https://tt.vg/freeclash",
-            "https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/c.yaml",
+            "https://raw.githubusercontent.com/free18/v2ray/main/c.yaml",
+            "https://raw.githubusercontent.com/Ruk1ng001/freeSub/main/clash.yaml"
         ]
     else:
         return [
