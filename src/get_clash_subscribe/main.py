@@ -25,6 +25,8 @@ HEADERS = {
     "Referer": "https://bing.com/",
 }
 TIMEOUT = 30  # Seconds
+RULES_DIR = './public/rules'
+RULES_BASE_URL = "https://cdn.honglin.ac.cn/statically/gh/flinhong/configs/public/rules"
 
 def setup_logging():
     if not os.path.exists(LOG_DIR):
@@ -290,6 +292,52 @@ def merge_proxies_to_config(config, lb_proxies, auto_proxies):
     config['proxy-groups'] = groups
     return config
 
+def convert_list_to_yaml(content):
+    lines = []
+    for line in content.splitlines():
+        stripped = line.strip()
+        if not stripped:
+            lines.append('')
+        elif stripped.startswith('#'):
+            lines.append(stripped)
+        else:
+            lines.append(f"- {stripped}")
+    return 'payload:\n' + '\n'.join(f'  {l}' if l else '' for l in lines)
+
+def download_rule_providers(config):
+    providers = config.get('rule-providers', {})
+    if not providers:
+        return
+
+    if not os.path.exists(RULES_DIR):
+        os.makedirs(RULES_DIR)
+
+    for name, provider in providers.items():
+        url = provider.get('url', '')
+        if not url:
+            continue
+
+        local_filename = f"{name}.yaml"
+        local_path = os.path.join(RULES_DIR, local_filename)
+
+        content = fetch_content(url)
+        if content:
+            yaml_content = convert_list_to_yaml(content)
+            try:
+                with open(local_path, 'w', encoding='utf-8') as f:
+                    f.write(yaml_content)
+                logging.info(f"Downloaded rule-provider {name} -> {local_path}")
+            except Exception as e:
+                logging.error(f"Failed to write rule-provider {name}: {e}")
+                continue
+        else:
+            logging.warning(f"Failed to download rule-provider {name} from {url}, keeping original URL")
+            continue
+
+        provider['url'] = f"{RULES_BASE_URL}/{local_filename}"
+        provider['path'] = f"./rules/{local_filename}"
+        logging.info(f"Updated rule-provider {name} URL to {provider['url']}")
+
 def main():
     setup_logging()
     
@@ -318,7 +366,11 @@ def main():
         logging.error(f"Failed to parse main subscription: {e}")
         return
 
-    # 2. Fetch Extra Proxies (Concurrently)
+    # 2. Download Rule Providers
+    logging.info("Downloading rule-providers...")
+    download_rule_providers(config)
+
+    # 3. Fetch Extra Proxies (Concurrently)
     logging.info("Fetching extra proxies...")
     
     lb_urls = get_dynamic_urls(is_auto=False)
