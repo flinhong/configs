@@ -306,6 +306,105 @@ proxies:
   ws-opts:
     path: /arki?ed=2048
   udp: true
+- alterId: 2
+  cipher: auto
+  name: X_🇭🇰 香港|@ripaojiedian
+  port: 30807
+  server: v10.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- name: X_香港3|@ripaojiedian
+  network: tcp
+  password: d02e3bb7e6b3333e818d36866d40de6e
+  port: 2008
+  server: 43.198.151.48
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+  cipher: auto
+- name: X_香港4|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 43747
+  server: 95.40.47.95
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+  cipher: auto
+- name: X_日本|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 53307
+  server: 52.195.147.173
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan
+  cipher: auto
+- name: X_日本2|@ripaojiedian
+  network: tcp
+  password: d02e3bb7e6b3333e818d36866d40de6e
+  port: 5701
+  server: 95.40.109.247
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+  cipher: auto
+- name: X_日本3|@ripaojiedian
+  network: tcp
+  password: d02e3bb7e6b3333e818d36866d40de6e
+  port: 3743
+  server: 35.79.220.32
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+  cipher: auto
+- name: X_美国|@ripaojiedian
+  network: tcp
+  password: d02e3bb7e6b3333e818d36866d40de6e
+  port: 17005
+  server: 43.199.62.44
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+  cipher: auto
+- name: X_美国3|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 54240
+  server: 16.162.220.245
+  skip-cert-verify: true
+  sni: t.me%2Fripaojiedian
+  type: trojan
+  cipher: auto
+- alterId: 0
+  cipher: auto
+  name: X_🇺🇸 美国4|@ripaojiedian
+  port: 180
+  server: 82.198.246.250
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: X_🇫🇷FR_2|2.2MB/s
+  network: ws
+  port: '80'
+  server: 51.254.133.152
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: ac8bcf5e-bb58-4e8b-b4e4-5fdea010a6c6
+  ws-opts:
+    headers:
+      Host: fr5.niekotin.de
+    path: /vmess
+  xudp: true
 - name: X_HK_speednode_0001
   server: 103.149.183.113
   port: 8388
@@ -950,374 +1049,98 @@ proxies:
     short-id: e6d59aff03e5b0
   udp: true
   cipher: auto
-- alterId: 2
-  cipher: auto
-  name: X_🇭🇰 香港|@ripaojiedian
-  port: 30807
-  server: v10.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: X_香港3|@ripaojiedian
-  network: tcp
-  password: d02e3bb7e6b3333e818d36866d40de6e
-  port: 2008
-  server: 43.198.151.48
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-  cipher: auto
-- name: X_香港4|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 43747
-  server: 95.40.47.95
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-  cipher: auto
-- name: X_日本|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 53307
-  server: 52.195.147.173
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-  cipher: auto
-- name: X_日本2|@ripaojiedian
-  network: tcp
-  password: d02e3bb7e6b3333e818d36866d40de6e
-  port: 5701
-  server: 95.40.109.247
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-  cipher: auto
-- name: X_日本3|@ripaojiedian
-  network: tcp
-  password: d02e3bb7e6b3333e818d36866d40de6e
-  port: 3743
-  server: 35.79.220.32
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-  cipher: auto
-- name: X_美国|@ripaojiedian
-  network: tcp
-  password: d02e3bb7e6b3333e818d36866d40de6e
-  port: 17005
-  server: 43.199.62.44
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-  cipher: auto
-- name: X_美国3|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 54240
-  server: 16.162.220.245
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-  cipher: auto
-- alterId: 0
-  cipher: auto
-  name: X_🇺🇸 美国4|@ripaojiedian
-  port: 180
-  server: 82.198.246.250
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- alterId: 2
-  cipher: auto
-  name: X_🇮🇪IE_1|2.5MB/s
-  network: tcp
-  port: 30808
-  server: v8.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  xudp: true
 - name: X_每天更新，请加电报群防止失联
-  type: vless
-  server: 85.234.114.53
-  port: 22231
-  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
-  servername: r1.mizulina.top
-  tls: true
-  client-fingerprint: chrome
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_电报群：https://t.me/vvkj11
   type: vmess
-  server: 154.37.223.19
-  port: 56972
-  uuid: ae225455-5e8c-491d-d931-c06ac56f4aee
+  server: 82.198.246.250
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
   udp: true
-- name: X_日期：06-10
+- name: X_英国_2
   type: vmess
-  server: v10.hdacd.com
-  port: 30807
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
+  server: 82.198.246.214
+  port: 180
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  alterId: 0
   cipher: auto
   tls: false
   skip-cert-verify: true
   udp: true
-- name: X_免费VPN：https://tt.vg/OWeaF
-  type: vmess
-  server: 103.182.97.12
-  port: 30806
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: X_德国
-  type: vmess
-  server: v33.hdacd.com
-  port: 30833
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: X_法国
-  type: vmess
-  server: v35.hdacd.com
-  port: 30835
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: X_日本
+- name: X_英国_7
   type: vless
   server: 1.sdwan.realm-sync.com
-  port: 5454
+  port: 5457
   uuid: 8faf6e38-0531-4d63-91f0-2aba5b9ff864
   servername: swcdn.apple.com
   tls: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
   reality-opts:
-    public-key: 7Mb18pl7fH3NvhVevIVTgRdPlAorUucOWMlUaTrDV0o
-    short-id: 4265cc8365
+    public-key: 8Ct9wBZLha-ePZMWbSau9ViKgbwlCgEsbGMjNnoVDzw
+    short-id: 9da3779ceafd
   skip-cert-verify: true
   udp: true
   cipher: auto
-- name: X_中国香港
-  type: vmess
-  server: v9.hdacd.com
-  port: 30809
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
-  cipher: auto
-  tls: false
+- name: X_英国_8
+  type: vless
+  server: 85.234.114.53
+  port: 443
+  uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
+  servername: r1.mizulina.top
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: edge
   skip-cert-verify: true
   udp: true
-- name: X_日本_1
-  type: vmess
-  server: v6.hdacd.com
-  port: 30806
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  alterId: 2
   cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: X_荷兰
+- name: X_英国_10
   type: vless
   server: r1.mizulina.top
   port: 22231
   uuid: afcac633-0e1a-46c3-bef2-cc01cc0097c8
   servername: r1.mizulina.top
   tls: true
-  client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  client-fingerprint: edge
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_日本
+  type: vmess
+  server: 2a02:6ea0:d32f::f8fe:349b
+  port: 24202
+  uuid: b20a7042-70ff-4376-a79f-b68f9edb7519
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /github.com/Alvin9999-newpac/fanqiang
+    headers:
+      Host: 2a02:6ea0:d32f::f8fe:349b
+  udp: true
+- name: X_日本_2
+  type: vless
+  server: 13.193.215.148
+  port: 57921
+  uuid: f4e306dd-7919-41a1-bc29-5a37408e92a6
+  servername: www.nvidia.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: MZUXW6zSUtYRBiP7Zu7v6A5AjhrbSgOOz731CJhE3EQ
+    short-id: 2c35f2ac05bf15a0
   skip-cert-verify: true
   udp: true
   cipher: auto
 - name: X_美国
-  type: vmess
-  server: 82.198.246.214
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: aes-128-gcm
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: X_美国_1
-  type: vmess
-  server: 82.198.246.250
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  udp: true
-- name: X_美国_3
-  type: vmess
-  server: 103.179.142.212
-  port: 22047
-  uuid: 948763b5-a064-453c-a015-185cb183bbfe
-  alterId: 0
-  cipher: auto
-  tls: false
-  skip-cert-verify: true
-  network: ws
-  udp: true
-- name: X_德国_2
-  type: trojan
-  server: 3.70.90.66
-  port: 22222
-  password: telegram-id-privatevpns
-  sni: trojan.burgerip.co.uk
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  cipher: auto
-- name: X_德国_4
-  type: trojan
-  server: 18.196.209.211
-  port: 22222
-  password: telegram-id-privatevpns
-  sni: trojan.burgerip.co.uk
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  cipher: auto
-- name: X_德国_5
   type: vless
-  server: cloudflare-ip.mofashi.ltd
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_俄罗斯
-  type: vless
-  server: cloud.cdnru.net
-  port: 443
-  uuid: 33612cbf-0639-4285-81da-f88eba1d4f85
-  servername: cloud.cdnru.net
-  tls: true
-  flow: xtls-rprx-vision
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_法国_1
-  type: trojan
-  server: 90081bb25c.node.tro.cac.cab
-  port: 45619
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: fr.01.naiun.bilibili.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  cipher: auto
-- name: X_刚果(金)
-  type: vless
-  server: cf.008500.xyz
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_韩国
-  type: vless
-  server: 15.164.84.61
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_韩国_1
-  type: vless
-  server: 54.180.151.15
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_加拿大
-  type: vless
-  server: p.nooshindns.com
-  port: 8443
-  uuid: b9e32788-348d-4b38-ab6f-e999a8443dfd
-  network: ws
-  servername: p.nooshindns.com
-  tls: true
-  ws-opts:
-    path: /
-    headers:
-      Host: p.nooshindns.com
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_加拿大_1
-  type: vless
-  server: speedtest.net
-  port: 80
-  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_加拿大_2
-  type: vless
-  server: 199.232.197.131
+  server: 151.101.194.219
   port: 80
   uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
   network: ws
@@ -1329,1458 +1152,37 @@ proxies:
   skip-cert-verify: true
   udp: true
   cipher: auto
-- name: X_加拿大_3
+- name: X_美国_1
   type: vless
-  server: 151.101.0.1
-  port: 80
-  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_加拿大_4
-  type: vless
-  server: 151.101.66.219
-  port: 80
-  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
-  network: ws
-  tls: false
-  ws-opts:
-    path: /
-    headers:
-      Host: max-gb1.global.ssl.fastly.net
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_4
-  type: trojan
-  server: 103.177.136.45
-  port: 47909
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: is.01.naiun.bilibili.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  cipher: auto
-- name: X_美国_5
-  type: trojan
-  server: 103.177.136.43
-  port: 47909
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: is.01.naiun.bilibili.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  cipher: auto
-- name: X_美国_6
-  type: trojan
-  server: 103.177.136.44
-  port: 41943
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: az.01.naiun.bilibili.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  cipher: auto
-- name: X_美国_8
-  type: trojan
-  server: 188.253.12.90
-  port: 46424
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: de.01.naiun.bilibili.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  cipher: auto
-- name: X_美国_12
-  type: trojan
-  server: 155.117.198.85
-  port: 46424
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: de.01.naiun.bilibili.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  cipher: auto
-- name: X_美国_13
-  type: trojan
-  server: 188.253.12.93
-  port: 48697
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: gh.01.naiun.bilibili.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  cipher: auto
-- name: X_美国_14
-  type: trojan
-  server: 188.253.12.96
-  port: 47909
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: is.01.naiun.bilibili.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  cipher: auto
-- name: X_美国_17
-  type: vless
-  server: 31.56.188.90
-  port: 7443
-  uuid: adea61c0-0bb2-4ad3-8dba-7766eebd50f8
-  servername: mi.com
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: firefox
-  reality-opts:
-    public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
-    short-id: be0ce047
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_18
-  type: trojan
-  server: 188.253.12.99
-  port: 46424
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: de.01.naiun.bilibili.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  cipher: auto
-- name: X_美国_19
-  type: trojan
-  server: 155.117.198.84
-  port: 46424
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: de.01.naiun.bilibili.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  cipher: auto
-- name: X_美国_20
-  type: trojan
-  server: 155.117.198.3
-  port: 47909
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: is.01.naiun.bilibili.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  cipher: auto
-- name: X_美国_21
-  type: trojan
-  server: 155.117.198.89
-  port: 48697
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: gh.01.naiun.bilibili.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  cipher: auto
-- name: X_美国_25
-  type: trojan
-  server: 188.253.12.98
-  port: 41943
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: az.01.naiun.bilibili.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  cipher: auto
-- name: X_美国_26
-  type: trojan
-  server: 188.253.12.92
-  port: 41943
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: az.01.naiun.bilibili.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  cipher: auto
-- name: X_美国_28
-  type: trojan
-  server: 188.253.12.94
-  port: 48697
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: gh.01.naiun.bilibili.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  cipher: auto
-- name: X_美国_48
-  type: trojan
-  server: 155.117.198.90
-  port: 45553
-  password: 4f4d1167-ef14-4304-9bce-0740472503ef
-  sni: ch.01.naiun.bilibili.com
-  skip-cert-verify: true
-  tls: true
-  udp: true
-  cipher: auto
-- name: X_美国_60
-  type: vless
-  server: mfa.gov.ua
+  server: lt.hhhhh.eu.org
   port: 443
-  uuid: 00000000-0000-4000-8000-000000000000
+  uuid: c135158e-5869-4397-8116-6695ca18cd48
   network: ws
-  servername: nn9jdg-k7yewrrk.acg.xx.kg
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_61
-  type: vless
-  server: 166.88.167.206
-  port: 30715
-  uuid: 00000000-0000-4000-8000-000000000000
-  network: ws
-  servername: nn9jdg-k7yewrrk.acg.xx.kg
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_62
-  type: vless
-  server: 69.63.216.10
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
+  servername: cf.hulume.ccwu.cc
   tls: true
   client-fingerprint: chrome
   ws-opts:
     path: /
     headers:
-      Host: qsiim.jfpct.sbs
+      Host: cf.hulume.ccwu.cc
   skip-cert-verify: true
   udp: true
   cipher: auto
-- name: X_美国_63
-  type: vless
-  server: 154.26.176.148
-  port: 8443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_64
+- name: X_美国_3
   type: trojan
   server: 165.215.250.14
   port: 443
   password: humanity
-  sni: www.ignitelimit.com
+  sni: www.calmlunch.com
   skip-cert-verify: true
   tls: true
   ws-opts:
     path: /assignment
     headers:
-      Host: www.ignitelimit.com
+      Host: www.calmlunch.com
   udp: true
   cipher: auto
-- name: X_美国_65
-  type: vless
-  server: 146.70.20.110
-  port: 20205
-  uuid: 00000000-0000-4000-8000-000000000000
-  network: ws
-  servername: nn9jdg-k7yewrrk.acg.xx.kg
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_66
-  type: vless
-  server: 93.179.99.130
-  port: 777
-  uuid: 00000000-0000-4000-8000-000000000000
-  network: ws
-  servername: nn9jdg-k7yewrrk.acg.xx.kg
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_68
-  type: vless
-  server: 64.186.229.189
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_69
-  type: vless
-  server: 209.97.170.177
-  port: 74
-  uuid: 00000000-0000-4000-8000-000000000000
-  network: ws
-  servername: nn9jdg-k7yewrrk.acg.xx.kg
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_70
-  type: vless
-  server: 45.32.103.8
-  port: 20742
-  uuid: 00000000-0000-4000-8000-000000000000
-  network: ws
-  servername: nn9jdg-k7yewrrk.acg.xx.kg
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_71
-  type: vless
-  server: 154.17.13.158
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_72
-  type: vless
-  server: 213.179.69.150
-  port: 35130
-  uuid: 00000000-0000-4000-8000-000000000000
-  network: ws
-  servername: nn9jdg-k7yewrrk.acg.xx.kg
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_73
-  type: vless
-  server: 91.184.240.106
-  port: 433
-  uuid: 00000000-0000-4000-8000-000000000000
-  network: ws
-  servername: nn9jdg-k7yewrrk.acg.xx.kg
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_74
-  type: vless
-  server: 91.149.203.13
-  port: 15429
-  uuid: 00000000-0000-4000-8000-000000000000
-  network: ws
-  servername: nn9jdg-k7yewrrk.acg.xx.kg
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_75
-  type: vless
-  server: 69.63.212.251
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_76
-  type: vless
-  server: 154.21.87.223
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_77
-  type: vless
-  server: yx.cloudflare.182682.xyz
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_78
-  type: vless
-  server: cf.877774.xyz
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_79
-  type: vless
-  server: www.shopify.com
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_80
-  type: vless
-  server: 64.186.227.87
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_81
-  type: vless
-  server: 64.186.252.166
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_82
-  type: vless
-  server: 69.63.214.61
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_83
-  type: vless
-  server: 154.17.22.207
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_84
-  type: vless
-  server: 154.21.82.135
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_85
-  type: vless
-  server: 64.186.232.60
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_86
-  type: vless
-  server: 154.26.180.8
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_87
-  type: vless
-  server: 154.17.23.239
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_88
-  type: vless
-  server: 154.17.26.200
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_89
-  type: vless
-  server: 69.63.212.192
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_90
-  type: vless
-  server: 154.17.26.148
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_91
-  type: vless
-  server: 154.26.187.69
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_92
-  type: vless
-  server: 154.26.186.78
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_93
-  type: vless
-  server: 154.21.94.7
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_94
-  type: vless
-  server: 69.63.213.250
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_95
-  type: vless
-  server: 154.21.95.59
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_96
-  type: vless
-  server: 154.17.1.231
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_97
-  type: vless
-  server: 154.17.24.174
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_98
-  type: vless
-  server: 154.17.12.91
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_99
-  type: vless
-  server: 64.186.225.82
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_100
-  type: vless
-  server: 64.186.236.167
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_101
-  type: vless
-  server: 154.17.22.175
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_102
-  type: vless
-  server: 154.17.9.145
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_103
-  type: vless
-  server: 154.26.181.85
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_104
-  type: vless
-  server: 64.186.241.154
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_105
-  type: vless
-  server: 69.63.217.6
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_106
-  type: vless
-  server: 154.21.95.165
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_107
-  type: vless
-  server: 154.26.187.44
-  port: 8443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_108
-  type: vless
-  server: 154.17.6.235
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_109
-  type: vless
-  server: 64.186.230.172
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_110
-  type: vless
-  server: 154.17.8.84
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_111
-  type: vless
-  server: 64.186.238.108
-  port: 8443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_112
-  type: vless
-  server: 64.186.236.235
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_113
-  type: vless
-  server: 64.186.228.41
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_114
-  type: vless
-  server: 64.186.226.62
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_115
-  type: vless
-  server: 154.17.25.156
-  port: 8443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_116
-  type: vless
-  server: 69.63.212.210
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_117
-  type: vless
-  server: 64.186.239.202
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_118
-  type: vless
-  server: 64.186.235.57
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_119
-  type: vless
-  server: 69.63.211.169
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_120
-  type: vless
-  server: 64.186.232.37
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_121
-  type: vless
-  server: 154.17.4.26
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_122
-  type: vless
-  server: 154.17.13.184
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_123
-  type: vless
-  server: 154.17.4.159
-  port: 2053
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_124
-  type: vless
-  server: 64.186.231.175
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_125
-  type: vless
-  server: 69.63.223.47
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_126
-  type: vless
-  server: 69.63.223.42
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_127
-  type: vless
-  server: 154.17.11.153
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_128
-  type: vless
-  server: 64.186.233.224
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_129
-  type: vless
-  server: 154.26.183.243
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_130
-  type: vless
-  server: 69.63.193.64
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_131
-  type: vless
-  server: 154.21.81.140
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_132
-  type: vless
-  server: 64.186.232.121
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_133
-  type: vless
-  server: 154.17.14.241
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_134
-  type: vless
-  server: 64.186.248.118
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_135
-  type: vless
-  server: 69.63.218.168
-  port: 10101
-  uuid: 00000000-0000-4000-8000-000000000000
-  network: ws
-  servername: vfn-6o8h-kht7rpd.zipgd3vx91o.ddns-ip.net
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /@Marisa_kristi
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_136
-  type: vless
-  server: 69.63.206.96
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_137
-  type: vless
-  server: 69.63.222.124
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_138
-  type: vless
-  server: 154.26.184.229
-  port: 8443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_139
-  type: vless
-  server: 64.186.225.11
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_140
-  type: vless
-  server: 154.17.2.59
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_美国_141
+- name: X_美国_6
   type: vless
   server: 31.185.108.30
   port: 8880
@@ -2794,583 +1196,446 @@ proxies:
   skip-cert-verify: true
   udp: true
   cipher: auto
-- name: X_美国_142
+- name: X_美国_7
   type: vless
-  server: 64.186.229.220
+  server: 141.193.213.30
   port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
   network: ws
-  servername: qsiim.jfpct.sbs
+  servername: octopusss4.com
   tls: true
   client-fingerprint: chrome
   ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
+    path: /tsghdws
   skip-cert-verify: true
   udp: true
   cipher: auto
-- name: X_美国_143
+- name: X_美国_8
   type: vless
-  server: www.ntu.edu.sg
+  server: speedtest.net
+  port: 80
+  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_9
+  type: vless
+  server: 151.101.0.1
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_10
+  type: trojan
+  server: 11u8k6n04q3y4ajoai.lovebaipiao.net
   port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
+  password: 497dae1f-6db8-4c35-957f-ceb8c1500909
+  sni: 11u8k6n04q3y4ajoai.lovebaipiao.net
   skip-cert-verify: true
+  tls: true
+  ws-opts:
+    path: /89a0z7oqmwpkfhp4/mmq32sjmt37omy2b
+    headers:
+      Host: baidu.com
   udp: true
   cipher: auto
-- name: X_美国_144
+- name: X_美国_11
   type: vless
-  server: 154.26.189.70
+  server: 89.116.46.8
   port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
+  uuid: fc965ad9-bdd7-4815-ad71-b39ec5972dc1
   network: ws
-  servername: qsiim.jfpct.sbs
+  servername: octopusss4.com
   tls: true
-  client-fingerprint: chrome
   ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
+    path: /tsghdws
   skip-cert-verify: true
   udp: true
   cipher: auto
-- name: X_美国_145
-  type: vless
-  server: 174.136.205.24
-  port: 8443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
+- name: X_美国_12
+  type: trojan
+  server: 188.253.12.99
+  port: 46424
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: de.01.naiun.bilibili.com
   skip-cert-verify: true
+  tls: true
   udp: true
   cipher: auto
-- name: X_美国_146
-  type: vless
-  server: 136.175.179.113
-  port: 8443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
+- name: X_美国_16
+  type: trojan
+  server: 188.253.12.94
+  port: 45553
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: ch.01.naiun.bilibili.com
   skip-cert-verify: true
+  tls: true
   udp: true
   cipher: auto
-- name: X_美国_147
-  type: vless
-  server: 154.17.225.54
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
+- name: X_美国_19
+  type: trojan
+  server: 188.253.12.92
+  port: 41943
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: az.01.naiun.bilibili.com
   skip-cert-verify: true
+  tls: true
   udp: true
   cipher: auto
-- name: X_美国_148
+- name: X_美国_20
+  type: trojan
+  server: 188.253.12.98
+  port: 47909
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: is.01.naiun.bilibili.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  cipher: auto
+- name: X_美国_24
+  type: trojan
+  server: 188.253.12.93
+  port: 41943
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: az.01.naiun.bilibili.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  cipher: auto
+- name: X_美国_43
   type: vless
-  server: 23.141.52.196
-  port: 51700
-  uuid: e6082798-61ab-4167-9653-67883f5f0166
-  servername: www.amd.com
+  server: 34.222.27.94
+  port: 42824
+  uuid: 52a8ef22-2670-4119-8623-98c0baa7ae74
+  servername: www.nvidia.com
   tls: true
   flow: xtls-rprx-vision
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   reality-opts:
-    public-key: cJ0oDse0aPBi7c4UCxQgMP1UNoBPZ2NDB8aL_17G0HQ
-    short-id: d18340
+    public-key: dgRCtQunFv3gRWN29nDbzyGVzXTWuMUa0bvWZxq0B3o
+    short-id: 66a5ca7fd2bca7da
   skip-cert-verify: true
   udp: true
   cipher: auto
-- name: X_日本_2
+- name: X_美国_45
   type: vless
-  server: 8.209.231.3
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
+  server: newyorkcity.instasup.ir
+  port: 1004
+  uuid: ad356e93-cc14-417d-9f4e-32376d03f5b7
+  servername: yahoo.com
   tls: true
-  client-fingerprint: chrome
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: 437UW8qHz_L4qlOZ_AgufdsA9me_uS5MWM-eptxM3w4
+    short-id: 998ad2ef2d977802
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_46
+  type: vless
+  server: 147.90.234.202
+  port: 27758
+  uuid: 497dae1f-6db8-4c35-957f-ceb8c1500909
+  servername: www.fourplex.net
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: safari
+  reality-opts:
+    public-key: xU0H8062b3J3Zh1LpRB2Fyi1fYYRzu3tdGT_CzZolBo
+    short-id: cec1595d
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_47
+  type: vless
+  server: 147.90.234.200
+  port: 443
+  uuid: 497dae1f-6db8-4c35-957f-ceb8c1500909
+  servername: www.lamer.com.hk
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: ios
+  reality-opts:
+    public-key: h7zG7IJbN9NcuazkYc7abwjJo-j-uzqgOgsl4yIbO3g
+    short-id: cfad6c4b
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_美国_48
+  type: trojan
+  server: 90081bb25c.node.tro.cac.cab
+  port: 45553
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: ch.01.naiun.bilibili.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  cipher: auto
+- name: X_美国_50
+  type: trojan
+  server: 155.117.198.89
+  port: 45619
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: fr.01.naiun.bilibili.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  cipher: auto
+- name: X_美国_53
+  type: trojan
+  server: 155.117.198.84
+  port: 46424
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: de.01.naiun.bilibili.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  cipher: auto
+- name: X_美国_56
+  type: trojan
+  server: 155.117.198.85
+  port: 46424
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: de.01.naiun.bilibili.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  cipher: auto
+- name: X_美国_60
+  type: trojan
+  server: 155.117.198.3
+  port: 47909
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: is.01.naiun.bilibili.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  cipher: auto
+- name: X_美国_68
+  type: trojan
+  server: 103.177.136.43
+  port: 47909
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: is.01.naiun.bilibili.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  cipher: auto
+- name: X_美国_69
+  type: trojan
+  server: 103.177.136.42
+  port: 46424
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: de.01.naiun.bilibili.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  cipher: auto
+- name: X_美国_70
+  type: trojan
+  server: 103.177.136.44
+  port: 45553
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: ch.01.naiun.bilibili.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  cipher: auto
+- name: X_美国_74
+  type: trojan
+  server: 103.177.136.45
+  port: 47909
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  sni: is.01.naiun.bilibili.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  cipher: auto
+- name: X_加拿大
+  type: vless
+  server: 151.101.66.219
+  port: 80
+  uuid: cabbfe13-038b-4dbb-9c45-5079c829abfa
+  network: ws
+  tls: false
   ws-opts:
     path: /
     headers:
-      Host: qsiim.jfpct.sbs
+      Host: max-gb1.global.ssl.fastly.net
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_加拿大_1
+  type: vless
+  server: 151.101.130.219
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_加拿大_3
+  type: vless
+  server: 199.232.197.131
+  port: 80
+  uuid: 0058c215-ab1e-400c-a403-b5b2fda7e846
+  network: ws
+  tls: false
+  ws-opts:
+    path: /
+    headers:
+      Host: max-gb1.global.ssl.fastly.net
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_加拿大_4
+  type: vless
+  server: ip.feywebsite.ir
+  port: 2096
+  uuid: ad356e93-cc14-417d-9f4e-32376d03f5b7
+  network: ws
+  servername: 07e357aa7e747ca4.hOzHeEn.Ir
+  tls: true
+  ws-opts:
+    path: /ws
+    headers:
+      Host: greattehran.hozheen.ir
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_加拿大_5
+  type: vless
+  server: 104.20.6.134
+  port: 2096
+  uuid: ad356e93-cc14-417d-9f4e-32376d03f5b7
+  network: ws
+  servername: 4dcb0d80784f3081.hozheen.ir
+  tls: true
+  ws-opts:
+    path: /ws
+    headers:
+      Host: newgen14.hozheen.ir
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_法国
+  type: vmess
+  server: 172.67.187.219
+  port: 80
+  uuid: 65b17c0b-0a52-4b54-9bc9-60e31397b841
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /65b17c0b-0a52-4b54-9bc9-60e31397b841-vmess
+    headers:
+      Host: accklsj.bufu.us.ci
+  udp: true
+- name: X_法国_1
+  type: trojan
+  server: 46.29.142.57
+  port: 4443
+  password: 0ldyjdhd-vpnjantit.com
+  sni: hu2.vpnjantit.com
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  cipher: auto
+- name: X_俄罗斯_8
+  type: vless
+  server: cloud.cdnru.net
+  port: 443
+  uuid: 33612cbf-0639-4285-81da-f88eba1d4f85
+  servername: cloud.cdnru.net
+  tls: true
+  flow: xtls-rprx-vision
+  skip-cert-verify: true
+  udp: true
+  cipher: auto
+- name: X_德国_2
+  type: vless
+  server: 78.17.96.198
+  port: 443
+  uuid: 3ef170be-05d0-479c-9753-aa2f860964ea
+  servername: cloudflare.com
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: firefox
+  reality-opts:
+    public-key: C1hW1bTA9WOacIK-fHHg-HLkDZ3FY7FhEhAyldMSUEA
+    short-id: a1b2c3d4e5f6
   skip-cert-verify: true
   udp: true
   cipher: auto
 - name: X_日本_3
-  type: vless
-  server: 54.199.97.220
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_日本_4
-  type: vless
-  server: 8.211.161.198
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_日本_5
-  type: vless
-  server: 54.248.143.139
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_日本_6
-  type: vless
-  server: 35.74.74.6
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_日本_7
-  type: vless
-  server: 52.194.99.211
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_日本_8
-  type: vless
-  server: 52.193.174.161
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_日本_9
-  type: vless
-  server: 16.76.68.102
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_日本_10
-  type: vless
-  server: 54.65.58.58
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_日本_11
-  type: vless
-  server: 8.216.5.125
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_日本_12
-  type: vless
-  server: 8.219.195.31
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_日本_13
-  type: vless
-  server: 8.219.155.125
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_日本_14
-  type: vless
-  server: 8.222.193.153
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_日本_15
-  type: vless
-  server: 8.222.185.236
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_香港
-  type: vless
-  server: releases.capitaledge.blog
-  port: 8448
-  uuid: af2e1391-e1df-4939-906f-93ee993c940e
-  servername: aliusfilms.ru
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: cynncQk7kKzEQaExg-FN7pMqFaZPSXEi_Ggy7AXXmVg
-    short-id: bb44cc55
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_新加坡
-  type: vless
-  server: 13.250.131.37
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_新加坡_1
-  type: vless
-  server: 52.76.97.123
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_新加坡_2
-  type: vless
-  server: 8.219.154.217
-  port: 8443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_新加坡_3
-  type: vless
-  server: 47.82.155.79
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_新加坡_4
-  type: vless
-  server: 47.82.178.58
-  port: 443
-  uuid: 6bff4694-7f3a-4062-81c6-ea224fd86078
-  network: ws
-  servername: qsiim.jfpct.sbs
-  tls: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: qsiim.jfpct.sbs
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_中国香港_1
-  type: vless
-  server: 47.86.55.200
-  port: 19321
-  uuid: 394086c4-d8a4-4298-9b62-f70fa711082d
-  tls: false
-  skip-cert-verify: true
-  udp: true
-  cipher: auto
-- name: X_🇵🇱_PL_波兰
-  type: vless
-  server: pl.prostosetup.org
-  port: 443
-  uuid: 1b43419a-b711-40d4-a0ee-eb5c73e60c92
-  servername: pl.prostosetup.org
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: ps7eCLLKAqgSGPFRQl1-R1PhzUeO1Z1EwNl02Ac63UA
-    short-id: 514d02a2addd6476
-  udp: true
-  cipher: auto
-- name: X_🇲🇾_MY_马来西亚->🇺🇸_US_美国
   type: vmess
-  server: v24.hdacd.com
-  port: 30824
+  server: v6.hdacd.com
+  port: 30806
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   alterId: 2
   cipher: auto
   tls: false
-  skip-cert-verify: false
+  skip-cert-verify: true
   udp: true
-- name: X_🇳🇱_NL_荷兰
-  type: vless
-  server: 144.124.228.113
-  port: 443
-  uuid: ea484535-0170-4ec8-bb3c-a9dbaa7412d7
-  servername: nl3.panel11.ru
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: odHeTqoDcoPA6jeZStmaFPqoFg0ZiWwOKREEB0X-ez4
-    short-id: e069bfaf9ba2069c
-  udp: true
-  cipher: auto
-- name: X_🇭🇰_HK_中国香港->🇹🇼_TW_中国台湾
+- name: X_法国_3
   type: vmess
-  server: world.t.51guangtaobao.com
-  port: 2510
-  uuid: 1d3d868e-ae7b-3762-b9d9-a7f267494c7e
-  alterId: 0
+  server: v35.hdacd.com
+  port: 30835
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
   cipher: auto
   tls: false
-  skip-cert-verify: false
+  skip-cert-verify: true
   udp: true
-- name: X_🇫🇮_FI_芬兰
-  type: ss
-  server: 109.107.182.229
-  port: 51544
-  cipher: chacha20-ietf-poly1305
-  password: MZeSTvpl2uoey1R0frhPyJ
-  udp: true
-- name: X_🇩🇪_DE_德国
-  type: vless
-  server: 178.215.238.148
-  port: 8443
-  uuid: 21c1132b-068c-46fb-880e-3268f6a30e7f
-  network: raw
-  servername: eh.vk.com
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Crjd0I6hcasRXZcfNf7cs-YtJLpQ8u-t1CbwHIDAciU
-    short-id: 478dc6
-  udp: true
-  cipher: auto
-- name: X_🇺🇸_US_美国->🇸🇬_SG_新加坡
+- name: X_日本_4
   type: vmess
-  server: gtm-sg-cc54q7d1q01.365cloud0285.com
-  port: 6004
-  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
-  alterId: 0
+  server: 103.182.97.12
+  port: 30806
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
   cipher: auto
   tls: false
-  skip-cert-verify: false
+  skip-cert-verify: true
   udp: true
-- name: X_🇩🇪_DE_德国_1
+- name: X_中国香港
+  type: vmess
+  server: v10.hdacd.com
+  port: 30807
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+  tls: false
+  skip-cert-verify: true
+  udp: true
+- name: X_德国_3
   type: vless
-  server: 87.120.126.205
-  port: 443
-  uuid: 91e120bc-159a-4390-b4e1-197b19602ea0
-  servername: sub.sbrf-cdn342.ru
-  tls: true
-  flow: xtls-rprx-vision
-  client-fingerprint: qq
+  server: 95.179.165.163
+  port: 2020
+  uuid: 32f5d535-781e-4612-a7cd-66e68bb9666c
+  tls: false
+  skip-cert-verify: true
   udp: true
   cipher: auto
-- name: X_🇱🇻_LV_拉脱维亚
-  type: vless
-  server: 90.156.254.164
-  port: 19562
-  uuid: 5b96be74-656d-4bb7-85c2-d2d8a3b7c2f3
-  network: raw
-  servername: yahoo.com
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: T66pm2f_PN4Hya_A_5K0X1HQb717SUCODyoUO7Gk3Ws
-    short-id: 9e
-  udp: true
-  cipher: auto
-- name: X_🇨🇦_CA_加拿大
-  type: ss
-  server: 15.223.186.62
-  port: 443
-  cipher: aes-256-cfb
-  password: amazonskr05
-  udp: true
-- name: X_🇫🇮_FI_芬兰_1
-  type: ss
-  server: 195.133.2.2
-  port: 34898
-  cipher: chacha20-ietf-poly1305
-  password: v2LIewZzNUsIrqODr22FVc
-  udp: true
-- name: X_🇫🇮_FI_芬兰_2
-  type: vless
-  server: 138.124.244.248
-  port: 443
-  uuid: 476caa1d-7c04-48ab-8de5-2c1af0d13a66
-  servername: yahoo.com
-  tls: true
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: PYX0lu3m0L_h28eW4186s63gRFHXoTc3K9wKeFewDUQ
-    short-id: e9a8
-  udp: true
-  cipher: auto
-- name: X_🇷🇺_RU_俄罗斯
-  type: ss
-  server: 45.140.169.216
-  port: 30129
-  cipher: aes-256-gcm
-  password: c5fcdf7829112cb4
-  udp: true
 - cipher: chacha20-ietf
   name: X_🔴🇭🇰_github.com/Ruk1ng001_e5a6b7e0
   password: asd123456
@@ -4172,6 +2437,18 @@ proxies:
       Host: vms.lifetime38.workers.dev
     path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
   cipher: auto
+- alterId: 2
+  cipher: auto
+  name: X_🟡🇭🇰[🎬📺🔍]_github.com/Ruk1ng001_22bb1257
+  network: tcp
+  port: 30809
+  server: v9.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  xudp: true
 - cipher: aes-256-cfb
   name: X_🔴🇪🇸[🎬📺🎭🎪]_github.com/Ruk1ng001_655b2a1d
   password: UkXRsXvR6buDMG2Y
@@ -4269,6 +2546,23 @@ proxies:
     path: ''
   xudp: true
   cipher: auto
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: X_🟢🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001_fe56c579
+  network: ws
+  port: 22047
+  server: 103.179.142.212
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 948763b5-a064-453c-a015-185cb183bbfe
+  ws-opts:
+    headers: {}
+    path: /
+  xudp: true
 - client-fingerprint: chrome
   encryption: none
   flow: xtls-rprx-vision
@@ -5276,6 +3570,15 @@ proxies:
     server_name: iosapps.itunes.apple.com
   type: hysteria2
   cipher: auto
+- alterId: 2
+  cipher: auto
+  name: X_🔴🇩🇪[🎬🤖📺🎭]_github.com/Ruk1ng001_56c5bbea
+  port: 30833
+  server: v33.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - name: X_🔴🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001_d9537dbf
   network: ws
   port: 80
@@ -5405,6 +3708,24 @@ proxies:
     headers:
       Host: v2pr9feoh0z86anj2gz9onnjg9viuev0j.mobgslb.tbcache.com
     path: /
+- client-fingerprint: chrome
+  encryption: none
+  name: X_🔴🇸🇬[🎬📺🔍]_github.com/Ruk1ng001_ba37d3a8
+  network: ws
+  port: 74
+  server: 209.97.170.177
+  tls: true
+  type: vless
+  udp: true
+  uuid: 00000000-0000-4000-8000-000000000000
+  ws-opts:
+    headers:
+      Host: nn9jdg-k7yewrrk.acg.xx.kg
+      User-Agent: Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/70.0.3538.102 Safari/537.36
+    path: /@Marisa_kristi
+  xudp: true
+  cipher: auto
 - name: X_🔴🇷🇴[🎬🤖📺🔍]_github.com/Ruk1ng001_4c4d893a
   port: 9002
   server: 193.176.84.37
@@ -5787,6 +4108,25 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: http
+  cipher: auto
+- client-fingerprint: chrome
+  encryption: none
+  fp: chrome
+  name: X_🔴🇸🇬[🎬📺🔍]_github.com/Ruk1ng001_89c97e68
+  network: ws
+  port: 20742
+  security: tls
+  server: 45.32.103.8
+  servername: ufo4dxyv6255yk8eh1ejyxgxc.worker.ddns-ip.net
+  skip-cert-verify: false
+  sni: ufo4dxyv6255yk8eh1ejyxgxc.worker.ddns-ip.net
+  tls: true
+  type: vless
+  uuid: 00000000-0000-4000-8000-000000000000
+  ws-opts:
+    headers:
+      Host: ufo4dxyv6255yk8eh1ejyxgxc.worker.ddns-ip.net
+    path: /@Marisa_kristi
   cipher: auto
 - name: X_🔴🇺🇸[🎬📺🔍]_github.com/Ruk1ng001_00121bf0
   network: ws
@@ -6328,27 +4668,6 @@ proxies:
   tls: true
   type: http
   cipher: auto
-- client-fingerprint: chrome
-  encryption: none
-  name: X_🔴🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001_5c6ac5e8
-  network: ws
-  port: 443
-  server: 104.20.6.134
-  servername: r.meDiASHOPPp.sbS
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2088ef0d-4d2c-43b3-874b-b6a03531c81b
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: r.mediashoppp.sbs
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/53.0.2785.143 Safari/537.36
-    max-early-data: 2560
-    path: /eyJqdW5rIjoiVVpPeXNodUFQMHNVcU12aCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-  xudp: true
-  cipher: auto
 - name: X_🔴🇷🇴[🎬🤖📺🔍]_github.com/Ruk1ng001_6778395a
   port: 9002
   server: 193.176.84.39
@@ -6735,6 +5054,20 @@ proxies:
   tls: true
   type: http
   cipher: auto
+- name: X_🔴🇩🇪[🎬📺🔍]_github.com/Ruk1ng001_4bad2ec8
+  network: ws
+  port: 433
+  security: tls
+  server: 91.184.240.106
+  servername: oia8or7k8rs5.zrf.xx.kg
+  tls: true
+  type: vless
+  uuid: 00000000-0000-4000-8000-000000000000
+  ws-opts:
+    headers:
+      Host: oia8or7k8rs5.zrf.xx.kg
+    path: /@Marisa_kristifp=chrome
+  cipher: auto
 - cipher: chacha20-ietf-poly1305
   name: X_🔴🇨🇦[🎬🤖🔍]_github.com/Ruk1ng001_8ac25046
   password: e777513e-9df5-4dc3-bc84-74e564345a81
@@ -6832,6 +5165,27 @@ proxies:
     v2ray-http-upgrade: true
   cipher: auto
 - client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: X_🔴🇭🇰[🎬🤖📺🔍]_github.com/Ruk1ng001_25d9d666
+  network: tcp
+  port: 8448
+  reality-opts:
+    public-key: cynncQk7kKzEQaExg-FN7pMqFaZPSXEi_Ggy7AXXmVg
+    short-id: bb44cc55
+  server: releases.capitaledge.blog
+  servername: aliusfilms.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: af2e1391-e1df-4939-906f-93ee993c940e
+  xudp: true
+  cipher: auto
+- client-fingerprint: chrome
   name: X_⚪🏳️_github.com/Ruk1ng001_669f3d38
   network: ws
   password: humanity
@@ -6910,6 +5264,23 @@ proxies:
   type: trojan
   udp: true
   cipher: auto
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: X_🟢🇦🇪[🎬🤖📺🔍]_github.com/Ruk1ng001_1c943b5c
+  network: tcp
+  port: 7443
+  reality-opts:
+    public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
+    short-id: be0ce047
+  server: 31.56.188.90
+  servername: mi.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: adea61c0-0bb2-4ad3-8dba-7766eebd50f8
+  xudp: true
+  cipher: auto
 - cipher: chacha20-ietf-poly1305
   name: X_🟡🇫🇷[🎬🤖]_github.com/Ruk1ng001_ff034ef0
   password: xs-h9TyN3xE21ntt8osfVg
@@ -6917,6 +5288,15 @@ proxies:
   server: 45.67.139.93
   type: ss
   udp: true
+- alterId: 2
+  cipher: auto
+  name: X_🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1ng001_9b6fe04a
+  port: 30824
+  server: v24.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
 - cipher: chacha20-ietf-poly1305
   name: X_🟢🇿🇦[🎬📺]_github.com/Ruk1ng001_30428370
   password: e777513e-9df5-4dc3-bc84-74e564345a81
@@ -7129,6 +5509,23 @@ proxies:
     path: /@Marisa_kristi
   xudp: true
   cipher: auto
+- client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: X_🟢🇺🇸[🎬📺🔍]_github.com/Ruk1ng001_6f43625b
+  network: tcp
+  port: 51700
+  reality-opts:
+    public-key: cJ0oDse0aPBi7c4UCxQgMP1UNoBPZ2NDB8aL_17G0HQ
+    short-id: d18340
+  server: 23.141.52.196
+  servername: www.amd.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e6082798-61ab-4167-9653-67883f5f0166
+  xudp: true
+  cipher: auto
 - alpn:
   - h3
   auth-str: dongtaiwang.com
@@ -7233,6 +5630,134 @@ proxies:
   type: mieru
   username: dongtaiwang.com
   cipher: auto
+- name: X_🇵🇱_PL_波兰
+  type: vless
+  server: pl.prostosetup.org
+  port: 443
+  uuid: 1b43419a-b711-40d4-a0ee-eb5c73e60c92
+  servername: pl.prostosetup.org
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: ps7eCLLKAqgSGPFRQl1-R1PhzUeO1Z1EwNl02Ac63UA
+    short-id: 514d02a2addd6476
+  udp: true
+  cipher: auto
+- name: X_🇳🇱_NL_荷兰
+  type: vless
+  server: 144.124.228.113
+  port: 443
+  uuid: ea484535-0170-4ec8-bb3c-a9dbaa7412d7
+  servername: nl3.panel11.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: odHeTqoDcoPA6jeZStmaFPqoFg0ZiWwOKREEB0X-ez4
+    short-id: e069bfaf9ba2069c
+  udp: true
+  cipher: auto
+- name: X_🇭🇰_HK_中国香港->🇹🇼_TW_中国台湾
+  type: vmess
+  server: world.t.51guangtaobao.com
+  port: 2510
+  uuid: 1d3d868e-ae7b-3762-b9d9-a7f267494c7e
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_🇫🇮_FI_芬兰
+  type: ss
+  server: 109.107.182.229
+  port: 51544
+  cipher: chacha20-ietf-poly1305
+  password: MZeSTvpl2uoey1R0frhPyJ
+  udp: true
+- name: X_🇩🇪_DE_德国
+  type: vless
+  server: 178.215.238.148
+  port: 8443
+  uuid: 21c1132b-068c-46fb-880e-3268f6a30e7f
+  network: raw
+  servername: eh.vk.com
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: Crjd0I6hcasRXZcfNf7cs-YtJLpQ8u-t1CbwHIDAciU
+    short-id: 478dc6
+  udp: true
+  cipher: auto
+- name: X_🇺🇸_US_美国->🇸🇬_SG_新加坡
+  type: vmess
+  server: gtm-sg-cc54q7d1q01.365cloud0285.com
+  port: 6004
+  uuid: a030842a-d29a-4ea9-a776-14fc4b9e102d
+  alterId: 0
+  cipher: auto
+  tls: false
+  skip-cert-verify: false
+  udp: true
+- name: X_🇩🇪_DE_德国_1
+  type: vless
+  server: 87.120.126.205
+  port: 443
+  uuid: 91e120bc-159a-4390-b4e1-197b19602ea0
+  servername: sub.sbrf-cdn342.ru
+  tls: true
+  flow: xtls-rprx-vision
+  client-fingerprint: qq
+  udp: true
+  cipher: auto
+- name: X_🇱🇻_LV_拉脱维亚
+  type: vless
+  server: 90.156.254.164
+  port: 19562
+  uuid: 5b96be74-656d-4bb7-85c2-d2d8a3b7c2f3
+  network: raw
+  servername: yahoo.com
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: T66pm2f_PN4Hya_A_5K0X1HQb717SUCODyoUO7Gk3Ws
+    short-id: 9e
+  udp: true
+  cipher: auto
+- name: X_🇨🇦_CA_加拿大
+  type: ss
+  server: 15.223.186.62
+  port: 443
+  cipher: aes-256-cfb
+  password: amazonskr05
+  udp: true
+- name: X_🇫🇮_FI_芬兰_1
+  type: ss
+  server: 195.133.2.2
+  port: 34898
+  cipher: chacha20-ietf-poly1305
+  password: v2LIewZzNUsIrqODr22FVc
+  udp: true
+- name: X_🇫🇮_FI_芬兰_2
+  type: vless
+  server: 138.124.244.248
+  port: 443
+  uuid: 476caa1d-7c04-48ab-8de5-2c1af0d13a66
+  servername: yahoo.com
+  tls: true
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: PYX0lu3m0L_h28eW4186s63gRFHXoTc3K9wKeFewDUQ
+    short-id: e9a8
+  udp: true
+  cipher: auto
+- name: X_🇷🇺_RU_俄罗斯
+  type: ss
+  server: 45.140.169.216
+  port: 30129
+  cipher: aes-256-gcm
+  password: c5fcdf7829112cb4
+  udp: true
 proxy-groups:
 - name: 🚀 节点选择
   type: select
@@ -7302,169 +5827,53 @@ proxy-groups:
   - 🇺🇸_US_美国_2
   - 🇭🇰_HK_中国香港_3
   - X_每天更新，请加电报群防止失联
-  - X_电报群：https://t.me/vvkj11
-  - X_日期：06-10
-  - X_免费VPN：https://tt.vg/OWeaF
-  - X_德国
-  - X_法国
+  - X_英国_2
+  - X_英国_7
+  - X_英国_8
+  - X_英国_10
   - X_日本
-  - X_中国香港
-  - X_日本_1
-  - X_荷兰
+  - X_日本_2
   - X_美国
   - X_美国_1
   - X_美国_3
-  - X_德国_2
-  - X_德国_4
-  - X_德国_5
-  - X_俄罗斯
-  - X_法国_1
-  - X_刚果(金)
-  - X_韩国
-  - X_韩国_1
-  - X_加拿大
-  - X_加拿大_1
-  - X_加拿大_2
-  - X_加拿大_3
-  - X_加拿大_4
-  - X_美国_4
-  - X_美国_5
   - X_美国_6
+  - X_美国_7
   - X_美国_8
+  - X_美国_9
+  - X_美国_10
+  - X_美国_11
   - X_美国_12
-  - X_美国_13
-  - X_美国_14
-  - X_美国_17
-  - X_美国_18
+  - X_美国_16
   - X_美国_19
   - X_美国_20
-  - X_美国_21
-  - X_美国_25
-  - X_美国_26
-  - X_美国_28
+  - X_美国_24
+  - X_美国_43
+  - X_美国_45
+  - X_美国_46
+  - X_美国_47
   - X_美国_48
+  - X_美国_50
+  - X_美国_53
+  - X_美国_56
   - X_美国_60
-  - X_美国_61
-  - X_美国_62
-  - X_美国_63
-  - X_美国_64
-  - X_美国_65
-  - X_美国_66
   - X_美国_68
   - X_美国_69
   - X_美国_70
-  - X_美国_71
-  - X_美国_72
-  - X_美国_73
   - X_美国_74
-  - X_美国_75
-  - X_美国_76
-  - X_美国_77
-  - X_美国_78
-  - X_美国_79
-  - X_美国_80
-  - X_美国_81
-  - X_美国_82
-  - X_美国_83
-  - X_美国_84
-  - X_美国_85
-  - X_美国_86
-  - X_美国_87
-  - X_美国_88
-  - X_美国_89
-  - X_美国_90
-  - X_美国_91
-  - X_美国_92
-  - X_美国_93
-  - X_美国_94
-  - X_美国_95
-  - X_美国_96
-  - X_美国_97
-  - X_美国_98
-  - X_美国_99
-  - X_美国_100
-  - X_美国_101
-  - X_美国_102
-  - X_美国_103
-  - X_美国_104
-  - X_美国_105
-  - X_美国_106
-  - X_美国_107
-  - X_美国_108
-  - X_美国_109
-  - X_美国_110
-  - X_美国_111
-  - X_美国_112
-  - X_美国_113
-  - X_美国_114
-  - X_美国_115
-  - X_美国_116
-  - X_美国_117
-  - X_美国_118
-  - X_美国_119
-  - X_美国_120
-  - X_美国_121
-  - X_美国_122
-  - X_美国_123
-  - X_美国_124
-  - X_美国_125
-  - X_美国_126
-  - X_美国_127
-  - X_美国_128
-  - X_美国_129
-  - X_美国_130
-  - X_美国_131
-  - X_美国_132
-  - X_美国_133
-  - X_美国_134
-  - X_美国_135
-  - X_美国_136
-  - X_美国_137
-  - X_美国_138
-  - X_美国_139
-  - X_美国_140
-  - X_美国_141
-  - X_美国_142
-  - X_美国_143
-  - X_美国_144
-  - X_美国_145
-  - X_美国_146
-  - X_美国_147
-  - X_美国_148
-  - X_日本_2
+  - X_加拿大
+  - X_加拿大_1
+  - X_加拿大_3
+  - X_加拿大_4
+  - X_加拿大_5
+  - X_法国
+  - X_法国_1
+  - X_俄罗斯_8
+  - X_德国_2
   - X_日本_3
+  - X_法国_3
   - X_日本_4
-  - X_日本_5
-  - X_日本_6
-  - X_日本_7
-  - X_日本_8
-  - X_日本_9
-  - X_日本_10
-  - X_日本_11
-  - X_日本_12
-  - X_日本_13
-  - X_日本_14
-  - X_日本_15
-  - X_香港
-  - X_新加坡
-  - X_新加坡_1
-  - X_新加坡_2
-  - X_新加坡_3
-  - X_新加坡_4
-  - X_中国香港_1
-  - X_🇵🇱_PL_波兰
-  - X_🇲🇾_MY_马来西亚->🇺🇸_US_美国
-  - X_🇳🇱_NL_荷兰
-  - X_🇭🇰_HK_中国香港->🇹🇼_TW_中国台湾
-  - X_🇫🇮_FI_芬兰
-  - X_🇩🇪_DE_德国
-  - X_🇺🇸_US_美国->🇸🇬_SG_新加坡
-  - X_🇩🇪_DE_德国_1
-  - X_🇱🇻_LV_拉脱维亚
-  - X_🇨🇦_CA_加拿大
-  - X_🇫🇮_FI_芬兰_1
-  - X_🇫🇮_FI_芬兰_2
-  - X_🇷🇺_RU_俄罗斯
+  - X_中国香港
+  - X_德国_3
   - X_🔴🇭🇰_github.com/Ruk1ng001_e5a6b7e0
   - X_🟢🇭🇰[🎬📺🔍]_github.com/Ruk1ng001_e25d381a
   - X_🔴🇭🇰[📺🎪🎞️📦]_github.com/Ruk1ng001_3fa44f47
@@ -7532,6 +5941,7 @@ proxy-groups:
   - X_🔴🇺🇸[🎬🎭🎞️📦]_github.com/Ruk1ng001_a88e970f
   - X_🔴🇬🇧[🎬📺🔍]_github.com/Ruk1ng001_c10af3ea
   - X_🔴🇬🇧[🎬📺🔍]_github.com/Ruk1ng001_06b1c0c7
+  - X_🟡🇭🇰[🎬📺🔍]_github.com/Ruk1ng001_22bb1257
   - X_🔴🇪🇸[🎬📺🎭🎪]_github.com/Ruk1ng001_655b2a1d
   - X_🟢🇭🇰[📺]_github.com/Ruk1ng001_dc08bbd1
   - X_🔴🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001_2452db1b
@@ -7540,6 +5950,7 @@ proxy-groups:
   - X_🟢🇭🇰[🎬📺🔍]_github.com/Ruk1ng001_55b81b1f
   - X_🔴🇬🇧[🎬📺🔍]_github.com/Ruk1ng001_03c8e30f
   - X_🔴🇺🇸[🎬📺]_github.com/Ruk1ng001_c20e849a
+  - X_🟢🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001_fe56c579
   - X_🔴🇰🇷[🎬🤖📺🔍]_github.com/Ruk1ng001_34896e99
   - X_🔴🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_d526f5ef
   - X_🔴🇹🇼[🎬🤖📺🔍]_github.com/Ruk1ng001_c1bcd4d2
@@ -7624,6 +6035,7 @@ proxy-groups:
   - X_🟢🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_b253e3e4
   - X_🔴🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001_03c41e7f
   - X_🔴🇫🇷[🎬🤖📺🔍]_github.com/Ruk1ng001_8d2c0f57
+  - X_🔴🇩🇪[🎬🤖📺🎭]_github.com/Ruk1ng001_56c5bbea
   - X_🔴🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001_d9537dbf
   - X_🔴🇳🇱[🎬🤖📺🎭]_github.com/Ruk1ng001_7950a7de
   - X_🔴🇳🇱[📺]_github.com/Ruk1ng001_e3051f22
@@ -7633,6 +6045,7 @@ proxy-groups:
   - X_🟢🇺🇸[🎬]_github.com/Ruk1ng001_ea725f27
   - X_🔴🇷🇴[🎬🤖📺🔍]_github.com/Ruk1ng001_50511bed
   - X_🔴🇹🇼[🎬🤖📺🔍]_github.com/Ruk1ng001_088f2561
+  - X_🔴🇸🇬[🎬📺🔍]_github.com/Ruk1ng001_ba37d3a8
   - X_🔴🇷🇴[🎬🤖📺🔍]_github.com/Ruk1ng001_4c4d893a
   - X_🔴🇺🇸[🎬]_github.com/Ruk1ng001_6ffaf36b
   - X_🔴🇺🇸[🎬📺🔍]_github.com/Ruk1ng001_81f52c33
@@ -7672,6 +6085,7 @@ proxy-groups:
   - X_🔴🇷🇴[🎬🤖📺🔍]_github.com/Ruk1ng001_3b6bf33f
   - X_🔴🇨🇿_github.com/Ruk1ng001_92568f10
   - X_🔴🇷🇴[🎬🤖📺🔍]_github.com/Ruk1ng001_a0921b46
+  - X_🔴🇸🇬[🎬📺🔍]_github.com/Ruk1ng001_89c97e68
   - X_🔴🇺🇸[🎬📺🔍]_github.com/Ruk1ng001_00121bf0
   - X_🔴🇷🇴[🎬🤖📺🔍]_github.com/Ruk1ng001_750809c5
   - X_🔴🇷🇴[🎬🤖📺🔍]_github.com/Ruk1ng001_a0cc4c8a
@@ -7727,7 +6141,6 @@ proxy-groups:
   - X_🔴🇩🇪[🎬🤖📺🔍]_github.com/Ruk1ng001_df69febb
   - X_🔴🇷🇴[🎬🤖📺🔍]_github.com/Ruk1ng001_c91883ca
   - X_🔴🇷🇴[🎬🤖📺🔍]_github.com/Ruk1ng001_edf4fc20
-  - X_🔴🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001_5c6ac5e8
   - X_🔴🇷🇴[🎬🤖📺🔍]_github.com/Ruk1ng001_6778395a
   - X_🔴🇺🇸[🎬]_github.com/Ruk1ng001_d23ab77c
   - X_🔴🇷🇴[🎬🤖📺🔍]_github.com/Ruk1ng001_73809fb0
@@ -7759,6 +6172,7 @@ proxy-groups:
   - X_🔴🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001_b5e6bd79
   - X_🔴🇺🇸_github.com/Ruk1ng001_b6cc8ad4
   - X_🔴🇷🇴[🎬🤖📺🔍]_github.com/Ruk1ng001_4385d4f1
+  - X_🔴🇩🇪[🎬📺🔍]_github.com/Ruk1ng001_4bad2ec8
   - X_🔴🇨🇦[🎬🤖🔍]_github.com/Ruk1ng001_8ac25046
   - X_🔴🇺🇸[🎬📺🔍]_github.com/Ruk1ng001_7106cfcf
   - X_🟢🇹🇼[🎬🤖📺🔍]_github.com/Ruk1ng001_45f6dab5
@@ -7766,6 +6180,7 @@ proxy-groups:
   - X_🔴🇺🇸[🎬📺]_github.com/Ruk1ng001_2797c4fd
   - X_⚪🏳️[🎬🤖📺🔍]_github.com/Ruk1ng001_c03187d3
   - X_🟢🇳🇱[🎬🤖]_github.com/Ruk1ng001_91f0da65
+  - X_🔴🇭🇰[🎬🤖📺🔍]_github.com/Ruk1ng001_25d9d666
   - X_⚪🏳️_github.com/Ruk1ng001_669f3d38
   - X_🔴🇸🇬[🎬🤖📺🔍]_github.com/Ruk1ng001_fb91ef35
   - X_🔴🇦🇺[🎬🤖📺🎪]_github.com/Ruk1ng001_75a616e0
@@ -7773,7 +6188,9 @@ proxy-groups:
   - X_🔴🇸🇬[🤖📺🔍]_github.com/Ruk1ng001_97ff0ca2
   - X_🔴🇸🇬_github.com/Ruk1ng001_2b1545d9
   - X_🟢🇭🇰[🎬🤖📺🔍]_github.com/Ruk1ng001_7d5dbf0e
+  - X_🟢🇦🇪[🎬🤖📺🔍]_github.com/Ruk1ng001_1c943b5c
   - X_🟡🇫🇷[🎬🤖]_github.com/Ruk1ng001_ff034ef0
+  - X_🔴🇺🇸[🎬🤖📺🎭]_github.com/Ruk1ng001_9b6fe04a
   - X_🟢🇿🇦[🎬📺]_github.com/Ruk1ng001_30428370
   - X_🔴🇺🇸[📺🔍]_github.com/Ruk1ng001_bb2d8380
   - X_🔴🇫🇷[🎬🤖📺🔍]_github.com/Ruk1ng001_ce89f4b3
@@ -7789,6 +6206,7 @@ proxy-groups:
   - X_🟢🇯🇵[🎬🤖📺🔍]_github.com/Ruk1ng001_1007da0f
   - X_🔴🇺🇸[🎬📺🔍]_github.com/Ruk1ng001_1bf14e19
   - X_🔴🇺🇸[🎬📺🔍]_github.com/Ruk1ng001_563b5e36
+  - X_🟢🇺🇸[🎬📺🔍]_github.com/Ruk1ng001_6f43625b
   - X_🔴🇩🇪[🎬🤖📺🔍]_github.com/Ruk1ng001_b650b93a
   - X_🔴🇺🇸[🤖🔍]_github.com/Ruk1ng001_16fe1390
   - X_🔴🇰🇷[📺]_github.com/Ruk1ng001_668196dc
@@ -7801,6 +6219,18 @@ proxy-groups:
   - X_🔴🇨🇭[🎬🤖📺🔍]_github.com/Ruk1ng001_512a517f
   - X_🟢🇩🇪[🎬🤖📺]_github.com/Ruk1ng001_5b3547ae
   - X_🔴🇺🇸[🎬🤖📺🔍]_github.com/Ruk1ng001_148a190d
+  - X_🇵🇱_PL_波兰
+  - X_🇳🇱_NL_荷兰
+  - X_🇭🇰_HK_中国香港->🇹🇼_TW_中国台湾
+  - X_🇫🇮_FI_芬兰
+  - X_🇩🇪_DE_德国
+  - X_🇺🇸_US_美国->🇸🇬_SG_新加坡
+  - X_🇩🇪_DE_德国_1
+  - X_🇱🇻_LV_拉脱维亚
+  - X_🇨🇦_CA_加拿大
+  - X_🇫🇮_FI_芬兰_1
+  - X_🇫🇮_FI_芬兰_2
+  - X_🇷🇺_RU_俄罗斯
   url: https://www.facebook.com/common/referer_frame.php
   interval: 60
   tolerance: 5
@@ -7998,6 +6428,16 @@ proxy-groups:
   interval: 120
   strategy: consistent-hashing
   proxies:
+  - X_🇭🇰 香港|@ripaojiedian
+  - X_香港3|@ripaojiedian
+  - X_香港4|@ripaojiedian
+  - X_日本|@ripaojiedian
+  - X_日本2|@ripaojiedian
+  - X_日本3|@ripaojiedian
+  - X_美国|@ripaojiedian
+  - X_美国3|@ripaojiedian
+  - X_🇺🇸 美国4|@ripaojiedian
+  - X_🇫🇷FR_2|2.2MB/s
   - X_HK_speednode_0001
   - X_HK_speednode_0002
   - X_ID_speednode_0003
@@ -8069,16 +6509,6 @@ proxy-groups:
   - X_US_speednode_0072
   - X_US_speednode_0074
   - X_US_speednode_0075
-  - X_🇭🇰 香港|@ripaojiedian
-  - X_香港3|@ripaojiedian
-  - X_香港4|@ripaojiedian
-  - X_日本|@ripaojiedian
-  - X_日本2|@ripaojiedian
-  - X_日本3|@ripaojiedian
-  - X_美国|@ripaojiedian
-  - X_美国3|@ripaojiedian
-  - X_🇺🇸 美国4|@ripaojiedian
-  - X_🇮🇪IE_1|2.5MB/s
 rule-providers:
   LocalAreaNetwork:
     type: http
