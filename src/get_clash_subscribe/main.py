@@ -70,7 +70,6 @@ def is_local_server(server_address):
 DATE_BASED_URL_TEMPLATES = [
     ("https://static.v2rayshare.net/{date}.yaml", "%Y/%m/%Y%m%d"),
     ("https://node.nodefree.me/{date}.yaml", "%Y/%m/%Y%m%d"),
-    ("http://clashstair.cczzuu.top/node/{date}-clash.yaml", "%Y%m%d"),
 ]
 
 
@@ -106,7 +105,9 @@ def get_dynamic_urls(is_auto=False):
             *(t.format(date=current_date.strftime(fmt)) for t, fmt in DATE_BASED_URL_TEMPLATES),
             "https://tt.vg/freeclash",
             "https://raw.githubusercontent.com/free18/v2ray/main/c.yaml",
-            "https://raw.githubusercontent.com/Ruk1ng001/freeSub/main/clash.yaml"
+            "https://raw.githubusercontent.com/Ruk1ng001/freeSub/main/clash.yaml",
+            "https://raw.githubusercontent.com/mahdibland/SSAggregator/master/sub/sub_merge_yaml.yml",
+            "https://raw.githubusercontent.com/ts-sf/fly/main/clash"
         ]
     else:
         return [
@@ -157,7 +158,11 @@ def process_proxies(content):
         if is_local_server(proxy['server']):
             continue
 
-        # 3. Filter reality-opts without short-id
+        # 3. Filter http type proxies
+        if proxy.get('type', '').lower() == 'http':
+            continue
+
+        # 4. Filter reality-opts without short-id
         if 'reality-opts' in proxy:
             reality_opts = proxy.get('reality-opts', {})
             if 'short-id' not in reality_opts or not reality_opts['short-id']:
