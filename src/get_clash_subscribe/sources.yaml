@@ -1,0 +1,55 @@
+# Primary subscription URL (the base Clash config to merge proxies into)
+main_url: "https://www.ermao.net/sub/clash/ermao.net"
+
+# HTTP status codes considered successful
+success_status_codes: [200, 201, 202, 203, 204, 205, 206]
+
+# Request timeout in seconds
+timeout: 30
+
+# HTTP headers for all requests
+headers:
+  User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+  Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+  Accept-Language: "en-US,en;q=0.5"
+  Referer: "https://bing.com/"
+
+# Output directory for the final merged config
+output_dir: "./public/subscribe"
+
+# Log directory (monthly log files)
+log_dir: "./public/subscribe/log"
+
+# Directory for downloaded rule provider files
+rules_dir: "./public/rules"
+
+# Base URL for serving local rule provider files
+rules_base_url: "https://cdn.honglin.ac.cn/statically/gh/flinhong/configs/public/rules"
+
+# Date-based URL templates (probed to find the latest available file)
+# Each entry has a url template with {date} placeholder and a date_format string
+# Example for today (2026-06-22):
+#   url: "https://static.v2rayshare.net/{date}.yaml"
+#   date_format: "%Y/%m/%Y%m%d"
+#   -> rendered: "https://static.v2rayshare.net/2026/06/20260622.yaml"
+date_based_url_templates:
+  - url: "https://static.v2rayshare.net/{date}.yaml"
+    date_format: "%Y/%m/%Y%m%d"
+  - url: "https://node.nodefree.me/{date}.yaml"
+    date_format: "%Y/%m/%Y%m%d"
+
+# URLs for load-balancer proxies (static, no date probing)
+lb_urls:
+  - "https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml"
+  - "https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml"
+  - "https://raw.githubusercontent.com/mahdibland/SSAggregator/master/sub/sub_merge_yaml.yml"
+  - "https://raw.githubusercontent.com/ts-sf/fly/main/clash"
+
+# URLs for auto-select proxies (date-based URLs are prepended at runtime)
+auto_urls:
+  - "https://tt.vg/freeclash"
+  - "https://raw.githubusercontent.com/Ruk1ng001/freeSub/main/clash.yaml"
+  - "https://raw.githubusercontent.com/free18/v2ray/main/c.yaml"
+
+# Proxy names containing any of these keywords will be filtered out
+filter_keywords: ["未知", "tg", "TG", "KB/s"]
